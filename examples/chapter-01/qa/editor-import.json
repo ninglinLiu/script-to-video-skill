@@ -1,0 +1,11 @@
+{
+  "status": "user_reported_already_verified",
+  "validationOwner": "user",
+  "repeatValidationWaived": true,
+  "userInstruction": "用户已手动验证剪映／PR导入、编辑、导出，明确要求无需重复验证。",
+  "verifiedScope": "既有工程交接工作流；不代表本次发布的每个新文件都已被Agent打开。",
+  "agentRepeated": false,
+  "openedSuccessfully": null,
+  "editor": "Premiere Pro",
+  "project": "native/timeline.xml"
+}

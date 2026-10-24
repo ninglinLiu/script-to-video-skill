@@ -1,0 +1,132 @@
+{
+  "reviewDate": "2026-10-24",
+  "reviewer": "independent-content-review",
+  "scope": "第三篇凯撒原文的选题蒸馏、概念和拟用论断；尚未审查最终逐字稿或成片",
+  "status": "approved_topic_with_required_boundaries",
+  "article": {
+    "title": "一招破解:锚定效应 | 为什么你总是死扛亏损、等回本就卖与过早卖出大牛股？",
+    "input": "用户提供的三篇正文.txt 中第三篇",
+    "adaptation": "保留成本价参照问题；100、40、60元双账户为本片原创假设例子，不是作者事实、真实投资者或实验结果"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Odean (1998), Are Investors Reluctant to Realize Their Losses?",
+      "url": "https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/areinvestorsreluctant.pdf",
+      "type": "原始实证论文，作者所在大学公开PDF",
+      "readRange": "摘要；I.A–D概念与解释限制；II样本；III方法；Table I",
+      "locations": "期刊1775页摘要、1777–1779页、1781–1783页；Table I为PDF第9页",
+      "evidence": "10,000个美国折扣券商账户，1987–1993；全样本PGR=0.148，PLR=0.098。论文发现更倾向兑现赢家，同时明确大部分分析未区分前景理论和错误均值回归信念。",
+      "statisticCaveat": "PGR为已兑现盈利/(已兑现盈利+未兑现盈利机会)，PLR对应亏损；分母不同，按发生出售的观察日统计，不是投资者人数比例或收益率。"
+    },
+    {
+      "id": "S2",
+      "title": "SEC Investor Bulletin: Behavioral Patterns of U.S. Investors",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-72",
+      "type": "证券监管机构投资者教育",
+      "readRange": "Disposition Effect条目",
+      "evidence": "处置效应描述过久持有亏损投资、过早出售盈利投资的倾向。它是行为模式名称，不是对每次卖出或持有动机的诊断。"
+    },
+    {
+      "id": "S3",
+      "title": "Kahneman & Tversky (1979), Prospect Theory: An Analysis of Decision under Risk",
+      "url": "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf",
+      "type": "原始理论与选择实验论文，大学公开PDF",
+      "readRange": "摘要、价值函数部分，期刊278–280页",
+      "evidence": "相对于参照点评价得失；等额损失与收益可有不同心理权重。参考点、收益/损失区域的曲率和损失厌恶是不同的理论性质。",
+      "boundary": "不使用“损失永远是收益两倍痛苦”的固定倍数；不把损失厌恶单独等同处置效应的全部解释。"
+    },
+    {
+      "id": "S4",
+      "title": "SEC: Beginners’ Guide to Asset Allocation, Diversification, and Rebalancing",
+      "url": "https://www.investor.gov/additional-resources/general-resources/publications-research/info-sheets/beginners-guide-asset",
+      "type": "证券监管机构投资者教育",
+      "readRange": "Time Horizon、Risk Tolerance、Rebalancing 101",
+      "evidence": "期限、风险承受能力、组合配置影响投资决策；再平衡应考虑交易费用和税务后果。出售赢家也可能是合理再平衡。"
+    },
+    {
+      "id": "S5",
+      "title": "IRS Topic no. 703: Basis of assets",
+      "url": "https://www.irs.gov/taxtopics/tc703",
+      "type": "税务机关说明",
+      "readRange": "股票成本基础和处置损益说明",
+      "evidence": "美国税制中的证券成本基础用于计算处置损益。因此不能说买入成本在任何决策中都毫无意义。",
+      "boundary": "只用于说明成本可能具有税务意义；不把美国税制规则套用于所有地区，不提供具体税率建议。"
+    },
+    {
+      "id": "S6",
+      "title": "Tversky & Kahneman (1974), Judgment under Uncertainty: Heuristics and Biases",
+      "url": "https://www.science.org/doi/10.1126/science.185.4157.1124",
+      "type": "原始研究论文",
+      "readRange": "检索到原文Adjustment and anchoring段；出版商全文直接请求403，大学镜像亦失败",
+      "evidence": "锚定描述初始数值或起点影响后续估计；并非必然只由时间顺序上的第一条信息触发。",
+      "usage": "只作概念背景，不采用该文具体实验数字；核心证据镜头优先S1与S2。"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "text": "同一只股票现价60元，甲买入100元、乙买入40元，甲账面亏40%，乙账面赚50%。",
+      "kind": "原创假设及算术",
+      "status": "verified",
+      "calculation": "(60-100)/100=-0.40；(60-40)/40=0.50",
+      "boundary": "假设相同股数、同一股票同一时点，不计分红、拆股、税费。甲想等回本、乙想落袋是戏剧化设定，不是必然行为。"
+    },
+    {
+      "id": "C2",
+      "text": "从100跌到60亏40%；从60回100需要涨约66.7%。",
+      "kind": "原创算术",
+      "status": "verified",
+      "calculation": "(100-60)/60=0.6666666667；60×1.4=84，不是100",
+      "boundary": "此处解释百分比基数变化，不是回本难度或未来涨跌概率预测；保留60与100同一标尺。"
+    },
+    {
+      "id": "C3",
+      "text": "两人的历史盈亏不同，不会让同一股票从今天起的每股市场现金流变成两套。",
+      "kind": "条件化逻辑/原创算例",
+      "status": "verified_with_assumptions",
+      "calculation": "未来假设价格72：两人每股从60增12，前瞻价格收益均20%；未来48：均减12、-20%",
+      "boundary": "72/48是情景而非预测或概率。须固定同股同权、同信息、同一未来情景；排除税费和个人约束后才有可比性。不要说两人最优持仓必然一样。"
+    },
+    {
+      "id": "C4",
+      "text": "研究发现过更愿意兑现盈利、保留亏损的交易倾向，称为处置效应。",
+      "sourceIds": ["S1", "S2"],
+      "status": "verified",
+      "boundary": "这是特定历史样本中的行为模式，不证明每个人都如此，也不证明每次继续持有都是错误。"
+    },
+    {
+      "id": "C5",
+      "text": "把买入价当估值起点涉及锚定；不愿承认等额损失涉及损失厌恶；卖盈持亏是处置效应的行为描述，三者有关联但不能画等号。",
+      "sourceIds": ["S1", "S2", "S3", "S6"],
+      "status": "approved_with_wording",
+      "boundary": "成本作为得失参照不自动构成锚定偏差。必须表达它被不恰当地用来决定今天的合理价值或未来判断。避免从假设例子推断唯一心理原因。"
+    },
+    {
+      "id": "C6",
+      "text": "先问今天持有的依据，再检查税费、用钱期限和组合风险。",
+      "sourceIds": ["S4", "S5"],
+      "kind": "基于证据的教育性检查建议",
+      "status": "approved",
+      "boundary": "不是统一买卖规则；成本可影响税务，个人约束可使同一资产对应不同合理行动。不要给出“不想重新买就立即卖”。"
+    }
+  ],
+  "removeFromArticle": [
+    {"content": "手机号88与12使职业投资者估值整整3倍", "reason": "人群、刺激和倍数未被原文可靠来源支持；本片不复用。"},
+    {"content": "没有大规模双盲原始数据所以只是极高概率假说", "reason": "笼统评价不能替代对具体研究设计、公开数据和可重复性的核对；删除该旁支。"},
+    {"content": "3500万年前、卷尾猴、节能草原大脑的确定进化故事", "reason": "没有足够直接证据支持对本片交易行为的进化因果解释。"},
+    {"content": "机器没有成本价概念；机构的锚永远是当前期望值", "reason": "普遍化且错误；成本和持仓历史可被模型、税务与风控系统使用。"},
+    {"content": "其他因子自动对冲失效因子；硬性止损保护复利最后防线", "reason": "不具有普遍保证；模型失效、流动性和跳空等均使结论不成立。"},
+    {"content": "如果今天不愿买，立刻离场", "reason": "忽略税费、期限、组合目标及买入与持有的不同边际条件。"},
+    {"content": "5%的闪崩只是背景噪音；把锚设在人类文明就能解决问题", "reason": "涨跌幅本身不区分噪音与信息；抽象大叙事不能替代证据更新。"},
+    {"content": "成本价是毫无意义的数字/市场绝无记忆", "reason": "可改为个人成本价不是未来价值的充分证据；避免否认税务意义、路径相关和市场结构。"}
+  ],
+  "editorialRecommendation": {
+    "coreQuestion": "同一只现价60元的股票，为什么100买入与40买入的人会想做相反决定？",
+    "answer": "历史得失改变心理参照，但今天的持有判断要回到未来回报、风险和个人约束；研究证据支持行为倾向，不能替每个人判案。",
+    "evidenceShot": "只用Odean论文题头/研究范围和自制的14.8%与9.8%图表；标清PGR/PLR统计口径，来源链接留在来源表。为节奏可不口播这两个比例。",
+    "causalFlow": "相同现价/不同成本 → 历史盈亏与前瞻收益分离 → 实证行为模式 → 百分比基数变化 → 成本信息退为一项约束 → 下一章如何检验持有依据",
+    "avoid": "三个心理术语依次讲定义会拖慢解释；以同一交易对象推进，术语用简短旁注，不铺成百科目录。",
+    "awaiting": "最终逐字稿与确切旁白时长；当前不是成片通过声明。"
+  }
+}

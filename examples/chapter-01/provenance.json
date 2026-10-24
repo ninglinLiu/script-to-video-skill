@@ -1,0 +1,58 @@
+{
+  "title": "回本以后，什么会改变？",
+  "durationSeconds": 105.566667,
+  "licenseScope": "Repository MIT applies to original code and authored workflow. Third-party materials are separately identified below.",
+  "materials": [
+    {
+      "path": "工程/src",
+      "kind": "original authored React/Remotion animation",
+      "origin": "Existing chapter production, adapted for portable paths"
+    },
+    {
+      "path": "工程/public/fonts",
+      "kind": "OFL fonts",
+      "licenseFiles": [
+        "Noto-OFL.txt",
+        "Anton-OFL.txt"
+      ]
+    },
+    {
+      "path": "工程/public/paper-title.png",
+      "kind": "Limited paper heading excerpt, not MIT",
+      "source": "https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/areinvestorsreluctant.pdf",
+      "scope": "Title and author only; no full paper bundled"
+    },
+    {
+      "path": "assets/voice.mp3",
+      "kind": "Synthetic Mandarin narration",
+      "service": "edge-tts / zh-CN-YunxiNeural",
+      "script": "source/draft.txt",
+      "distribution": "Original script synthesis; voice model and service are not licensed by this repository"
+    },
+    {
+      "path": "assets/voice-track.wav",
+      "kind": "Narration aligned and normalized from the synthetic voice"
+    },
+    {
+      "path": "native/segments",
+      "kind": "Seven original rendered clean video clips"
+    },
+    {
+      "path": "out",
+      "kind": "Original narrated and silent chapter renders plus SRT",
+      "note": "Contain the separately attributed paper heading excerpt"
+    }
+  ],
+  "excluded": [
+    "Full source article",
+    "Full academic PDF",
+    "Original reference videos and soundtrack",
+    "Accounts, cookies, credentials, machine-specific paths"
+  ],
+  "validation": {
+    "technical": "Recorded separately",
+    "visual": "Sampled frame and transition review; not full human viewing",
+    "userAestheticAcceptance": false,
+    "longVideoPipelineValidated": false
+  }
+}

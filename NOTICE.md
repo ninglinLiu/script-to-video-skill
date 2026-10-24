@@ -1,15 +1,22 @@
-# References and scope
+# Sources, licenses and distribution
 
-本仓库公开原创的 Agent 工作流说明、示例风格配置及验收脚本。未包含原始文章缓存、成片、声音、第三方字体、参考视频、账户配置或其他项目的生产源码。
+MIT applies to original workflow, scripts and original animation code. It does not replace third-party licenses or grant rights to referenced articles, music, voice services, videos or papers.
 
-以下项目用于方法研究与制作流程参考，需按各自许可证单独取得：
+## Distributed materials
 
-- https://github.com/Azure12355/weilanx-claude-videos — Remotion 制作组织、音频和字体管理方法。
-- https://github.com/Kianzzz/xilo-opus-video — 对象状态描述、连续样片和逐帧复核方法。
+- `examples/batch-01/src/upstream/`: components adapted from Azure12355/weilanx-claude-videos; MIT notice retained in the batch's `licenses/` directory.
+- `examples/batch-01/src/local/redshift/`: original local implementation inspired by motion references, not copied upstream code.
+- Fonts in each example's `public/fonts/`: SIL OFL; license files accompany the fonts.
+- `examples/chapter-01/工程/src/`: original chapter animation. `out/` and `native/` contain rendered original visuals, with the paper heading exception below.
+- `examples/chapter-01/assets/voice.mp3` and `voice-track.wav`: synthetic narration of the authored script using Edge TTS. The voice model, runtime and service remain governed by their own terms; this repository does not license them.
+- `examples/chapter-01/工程/public/paper-title.png`: limited title/author excerpt of Terrance Odean's 1998 paper *Are Investors Reluctant to Realize Their Losses?*, used to identify the evidence on screen. This third-party excerpt is not MIT. Source: https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/areinvestorsreluctant.pdf . The complete paper is not distributed.
+- `source/draft.txt`: independently authored adaptation using original hypothetical examples, informed by the user's supplied Caesar article. The full article is not distributed. See the example's source manifest and fact review.
 
-仓库不附带上述项目的代码或媒体资产，MIT 许可证仅覆盖本仓库原创内容；不授予第三方文章、音乐、字体或视频的使用权。字体名称、TTS 音色及工具名称属于配置或引用，不表示相应资产、服务、凭据已随仓库提供。
+## References, not bundled media
 
+- https://github.com/Azure12355/weilanx-claude-videos — Remotion production, audio/font organization and the attributed batch-01 components.
+- https://github.com/Kianzzz/xilo-opus-video — object state descriptions, continuous proofs and frame review.
+- https://www.douyin.com/video/7697146047227694975 — rtiaho edit reference; original reference audio/video not bundled.
+- https://v.douyin.com/vX87XYIgSnc/ — user-selected VibeVerse《15亿次心跳》music reference; original audio/video not bundled.
 
-## 第一批组件
-
-`examples/batch-01/src/upstream/` 来自 Azure12355/weilanx-claude-videos，保留 MIT 声明于该批次 licenses/。`src/local/redshift/` 是此前本地研究代码，非上游代码。字体采用目录内 OFL 许可。原参考 MP4、截图和配乐不分发。
+Reference media and music without an established redistribution license remain local. Public examples include links, provenance and an import/mix command. Sensitive references, credentials, original article caches and complete papers are excluded. Remotion and other runtime dependencies retain their respective licenses.

@@ -18,3 +18,14 @@ qa/
 !examples/batch-01/out/*.mp4
 !examples/batch-01/qa/
 !examples/batch-01/qa/**
+!examples/chapter-01/out/
+!examples/chapter-01/out/*.mp4
+!examples/chapter-01/out/*.srt
+!examples/chapter-01/qa/
+!examples/chapter-01/qa/**
+examples/chapter-01/qa/stills/
+examples/chapter-01/qa/rough*.mp4
+examples/chapter-01/qa/render-stills.json
+examples/chapter-01/native/timeline.xml
+**/local-only/
+**/music-local/

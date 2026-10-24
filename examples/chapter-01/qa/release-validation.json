@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-24",
+  "skillSchema": "passed",
+  "pythonCompile": "passed",
+  "typescript": "passed",
+  "lockedInstall": "npm ci --offline --ignore-scripts",
+  "portableProof": {
+    "seconds": 13,
+    "render": "qa/proof-13s.mp4",
+    "frameInspected": "qa/portable-proof.jpg",
+    "status": "rendered_and_one_frame_inspected"
+  },
+  "tts": {
+    "cached": true,
+    "newRequests": 0,
+    "cues": 64,
+    "subtitles": 33
+  },
+  "deliveryAudit": "qa/audit.json",
+  "editorWaiverChecks": [
+    "explicit user instruction accepted",
+    "missing instruction rejected",
+    "agent claim rejected",
+    "waiver=false rejected"
+  ],
+  "publicOriginalReferenceMedia": false,
+  "publicReferenceMusic": false,
+  "userAestheticAcceptance": false,
+  "longVideoPipelineValidated": false,
+  "assetManifestVerifiedAgainstStagedBlobs": 57,
+  "reviewedDraftBytesPreserved": true,
+  "privateDataScan": "No machine paths, sensitive reference identifiers or credential markers in staged text",
+  "galleryLocalLinks": "passed"
+}

@@ -1,0 +1,197 @@
+{
+  "reviewDate": "2026-10-24",
+  "reviewer": "independent-content-and-visual-review",
+  "stage": "final-encoded-silent",
+  "status": "pass_sampled_local_fixes",
+  "meaning": "V1–V4在前一编码的32帧空间复核中关闭；本轮仅作兼容性重编码后的3帧文字/色彩复核，未重新做32帧空间审查。不等于全片逐帧、听音或用户审美验收通过。",
+  "inputVideo": "out/final-silent.mp4",
+  "videoSha256": "B18FA32CE907AE8A30C2BD9DE158BBFC6B3F6437E30D7F1351BD7CE0122702B8",
+  "previousVideoSha256": "9FFED57B1DD5B393DA84F63C635D70FFF6C75C293AD45D968383FDBFEA0F0CCE",
+  "geometryReviewVideoSha256": "9FFED57B1DD5B393DA84F63C635D70FFF6C75C293AD45D968383FDBFEA0F0CCE",
+  "observedFiles": [
+    "qa/final-board-1.jpg",
+    "qa/final-board-2.jpg",
+    "qa/final-board-3.jpg",
+    "qa/final-board-4.jpg",
+    "qa/final-board-5.jpg",
+    "qa/final-board-6.jpg",
+    "qa/final-frame-times.json",
+    "qa/final-frames/00.jpg",
+    "qa/final-frames/11.jpg",
+    "qa/final-frames/30.jpg"
+  ],
+  "observedTimesSeconds": [
+    8,
+    13,
+    22,
+    28,
+    28.8,
+    29,
+    29.1,
+    29.25,
+    29.4,
+    29.5,
+    37,
+    53,
+    60,
+    62,
+    62.25,
+    62.5,
+    65,
+    69,
+    76,
+    79.4,
+    79.6,
+    79.7,
+    79.8,
+    79.9,
+    80,
+    80.1,
+    80.3,
+    80.5,
+    85,
+    94,
+    99,
+    104
+  ],
+  "actualEncodedFramesSeen": 32,
+  "currentEncodingFramesSeen": 3,
+  "samplingNote": "32为此前几何审查看到的独立时间点数；新编码只复看其中8、53、99秒三个代表时间点。",
+  "allSixBoardsSeen": true,
+  "mediaProbe": {
+    "durationSeconds": 105.566667,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "audioStreams": 0,
+    "pixelFormat": "yuv420p",
+    "colorRange": "tv",
+    "colorSpace": "bt709",
+    "colorTransfer": null,
+    "colorPrimaries": null,
+    "metadataNote": "ffprobe确认bt709矩阵、tv范围、yuv420p；本次输出未报告color_transfer和color_primaries，因此不将它们写成已验证标签。"
+  },
+  "limitedEncodingRecheck": {
+    "status": "pass_three_representative_frames",
+    "reason": "制作方仅作像素格式/色彩范围兼容性重编码，未改时间线或对象几何；本次按此有限变更范围检查。",
+    "observedFiles": [
+      "qa/final-frames/00.jpg",
+      "qa/final-frames/11.jpg",
+      "qa/final-frames/30.jpg"
+    ],
+    "observedTimesSeconds": [
+      8,
+      53,
+      99
+    ],
+    "observations": [
+      "8秒：纸色、深色字、蓝色现价和橙色损益仍可区分；100/40/60及字幕未见乱码、裁切或明显重编码色块。",
+      "53秒：论文题头、10,000账户与研究范围清楚，蓝底白字和米色底黑字对比正常。",
+      "99秒：收尾文字、60元圆盘和历史买入注释完整，未见明显异常偏色、通道反转或字形破坏。"
+    ],
+    "notClaimed": "未作仪器色彩校准、逐像素对比、全片播放或重新验证所有接点；微小颜色变化不能凭三个缩小抽帧判定完全无差异。"
+  },
+  "issueVerification": [
+    {
+      "id": "V1",
+      "status": "closed_in_observed_frames",
+      "timesSeconds": [
+        28.8,
+        29,
+        29.1,
+        29.25,
+        29.4,
+        29.5
+      ],
+      "before": "29.00秒前后大标题叠印。",
+      "after": "旧标题先退去，29.00秒为无大标题的短交接，29.25秒新标题进入；未见前后大标题同时重叠。原有账单与60元圆盘持续运动。"
+    },
+    {
+      "id": "V2",
+      "status": "closed_in_observed_frames",
+      "timesSeconds": [
+        79.4,
+        79.6,
+        79.7,
+        79.8,
+        79.9,
+        80,
+        80.1,
+        80.3,
+        80.5
+      ],
+      "before": "80.00秒票据翻面遮挡成本标题。",
+      "after": "票据收窄和翻回正面时新标题尚未出现；80.1秒标题开始淡入，80.3–80.5秒完整可读，票据边缘不再覆盖字形。"
+    },
+    {
+      "id": "V3",
+      "status": "closed_in_observed_frames",
+      "timesSeconds": [
+        22,
+        28
+      ],
+      "before": "未来路径线穿过甲乙共用路径的说明文字。",
+      "after": "说明移动至两条分支与结果标签下方，改为同一情景下每股变化相同的准确表述；线与文字不再交叉，字幕也未覆盖说明。"
+    },
+    {
+      "id": "V4",
+      "status": "closed_in_observed_frames",
+      "timesSeconds": [
+        94,
+        99,
+        104
+      ],
+      "before": "100元水平虚线位于60元圆盘下方，可能被误读为反向价格刻度。",
+      "after": "虚线已改为有边框的‘账单备注：历史买入100元’，明确承担注释功能，不再伪装成价格坐标线。"
+    }
+  ],
+  "followupObservations": [
+    {
+      "id": "O1",
+      "status": "partially_improved_limitation_retained",
+      "timesSeconds": [
+        62.25,
+        62.5,
+        65,
+        69,
+        76
+      ],
+      "observedChange": "票据背面先仅显示原判断和旧理由；65秒新证据进入，69秒旧理由划线且更新提问出现，与字幕讲述顺序更接近。",
+      "remainingLimit": "核心内容仍是泛化检查清单，未增加具体新证据改变某项判断的实质案例；不把分步文字呈现称作清单化问题完全解决。"
+    },
+    {
+      "id": "O2",
+      "status": "non_blocking",
+      "timesSeconds": [
+        53,
+        60
+      ],
+      "observation": "研究题头、10,000账户、1987–1993及美国折扣券商清楚；来源行仍是较小的辅助文字。完整来源表需要继续随工程保留。"
+    },
+    {
+      "id": "O3",
+      "status": "not_a_long_form_validation",
+      "observation": "本片保持账单、现价与论文材料的统一视觉，不能由本章节直接推定8–10分钟全片素材组织和持续观看体验已经验证。"
+    }
+  ],
+  "regressionChecksInObservedFrames": [
+    "100、40、60和-40/+20仍对应正确，原始假设与每股边界保留。",
+    "37秒百分比计算仍为40/100=40%和40/60≈66.7%。",
+    "研究段保持行为观察与原因区分，样本资料未改变。",
+    "票据翻面未见文字镜像；主要字幕在抽样帧中未出画面或与主对象重叠。",
+    "税费、期限与组合边界及结尾开放问题仍保留。"
+  ],
+  "coverageLimits": {
+    "fullVideoPlayedContinuously": false,
+    "everyFrameInspected": false,
+    "audioListened": false,
+    "voiceTimingVerifiedByEar": false,
+    "mobilePhysicalDeviceChecked": false,
+    "nativeEditorRetested": false,
+    "nativeEditorNote": "用户已说明自行手动验证，本轮独立审查不要求额外原生编辑器UI复验。",
+    "userAestheticAcceptance": "not_asserted",
+    "note": "6号拼版下半部为未使用的拼版背景，不作为视频黑场判断。V1–V4的32帧空间证据绑定previousVideoSha256；当前videoSha256另有3帧兼容性复核，范围不可混淆。"
+  },
+  "remainingBlockingVisualIssuesInSample": [],
+  "modifications": "仅创建并更新本审查记录，未修改实现或媒体。"
+}

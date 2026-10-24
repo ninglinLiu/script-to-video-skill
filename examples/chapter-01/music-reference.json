@@ -1,0 +1,35 @@
+{
+  "creator": "VibeVerse . 脑洞宇宙",
+  "title": "vibe知识大赏｜15亿次心跳",
+  "sourceUrl": "https://www.douyin.com/video/7694928441375739172",
+  "userProvidedUrl": "https://v.douyin.com/vX87XYIgSnc/",
+  "userSelected": true,
+  "videoSeconds": 157.433333,
+  "audioSeconds": 157.466094,
+  "sourceLabel": "平台标为创作的原声；非已确认曲名的独立母带",
+  "distribution": "local_only_not_bundled",
+  "reason": "No redistribution license established for reference audio.",
+  "localUse": {
+    "selectionSeconds": [
+      0,
+      105.566667
+    ],
+    "loop": false,
+    "musicLUFS": -27,
+    "ducking": true
+  },
+  "inspection": {
+    "method": "Offline ASR on four sampled spans plus full-track scan; positive control on our narration succeeded.",
+    "observation": "No Chinese explanatory narration recognized. Auto language scan produced low-confidence repetitive foreign-language labels, not a reliable transcript or song identification.",
+    "humanListening": false,
+    "cleanInstrumentalMasterConfirmed": false
+  },
+  "history": [
+    {
+      "reference": "rtiaho / 2026 edit",
+      "status": "superseded_by_user",
+      "correction": "The fetched 6.2s platform clip did not establish full-song duration. Short-loop mix not selected."
+    }
+  ],
+  "importCommand": "python ../../scripts/mix_music.py --video out/final-silent.mp4 --voice assets/voice-track.wav --music /path/to/authorized-music.mp3 --output local-only/final-with-music.mp4 --report local-only/music-mix.json"
+}

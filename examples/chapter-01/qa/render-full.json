@@ -1,0 +1,28 @@
+{
+  "mode": "final",
+  "seconds": 208.813,
+  "composition": {
+    "id": "chapter",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "durationInFrames": 3167,
+    "props": {
+      "captions": true
+    },
+    "defaultProps": {
+      "captions": true
+    },
+    "defaultCodec": null,
+    "defaultOutName": null,
+    "defaultVideoImageFormat": null,
+    "defaultPixelFormat": null,
+    "defaultProResProfile": null,
+    "defaultSampleRate": null
+  },
+  "frameRange": [
+    0,
+    3166
+  ],
+  "output": "../out/final-silent.mp4"
+}

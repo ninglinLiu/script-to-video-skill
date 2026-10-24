@@ -1,0 +1,86 @@
+{
+  "reviewDate": "2026-10-24",
+  "reviewer": "independent-content-review",
+  "status": "approved_for_production",
+  "scope": "最终中文逐字稿的事实、算术、论证和投资教育边界；不含配音听感、字幕实际对齐、画面实现、节奏或审美验收",
+  "reviewedFiles": [
+    {
+      "path": "source/draft.txt",
+      "sha256": "943D74C81327C8E3B31AF4AF53C7EEAD2FE84491830500728ABB6AD19BFD6501"
+    },
+    {
+      "path": "source/script.json",
+      "sha256": "36606B2F975191DA615E00F26C91C5864E9407FA6E213C797EF84AF0B016FD43"
+    }
+  ],
+  "consistency": {
+    "draftAndScriptSpokenTextMatch": true,
+    "chapterCount": 7,
+    "chineseCharacterCount": 534
+  },
+  "blockingIssues": [],
+  "checks": [
+    {
+      "chapter": "accounts",
+      "result": "pass",
+      "reason": "甲乙的反应作为构造例子可成立，没有宣称所有亏损者或盈利者必然如此；人物行为不是实证结论。"
+    },
+    {
+      "chapter": "future",
+      "result": "pass",
+      "reason": "明确固定持仓数量和其他条件，只改变买入价；相同资产的市场路径不因个人历史成本而分叉。此处不主张两人的合理决策必然相同。"
+    },
+    {
+      "chapter": "recovery",
+      "result": "pass",
+      "reason": "-40%与+66.7%正确且保留约数；说明基数变动，没有将回本涨幅当作未来概率、时间或必然价格预测。"
+    },
+    {
+      "chapter": "evidence",
+      "result": "pass",
+      "sourceIds": [
+        "S1",
+        "S2"
+      ],
+      "reason": "10,000账户与行为方向符合Odean1998；限定为这批投资者，没有把统计口径说成人数比例；保留锚定以外的可能解释，没有混同损失厌恶、锚定与处置效应。"
+    },
+    {
+      "chapter": "decision",
+      "result": "pass",
+      "sourceIds": [
+        "S4"
+      ],
+      "reason": "提供证据、期限、集中度、承受力与替代方案的检查方法，而非规定卖出。顺序属于本片编辑性建议，不宜另行宣传为经实验验证的干预方法。"
+    },
+    {
+      "chapter": "boundary",
+      "result": "pass",
+      "sourceIds": [
+        "S4",
+        "S5"
+      ],
+      "reason": "正确保留成本的记账、税务和个人约束意义；‘可能影响税费’没有错误套用统一税制。"
+    },
+    {
+      "chapter": "return",
+      "result": "pass",
+      "reason": "结尾是开放自查问题，并用‘可能’限制心理推断；前文已给现实约束，因此没有导向不想重买就立即卖的绝对建议。"
+    }
+  ],
+  "requiredPresentationBoundaries": [
+    "开场画面标注‘原创假设例子’；100/40/60以及亏40/赚20均为每股金额，避免与任意数量总持仓混淆。可用‘每股’或‘均以1股示意’简短标注。",
+    "research画面标注‘Odean, 1998｜美国折扣券商｜1987–1993｜10,000账户’，不让观众误认为当前中国市场统计。",
+    "若画面使用14.8%和9.8%，分别标注盈利/亏损兑现比例PGR/PLR和简要口径；正文已不口播比例，不能额外出现人数占比或收益率图例。",
+    "future若展示72/48等分支，标明假设情景，不画成概率确定的预测；没有概率数据时不擅加50%等数字。",
+    "保持价格单位和百分比的基数对应，100与60使用同一数值尺度；不得用动画把‘需要涨66.7%’变成‘必然上涨66.7%’。",
+    "后续如改论断、数字或结论，需要更新本审查；仅factsStatus或纯格式变化不改变已审的文稿语义。"
+  ],
+  "reasoningAssessment": {
+    "progression": "冲突例子→历史与未来分离→基数解释→实证与因果边界→决策检查→现实反例→回到起始问题。",
+    "strength": "结论受到成本仍有用途的反例约束，保留了论证阻力；不靠三点口号或绝对交易建议收尾。",
+    "limit": "这是90–150秒单章节内容审查通过，不等于长视频体系、自动化流水线或用户审美验收通过。"
+  },
+  "modifications": "未修改source/draft.txt或source/script.json；仅创建本审查记录。",
+  "ttsAllowed": true,
+  "publicPackagingNote": "factsStatus reference path adjusted only; reviewed spoken text unchanged. Historical script.json hash retained as production record."
+}

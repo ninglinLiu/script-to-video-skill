@@ -1,0 +1,246 @@
+[
+  {
+    "id": "accounts",
+    "start": 0,
+    "end": 14.934,
+    "duration": 14.934,
+    "objectId": [
+      "receipt-A",
+      "receipt-B",
+      "price-60"
+    ],
+    "before": "同一股票现价60，两张买入账单100与40",
+    "after": "先看现价，再依旁白落入两张账单；两种出售理由盖章",
+    "entry": "参照前镜对象状态；场景文字先退后进",
+    "exit": "账单保持A/B身份，向后缩小；60留在视觉中心",
+    "nextObject": [
+      "receipt-A",
+      "receipt-B",
+      "price-60"
+    ],
+    "numericInvariant": "金额为每股原创假设，不是实验数据",
+    "cueRange": [
+      0,
+      9
+    ],
+    "verificationTime": 7.47,
+    "informationGain": "让观众先发现：只换历史账单，卖出理由就不同",
+    "sourceIds": [
+      "C1"
+    ],
+    "cue": [
+      0,
+      9
+    ]
+  },
+  {
+    "id": "future",
+    "start": 14.934,
+    "end": 28.832291,
+    "duration": 13.898291000000002,
+    "objectId": [
+      "receipt-A",
+      "receipt-B",
+      "price-60"
+    ],
+    "before": "历史账单退出前景，同一60资产留下",
+    "after": "从同一60分出72和48两个假设情景；两人的每股变化一致",
+    "entry": "参照前镜对象状态；场景文字先退后进",
+    "exit": "60沿确定曲线移到下一段价格标尺的60位置",
+    "nextObject": [
+      "receipt-A",
+      "price-60",
+      "baseline-100"
+    ],
+    "numericInvariant": "情景非预测；同股同权、同股数，暂不计其他条件",
+    "cueRange": [
+      10,
+      16
+    ],
+    "verificationTime": 21.88,
+    "informationGain": "把历史盈亏与未来价格变化拆开",
+    "sourceIds": [
+      "C1"
+    ],
+    "cue": [
+      10,
+      16
+    ]
+  },
+  {
+    "id": "recovery",
+    "start": 28.832291,
+    "end": 44.626791,
+    "duration": 15.794499999999996,
+    "objectId": [
+      "receipt-A",
+      "price-60",
+      "baseline-100"
+    ],
+    "before": "60与100置于同一垂直标尺",
+    "after": "下行40÷100；上行40÷60；先呈箭头再露分母与百分数",
+    "entry": "参照前镜对象状态；场景文字先退后进",
+    "exit": "数值算例淡出，引入真实论文；保留假设与研究的明确分界",
+    "nextObject": [
+      "paper-S1",
+      "sample-count"
+    ],
+    "numericInvariant": "100在上60在下；−40%与+66.7%来自同一数据",
+    "cueRange": [
+      17,
+      26
+    ],
+    "verificationTime": 36.73,
+    "informationGain": "解释为什么回本线记录过去，却没有提供未来上涨理由",
+    "sourceIds": [
+      "C2"
+    ],
+    "cue": [
+      17,
+      26
+    ]
+  },
+  {
+    "id": "evidence",
+    "start": 44.626791,
+    "end": 61.618291,
+    "duration": 16.991500000000002,
+    "objectId": [
+      "paper-S1",
+      "sample-count"
+    ],
+    "before": "切入真实Odean论文题头，原创算例暂时退场",
+    "after": "10,000账户与样本期出现；行为模式与原因解释分开",
+    "entry": "参照前镜对象状态；场景文字先退后进",
+    "exit": "论文退出，原账单A回到前景翻面；研究没有变成虚构个体证据",
+    "nextObject": [
+      "receipt-A-back",
+      "evidence",
+      "constraints",
+      "alternatives"
+    ],
+    "numericInvariant": "10,000不是实验人数；年份与地区限定；不使用14.8/9.8以免分母误读",
+    "cueRange": [
+      27,
+      36
+    ],
+    "verificationTime": 53.12,
+    "informationGain": "增加实证依据，同时阻止把所有动机归为锚定",
+    "sourceIds": [
+      "S1",
+      "S2"
+    ],
+    "cue": [
+      27,
+      36
+    ]
+  },
+  {
+    "id": "decision",
+    "start": 61.618291,
+    "end": 79.436083,
+    "duration": 17.817791999999997,
+    "objectId": [
+      "receipt-A-back",
+      "evidence",
+      "constraints",
+      "alternatives"
+    ],
+    "before": "同一账单翻到背面",
+    "after": "新证据进入；旧理由被划掉；依旁白出现约束与替代比较",
+    "entry": "参照前镜对象状态；场景文字先退后进",
+    "exit": "A翻回正面，B重新入场，检验成本信息的合理用途",
+    "nextObject": [
+      "receipt-A",
+      "receipt-B",
+      "price-60"
+    ],
+    "numericInvariant": "问题清单是教育性检查框架，不是自动买卖规则",
+    "cueRange": [
+      37,
+      49
+    ],
+    "verificationTime": 70.53,
+    "informationGain": "把“别看成本”改为“说明你从今天持有的理由”",
+    "sourceIds": [
+      "S4",
+      "S5"
+    ],
+    "cue": [
+      37,
+      49
+    ]
+  },
+  {
+    "id": "boundary",
+    "start": 79.436083,
+    "end": 92.868291,
+    "duration": 13.432208000000003,
+    "objectId": [
+      "receipt-A",
+      "receipt-B",
+      "price-60"
+    ],
+    "before": "两张成本账单重新进入现实条件",
+    "after": "账目税费与期限组合分居两侧；同资产可以对应不同合理决定",
+    "entry": "参照前镜对象状态；场景文字先退后进",
+    "exit": "60保持；历史成本缩为账单备注，回到开头的问题",
+    "nextObject": [
+      "receipt-A",
+      "receipt-B",
+      "price-60",
+      "cost-note"
+    ],
+    "numericInvariant": "成本可影响核算和税务；不做地区具体税率断言",
+    "cueRange": [
+      50,
+      56
+    ],
+    "verificationTime": 86.15,
+    "informationGain": "提供真正反例，限制过度结论",
+    "sourceIds": [
+      "S4",
+      "S5"
+    ],
+    "cue": [
+      50,
+      56
+    ]
+  },
+  {
+    "id": "return",
+    "start": 92.868291,
+    "end": 105.56666666666666,
+    "duration": 12.698375666666664,
+    "objectId": [
+      "receipt-A",
+      "receipt-B",
+      "price-60",
+      "cost-note"
+    ],
+    "before": "重见同一现价与两张账单",
+    "after": "提出何种未来判断会在回本时改变；历史100只作备注",
+    "entry": "参照前镜对象状态；场景文字先退后进",
+    "exit": "章节可独立结束；后续从“需要什么新证据”继续",
+    "nextObject": [
+      "receipt-A",
+      "receipt-B",
+      "price-60",
+      "cost-note"
+    ],
+    "numericInvariant": "100备注不再画成低于60的价格坐标",
+    "cueRange": [
+      57,
+      63
+    ],
+    "verificationTime": 99.22,
+    "informationGain": "回收开头悬念，以条件判断结束",
+    "sourceIds": [
+      "C6"
+    ],
+    "cue": [
+      57,
+      63
+    ]
+  }
+]

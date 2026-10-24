@@ -58,6 +58,22 @@ episode/
 
 `qa/production-review.json` 须包含 `status: "reviewed_with_fixes"`、`reviewedFinalSha256`（与最终有声 MP4 完整文件一致），以及非空 `framesReviewed`。记录实际时间码、问题和修复，不把示例文案复制成审查完成声明。该检查只验证记录及哈希一致，不验证人的行为。
 
-`task-short` 还要求 `qa/editor-import.json` 包含 `project`（相对 episode 的真实工程路径）、`openedSuccessfully: true`、`editor`（`Premiere Pro`、`Jianying` 或 `Final Cut Pro`）。必须实际导入成功后才填写；脚本不会启动编辑器验证。`extended` 将该项作为可选检查，未提供会记录失败，但不阻断扩展片模式。
+`task-short`默认要求`qa/editor-import.json`含真实工程路径、`openedSuccessfully: true`及编辑器名称，实际导入后才填写。`extended`和`chapter-proof`将此项单独记录，不阻断该模式。
+
+用户明确已手动验证并要求不再复验时，用以下记录表达，不能把`openedSuccessfully`伪造为true。验收器分别报告“未由Agent验证新文件”和“用户免除重复验证”，不会再把启动编辑器列为前置阻塞：
+
+```json
+{
+  "status": "user_reported_already_verified",
+  "validationOwner": "user",
+  "repeatValidationWaived": true,
+  "userInstruction": "填写真实用户要求，不复制示例冒充授权",
+  "verifiedScope": "用户所说的工作流或具体文件范围",
+  "openedSuccessfully": null,
+  "agentRepeated": false
+}
+```
+
+`chapter-proof`规格为90–150秒、1920×1080、30fps、H.264/YUV420p、单AAC音轨，采用CRF质量控制。只要求可读的正码率记录，不设8Mbps硬下限；画面质量仍需实际检查。其他模式的8Mbps条件保持。完整案例见`examples/chapter-01`，目录遵循本协议；原始稿件哈希大小写不影响比较。
 
 报告中 `technical_and_producer_checks_passed` 仅表示代码列出的技术和记录门槛通过；`userAestheticAcceptance` 与 `universalPipelineValidated` 不会因此被设为通过。

@@ -1,0 +1,83 @@
+{
+  "id": "editorial-landscape-chapter-v1",
+  "status": "example_baseline_not_aesthetic_approval",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "palette": {
+    "paper": "#F5EFDE",
+    "ink": "#112B37",
+    "primary": "#174ACC",
+    "accent": "#EF643E",
+    "positive": "#167D6A",
+    "highlight": "#DDEA6B"
+  },
+  "fonts": {
+    "body": "NotoSansSC-VF.ttf",
+    "headlines": "NotoSerifSC-VF.ttf",
+    "numbers": "Anton.woff"
+  },
+  "typography": {
+    "headlinePx": [
+      62,
+      70
+    ],
+    "bodyPx": [
+      25,
+      43
+    ],
+    "subtitlePx": 36,
+    "subtitleMaxLines": 2,
+    "subtitleMaxGroupChineseChars": 28
+  },
+  "safeArea": {
+    "left": 120,
+    "right": 120,
+    "contentBottom": 900,
+    "subtitleTop": 932
+  },
+  "voice": {
+    "name": "zh-CN-YunxiNeural",
+    "rate": "+18%",
+    "timing": "real WordBoundary",
+    "postTempo": false
+  },
+  "motion": {
+    "basis": "pure time function",
+    "primaryTransition": "continuous world-camera or same-object state change",
+    "cameraTransitionSeconds": [
+      0.65,
+      0.95
+    ],
+    "readingHoldSeconds": [
+      2.0,
+      4.0
+    ],
+    "fillerMotionDoesNotCount": true
+  },
+  "semanticPrimitives": [
+    "compare-align",
+    "window-reframe",
+    "partition-regroup",
+    "accumulate-debit",
+    "filter-gate",
+    "reference-shift",
+    "causal-branch",
+    "scale-denominator"
+  ],
+  "scope": "Narrated finance and cognition mechanism explainers. Custom scene implementation still needs Agent authoring; this file is a constraint specification, not a universal renderer.",
+  "reuse": [
+    "examples/chapter-01/工程",
+    "OFL fonts accompanied by notices",
+    "Existing measured voice timeline; rerun only after script changes"
+  ],
+  "avoid": [
+    "switching style by article",
+    "full-screen static cards as default",
+    "random particles without explanatory role",
+    "counting cuts or a model beauty score as proof",
+    "mixing pixel/blackgold/editorial aesthetics in one episode"
+  ]
+}

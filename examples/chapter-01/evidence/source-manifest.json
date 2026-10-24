@@ -1,0 +1,64 @@
+{
+  "article": "一招破解：锚定效应 | 为什么你总是死扛亏损、等回本就卖与过早卖出大牛股？",
+  "author": "凯撒的复利实验室",
+  "source_type": "用户此前提供的完整正文，本地复用",
+  "scope": "成本价陷阱段的独立改编；研究与原创算例另行标记",
+  "delivery": "90–150秒完整横屏章节及可扩展工程；非8–10分钟完整长片",
+  "sourceTextDistributed": false,
+  "sourceScope": "Cost-price section of the complete article supplied by the user; original article not redistributed.",
+  "primarySources": [
+    {
+      "id": "S1",
+      "title": "Odean (1998), Are Investors Reluctant to Realize Their Losses?",
+      "url": "https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/areinvestorsreluctant.pdf",
+      "type": "原始实证论文，作者所在大学公开PDF",
+      "readRange": "摘要；I.A–D概念与解释限制；II样本；III方法；Table I",
+      "locations": "期刊1775页摘要、1777–1779页、1781–1783页；Table I为PDF第9页",
+      "evidence": "10,000个美国折扣券商账户，1987–1993；全样本PGR=0.148，PLR=0.098。论文发现更倾向兑现赢家，同时明确大部分分析未区分前景理论和错误均值回归信念。",
+      "statisticCaveat": "PGR为已兑现盈利/(已兑现盈利+未兑现盈利机会)，PLR对应亏损；分母不同，按发生出售的观察日统计，不是投资者人数比例或收益率。"
+    },
+    {
+      "id": "S2",
+      "title": "SEC Investor Bulletin: Behavioral Patterns of U.S. Investors",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-72",
+      "type": "证券监管机构投资者教育",
+      "readRange": "Disposition Effect条目",
+      "evidence": "处置效应描述过久持有亏损投资、过早出售盈利投资的倾向。它是行为模式名称，不是对每次卖出或持有动机的诊断。"
+    },
+    {
+      "id": "S3",
+      "title": "Kahneman & Tversky (1979), Prospect Theory: An Analysis of Decision under Risk",
+      "url": "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf",
+      "type": "原始理论与选择实验论文，大学公开PDF",
+      "readRange": "摘要、价值函数部分，期刊278–280页",
+      "evidence": "相对于参照点评价得失；等额损失与收益可有不同心理权重。参考点、收益/损失区域的曲率和损失厌恶是不同的理论性质。",
+      "boundary": "不使用“损失永远是收益两倍痛苦”的固定倍数；不把损失厌恶单独等同处置效应的全部解释。"
+    },
+    {
+      "id": "S4",
+      "title": "SEC: Beginners’ Guide to Asset Allocation, Diversification, and Rebalancing",
+      "url": "https://www.investor.gov/additional-resources/general-resources/publications-research/info-sheets/beginners-guide-asset",
+      "type": "证券监管机构投资者教育",
+      "readRange": "Time Horizon、Risk Tolerance、Rebalancing 101",
+      "evidence": "期限、风险承受能力、组合配置影响投资决策；再平衡应考虑交易费用和税务后果。出售赢家也可能是合理再平衡。"
+    },
+    {
+      "id": "S5",
+      "title": "IRS Topic no. 703: Basis of assets",
+      "url": "https://www.irs.gov/taxtopics/tc703",
+      "type": "税务机关说明",
+      "readRange": "股票成本基础和处置损益说明",
+      "evidence": "美国税制中的证券成本基础用于计算处置损益。因此不能说买入成本在任何决策中都毫无意义。",
+      "boundary": "只用于说明成本可能具有税务意义；不把美国税制规则套用于所有地区，不提供具体税率建议。"
+    },
+    {
+      "id": "S6",
+      "title": "Tversky & Kahneman (1974), Judgment under Uncertainty: Heuristics and Biases",
+      "url": "https://www.science.org/doi/10.1126/science.185.4157.1124",
+      "type": "原始研究论文",
+      "readRange": "检索到原文Adjustment and anchoring段；出版商全文直接请求403，大学镜像亦失败",
+      "evidence": "锚定描述初始数值或起点影响后续估计；并非必然只由时间顺序上的第一条信息触发。",
+      "usage": "只作概念背景，不采用该文具体实验数字；核心证据镜头优先S1与S2。"
+    }
+  ]
+}

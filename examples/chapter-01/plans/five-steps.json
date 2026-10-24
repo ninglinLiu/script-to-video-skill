@@ -1,0 +1,82 @@
+[
+  {
+    "step": 1,
+    "name": "原文整理",
+    "result": "保留凯撒完整正文；主要采用编号0079–0081成本价陷阱；151行的“立刻离场”改写而非照搬",
+    "files": [
+      "evidence/source-manifest.json"
+    ],
+    "gate": "输入为用户提供的完整正文；未凭标题猜文",
+    "publicEdition": "Full source text retained in local production only."
+  },
+  {
+    "step": 2,
+    "name": "内容蒸馏",
+    "result": "选择“回本以后什么会改变”作为唯一问题；用同股60元和成本100/40形成可视化矛盾",
+    "candidates": [
+      {
+        "topic": "成本价与回本执念",
+        "choice": "选用",
+        "reason": "能形成具体比较、机制、反例，并有独立实证"
+      },
+      {
+        "topic": "手机号与估值三倍",
+        "choice": "舍弃",
+        "reason": "原文刺激、人群、倍数未可靠对应原研究"
+      },
+      {
+        "topic": "量化机构如何拔锚",
+        "choice": "舍弃",
+        "reason": "普遍化断言多，短章无法建立足够证据"
+      },
+      {
+        "topic": "人生/关系中的锚",
+        "choice": "舍弃",
+        "reason": "范围宽且难把类比当作同一机制"
+      }
+    ]
+  },
+  {
+    "step": 3,
+    "name": "脚本改编与核对",
+    "result": "534汉字、真实语音约104.1秒；独立事实二审批准；原创算例与实证区分",
+    "files": [
+      "source/draft.txt",
+      "evidence/script-review.json",
+      "evidence/fact-review.json"
+    ],
+    "boundaries": [
+      "处置效应是行为模式，不等于锚定的唯一因果证明",
+      "成本仍可能影响税费、期限和组合约束",
+      "不提供立即离场的统一规则"
+    ]
+  },
+  {
+    "step": 4,
+    "name": "分镜与跨镜继承",
+    "result": "7个段落共用账单A/B与现价60；明确对象前后状态、注意力位置、数学不变量和声画落点",
+    "files": [
+      "plans/chapter.json",
+      "工程/src/Chapter.tsx",
+      "assets/timeline.json"
+    ]
+  },
+  {
+    "step": 5,
+    "name": "完整粗剪、内部审查、局部修复、成片",
+    "result": "13秒衔接证明→105.57秒完整粗剪→独立抽样审查→4项必要修复→1080p成片；技术与审美状态分开",
+    "files": [
+      "qa/proof-13s.mp4",
+      "qa/rough-v1.mp4",
+      "qa/independent-visual-review.json",
+      "qa/repair-log.json",
+      "qa/audit.json"
+    ],
+    "limits": [
+      "未外放、未人工听音",
+      "不以105秒单章宣称长视频体系已验证",
+      "用户审美认可待反馈",
+      "原生应用复验依用户最新指令取消"
+    ]
+  }
+]
