@@ -1,0 +1,57 @@
+{
+  "initial": [
+    {
+      "paused": true,
+      "muted": true,
+      "autoplay": false,
+      "src": "out/tree-business.mp4"
+    },
+    {
+      "paused": true,
+      "muted": true,
+      "autoplay": false,
+      "src": "out/tree-learning.mp4"
+    },
+    {
+      "paused": true,
+      "muted": true,
+      "autoplay": false,
+      "src": "out/matrix-price.mp4"
+    },
+    {
+      "paused": true,
+      "muted": true,
+      "autoplay": false,
+      "src": "out/matrix-sharing.mp4"
+    },
+    {
+      "paused": true,
+      "muted": true,
+      "autoplay": false,
+      "src": "out/orbit-signal.mp4"
+    },
+    {
+      "paused": true,
+      "muted": true,
+      "autoplay": false,
+      "src": "out/orbit-value.mp4"
+    }
+  ],
+  "parallelPlayback": [
+    {
+      "muted": true,
+      "currentTime": 0.231172,
+      "paused": false
+    },
+    {
+      "muted": true,
+      "currentTime": 0.208939,
+      "paused": false
+    }
+  ],
+  "missingLocalLinks": [],
+  "javascriptErrors": [],
+  "mobileOverflow": false,
+  "feedbackPersistence": true,
+  "method": "dedicated muted headless browser; does not alter user browser"
+}

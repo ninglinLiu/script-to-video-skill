@@ -8,3 +8,8 @@
 - https://github.com/Kianzzz/xilo-opus-video — 对象状态描述、连续样片和逐帧复核方法。
 
 仓库不附带上述项目的代码或媒体资产，MIT 许可证仅覆盖本仓库原创内容；不授予第三方文章、音乐、字体或视频的使用权。字体名称、TTS 音色及工具名称属于配置或引用，不表示相应资产、服务、凭据已随仓库提供。
+
+
+## 第一批组件
+
+`examples/batch-01/src/upstream/` 来自 Azure12355/weilanx-claude-videos，保留 MIT 声明于该批次 licenses/。`src/local/redshift/` 是此前本地研究代码，非上游代码。字体采用目录内 OFL 许可。原参考 MP4、截图和配乐不分发。

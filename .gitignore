@@ -12,3 +12,9 @@ Thumbs.db
 episodes/
 out/
 qa/
+
+# Reviewed first-batch generated samples and QA evidence are intentional assets.
+!examples/batch-01/out/
+!examples/batch-01/out/*.mp4
+!examples/batch-01/qa/
+!examples/batch-01/qa/**

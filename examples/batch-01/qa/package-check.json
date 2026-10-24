@@ -1,0 +1,11 @@
+{
+  "clean_npm_ci": true,
+  "installed_packages": 184,
+  "typecheck": "passed",
+  "standalone_render": "tree-business: 3 actual stills rendered with clean node_modules",
+  "gallery_check": "passed with six paused no-audio videos",
+  "six_mp4_hashes_match_original": true,
+  "private_path_and_credential_pattern_scan": "passed",
+  "large_file_limit": "all files below 100 MB",
+  "scope": "First-batch source and examples, not the complete article-to-video production engine"
+}

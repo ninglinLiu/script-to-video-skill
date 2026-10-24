@@ -1,0 +1,25 @@
+{
+  "editor": "Jianying Pro",
+  "version": "11.5.0.14471",
+  "platform": "Windows",
+  "environment_checked": true,
+  "native_import_verified": false,
+  "reason": "This turn is the user-requested direction preview. No native project import has yet been performed.",
+  "expected_editability": {
+    "independent_shots": true,
+    "voice_track": true,
+    "subtitle_text": true,
+    "animation_internals": "Remain editable in Remotion source; not automatically converted to native Jianying vector/keyframe layers."
+  },
+  "test_sequence": [
+    "open project",
+    "inspect tracks and media",
+    "change subtitle and clip timing",
+    "save",
+    "close and reopen",
+    "verify edits persisted",
+    "native export and compare"
+  ],
+  "bundled_cli_help": "draft <fetch-feishu-doc|query-content|plan-patch|validate-patch|apply-patch> --input <json> [--output <json>]",
+  "cli_help_read_only": true
+}

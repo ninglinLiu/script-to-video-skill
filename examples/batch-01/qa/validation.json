@@ -1,0 +1,88 @@
+{
+  "status": "technical_checks_passed",
+  "scope": "3 prototype components, 6 generated clips, 4 external reference links",
+  "renders": [
+    {
+      "file": "out/matrix-price.mp4",
+      "duration": 10.0,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "frames": "300",
+      "audio_streams": 0,
+      "full_decode": "passed",
+      "sha256": "7cec164570480232246d25f116c2e67c5a09645605c4f45132b37be1f7e1b58f"
+    },
+    {
+      "file": "out/matrix-sharing.mp4",
+      "duration": 10.0,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "frames": "300",
+      "audio_streams": 0,
+      "full_decode": "passed",
+      "sha256": "1659161f9b8fa74141c6a0543e1df5691c195c448de61a5cb6eee9e77b14683c"
+    },
+    {
+      "file": "out/orbit-signal.mp4",
+      "duration": 10.0,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "frames": "300",
+      "audio_streams": 0,
+      "full_decode": "passed",
+      "sha256": "8a58db11293264e67f9903efee24635a9b7a8dcb9011488351ee59b8ace5efd9"
+    },
+    {
+      "file": "out/orbit-value.mp4",
+      "duration": 10.0,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "frames": "300",
+      "audio_streams": 0,
+      "full_decode": "passed",
+      "sha256": "588794411fb53bb885c7de9d3627d6091eec3661280164f5599b255cb68c705f"
+    },
+    {
+      "file": "out/tree-business.mp4",
+      "duration": 10.0,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "frames": "300",
+      "audio_streams": 0,
+      "full_decode": "passed",
+      "sha256": "03e2636ec18162a518d19e306e5fa14ec8704de2f552485bc351c0f34f581125"
+    },
+    {
+      "file": "out/tree-learning.mp4",
+      "duration": 10.0,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "frames": "300",
+      "audio_streams": 0,
+      "full_decode": "passed",
+      "sha256": "d334246842e4bcd9fbee2191a1929a9f2b43c7b1d6b7c69e748328872354124f"
+    }
+  ],
+  "font_load": "local bundled fonts",
+  "source_provenance": "provenance.json",
+  "native_editor_import": "not_yet_performed",
+  "not_claimed": [
+    "full automatic article adaptation",
+    "reference-quality equivalence",
+    "a completed large component library",
+    "native animation internals in Jianying"
+  ],
+  "user_direction_acceptance": "User accepted this batch direction on 2026-10-24; not universal aesthetic approval."
+}

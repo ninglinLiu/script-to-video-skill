@@ -1,0 +1,46 @@
+{
+  "status": "first_batch_direction_accepted_by_user",
+  "reviewer": "production_agent",
+  "reviewed_files": [
+    "out/matrix-price.mp4",
+    "out/matrix-sharing.mp4",
+    "out/orbit-signal.mp4",
+    "out/orbit-value.mp4",
+    "out/tree-business.mp4",
+    "out/tree-learning.mp4"
+  ],
+  "evidence": [
+    "qa/encoded-contact.jpg",
+    "qa/tree-business-continuous.jpg",
+    "qa/matrix-price-continuous.jpg",
+    "qa/orbit-signal-continuous.jpg"
+  ],
+  "findings": [
+    {
+      "component": "tree",
+      "result": "根节点、分支和高亮路径身份保持；手机尺寸标签无叠字。源二叉树布局保留。",
+      "limits": "布局、分支数和句子长度范围仍有限；未实现 Nico 原片落字再长出分支的全部动作。"
+    },
+    {
+      "component": "matrix",
+      "result": "检查收益方向，修复4.13秒之后说明文字与对方视角箭头时序不对应；最终两条已重渲。",
+      "limits": "自拟分数仅作机制演示。"
+    },
+    {
+      "component": "orbit",
+      "result": "6.30–7.10秒连续帧检查字带退场和主词落稳；无意外黑帧。",
+      "limits": "有缩放、投影与叠化，不能说等同参考原片的三维摄像机或摄影拼贴。"
+    }
+  ],
+  "no_audio_playback": true,
+  "final_output_sha256": {
+    "out/matrix-price.mp4": "7cec164570480232246d25f116c2e67c5a09645605c4f45132b37be1f7e1b58f",
+    "out/matrix-sharing.mp4": "1659161f9b8fa74141c6a0543e1df5691c195c448de61a5cb6eee9e77b14683c",
+    "out/orbit-signal.mp4": "8a58db11293264e67f9903efee24635a9b7a8dcb9011488351ee59b8ace5efd9",
+    "out/orbit-value.mp4": "588794411fb53bb885c7de9d3627d6091eec3661280164f5599b255cb68c705f",
+    "out/tree-business.mp4": "03e2636ec18162a518d19e306e5fa14ec8704de2f552485bc351c0f34f581125",
+    "out/tree-learning.mp4": "d334246842e4bcd9fbee2191a1929a9f2b43c7b1d6b7c69e748328872354124f"
+  },
+  "native_import_verified": false,
+  "user_direction_acceptance": "User accepted this batch direction on 2026-10-24; not universal aesthetic approval."
+}

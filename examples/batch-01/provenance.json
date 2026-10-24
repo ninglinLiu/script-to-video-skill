@@ -1,0 +1,63 @@
+{
+  "upstream_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+  "files": [
+    {
+      "source": "vendor\\weilanx-claude-videos\\src\\library\\anim.ts",
+      "destination": "src/upstream/anim.ts",
+      "origin": "https://github.com/Azure12355/weilanx-claude-videos/tree/fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+      "changes": "unchanged",
+      "source_sha256": "e2913a168ef86fe522ab6b7da4529c0e193afd425e1eb3714d3ccd2d646bd4bc"
+    },
+    {
+      "source": "vendor\\weilanx-claude-videos\\src\\library\\vox\\theme.ts",
+      "destination": "src/upstream/vox/theme.ts",
+      "origin": "https://github.com/Azure12355/weilanx-claude-videos/tree/fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+      "changes": "unchanged",
+      "source_sha256": "02a7e2b58cf5a9f849d6362bcb283f35b34cb4edd90d936f794172c42f92b3bd"
+    },
+    {
+      "source": "vendor\\weilanx-claude-videos\\src\\library\\gilded\\theme.ts",
+      "destination": "src/upstream/gilded/theme.ts",
+      "origin": "https://github.com/Azure12355/weilanx-claude-videos/tree/fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+      "changes": "unchanged",
+      "source_sha256": "3c0907b03f17448cb271ba05817393d6d75278e0d80d1639d49cb7a068303dcf"
+    },
+    {
+      "source": "vendor\\weilanx-claude-videos\\src\\library\\blackgold\\charts.tsx",
+      "destination": "src/upstream/blackgold/charts.tsx",
+      "origin": "https://github.com/Azure12355/weilanx-claude-videos/tree/fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+      "changes": "unchanged",
+      "source_sha256": "c4912158a00ac9252c55673d14a7be636d4d0d481b02f0b08bd9eafb38d0dbdf"
+    },
+    {
+      "source": "vendor\\weilanx-claude-videos\\src\\library\\blackgold\\theme.ts",
+      "destination": "src/upstream/blackgold/theme.ts",
+      "origin": "https://github.com/Azure12355/weilanx-claude-videos/tree/fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+      "changes": "unchanged",
+      "source_sha256": "3a2a75d51b608d8d70b38cc47ef5a72860906b3167359927e83a3dbae01b2c9b"
+    },
+    {
+      "source": "vendor\\weilanx-claude-videos\\src\\library\\gilded\\charts.tsx",
+      "destination": "src/upstream/gilded/tree.tsx",
+      "origin": "https://github.com/Azure12355/weilanx-claude-videos/tree/fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+      "changes": "Extract GoldTree only; unused imports removed; geometry and drawing retained.",
+      "source_sha256": "fcf43dec11a185d57a2f53f48a99ae1c9fba7405322019d7f93fa1a50713ced8"
+    },
+    {
+      "source": "vendor\\weilanx-claude-videos\\src\\library\\redshift\\props.tsx",
+      "destination": "src/local/redshift/props.tsx",
+      "origin": "Earlier local rtiaho study; untracked in vendor, NOT upstream GitHub code.",
+      "changes": "Imports redirected; TypeOrbit gains words and accent inputs; motion retained.",
+      "source_sha256": "b0ffd769087819d463c3d2dd4b11c5e0755d2c61f12b65cd08aec307a081cbd6"
+    },
+    {
+      "source": "vendor\\weilanx-claude-videos\\src\\library\\redshift\\theme.ts",
+      "destination": "src/local/redshift/theme.ts",
+      "origin": "Earlier local rtiaho study; untracked in vendor, NOT upstream GitHub code.",
+      "changes": "Imports redirected; TypeOrbit gains words and accent inputs; motion retained.",
+      "source_sha256": "906545e6955251aca5a778fee0f0813db5200f7f29f18421ed5604f89e929fe3"
+    }
+  ],
+  "public_publish": true,
+  "note": "Upstream MIT subsets and original local code; third-party source MP4s and screenshots excluded. Fonts are redistributed with OFL notices."
+}

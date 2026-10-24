@@ -1,8 +1,50 @@
-# Script to Video Skill
+# Script to Video Skill · 动画组件库
+
+**一个入口、固定风格、内部检查与修复。第一批组件方向已获用户认可。**
+
+## 先看具体动作，再定组件库
+
+**[打开在线可播放对照页 →](https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/)**
+
+页面完整保留双内容对照、来源说明、组件参数与本地选择记录。所有自制小样无音轨、默认暂停。
+
+![第一批六条真实渲染](examples/batch-01/qa/encoded-contact.jpg)
+
+| 组件 | 示例 A（10 秒 MP4） | 示例 B（10 秒 MP4） | 来源 |
+|---|---|---|---|
+| 分支生长与路径追踪 | [利润下降](examples/batch-01/out/tree-business.mp4) | [学习受阻](examples/batch-01/out/tree-learning.mp4) | weilanx GoldTree，MIT |
+| 收益比较与选择箭头 | [降价竞争](examples/batch-01/out/matrix-price.mp4) | [团队共享](examples/batch-01/out/matrix-sharing.mp4) | weilanx PayoffMatrix，MIT |
+| 空间字带与主词落稳 | [信号与噪声](examples/batch-01/out/orbit-signal.mp4) | [价格与价值](examples/batch-01/out/orbit-value.mp4) | 既有 rtiaho 研究版原创代码 |
+
+每组两套内容共用同一动画逻辑。分支树展开原因再沿证据追踪；矩阵先比较收益再显示选择方向；空间字带穿出后停稳主词，用于短促重音。
+
+**[第一批源码与运行说明](examples/batch-01/README.md)** · [六套输入配置](examples/batch-01/src/catalog.ts) · [来源及代码哈希](examples/batch-01/provenance.json) · [技术验证](examples/batch-01/qa/validation.json) · [制作方画面检查](examples/batch-01/qa/producer-review.json)
+
+### 参考的是哪几秒
+
+| 原作 | 时间码 | 借鉴动作 |
+|---|---|---|
+| [Iwanau · 运气的形状](https://www.douyin.com/video/7690344836800913785) | 3.80–7.20s | 同一实体保留轮廓，变成解释模型；待实现 |
+| [Nico · 人生容错率](https://www.douyin.com/video/7697240924837748134) | 8.00–11.20s | 同一节点长出多条路径 |
+| [Iwanau · 为什么中杯卖得最好](https://www.douyin.com/video/7692118707825294713) | 1.80–7.20s | 加入选项后改变比较关系；待实现 |
+| [rtiaho · memories](https://www.douyin.com/video/7695456829056455158) | 1.70–3.50s | 字带、透视和前后遮挡 |
+
+参考作品仅链接引用。原作视频、截图、配乐不随仓库分发；生成小样不宣称与参考同等质量。
+
+### 当前完成到哪里
+
+- 已完成：3 个组件候选、6 条 1080×1920 / 30 fps / 10 秒渲染、双内容参数配置、来源与许可、技术和局部连续帧检查。
+- 已获认可：第一批组件方向；不等于之后所有文章或成片自动通过审美验收。
+- 待完成：扩大组件库、跨新文章端到端回归、剪映/PR 分轨导入与修改后保存重开、原生导出验证。
+- 程序动画内部在 Remotion 源码中编辑；渲染 MP4 不等于剪映原生动画图层。
+
+---
+
+## Skill 工作流
 
 中文知识视频的 Agent 工作流 Skill：固定视觉规则，基于证据改编文稿，设计连续解释动画，由 Agent 在内部检查、修复，再交付配音 MP4、字幕和工程。
 
-**当前提供工作流指令、风格配置和可执行验收器。完整视频生成引擎、TTS 服务、字体、媒体资产及现成动画组件库不包含在仓库中。** 需要与自己的制作工程配合使用；不承诺任意文章首遍完美，也不将技术检测当作审美认可。
+**当前提供工作流指令、风格配置和可执行验收器。现已附第一批 3 组动画组件、6 条渲染小样及所需字体；完整文章生成引擎与 TTS 服务尚未包含。** 需要与自己的制作工程配合使用；不承诺任意文章首遍完美，也不将技术检测当作审美认可。
 
 ## 使用 Skill
 
@@ -49,4 +91,4 @@ python scripts/audit_episode.py --episode /path/to/episode --profile task-short 
 - `assets/style-lock.json`：示例视觉配置；不包含字体文件。
 - `scripts/audit_episode.py`：可独立运行的交付验收器。
 
-实际生产中的动画组件提取、跨新文章回归，以及原生编辑器导入验证仍需在采用方自己的工程中完成。参考项目及使用边界见 [NOTICE.md](NOTICE.md)。本仓库原创部分使用 MIT 许可。
+第一批组件已完成双内容参数化测试；大规模跨新文章回归和原生编辑器导入验证仍未完成。参考项目及使用边界见 [NOTICE.md](NOTICE.md)。本仓库原创部分使用 MIT 许可。
