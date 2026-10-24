@@ -1,0 +1,11 @@
+{
+  "source_id": "disappearing-review",
+  "historical_extract": true,
+  "not_a_new_review": true,
+  "observations": [
+    "连续涨跌的−50% + 50%被改为−50% → +50%，避免混淆算术相加与复合过程。",
+    "只重渲5–9秒，保留前版与声音。",
+    "增长后的150个槽先出现会泄露结果；让槽数随增长展开并重排构图。"
+  ],
+  "limit": "本次为历史记录提炼，未新渲染或重新检查成片。"
+}

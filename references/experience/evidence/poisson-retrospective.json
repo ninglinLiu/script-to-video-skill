@@ -1,0 +1,10 @@
+{
+  "source_id": "poisson-retrospective",
+  "historical_extract": true,
+  "not_a_new_review": true,
+  "observations": [
+    "动作表声明53个动作点，实际9个场景；未来窗口的对齐动作没有落到实现。",
+    "生成分镜的光照、主体重量在代码渲染中丢失；生成图只证明风格方向。"
+  ],
+  "limit": "保留复盘中问题，不宣称本次重新审看或已修复。"
+}

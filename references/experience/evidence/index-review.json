@@ -1,0 +1,42 @@
+{
+  "source_id": "index-review",
+  "historical_extract": true,
+  "not_a_new_review": true,
+  "fixes": [
+    {
+      "problem": "Drift 200 overlapped inner title",
+      "change": "shared bar scale 2.36 to 2.15, maximum height430px; label down49px",
+      "verified": "actual69.17s still"
+    },
+    {
+      "problem": "lime label white lettering low contrast",
+      "change": "automatic dark text on light label backgrounds",
+      "verified": "rerendered actualCapital stills"
+    },
+    {
+      "problem": "unsupported not-equal font glyph",
+      "change": "native SVG paths for unequal symbol",
+      "verified": "actual175.82s still"
+    },
+    {
+      "problem": "loss block crossed numeric labels",
+      "change": "outside conduit with lift, traverse and descent; index readout linked to actual cut",
+      "verified": "fixedflight proof; final-frame readout and weight change consistent"
+    },
+    {
+      "problem": "checklist missing concentration from narration",
+      "change": "added weight row, four questions",
+      "verified": "actual153.05/161.35/167.4s stills"
+    },
+    {
+      "problem": "stock inventory and period-average shares could be confused",
+      "change": "explicit buyback before second period and no within-period share changes",
+      "verified": "mechanism audit and actualCapital stills"
+    },
+    {
+      "problem": "Rolling EPS/PE rounded independently from product, intermediate equality inconsistent",
+      "change": "Quantize displayed factors first and derive product from those factors; reduce decimal numeral size to clear units",
+      "verified": "repaired local segment and final merged valuation12-frame sequence; actual displayed 10.4x30=312 and12x25=300 checked"
+    }
+  ]
+}

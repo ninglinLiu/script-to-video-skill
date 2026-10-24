@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "E01",
+      "title": "语速快仍显慢：先查信息推进",
+      "stages": [
+        "plan",
+        "script",
+        "review",
+        "repair"
+      ],
+      "signals": [
+        "慢",
+        "节奏",
+        "空泛",
+        "AI味",
+        "ai味",
+        "三点论",
+        "pace",
+        "pacing",
+        "thin",
+        "slow"
+      ],
+      "card": "references/experience/cards/E01.md",
+      "sources": [
+        "user-content-feedback",
+        "chapter-review"
+      ],
+      "chars": 388,
+      "sha256": "ba0c2a290d0a266002ef2e0be3413baeb800e91bcd8d57b7136b9d34ff0cdb0a"
+    },
+    {
+      "id": "E02",
+      "title": "有内容但动作空转：压缩等待段",
+      "stages": [
+        "storyboard",
+        "review",
+        "repair"
+      ],
+      "signals": [
+        "落位",
+        "等待",
+        "空转",
+        "拖延",
+        "动画太慢",
+        "motion",
+        "hold",
+        "settle",
+        "slow"
+      ],
+      "card": "references/experience/cards/E02.md",
+      "sources": [
+        "paced-sample"
+      ],
+      "chars": 362,
+      "sha256": "ede324d8e8256a9265a0c61086c4c29f875442797fafe38704fbf0a346be89cf"
+    },
+    {
+      "id": "E03",
+      "title": "文章改编先保住来源与论证边界",
+      "stages": [
+        "plan",
+        "script",
+        "review"
+      ],
+      "signals": [
+        "正文",
+        "标题",
+        "来源",
+        "概念",
+        "深度",
+        "证据",
+        "事实",
+        "article",
+        "evidence",
+        "source",
+        "depth"
+      ],
+      "card": "references/experience/cards/E03.md",
+      "sources": [
+        "index-review",
+        "index-voice",
+        "chapter-review"
+      ],
+      "chars": 414,
+      "sha256": "781c642fd7a442fcd604be49d567177e26f2491f4c12d3222b5e1c8b227d6ddc"
+    },
+    {
+      "id": "E04",
+      "title": "先复用资产，再补真正的视觉缺口",
+      "stages": [
+        "plan",
+        "storyboard",
+        "render",
+        "repair"
+      ],
+      "signals": [
+        "重画",
+        "重新画",
+        "图片",
+        "生成图",
+        "素材",
+        "复用",
+        "asset",
+        "image",
+        "reuse",
+        "art"
+      ],
+      "card": "references/experience/cards/E04.md",
+      "sources": [
+        "full-short",
+        "poisson-retrospective",
+        "user-diversity-request"
+      ],
+      "chars": 452,
+      "sha256": "a9594bc9a0b3ca013c53907f716a7c43107df8a23e845d631e4287507e14dd1f"
+    },
+    {
+      "id": "E05",
+      "title": "跨镜继承对象，同时继承问题",
+      "stages": [
+        "storyboard",
+        "review",
+        "repair"
+      ],
+      "signals": [
+        "连贯",
+        "衔接",
+        "转场",
+        "移镜",
+        "窗口",
+        "门",
+        "handoff",
+        "continuity",
+        "transition",
+        "gate"
+      ],
+      "card": "references/experience/cards/E05.md",
+      "sources": [
+        "frequency-review",
+        "poisson-retrospective",
+        "chapter-review"
+      ],
+      "chars": 436,
+      "sha256": "be4e55b51eb287ad8d85d20f4ef31b9ca020a4938f5f5d8788a95c87c54d8af5"
+    },
+    {
+      "id": "E06",
+      "title": "转场文字与运动包围盒分开处理",
+      "stages": [
+        "storyboard",
+        "review",
+        "repair"
+      ],
+      "signals": [
+        "重叠",
+        "遮挡",
+        "叠字",
+        "标题",
+        "穿过",
+        "overlap",
+        "occlusion",
+        "heading",
+        "collision"
+      ],
+      "card": "references/experience/cards/E06.md",
+      "sources": [
+        "chapter-repair",
+        "chapter-review",
+        "frequency-review"
+      ],
+      "chars": 409,
+      "sha256": "39293059d432e0a300a782ab142270af872c1f6566bc633890d4aaa3e16bd250"
+    },
+    {
+      "id": "E07",
+      "title": "数字正确还要视觉语义正确",
+      "stages": [
+        "script",
+        "storyboard",
+        "review",
+        "repair"
+      ],
+      "signals": [
+        "数字",
+        "分母",
+        "四舍五入",
+        "等式",
+        "公式",
+        "单位",
+        "坐标",
+        "rounding",
+        "math",
+        "number",
+        "axis"
+      ],
+      "card": "references/experience/cards/E07.md",
+      "sources": [
+        "index-review",
+        "chapter-review",
+        "disappearing-review",
+        "frequency-review"
+      ],
+      "chars": 447,
+      "sha256": "1a97f032648a4770aca206b1e001e838794029a241aecf1343e559414c2901b7"
+    },
+    {
+      "id": "E08",
+      "title": "字幕修复看最终字体和整行分配",
+      "stages": [
+        "render",
+        "review",
+        "repair"
+      ],
+      "signals": [
+        "字幕",
+        "断行",
+        "孤字",
+        "字幕带",
+        "ASS",
+        "ass",
+        "caption",
+        "subtitle",
+        "wrap"
+      ],
+      "card": "references/experience/cards/E08.md",
+      "sources": [
+        "frequency-review",
+        "frequency-captions",
+        "full-short"
+      ],
+      "chars": 430,
+      "sha256": "4469ed1366bb4c173515cc116061add60f50163a00fb8ac2d40c5435c877683d"
+    },
+    {
+      "id": "E09",
+      "title": "改稿后重建真实时间线",
+      "stages": [
+        "script",
+        "render",
+        "repair"
+      ],
+      "signals": [
+        "配音",
+        "时长",
+        "词界",
+        "改稿",
+        "重对齐",
+        "voice",
+        "tts",
+        "timing",
+        "duration",
+        "retime"
+      ],
+      "card": "references/experience/cards/E09.md",
+      "sources": [
+        "index-voice",
+        "paced-sample"
+      ],
+      "chars": 402,
+      "sha256": "a5cd8252da7af81d3bbbf6a8c59b470b5e90748f4b97947b61fb4852b23c81a2"
+    },
+    {
+      "id": "E10",
+      "title": "局部重渲要按依赖传播",
+      "stages": [
+        "render",
+        "repair"
+      ],
+      "signals": [
+        "局部",
+        "重渲",
+        "拼接",
+        "缓存",
+        "分段",
+        "rerender",
+        "segment",
+        "cache",
+        "render"
+      ],
+      "card": "references/experience/cards/E10.md",
+      "sources": [
+        "index-segment",
+        "frequency-captions",
+        "disappearing-review"
+      ],
+      "chars": 419,
+      "sha256": "8a7f637cb7360a0f473737163fc2575de6a2e51089b8a899bac578bfa7e2ffe1"
+    },
+    {
+      "id": "E11",
+      "title": "每次修复保留可回退基线",
+      "stages": [
+        "review",
+        "repair"
+      ],
+      "signals": [
+        "越改越糟",
+        "回退",
+        "保留",
+        "基线",
+        "修复",
+        "regression",
+        "rollback",
+        "baseline",
+        "repair"
+      ],
+      "card": "references/experience/cards/E11.md",
+      "sources": [
+        "frequency-review",
+        "chapter-review",
+        "index-segment",
+        "user-operating-preferences"
+      ],
+      "chars": 482,
+      "sha256": "1b60344c99da064de2f166286bc1cd7587404c0668ea26ba3d7bde1ccd444fae"
+    },
+    {
+      "id": "E12",
+      "title": "方向认可、制作方复核与整片认可分开",
+      "stages": [
+        "plan",
+        "review",
+        "delivery"
+      ],
+      "signals": [
+        "认可",
+        "否决",
+        "验收",
+        "自评",
+        "通过",
+        "8分",
+        "approval",
+        "acceptance",
+        "quality",
+        "pass"
+      ],
+      "card": "references/experience/cards/E12.md",
+      "sources": [
+        "rejected-film",
+        "full-short",
+        "chapter-review",
+        "user-operating-preferences"
+      ],
+      "chars": 457,
+      "sha256": "6683b4ec74efcd18d31a2fa571ff7cd6b8419a45a3defbea1be62b0cdcf2b7f6"
+    },
+    {
+      "id": "E13",
+      "title": "长片扩展先组织章节与素材功能",
+      "stages": [
+        "plan",
+        "script",
+        "storyboard",
+        "review"
+      ],
+      "signals": [
+        "长视频",
+        "长片",
+        "章节",
+        "八分钟",
+        "十分钟",
+        "long",
+        "chapter",
+        "documentary"
+      ],
+      "card": "references/experience/cards/E13.md",
+      "sources": [
+        "chapter-review",
+        "user-content-feedback",
+        "user-diversity-request"
+      ],
+      "chars": 427,
+      "sha256": "b27a0225e3aea84cc2f216a22e234e612573a37847ec4f3e16ff5678024abce1"
+    },
+    {
+      "id": "E14",
+      "title": "配乐先认清完整音源，再混音",
+      "stages": [
+        "plan",
+        "render",
+        "repair"
+      ],
+      "signals": [
+        "音乐",
+        "配乐",
+        "原声",
+        "6秒",
+        "6.2",
+        "bgm",
+        "music",
+        "audio",
+        "loop"
+      ],
+      "card": "references/experience/cards/E14.md",
+      "sources": [
+        "user-music-feedback",
+        "poisson-retrospective",
+        "user-operating-preferences"
+      ],
+      "chars": 452,
+      "sha256": "6d936ee2d41efa5e51be1437c99267ff9476bf6bed6281655b88f08c6aa43dd1"
+    },
+    {
+      "id": "E15",
+      "title": "以最终编码检查字体、颜色和语义",
+      "stages": [
+        "render",
+        "review",
+        "repair"
+      ],
+      "signals": [
+        "字体",
+        "缺字",
+        "颜色",
+        "编码",
+        "对比度",
+        "font",
+        "glyph",
+        "color",
+        "encoded"
+      ],
+      "card": "references/experience/cards/E15.md",
+      "sources": [
+        "index-review",
+        "full-short",
+        "chapter-review"
+      ],
+      "chars": 415,
+      "sha256": "014ba07a992af8cafc2d83cadfe426e7207edea3a186b25a652a1a5e9b7ceab7"
+    },
+    {
+      "id": "E16",
+      "title": "多样性按项目选择，不全局锁死画风",
+      "stages": [
+        "plan",
+        "storyboard",
+        "repair"
+      ],
+      "signals": [
+        "风格",
+        "多样",
+        "形式",
+        "剪辑",
+        "切换",
+        "style",
+        "diversity",
+        "format",
+        "editing",
+        "profile"
+      ],
+      "card": "references/experience/cards/E16.md",
+      "sources": [
+        "user-diversity-request",
+        "user-content-feedback",
+        "full-short"
+      ],
+      "chars": 460,
+      "sha256": "eb629cfa1e2cb62273999b1185ee9f5fab4ea424c6ac7e89a8000929d3a2a9af"
+    }
+  ]
+}

@@ -174,9 +174,27 @@
 
 ## Skill 工作流
 
-中文知识视频的 Agent 工作流 Skill：固定视觉规则，基于证据改编文稿，设计连续解释动画，由 Agent 在内部检查、修复，再交付配音 MP4、字幕和工程。
+中文知识视频的 Agent 工作流 Skill：按项目选择视觉、内容形式、时长和剪辑方法，共用证据、资产、时间线与检查方式，由 Agent 在内部制作、检查、修复，再交付配音 MP4、字幕和工程。详见[多样性与项目配置](references/production-profiles.md)。
 
 **提供工作流指令、风格配置、验收器、第一批3组组件与6条小样，以及完整章节的渲染工程、真实配音素材、TTS适配脚本和局部重渲入口。** 外部TTS与渲染运行时按各自条件使用；这不是任意文章自动生成好镜头的确定性程序。 需要与自己的制作工程配合使用；不承诺任意文章首遍完美，也不将技术检测当作审美认可。
+
+## 给下一位Agent的经验入口
+
+[16条决策卡](references/experience/casebook.md)来自已有制作方修复、用户反馈及未解决问题。每条写明：何时使用、先做什么、保留什么、例外、验证与回退、证据范围。不是要求模型通读工作日志。
+
+```sh
+python scripts/experience.py select --stage repair --query "字幕孤字，修后更挤"
+```
+
+默认最多返回三条相关经验；实际应用见[读取、决策记录与防退步方法](references/experience/usage.md)。检索脚本不调用模型或网络，输出有字符上限；记录检查能抓遗漏，不能证明模型理解或审美正确。
+
+- [显慢的两种原因](references/experience/cards/E01.md)：信息不推进与[动作等待](references/experience/cards/E02.md)分开诊断。
+- [字幕修复反而产生孤字行](references/experience/cards/E08.md)：先按最终字体平衡断行，复用不受影响的画面与声音。
+- [跨镜对象与问题继承](references/experience/cards/E05.md)：窗口、路径、证据门等实际例子，动作表不替代实现。
+- [保留最好版本](references/experience/cards/E11.md)：同区间比较候选，不能因某项改善而接受新的事实或画面错误。
+- [验收范围](references/experience/cards/E12.md)：方向认可、制作方抽样和用户整片认可分别记录。
+
+正式制作使用用户选择的高能力主创模型；看图、生成图、配音与渲染能力分别配置。复用已有素材后只补缺口；DeepSeek等模型的移植验证不成为制作前置条件。
 
 ## 使用 Skill
 

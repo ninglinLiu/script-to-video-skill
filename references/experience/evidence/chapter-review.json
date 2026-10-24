@@ -1,0 +1,61 @@
+{
+  "source_id": "chapter-review",
+  "historical_extract": true,
+  "not_a_new_review": true,
+  "issueVerification": [
+    {
+      "id": "V1",
+      "status": "closed_in_observed_frames",
+      "timesSeconds": [
+        28.8,
+        29,
+        29.1,
+        29.25,
+        29.4,
+        29.5
+      ],
+      "before": "29.00秒前后大标题叠印。",
+      "after": "旧标题先退去，29.00秒为无大标题的短交接，29.25秒新标题进入；未见前后大标题同时重叠。原有账单与60元圆盘持续运动。"
+    },
+    {
+      "id": "V2",
+      "status": "closed_in_observed_frames",
+      "timesSeconds": [
+        79.4,
+        79.6,
+        79.7,
+        79.8,
+        79.9,
+        80,
+        80.1,
+        80.3,
+        80.5
+      ],
+      "before": "80.00秒票据翻面遮挡成本标题。",
+      "after": "票据收窄和翻回正面时新标题尚未出现；80.1秒标题开始淡入，80.3–80.5秒完整可读，票据边缘不再覆盖字形。"
+    },
+    {
+      "id": "V3",
+      "status": "closed_in_observed_frames",
+      "timesSeconds": [
+        22,
+        28
+      ],
+      "before": "未来路径线穿过甲乙共用路径的说明文字。",
+      "after": "说明移动至两条分支与结果标签下方，改为同一情景下每股变化相同的准确表述；线与文字不再交叉，字幕也未覆盖说明。"
+    },
+    {
+      "id": "V4",
+      "status": "closed_in_observed_frames",
+      "timesSeconds": [
+        94,
+        99,
+        104
+      ],
+      "before": "100元水平虚线位于60元圆盘下方，可能被误读为反向价格刻度。",
+      "after": "虚线已改为有边框的‘账单备注：历史买入100元’，明确承担注释功能，不再伪装成价格坐标线。"
+    }
+  ],
+  "remaining": "62–79秒泛化清单仍在；改为分步显示只算局部改善。",
+  "scope": "32时间点几何审查绑定旧编码；后续兼容性重编码只复看8、53、99秒，不合并宣称全片复核。"
+}

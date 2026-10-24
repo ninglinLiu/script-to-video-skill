@@ -1,0 +1,13 @@
+{
+  "source_id": "index-segment",
+  "historical_extract": true,
+  "not_a_new_review": true,
+  "range": {
+    "from": 3279,
+    "to": 4024,
+    "frames": 746
+  },
+  "framesAfterMerge": 5382,
+  "method": "frame-accurate trim + lossless H264 concat; final master re-encoded once",
+  "originalRawPreserved": true
+}

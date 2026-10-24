@@ -1,0 +1,7 @@
+{
+  "source_id": "rejected-film",
+  "historical_extract": true,
+  "not_a_new_review": true,
+  "userAcceptance": "rejected",
+  "feedback_summary": "用户认为效果仍不合格，要求结合真实参考改善；技术通过不能覆盖否决。"
+}

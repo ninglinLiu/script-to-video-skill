@@ -1,0 +1,10 @@
+{
+  "source_id": "paced-sample",
+  "historical_extract": true,
+  "not_a_new_review": true,
+  "observations": [
+    "屋顶落位从4.55秒前移至1.95秒；后拉和镜框落位压缩；结尾删去等待旁白的空转。",
+    "字幕由本轮配音真实词界生成，没有等比压缩旧字幕。"
+  ],
+  "limit": "制作方连续帧抽样，不代表完整听看验收。"
+}

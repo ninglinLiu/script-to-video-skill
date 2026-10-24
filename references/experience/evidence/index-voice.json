@@ -1,0 +1,26 @@
+{
+  "source_id": "index-voice",
+  "historical_extract": true,
+  "not_a_new_review": true,
+  "speakerPlayback": false,
+  "timeStretching": false,
+  "iterations": [
+    {
+      "scriptChineseCharacters": 857,
+      "rate": "+22%",
+      "voiceSeconds": 167.376,
+      "timelineSeconds": 168.8,
+      "decision": "Too short for requested three minutes. Add conceptual depth on cash opportunity cost, consistent earnings basis, and index versus fund; keep rate."
+    },
+    {
+      "scriptChineseCharacters": 913,
+      "rate": "+22%",
+      "voiceSeconds": 177.984,
+      "timelineSeconds": 179.4,
+      "decision": "Accepted: 179.4 seconds within target, fact-checked script and actual word boundaries."
+    }
+  ],
+  "successfulTTSRequests": 2,
+  "paidAPICalls": 0,
+  "note": "Two successful streamed voice requests in this run; no speaker playback."
+}

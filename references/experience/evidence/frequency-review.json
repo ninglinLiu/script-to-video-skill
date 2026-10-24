@@ -1,0 +1,50 @@
+{
+  "source_id": "frequency-review",
+  "historical_extract": true,
+  "not_a_new_review": true,
+  "issues": [
+    {
+      "time": "17.04 / 32.35 / 142.62",
+      "observed": "Initial numeric list exceeded caption width; first repair produced isolated 1–2 character rows",
+      "fix": "Shared balanced layout: 6–18 characters per multiline row, max 3 rows; re-render only caption band",
+      "verified": "All 52 groups checked for text preservation and line limits, final frame review"
+    },
+    {
+      "time": "25.89",
+      "observed": "Three-down label overlapped total-return label during handoff",
+      "fix": "Separated outgoing and incoming opacity windows",
+      "verified": "Final contact and 12-frame handoff strip"
+    },
+    {
+      "time": "26.66–36.66",
+      "observed": "Chart held unchanged through explanation of evaluation window",
+      "fix": "Observation rectangle moves across same path then expands; account result remains +8%",
+      "verified": "13-second continuous proof and final contact"
+    },
+    {
+      "time": "58.96",
+      "observed": "Adjacent dials/boxes touched; connection line crossed secondary label",
+      "fix": "Increase initial controller spacing, move connector start below label",
+      "verified": "Actual repaired still and final contact"
+    },
+    {
+      "time": "106.56",
+      "observed": "Exponent separated too far from cost factor",
+      "fix": "Use one SVG text with true superscript tspan",
+      "verified": "Final 10000×0.998^20, 9607.51, fee392.49"
+    },
+    {
+      "time": "169–171",
+      "observed": "Evidence originally crossed a static barrier",
+      "fix": "Gate opens before evidence moves and closes afterward",
+      "verified": "Final gate sequence"
+    },
+    {
+      "time": "whole output",
+      "observed": "Previous workflow had no minimum video bitrate enforcement",
+      "fix": "8.5 Mbps CBR master; verify actual stream bitrate≥8Mbps",
+      "verified": "ffprobe and task-aware audit"
+    }
+  ],
+  "userAestheticAcceptance": "pending"
+}

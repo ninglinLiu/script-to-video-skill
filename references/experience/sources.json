@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "note": "Only distilled public production evidence and paraphrased user feedback. Historical records are not a new review. Source labels identify originals; selected extracts are bundled for other agents.",
+  "sources": [
+    {
+      "id": "paced-sample",
+      "kind": "production-record",
+      "label": "节奏样片制作方复核",
+      "source_label": "video-week1/sample-paced-20261018/qa/review.txt",
+      "sha256": "bf1bcda2692120b252a5606ea077839aba2faad934d67dde810eb289b6ab91cc",
+      "scope": "roof/lens/focus连续帧；非完整听看验收",
+      "extract": "references/experience/evidence/paced-sample.json"
+    },
+    {
+      "id": "full-short",
+      "kind": "production-record",
+      "label": "69秒竖屏制作方复核",
+      "source_label": "video-week1/full-short-20261018/qa/review.txt",
+      "sha256": "626bfcf023927038880322fe1482ee7ed19771ba7c99c2f67f41a9f996a31601",
+      "scope": "最终编码抽帧；完整成片用户认可未确认",
+      "extract": "references/experience/evidence/full-short.json"
+    },
+    {
+      "id": "poisson-retrospective",
+      "kind": "retrospective",
+      "label": "泊松过程复盘",
+      "source_label": "vibe-knowledge-test/research/xilo_code_video/LESSONS.txt",
+      "sha256": "8d58de9fc5a304498ea409c4d73270a993df4b1ed23d842bca06cb479810f05d",
+      "scope": "复盘中指出未完成动作；本次不重做观片结论",
+      "extract": "references/experience/evidence/poisson-retrospective.json"
+    },
+    {
+      "id": "index-review",
+      "kind": "production-record",
+      "label": "指数三分钟制作方复核",
+      "source_label": "video-week1/index-machine-20261022/qa/production-review.json",
+      "sha256": "cc49caa846ef28265ba909f85adc598694b72a02fd4d20b61b3d514dbbd88bb1",
+      "scope": "抽帧与局部序列；不宣称用户审美通过",
+      "extract": "references/experience/evidence/index-review.json"
+    },
+    {
+      "id": "index-voice",
+      "kind": "production-record",
+      "label": "指数三分钟配音迭代",
+      "source_label": "video-week1/index-machine-20261022/qa/voice-iterations.json",
+      "sha256": "bd2985ab8bbd58b6e10fc10481fa26d4540480efe8906f953addf2f533723cf5",
+      "scope": "真实时长与请求记录；无外放听音",
+      "extract": "references/experience/evidence/index-voice.json"
+    },
+    {
+      "id": "index-segment",
+      "kind": "production-record",
+      "label": "指数三分钟局部重渲",
+      "source_label": "video-week1/index-machine-20261022/qa/partial-repair.json",
+      "sha256": "b33b3f843adebdee17f04cd380a7f54ae7ecc14e1e2868081020a87ad69c8039",
+      "scope": "帧号与合并记录，不证明普遍可用",
+      "extract": "references/experience/evidence/index-segment.json"
+    },
+    {
+      "id": "frequency-review",
+      "kind": "production-record",
+      "label": "决策频率制作方复核",
+      "source_label": "video-week1/decision-frequency-20261023/qa/production-review.json",
+      "sha256": "9bf7f4ee6a260a960e1680f6c391830fb030f0a97dcfc4b02c069e97aa6e9f60",
+      "scope": "局部修复与连续样片；用户认可待定",
+      "extract": "references/experience/evidence/frequency-review.json"
+    },
+    {
+      "id": "frequency-captions",
+      "kind": "production-record",
+      "label": "决策频率字幕层修复",
+      "source_label": "video-week1/decision-frequency-20261023/qa/subtitle-layer-repair.json",
+      "sha256": "3903f50e59c1912b3cdc4c7964ee52b2534523c298c88aa15810b8b4c7838248",
+      "scope": "仅字幕带重渲的历史实例",
+      "extract": "references/experience/evidence/frequency-captions.json"
+    },
+    {
+      "id": "chapter-review",
+      "kind": "production-record",
+      "label": "106秒章节最终复核",
+      "source_label": "video-week1/anchor-chapter-20261024/qa/final-visual-review.json",
+      "sha256": "61f3135ff8ee8d409ed3c86891575e1c4ac0a838de4b4ee060b621e05fa6527c",
+      "scope": "32帧几何审查与后续3帧编码复核属于不同编码版本",
+      "extract": "references/experience/evidence/chapter-review.json"
+    },
+    {
+      "id": "chapter-repair",
+      "kind": "production-record",
+      "label": "106秒章节修复记录",
+      "source_label": "video-week1/anchor-chapter-20261024/qa/repair-log.json",
+      "sha256": "cb75ea0b768d17ca10b1df854664fb7d82f502527868bb6c8106686e780a756d",
+      "scope": "已修局部遮挡；清单化解释仍未解决",
+      "extract": "references/experience/evidence/chapter-repair.json"
+    },
+    {
+      "id": "disappearing-review",
+      "kind": "production-record",
+      "label": "消失的25元制作方复核",
+      "source_label": "video-week1/disappearing25-20261021/qa/review_log.md",
+      "sha256": "bf61ef709a0aa80fb45813e503fb0bed21942076d26649314563ffd058afe007",
+      "scope": "具体数学语义及网格布局修复；用户验收未确认",
+      "extract": "references/experience/evidence/disappearing-review.json"
+    },
+    {
+      "id": "rejected-film",
+      "kind": "production-record",
+      "label": "价签之外用户否决记录",
+      "source_label": "video-week1/anchor-art-60s-20261021/qa/final-checks.json",
+      "sha256": "55c7a654d42e5cbeb84f5fc92193ba32c87aa7d61f18de16e44c399879b3aaec",
+      "scope": "technicalPass不能覆盖userAcceptance=rejected",
+      "extract": "references/experience/evidence/rejected-film.json"
+    },
+    {
+      "id": "user-content-feedback",
+      "kind": "user-feedback",
+      "label": "用户多轮内容反馈，概括",
+      "observations": [
+        "认可部分视觉方向后仍认为选题不好、内容偏薄，要求更深、更快、更专业。",
+        "组件可复用与技术运行不能证明成片值得持续观看。"
+      ],
+      "scope": "用户问题反馈，不是某个新修复已通过的记录。"
+    },
+    {
+      "id": "user-music-feedback",
+      "kind": "user-feedback",
+      "label": "用户纠正原声只有约6.2秒的判断，概括",
+      "observations": [
+        "已取到的短音频不代表完整作品的配乐长度；需查完整视频、音乐条目和实际音轨。"
+      ],
+      "scope": "不附原视频或音乐。"
+    },
+    {
+      "id": "user-operating-preferences",
+      "kind": "user-feedback",
+      "label": "本项目已明确的操作偏好，概括",
+      "observations": [
+        "静音预览，不外放。",
+        "用户已手动验证既有编辑器流程，不重复要求。",
+        "保留旧版本；方向认可不扩展为整片认可。"
+      ],
+      "scope": "其他用户的偏好须由当前会话确认，不能套用其编辑器验收。"
+    },
+    {
+      "id": "user-diversity-request",
+      "kind": "user-requirement",
+      "label": "2026-10-24：保留多样性、按需经验读取、强模型主创",
+      "observations": [
+        "支持不同文章、风格、时长、剪辑和内容形式。",
+        "复用既有人工介入与修复经验，不从零重画；主要制作继续使用用户选择的强模型。"
+      ],
+      "scope": "新需求与设计依据，不是多样组合已验证的证据。"
+    }
+  ]
+}
