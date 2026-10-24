@@ -1,5 +1,7 @@
 # Script to Video · 视觉素材库与制作档案
 
+这是一个包含制作指令、脚本、素材和案例的 **Agent Skill**，需要能执行工具的 Agent 及视频运行环境。现有案例可复用；新文章的稳定生产、8–10分钟长片和跨模型复现尚未整体验收。详见[任务完成度、环境依赖与换模型说明](references/runtime-and-portability.md)。
+
 **[打开完整在线展厅：43个专题页 →](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/)**
 
 13个制作风格展示 · 35种艺术场景 · 9类解说语法 · 18组历史制作 · 29条历史静音视频，另有第一批6条组件测试与106秒完整章节。16个旧HTML已整理接入；所有网页播放器默认暂停。
@@ -111,15 +113,6 @@
 
 [完整43页目录](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/)同时包含早期版本、并列对照、真实分镜和原HTML整理版。静帧、组件数量与技术通过都不替代用户对成片的认可。
 
-## 视觉资产来源
-
-<img src="assets/weilanx/upstream/docs/assets/project-icon.svg" alt="weilanx project icon" width="80">
-
-- https://github.com/Azure12355/weilanx-claude-videos — 制作风格、复用组件、示例源码和工作流；本次固定提交 `fb2f5e429744470e10b242b84c0f8aeaf00e280a`。
-- https://github.com/alchaincyf/huashu-art-motion — 艺术场景与解说语法的上游及Canvas引擎；版本见来源清单。
-
-版权与缺项范围见[NOTICE](NOTICE.md)。原参考音视频和未授权再分发音乐不在公共素材包。
-
 ---
 
 ## 新增：106秒完整章节及素材
@@ -226,6 +219,7 @@ python scripts/audit_episode.py --episode /path/to/episode --profile task-short 
 ## 仓库内容
 
 - `SKILL.md`：Agent 编排入口与停止条件。
+- `references/runtime-and-portability.md`：原任务完成度、模型与Agent职责、运行环境和跨模型验收条件。
 - `references/production.md`：固定风格、解释动作和内部审查规则。
 - `references/episode-contract.md`：验收器所需的目录和数据协议。
 - `assets/style-lock.json`：示例视觉配置；不包含字体文件。
