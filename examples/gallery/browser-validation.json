@@ -1,0 +1,403 @@
+{
+  "pages": [
+    {
+      "page": "examples/gallery/index.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/style-blackgold.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/style-tactical.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/style-lamplight.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/style-warm-desk.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/style-halftone.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/style-editor-room.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/style-gilded.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/style-gilded-ep23.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/style-vox-timeline.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/style-vox-cut.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/style-pixel-handdrawn.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/style-vector.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/style-pixel-sticker.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/art-01.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/art-02.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/art-03.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/art-04.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/art-05.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/art-06.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/art-07.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/grammar-01.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/grammar-02.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/grammar-03.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-poisson-first.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-poisson-opus.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-poisson-full.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-cognitive-first.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-revision.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-paced.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-first-full.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-style-studies.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-article-studies.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-blackgold-study.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-redshift.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-content-lab.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-anchor-art.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-disappearing25.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-gold-proof.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-gold-full.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-index-machine.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/film-decision-frequency.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    },
+    {
+      "page": "examples/gallery/reuse.html",
+      "status": 200,
+      "desktop_overflow": false,
+      "autoplay": 0,
+      "errors": [],
+      "mobile_overflow": false
+    }
+  ],
+  "playback_samples": [
+    {
+      "page": "examples/gallery/film-poisson-full.html",
+      "initial": {
+        "paused": true,
+        "muted": true,
+        "autoplay": false
+      },
+      "playback": {
+        "time": 0.636887,
+        "width": 1280,
+        "error": null
+      }
+    },
+    {
+      "page": "examples/gallery/film-content-lab.html",
+      "initial": {
+        "paused": true,
+        "muted": true,
+        "autoplay": false
+      },
+      "playback": {
+        "time": 0.620909,
+        "width": 720,
+        "error": null
+      }
+    },
+    {
+      "page": "examples/batch-01/index.html",
+      "initial": {
+        "paused": true,
+        "muted": true,
+        "autoplay": false
+      },
+      "playback": {
+        "time": 0.626103,
+        "width": 1080,
+        "error": null
+      }
+    },
+    {
+      "page": "examples/chapter-01/index.html",
+      "initial": {
+        "paused": true,
+        "muted": true,
+        "autoplay": false
+      },
+      "playback": {
+        "time": 0.624904,
+        "width": 1920,
+        "error": null
+      }
+    }
+  ],
+  "scope": "HTTP load, script errors, overflow at 1440px/390px, paused defaults, sampled silent playback. Does not certify aesthetics."
+}

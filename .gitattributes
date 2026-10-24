@@ -1,3 +1,5 @@
 # Preserve hash-bound manuscript and subtitle bytes across checkouts.
 examples/chapter-01/source/draft.txt -text whitespace=cr-at-eol
 examples/chapter-01/out/subtitles.srt -text whitespace=cr-at-eol
+assets/weilanx/upstream/** -text
+assets/weilanx/canvas/** -text

@@ -20,3 +20,11 @@ MIT applies to original workflow, scripts and original animation code. It does n
 - https://v.douyin.com/vX87XYIgSnc/ — user-selected VibeVerse《15亿次心跳》music reference; original audio/video not bundled.
 
 Reference media and music without an established redistribution license remain local. Public examples include links, provenance and an import/mix command. Sensitive references, credentials, original article caches and complete papers are excluded. Remotion and other runtime dependencies retain their respective licenses.
+
+## 视觉资产扩展（2026-10-24）
+
+`assets/weilanx/upstream/` 是 Azure12355/weilanx-claude-videos 固定提交的未改动已跟踪文件快照；MIT许可全文随包保留，字体仍适用各自OFL。包含13个制作展示、35个艺术场景、9类解说语法、预览与源码。详细版本和逐文件哈希见 `assets/weilanx/provenance.json`。这些上游预览不冒充本仓库作者的独立作品。
+
+`assets/weilanx/canvas/` 的引擎库来自 alchaincyf/huashu-art-motion（MIT），字体OFL。35个场景来自上面的weilanx快照；`index.html`是本仓库的单场景选择适配。两级来源和许可均保留。
+
+`examples/gallery/` 展示我们的历史渲染和整理后的旧HTML，网页副本无音轨。原文章内容、有限研究引文、品牌及第三方名称不因本仓库MIT而改换权属。公众号内容来源、原创算例和研究改编范围以各页说明为准；该归档不是投资建议或当前行情信息。第三方参考原视频、原音轨与未公开实拍不在本次素材包中。

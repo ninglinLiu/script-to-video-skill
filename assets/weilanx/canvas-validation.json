@@ -1,0 +1,390 @@
+{
+  "scope": "Three sampled times per scene; runtime compatibility, not aesthetic acceptance or exhaustive animation review.",
+  "results": [
+    {
+      "id": "01_cave",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "02_egypt",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "03_greek",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "04_roman",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "05_gothic",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "17_ink",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "20_dunhuang",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "34_shadowpuppet",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "06_renaissance",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "32_rembrandt",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "08_impressionism",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "09_postimp",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "28_monet",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "29_seurat",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "10_nouveau",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "11_cubism",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "12_bauhaus",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "18_klimt",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "19_munch",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "22_constructivism",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "23_dali",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "24_hopper",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "30_matisse",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "36_picasso_blue",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "13_pop",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "21_kusama",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "27_kirby",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "31_haring",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "16_2026",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "25_ghibli",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "33_rubberhose",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "35_shinkai",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "14_8bit",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "15_raytrace",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    },
+    {
+      "id": "26_vaporwave",
+      "loaded": true,
+      "sampled_seconds": [
+        0.3,
+        1.3,
+        3.0
+      ],
+      "changed_frames": true,
+      "runtime_errors": []
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+document.querySelectorAll('video').forEach(v=>{v.muted=true;v.autoplay=false;v.pause();v.addEventListener('play',()=>{document.querySelectorAll('video').forEach(o=>{if(o!==v)o.pause()})})});document.querySelector('select[data-nav]')?.addEventListener('change',e=>location.href=e.target.value);

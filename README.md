@@ -1,6 +1,126 @@
-# Script to Video Skill · 从文章到完整章节
+# Script to Video · 视觉素材库与制作档案
 
-**一个入口、固定风格、内部检查与修复。现有完整章节工程与第一批组件库。**
+**[打开完整在线展厅：43个专题页 →](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/)**
+
+13个制作风格展示 · 35种艺术场景 · 9类解说语法 · 18组历史制作 · 29条历史静音视频，另有第一批6条组件测试与106秒完整章节。16个旧HTML已整理接入；所有网页播放器默认暂停。
+
+![weilanx 35种艺术风格总览](assets/weilanx/upstream/docs/assets/styles/art-styles.jpg)
+
+> 上图与下方风格图来自 weilanx / huashu-art-motion 的公开代码预览，归原作者；MIT及字体OFL随素材保留。不是我们的重新创作成果。每张图对应的源码、配方与来源已经存进Skill。
+
+**怎么整理：原样保存 → 蒸馏选择规则 → 对照实际渲染。**
+
+- `assets/weilanx/upstream/`：固定提交导出的778个原版文件，包括组件、50余期示例源码、8个工作流、全部README本地图像和配方。原声、实拍和音乐缺项按上游说明保留，不假装整期媒体齐全。
+- `assets/weilanx/canvas/`：补齐35个艺术场景的运行库和字体，可单独播放；默认暂停、无音频。
+- [选材与接入方法](references/visual-library.md)、[机器目录](assets/weilanx/catalog.json)、[逐文件来源与哈希](assets/weilanx/provenance.json)。一个项目锁定主风格，按比较、分支、传播、证据更新等解释动作选组件。
+- [制作档案](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/#films)：保留成功方向与被否决版本；历史片是完整时长的轻量网页副本，本地原文件未覆盖。
+
+## README全部视觉内容 · 制作风格
+
+下方13个展示均可点进专题页，查看完整配方与对应源码。上游有8套独立风格工具包，展示条目数不等于工具包数。
+
+### [黑金光影](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-blackgold.html)
+
+![黑金光影](assets/weilanx/upstream/docs/assets/styles/blackgold.jpg)
+
+矩阵先显示行动与收益，再用箭头解释选择；同一节点进入分支树。
+
+### [战术屏科普](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-tactical.html)
+
+![战术屏科普](assets/weilanx/upstream/docs/assets/styles/tactical.jpg)
+
+在同一空间重演位置、视线和时间差，再接解释图。
+
+### [灯火史话](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-lamplight.html)
+
+![灯火史话](assets/weilanx/upstream/docs/assets/styles/lamplight.jpg)
+
+同一火光从烽燧到城市网格，地理路径逐段点亮。
+
+### [暖纸工作台](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-warm-desk.html)
+
+![暖纸工作台](assets/weilanx/upstream/docs/assets/styles/warm-desk.jpg)
+
+固定工作台保留卡片身份，卡片换位并让步骤条接住进度。
+
+### [网点档案](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-halftone.html)
+
+![网点档案](assets/weilanx/upstream/docs/assets/styles/halftone.jpg)
+
+资料依次进入案卷，印章对应论证结果，网点形成遮挡转场。
+
+### [协作剪辑台](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-editor-room.html)
+
+![协作剪辑台](assets/weilanx/upstream/docs/assets/styles/editor-room.jpg)
+
+群聊触发画布动作，角色沿时间轴移动同一片段。
+
+### [暗金文献](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-gilded.html)
+
+![暗金文献](assets/weilanx/upstream/docs/assets/styles/gilded.jpg)
+
+年份、文献和逐步绘制的曲线保留稳定对应。
+
+### [暗金音乐短片](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-gilded-ep23.html)
+
+![暗金音乐短片](assets/weilanx/upstream/docs/assets/styles/gilded-ep23.jpg)
+
+锚词在节拍落稳，前一对象接入增长画面。
+
+### [Vox时间长卷](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-vox-timeline.html)
+
+![Vox时间长卷](assets/weilanx/upstream/docs/assets/styles/vox-timeline.jpg)
+
+时间尺承载照片与事件，相机跟随同一条因果线。
+
+### [Vox硬切拼贴](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-vox-cut.html)
+
+![Vox硬切拼贴](assets/weilanx/upstream/docs/assets/styles/vox-cut.jpg)
+
+按旁白切入承担证据任务的资料画面，再回到解释对象。
+
+### [像素手绘演播室](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-pixel-handdrawn.html)
+
+![像素手绘演播室](assets/weilanx/upstream/docs/assets/styles/pixel-handdrawn.jpg)
+
+主持角色把注意力交给图解，道具回到同一桌面。
+
+### [矢量手绘](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-vector.html)
+
+![矢量手绘](assets/weilanx/upstream/docs/assets/styles/vector.jpg)
+
+表情和道具配合旁白动作，固定人物身份贯穿解释。
+
+### [像素贴纸](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-pixel-sticker.html)
+
+![像素贴纸](assets/weilanx/upstream/docs/assets/styles/pixel-sticker.jpg)
+
+角色、贴纸和关键词轮流占据注意力中心。
+
+## 艺术场景与解说语法
+
+35种艺术风格：古代与传统、古典油画、印象派与后印象、现代主义、波普与街头、卡通与动画、数字与像素。每种含预览、配方卡、场景代码及播放入口。详见[七组艺术专题](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/art-01.html)。
+
+![9类解说语法](assets/weilanx/upstream/docs/assets/styles/grammars.jpg)
+
+[科普图解](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/grammar-01.html) · [新闻与数据](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/grammar-02.html) · [节奏与人物](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/grammar-03.html)
+
+## 我们已有的样片和完整片
+
+[泊松过程90秒](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-poisson-full.html) · [三个30秒内容实验](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-content-lab.html) · [红黑穿梭](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-redshift.html) · [价签之外（被否决）](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-anchor-art.html) · [消失的25元](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-disappearing25.html) · [黄金研究完整版](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-gold-full.html) · [指数三分钟](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-index-machine.html) · [看行情还是重做决定](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-decision-frequency.html)
+
+[完整43页目录](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/)同时包含早期版本、并列对照、真实分镜和原HTML整理版。静帧、组件数量与技术通过都不替代用户对成片的认可。
+
+## 视觉资产来源
+
+<img src="assets/weilanx/upstream/docs/assets/project-icon.svg" alt="weilanx project icon" width="80">
+
+- https://github.com/Azure12355/weilanx-claude-videos — 制作风格、复用组件、示例源码和工作流；本次固定提交 `fb2f5e429744470e10b242b84c0f8aeaf00e280a`。
+- https://github.com/alchaincyf/huashu-art-motion — 艺术场景与解说语法的上游及Canvas引擎；版本见来源清单。
+
+版权与缺项范围见[NOTICE](NOTICE.md)。原参考音视频和未授权再分发音乐不在公共素材包。
+
+---
 
 ## 新增：106秒完整章节及素材
 

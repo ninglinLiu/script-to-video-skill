@@ -1,0 +1,839 @@
+{
+  "version": 1,
+  "substantive_pages": 43,
+  "pages": [
+    {
+      "path": "examples/gallery/index.html",
+      "title": "视觉库与制作档案",
+      "type": "home"
+    },
+    {
+      "path": "examples/gallery/style-blackgold.html",
+      "title": "黑金光影",
+      "type": "production"
+    },
+    {
+      "path": "examples/gallery/style-tactical.html",
+      "title": "战术屏科普",
+      "type": "production"
+    },
+    {
+      "path": "examples/gallery/style-lamplight.html",
+      "title": "灯火史话",
+      "type": "production"
+    },
+    {
+      "path": "examples/gallery/style-warm-desk.html",
+      "title": "暖纸工作台",
+      "type": "production"
+    },
+    {
+      "path": "examples/gallery/style-halftone.html",
+      "title": "网点档案",
+      "type": "production"
+    },
+    {
+      "path": "examples/gallery/style-editor-room.html",
+      "title": "协作剪辑台",
+      "type": "production"
+    },
+    {
+      "path": "examples/gallery/style-gilded.html",
+      "title": "暗金文献",
+      "type": "production"
+    },
+    {
+      "path": "examples/gallery/style-gilded-ep23.html",
+      "title": "暗金音乐短片",
+      "type": "production"
+    },
+    {
+      "path": "examples/gallery/style-vox-timeline.html",
+      "title": "Vox时间长卷",
+      "type": "production"
+    },
+    {
+      "path": "examples/gallery/style-vox-cut.html",
+      "title": "Vox硬切拼贴",
+      "type": "production"
+    },
+    {
+      "path": "examples/gallery/style-pixel-handdrawn.html",
+      "title": "像素手绘演播室",
+      "type": "production"
+    },
+    {
+      "path": "examples/gallery/style-vector.html",
+      "title": "矢量手绘",
+      "type": "production"
+    },
+    {
+      "path": "examples/gallery/style-pixel-sticker.html",
+      "title": "像素贴纸",
+      "type": "production"
+    },
+    {
+      "path": "examples/gallery/art-01.html",
+      "title": "古代与传统",
+      "type": "art"
+    },
+    {
+      "path": "examples/gallery/art-02.html",
+      "title": "古典油画",
+      "type": "art"
+    },
+    {
+      "path": "examples/gallery/art-03.html",
+      "title": "印象派与后印象",
+      "type": "art"
+    },
+    {
+      "path": "examples/gallery/art-04.html",
+      "title": "现代主义",
+      "type": "art"
+    },
+    {
+      "path": "examples/gallery/art-05.html",
+      "title": "波普与街头",
+      "type": "art"
+    },
+    {
+      "path": "examples/gallery/art-06.html",
+      "title": "卡通与动画",
+      "type": "art"
+    },
+    {
+      "path": "examples/gallery/art-07.html",
+      "title": "数字与像素",
+      "type": "art"
+    },
+    {
+      "path": "examples/gallery/grammar-01.html",
+      "title": "科普图解",
+      "type": "grammar"
+    },
+    {
+      "path": "examples/gallery/grammar-02.html",
+      "title": "新闻与数据",
+      "type": "grammar"
+    },
+    {
+      "path": "examples/gallery/grammar-03.html",
+      "title": "节奏与人物",
+      "type": "grammar"
+    },
+    {
+      "path": "examples/gallery/film-poisson-first.html",
+      "title": "泊松过程 · 早期30秒",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-poisson-opus.html",
+      "title": "泊松过程 · Opus30秒",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-poisson-full.html",
+      "title": "泊松过程 · 90秒",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-cognitive-first.html",
+      "title": "认知复杂度 · 早期60秒",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-revision.html",
+      "title": "Week1 · 暖纸返工",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-paced.html",
+      "title": "速度迭代 · 小样对照",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-first-full.html",
+      "title": "Week1 · 第一条完整竖屏",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-style-studies.html",
+      "title": "同一内容 · 三种风格",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-article-studies.html",
+      "title": "公众号 · 第一组改编",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-blackgold-study.html",
+      "title": "先别判 · 黑金学习版",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-redshift.html",
+      "title": "别急着定义世界 · 红黑穿梭",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-content-lab.html",
+      "title": "三个新切口 · 30秒样片",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-anchor-art.html",
+      "title": "价签之外 · 60秒艺术样片",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-disappearing25.html",
+      "title": "消失的25元 · 60秒",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-gold-proof.html",
+      "title": "黄金研究 · 五步小样",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-gold-full.html",
+      "title": "黄金研究 · 加深完整版",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-index-machine.html",
+      "title": "指数 · 三分钟扩展",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/film-decision-frequency.html",
+      "title": "看行情，还是重做决定",
+      "type": "history"
+    },
+    {
+      "path": "examples/gallery/reuse.html",
+      "title": "怎样从参考变成可用组件",
+      "type": "method"
+    }
+  ],
+  "imported_html": [
+    {
+      "original_html": "vibe-knowledge-test/productions/poisson_30s/watch.html",
+      "public_html": "examples/gallery/original-poisson-first.html",
+      "source_sha256": "8c96543cddaa16d644e549303afe2542c4d8ab1fb8f35884c50198b5d9de481b",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": []
+    },
+    {
+      "original_html": "vibe-knowledge-test/productions/opus_poisson_30s/watch.html",
+      "public_html": "examples/gallery/original-poisson-opus.html",
+      "source_sha256": "606aefa8c0f1eef05f3601f881918942d2114127fa8cc0af2836a554951819ed",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": []
+    },
+    {
+      "original_html": "vibe-knowledge-test/productions/poisson_90s/watch.html",
+      "public_html": "examples/gallery/original-poisson-full.html",
+      "source_sha256": "e6ac1573c1421cb7afde26ea568d34af4fc9943f1d06a9bbe177f19caf68fbcd",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": []
+    },
+    {
+      "original_html": "vibe-knowledge-test/productions/cognitive_complexity_60s/watch.html",
+      "public_html": "examples/gallery/original-cognitive-first.html",
+      "source_sha256": "ebfe1a8e22723e72a21601f8047d8b62751d86b8d5a9c49b30dc80f22b72bec7",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": []
+    },
+    {
+      "original_html": "video-week1/revision/watch.html",
+      "public_html": "examples/gallery/original-revision.html",
+      "source_sha256": "2c4a4fbccdbb295c976814bfc504644a7317783234b9eb7002897babae402860",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": []
+    },
+    {
+      "original_html": "video-week1/style-studies-20261020/watch.html",
+      "public_html": "examples/gallery/original-style-studies.html",
+      "source_sha256": "7a82bdcf68b7fa7e3039d22ebbd670a834225c9a4b6dbe25944ec9b445e7b033",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": []
+    },
+    {
+      "original_html": "video-week1/article-studies-20261020/watch.html",
+      "public_html": "examples/gallery/original-article-studies.html",
+      "source_sha256": "f2867c622f773e00f7728b6ed7213f324cf0446857cebff5db42c966a7b7d6c6",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": []
+    },
+    {
+      "original_html": "video-week1/weilanx-study-20261020/watch.html",
+      "public_html": "examples/gallery/original-blackgold-study.html",
+      "source_sha256": "f8a60f405517bbea5d4b72283d6ca6c9fb93c4321385b2a1aadaa71c4294df43",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": []
+    },
+    {
+      "original_html": "video-week1/rtiaho-study-20261021/watch.html",
+      "public_html": "examples/gallery/original-redshift.html",
+      "source_sha256": "1fa0e74fd79cdde442f62cfdf7a5a9ea71b78f2ab827ab2fe2b8a006683c17f9",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": []
+    },
+    {
+      "original_html": "video-week1/content-lab-20261021/watch.html",
+      "public_html": "examples/gallery/original-content-lab.html",
+      "source_sha256": "92562a4c63e7e286f4ca38cdc072a355bbc6a718dad8ffb752f5967d4bd5dd1d",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": []
+    },
+    {
+      "original_html": "video-week1/anchor-art-60s-20261021/watch.html",
+      "public_html": "examples/gallery/original-anchor-art.html",
+      "source_sha256": "b41e0a0ce49355bc4872972371e86d41da659df207a4351302679e69cb01ff46",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": []
+    },
+    {
+      "original_html": "video-week1/disappearing25-20261021/watch.html",
+      "public_html": "examples/gallery/original-disappearing25.html",
+      "source_sha256": "3d347a8290abf92104141d6191d049f9f4cb13b7d631d56ce37d6e41bb4458f6",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": []
+    },
+    {
+      "original_html": "video-week1/warsh-gold-20261022/五步执行报告.html",
+      "public_html": "examples/gallery/original-gold-proof.html",
+      "source_sha256": "31c9ce935f34835f1547cbfd933d7e44213d922b4d8275d90af617139bda1398",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": [
+        "examples/gallery/stills/gold-proof/contact-sheet.jpg"
+      ]
+    },
+    {
+      "original_html": "video-week1/warsh-gold-20261022/full-v2/watch.html",
+      "public_html": "examples/gallery/original-gold-full.html",
+      "source_sha256": "9ce1702a988430dd425eee6279a5da5f1176505e29363e3afee3ee494b8e5ca9",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": [
+        "examples/gallery/stills/gold-full/final-contact-1.jpg",
+        "examples/gallery/stills/gold-full/final-contact-2.jpg",
+        "examples/gallery/stills/gold-full/final-contact-3.jpg"
+      ]
+    },
+    {
+      "original_html": "video-week1/index-machine-20261022/watch.html",
+      "public_html": "examples/gallery/original-index-machine.html",
+      "source_sha256": "a70666790ff69956d2cca6697f63e258d085bba813760f9e68a32da3e39d4c7d",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": [
+        "examples/gallery/stills/index-machine/final-contact-1.jpg",
+        "examples/gallery/stills/index-machine/final-contact-2.jpg",
+        "examples/gallery/stills/index-machine/final-contact-3.jpg"
+      ]
+    },
+    {
+      "original_html": "video-week1/decision-frequency-20261023/watch.html",
+      "public_html": "examples/gallery/original-decision-frequency.html",
+      "source_sha256": "699c7c54c3f2166e0815fdedf53bacecd6c13557cf73cbe3669db95915f8ae2f",
+      "changes": [
+        "removed scripts, audio and autoplay",
+        "rewired own video links",
+        "kept local QA stills only",
+        "removed unavailable downloads and local paths"
+      ],
+      "stills": [
+        "examples/gallery/stills/decision-frequency/final-contact-1.jpg",
+        "examples/gallery/stills/decision-frequency/final-contact-2.jpg",
+        "examples/gallery/stills/decision-frequency/final-contact-3.jpg"
+      ]
+    }
+  ],
+  "historical_media": [
+    {
+      "source": "vibe-knowledge-test/productions/poisson_30s/renders/poisson_30s.mp4",
+      "target": "examples/gallery/media/poisson-first-1.mp4",
+      "poster": "examples/gallery/media/poisson-first-1.jpg",
+      "label": "poisson_30s",
+      "source_sha256": "c9654dbe4c712ce4109ed9521ca5ebd31ecaf878f0fad2da1b5b0d7e511eb6f9",
+      "seconds": 30.0,
+      "width": 1280,
+      "height": 720,
+      "bytes": 3699346,
+      "sha256": "9cacde7878eeefb004ff2ce8cac3316d26415511dd39395da7b515475be4fdf4",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "vibe-knowledge-test/productions/opus_poisson_30s/renders/opus_poisson_30s.mp4",
+      "target": "examples/gallery/media/poisson-opus-1.mp4",
+      "poster": "examples/gallery/media/poisson-opus-1.jpg",
+      "label": "opus_poisson_30s",
+      "source_sha256": "83c6a848baebf6f5e8f4d4c565583da618ee9214d985efd2363132c3d3d788cc",
+      "seconds": 30.0,
+      "width": 1280,
+      "height": 720,
+      "bytes": 5504781,
+      "sha256": "8442e77785b0b66f474625746622568873f258022a73e162c4aa665536cfc7f1",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "vibe-knowledge-test/productions/poisson_90s/renders/poisson_90s_full.mp4",
+      "target": "examples/gallery/media/poisson-full-1.mp4",
+      "poster": "examples/gallery/media/poisson-full-1.jpg",
+      "label": "poisson_90s_full",
+      "source_sha256": "390fac5d3ea5c57f2272fd9f23d6dd2259b1d4c918de0e6b4b54511e606b2166",
+      "seconds": 90.0,
+      "width": 1280,
+      "height": 720,
+      "bytes": 3269374,
+      "sha256": "0f28ad5af1d3045390bc67f7811125bd9b18b9693bc43f3524357eb5a82456d2",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "vibe-knowledge-test/productions/cognitive_complexity_60s/renders/cognitive_complexity_60s.mp4",
+      "target": "examples/gallery/media/cognitive-first-1.mp4",
+      "poster": "examples/gallery/media/cognitive-first-1.jpg",
+      "label": "cognitive_complexity_60s",
+      "source_sha256": "b22636b86a2c2c6eb7d3500d0f1402092499f0188e0cf6215a856c1e0b1bed2d",
+      "seconds": 60.0,
+      "width": 1280,
+      "height": 720,
+      "bytes": 706049,
+      "sha256": "9653e19f03ffee900eb6bf54c20d307d54b83b54c176cfc4485b0c8365e90084",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/revision/out/revision_full.mp4",
+      "target": "examples/gallery/media/revision-1.mp4",
+      "poster": "examples/gallery/media/revision-1.jpg",
+      "label": "revision_full",
+      "source_sha256": "d79f5d5faf671fb5b0f4e76c18b62761416c9c89c04a98956c630672fa01e9c7",
+      "seconds": 66.2,
+      "width": 720,
+      "height": 1280,
+      "bytes": 1495470,
+      "sha256": "013c8a71a45b37e5a5e54b9c454930959a2cdf9e77db60f76a0fec30c655a70f",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/revision/previews/plan-a.mp4",
+      "target": "examples/gallery/media/revision-2.mp4",
+      "poster": "examples/gallery/media/revision-2.jpg",
+      "label": "plan-a",
+      "source_sha256": "00261585751961d953e601a0301ff679681791d6370d0499fc6546ec6cd4a24e",
+      "seconds": 12.0,
+      "width": 720,
+      "height": 1280,
+      "bytes": 217680,
+      "sha256": "63e4aaad5f3864926a79749ac8de2b2552e4b79e228130e25a84d70de964093b",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/revision/previews/plan-b.mp4",
+      "target": "examples/gallery/media/revision-3.mp4",
+      "poster": "examples/gallery/media/revision-3.jpg",
+      "label": "plan-b",
+      "source_sha256": "4aedaa00b08e3ad99f79109d80dc97733107a836f6d30a633a227b4a57b20fda",
+      "seconds": 12.0,
+      "width": 720,
+      "height": 1280,
+      "bytes": 220883,
+      "sha256": "7f565040f17d902ad3b5b1d7cc2081858f677963240d6ef4d65e1480a28324e7",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/sample-paced-20261018/out/sample-silent.mp4",
+      "target": "examples/gallery/media/paced-1.mp4",
+      "poster": "examples/gallery/media/paced-1.jpg",
+      "label": "sample-silent",
+      "source_sha256": "3c3db5058780bfd6369ac53fd4c7992c12a28d6264be57abb945daf541a663a6",
+      "seconds": 8.0,
+      "width": 720,
+      "height": 1280,
+      "bytes": 1142709,
+      "sha256": "656ad9693937f0247e911c368cf1415baf481cd0c3115d4b275520d2050e3f4e",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/full-short-20261018/out/video.mp4",
+      "target": "examples/gallery/media/first-full-1.mp4",
+      "poster": "examples/gallery/media/first-full-1.jpg",
+      "label": "video",
+      "source_sha256": "e468ea1ac7ccf198d917e8f730a7a277e0f4b8d9ea56543c8f70e0ae8d172d0f",
+      "seconds": 69.233333,
+      "width": 720,
+      "height": 1280,
+      "bytes": 6794487,
+      "sha256": "6ffb64dc0021b731e4174827f338b4d263c5d06b6d09f00d8ddb6ca3242d9cca",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/style-studies-20261020/out/editorial-silent.mp4",
+      "target": "examples/gallery/media/style-studies-1.mp4",
+      "poster": "examples/gallery/media/style-studies-1.jpg",
+      "label": "editorial-silent",
+      "source_sha256": "7f565d44b0f0d3b5f4f8a4efd74f788c2d18084478d957227b362ec3e0a8b3b2",
+      "seconds": 8.0,
+      "width": 720,
+      "height": 1280,
+      "bytes": 371944,
+      "sha256": "468526984aaf635fc4755813f9892e6599bb13974e469df0dd7f6365105fac3a",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/style-studies-20261020/out/spatial-silent.mp4",
+      "target": "examples/gallery/media/style-studies-2.mp4",
+      "poster": "examples/gallery/media/style-studies-2.jpg",
+      "label": "spatial-silent",
+      "source_sha256": "a8cb0f3aff96614187f8fa0ffb71ccb0da3b2893103d232c9bf1dac854841b69",
+      "seconds": 8.0,
+      "width": 720,
+      "height": 1280,
+      "bytes": 668460,
+      "sha256": "586d025d2e122ad87225fdef3780f61aab1a35cf9925cc6b2b596f3754284b3e",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/style-studies-20261020/out/pixel-silent.mp4",
+      "target": "examples/gallery/media/style-studies-3.mp4",
+      "poster": "examples/gallery/media/style-studies-3.jpg",
+      "label": "pixel-silent",
+      "source_sha256": "f9266803ba2724f223aab3ac978a7cab5bd6c81b99d4d5668f033e4fd70669d8",
+      "seconds": 8.0,
+      "width": 720,
+      "height": 1280,
+      "bytes": 256499,
+      "sha256": "6fee3ab37ea97fe5e265538e5530ab9ebe40e7e1718430bbeb46606fb38b466d",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/style-studies-20261020/out/compare-silent.mp4",
+      "target": "examples/gallery/media/style-studies-4.mp4",
+      "poster": "examples/gallery/media/style-studies-4.jpg",
+      "label": "compare-silent",
+      "source_sha256": "73b8dbc9219cc292024ef0df240859d4751176e40c961eb5b8a3ba2fcb3724ae",
+      "seconds": 8.0,
+      "width": 1280,
+      "height": 834,
+      "bytes": 625259,
+      "sha256": "def48c9a9a43e3c2a6c1a8b5c7611a28eff9191e8f0e7d69ff420eba796d7c4d",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/article-studies-20261020/out/editorial-silent.mp4",
+      "target": "examples/gallery/media/article-studies-1.mp4",
+      "poster": "examples/gallery/media/article-studies-1.jpg",
+      "label": "editorial-silent",
+      "source_sha256": "4a31ba67d8a85f9bfcc091672aa15a9614b20dbd635eaa4dd78d4b8ff48c1ae0",
+      "seconds": 10.5,
+      "width": 720,
+      "height": 1280,
+      "bytes": 474982,
+      "sha256": "6be79fbfe475f2ab18e5970346d6a204d99a99a47e173e3194f1f243ab232744",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/article-studies-20261020/out/spatial-silent.mp4",
+      "target": "examples/gallery/media/article-studies-2.mp4",
+      "poster": "examples/gallery/media/article-studies-2.jpg",
+      "label": "spatial-silent",
+      "source_sha256": "e5b85676009f057aa23354b8e9664e38db98132fc216fc31b8c2a39d17f5b16c",
+      "seconds": 10.5,
+      "width": 720,
+      "height": 1280,
+      "bytes": 423050,
+      "sha256": "d4ecffdb317e9012fb7b0e35f52ca37951872496e139bdd7a704e7a93daaf0ab",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/article-studies-20261020/out/pixel-silent.mp4",
+      "target": "examples/gallery/media/article-studies-3.mp4",
+      "poster": "examples/gallery/media/article-studies-3.jpg",
+      "label": "pixel-silent",
+      "source_sha256": "f3846249f2c1a0f98cb9626085eb9ad5e5af7eaec296243fe7d1738030ead841",
+      "seconds": 10.5,
+      "width": 720,
+      "height": 1280,
+      "bytes": 466107,
+      "sha256": "769dc64ec54d516bf68f6ab4089cf8d6bce259359b6993b0b3c87c0c801b1509",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/article-studies-20261020/out/compare-silent.mp4",
+      "target": "examples/gallery/media/article-studies-4.mp4",
+      "poster": "examples/gallery/media/article-studies-4.jpg",
+      "label": "compare-silent",
+      "source_sha256": "3eb3e8bd4b019242e4da7c343b5d247d73881e6def91981ae1a1ed9477bb558e",
+      "seconds": 10.5,
+      "width": 1280,
+      "height": 834,
+      "bytes": 689141,
+      "sha256": "b51971f6f35bd815de70d1257e759ae9582ca091e1f5c430dd6c74da733292ab",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/weilanx-study-20261020/先别判-黑金对照-静音.mp4",
+      "target": "examples/gallery/media/blackgold-study-1.mp4",
+      "poster": "examples/gallery/media/blackgold-study-1.jpg",
+      "label": "先别判-黑金对照-静音",
+      "source_sha256": "f211dfb51614bb3f77a642944f5cf7adc24a73e8440678a4e95479509c893f1d",
+      "seconds": 12.0,
+      "width": 720,
+      "height": 1280,
+      "bytes": 660099,
+      "sha256": "afe199a2b61d31d907efb7bdadf710bc7a4fcb976739b2d42f3cf84a95ffc28c",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/rtiaho-study-20261021/别急着定义世界-红黑穿梭-静音.mp4",
+      "target": "examples/gallery/media/redshift-1.mp4",
+      "poster": "examples/gallery/media/redshift-1.jpg",
+      "label": "别急着定义世界-红黑穿梭-静音",
+      "source_sha256": "af90a1b71a045ad6f40f8897d4f912abdf6dbb45ca0cdffb87f77dcf2f3acdff",
+      "seconds": 10.8,
+      "width": 720,
+      "height": 1280,
+      "bytes": 4686635,
+      "sha256": "5ea1e256074d8515a674348b135812d36d32a1a9ed1550d5422616f0c30a097d",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/content-lab-20261021/out/editorial-silent.mp4",
+      "target": "examples/gallery/media/content-lab-1.mp4",
+      "poster": "examples/gallery/media/content-lab-1.jpg",
+      "label": "editorial-silent",
+      "source_sha256": "912e8d8e8650277b147594b3b8338b7fed882735dba7d36ae4efe7a846525a14",
+      "seconds": 30.0,
+      "width": 720,
+      "height": 1280,
+      "bytes": 798354,
+      "sha256": "ba53f0dfc3c033074cb476abafcc8084b68e849ce4aa4dcdf3190bc2de876864",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/content-lab-20261021/out/spatial-silent.mp4",
+      "target": "examples/gallery/media/content-lab-2.mp4",
+      "poster": "examples/gallery/media/content-lab-2.jpg",
+      "label": "spatial-silent",
+      "source_sha256": "380a1c1daec7eb04d2c34f24ba7bd46cf218af9e8bc72671bdcef04f06aea766",
+      "seconds": 30.0,
+      "width": 720,
+      "height": 1280,
+      "bytes": 1901735,
+      "sha256": "31a37b4dc799dc08b9f994d6c8fee026dedc52e3a4b9e8448334cc0aef9b229f",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/content-lab-20261021/out/pixel-silent.mp4",
+      "target": "examples/gallery/media/content-lab-3.mp4",
+      "poster": "examples/gallery/media/content-lab-3.jpg",
+      "label": "pixel-silent",
+      "source_sha256": "5198472f853ef41f520710f00352b54e29be2448785d8ab06333e7d24934f267",
+      "seconds": 30.0,
+      "width": 720,
+      "height": 1280,
+      "bytes": 1093270,
+      "sha256": "88a2411fdb04916c5c7b972cd17d643f09a1648b726256b3847ecfaa27ee83d2",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/content-lab-20261021/out/compare-silent.mp4",
+      "target": "examples/gallery/media/content-lab-4.mp4",
+      "poster": "examples/gallery/media/content-lab-4.jpg",
+      "label": "compare-silent",
+      "source_sha256": "57d59c3ef0f610ea87b699a44a8bd82f454981b0c0f41a78471071b1c03f82a4",
+      "seconds": 30.0,
+      "width": 1280,
+      "height": 834,
+      "bytes": 1986777,
+      "sha256": "3aa63c1fa280102b6a210202710d72db6cb14edcff34b7454a1bf38650ece0e4",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/anchor-art-60s-20261021/out/anchor-silent.mp4",
+      "target": "examples/gallery/media/anchor-art-1.mp4",
+      "poster": "examples/gallery/media/anchor-art-1.jpg",
+      "label": "anchor-silent",
+      "source_sha256": "08c39a344511f8d882bcf34499b08b2119e47503efc8815887022f89764343bc",
+      "seconds": 60.0,
+      "width": 720,
+      "height": 1280,
+      "bytes": 15326059,
+      "sha256": "ca6b6f38f9895d0e20a5322ab61d12e08ffbcc27f079bbc086b1af2625a80157",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/disappearing25-20261021/out/消失的25元-60秒-静音.mp4",
+      "target": "examples/gallery/media/disappearing25-1.mp4",
+      "poster": "examples/gallery/media/disappearing25-1.jpg",
+      "label": "消失的25元-60秒-静音",
+      "source_sha256": "436ad886bc1ca8fd576d7cb8e9fa08bce837a0f2550198f684133d5ff8cc61bb",
+      "seconds": 60.0,
+      "width": 720,
+      "height": 1280,
+      "bytes": 3109365,
+      "sha256": "fb80403dde151010763952b0dbd8317bed4e4b2d9e990907b89689fc55866217",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/warsh-gold-20261022/out/final-silent.mp4",
+      "target": "examples/gallery/media/gold-proof-1.mp4",
+      "poster": "examples/gallery/media/gold-proof-1.jpg",
+      "label": "final-silent",
+      "source_sha256": "95b831b2832e37c75006c3ff819986d9e19e459c47432023aba7151c09048b14",
+      "seconds": 12.266667,
+      "width": 720,
+      "height": 1280,
+      "bytes": 736170,
+      "sha256": "28f6ce01b2b4054f6daa195fe365310ff2144c06e440d101f7335611ffe8f6f9",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/warsh-gold-20261022/full-v2/out/final-silent.mp4",
+      "target": "examples/gallery/media/gold-full-1.mp4",
+      "poster": "examples/gallery/media/gold-full-1.jpg",
+      "label": "final-silent",
+      "source_sha256": "3b93ef9a124e7fa1945bcb935b1c9d9bff758a8addd9a89b0510930d1142d3e8",
+      "seconds": 84.633333,
+      "width": 720,
+      "height": 1280,
+      "bytes": 2119066,
+      "sha256": "d6cf2af74a0c38fd16a65a087bdb0116c5d2d57658865aa4af5559de4ee8055e",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/index-machine-20261022/out/final-silent.mp4",
+      "target": "examples/gallery/media/index-machine-1.mp4",
+      "poster": "examples/gallery/media/index-machine-1.jpg",
+      "label": "final-silent",
+      "source_sha256": "ed4e0926ccf8469c58baef829b8c03c7ca0abd6a0cd76069c934708ace84646e",
+      "seconds": 179.4,
+      "width": 720,
+      "height": 1280,
+      "bytes": 4343235,
+      "sha256": "f5868cf19d72fc9dcb227fcbf10bd1265bbb13cb39a4798117a09a0913d6cc6e",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    },
+    {
+      "source": "video-week1/decision-frequency-20261023/out/final-silent.mp4",
+      "target": "examples/gallery/media/decision-frequency-1.mp4",
+      "poster": "examples/gallery/media/decision-frequency-1.jpg",
+      "label": "final-silent",
+      "source_sha256": "e76640f250d1b0f2ceedd2e27ec7c022d7c0e5e80ff5e399eb761a47cc282713",
+      "seconds": 173.466667,
+      "width": 720,
+      "height": 1280,
+      "bytes": 3962922,
+      "sha256": "ebad5ff2af89cbd17997aa1aa9cbd7e19dca7dfa4b10a26f26a4c283ea6575d3",
+      "audio_streams": 0,
+      "web_derivative": "H.264 CRF24, max1280px, full duration, audio removed"
+    }
+  ],
+  "asset_catalog": "assets/weilanx/catalog.json",
+  "status": "Public study library; not a guarantee of final video quality."
+}

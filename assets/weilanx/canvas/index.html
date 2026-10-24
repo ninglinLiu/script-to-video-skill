@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>35种艺术风格 · 原场景静音预览</title>
+<style>
+html,body{margin:0;background:#111;overflow:hidden}
+canvas{display:block;width:100vw;height:auto;max-width:1920px}
+#ui{padding:18px;color:#ddd;font:14px system-ui;display:flex;gap:12px;align-items:center} input{max-width:65vw} button{padding:8px 22px} html,body{overflow:auto} canvas{max-height:85vh;object-fit:contain}
+body.render #ui{display:none}
+</style></head>
+<body><div style="padding:10px 16px;font:14px system-ui;color:#ddd"><a style="color:#e7bd7d" href="../../../examples/gallery/">← 返回完整视觉展厅</a> · 上游原场景 · 静音 / 默认暂停</div>
+<canvas id="c" width="1920" height="1080"></canvas>
+<div id="ui"><input id="scrub" type="range" min="0" max="60" step="0.0166667" value="0" style="width:600px"> <span id="tt"></span> <button id="play">播放 / 暂停</button></div>
+<script src="lib/fonts.js"></script>
+<script src="lib/util.js"></script>
+<script src="lib/paint.js"></script>
+<script src="lib/brush.js"></script>
+<script src="lib/render.js"></script>
+<script src="lib/post.js"></script>
+<script src="lib/rig.js"></script>
+<script src="lib/rig_huashu.js"></script>
+<script src="lib/kit.js"></script>
+<script src="lib/medium.js"></script>
+<!-- YouTube 解说语法库（references/09）：动效时间、相机、图解形变、文字、图表、发布会界面、拼贴、卡通 -->
+<script src="lib/motion.js"></script>
+<script src="lib/camera.js"></script>
+<script src="lib/diagram.js"></script>
+<script src="lib/typo.js"></script>
+<script src="lib/chart.js"></script>
+<script src="lib/ui.js"></script>
+<script src="lib/collage.js"></script>
+<script src="lib/media.js"></script>
+<script src="lib/toon.js"></script>
+<script src="eras_gallery.js"></script>
+<script>
+const selected=new URLSearchParams(location.search).get('scene');
+if(selected){const e=ERAS.find(e=>e.id===selected);if(!e)throw new Error('Unknown scene');
+ window.ERAS=[{...e,dur:5,transition:undefined,counter:undefined}];window.FILM_DURATION=5;}
+</script>
+<script src="transitions.js"></script>
+<script src="scenes/index.js"></script>
+<script src="engine.js"></script>
+</body></html>

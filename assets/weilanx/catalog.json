@@ -1,0 +1,903 @@
+[
+  {
+    "id": "01_cave",
+    "title": "洞穴岩画",
+    "kind": "art",
+    "group": "01_古代与传统",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/01_cave_洞穴岩画/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/01_cave_洞穴岩画/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/01_cave_洞穴岩画/场景代码.js"
+    ],
+    "motion": "动物两姿态交替奔跑、火光摇曳、余烬",
+    "upstream_limitations": "人形太卡通，不够原始",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=01_cave"
+  },
+  {
+    "id": "02_egypt",
+    "title": "埃及壁画",
+    "kind": "art",
+    "group": "01_古代与传统",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/02_egypt_埃及壁画/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/02_egypt_埃及壁画/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/02_egypt_埃及壁画/场景代码.js"
+    ],
+    "motion": "圣甲虫推日、阿顿光线小手开合、象形字逐笔重写",
+    "upstream_limitations": "端杯肘偏僵",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=02_egypt"
+  },
+  {
+    "id": "03_greek",
+    "title": "古希腊黑绘",
+    "kind": "art",
+    "group": "01_古代与传统",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/03_greek_古希腊黑绘/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/03_greek_古希腊黑绘/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/03_greek_古希腊黑绘/场景代码.js"
+    ],
+    "motion": "回纹带反向滚动、船起伏海豚跃、里拉琴摆",
+    "upstream_limitations": "裙摆偏厚",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=03_greek"
+  },
+  {
+    "id": "04_roman",
+    "title": "罗马马赛克",
+    "kind": "art",
+    "group": "01_古代与传统",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/04_roman_罗马马赛克/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/04_roman_罗马马赛克/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/04_roman_罗马马赛克/场景代码.js"
+    ],
+    "motion": "波浪纹边框顺时针流、维苏威冒烟溅火星",
+    "upstream_limitations": "小尺度下脸部细节少",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=04_roman"
+  },
+  {
+    "id": "05_gothic",
+    "title": "哥特手抄本",
+    "kind": "art",
+    "group": "01_古代与传统",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/05_gothic_哥特手抄本/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/05_gothic_哥特手抄本/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/05_gothic_哥特手抄本/场景代码.js"
+    ],
+    "motion": "金箔斜向高光扫过、藤蔓摇、蜗牛爬、老鼠跑",
+    "upstream_limitations": "金发像兜帽",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=05_gothic"
+  },
+  {
+    "id": "17_ink",
+    "title": "水墨写意",
+    "kind": "art",
+    "group": "01_古代与传统",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/17_ink_水墨写意/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/17_ink_水墨写意/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/17_ink_水墨写意/场景代码.js"
+    ],
+    "motion": "开场笔触自己写出、墨晕扩散、虾须动",
+    "upstream_limitations": "人物不够写意（审片 6/10）",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=17_ink"
+  },
+  {
+    "id": "20_dunhuang",
+    "title": "敦煌壁画",
+    "kind": "art",
+    "group": "01_古代与传统",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/20_dunhuang_敦煌壁画/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/20_dunhuang_敦煌壁画/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/20_dunhuang_敦煌壁画/场景代码.js"
+    ],
+    "motion": "飞天飘带、天花飘、灯焰",
+    "upstream_limitations": "飞天造型粗",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=20_dunhuang"
+  },
+  {
+    "id": "34_shadowpuppet",
+    "title": "皮影",
+    "kind": "art",
+    "group": "01_古代与传统",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/34_shadowpuppet_皮影/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/34_shadowpuppet_皮影/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/01_古代与传统/34_shadowpuppet_皮影/场景代码.js"
+    ],
+    "motion": "杆子操控僵直关节、手腕甩",
+    "upstream_limitations": "重叠处相乘发黑；121ms 偏慢",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=34_shadowpuppet"
+  },
+  {
+    "id": "06_renaissance",
+    "title": "文艺复兴",
+    "kind": "art",
+    "group": "02_古典油画",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/02_古典油画/06_renaissance_文艺复兴/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/02_古典油画/06_renaissance_文艺复兴/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/02_古典油画/06_renaissance_文艺复兴/场景代码.js"
+    ],
+    "motion": "达芬奇扑翼机飞过、河面碎光、浮尘",
+    "upstream_limitations": "猫偏卡通；整体偏静",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=06_renaissance"
+  },
+  {
+    "id": "32_rembrandt",
+    "title": "伦勃朗明暗",
+    "kind": "art",
+    "group": "02_古典油画",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/02_古典油画/32_rembrandt_伦勃朗明暗/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/02_古典油画/32_rembrandt_伦勃朗明暗/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/02_古典油画/32_rembrandt_伦勃朗明暗/场景代码.js"
+    ],
+    "motion": "光柱浮尘、云影让窗光明暗",
+    "upstream_limitations": "人物扁平（审片 5/10），最该重做",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=32_rembrandt"
+  },
+  {
+    "id": "08_impressionism",
+    "title": "印象派",
+    "kind": "art",
+    "group": "03_印象派与后印象",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/03_印象派与后印象/08_impressionism_印象派/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/03_印象派与后印象/08_impressionism_印象派/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/03_印象派与后印象/08_impressionism_印象派/场景代码.js"
+    ],
+    "motion": "光斑漂移明灭、罂粟摇、云走、丝带飘",
+    "upstream_limitations": "脸和手被笔触打碎",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=08_impressionism"
+  },
+  {
+    "id": "09_postimp",
+    "title": "梵高",
+    "kind": "art",
+    "group": "03_印象派与后印象",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/03_印象派与后印象/09_postimp_梵高/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/03_印象派与后印象/09_postimp_梵高/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/03_印象派与后印象/09_postimp_梵高/场景代码.js"
+    ],
+    "motion": "星空漩涡、灯晕环外扩、方向场火苗般摇曳、漩涡猫",
+    "upstream_limitations": "每帧 120ms 最重",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=09_postimp"
+  },
+  {
+    "id": "28_monet",
+    "title": "莫奈",
+    "kind": "art",
+    "group": "03_印象派与后印象",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/03_印象派与后印象/28_monet_莫奈/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/03_印象派与后印象/28_monet_莫奈/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/03_印象派与后印象/28_monet_莫奈/场景代码.js"
+    ],
+    "motion": "睡莲漂、柳影晃、涟漪扩散",
+    "upstream_limitations": "墙是池水、地是木头的空间别扭",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=28_monet"
+  },
+  {
+    "id": "29_seurat",
+    "title": "修拉点彩",
+    "kind": "art",
+    "group": "03_印象派与后印象",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/03_印象派与后印象/29_seurat_修拉点彩/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/03_印象派与后印象/29_seurat_修拉点彩/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/03_印象派与后印象/29_seurat_修拉点彩/场景代码.js"
+    ],
+    "motion": "光渗、点在呼吸",
+    "upstream_limitations": "偏静；网格规整",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=29_seurat"
+  },
+  {
+    "id": "10_nouveau",
+    "title": "慕夏新艺术",
+    "kind": "art",
+    "group": "04_现代主义",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/10_nouveau_慕夏新艺术/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/10_nouveau_慕夏新艺术/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/04_现代主义/10_nouveau_慕夏新艺术/场景代码.js"
+    ],
+    "motion": "太阳升起、光环转、花摇、S 形热气、卷发波",
+    "upstream_limitations": "猫姿势僵",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=10_nouveau"
+  },
+  {
+    "id": "11_cubism",
+    "title": "立体主义",
+    "kind": "art",
+    "group": "04_现代主义",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/11_cubism_立体主义/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/11_cubism_立体主义/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/04_现代主义/11_cubism_立体主义/场景代码.js"
+    ],
+    "motion": "CAFÉ 字母跳换、窗格碎面滑、报纸颤",
+    "upstream_limitations": "偏亮，深褐大面不够",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=11_cubism"
+  },
+  {
+    "id": "12_bauhaus",
+    "title": "包豪斯",
+    "kind": "art",
+    "group": "04_现代主义",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/12_bauhaus_包豪斯/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/12_bauhaus_包豪斯/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/04_现代主义/12_bauhaus_包豪斯/场景代码.js"
+    ],
+    "motion": "指针杆转陡、蒙德里安格换色、猫拨球",
+    "upstream_limitations": "猫头偏离骨架位",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=12_bauhaus"
+  },
+  {
+    "id": "18_klimt",
+    "title": "克里姆特",
+    "kind": "art",
+    "group": "04_现代主义",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/18_klimt_克里姆特/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/18_klimt_克里姆特/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/04_现代主义/18_klimt_克里姆特/场景代码.js"
+    ],
+    "motion": "袍上眼形纹轮流眨、金屑飘",
+    "upstream_limitations": "桌上的手没接袖子",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=18_klimt"
+  },
+  {
+    "id": "19_munch",
+    "title": "蒙克",
+    "kind": "art",
+    "group": "04_现代主义",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/19_munch_蒙克/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/19_munch_蒙克/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/04_现代主义/19_munch_蒙克/场景代码.js"
+    ],
+    "motion": "整幅画扭动、血色天空流",
+    "upstream_limitations": "墙面曾被读成梵高",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=19_munch"
+  },
+  {
+    "id": "22_constructivism",
+    "title": "构成主义",
+    "kind": "art",
+    "group": "04_现代主义",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/22_constructivism_构成主义/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/22_constructivism_构成主义/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/04_现代主义/22_constructivism_构成主义/场景代码.js"
+    ],
+    "motion": "标语逐字盖章再波浪跳",
+    "upstream_limitations": "缺喇叭形文字锥",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=22_constructivism"
+  },
+  {
+    "id": "23_dali",
+    "title": "达利超现实",
+    "kind": "art",
+    "group": "04_现代主义",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/23_dali_达利超现实/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/23_dali_达利超现实/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/04_现代主义/23_dali_达利超现实/场景代码.js"
+    ],
+    "motion": "钟往下流、长腿象走、蚂蚁绕表、影子变长",
+    "upstream_limitations": "人物偏矢量插画",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=23_dali"
+  },
+  {
+    "id": "24_hopper",
+    "title": "霍珀",
+    "kind": "art",
+    "group": "04_现代主义",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/24_hopper_霍珀/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/24_hopper_霍珀/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/04_现代主义/24_hopper_霍珀/场景代码.js"
+    ],
+    "motion": "光斑缓移扫过脸、墙上人影同步喝茶",
+    "upstream_limitations": "猫全程在阴影里",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=24_hopper"
+  },
+  {
+    "id": "30_matisse",
+    "title": "马蒂斯剪纸",
+    "kind": "art",
+    "group": "04_现代主义",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/30_matisse_马蒂斯剪纸/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/30_matisse_马蒂斯剪纸/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/04_现代主义/30_matisse_马蒂斯剪纸/场景代码.js"
+    ],
+    "motion": "纸片飘动、海藻摆",
+    "upstream_limitations": "水粉刷痕偏重",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=30_matisse"
+  },
+  {
+    "id": "36_picasso_blue",
+    "title": "毕加索蓝色时期",
+    "kind": "art",
+    "group": "04_现代主义",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/36_picasso_blue_毕加索蓝色时期/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/04_现代主义/36_picasso_blue_毕加索蓝色时期/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/04_现代主义/36_picasso_blue_毕加索蓝色时期/场景代码.js"
+    ],
+    "motion": "缓慢呼吸",
+    "upstream_limitations": "造型不够忧郁",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=36_picasso_blue"
+  },
+  {
+    "id": "13_pop",
+    "title": "波普艺术",
+    "kind": "art",
+    "group": "05_波普与街头",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/05_波普与街头/13_pop_波普艺术/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/05_波普与街头/13_pop_波普艺术/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/05_波普与街头/13_pop_波普艺术/场景代码.js"
+    ],
+    "motion": "沃霍尔四格换色、思考点闪、猫扭臀、拟声框抖",
+    "upstream_limitations": "—",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=13_pop"
+  },
+  {
+    "id": "21_kusama",
+    "title": "草间弥生波点",
+    "kind": "art",
+    "group": "05_波普与街头",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/05_波普与街头/21_kusama_草间弥生波点/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/05_波普与街头/21_kusama_草间弥生波点/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/05_波普与街头/21_kusama_草间弥生波点/场景代码.js"
+    ],
+    "motion": "波点从猫处一圈圈胀缩、南瓜、无限镜屋",
+    "upstream_limitations": "人物与墙同色靠轮廓撑",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=21_kusama"
+  },
+  {
+    "id": "27_kirby",
+    "title": "漫威Kirby",
+    "kind": "art",
+    "group": "05_波普与街头",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/05_波普与街头/27_kirby_漫威Kirby/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/05_波普与街头/27_kirby_漫威Kirby/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/05_波普与街头/27_kirby_漫威Kirby/场景代码.js"
+    ],
+    "motion": "拟声大字、分格猫眼特写、能量点",
+    "upstream_limitations": "更像利希滕斯坦，缺 Kirby 透视与方块手",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=27_kirby"
+  },
+  {
+    "id": "31_haring",
+    "title": "哈林涂鸦",
+    "kind": "art",
+    "group": "05_波普与街头",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/05_波普与街头/31_haring_哈林涂鸦/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/05_波普与街头/31_haring_哈林涂鸦/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/05_波普与街头/31_haring_哈林涂鸦/场景代码.js"
+    ],
+    "motion": "小人按 8fps 硬切跳舞、一切跟 BPM 弹跳",
+    "upstream_limitations": "少女不够哈林",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=31_haring"
+  },
+  {
+    "id": "16_2026",
+    "title": "当代扁平插画",
+    "kind": "art",
+    "group": "06_卡通与动画",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/06_卡通与动画/16_2026_当代扁平插画/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/06_卡通与动画/16_2026_当代扁平插画/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/06_卡通与动画/16_2026_当代扁平插画/场景代码.js"
+    ],
+    "motion": "角色表演（跳/拍杯/碎裂/惊呼/签名）、阻尼二次动作",
+    "upstream_limitations": "—",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=16_2026"
+  },
+  {
+    "id": "25_ghibli",
+    "title": "吉卜力水彩",
+    "kind": "art",
+    "group": "06_卡通与动画",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/06_卡通与动画/25_ghibli_吉卜力水彩/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/06_卡通与动画/25_ghibli_吉卜力水彩/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/06_卡通与动画/25_ghibli_吉卜力水彩/场景代码.js"
+    ],
+    "motion": "纱帘被风鼓起、草叶成片摆、树影光斑",
+    "upstream_limitations": "人物不如背景",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=25_ghibli"
+  },
+  {
+    "id": "33_rubberhose",
+    "title": "橡皮管卡通",
+    "kind": "art",
+    "group": "06_卡通与动画",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/06_卡通与动画/33_rubberhose_橡皮管卡通/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/06_卡通与动画/33_rubberhose_橡皮管卡通/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/06_卡通与动画/33_rubberhose_橡皮管卡通/场景代码.js"
+    ],
+    "motion": "一切按节拍弹跳",
+    "upstream_limitations": "运动大半是胶片噪声",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=33_rubberhose"
+  },
+  {
+    "id": "35_shinkai",
+    "title": "新海诚光影",
+    "kind": "art",
+    "group": "06_卡通与动画",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/06_卡通与动画/35_shinkai_新海诚光影/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/06_卡通与动画/35_shinkai_新海诚光影/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/06_卡通与动画/35_shinkai_新海诚光影/场景代码.js"
+    ],
+    "motion": "光粒飘、云移",
+    "upstream_limitations": "室内背景密度不够",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=35_shinkai"
+  },
+  {
+    "id": "14_8bit",
+    "title": "8-bit像素",
+    "kind": "art",
+    "group": "07_数字与像素",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/07_数字与像素/14_8bit_8-bit像素/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/07_数字与像素/14_8bit_8-bit像素/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/07_数字与像素/14_8bit_8-bit像素/场景代码.js"
+    ],
+    "motion": "尾巴、HUD 心闪、问号块顶金币（15–30fps 步进）",
+    "upstream_limitations": "猫头压窗台",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=14_8bit"
+  },
+  {
+    "id": "15_raytrace",
+    "title": "早期光追CGI",
+    "kind": "art",
+    "group": "07_数字与像素",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/07_数字与像素/15_raytrace_早期光追CGI/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/07_数字与像素/15_raytrace_早期光追CGI/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/07_数字与像素/15_raytrace_早期光追CGI/场景代码.js"
+    ],
+    "motion": "紫环旋转、镜头光晕、猫眼绿光",
+    "upstream_limitations": "猫腿直柱、脸像面具",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=15_raytrace"
+  },
+  {
+    "id": "26_vaporwave",
+    "title": "蒸汽波",
+    "kind": "art",
+    "group": "07_数字与像素",
+    "recipe": "assets/weilanx/upstream/styles/艺术风格/07_数字与像素/26_vaporwave_蒸汽波/配方卡.md",
+    "preview": "assets/weilanx/upstream/styles/艺术风格/07_数字与像素/26_vaporwave_蒸汽波/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/艺术风格/07_数字与像素/26_vaporwave_蒸汽波/场景代码.js"
+    ],
+    "motion": "落日横条上移、网格前滚、招牌闪、跟踪噪声带",
+    "upstream_limitations": "部件交界也发光",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "player": "assets/weilanx/canvas/index.html?scene=26_vaporwave"
+  },
+  {
+    "id": "t1_3b1b",
+    "title": "3Blue1Brown",
+    "kind": "grammar",
+    "group": "01_科普图解",
+    "recipe": "assets/weilanx/upstream/styles/解说语法/01_科普图解/t1_3b1b_3Blue1Brown/语法卡.md",
+    "preview": "assets/weilanx/upstream/styles/解说语法/01_科普图解/t1_3b1b_3Blue1Brown/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/解说语法/01_科普图解/t1_3b1b_3Blue1Brown/片段代码.js"
+    ],
+    "motion": "一个对象形变成下一个",
+    "upstream_limitations": "",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "y1_kurzgesagt",
+    "title": "Kurzgesagt",
+    "kind": "grammar",
+    "group": "01_科普图解",
+    "recipe": "assets/weilanx/upstream/styles/解说语法/01_科普图解/y1_kurzgesagt_Kurzgesagt/语法卡.md",
+    "preview": "assets/weilanx/upstream/styles/解说语法/01_科普图解/y1_kurzgesagt_Kurzgesagt/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/解说语法/01_科普图解/y1_kurzgesagt_Kurzgesagt/片段代码.js"
+    ],
+    "motion": "扁平无描边、尺度穿行",
+    "upstream_limitations": "",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "y3_whiteboard",
+    "title": "白板",
+    "kind": "grammar",
+    "group": "01_科普图解",
+    "recipe": "assets/weilanx/upstream/styles/解说语法/01_科普图解/y3_whiteboard_白板/语法卡.md",
+    "preview": "assets/weilanx/upstream/styles/解说语法/01_科普图解/y3_whiteboard_白板/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/解说语法/01_科普图解/y3_whiteboard_白板/片段代码.js"
+    ],
+    "motion": "笔尖揭开线稿，适合跟着口播画关系",
+    "upstream_limitations": "",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "t2_keynote_ui",
+    "title": "发布会",
+    "kind": "grammar",
+    "group": "02_新闻与数据",
+    "recipe": "assets/weilanx/upstream/styles/解说语法/02_新闻与数据/t2_keynote_ui_发布会/语法卡.md",
+    "preview": "assets/weilanx/upstream/styles/解说语法/02_新闻与数据/t2_keynote_ui_发布会/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/解说语法/02_新闻与数据/t2_keynote_ui_发布会/片段代码.js"
+    ],
+    "motion": "光斑底、毛玻璃卡、大数字",
+    "upstream_limitations": "",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "t3_finance_chart",
+    "title": "财经图表",
+    "kind": "grammar",
+    "group": "02_新闻与数据",
+    "recipe": "assets/weilanx/upstream/styles/解说语法/02_新闻与数据/t3_finance_chart_财经图表/语法卡.md",
+    "preview": "assets/weilanx/upstream/styles/解说语法/02_新闻与数据/t3_finance_chart_财经图表/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/解说语法/02_新闻与数据/t3_finance_chart_财经图表/片段代码.js"
+    ],
+    "motion": "先轴、后数据、只标一件事",
+    "upstream_limitations": "",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "y2_vox",
+    "title": "Vox",
+    "kind": "grammar",
+    "group": "02_新闻与数据",
+    "recipe": "assets/weilanx/upstream/styles/解说语法/02_新闻与数据/y2_vox_Vox/语法卡.md",
+    "preview": "assets/weilanx/upstream/styles/解说语法/02_新闻与数据/y2_vox_Vox/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/解说语法/02_新闻与数据/y2_vox_Vox/片段代码.js"
+    ],
+    "motion": "剪报、红线、荧光笔，信息拼贴",
+    "upstream_limitations": "",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "y4_storytime",
+    "title": "Storytime",
+    "kind": "grammar",
+    "group": "03_节奏与人物",
+    "recipe": "assets/weilanx/upstream/styles/解说语法/03_节奏与人物/y4_storytime_Storytime/语法卡.md",
+    "preview": "assets/weilanx/upstream/styles/解说语法/03_节奏与人物/y4_storytime_Storytime/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/解说语法/03_节奏与人物/y4_storytime_Storytime/片段代码.js"
+    ],
+    "motion": "反应特写、笑点停顿",
+    "upstream_limitations": "",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "y5_kinetic_type",
+    "title": "动态文字",
+    "kind": "grammar",
+    "group": "03_节奏与人物",
+    "recipe": "assets/weilanx/upstream/styles/解说语法/03_节奏与人物/y5_kinetic_type_动态文字/语法卡.md",
+    "preview": "assets/weilanx/upstream/styles/解说语法/03_节奏与人物/y5_kinetic_type_动态文字/预览.jpg",
+    "code": [
+      "assets/weilanx/upstream/styles/解说语法/03_节奏与人物/y5_kinetic_type_动态文字/片段代码.js"
+    ],
+    "motion": "主词砸进来",
+    "upstream_limitations": "",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "y6_presenter_explainer",
+    "title": "讲解员",
+    "kind": "grammar",
+    "group": "03_节奏与人物",
+    "recipe": "assets/weilanx/upstream/styles/解说语法/03_节奏与人物/y6_presenter_explainer_讲解员/语法卡.md",
+    "preview": null,
+    "code": [],
+    "motion": "讲解员式财经科普（只有语法卡，整片代码需自备角色）",
+    "upstream_limitations": "",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "blackgold",
+    "title": "黑金光影",
+    "kind": "production",
+    "group": "制作风格",
+    "preview": "assets/weilanx/upstream/docs/assets/styles/blackgold.jpg",
+    "recipe": "assets/weilanx/upstream/styles/我的风格/黑金光影风/README.md",
+    "code": [
+      "assets/weilanx/upstream/src/library/blackgold"
+    ],
+    "use": "比较 / 博弈 / 分支",
+    "motion": "矩阵先显示行动与收益，再用箭头解释选择；同一节点进入分支树。",
+    "upstream_limitations": "不能用金光替代证据；屏幕同时高亮一个决定。",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "tactical",
+    "title": "战术屏科普",
+    "kind": "production",
+    "group": "制作风格",
+    "preview": "assets/weilanx/upstream/docs/assets/styles/tactical.jpg",
+    "recipe": "assets/weilanx/upstream/styles/我的风格/战术屏科普风/README.md",
+    "code": [
+      "assets/weilanx/upstream/src/library/tactical"
+    ],
+    "use": "空间机制 / 时序复盘",
+    "motion": "在同一空间重演位置、视线和时间差，再接解释图。",
+    "upstream_limitations": "游戏形象和具体地图不随主题照搬；避免全屏HUD抢走主对象。",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "lamplight",
+    "title": "灯火史话",
+    "kind": "production",
+    "group": "制作风格",
+    "preview": "assets/weilanx/upstream/docs/assets/styles/lamplight.jpg",
+    "recipe": "assets/weilanx/upstream/styles/我的风格/灯火史话风/README.md",
+    "code": [
+      "assets/weilanx/upstream/src/library/lamplight"
+    ],
+    "use": "传播 / 层级 / 地理路线",
+    "motion": "同一火光从烽燧到城市网格，地理路径逐段点亮。",
+    "upstream_limitations": "灯数、地名和距离须有事实来源；情绪光效不充当真实比例。",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "warm-desk",
+    "title": "暖纸工作台",
+    "kind": "production",
+    "group": "制作风格",
+    "preview": "assets/weilanx/upstream/docs/assets/styles/warm-desk.jpg",
+    "recipe": "assets/weilanx/upstream/styles/我的风格/暖纸工作台风/README.md",
+    "code": [
+      "assets/weilanx/upstream/src/library/warm-desk"
+    ],
+    "use": "步骤 / 流程 / 证据整理",
+    "motion": "固定工作台保留卡片身份，卡片换位并让步骤条接住进度。",
+    "upstream_limitations": "画面不能退化成一屏一条句子；优先让证据对象变化。",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "halftone",
+    "title": "网点档案",
+    "kind": "production",
+    "group": "制作风格",
+    "preview": "assets/weilanx/upstream/docs/assets/styles/halftone.jpg",
+    "recipe": "assets/weilanx/upstream/styles/我的风格/网点档案风/README.md",
+    "code": [
+      "assets/weilanx/upstream/src/library/halftone"
+    ],
+    "use": "证据 / 审查 / 反转",
+    "motion": "资料依次进入案卷，印章对应论证结果，网点形成遮挡转场。",
+    "upstream_limitations": "印章不能先于证据下结论；避免网点让小字失去可读性。",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "editor-room",
+    "title": "协作剪辑台",
+    "kind": "production",
+    "group": "制作风格",
+    "preview": "assets/weilanx/upstream/docs/assets/styles/editor-room.jpg",
+    "recipe": "assets/weilanx/upstream/styles/我的风格/协作剪辑台风/README.md",
+    "code": [
+      "assets/weilanx/upstream/src/library/editor-room"
+    ],
+    "use": "产品流程 / 多方协作",
+    "motion": "群聊触发画布动作，角色沿时间轴移动同一片段。",
+    "upstream_limitations": "软件界面必须表现真实因果，不能只做鼠标绕场。",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "gilded",
+    "title": "暗金文献",
+    "kind": "production",
+    "group": "制作风格",
+    "preview": "assets/weilanx/upstream/docs/assets/styles/gilded.jpg",
+    "recipe": "assets/weilanx/upstream/styles/我的风格/暗金文献风/README.md",
+    "code": [
+      "assets/weilanx/upstream/src/library/gilded"
+    ],
+    "use": "数据 / 史料 / 因果",
+    "motion": "年份、文献和逐步绘制的曲线保留稳定对应。",
+    "upstream_limitations": "曲线标示意或来源；不能让细线和大留白压过解释。",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "gilded-ep23",
+    "title": "暗金音乐短片",
+    "kind": "production",
+    "group": "制作风格",
+    "preview": "assets/weilanx/upstream/docs/assets/styles/gilded-ep23.jpg",
+    "recipe": "assets/weilanx/upstream/styles/我的风格/暗金文献风/README.md",
+    "code": [
+      "assets/weilanx/upstream/src/library/gilded"
+    ],
+    "use": "短促重音 / 数量增长",
+    "motion": "锚词在节拍落稳，前一对象接入增长画面。",
+    "upstream_limitations": "源码不含作者音乐；先确定可用完整曲目再重新测拍。",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "vox-timeline",
+    "title": "Vox时间长卷",
+    "kind": "production",
+    "group": "制作风格",
+    "preview": "assets/weilanx/upstream/docs/assets/styles/vox-timeline.jpg",
+    "recipe": "assets/weilanx/upstream/styles/README.md",
+    "code": [
+      "assets/weilanx/upstream/src/library/vox"
+    ],
+    "use": "历史线索 / 多线并行",
+    "motion": "时间尺承载照片与事件，相机跟随同一条因果线。",
+    "upstream_limitations": "镜头平移本身不是论证；每段要有新证据和年份范围。",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "vox-cut",
+    "title": "Vox硬切拼贴",
+    "kind": "production",
+    "group": "制作风格",
+    "preview": "assets/weilanx/upstream/docs/assets/styles/vox-cut.jpg",
+    "recipe": "assets/weilanx/upstream/styles/README.md",
+    "code": [
+      "assets/weilanx/upstream/src/library/vox"
+    ],
+    "use": "资料 / 实拍 / 论点交替",
+    "motion": "按旁白切入承担证据任务的资料画面，再回到解释对象。",
+    "upstream_limitations": "上游没有真实素材；自行补充有来源且可用的素材。",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "pixel-handdrawn",
+    "title": "像素手绘演播室",
+    "kind": "production",
+    "group": "制作风格",
+    "preview": "assets/weilanx/upstream/docs/assets/styles/pixel-handdrawn.jpg",
+    "recipe": "assets/weilanx/upstream/styles/我的风格/像素手绘风/README.md",
+    "code": [
+      "assets/weilanx/upstream/src/library"
+    ],
+    "use": "主持 / 类比 / 工作场景",
+    "motion": "主持角色把注意力交给图解，道具回到同一桌面。",
+    "upstream_limitations": "人物摆动不能替代机制动作；真人与截图缺项须补齐。",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "vector",
+    "title": "矢量手绘",
+    "kind": "production",
+    "group": "制作风格",
+    "preview": "assets/weilanx/upstream/docs/assets/styles/vector.jpg",
+    "recipe": "assets/weilanx/upstream/styles/我的风格/矢量手绘风/README.md",
+    "code": [
+      "assets/weilanx/upstream/src/library"
+    ],
+    "use": "人物 / 对话 / 入门演示",
+    "motion": "表情和道具配合旁白动作，固定人物身份贯穿解释。",
+    "upstream_limitations": "用轮廓与动作区分角色，避免所有内容只换对话文字。",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  },
+  {
+    "id": "pixel-sticker",
+    "title": "像素贴纸",
+    "kind": "production",
+    "group": "制作风格",
+    "preview": "assets/weilanx/upstream/docs/assets/styles/pixel-sticker.jpg",
+    "recipe": "assets/weilanx/upstream/styles/我的风格/像素贴纸风/README.md",
+    "code": [
+      "assets/weilanx/upstream/src/library"
+    ],
+    "use": "竖屏 / 概念引入 / 短例子",
+    "motion": "角色、贴纸和关键词轮流占据注意力中心。",
+    "upstream_limitations": "3:4模板不能直接裁成9:16；给正文和字幕重新布局。",
+    "status": "upstream-reference",
+    "source_commit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a"
+  }
+]

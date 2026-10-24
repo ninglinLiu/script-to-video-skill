@@ -29,3 +29,7 @@ examples/chapter-01/qa/render-stills.json
 examples/chapter-01/native/timeline.xml
 **/local-only/
 **/music-local/
+
+# Public upstream source snapshot and the curated silent gallery.
+!assets/weilanx/**
+!examples/gallery/**

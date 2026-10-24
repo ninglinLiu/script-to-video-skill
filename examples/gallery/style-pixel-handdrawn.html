@@ -1,0 +1,27 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>像素手绘演播室 · Script to Video</title><link rel="stylesheet" href="gallery.css"></head><body><header><div class="bar"><a class="brand" href="index.html">SCRIPT / TO / VIDEO</a><a class="optional" href="index.html#styles">风格库</a><a class="optional" href="index.html#films">制作档案</a><a href="https://github.com/ninglinLiu/script-to-video-skill">GitHub ↗</a><select aria-label="选择专题页" data-nav><option value="index.html">01 · 视觉库与制作档案</option><option value="style-blackgold.html">02 · 黑金光影</option><option value="style-tactical.html">03 · 战术屏科普</option><option value="style-lamplight.html">04 · 灯火史话</option><option value="style-warm-desk.html">05 · 暖纸工作台</option><option value="style-halftone.html">06 · 网点档案</option><option value="style-editor-room.html">07 · 协作剪辑台</option><option value="style-gilded.html">08 · 暗金文献</option><option value="style-gilded-ep23.html">09 · 暗金音乐短片</option><option value="style-vox-timeline.html">10 · Vox时间长卷</option><option value="style-vox-cut.html">11 · Vox硬切拼贴</option><option value="style-pixel-handdrawn.html" selected>12 · 像素手绘演播室</option><option value="style-vector.html">13 · 矢量手绘</option><option value="style-pixel-sticker.html">14 · 像素贴纸</option><option value="art-01.html">15 · 古代与传统</option><option value="art-02.html">16 · 古典油画</option><option value="art-03.html">17 · 印象派与后印象</option><option value="art-04.html">18 · 现代主义</option><option value="art-05.html">19 · 波普与街头</option><option value="art-06.html">20 · 卡通与动画</option><option value="art-07.html">21 · 数字与像素</option><option value="grammar-01.html">22 · 科普图解</option><option value="grammar-02.html">23 · 新闻与数据</option><option value="grammar-03.html">24 · 节奏与人物</option><option value="film-poisson-first.html">25 · 泊松过程 · 早期30秒</option><option value="film-poisson-opus.html">26 · 泊松过程 · Opus30秒</option><option value="film-poisson-full.html">27 · 泊松过程 · 90秒</option><option value="film-cognitive-first.html">28 · 认知复杂度 · 早期60秒</option><option value="film-revision.html">29 · Week1 · 暖纸返工</option><option value="film-paced.html">30 · 速度迭代 · 小样对照</option><option value="film-first-full.html">31 · Week1 · 第一条完整竖屏</option><option value="film-style-studies.html">32 · 同一内容 · 三种风格</option><option value="film-article-studies.html">33 · 公众号 · 第一组改编</option><option value="film-blackgold-study.html">34 · 先别判 · 黑金学习版</option><option value="film-redshift.html">35 · 别急着定义世界 · 红黑穿梭</option><option value="film-content-lab.html">36 · 三个新切口 · 30秒样片</option><option value="film-anchor-art.html">37 · 价签之外 · 60秒艺术样片</option><option value="film-disappearing25.html">38 · 消失的25元 · 60秒</option><option value="film-gold-proof.html">39 · 黄金研究 · 五步小样</option><option value="film-gold-full.html">40 · 黄金研究 · 加深完整版</option><option value="film-index-machine.html">41 · 指数 · 三分钟扩展</option><option value="film-decision-frequency.html">42 · 看行情，还是重做决定</option><option value="reuse.html">43 · 怎样从参考变成可用组件</option></select></div></header><main><div class="eyebrow">VISUAL LIBRARY & PRODUCTION ARCHIVE · 12 / 43</div><h1>像素手绘演播室</h1><span class="tag">上游参考 · 原图与原代码</span><a class="image-link" href="../../assets/weilanx/upstream/docs/assets/styles/pixel-handdrawn.jpg"><img class="hero-image" loading="lazy" src="../../assets/weilanx/upstream/docs/assets/styles/pixel-handdrawn.jpg" alt="像素手绘演播室"></a><p class="caption">来自 weilanx README。其作品预览、配方与组件已保存；作者原配音、真人素材和音乐并未在上游公开。</p><article class="paper"><h2>适用：主持 / 类比 / 工作场景</h2><p>主持角色把注意力交给图解，道具回到同一桌面。</p><p><b>在我们这里如何使用：</b>人物摆动不能替代机制动作；真人与截图缺项须补齐。</p></article><div class="actions"><a href="../../assets/weilanx/upstream/styles/%E6%88%91%E7%9A%84%E9%A3%8E%E6%A0%BC/%E5%83%8F%E7%B4%A0%E6%89%8B%E7%BB%98%E9%A3%8E/README.md">原始配方卡</a><a href="https://github.com/ninglinLiu/script-to-video-skill/tree/main/assets/weilanx/upstream/src/library">对应源码</a></div><details><summary>展开完整配方（上游原文）</summary><div class="recipe"><h1>像素手绘风</h1>
+<p>像素小人配细线手绘卡片，横屏 16:9，是从矢量手绘风过渡到像素贴纸风的中间版本。</p>
+<h2>画面特征</h2>
+<ul>
+<li>角色已经换成像素风：<code>&lt;CharStyle.Provider value="pixel"&gt;</code></li>
+<li>卡片和大字还是 <code>classic</code> 手绘细线（没开 <code>look: 'sticker'</code>）</li>
+<li>横屏演播室 <code>Host</code> 做 A-roll，B-roll 主持人 <code>PiP</code> 站右下角；ep04 加入了真实图片素材（<code>Photo</code>）</li>
+</ul>
+<h2>期数</h2>
+<table>
+<thead>
+<tr>
+<th>期数</th>
+<th>主题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ep03-cc</td>
+<td>用 CC 做动画视频</td>
+</tr>
+<tr>
+<td>ep04-opus55</td>
+<td>Opus 5.5（含真人录音和图片素材）</td>
+</tr>
+</tbody>
+</table></div></details><div class="pager"><a href="style-vox-cut.html">← Vox硬切拼贴</a><a href="style-vector.html">矢量手绘 →</a></div><div class="foot">2026 · 上游预览、代码资产、我们的历史渲染分开标记。静音、默认暂停。技术可运行不代表审美验收。<br><a href="../../NOTICE.md">来源与许可</a> · <a href="manifest.json">公开文件目录</a></div></main><script src="gallery.js"></script></body></html>
