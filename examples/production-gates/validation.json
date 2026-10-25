@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-25",
+  "scope": "Actual adapter renders, decoding, DOM traces and bounded producer sequence review; not article quality or cross-model acceptance.",
+  "unitTests": {
+    "passed": 31,
+    "command": "python -m unittest discover -s tests -v",
+    "mediaProcesses": "mocked in unit fixtures; actual renders separately listed below"
+  },
+  "actualRuns": [
+    {
+      "kit": "blackgold",
+      "media": "blackgold.mp4",
+      "mediaSha256": "2cc767a055966d7d1cab335530fa8a1f8b441b0ae2bd23f5c97f893b1b4d4cca",
+      "sourceSha256": "9e2e4962d8b9542746f0fd84a1b1b5226803b60620925080dafd89d90c420242",
+      "traceSha256": "30d7e128d80b7961b58c95181d366cacb7a4424decba75dc57755e84a1dbcbfc",
+      "duration": 12.0,
+      "width": 540,
+      "height": 960,
+      "fps": "30/1",
+      "frames": 360,
+      "audioStreams": 0,
+      "checksPassed": 6,
+      "edit": "match-move"
+    },
+    {
+      "kit": "gilded",
+      "media": "gilded.mp4",
+      "mediaSha256": "92b9ac7f7136be9b7ce043e8209339669ce6ecff508b0793e96976097677acc5",
+      "sourceSha256": "1ef6b365ee01f92f43c0bed87ecf3e48bec6b507f48a73b2aac6d01367c9f85b",
+      "traceSha256": "6ba54a49a71d31006b4ba211cc82e0a7dd816a108d35f51f08d891e55e4a8e94",
+      "duration": 12.0,
+      "width": 960,
+      "height": 540,
+      "fps": "30/1",
+      "frames": 360,
+      "audioStreams": 0,
+      "checksPassed": 6,
+      "edit": "match-move"
+    },
+    {
+      "kit": "pixel",
+      "media": "pixel.mp4",
+      "mediaSha256": "2df0a2c3c6e90a8832799ed7dd7ef4efd896c0ef7fd1a54e2eb36ab055d70ad8",
+      "sourceSha256": "da6781b797033b1ce3c1878246a58df7901aafc45bb2ffbf2c677b7444c08ed4",
+      "traceSha256": "f704cefe10922c65300e57b390d405a811a9f050e88d5d7f8edbe1fdc383ac25",
+      "duration": 12.0,
+      "width": 540,
+      "height": 960,
+      "fps": "30/1",
+      "frames": 360,
+      "audioStreams": 0,
+      "checksPassed": 6,
+      "edit": "evidence-cut"
+    }
+  ],
+  "negativeIntegration": {
+    "pendingMotionReview": "Actual final entry exited 1 before bundling; five prerequisite checks passed and continuous_motion_review failed.",
+    "previousIndependentEpisode": "Read-only check reported all six new prerequisites missing. No source, media or private paths from that episode included."
+  },
+  "verified": [
+    "npm dependency installation",
+    "TypeScript compilation for all three adapters",
+    "silent 12-second MP4 rendering for all three",
+    "360 actual DOM frame records per clip",
+    "full FFmpeg decoding",
+    "producer encoded-sequence inspection",
+    "final entry refuses pending review"
+  ],
+  "notVerified": [
+    "A new article video",
+    "Real TTS generation or resynchronization in these examples",
+    "Long-form editing quality",
+    "Independent DeepSeek run",
+    "User aesthetic acceptance"
+  ]
+}

@@ -79,3 +79,9 @@ episode/
 `chapter-proof`规格为90–150秒、1920×1080、30fps、H.264/YUV420p、单AAC音轨，采用CRF质量控制。只要求可读的正码率记录，不设8Mbps硬下限；画面质量仍需实际检查。其他模式的8Mbps条件保持。完整案例见`examples/chapter-01`，目录遵循本协议；原始稿件哈希大小写不影响比较。
 
 报告中 `technical_and_producer_checks_passed` 仅表示代码列出的技术和记录门槛通过；`userAestheticAcceptance` 与 `universalPipelineValidated` 不会因此被设为通过。
+
+## 可执行素材与动态证据门槛（新增）
+
+除上述历史检查外，验收器现在调用 `production.py check`，要求 `plans/assets.json`、`source/content.json`、`plans/edit-plan.json` 及 `qa/motion-proof.json / motion-trace.json / motion-review.json`。字段与生成命令见[可执行生产入口](executable-production.md)。
+
+新增6项独立检查：`visual_asset_imports`、`shared_content_bindings`、`edit_plan`、`encoded_motion_proof`、`rendered_motion_trace`、`continuous_motion_review`。旧的 `final_visual_review` 仍只代表成片抽帧记录，不能替代这些动态证据。旧项目缺项会如实显示，不因19/20项通过就推断画面合格。

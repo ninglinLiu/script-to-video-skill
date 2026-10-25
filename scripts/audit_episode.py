@@ -1,5 +1,5 @@
 """Observable delivery checks. Does not score aesthetics or invent approval."""
-import argparse,hashlib,json,re,subprocess
+import argparse,hashlib,json,re,subprocess,importlib.util
 from pathlib import Path
 
 def audit(episode,profile):
@@ -70,6 +70,11 @@ def audit(episode,profile):
         add('editor_repeat_validation_waived',True,{'basis':'explicit_user_instruction','instruction':j['userInstruction'],'agentImportVerified':ok,'scope':j.get('verifiedScope','unspecified')})
     src=ep/'工程/src';texts='\n'.join(f.read_text(encoding='utf-8-sig') for f in src.glob('*.tsx')) if src.is_dir() else ''
     add('deterministic_source',bool(texts) and not re.search(r'Math\.random\(|Date\.now\(|requestAnimationFrame\(',texts),'Static check only; no aesthetic claim')
+    # Motion prerequisites are evaluated separately from frame-level producer notes.
+    # Older episodes report missing evidence rather than being silently grandfathered in.
+    gate_spec=importlib.util.spec_from_file_location('production_gate',Path(__file__).with_name('production.py'))
+    gate=importlib.util.module_from_spec(gate_spec);gate_spec.loader.exec_module(gate)
+    checks.extend(gate.check(ep,'render'))
     ready=all(c['passed'] for c in checks if c['required'])
     return dict(profile=profile,episode=str(ep),status='technical_and_producer_checks_passed' if ready else 'incomplete',checks=checks,userAestheticAcceptance='not_implied',universalPipelineValidated=False)
 

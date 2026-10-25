@@ -4,6 +4,8 @@
 
 ## 三个入口
 
+**先用已接好的素材：** `python scripts/select_visual.py --ready` 返回3套可执行装配入口；`production.py init` 会复制静态依赖、许可、字体并生成真实组件引用。具体命令见[可执行生产入口](executable-production.md)。下方完整目录仍适合按需探索，不能把“看过配方”记录成“使用了素材”。
+
 - [统一展厅](../examples/gallery/index.html)：43个专题页，13个制作风格展示、35个艺术场景、9类解说语法、18组历史制作；包含16个旧HTML整理版。
 - [机器目录](../assets/weilanx/catalog.json)：每条给出预览、配方、源码、动作与限制。`python scripts/select_visual.py --query 比较` 可检索；`--kind art` 列艺术场景。
 - [来源清单](../assets/weilanx/provenance.json)：固定提交、原路径、每文件SHA256及许可。778个上游已跟踪文件原样导出，未混入本地未跟踪文件。

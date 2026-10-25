@@ -2,6 +2,15 @@
 
 这是一个包含制作指令、脚本、素材和案例的 **Agent Skill**，需要能执行工具的 Agent 及视频运行环境。现有案例可复用；新文章的稳定生产、8–10分钟长片和跨模型复现尚未整体验收。详见[任务完成度、环境依赖与换模型说明](references/runtime-and-portability.md)。
 
+**新 Agent 从这里开始：[可执行装配与审看流程](references/executable-production.md)。** 已提供3套素材适配器、横竖屏工程、跨镜对象组件、数值与稿件绑定，以及缺少动态证据时阻断全片渲染的入口。
+
+```sh
+python scripts/select_visual.py --ready
+python scripts/production.py init --episode ./episodes/new-film --kit gilded --aspect portrait
+```
+
+初始化得到12秒机制演示及可扩展工程；需要继续改编新文章，不能当作完成60–90秒任务。先 `compile`、再 `proof`、实际静音审看，最后 `final`。安装、TTS和检查命令见上方指南。[查看实际渲染与验证范围](https://ninglinliu.github.io/script-to-video-skill/examples/production-gates/)。
+
 **[打开完整在线展厅：43个专题页 →](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/)**
 
 13个制作风格展示 · 35种艺术场景 · 9类解说语法 · 18组历史制作 · 29条历史静音视频，另有第一批6条组件测试与106秒完整章节。16个旧HTML已整理接入；所有网页播放器默认暂停。
@@ -180,7 +189,7 @@
 
 ## 给下一位Agent的经验入口
 
-[17条决策卡](references/experience/casebook.md)来自已有制作方修复、用户反馈及未解决问题。每条写明：何时使用、先做什么、保留什么、例外、验证与回退、证据范围。不是要求模型通读工作日志。
+[18条决策卡](references/experience/casebook.md)来自已有制作方修复、用户反馈及未解决问题。每条写明：何时使用、先做什么、保留什么、例外、验证与回退、证据范围。不是要求模型通读工作日志。
 
 ```sh
 python scripts/experience.py select --stage repair --query "字幕孤字，修后更挤"

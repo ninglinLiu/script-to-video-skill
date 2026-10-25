@@ -159,6 +159,20 @@
         "用户将TEMP/TMP指向工程/.tmp后通过，并记入其README。"
       ],
       "scope": "用户实测成功的处理方法；本次Agent未复现原故障，不推断适用于所有权限错误。"
+    },
+    {
+      "id": "cross-agent-visual-gap",
+      "kind": "local-artifact-review-and-user-feedback",
+      "label": "2026-10-25：独立Agent短片复现暴露的视觉落地缺口",
+      "observations": [
+        "复用了字体、配音和渲染骨架，但没有接入主要视觉组件。",
+        "分镜中的对象变形实际是清空后淡入；数值同源声明只部分落实。",
+        "静帧审看没有验证跨镜动作，技术与记录通过不能证明观感。"
+      ],
+      "scope": "对一个独立复现案例的核查；通用结论保留，原片不并入此更新。",
+      "files": [
+        "references/executable-production.md"
+      ]
     }
   ]
 }

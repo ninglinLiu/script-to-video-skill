@@ -3,8 +3,15 @@ from pathlib import Path
 import argparse,json
 def main():
  p=argparse.ArgumentParser(description=__doc__)
- p.add_argument('--query',default='');p.add_argument('--kind',choices=['art','grammar','production']);p.add_argument('--json',action='store_true')
+ p.add_argument('--query',default='');p.add_argument('--kind',choices=['art','grammar','production']);p.add_argument('--json',action='store_true');p.add_argument('--ready',action='store_true',help='Only ready-to-import kits with an executable initializer')
  args=p.parse_args();root=Path(__file__).resolve().parents[1]
+ if args.ready:
+  kits=json.loads((root/'assets/production-kit/registry.json').read_text('utf-8'))
+  found=[{'id':k,**v,'command':f'python scripts/production.py init --episode YOUR_EPISODE --kit {k} --aspect portrait'} for k,v in kits.items() if not args.query or any(q.casefold() in json.dumps(v,ensure_ascii=False).casefold() for q in args.query.split())]
+  if args.json:print(json.dumps(found,ensure_ascii=False,indent=2))
+  else:
+   for i in found:print(f"{i['id']} | {i['title']} | import {i['symbol']}\n  {i['command']}")
+  return
  data=json.loads((root/'assets/weilanx/catalog.json').read_text('utf-8'))
  found=[i for i in data if (not args.kind or i['kind']==args.kind) and args.query.casefold() in json.dumps(i,ensure_ascii=False).casefold()]
  if args.json:print(json.dumps(found,ensure_ascii=False,indent=2))

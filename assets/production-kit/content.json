@@ -1,0 +1,17 @@
+{
+  "values": {"accounts": [10, 10, 10, 10, 60]},
+  "derived": {
+    "mean": {"op": "mean", "inputs": ["accounts"]},
+    "median": {"op": "median", "inputs": ["accounts"]}
+  },
+  "labels": {"mean": {"format": ".0f", "unit": ""}, "median": {"format": ".0f", "unit": ""}},
+  "text": {
+    "title": "谁把平均数拉高了？",
+    "group": "五个账户，先看各自的数额",
+    "change": "一个大数，就能改变平均数",
+    "result": "平均 {{mean}}，中位数 {{median}}",
+    "scope": "原创示意数据 · 解释平均数，不是投资收益预测"
+  },
+  "voice": {"episode": "replace-with-your-episode", "voice": "zh-CN-YunxiNeural", "rate": "+0%", "delay": 0.6, "tail": 1.0, "subtitleMaxChineseChars": 24},
+  "chapters": [{"id": "c1", "title": "极端值怎样影响平均数", "cues": ["多数账户只有{{median}}", "一个更大的账户，把平均数拉到了{{mean}}", "平均数，不能代替每个人的处境"], "p": ["。", "。", "。"]}]
+}

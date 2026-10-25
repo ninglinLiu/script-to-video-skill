@@ -11,7 +11,7 @@ LIB = ROOT / 'references/experience'
 STAGES = ('plan', 'script', 'storyboard', 'render', 'review', 'repair', 'delivery')
 DEFAULTS = {
     'plan': ['E03', 'E04', 'E16'], 'script': ['E01', 'E03', 'E09'],
-    'storyboard': ['E05', 'E06', 'E16'], 'render': ['E09', 'E10', 'E15'],
+    'storyboard': ['E18', 'E05', 'E16'], 'render': ['E09', 'E18', 'E15'],
     'review': ['E12', 'E05', 'E07'], 'repair': ['E11', 'E06', 'E08'],
     'delivery': ['E12'],
 }

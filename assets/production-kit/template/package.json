@@ -1,0 +1,25 @@
+{
+  "name": "script-to-video-materialized",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc -p .",
+    "stills": "node render.mjs stills",
+    "render": "node render.mjs final",
+    "serve": "python -m http.server 8000 --bind 127.0.0.1"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.529",
+    "@remotion/google-fonts": "4.0.529",
+    "@remotion/renderer": "4.0.529",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.529"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.3",
+    "@types/react": "19.3.0",
+    "typescript": "7.0.2"
+  }
+}

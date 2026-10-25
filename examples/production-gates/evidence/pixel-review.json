@@ -1,0 +1,48 @@
+{
+  "status": "reviewed",
+  "proofSha256": "2df0a2c3c6e90a8832799ed7dd7ef4efd896c0ef7fd1a54e2eb36ab055d70ad8",
+  "method": "dense-sequence-review",
+  "reviewer": "producer-agent",
+  "scope": "Asset assembly, bound labels and local handoffs only. Not a full article or aesthetic acceptance.",
+  "sequenceReview": {
+    "wholeClip": "36 encoded frames at 3 fps, 0–12 seconds",
+    "pixelCut": "48 consecutive encoded frames at 30 fps, 7.2–8.8 seconds"
+  },
+  "observations": [
+    {
+      "start": 0,
+      "end": 3.2,
+      "observed": "Five existing visual actors remain on screen, each initially showing 10.",
+      "newInformation": "Establishes the group and common starting value."
+    },
+    {
+      "start": 3.2,
+      "end": 5.6,
+      "observed": "The fifth actor rises while its number reaches 60; corresponding bar grows and the mean line rises. The other four remain visible.",
+      "newInformation": "A single outlier changes the aggregate without changing the majority."
+    },
+    {
+      "start": 7.2,
+      "end": 9,
+      "observed": "At 8 seconds, chart evidence is replaced by the 20 / 10 comparison while all five actors retain their positions.",
+      "newInformation": "Mean 20 and median 10 describe different properties of the same group."
+    }
+  ],
+  "transitions": [
+    {
+      "id": "group-to-outlier",
+      "verdict": "keep",
+      "observed": "Group identities persist during the fifth actor rise and chart formation."
+    },
+    {
+      "id": "outlier-to-comparison",
+      "verdict": "keep",
+      "observed": "EvidenceCut replaces the chart at frame 240; the five actor anchors persist across the cut."
+    }
+  ],
+  "unresolved": [],
+  "limitations": [
+    "Simple mechanism fixture; editorial pacing and article adaptation remain untested.",
+    "No real TTS or voice/motion resynchronization was performed in this render test."
+  ]
+}

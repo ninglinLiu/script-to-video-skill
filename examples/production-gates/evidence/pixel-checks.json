@@ -1,0 +1,66 @@
+{
+  "checks": [
+    {
+      "name": "visual_asset_imports",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "kit": "pixel",
+        "importReachable": true,
+        "files": 17
+      }
+    },
+    {
+      "name": "shared_content_bindings",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "labels": {
+          "mean": "20",
+          "median": "10"
+        },
+        "scope": "bound fields only; untagged/manual numbers still require review"
+      }
+    },
+    {
+      "name": "edit_plan",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "transitions": [
+          "group-to-outlier",
+          "outlier-to-comparison"
+        ]
+      }
+    },
+    {
+      "name": "encoded_motion_proof",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "duration": 12.0,
+        "hash": "2df0a2c3c6e90a8832799ed7dd7ef4efd896c0ef7fd1a54e2eb36ab055d70ad8"
+      }
+    },
+    {
+      "name": "rendered_motion_trace",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "frames": 360,
+        "boundLabels": [
+          "mean",
+          "median"
+        ],
+        "scope": "DOM presence, value and local position continuity; not perceptual quality"
+      }
+    },
+    {
+      "name": "continuous_motion_review",
+      "passed": true,
+      "required": true,
+      "detail": "Producer observation bound to clip; not independent approval or user acceptance"
+    }
+  ],
+  "aestheticAcceptance": "not_implied"
+}

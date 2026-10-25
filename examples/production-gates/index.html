@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>可执行素材与剪辑 · 实测</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#101318;color:#eee9df}*{box-sizing:border-box}body{margin:0}main{max-width:1240px;margin:auto;padding:48px 24px 80px}a{color:#d5bb76}h1{font-size:clamp(32px,5vw,60px);line-height:1.15;letter-spacing:-.03em;margin:14px 0 24px}h2{font-size:24px;margin-top:0}p{line-height:1.8;color:#c3c4c6;max-width:900px}.eyebrow{font-size:12px;letter-spacing:.15em;color:#d5bb76}nav{display:flex;gap:22px;flex-wrap:wrap;margin:24px 0 42px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:20px;border:1px solid #363a40;background:#161a20;border-radius:16px}.screen{background:#080a0d;display:flex;align-items:center;justify-content:center;height:480px;margin-bottom:24px;border-radius:10px;overflow:hidden}video{width:100%;height:100%;object-fit:contain}h3{margin:0 0 12px;font-size:22px}.tag{color:#d5bb76;font-size:12px;letter-spacing:.06em}.card p{font-size:14px}code,pre{font-family:ui-monospace,Consolas,monospace}pre{padding:20px;overflow:auto;border:1px solid #363a40;background:#080b10;border-radius:12px;line-height:1.6;font-size:13px}section{margin-top:56px}li{line-height:1.8;margin-bottom:12px;color:#c3c4c6}.scope{border-left:3px solid #d5bb76;padding-left:20px;margin:30px 0 40px}footer{margin-top:60px;border-top:1px solid #363a40;padding-top:24px;color:#999;font-size:13px}@media(max-width:900px){.grid{grid-template-columns:1fr}.screen{height:540px}.card{max-width:650px}.screen.wide{height:auto;aspect-ratio:16/9}main{padding:32px 20px}}
+</style></head><body><main>
+<div class="eyebrow">SCRIPT TO VIDEO / EXECUTABLE PRODUCTION / 2026-10-25</div>
+<h1>素材真正进入画面，<br>剪辑真正发生。</h1>
+<p>三套适配器，同一个小型解释：一个极端值如何拉高平均数。初始化命令会复制并导入已有组件、依赖和字体许可，同时生成共享数据与跨镜对象。下列均为实际编码的 12 秒静音片，默认暂停。</p>
+<nav><a href="../../">仓库首页</a><a href="../gallery/">完整视觉展厅</a><a href="https://github.com/ninglinLiu/script-to-video-skill/blob/main/references/executable-production.md">Agent 操作指南</a><a href="validation.json">机器可读实测结果</a></nav>
+<div class="scope"><p>这些片段验证装配、数据绑定、对象承接和渲染检查。它们是机制测试，不能证明新文章的内容质量、长片节奏或跨模型审美已经稳定。</p></div>
+<div class="grid">
+<article class="card"><div class="screen"><video controls muted playsinline preload="metadata" poster="blackgold.jpg" src="blackgold.mp4"></video></div><p class="tag">01 / 9:16 / MATCH MOVE</p><h3>黑金群体</h3><p>实际引用上游 GlowPawnG。五个对象保持身份，大额账户上移，原组继续进入比较构图。不是清空画面后重新淡入。</p><a href="blackgold.mp4">下载静音 MP4</a></article>
+<article class="card"><div class="screen wide"><video controls muted playsinline preload="metadata" poster="gilded.jpg" src="gilded.mp4"></video></div><p class="tag">02 / 16:9 / MATCH MOVE</p><h3>暗金硬币</h3><p>实际引用上游 GoldCoin。横屏独立布局，共用数据和对象轨迹。初始化还携带同工具包的骰子、分支树及其依赖。</p><a href="gilded.mp4">下载静音 MP4</a></article>
+<article class="card"><div class="screen"><video controls muted playsinline preload="metadata" poster="pixel.jpg" src="pixel.mp4"></video></div><p class="tag">03 / 9:16 / EVIDENCE CUT</p><h3>像素角色与证据硬切</h3><p>实际引用上游 PixelBuddy。第 8 秒保留五个角色，柱形证据直接切为平均数与中位数。硬切由选中的剪辑组件执行。</p><a href="pixel.mp4">下载静音 MP4</a></article>
+</div>
+<section><h2>从可运行工程开始</h2><pre>python scripts/select_visual.py --ready
+python scripts/production.py init --episode ./episodes/new-film --kit pixel --aspect portrait --edit evidence-cut
+cd episodes/new-film
+python tools/production.py compile --episode .
+cd 工程
+npm ci
+npm run check
+node render.mjs proof</pre><p>根据新文章改编内容、动作与布局，生成真实配音时间线后运行 <code>align</code>。完成实际动态审看，再执行 <code>node render.mjs final</code>。入口不会自动把“已生成”改成“已审看”。</p></section>
+<section><h2>这次实际验证了什么</h2><ul>
+<li>复制了文件却未导入视觉组件，检查失败；只使用字体也不能算画面素材复用。</li>
+<li>原始数据改动后未编译、生成稿件与共享数据不一致、绑定标签显示错误，检查失败。</li>
+<li>没有真实连续 MP4、只提交静帧、修改源文件后沿用旧样片，检查失败。</li>
+<li>匹配移动窗口内丢失对象或跳位，检查失败。有意硬切保留锚点，按另一种剪辑方式检查。</li>
+<li>动态审看记录仍为 pending 时，实际 <code>final</code> 入口退出，不启动全片渲染。</li>
+</ul><p>31 个回归测试覆盖正例与失败分支。三套样片另做真实安装、TypeScript 检查、MP4 编码解码和每帧 DOM 检查；关键转场用编码后连续帧复核。逐帧坐标不等于观众看得懂，具体范围以 <a href="validation.json">实测记录</a>为准。</p></section>
+<footer>组件来源：<a href="https://github.com/Azure12355/weilanx-claude-videos">weilanx-claude-videos</a>，MIT 与字体许可随工程保留。上述场景装配及验证工具属于本项目；上游视觉组件不冒充新创作。<a href="../../NOTICE.md">来源说明</a>。</footer>
+</main></body></html>

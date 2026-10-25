@@ -2,6 +2,7 @@ __pycache__/
 *.py[cod]
 .venv/
 .tmp/
+.npm-cache/
 node_modules/
 .env
 .env.*

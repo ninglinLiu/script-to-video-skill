@@ -480,6 +480,34 @@
       ],
       "chars": 539,
       "sha256": "ad71ffe7a109ca8175179b91f22f420acfa5bada27fed0172b61e3d5f1a5565c"
+    },
+    {
+      "id": "E18",
+      "title": "流程齐全，画面仍像逐页演示",
+      "stages": [
+        "plan",
+        "storyboard",
+        "render",
+        "review",
+        "repair"
+      ],
+      "signals": [
+        "复用",
+        "素材",
+        "同源",
+        "静帧",
+        "跳位",
+        "幻灯片",
+        "逐页",
+        "跨模型",
+        "DeepSeek"
+      ],
+      "card": "references/experience/cards/E18.md",
+      "sources": [
+        "cross-agent-visual-gap"
+      ],
+      "chars": 583,
+      "sha256": "a057f97a27061af24520e40d5b77f12f36a35835c189e399e74ac66081e678cc"
     }
   ]
 }

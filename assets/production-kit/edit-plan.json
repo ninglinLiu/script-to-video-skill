@@ -1,0 +1,15 @@
+{
+  "duration": 12,
+  "fps": 30,
+  "timingStatus": "demo-only; replace with measured voice cues for production",
+  "proof": {"start": 0, "end": 12, "claimKeys": ["mean", "median"]},
+  "transitions": [
+    {"id": "group-to-outlier", "at": 4, "kind": "match-move", "objectIds": ["account-0", "account-4"], "question": "为什么平均数与大多数人的数额不同？", "answer": "保留五个账户，突出较大的一个", "maxStep": 0.08},
+    {"id": "outlier-to-comparison", "at": 8, "kind": "match-move", "objectIds": ["account-0", "account-4"], "question": "这个大数改变了什么？", "answer": "同一组账户排成分布，平均值与中位数一起比较", "maxStep": 0.08}
+  ],
+  "beats": [
+    {"start": 0, "end": 3.2, "newInformation": "观察每个账户的具体数额"},
+    {"start": 3.2, "end": 8, "newInformation": "一个极端值把均值拉离多数账户"},
+    {"start": 8, "end": 12, "newInformation": "用同一组数据比较平均值和中位数"}
+  ]
+}

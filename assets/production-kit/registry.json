@@ -1,0 +1,26 @@
+{
+  "gilded": {
+    "title": "暗金实物：金币、骰子与分支图",
+    "entry": "src/library/gilded/props.tsx",
+    "extra": ["src/library/gilded/charts.tsx"],
+    "symbol": "GoldCoin",
+    "tags": ["概率", "本金", "分割", "分支", "比较"],
+    "background": "#110d08", "ink": "#fff1cc", "accent": "#edbf67"
+  },
+  "blackgold": {
+    "title": "黑金人物：群体、个体与聚光灯",
+    "entry": "src/library/blackgold/props.tsx",
+    "extra": [],
+    "symbol": "GlowPawnG",
+    "tags": ["群体", "平均", "差异", "选择", "比较"],
+    "background": "#060e13", "ink": "#fffaf0", "accent": "#6fe0d2"
+  },
+  "pixel": {
+    "title": "像素角色：行动、反馈与群体",
+    "entry": "src/library/character/PixelBuddy.tsx",
+    "extra": [],
+    "symbol": "PixelBuddy",
+    "tags": ["人物", "流程", "反馈", "群体", "比较"],
+    "background": "#f3ebdd", "ink": "#24283a", "accent": "#b94f2c"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "status": "reviewed",
+  "proofSha256": "92b9ac7f7136be9b7ce043e8209339669ce6ecff508b0793e96976097677acc5",
+  "method": "dense-sequence-review",
+  "reviewer": "producer-agent",
+  "scope": "Asset assembly, bound labels and local handoffs only. Not a full article or aesthetic acceptance.",
+  "sequenceReview": {
+    "wholeClip": "36 encoded frames at 3 fps, 0–12 seconds",
+    "pixelCut": "The same handoff motion also inspected in consecutive-frame boards during the earlier render; current DOM trace identical."
+  },
+  "observations": [
+    {
+      "start": 0,
+      "end": 3.2,
+      "observed": "Five existing visual actors remain on screen, each initially showing 10.",
+      "newInformation": "Establishes the group and common starting value."
+    },
+    {
+      "start": 3.2,
+      "end": 5.6,
+      "observed": "The fifth actor rises while its number reaches 60; corresponding bar grows and the mean line rises. The other four remain visible.",
+      "newInformation": "A single outlier changes the aggregate without changing the majority."
+    },
+    {
+      "start": 7.2,
+      "end": 9,
+      "observed": "The same five actors shift into comparison spacing and the 20 / 10 labels become legible; no clear-then-rebuild.",
+      "newInformation": "Mean 20 and median 10 describe different properties of the same group."
+    }
+  ],
+  "transitions": [
+    {
+      "id": "group-to-outlier",
+      "verdict": "keep",
+      "observed": "Group identities persist during the fifth actor rise and chart formation."
+    },
+    {
+      "id": "outlier-to-comparison",
+      "verdict": "keep",
+      "observed": "Actor identities and local positions continue while comparison spacing and labels appear."
+    }
+  ],
+  "unresolved": [],
+  "limitations": [
+    "Simple mechanism fixture; editorial pacing and article adaptation remain untested.",
+    "No real TTS or voice/motion resynchronization was performed in this render test."
+  ]
+}
