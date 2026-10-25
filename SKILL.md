@@ -44,7 +44,7 @@ python scripts/experience.py select --stage repair --query "字幕孤字，修�
 | 具体审看、数字与布局规则 | [生产规范](references/production.md) |
 | 长章节或长片 | [章节与素材组织](references/long-form.md) |
 | 选配乐、混音、音源不完整 | [声音与素材](references/audio-and-materials.md)，检索E14 |
-| 经验未匹配或需人工浏览目录 | [16条经验目录](references/experience/casebook.md) |
+| 经验未匹配或需人工浏览目录 | [17条经验目录](references/experience/casebook.md) |
 | 安装、换模型、迁移机器、原任务完成度 | [运行环境与可移植性](references/runtime-and-portability.md) |
 
 这是Agent编排Skill。两篇开发、一篇独立验收及同文短长片、旁白修改、失败处理仍需完整验证；8–10分钟长片和跨模型稳定质量尚未证明。案例成功不推广为任意风格、文章或时长一次完美。

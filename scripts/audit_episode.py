@@ -54,7 +54,11 @@ def audit(episode,profile):
     native=ep/'qa/editor-import.json'
     ok=False;detail='No verified native editor import. Remotion source is not a substitute.'
     if native.is_file():
-        j=json.loads(native.read_text(encoding='utf-8-sig'));asset=ep/j.get('project','__missing__');ok=asset.is_file() and j.get('openedSuccessfully') is True and j.get('editor') in ['Premiere Pro','Jianying','Final Cut Pro'];detail=j
+        j=json.loads(native.read_text(encoding='utf-8-sig'));project=j.get('project')
+        ok=(isinstance(project,str) and bool(project.strip())
+            and (ep/project).is_file() and j.get('openedSuccessfully') is True
+            and j.get('editor') in ['Premiere Pro','Jianying','Final Cut Pro'])
+        detail=j
     acknowledged=False
     if native.is_file():
         acknowledged=(j.get('status')=='user_reported_already_verified'

@@ -180,7 +180,7 @@
 
 ## 给下一位Agent的经验入口
 
-[16条决策卡](references/experience/casebook.md)来自已有制作方修复、用户反馈及未解决问题。每条写明：何时使用、先做什么、保留什么、例外、验证与回退、证据范围。不是要求模型通读工作日志。
+[17条决策卡](references/experience/casebook.md)来自已有制作方修复、用户反馈及未解决问题。每条写明：何时使用、先做什么、保留什么、例外、验证与回退、证据范围。不是要求模型通读工作日志。
 
 ```sh
 python scripts/experience.py select --stage repair --query "字幕孤字，修后更挤"
@@ -211,6 +211,8 @@ Windows PowerShell 可将目标目录写成 `$env:USERPROFILE/.codex/skills/scri
 > 使用 $script-to-video，将这篇文章制作成 60–90 秒竖屏视频。使用我的现有渲染工程，保持固定风格，内部检查并修复字幕与动画衔接，交付 MP4、SRT 和工程。预览静音。
 
 制作方依次完成：原文与证据 → 核心问题与脚本 → 真实配音时间线 → 对象状态与镜头 → 连续小样 → 内部修复 → 成片与验收。
+
+Windows渲染若在`%TEMP%`的`pre-encode.mp4`报`Permission denied`，见[工程临时目录处理方法](examples/chapter-01/README.md#windows临时目录拒绝写入)：在启动渲染前，将当前终端的`TEMP/TMP`指向可写的`工程/.tmp`。
 
 ## 默认交付规格
 

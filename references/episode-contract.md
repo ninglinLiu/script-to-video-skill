@@ -60,6 +60,8 @@ episode/
 
 `task-short`默认要求`qa/editor-import.json`含真实工程路径、`openedSuccessfully: true`及编辑器名称，实际导入后才填写。`extended`和`chapter-proof`将此项单独记录，不阻断该模式。
 
+尚未验证时可以诚实写`"project": null`、省略该字段或写空字符串；这些都记录为`native_editor_project.passed: false`，不抛路径拼接异常，也不算成功验证。非空字符串路径仍须指向真实文件，并满足编辑器及实际打开记录条件。用户明确免除重复验证的既有逻辑不变。
+
 用户明确已手动验证并要求不再复验时，用以下记录表达，不能把`openedSuccessfully`伪造为true。验收器分别报告“未由Agent验证新文件”和“用户免除重复验证”，不会再把启动编辑器列为前置阻塞：
 
 ```json

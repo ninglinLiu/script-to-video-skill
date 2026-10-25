@@ -40,6 +40,22 @@ node render.mjs segment recovery
 
 渲染器使用Remotion管理的Chrome Headless Shell，或环境变量`REMOTION_BROWSER`指定本机兼容浏览器。片段按全局帧区间渲染，保留跨镜状态。所有渲染静音。
 
+### Windows临时目录拒绝写入
+
+用户在另一环境实测：Remotion调用的FFmpeg写入`%TEMP%`下的`pre-encode.mp4`时报`Permission denied`，将`TEMP/TMP`改为工程自己的`.tmp`后通过。本仓库记录这一已报告的处理方法，本次未在该环境复现。
+
+遇到同类错误时，在 **`工程`目录** 的PowerShell里、启动Remotion之前执行：
+
+```powershell
+$renderTemp = Join-Path (Get-Location).Path '.tmp'
+New-Item -ItemType Directory -Path $renderTemp -Force | Out-Null
+$env:TEMP = $renderTemp
+$env:TMP = $renderTemp
+node render.mjs proof
+```
+
+这些环境变量只作用于当前终端及其后启动的子进程；已经运行的渲染进程需重新启动。确认报错指向临时编码文件，并确保工程目录可写；若新目录仍拒写，继续检查具体路径和错误，不将所有权限问题归为同一原因。`.tmp`仅为缓存，不纳入Git或交付素材。
+
 更换稿件须重新完成事实审查并绑定`source/draft.txt`哈希，再执行`pip install -r requirements.txt`和`python voice.py`；缓存键包含文字、音色、语速与服务版本。会发起TTS请求；现成素材不会自动重合成。源稿与JSON不一致时停止。字幕时间来自真实WordBoundary，不用等长字符分配。
 
 重渲静音片后可重新封装现有配音：

@@ -149,6 +149,16 @@
         "复用既有人工介入与修复经验，不从零重画；主要制作继续使用用户选择的强模型。"
       ],
       "scope": "新需求与设计依据，不是多样组合已验证的证据。"
+    },
+    {
+      "id": "user-temp-feedback",
+      "kind": "user-reported-environment-fix",
+      "label": "2026-10-25：Windows Remotion临时目录权限反馈",
+      "observations": [
+        "Remotion调用的FFmpeg在%TEMP%下写pre-encode.mp4时报Permission denied。",
+        "用户将TEMP/TMP指向工程/.tmp后通过，并记入其README。"
+      ],
+      "scope": "用户实测成功的处理方法；本次Agent未复现原故障，不推断适用于所有权限错误。"
     }
   ]
 }

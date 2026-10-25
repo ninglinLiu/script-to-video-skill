@@ -458,6 +458,28 @@
       ],
       "chars": 460,
       "sha256": "eb629cfa1e2cb62273999b1185ee9f5fab4ea424c6ac7e89a8000929d3a2a9af"
+    },
+    {
+      "id": "E17",
+      "title": "Windows临时编码文件拒绝写入",
+      "stages": [
+        "render",
+        "repair"
+      ],
+      "signals": [
+        "TEMP",
+        "TMP",
+        "Permission denied",
+        "pre-encode.mp4",
+        "临时目录",
+        "拒绝写入"
+      ],
+      "card": "references/experience/cards/E17.md",
+      "sources": [
+        "user-temp-feedback"
+      ],
+      "chars": 539,
+      "sha256": "ad71ffe7a109ca8175179b91f22f420acfa5bada27fed0172b61e3d5f1a5565c"
     }
   ]
 }
