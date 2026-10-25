@@ -1,0 +1,6 @@
+{
+  "workflow": "adapted-film",
+  "styleReference": "chapter-01",
+  "captionMode": "visible-in-video",
+  "fullFilmReview": "required"
+}

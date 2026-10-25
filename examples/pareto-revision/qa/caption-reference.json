@@ -1,0 +1,187 @@
+{
+  "sourceSha256": "73f32f8fde57c5bf6d8fa4bb770bf2d1e60f0a0793a6d45cf2e4aa7eedfe6a16",
+  "samples": [
+    {
+      "subtitle": 0,
+      "frame": 26,
+      "text": "你多半听过二八法则，20% 的人拥有 80% 的财富。",
+      "expected": "qa/caption-reference/00-start-with.png",
+      "without": "qa/caption-reference/00-start-without.png"
+    },
+    {
+      "subtitle": 0,
+      "frame": 158,
+      "text": "你多半听过二八法则，20% 的人拥有 80% 的财富。",
+      "expected": "qa/caption-reference/00-end-with.png",
+      "without": "qa/caption-reference/00-end-without.png"
+    },
+    {
+      "subtitle": 1,
+      "frame": 185,
+      "text": "原文举过土地的例子：20% 的人，占有 80% 的土地。",
+      "expected": "qa/caption-reference/01-start-with.png",
+      "without": "qa/caption-reference/01-start-without.png"
+    },
+    {
+      "subtitle": 1,
+      "frame": 325,
+      "text": "原文举过土地的例子：20% 的人，占有 80% 的土地。",
+      "expected": "qa/caption-reference/01-end-with.png",
+      "without": "qa/caption-reference/01-end-without.png"
+    },
+    {
+      "subtitle": 2,
+      "frame": 353,
+      "text": "还有豌豆：20% 的植株，产出 80% 的豆子。",
+      "expected": "qa/caption-reference/02-start-with.png",
+      "without": "qa/caption-reference/02-start-without.png"
+    },
+    {
+      "subtitle": 2,
+      "frame": 475,
+      "text": "还有豌豆：20% 的植株，产出 80% 的豆子。",
+      "expected": "qa/caption-reference/02-end-with.png",
+      "without": "qa/caption-reference/02-end-without.png"
+    },
+    {
+      "subtitle": 3,
+      "frame": 502,
+      "text": "这些例子说的是分布不均，不是普遍规律。",
+      "expected": "qa/caption-reference/03-start-with.png",
+      "without": "qa/caption-reference/03-start-without.png"
+    },
+    {
+      "subtitle": 3,
+      "frame": 587,
+      "text": "这些例子说的是分布不均，不是普遍规律。",
+      "expected": "qa/caption-reference/03-end-with.png",
+      "without": "qa/caption-reference/03-end-without.png"
+    },
+    {
+      "subtitle": 4,
+      "frame": 614,
+      "text": "再看一个数学模型。",
+      "expected": "qa/caption-reference/04-start-with.png",
+      "without": "qa/caption-reference/04-start-without.png"
+    },
+    {
+      "subtitle": 4,
+      "frame": 650,
+      "text": "再看一个数学模型。",
+      "expected": "qa/caption-reference/04-end-with.png",
+      "without": "qa/caption-reference/04-end-without.png"
+    },
+    {
+      "subtitle": 5,
+      "frame": 677,
+      "text": "在帕累托模型中，指数约 1.16，才得到二八比例。",
+      "expected": "qa/caption-reference/05-start-with.png",
+      "without": "qa/caption-reference/05-start-without.png"
+    },
+    {
+      "subtitle": 5,
+      "frame": 800,
+      "text": "在帕累托模型中，指数约 1.16，才得到二八比例。",
+      "expected": "qa/caption-reference/05-end-with.png",
+      "without": "qa/caption-reference/05-end-without.png"
+    },
+    {
+      "subtitle": 6,
+      "frame": 828,
+      "text": "指数换成 1.5，同样 20% 的人只占 58%；换成 2.0，只占 45%。",
+      "expected": "qa/caption-reference/06-start-with.png",
+      "without": "qa/caption-reference/06-start-without.png"
+    },
+    {
+      "subtitle": 6,
+      "frame": 1056,
+      "text": "指数换成 1.5，同样 20% 的人只占 58%；换成 2.0，只占 45%。",
+      "expected": "qa/caption-reference/06-end-with.png",
+      "without": "qa/caption-reference/06-end-without.png"
+    },
+    {
+      "subtitle": 7,
+      "frame": 1083,
+      "text": "指数越小，尾巴越厚，越接近少数拿走大部分。",
+      "expected": "qa/caption-reference/07-start-with.png",
+      "without": "qa/caption-reference/07-start-without.png"
+    },
+    {
+      "subtitle": 7,
+      "frame": 1206,
+      "text": "指数越小，尾巴越厚，越接近少数拿走大部分。",
+      "expected": "qa/caption-reference/07-end-with.png",
+      "without": "qa/caption-reference/07-end-without.png"
+    },
+    {
+      "subtitle": 8,
+      "frame": 1234,
+      "text": "所以 80% 比 20% 是算出来的结果，不是可以套用的原因。",
+      "expected": "qa/caption-reference/08-start-with.png",
+      "without": "qa/caption-reference/08-start-without.png"
+    },
+    {
+      "subtitle": 8,
+      "frame": 1394,
+      "text": "所以 80% 比 20% 是算出来的结果，不是可以套用的原因。",
+      "expected": "qa/caption-reference/08-end-with.png",
+      "without": "qa/caption-reference/08-end-without.png"
+    },
+    {
+      "subtitle": 9,
+      "frame": 1421,
+      "text": "如果这个比例还能继续成立，80% 乘 80% 是 64%。",
+      "expected": "qa/caption-reference/09-start-with.png",
+      "without": "qa/caption-reference/09-start-without.png"
+    },
+    {
+      "subtitle": 9,
+      "frame": 1595,
+      "text": "如果这个比例还能继续成立，80% 乘 80% 是 64%。",
+      "expected": "qa/caption-reference/09-end-with.png",
+      "without": "qa/caption-reference/09-end-without.png"
+    },
+    {
+      "subtitle": 10,
+      "frame": 1622,
+      "text": "对应的 20% 乘 20%，是 4%。",
+      "expected": "qa/caption-reference/10-start-with.png",
+      "without": "qa/caption-reference/10-start-without.png"
+    },
+    {
+      "subtitle": 10,
+      "frame": 1714,
+      "text": "对应的 20% 乘 20%，是 4%。",
+      "expected": "qa/caption-reference/10-end-with.png",
+      "without": "qa/caption-reference/10-end-without.png"
+    },
+    {
+      "subtitle": 11,
+      "frame": 1741,
+      "text": "但符合一个比例，还不等于解释了原因。",
+      "expected": "qa/caption-reference/11-start-with.png",
+      "without": "qa/caption-reference/11-start-without.png"
+    },
+    {
+      "subtitle": 11,
+      "frame": 1818,
+      "text": "但符合一个比例，还不等于解释了原因。",
+      "expected": "qa/caption-reference/11-end-with.png",
+      "without": "qa/caption-reference/11-end-without.png"
+    },
+    {
+      "subtitle": 12,
+      "frame": 1845,
+      "text": "下次看到二八法则，先问尾巴有多厚，分母是谁。",
+      "expected": "qa/caption-reference/12-start-with.png",
+      "without": "qa/caption-reference/12-start-without.png"
+    },
+    {
+      "subtitle": 12,
+      "frame": 1959,
+      "text": "下次看到二八法则，先问尾巴有多厚，分母是谁。",
+      "expected": "qa/caption-reference/12-end-with.png",
+      "without": "qa/caption-reference/12-end-without.png"
+    }
+  ]
+}

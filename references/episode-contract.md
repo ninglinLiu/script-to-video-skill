@@ -85,3 +85,12 @@ episode/
 除上述历史检查外，验收器现在调用 `production.py check`，要求 `plans/assets.json`、`source/content.json`、`plans/edit-plan.json` 及 `qa/motion-proof.json / motion-trace.json / motion-review.json`。字段与生成命令见[可执行生产入口](executable-production.md)。
 
 新增6项独立检查：`visual_asset_imports`、`shared_content_bindings`、`edit_plan`、`encoded_motion_proof`、`rendered_motion_trace`、`continuous_motion_review`。旧的 `final_visual_review` 仍只代表成片抽帧记录，不能替代这些动态证据。旧项目缺项会如实显示，不因19/20项通过就推断画面合格。
+
+
+## 实际字幕与完整影片观察（当前交付必需）
+
+新片 `plans/project.json.workflow` 为 `adapted-film`；保留 `plans/migration.json` 的完整源工程和文件哈希、`plans/captions.json` 的真实字幕区域。`component-test` 不作为成片交付。
+
+除SRT外，交付检查读取 `qa/caption-verification.json`：最终MP4中每条字幕的首尾采样像素、整片实际DOM轨迹与来源哈希。另读取 `qa/full-review.json`：从0到片尾的逐段观察、近静止段处理及当前MP4哈希。局部动态样片成功不再放行整片。生成命令见[执行流程](executable-production.md)。
+
+同文修改保留 `plans/comparison.json`，写清原片哈希、保持项、变化项与事实修正；没有用户反馈时审美认可仍为未确认。

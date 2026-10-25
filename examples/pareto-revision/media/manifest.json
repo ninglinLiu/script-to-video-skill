@@ -1,0 +1,52 @@
+{
+  "productionMasterSha256": "b2de8271539905e96888754257d5a425ee9c58c11dfba773b05a62ee5e80ba70",
+  "note": "Public media are smaller derivatives; QA hashes refer to the full local production master.",
+  "files": [
+    {
+      "file": "media/after-silent.mp4",
+      "sha256": "c679b5c4c2cdb8e805e4d590f0790ca95fdecec9d434ec4103cf5eb3686d5d4d",
+      "duration": "68.433333",
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 720,
+          "height": 1280,
+          "nb_read_frames": "2053"
+        }
+      ]
+    },
+    {
+      "file": "media/after-with-audio.mp4",
+      "sha256": "79e6ab17e5867d31879686913749250dc7b28e623bd32fe2b90f08677ccccce4",
+      "duration": "68.433333",
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 720,
+          "height": 1280,
+          "nb_read_frames": "2053"
+        },
+        {
+          "codec_type": "audio",
+          "nb_read_frames": "3207"
+        }
+      ]
+    },
+    {
+      "file": "media/before-silent.mp4",
+      "sha256": "f82de011a5fcd1621936025a05e31aa90c5620120c5c46939aa8413de6ec7a1d",
+      "duration": "68.833333",
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 540,
+          "height": 960,
+          "nb_read_frames": "2065",
+          "side_data_list": [
+            {}
+          ]
+        }
+      ]
+    }
+  ]
+}

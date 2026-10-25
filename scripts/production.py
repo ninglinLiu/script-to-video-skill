@@ -128,6 +128,7 @@ def init(ep, kit, aspect, edit='match-move'):
     base = ROOT / 'examples/chapter-01'
     template = ROOT / 'assets/production-kit/template'
     ep.mkdir(parents=True, exist_ok=True)
+    write(ep / 'plans/project.json', {'workflow':'component-test','delivery':'not-a-film-template','kit':kit})
     shutil.copytree(template, ep / '工程', dirs_exist_ok=True)
     for name in ['package.json','package-lock.json','tsconfig.json']:
         if not (ep / '工程' / name).exists():shutil.copy2(base / '工程' / name, ep / '工程' / name)
@@ -314,13 +315,13 @@ def check(ep, stage='render'):
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__);sub=ap.add_subparsers(dest='command',required=True)
-    p=sub.add_parser('init');p.add_argument('--episode',required=True);p.add_argument('--kit',choices=['gilded','blackgold','pixel'],required=True);p.add_argument('--aspect',choices=['portrait','landscape'],default='portrait');p.add_argument('--edit',choices=['match-move','evidence-cut'],default='match-move')
+    p=sub.add_parser('component-test',help='Material extraction and component tests only; not a full-film initializer');p.add_argument('--episode',required=True);p.add_argument('--kit',choices=['gilded','blackgold','pixel'],required=True);p.add_argument('--aspect',choices=['portrait','landscape'],default='portrait');p.add_argument('--edit',choices=['match-move','evidence-cut'],default='match-move')
     for name in ['compile','align','digest','capture','check']:
         p=sub.add_parser(name);p.add_argument('--episode',required=True)
         if name=='check':p.add_argument('--stage',choices=['prepare','render'],default='render')
     a=ap.parse_args();ep=Path(a.episode).resolve()
     try:
-        if a.command=='init':init(ep,a.kit,a.aspect,a.edit)
+        if a.command=='component-test':init(ep,a.kit,a.aspect,a.edit)
         elif a.command=='compile':compile_content(ep,True);print('Bound draft + script + visual data rebuilt; re-review changed claims before TTS.')
         elif a.command=='align':print(align(ep))
         elif a.command=='digest':print(source_digest(ep))

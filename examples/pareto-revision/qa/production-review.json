@@ -1,0 +1,33 @@
+{
+  "status": "reviewed_with_fixes",
+  "reviewedFinalSha256": "b2de8271539905e96888754257d5a425ee9c58c11dfba773b05a62ee5e80ba70",
+  "framesReviewed": [
+    0,
+    1,
+    5,
+    6,
+    11.5,
+    12.05,
+    16.5,
+    20.5,
+    23.5,
+    25.5,
+    27.4,
+    28.5,
+    33.5,
+    37.5,
+    41.5,
+    45.5,
+    48,
+    50.5,
+    51.7,
+    55,
+    58.5,
+    64,
+    68
+  ],
+  "fullReview": "qa/full-review.json",
+  "fixes": "qa/repair-v1.json",
+  "acceptance": "producer review only; user pending",
+  "reencodeVerification": "qa/full-review.json"
+}

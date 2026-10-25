@@ -22,24 +22,24 @@ python scripts/experience.py select --stage repair --query "字幕孤字，修�
 
 ## 制作主线
 
-新项目先走[可执行生产入口](references/executable-production.md)：
+新项目先走[完整工程迁移入口](references/executable-production.md)。明确选择一个已确认方向的完整案例，带着字幕、构图、解释镜头一起改编；不按关键词自动选最容易运行的 kit。
 
 ```sh
-python scripts/select_visual.py --ready --query "本片的解释动作"
-python scripts/production.py init --episode /path/to/new-episode --kit blackgold --aspect portrait
+python scripts/start_episode.py --source chapter-01 --episode /path/to/new-episode
 ```
 
-`gilded / blackgold / pixel` 提供已接入素材的可运行适配器，按内容选，不把示例文稿当成通用成片。已有工程保留，在隔离目录取得所需模块后移植。新入口在缺少真实连续样片、组件实际引用、共享数据与动态观察时拒绝全片渲染；验收器也检查这些缺项。该门槛不等于审美保证。
+这是迁移已有完整影片的生产输入，不是给任何文章自动套同一模板。`chapter-01` 是可复现示例，也可显式指定兼容完整工程目录。新主题需改编对象、证据、动作及构图；画幅变化要实际重排。**gilded / blackgold / pixel 已降为组件测试和取材入口**，用 `production.py component-test` 在独立目录取模块，不能再据此初始化默认成片。旧 `init` 命令已撤下。
 
 1. **原文与证据**：保存来源范围、事实、限定语和原创假设。只有标题不得冒充全文改编；缺证据就补证、改写或明确缺口。
 2. **内容与分镜**：先形成问题及有效论证，再设计解释动作。对象ID、起止状态、数值口径、旁白cue及下一镜承接写清。按所选形式组织，不强套固定九镜或三点论。
 3. **声音与时间**：事实稿审过后生成/复用真实配音和词界。缓存绑定稿件、音色、语速与服务版本；改稿后重建受影响时间线，不等比缩旧字幕。
-4. **资产与渲染**：查[视觉目录](references/visual-library.md)，先取可装配适配器，再按需取其他配方。沿用已确认工程和资产。执行 `production.py compile` 让口播和画面绑定同一数据；真实配音后用 `align` 绑定交接。用 `node render.mjs proof` 渲包含解释与两处交接的8–13秒，完成实际动态观察后才渲全片。不能用静帧替代此步骤。
+4. **资产与渲染**：从选定完整工程迁移实际入画的字幕、构图与解释镜头；[视觉目录](references/visual-library.md)用于补缺口。数字和稿件可用 `production.py compile` 同源生成。以真实词界驱动动画，先用 `node render.mjs proof 起秒 终秒` 检查高风险交接，再渲完整片；局部小样通过不授权交付整片。
 5. **内部修复**：基于实际编码片段、连续帧和目标观看尺寸定位。保留最好版本；每个候选记录问题、影响范围、必须保留条件和同区间对照。候选变差则不替换原版。最多三轮同类局部修复，无进展就重新诊断或标明待修。
-6. **交付**：运行[技术验收器](scripts/audit_episode.py)，协议见[输入与记录](references/episode-contract.md)。交齐配音MP4、SRT、源码/工程、分段画面、独立声音、来源、耗时成本与介入记录。技术通过、制作方审查、用户认可分别记录。
+6. **整片审查与交付**：先运行 `film_delivery.py inspect` 检查真实MP4字幕像素并生成整片2fps序列和主体近静止区间。逐段核查到片尾，快动作加密检查；填入真实观察后运行 `film_delivery.py check`。旁挂SRT、DOM记录或12秒样片均不能代替整片字幕与节奏检查。运行[技术验收器](scripts/audit_episode.py)，协议见[输入与记录](references/episode-contract.md)。交齐配音MP4、SRT、源码/工程、分段画面、独立声音、来源、耗时成本与介入记录。技术通过、制作方审查、用户认可分别记录。
 
 ## 共用约束与模式
 
+- 反馈修复默认同文对照：保留原片，明确保持项和变化项；必要的事实修正另列，避免同时换题掩盖问题。
 - 不外放；预览优先无音轨、默认暂停。敏感或仅本地素材不进入公共包或外部分析服务。
 - 读图、生成图、TTS和渲染是不同工具能力。正式制作使用用户选定的高能力主创模型；其他模型移植测试不阻塞正常制作，不假定每个模型自带图像生成。
 - 默认`task-short`：60–90秒、1080×1920/30fps、H.264≥8Mbps、AAC、真实对齐字幕；默认5–8镜，用户另有明确形式时调整并记录。
@@ -53,7 +53,7 @@ python scripts/production.py init --episode /path/to/new-episode --kit blackgold
 | 具体审看、数字与布局规则 | [生产规范](references/production.md) |
 | 长章节或长片 | [章节与素材组织](references/long-form.md) |
 | 选配乐、混音、音源不完整 | [声音与素材](references/audio-and-materials.md)，检索E14 |
-| 经验未匹配或需人工浏览目录 | [18条经验目录](references/experience/casebook.md) |
+| 经验未匹配或需人工浏览目录 | [19条经验目录](references/experience/casebook.md) |
 | 安装、换模型、迁移机器、原任务完成度 | [运行环境与可移植性](references/runtime-and-portability.md) |
 
 这是Agent编排Skill。两篇开发、一篇独立验收及同文短长片、旁白修改、失败处理仍需完整验证；8–10分钟长片和跨模型稳定质量尚未证明。案例成功不推广为任意风格、文章或时长一次完美。

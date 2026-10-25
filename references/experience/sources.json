@@ -173,6 +173,21 @@
       "files": [
         "references/executable-production.md"
       ]
+    },
+    {
+      "id": "pareto-component-template-failure",
+      "kind": "user-feedback-and-local-film-review",
+      "label": "2026-10-25：帕累托独立复现失败",
+      "observations": [
+        "用户指出没字幕、节奏差、画风阴郁。",
+        "本地原片只有旁挂SRT，没有真实口播字幕层。",
+        "12.3秒动态样片未覆盖68.83秒全片的多段停滞。",
+        "用户要求同篇内容修复及从完整工程迁移。"
+      ],
+      "scope": "失败事实与修复要求；新片由用户另行评价，不能记成已获认可。",
+      "files": [
+        "references/executable-production.md"
+      ]
     }
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "status": "user_reported_already_verified",
+  "validationOwner": "user",
+  "repeatValidationWaived": true,
+  "project": null,
+  "openedSuccessfully": false,
+  "userInstruction": "用户明确说明剪映/PR原生工程已手动验证，无需再次验证。",
+  "verifiedScope": "Previously verified editor workflow only; no new agent import claimed."
+}

@@ -35,3 +35,7 @@ examples/chapter-01/native/timeline.xml
 # Public upstream source snapshot and the curated silent gallery.
 !assets/weilanx/**
 !examples/gallery/**
+
+# Selected same-article comparison evidence; production caches and full masters stay local.
+!examples/pareto-revision/qa/
+!examples/pareto-revision/qa/**

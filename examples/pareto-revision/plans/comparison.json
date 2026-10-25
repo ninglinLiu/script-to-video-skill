@@ -1,0 +1,18 @@
+{
+  "topic": "帕累托法则",
+  "baseline": "pareto-8020-60s",
+  "baselineVideoSha256": "c57642fc4e885e012ccceddd0bed970f864b7a05f10778872a3fbb447dccb0d4",
+  "controls": [
+    "Same article/topic",
+    "Same 20/80, 1.16/1.5/2.0, 58/45 and 64/4 values",
+    "Same Yunxi voice, -2% rate, no BGM",
+    "Same Remotion version"
+  ],
+  "changes": [
+    "Migrate complete chapter-01 paper design, typography, caption layer, receipt/branch/evidence compositions",
+    "Re-time explanatory changes across the full narration",
+    "Correct model necessity claim and make recursive proportion conditional",
+    "Attribute land/pea examples to article"
+  ],
+  "notClaimed": "This is not a pure visual-only experiment: the limited script corrections alter timing. No user aesthetic acceptance is inferred."
+}

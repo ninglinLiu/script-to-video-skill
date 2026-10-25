@@ -1,0 +1,17 @@
+{
+  "ttsAllowed": true,
+  "reviewer": "producer-agent",
+  "reviewedFiles": [
+    {
+      "path": "source/draft.txt",
+      "sha256": "0ce6897a619206085641d8d71eaa132cd3ef40324da6bb3f60c0f0abade46317"
+    }
+  ],
+  "findings": [
+    "Original article and primary numbers retained.",
+    "Historical examples attributed to the supplied article, not presented as newly verified historical research.",
+    "Removed the invalid claim that every 80/20 distribution must be Pareto. Formula is conditional on the chosen Pareto I model with alpha > 1.",
+    "64/4 explicitly conditional on the repeated proportion; not automatic in every 80/20 sample."
+  ],
+  "scope": "Producer review and independent arithmetic verification; no new empirical claims."
+}

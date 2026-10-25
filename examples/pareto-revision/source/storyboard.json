@@ -1,0 +1,74 @@
+[
+  {
+    "objectId": "population-share",
+    "before": "20%人群与80%结果分开出现",
+    "after": "账单对照提出比例能否推广的问题",
+    "cue": 0,
+    "entry": 0,
+    "exit": 5.878165999999999,
+    "numericInvariant": "比例模型条件alpha>1；人群与份额分母分开；64/4有重复比例条件",
+    "verificationTime": 2.5,
+    "entryAction": "两张账单进入场景",
+    "exitAction": "将比例交给土地例子"
+  },
+  {
+    "objectId": "same-hundred-cells",
+    "before": "同一百格中的80格表示土地",
+    "after": "保留80格变为豌豆，再并置两个例子的账单",
+    "cue": 1,
+    "entry": 5.878165999999999,
+    "exit": 20.176625,
+    "numericInvariant": "比例模型条件alpha>1；人群与份额分母分开；64/4有重复比例条件",
+    "verificationTime": 11.8,
+    "entryAction": "百格填色",
+    "exitAction": "相同比例并不证明普遍定律"
+  },
+  {
+    "objectId": "lorenz-readout",
+    "before": "帕累托曲线与alpha1.16",
+    "after": "从底部80%人口读20%份额，取补集到顶部20%的80%",
+    "cue": 4,
+    "entry": 20.176625,
+    "exit": 27.293958000000003,
+    "numericInvariant": "比例模型条件alpha>1；人群与份额分母分开；64/4有重复比例条件",
+    "verificationTime": 24.7,
+    "entryAction": "曲线逐步绘出",
+    "exitAction": "同一曲线保持，准备改alpha"
+  },
+  {
+    "objectId": "lorenz-readout",
+    "before": "alpha1.16与80%",
+    "after": "alpha变1.5/2，份额变58/45；再变回",
+    "cue": 6,
+    "entry": 27.293958000000003,
+    "exit": 40.827125,
+    "numericInvariant": "比例模型条件alpha>1；人群与份额分母分开；64/4有重复比例条件",
+    "verificationTime": 33.3,
+    "entryAction": "保留坐标和曲线，不重绘入场",
+    "exitAction": "模型参数到结果的推理方向"
+  },
+  {
+    "objectId": "nested-share",
+    "before": "模型→参数→比例",
+    "after": "条件下80×80→64，20×20→4；比较同顶部比例的不同内部构成",
+    "cue": 9,
+    "entry": 40.827125,
+    "exit": 61.222541,
+    "numericInvariant": "比例模型条件alpha>1；人群与份额分母分开；64/4有重复比例条件",
+    "verificationTime": 51.5,
+    "entryAction": "沿用纸面数字系统",
+    "exitAction": "以反例交给结尾提问"
+  },
+  {
+    "objectId": "question-receipts",
+    "before": "结尾回到两张账单",
+    "after": "WHO/HOW区分分母与分布",
+    "cue": 14,
+    "entry": 61.222541,
+    "exit": 68.43333333333334,
+    "numericInvariant": "比例模型条件alpha>1；人群与份额分母分开；64/4有重复比例条件",
+    "verificationTime": 64.3,
+    "entryAction": "沿用开头账单轮廓",
+    "exitAction": "保留结论阅读时间"
+  }
+]

@@ -26,4 +26,6 @@
 
 | [E18](cards/E18.md) | 流程齐全，画面仍像逐页演示 | plan / storyboard / render / review / repair |
 
+| [E19](cards/E19.md) | 有SRT、局部通过，整片仍缺字幕且停滞 | plan / render / review / repair / delivery |
+
 [来源与观察范围](sources.json)只在需要追溯时加载。已公开历史片可在[展厅](../../examples/gallery/index.html)按项目名称查看；网页轻量副本与生产原片的哈希不同。

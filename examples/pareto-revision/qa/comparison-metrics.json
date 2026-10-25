@@ -1,0 +1,57 @@
+{
+  "sameTopic": true,
+  "baselineNearStatic": [
+    {
+      "id": "hold-0",
+      "start": 0.0,
+      "end": 19.933333,
+      "seconds": 19.933
+    },
+    {
+      "id": "hold-1",
+      "start": 21.8,
+      "end": 29.566667,
+      "seconds": 7.767
+    },
+    {
+      "id": "hold-2",
+      "start": 30.666667,
+      "end": 62.466667,
+      "seconds": 31.8
+    },
+    {
+      "id": "hold-3",
+      "start": 62.966667,
+      "end": 68.833333,
+      "seconds": 5.867
+    }
+  ],
+  "revisedNearStatic": [
+    {
+      "id": "hold-0",
+      "start": 12.066667,
+      "end": 16.433333,
+      "seconds": 4.367
+    },
+    {
+      "id": "hold-1",
+      "start": 28.566667,
+      "end": 32.8,
+      "seconds": 4.233
+    },
+    {
+      "id": "hold-2",
+      "start": 42.866667,
+      "end": 47.066667,
+      "seconds": 4.2
+    },
+    {
+      "id": "hold-3",
+      "start": 63.133333,
+      "end": 68.43333333333334,
+      "seconds": 5.3
+    }
+  ],
+  "method": "Same crop=1080:1574:0:0,scale=270:-2,freezedetect=n=-50dB:d=4",
+  "scope": "Near-static detection locates candidate holds; not an aesthetic grade. Script corrections changed timing."
+}

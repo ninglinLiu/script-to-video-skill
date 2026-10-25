@@ -506,8 +506,34 @@
       "sources": [
         "cross-agent-visual-gap"
       ],
-      "chars": 583,
-      "sha256": "a057f97a27061af24520e40d5b77f12f36a35835c189e399e74ac66081e678cc"
+      "chars": 591,
+      "sha256": "1cd197db1f7982aef2ef0588aea4025ad5e4b46b0687748813123823ba432ca4"
+    },
+    {
+      "id": "E19",
+      "title": "有SRT、局部通过，整片仍缺字幕且停滞",
+      "stages": [
+        "plan",
+        "render",
+        "review",
+        "repair",
+        "delivery"
+      ],
+      "signals": [
+        "没字幕",
+        "入画",
+        "SRT",
+        "整片",
+        "局部样片",
+        "kit",
+        "阴郁"
+      ],
+      "card": "references/experience/cards/E19.md",
+      "sources": [
+        "pareto-component-template-failure"
+      ],
+      "chars": 483,
+      "sha256": "1a17b1f227edf51e6345405db86b94b83a7976550b14087672e9e8192622fa3c"
     }
   ]
 }

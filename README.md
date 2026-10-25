@@ -2,14 +2,15 @@
 
 这是一个包含制作指令、脚本、素材和案例的 **Agent Skill**，需要能执行工具的 Agent 及视频运行环境。现有案例可复用；新文章的稳定生产、8–10分钟长片和跨模型复现尚未整体验收。详见[任务完成度、环境依赖与换模型说明](references/runtime-and-portability.md)。
 
-**新 Agent 从这里开始：[可执行装配与审看流程](references/executable-production.md)。** 已提供3套素材适配器、横竖屏工程、跨镜对象组件、数值与稿件绑定，以及缺少动态证据时阻断全片渲染的入口。
+**新 Agent 从这里开始：[迁移完整工程并审看整片](references/executable-production.md)。**
 
 ```sh
-python scripts/select_visual.py --ready
-python scripts/production.py init --episode ./episodes/new-film --kit gilded --aspect portrait
+python scripts/start_episode.py --source chapter-01 --episode ./episodes/new-film
 ```
 
-初始化得到12秒机制演示及可扩展工程；需要继续改编新文章，不能当作完成60–90秒任务。先 `compile`、再 `proof`、实际静音审看，最后 `final`。安装、TTS和检查命令见上方指南。[查看实际渲染与验证范围](https://ninglinliu.github.io/script-to-video-skill/examples/production-gates/)。
+入口直接保留完整案例的字幕、构图、解释镜头、字体和配音时间线，并接入编码字幕像素检查、整片节奏审看。按新内容改编，不再从12秒组件小样扩写默认影片。三个 kit 已降为**组件测试和取材**，旧 `production.py init` 已撤下。
+
+[同一篇《帕累托法则》修改前后对照](https://ninglinliu.github.io/script-to-video-skill/examples/pareto-revision/)：保留原片，展示迁移来源、字幕实际入画及全片审看证据；制作方检查不等于用户审美认可。
 
 **[打开完整在线展厅：43个专题页 →](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/)**
 

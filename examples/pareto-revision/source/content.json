@@ -1,0 +1,308 @@
+{
+  "values": {
+    "one": 1,
+    "p20": 0.2,
+    "p40": 0.4,
+    "p60": 0.6,
+    "p80": 0.8,
+    "alpha161": 1.1609640474436813,
+    "alpha15": 1.5,
+    "alpha20": 2.0
+  },
+  "derived": {
+    "inv161": {
+      "op": "divide",
+      "inputs": [
+        "one",
+        "alpha161"
+      ]
+    },
+    "exponent161": {
+      "op": "subtract",
+      "inputs": [
+        "one",
+        "inv161"
+      ]
+    },
+    "top80": {
+      "op": "power",
+      "inputs": [
+        "p20",
+        "exponent161"
+      ]
+    },
+    "inv15": {
+      "op": "divide",
+      "inputs": [
+        "one",
+        "alpha15"
+      ]
+    },
+    "exponent15": {
+      "op": "subtract",
+      "inputs": [
+        "one",
+        "inv15"
+      ]
+    },
+    "top15": {
+      "op": "power",
+      "inputs": [
+        "p20",
+        "exponent15"
+      ]
+    },
+    "inv20": {
+      "op": "divide",
+      "inputs": [
+        "one",
+        "alpha20"
+      ]
+    },
+    "exponent20": {
+      "op": "subtract",
+      "inputs": [
+        "one",
+        "inv20"
+      ]
+    },
+    "top20": {
+      "op": "power",
+      "inputs": [
+        "p20",
+        "exponent20"
+      ]
+    },
+    "tail80": {
+      "op": "power",
+      "inputs": [
+        "p80",
+        "exponent161"
+      ]
+    },
+    "tail60": {
+      "op": "power",
+      "inputs": [
+        "p60",
+        "exponent161"
+      ]
+    },
+    "tail40": {
+      "op": "power",
+      "inputs": [
+        "p40",
+        "exponent161"
+      ]
+    },
+    "q1": {
+      "op": "subtract",
+      "inputs": [
+        "one",
+        "tail80"
+      ]
+    },
+    "q2": {
+      "op": "subtract",
+      "inputs": [
+        "tail80",
+        "tail60"
+      ]
+    },
+    "q3": {
+      "op": "subtract",
+      "inputs": [
+        "tail60",
+        "tail40"
+      ]
+    },
+    "q4": {
+      "op": "subtract",
+      "inputs": [
+        "tail40",
+        "top80"
+      ]
+    },
+    "q5": {
+      "op": "power",
+      "inputs": [
+        "p20",
+        "exponent161"
+      ]
+    },
+    "top64": {
+      "op": "multiply",
+      "inputs": [
+        "top80",
+        "top80"
+      ]
+    },
+    "p4": {
+      "op": "multiply",
+      "inputs": [
+        "p20",
+        "p20"
+      ]
+    }
+  },
+  "labels": {
+    "one": {
+      "format": ".0f",
+      "unit": ""
+    },
+    "p20": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "top80": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "top15": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "top20": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "alpha161": {
+      "format": ".2f",
+      "unit": ""
+    },
+    "alpha15": {
+      "format": ".1f",
+      "unit": ""
+    },
+    "alpha20": {
+      "format": ".1f",
+      "unit": ""
+    },
+    "q1": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "q2": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "q3": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "q4": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "q5": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "top64": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "p4": {
+      "format": ".0%",
+      "unit": ""
+    }
+  },
+  "text": {
+    "title": "二八法则：一个参数，不是一条定律",
+    "group": "五组人，各占 20% 的人口",
+    "change": "{{p20}} 的人，{{top80}} 的财富",
+    "result": "指数 {{alpha161}} → {{top80}} ｜ {{alpha15}} → {{top15}} ｜ {{alpha20}} → {{top20}}",
+    "scope": "来源：中文维基《帕累托法则》 · 份额由本地脚本重算 · 非投资建议",
+    "swap": "同一个 20%，换一个指数就换一个答案"
+  },
+  "voice": {
+    "episode": "pareto-revision-20261025",
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "-2%",
+    "delay": 0.6,
+    "tail": 2.0,
+    "subtitleMaxChineseChars": 25
+  },
+  "factsStatus": "approved-source-and-derivation-checked",
+  "chapters": [
+    {
+      "id": "c1",
+      "title": "一个说法",
+      "cues": [
+        "你多半听过二八法则，{{p20}} 的人拥有 {{top80}} 的财富"
+      ],
+      "p": [
+        "。"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "出处",
+      "cues": [
+        "原文举过土地的例子：{{p20}} 的人，占有 {{top80}} 的土地",
+        "还有豌豆：{{p20}} 的植株，产出 {{top80}} 的豆子",
+        "这些例子说的是分布不均，不是普遍规律"
+      ],
+      "p": [
+        "。",
+        "。",
+        "。"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "成立条件",
+      "cues": [
+        "再看一个数学模型",
+        "在帕累托模型中，指数约 {{alpha161}}，才得到二八比例"
+      ],
+      "p": [
+        "。",
+        "。"
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "换一个指数",
+      "cues": [
+        "指数换成 {{alpha15}}，同样 {{p20}} 的人只占 {{top15}}",
+        "换成 {{alpha20}}，只占 {{top20}}",
+        "指数越小，尾巴越厚，越接近少数拿走大部分"
+      ],
+      "p": [
+        "；",
+        "。",
+        "。"
+      ]
+    },
+    {
+      "id": "c5",
+      "title": "常见误用",
+      "cues": [
+        "所以 {{top80}} 比 {{p20}} 是算出来的结果",
+        "不是可以套用的原因",
+        "如果这个比例还能继续成立，{{top80}} 乘 {{top80}} 是 {{top64}}",
+        "对应的 {{p20}} 乘 {{p20}}，是 {{p4}}",
+        "但符合一个比例，还不等于解释了原因"
+      ],
+      "p": [
+        "，",
+        "。",
+        "。",
+        "。",
+        "。"
+      ]
+    },
+    {
+      "id": "c6",
+      "title": "怎么用",
+      "cues": [
+        "下次看到二八法则",
+        "先问尾巴有多厚，分母是谁"
+      ],
+      "p": [
+        "，",
+        "。"
+      ]
+    }
+  ]
+}

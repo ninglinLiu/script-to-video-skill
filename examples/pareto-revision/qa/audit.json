@@ -1,0 +1,289 @@
+{
+  "profile": "task-short",
+  "episode": ".",
+  "status": "technical_and_producer_checks_passed",
+  "checks": [
+    {
+      "name": "narrated_mp4",
+      "passed": true,
+      "required": true,
+      "detail": ".\\out\\final-with-audio.mp4"
+    },
+    {
+      "name": "duration",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "actual": 68.433333,
+        "min": 60,
+        "max": 90,
+        "profile": "task-short"
+      }
+    },
+    {
+      "name": "video_format",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640028",
+        "width": 1080,
+        "height": 1920,
+        "coded_width": 1080,
+        "coded_height": 1920,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "9:16",
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "chroma_location": "center",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1051136,
+        "duration": "68.433333",
+        "bit_rate": "9971312",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "2053",
+        "extradata_size": 63,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc62.28.102 libx264"
+        }
+      }
+    },
+    {
+      "name": "video_bitrate",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "actual": 9971312,
+        "policy": "minimum 8Mbps"
+      }
+    },
+    {
+      "name": "audio",
+      "passed": true,
+      "required": true,
+      "detail": [
+        "aac"
+      ]
+    },
+    {
+      "name": "full_decode",
+      "passed": true,
+      "required": true,
+      "detail": ""
+    },
+    {
+      "name": "real_voice_timestamps",
+      "passed": true,
+      "required": true,
+      "detail": "real edge-tts WordBoundary"
+    },
+    {
+      "name": "subtitle_intervals",
+      "passed": true,
+      "required": true,
+      "detail": 13
+    },
+    {
+      "name": "subtitle_voice_alignment",
+      "passed": true,
+      "required": true,
+      "detail": "SRT groups must start/end on measured voice cues"
+    },
+    {
+      "name": "srt_file",
+      "passed": true,
+      "required": true,
+      "detail": "one or more authored SRT files"
+    },
+    {
+      "name": "source_evidence",
+      "passed": true,
+      "required": true,
+      "detail": ".\\evidence\\source-manifest.json"
+    },
+    {
+      "name": "script_review",
+      "passed": true,
+      "required": true,
+      "detail": ".\\evidence\\script-review.json"
+    },
+    {
+      "name": "shot_contracts",
+      "passed": true,
+      "required": true,
+      "detail": ".\\source\\storyboard.json"
+    },
+    {
+      "name": "approved_script_unchanged",
+      "passed": true,
+      "required": true,
+      "detail": "Review hash and actual spoken content both checked"
+    },
+    {
+      "name": "shot_state_contracts",
+      "passed": true,
+      "required": true,
+      "detail": 6
+    },
+    {
+      "name": "task_shot_count",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "actual": 6,
+        "min": 5,
+        "max": 8
+      }
+    },
+    {
+      "name": "render_record",
+      "passed": true,
+      "required": true,
+      "detail": ".\\qa\\render-full.json"
+    },
+    {
+      "name": "final_visual_review",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "status": "reviewed_with_fixes",
+        "reviewedFinalSha256": "b2de8271539905e96888754257d5a425ee9c58c11dfba773b05a62ee5e80ba70",
+        "framesReviewed": [
+          0,
+          1,
+          5,
+          6,
+          11.5,
+          12.05,
+          16.5,
+          20.5,
+          23.5,
+          25.5,
+          27.4,
+          28.5,
+          33.5,
+          37.5,
+          41.5,
+          45.5,
+          48,
+          50.5,
+          51.7,
+          55,
+          58.5,
+          64,
+          68
+        ],
+        "fullReview": "qa/full-review.json",
+        "fixes": "qa/repair-v1.json",
+        "acceptance": "producer review only; user pending",
+        "reencodeVerification": "qa/full-review.json"
+      }
+    },
+    {
+      "name": "native_editor_project",
+      "passed": false,
+      "required": false,
+      "detail": {
+        "status": "user_reported_already_verified",
+        "validationOwner": "user",
+        "repeatValidationWaived": true,
+        "project": null,
+        "openedSuccessfully": false,
+        "userInstruction": "用户明确说明剪映/PR原生工程已手动验证，无需再次验证。",
+        "verifiedScope": "Previously verified editor workflow only; no new agent import claimed."
+      }
+    },
+    {
+      "name": "editor_repeat_validation_waived",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "basis": "explicit_user_instruction",
+        "instruction": "用户明确说明剪映/PR原生工程已手动验证，无需再次验证。",
+        "agentImportVerified": false,
+        "scope": "Previously verified editor workflow only; no new agent import claimed."
+      }
+    },
+    {
+      "name": "deterministic_source",
+      "passed": true,
+      "required": true,
+      "detail": "Static check only; no aesthetic claim"
+    },
+    {
+      "name": "film_workflow",
+      "passed": true,
+      "required": true,
+      "detail": "Complete-film migration required. Component tests are not film deliveries."
+    },
+    {
+      "name": "complete_source_migration",
+      "passed": true,
+      "required": true,
+      "detail": "Retain the actual source film and record adapted shots; source files alone do not prove quality."
+    },
+    {
+      "name": "captions_visible_in_encoded_video",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "subtitles": 13,
+        "pixelSamples": 26,
+        "scope": "Actual encoded pixels vs caption-on/off render references, plus full-frame text trace."
+      }
+    },
+    {
+      "name": "whole_film_review",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "seconds": 68.43333333333334,
+        "scope": "Complete interval coverage and reviewed holds; not a measure of artistic quality."
+      }
+    }
+  ],
+  "userAestheticAcceptance": "not_implied",
+  "universalPipelineValidated": false
+}

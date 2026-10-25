@@ -1,0 +1,157 @@
+{
+  "status": "reviewed",
+  "mediaSha256": "b2de8271539905e96888754257d5a425ee9c58c11dfba773b05a62ee5e80ba70",
+  "method": "whole-film-dense-sequence",
+  "sections": [
+    {
+      "start": 0,
+      "end": 5.86,
+      "observed": "两张账单依次进入；20%人群和80%份额区分，随后出现推广质疑。",
+      "newInformation": "从熟悉口号转到可检验的问题。"
+    },
+    {
+      "start": 5.86,
+      "end": 16.43,
+      "observed": "同一百格表示80%土地；11.44秒切换时80格位置和数量持续，仅变颜色与形状为豌豆。",
+      "newInformation": "两个例子共享比例，分母分别为人口和植株。"
+    },
+    {
+      "start": 16.43,
+      "end": 20.16,
+      "observed": "两张观察账单并列，出现两个例子不等于普遍定律。",
+      "newInformation": "从例子与重复现象转入模型边界。"
+    },
+    {
+      "start": 20.16,
+      "end": 27.27,
+      "observed": "曲线先成形，22.8秒起引线读出底部80%人口的20%份额，24.9秒起取顶部补集。",
+      "newInformation": "把80/20连到模型和参数，不预先把结果当原因。"
+    },
+    {
+      "start": 27.27,
+      "end": 40.81,
+      "observed": "同一曲线不清空；alpha从1.16到1.5、2再返回，份额沿同一横条变为58%、45%、80%。",
+      "newInformation": "同样的人口比例不固定产生同一份额。"
+    },
+    {
+      "start": 40.81,
+      "end": 47.06,
+      "observed": "模型、参数、比例顺次出现，结果框强调；最后补出不能当作万能原因。",
+      "newInformation": "限定推理方向，接入下一段额外条件。"
+    },
+    {
+      "start": 47.06,
+      "end": 57.71,
+      "observed": "先填80%浅色条，再在其中取64%深色区域，落定后显64%；100格的20格中再选4格。",
+      "newInformation": "64/4需要继续重复这一比例；分母与结果分别展示。"
+    },
+    {
+      "start": 57.71,
+      "end": 61.2,
+      "observed": "两个原创离散分配同为顶部80%，其余四组分别3/4/5/8与5/5/5/5。",
+      "newInformation": "同一顶部份额不能唯一确定完整分布或成因。"
+    },
+    {
+      "start": 61.2,
+      "end": 68.43333333333334,
+      "observed": "回到两张账单造型，WHO/HOW把问题分别指向对象与分布；片尾保留静止阅读。",
+      "newInformation": "总结为可追问的分母与模型条件，未引入新金句或新数据。"
+    }
+  ],
+  "holds": [
+    {
+      "id": "hold-0",
+      "start": 12.066667,
+      "end": 16.433333,
+      "seconds": 4.367,
+      "decision": "keep",
+      "reason": "保留：同一格阵已完成形变，旁白正在交代植株与产量两个分母；此处4.37秒用于读数，不增加无意义运动。"
+    },
+    {
+      "id": "hold-1",
+      "start": 28.566667,
+      "end": 32.8,
+      "seconds": 4.233,
+      "decision": "keep",
+      "reason": "保留：alpha=1.5的58%需要与初始80%比较；下一个实测cue开始才变到2.0，避免抢跑。"
+    },
+    {
+      "id": "hold-2",
+      "start": 42.866667,
+      "end": 47.066667,
+      "seconds": 4.2,
+      "decision": "keep",
+      "reason": "保留：三个推导步骤需同时可读；最后红字随后强调反向推理错误。近静止检测未将少量文字变化视为主画面运动。"
+    },
+    {
+      "id": "hold-3",
+      "start": 63.133333,
+      "end": 68.43333333333334,
+      "seconds": 5.3,
+      "decision": "keep",
+      "reason": "保留：最后一句口播加片尾阅读；不以装饰运动掩盖总结停顿。仍可能偏慢，供用户对照判断。"
+    }
+  ],
+  "unresolved": [],
+  "contactSheets": [
+    "qa/full-sequence-00.jpg",
+    "qa/full-sequence-01.jpg",
+    "qa/full-sequence-02.jpg",
+    "qa/full-sequence-03.jpg",
+    "qa/full-sequence-04.jpg"
+  ],
+  "scope": "Producer full-film observation; not user acceptance.",
+  "denseChecks": [
+    {
+      "start": 11.3,
+      "end": 12.3,
+      "fps": 12,
+      "observed": "80格持续可见、未清空。"
+    },
+    {
+      "start": 27.1,
+      "end": 28.6,
+      "fps": 12,
+      "observed": "坐标与曲线身份持续，变化来自参数，入场绘制不再重置。"
+    },
+    {
+      "start": 49.8,
+      "end": 52.2,
+      "fps": 12,
+      "observed": "深蓝条第二次取份额，64%在达到最终长度后渐显。"
+    }
+  ],
+  "limits": [
+    "制作方观察，不是用户审美认可。",
+    "整片2fps序列结合关键运动12fps及全尺寸编码帧；没有真人审听，未外放。",
+    "纸面讲解风格及结尾停留仍由用户判断，未声称恢复全部历史片的观感。"
+  ],
+  "reencodeVerification": {
+    "previousMediaSha256": "4736350badfd8e73d89393b71dc9c387a69f7ff4a1c80d24b097ae4954b208e4",
+    "reason": "Audio padded so mux preserves all 2053 video frames. Animation, script and render source unchanged.",
+    "sameSource": true,
+    "completeSequenceComparison": [
+      {
+        "sheet": "full-sequence-00.jpg",
+        "meanErrorMaxChannel": 0.08363114576564869
+      },
+      {
+        "sheet": "full-sequence-01.jpg",
+        "meanErrorMaxChannel": 0.0397498375568551
+      },
+      {
+        "sheet": "full-sequence-02.jpg",
+        "meanErrorMaxChannel": 0.0
+      },
+      {
+        "sheet": "full-sequence-03.jpg",
+        "meanErrorMaxChannel": 0.0
+      },
+      {
+        "sheet": "full-sequence-04.jpg",
+        "meanErrorMaxChannel": 0.0
+      }
+    ],
+    "lastFrame": "Same held conclusion retained through final frame."
+  }
+}

@@ -12,8 +12,8 @@ STAGES = ('plan', 'script', 'storyboard', 'render', 'review', 'repair', 'deliver
 DEFAULTS = {
     'plan': ['E03', 'E04', 'E16'], 'script': ['E01', 'E03', 'E09'],
     'storyboard': ['E18', 'E05', 'E16'], 'render': ['E09', 'E18', 'E15'],
-    'review': ['E12', 'E05', 'E07'], 'repair': ['E11', 'E06', 'E08'],
-    'delivery': ['E12'],
+    'review': ['E19', 'E05', 'E07'], 'repair': ['E11', 'E06', 'E08'],
+    'delivery': ['E19', 'E12'],
 }
 
 

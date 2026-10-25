@@ -1,0 +1,117 @@
+{
+  "workflow": "adapted-film",
+  "sourceEpisode": "chapter-01",
+  "sourceScriptSha256": "ed57040c88413936b006694535c00bc5f4b1810efc6134feaf7e6c25099e94b3",
+  "files": [
+    {
+      "path": "工程/src/Chapter.tsx",
+      "sha256": "a5a03ca476564a7201d33fca3462276c16e0e90c245c5d317daea61fa0db0b49"
+    },
+    {
+      "path": "工程/src/entry.tsx",
+      "sha256": "1086cdadd9b7eaa5952e38642bb9395df690549a88906bf0604d3d0e24b973b1"
+    },
+    {
+      "path": "工程/src/style.css",
+      "sha256": "a2cc6623b4adcf4c60ec811953b5f86e92b72af5637cf12418308b8f29146bdf"
+    },
+    {
+      "path": "工程/src/timing.json",
+      "sha256": "bda0237f56bcd6c2838361ff6b1e535d5c520433df06f5c6f4aa9b7145a3695d"
+    },
+    {
+      "path": "工程/public/paper-title.png",
+      "sha256": "6d9df6272674e9f331e63ac7f2d92f4443d0fd2573fd8f8fbd01ed63a57fa4e7"
+    },
+    {
+      "path": "工程/public/fonts/Anton-OFL.txt",
+      "sha256": "fc0c5a3bb1e7ae53e1663d7b288a0c2d19e032148c9043362bad298b50fe7c4c"
+    },
+    {
+      "path": "工程/public/fonts/Anton.woff",
+      "sha256": "791375bdbed00de4a3aad4811291220ead0e1405d6f8b5bdbf109798c8359ac5"
+    },
+    {
+      "path": "工程/public/fonts/Noto-OFL.txt",
+      "sha256": "64538aaa923b7e75559725ecf64eff7b18f623857b8e6d31a7347743ab27e907"
+    },
+    {
+      "path": "工程/public/fonts/NotoSansSC-VF.ttf",
+      "sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a"
+    },
+    {
+      "path": "工程/public/fonts/NotoSerifSC-VF.ttf",
+      "sha256": "a4aed9985a5916fbf6690456f8732a9fccd517938e353165d4142b4f11a39280"
+    },
+    {
+      "path": "工程/public/fonts/README.md",
+      "sha256": "bfc7e68324337f529d496bc62c6617ef7cc1a5fa7b8cda8d76afd63b6be8db36"
+    },
+    {
+      "path": "source/draft.txt",
+      "sha256": "943d74c81327c8e3b31af4af53c7eead2fe84491830500728abb6ad19bfd6501"
+    },
+    {
+      "path": "source/script.json",
+      "sha256": "ed57040c88413936b006694535c00bc5f4b1810efc6134feaf7e6c25099e94b3"
+    },
+    {
+      "path": "source/storyboard.json",
+      "sha256": "d31dececfe27c94f4cb74770ebb9198ae9a9fbd3c68f62c16db59716d7d2b9a4"
+    },
+    {
+      "path": "evidence/fact-review.json",
+      "sha256": "fe9d0b0deb088d59b01291b7ef800d61e5d54852cea965cd1c540463f20b2774"
+    },
+    {
+      "path": "evidence/script-review.json",
+      "sha256": "acd5920d5b3eebeba4e28cc086d635cb7facab4a3dbf0e8bda6db8de83dd7a2f"
+    },
+    {
+      "path": "evidence/source-manifest.json",
+      "sha256": "fc683e59275aaca50fb534e28955ac49da5ce08a284cacd453c8aaf5b79c71ab"
+    },
+    {
+      "path": "assets/timeline.json",
+      "sha256": "bda0237f56bcd6c2838361ff6b1e535d5c520433df06f5c6f4aa9b7145a3695d"
+    },
+    {
+      "path": "assets/voice-track.wav",
+      "sha256": "ae5f79284dd42a086c8ba8d2d1d23fc134cb3157d8529371a4752d3febe2e9f7"
+    },
+    {
+      "path": "assets/voice.mp3",
+      "sha256": "c894972e06b78d8666b165450c1bba8f798cb2d1f11d10034ec794341f654d46"
+    },
+    {
+      "path": "assets/word-boundaries.json",
+      "sha256": "3624c14cc11563c9b49e36e41e9e7f4d7be5729324b1e4307aae10574acd0906"
+    },
+    {
+      "path": "工程/package.json",
+      "sha256": "63ca475098c0c7ffc17580b28146a4a574f23336589ba3cb85e1f7f6a6df7ca6"
+    },
+    {
+      "path": "工程/package-lock.json",
+      "sha256": "fee19e7b0d0562f1bbd19caedaa82905fb15c90be92a31303708e4a4077f8920"
+    },
+    {
+      "path": "工程/tsconfig.json",
+      "sha256": "8f83ee23861510f953780b7d3a4e0ba82685c87afc6ec37344cd8b306ec7654a"
+    },
+    {
+      "path": "工程/render.mjs",
+      "sha256": "a3240d13aba1787c3f9150eb6151dda1fc365d1f6be679c3930696033deb009c"
+    },
+    {
+      "path": "voice.py",
+      "sha256": "8f8c68eabf1634ffb8e37fa5f65a877d3d72fce5c8546197e3eebea70e6e8647"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "b1b6efe900faf8bc06a0fb2cb66809dea15dd5f63d28574f8d23e74853205b2a"
+    }
+  ],
+  "reviewStatus": "unreviewed-adaptation",
+  "scope": "Complete source design carried over; adapt content, layout and timing. No prior acceptance transferred."
+}
