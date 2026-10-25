@@ -64,7 +64,8 @@
     "360 actual DOM frame records per clip",
     "full FFmpeg decoding",
     "producer encoded-sequence inspection",
-    "final entry refuses pending review"
+    "final entry refuses pending review",
+    "reviewed pixel fixture successfully passes final entry and renders 1080x1920; output decoded"
   ],
   "notVerified": [
     "A new article video",
@@ -72,5 +73,15 @@
     "Long-form editing quality",
     "Independent DeepSeek run",
     "User aesthetic acceptance"
-  ]
+  ],
+  "positiveFinalIntegration": {
+    "kit": "pixel",
+    "exitCode": 0,
+    "width": 1080,
+    "height": 1920,
+    "duration": 12.0,
+    "sha256": "e05813b7525637fd0987da8718cb67628561804acc57f70144f33ba050c3cf5c",
+    "audioStreams": 0,
+    "scope": "The reviewed 12-second mechanism fixture rendered at full size; not an article final."
+  }
 }
