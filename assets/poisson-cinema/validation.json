@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "inputs": [
+    {
+      "input": "sampling",
+      "shots": 7,
+      "seams": 6,
+      "pixelCaptionPassed": true,
+      "missingCaptionRejected": true,
+      "countsMatchSamples": [
+        3,
+        5,
+        3,
+        1
+      ],
+      "windowWidthRatio": 1.0,
+      "finalHistogramPixelSha256": "79c0394270adec04e6a4704a58ed0eb90cb154c5c4413af8adae370915850a69",
+      "fixtureRejectedForProduction": true
+    },
+    {
+      "input": "queue",
+      "shots": 7,
+      "seams": 6,
+      "pixelCaptionPassed": true,
+      "missingCaptionRejected": true,
+      "countsMatchSamples": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "windowWidthRatio": 0.5,
+      "finalHistogramPixelSha256": "ba24f263aae4cbc6a3b8050313d9dcd1ea7013ebd7023ff05d57cf9a846bfb01",
+      "fixtureRejectedForProduction": true
+    }
+  ],
+  "originalScenesRendered": 9,
+  "speakerPlayback": false,
+  "externalTTS": false,
+  "independentModelTest": false,
+  "aestheticAcceptance": false,
+  "scope": "Two distinct data sets, seven live recipes, actual carry seam, bar data, scale ratio, encoded caption and negative controls; no finished content film",
+  "environment": {
+    "os": "Windows",
+    "python": "3.11.9",
+    "node": "22.20.0",
+    "browser": "Google Chrome, local headless",
+    "renderer": "puppeteer-core 24.6.1 + FFmpeg"
+  },
+  "reproduce": "python tests/run_cinema_browser.py --workdir /empty/test-folder",
+  "runtimeFiles": [
+    {
+      "path": "assets/poisson-cinema/runtime/assets/environment.png",
+      "sha256": "3604f3b4377804480cf5ed0e52f5864edd8f1f366044513dfa4cdd8fda7e773d"
+    },
+    {
+      "path": "assets/poisson-cinema/runtime/assets/observer.png",
+      "sha256": "f5f4a706b08bc0d9eadb20e7bf03938bee879cdaf13d26602baa2733211b5ab7"
+    },
+    {
+      "path": "assets/poisson-cinema/runtime/core.js",
+      "sha256": "20f110985406f29ba807a8e9910af3fa5bfaa4c3ac3c030b64035f3486042d23"
+    },
+    {
+      "path": "assets/poisson-cinema/runtime/index.html",
+      "sha256": "a31bef92921b91b1bd870b6d6dc97915fe84cb03ddbd31425789c5024f0c7f44"
+    },
+    {
+      "path": "assets/poisson-cinema/runtime/original-silent.html",
+      "sha256": "b89f15b052429267b4e6dab8d9f0abda2ba5ac88425f23805e6d71ff8e6df9a1"
+    },
+    {
+      "path": "assets/poisson-cinema/runtime/package-lock.json",
+      "sha256": "84bbdc19d657baa277c2f2d7f1c8caec60503428849b26b90d43a8f8980b7171"
+    },
+    {
+      "path": "assets/poisson-cinema/runtime/package.json",
+      "sha256": "9e9e0621100753813325b0421f0714be9bbc02350aaa640aad7cdde7d79a0dce"
+    },
+    {
+      "path": "assets/poisson-cinema/runtime/recipes.js",
+      "sha256": "b9c7cceb8a9ce8e3e3b0ff41b6c7fc711a565b0efb6d1953321a62d6aa86a0c8"
+    },
+    {
+      "path": "assets/poisson-cinema/runtime/render.mjs",
+      "sha256": "1b4380912737be63729a597e0abf2cd2eb3955b1bd5f0fca17579bef8af56dbb"
+    },
+    {
+      "path": "assets/poisson-cinema/runtime/runtime.js",
+      "sha256": "dab4bb76f705c701f7cd65dbb08909282d61238ebb1c6f25078a29a90ca302aa"
+    }
+  ]
+}

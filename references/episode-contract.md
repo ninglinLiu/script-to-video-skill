@@ -18,7 +18,7 @@ episode/
   工程/src/*.tsx
 ```
 
-`out/*.srt` 文件名不限。当前源码静态检查采用 `工程/src/*.tsx` 约定；使用其他引擎或目录布局时需适配脚本。
+`out/*.srt` 文件名不限。Remotion 源码检查采用 `工程/src/*.tsx`；`cinema-recipes` 分支检查实际 `工程/core.js / recipes.js / runtime.js`，分镜直接使用 `source/film.json`。其它引擎仍需显式适配，不能伪装成这两种布局。
 
 ## 配音时间线
 
@@ -33,7 +33,7 @@ episode/
 }
 ```
 
-所有区间须在总时长内，字幕不重叠；每组字幕的首尾对应实际 cue 边界。当前脚本明确检查 Edge TTS 的来源字符串；适配其他语音服务时应修改验证规则，并保持真实时间戳要求，不能改标签假装兼容。该脚本尚未比较 SRT 正文或验证实际烧录字幕像素。
+所有区间须在总时长内，字幕不重叠；每组字幕的首尾对应实际 cue 边界。生产渲染另需 `fps` 与整数 `frames`，二者与 `seconds` 一致。当前脚本明确检查 Edge TTS 的来源字符串；适配其他语音服务时应修改验证规则，并保持真实时间戳要求，不能改标签假装兼容。实际烧录字幕像素由下文 `film_delivery.py` 验证；SRT 文件存在本身不证明入画。
 
 ## 稿件与证据
 
@@ -80,17 +80,15 @@ episode/
 
 报告中 `technical_and_producer_checks_passed` 仅表示代码列出的技术和记录门槛通过；`userAestheticAcceptance` 与 `universalPipelineValidated` 不会因此被设为通过。
 
-## 可执行素材与动态证据门槛（新增）
+## 组件测试与成片分开
 
-除上述历史检查外，验收器现在调用 `production.py check`，要求 `plans/assets.json`、`source/content.json`、`plans/edit-plan.json` 及 `qa/motion-proof.json / motion-trace.json / motion-review.json`。字段与生成命令见[可执行生产入口](executable-production.md)。
-
-新增6项独立检查：`visual_asset_imports`、`shared_content_bindings`、`edit_plan`、`encoded_motion_proof`、`rendered_motion_trace`、`continuous_motion_review`。旧的 `final_visual_review` 仍只代表成片抽帧记录，不能替代这些动态证据。旧项目缺项会如实显示，不因19/20项通过就推断画面合格。
+`production.py check` 的六项素材装配/局部动态检查只属于历史组件测试流程，不再是新片交付入口。`audit_episode.py` 实际调用 `film_delivery.check`；不得为凑旧字段把完整片降成三个 kit，或用局部12秒证据替代全片。`cinema-recipes` 额外调用 `cinema.py check` 验证本片数据、实测旁白、实际动作与跨镜位置；技术成功仍不证明内容或审美。
 
 
 ## 实际字幕与完整影片观察（当前交付必需）
 
-新片 `plans/project.json.workflow` 为 `adapted-film`；保留 `plans/migration.json` 的完整源工程和文件哈希、`plans/captions.json` 的真实字幕区域。`component-test` 不作为成片交付。
+新片 `plans/project.json.workflow` 为 `adapted-film` 或明确选择的 `cinema-recipes`；保留 `plans/migration.json` 的源文件哈希、`plans/captions.json` 的真实字幕区域。`component-test` 不作为成片交付。
 
-除SRT外，交付检查读取 `qa/caption-verification.json`：最终MP4中每条字幕的首尾采样像素、整片实际DOM轨迹与来源哈希。另读取 `qa/full-review.json`：从0到片尾的逐段观察、近静止段处理及当前MP4哈希。局部动态样片成功不再放行整片。生成命令见[执行流程](executable-production.md)。
+除SRT外，交付检查读取 `qa/caption-verification.json`：最终MP4中每条字幕的首尾采样像素、整片实际字幕绘制轨迹（Remotion DOM / Canvas 绘字）与来源哈希。另读取 `qa/full-review.json`：从0到片尾的逐段观察、近静止段处理及当前MP4哈希。局部动态样片成功不再放行整片。生成命令见[执行流程](executable-production.md)。
 
 同文修改保留 `plans/comparison.json`，写清原片哈希、保持项、变化项与事实修正；没有用户反馈时审美认可仍为未确认。

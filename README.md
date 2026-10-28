@@ -4,6 +4,14 @@
 
 **新 Agent 从这里开始：[迁移完整工程并审看整片](references/executable-production.md)。**
 
+新增 **[《泊松过程》可执行制作分支](references/poisson-cinema.md)**：原有背景、人物、字体和实际解释动作一起复用，按新文章的数据与真实配音 cue 改编。支持事件重排、样本归类、窗口移动对齐、符号消去、曲线与逐门筛选，字幕直接烧入；不再只给配色和说明，让 Agent 自己重画。当前支持 1920×1080，跨文章审美与 DeepSeek 独立成功率仍待实测。
+
+```sh
+python scripts/start_episode.py --source poisson-cinema --episode ./episodes/new-cinema
+```
+
+本分支的[两组测试输入](assets/poisson-cinema/fixtures/)仅验证不同数据能调用同一套动作，不能作为实测旁白或成片通过记录。下方纸面章节入口仍保留。
+
 ```sh
 python scripts/start_episode.py --source chapter-01 --episode ./episodes/new-film
 ```

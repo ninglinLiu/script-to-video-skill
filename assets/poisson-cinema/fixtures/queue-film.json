@@ -1,0 +1,274 @@
+{
+  "schema": 1,
+  "title": "接口回归测试 · queue",
+  "width": 1920,
+  "height": 1080,
+  "shots": [
+    {
+      "id": "s1",
+      "recipe": "spatial",
+      "object": "window",
+      "surface": "dark",
+      "label": "spatial",
+      "headline": "观察窗口",
+      "fromCue": 0,
+      "toCue": 1,
+      "action": {
+        "fromCue": 0,
+        "toCue": 1
+      },
+      "explains": "这是时间窗的空间关系示意。",
+      "transition": {
+        "mode": "cut",
+        "seconds": 0.7,
+        "reason": "进入下一个明确的解释任务"
+      },
+      "data": {
+        "labels": [
+          "输入",
+          "等待",
+          "完成"
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "recipe": "events",
+      "object": "samples",
+      "surface": "dark",
+      "label": "events",
+      "headline": "位置改变",
+      "fromCue": 2,
+      "toCue": 3,
+      "action": {
+        "fromCue": 2,
+        "toCue": 3
+      },
+      "explains": "同一批请求不一定等间隔出现。",
+      "transition": {
+        "mode": "cut",
+        "seconds": 0.7,
+        "reason": "进入下一个明确的解释任务"
+      },
+      "data": {
+        "positions": [
+          0.03,
+          0.18,
+          0.19,
+          0.21,
+          0.4,
+          0.42,
+          0.43,
+          0.47,
+          0.63,
+          0.66,
+          0.8,
+          0.89
+        ],
+        "before": "规则间隔",
+        "after": "实测位置"
+      }
+    },
+    {
+      "id": "s3",
+      "recipe": "histogram",
+      "object": "samples",
+      "surface": "paper",
+      "label": "histogram",
+      "headline": "样本进入分类",
+      "fromCue": 4,
+      "toCue": 5,
+      "action": {
+        "fromCue": 4,
+        "toCue": 5
+      },
+      "explains": "每个记录进入自己对应的分类。",
+      "transition": {
+        "mode": "carry",
+        "seconds": 0.7,
+        "reason": "保留每个样本位置并归入其类别"
+      },
+      "data": {
+        "labels": [
+          "零",
+          "一",
+          "二",
+          "三"
+        ],
+        "samples": [
+          3,
+          2,
+          3,
+          2,
+          1,
+          0,
+          3,
+          2,
+          3,
+          1,
+          2,
+          3
+        ],
+        "unit": "个"
+      }
+    },
+    {
+      "id": "s4",
+      "recipe": "windows",
+      "object": "future",
+      "surface": "dark",
+      "label": "windows",
+      "headline": "同尺比较",
+      "fromCue": 6,
+      "toCue": 7,
+      "action": {
+        "fromCue": 6,
+        "toCue": 7
+      },
+      "explains": "比较必须使用同一种计量单位。",
+      "transition": {
+        "mode": "cut",
+        "seconds": 0.7,
+        "reason": "进入下一个明确的解释任务"
+      },
+      "data": {
+        "labels": [
+          "观察 A",
+          "观察 B"
+        ],
+        "values": [
+          1,
+          2
+        ],
+        "unit": "秒"
+      }
+    },
+    {
+      "id": "s5",
+      "recipe": "formula",
+      "object": "term",
+      "surface": "paper",
+      "label": "formula",
+      "headline": "保留同一项",
+      "fromCue": 8,
+      "toCue": 9,
+      "action": {
+        "fromCue": 8,
+        "toCue": 9
+      },
+      "explains": "推导要保留每一项的身份。",
+      "transition": {
+        "mode": "cut",
+        "seconds": 0.7,
+        "reason": "进入下一个明确的解释任务"
+      },
+      "data": {
+        "before": [
+          {
+            "id": "common1",
+            "text": "3 ×"
+          },
+          {
+            "id": "x",
+            "text": "2"
+          },
+          {
+            "id": "den",
+            "text": "/ 3"
+          }
+        ],
+        "after": [
+          {
+            "id": "x",
+            "text": "2"
+          }
+        ],
+        "explanation": "仅作消去共同因子的动作测试"
+      }
+    },
+    {
+      "id": "s6",
+      "recipe": "curve",
+      "object": "count",
+      "surface": "dark",
+      "label": "curve",
+      "headline": "累积过程",
+      "fromCue": 10,
+      "toCue": 11,
+      "action": {
+        "fromCue": 10,
+        "toCue": 11
+      },
+      "explains": "曲线按给定的数据点逐步展开。",
+      "transition": {
+        "mode": "cut",
+        "seconds": 0.7,
+        "reason": "进入下一个明确的解释任务"
+      },
+      "data": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            12
+          ]
+        ],
+        "yMax": 12,
+        "unit": "个",
+        "xLabel": "观察时间"
+      }
+    },
+    {
+      "id": "s7",
+      "recipe": "filters",
+      "object": "flow",
+      "surface": "dark",
+      "label": "filters",
+      "headline": "逐门筛选",
+      "fromCue": 12,
+      "toCue": 13,
+      "action": {
+        "fromCue": 12,
+        "toCue": 13
+      },
+      "explains": "每个对象依次通过筛选条件。",
+      "transition": {
+        "mode": "cut",
+        "seconds": 0.7,
+        "reason": "进入下一个明确的解释任务"
+      },
+      "data": {
+        "stages": [
+          "条件一",
+          "条件二",
+          "条件三"
+        ],
+        "items": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          0,
+          2
+        ]
+      }
+    }
+  ]
+}

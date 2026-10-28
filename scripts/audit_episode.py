@@ -4,6 +4,9 @@ from pathlib import Path
 
 def audit(episode,profile):
     ep=Path(episode).resolve(); checks=[]
+    config=ep/'plans/project.json'
+    workflow=json.loads(config.read_text('utf-8-sig')).get('workflow') if config.exists() else None
+    cinema=workflow=='cinema-recipes'
     def add(name,ok,detail,required=True):checks.append(dict(name=name,passed=bool(ok),required=required,detail=detail))
     short=profile=='task-short'; chapter=profile=='chapter-proof'
     low,high=(90,150) if chapter else (60,90) if short else (165,195)
@@ -30,7 +33,7 @@ def audit(episode,profile):
         add('subtitle_voice_alignment',bool(cues) and all(any(abs(s['start']-c['start'])<1e-6 for c in cues) and any(abs(s['end']-c['end'])<1e-6 for c in cues) for s in subs),'SRT groups must start/end on measured voice cues')
         add('srt_file',bool(list((ep/'out').glob('*.srt'))),'one or more authored SRT files')
     else:add('voice_timeline',False,str(timeline))
-    for name,rel in [('source_evidence','evidence/source-manifest.json'),('script_review','evidence/script-review.json'),('shot_contracts','source/storyboard.json')]:
+    for name,rel in [('source_evidence','evidence/source-manifest.json'),('script_review','evidence/script-review.json'),('shot_contracts','source/film.json' if cinema else 'source/storyboard.json')]:
         f=ep/rel;add(name,f.is_file(),str(f))
     review_file=ep/'evidence/script-review.json';draft_file=ep/'source/draft.txt';spec_file=ep/'source/script.json'
     if review_file.is_file() and draft_file.is_file() and spec_file.is_file():
@@ -42,7 +45,13 @@ def audit(episode,profile):
         add('approved_script_unchanged',reviewed.get('ttsAllowed') is True and hash_ok and ''.join(x.strip() for x in bodies)==written,'Review hash and actual spoken content both checked')
     else:add('approved_script_unchanged',False,'Missing hash-bound draft and approval record')
     story=ep/'source/storyboard.json'
-    if story.is_file():
+    if cinema:
+        try:
+            adapter=importlib.util.spec_from_file_location('cinema_audit',ep/'tools/cinema.py');module=importlib.util.module_from_spec(adapter);adapter.loader.exec_module(module)
+            shots=module.compile_spec(module.read(ep/'source/film.json'),module.read(ep/'assets/timeline.json'))['shots']
+            add('shot_state_contracts',True,{'shots':len(shots),'scope':'Executed recipe data, object identities, cue coverage and action intervals'})
+        except (OSError,ValueError,KeyError,TypeError) as e:add('shot_state_contracts',False,str(e))
+    elif story.is_file():
         shots=json.loads(story.read_text(encoding='utf-8-sig'));fields=['objectId','before','after','cue','entry','exit','numericInvariant','verificationTime']
         add('shot_state_contracts',bool(shots) and all(all(f in s for f in fields) for s in shots),len(shots))
         if short:add('task_shot_count',5<=len(shots)<=8,dict(actual=len(shots),min=5,max=8))
@@ -69,10 +78,9 @@ def audit(episode,profile):
     if acknowledged:
         add('editor_repeat_validation_waived',True,{'basis':'explicit_user_instruction','instruction':j['userInstruction'],'agentImportVerified':ok,'scope':j.get('verifiedScope','unspecified')})
     src=ep/'工程/src';texts='\n'.join(f.read_text(encoding='utf-8-sig') for f in src.glob('*.tsx')) if src.is_dir() else ''
+    if cinema:texts='\n'.join((ep/'工程'/name).read_text(encoding='utf-8-sig') for name in ['core.js','recipes.js','runtime.js'] if (ep/'工程'/name).exists())
     add('deterministic_source',bool(texts) and not re.search(r'Math\.random\(|Date\.now\(|requestAnimationFrame\(',texts),'Static check only; no aesthetic claim')
-    config=ep/'plans/project.json'
-    workflow=json.loads(config.read_text('utf-8-sig')).get('workflow') if config.exists() else None
-    add('film_workflow',workflow=='adapted-film','Complete-film migration required. Component tests are not film deliveries.')
+    add('film_workflow',workflow in ['adapted-film','cinema-recipes'],'Explicit complete-film migration or executable Poisson adaptation required. Component tests are not film deliveries.')
     migration=ep/'plans/migration.json'
     add('complete_source_migration',migration.is_file() and bool(json.loads(migration.read_text('utf-8-sig')).get('files')), 'Retain the actual source film and record adapted shots; source files alone do not prove quality.')
     # A successful local component proof cannot authorize an unreviewed film.

@@ -3,6 +3,7 @@ examples/chapter-01/source/draft.txt -text whitespace=cr-at-eol
 examples/chapter-01/out/subtitles.srt -text whitespace=cr-at-eol
 assets/weilanx/upstream/** -text
 assets/weilanx/canvas/** -text
+assets/poisson-cinema/** -text whitespace=cr-at-eol
 
 # Same-topic production evidence hashes include render inputs and caption references.
 examples/pareto-revision/** -text whitespace=cr-at-eol

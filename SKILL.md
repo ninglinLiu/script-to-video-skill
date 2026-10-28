@@ -9,6 +9,8 @@ description: 将中文文章或研究选题改编为知识视频。按项目选�
 
 ## 开始与收到反馈时
 
+先识别交付对象。用户要求“修好 Skill，让另一个 Agent 独立产出”时，交付是可执行入口、素材适配、失败测试和独立复测说明；不要代做一条成片来冒充流水线修复。只有渲染软件测试所需的帧/片段，不能宣称完成了另一个模型的独立验证。
+
 1. 盘点已有正文、工程、字体、音轨、素材和工具能力。用户的当前选择优先于历史偏好。
 2. 按[项目配置](references/production-profiles.md)选内容组织、主视觉、时长画幅和剪辑方法；已有brief直接继承。共用生产接口，不把所有片锁成一种风格。
 3. **读取相关经验后再改。** 在Skill根目录执行下列命令，用实际症状替换查询。输出包含正文，不再重复打开同一批卡；无匹配时换词或按ID读取，不能编造经验。
@@ -23,6 +25,8 @@ python scripts/experience.py select --stage repair --query "字幕孤字，修�
 ## 制作主线
 
 新项目先走[完整工程迁移入口](references/executable-production.md)。明确选择一个已确认方向的完整案例，带着字幕、构图、解释镜头一起改编；不按关键词自动选最容易运行的 kit。
+
+**用户选《泊松过程》的黑金空间＋浅纸推导风格时，读取[可执行镜头分支](references/poisson-cinema.md)，使用 `--source poisson-cinema`。** 该分支把原图、人物、字体与七类实际解释动作复制进独立工程；新 Agent 主要填写本片数据与 cue 绑定，无需从空画布重写。它明确限于横屏，不能拿测试样例充当文章内容或真实旁白。其它文章/风格仍按实际需求选源，不统一套用这个分支。
 
 ```sh
 python scripts/start_episode.py --source chapter-01 --episode /path/to/new-episode

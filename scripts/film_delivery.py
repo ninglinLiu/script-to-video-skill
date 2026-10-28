@@ -14,8 +14,10 @@ def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def run(args):return subprocess.run(args,check=True,capture_output=True)
 def source_hash(ep):
     import importlib.util
-    script=ep/'tools/production.py'
-    if not script.exists():script=Path(__file__).with_name('production.py')
+    project=ep/'plans/project.json'
+    engine='cinema.py' if project.exists() and read(project).get('workflow')=='cinema-recipes' else 'production.py'
+    script=ep/'tools'/engine
+    if not script.exists():script=Path(__file__).with_name(engine)
     spec=importlib.util.spec_from_file_location('film_source',script);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
     return m.source_digest(ep)
 
@@ -132,6 +134,13 @@ def check(ep):
         for hold in pace['intervals']:require(hold['id'] in decisions and decisions[hold['id']].get('decision')=='keep' and bool(decisions[hold['id']].get('reason')),'Near-static interval needs an editorial observation')
         return {'seconds':duration,'scope':'Complete interval coverage and reviewed holds; not a measure of artistic quality.'}
     test('captions_visible_in_encoded_video',captions);test('whole_film_review',full)
+    project=ep/'plans/project.json'
+    if project.exists() and read(project).get('workflow')=='cinema-recipes':
+        def motion():
+            import importlib.util
+            spec=importlib.util.spec_from_file_location('cinema_check',ep/'tools/cinema.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+            return m.check(ep)
+        test('cinema_shots_and_current_inputs',motion)
     return checks
 
 if __name__=='__main__':

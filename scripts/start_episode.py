@@ -62,5 +62,10 @@ def start(source,dest):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--source',required=True,help='chapter-01 or an existing complete episode directory');p.add_argument('--episode',required=True);a=p.parse_args()
     source=ROOT/'examples/chapter-01' if a.source=='chapter-01' else Path(a.source)
-    try:print(json.dumps(start(source,a.episode),ensure_ascii=False,indent=2))
+    try:
+        if a.source=='poisson-cinema':
+            from cinema import init
+            result=init(a.episode)
+        else:result=start(source,a.episode)
+        print(json.dumps(result,ensure_ascii=False,indent=2))
     except (ValueError,OSError) as e:p.error(str(e))

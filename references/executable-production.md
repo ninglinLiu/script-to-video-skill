@@ -4,6 +4,8 @@
 
 先看用户已认可方向的完整案例，而非按关键词选容易运行的组件。仓库内 `examples/chapter-01` 提供完整纸面章节；`examples/pareto-revision` 保存同文修改对照。两者是可复现案例，不代表所有文章应使用纸面风格。
 
+选择《泊松过程》风格时用 `--source poisson-cinema`，详见[已有画面与动作的参数化分支](poisson-cinema.md)。这是独立 Canvas 适配器，不走本页下面的 Remotion 命令；它复用环境图、人物和实际解释动作，提供配音时间线与字幕检查的共用接口。不要以只拷贝纸面 CSS 替代指定风格。
+
 ```sh
 python scripts/start_episode.py --source chapter-01 --episode ./episodes/new-film
 ```
