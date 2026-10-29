@@ -1,0 +1,369 @@
+{
+  "version": 1,
+  "kind": "transfer-test",
+  "title": "同一句未回复，三种解释",
+  "label": "配置验证 / 认知复杂度",
+  "duration": 24,
+  "assets": {
+    "street": "plates/street.png",
+    "interior": "plates/interior.png",
+    "desk": "plates/desk.png",
+    "waterfront": "plates/waterfront.png",
+    "archive": "plates/archive.png",
+    "day": "plates/day.png",
+    "actors": "layers/actors.png",
+    "foreground": "layers/foreground.png",
+    "props": "layers/props.png"
+  },
+  "actorRects": [
+    [
+      25,
+      0,
+      489,
+      765
+    ],
+    [
+      529,
+      0,
+      499,
+      749
+    ],
+    [
+      1029,
+      21,
+      513,
+      730
+    ],
+    [
+      1547,
+      20,
+      499,
+      715
+    ]
+  ],
+  "values": {
+    "a": "忙碌",
+    "b": "忘记",
+    "current": "未回复"
+  },
+  "shots": [
+    {
+      "id": "new-open",
+      "dur": 3.5,
+      "type": "scene",
+      "plate": "day",
+      "camera": [
+        [
+          0.5,
+          0.5,
+          1.03
+        ],
+        [
+          0.51,
+          0.48,
+          1.09
+        ]
+      ],
+      "cameraPortrait": [
+        [
+          0.55,
+          0.51,
+          1.03
+        ],
+        [
+          0.52,
+          0.48,
+          1.09
+        ]
+      ],
+      "dust": false,
+      "water": true,
+      "actors": [
+        {
+          "id": "a",
+          "x": 0.64,
+          "toX": 0.69,
+          "y": 0.65,
+          "h": 0.2,
+          "walk": true,
+          "portrait": {
+            "x": 0.55,
+            "toX": 0.61,
+            "y": 0.69,
+            "h": 0.18
+          }
+        },
+        {
+          "id": "b",
+          "x": 0.88,
+          "toX": 0.82,
+          "y": 0.66,
+          "h": 0.2,
+          "walk": true,
+          "portrait": {
+            "x": 0.85,
+            "toX": 0.78,
+            "y": 0.7,
+            "h": 0.18
+          }
+        }
+      ],
+      "annotation": "朋友没回消息"
+    },
+    {
+      "id": "new-letter",
+      "dur": 4,
+      "type": "scene",
+      "plate": "desk",
+      "camera": [
+        [
+          0.5,
+          0.5,
+          1.03
+        ],
+        [
+          0.51,
+          0.48,
+          1.09
+        ]
+      ],
+      "cameraPortrait": [
+        [
+          0.55,
+          0.51,
+          1.03
+        ],
+        [
+          0.52,
+          0.48,
+          1.09
+        ]
+      ],
+      "dust": true,
+      "action": "evidence",
+      "label": "先别急着定性",
+      "lines": [
+        "一个现象",
+        "不只有一种解释"
+      ]
+    },
+    {
+      "id": "new-possibilities",
+      "dur": 5,
+      "type": "map",
+      "map": {
+        "from": [
+          640,
+          730,
+          0.82,
+          -0.11
+        ],
+        "to": [
+          660,
+          855,
+          1.1,
+          0.06
+        ]
+      },
+      "mapPortrait": {
+        "from": [
+          640,
+          730,
+          1.05,
+          -0.13
+        ],
+        "to": [
+          660,
+          855,
+          1.48,
+          0.6
+        ]
+      },
+      "nodes": [
+        {
+          "xy": [
+            320,
+            660
+          ],
+          "name": "没回复"
+        },
+        {
+          "xy": [
+            610,
+            660
+          ],
+          "name": "在忙"
+        },
+        {
+          "xy": [
+            1000,
+            1050
+          ],
+          "name": "忘了 / 不知怎么回"
+        }
+      ]
+    },
+    {
+      "id": "new-question",
+      "dur": 4,
+      "type": "scene",
+      "plate": "interior",
+      "camera": [
+        [
+          0.5,
+          0.5,
+          1.03
+        ],
+        [
+          0.51,
+          0.48,
+          1.09
+        ]
+      ],
+      "cameraPortrait": [
+        [
+          0.55,
+          0.51,
+          1.03
+        ],
+        [
+          0.52,
+          0.48,
+          1.09
+        ]
+      ],
+      "dust": true,
+      "action": "constraints",
+      "label": "补充信息",
+      "lines": [
+        "发生了什么？",
+        "哪些是猜测？",
+        "哪些能确认？"
+      ]
+    },
+    {
+      "id": "new-change",
+      "dur": 3.5,
+      "type": "scene",
+      "plate": "desk",
+      "camera": [
+        [
+          0.5,
+          0.5,
+          1.03
+        ],
+        [
+          0.51,
+          0.48,
+          1.09
+        ]
+      ],
+      "cameraPortrait": [
+        [
+          0.55,
+          0.51,
+          1.03
+        ],
+        [
+          0.52,
+          0.48,
+          1.09
+        ]
+      ],
+      "dust": true,
+      "action": "evidence",
+      "lines": [
+        "保留多种解释",
+        "根据新信息再判断"
+      ],
+      "label": "多一种解释"
+    },
+    {
+      "id": "new-ending",
+      "dur": 4,
+      "type": "scene",
+      "plate": "day",
+      "camera": [
+        [
+          0.5,
+          0.5,
+          1.03
+        ],
+        [
+          0.51,
+          0.48,
+          1.09
+        ]
+      ],
+      "cameraPortrait": [
+        [
+          0.55,
+          0.51,
+          1.03
+        ],
+        [
+          0.52,
+          0.48,
+          1.09
+        ]
+      ],
+      "dust": false,
+      "action": "release",
+      "water": true,
+      "owner": "最初的解释",
+      "value": "猜测",
+      "label": "保留解释，等待更多信息"
+    }
+  ],
+  "timeline": {
+    "cues": [
+      {
+        "start": 0.1,
+        "end": 3.4,
+        "text": "朋友没回消息，不等于不重视你。"
+      },
+      {
+        "start": 3.6,
+        "end": 7.4,
+        "text": "把观察与解释分开。"
+      },
+      {
+        "start": 7.6,
+        "end": 12.4,
+        "text": "可能在忙，可能忘了，也可能还没想好怎么回。"
+      },
+      {
+        "start": 12.6,
+        "end": 16.4,
+        "text": "先补充信息，再更新判断。"
+      },
+      {
+        "start": 16.6,
+        "end": 19.9,
+        "text": "允许解释暂时不止一种。"
+      },
+      {
+        "start": 20.1,
+        "end": 23.9,
+        "text": "多一个解释，少一次误判。"
+      }
+    ],
+    "wordBoundarySource": "silent editorial timing; no narration claimed"
+  },
+  "footer": "第二内容配置 · 静音字幕样片 · 非独立模型验收",
+  "endLine": "多一个解释，少一次误判。",
+  "propRects": [
+    [
+      16,
+      11,
+      871,
+      861
+    ],
+    [
+      887,
+      0,
+      872,
+      887
+    ]
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "kind": "proof",
+  "title": "回本以后，什么会改变？",
+  "label": "认知街区 / 像素场景",
+  "duration": 5,
+  "assets": {
+    "street": "plates/street.png",
+    "interior": "plates/interior.png",
+    "desk": "plates/desk.png",
+    "waterfront": "plates/waterfront.png",
+    "archive": "plates/archive.png",
+    "day": "plates/day.png",
+    "actors": "layers/actors.png",
+    "foreground": "layers/foreground.png",
+    "props": "layers/props.png"
+  },
+  "actorRects": [
+    [
+      25,
+      0,
+      489,
+      765
+    ],
+    [
+      529,
+      0,
+      499,
+      749
+    ],
+    [
+      1029,
+      21,
+      513,
+      730
+    ],
+    [
+      1547,
+      20,
+      499,
+      715
+    ]
+  ],
+  "values": {
+    "a": "100",
+    "b": "40",
+    "current": "60"
+  },
+  "shots": [
+    {
+      "id": "L3-map",
+      "dur": 0.16666666666666666,
+      "type": "map",
+      "map": {
+        "from": [
+          640,
+          730,
+          0.82,
+          -0.11
+        ],
+        "to": [
+          660,
+          855,
+          1.1,
+          0.06
+        ]
+      },
+      "mapPortrait": {
+        "from": [
+          640,
+          730,
+          1.05,
+          -0.13
+        ],
+        "to": [
+          660,
+          855,
+          1.48,
+          0.6
+        ]
+      }
+    },
+    {
+      "id": "L3-water",
+      "dur": 4.166666666666667,
+      "type": "scene",
+      "plate": "waterfront",
+      "camera": [
+        [
+          0.5,
+          0.5,
+          1.03
+        ],
+        [
+          0.51,
+          0.48,
+          1.09
+        ]
+      ],
+      "cameraPortrait": [
+        [
+          0.55,
+          0.51,
+          1.03
+        ],
+        [
+          0.52,
+          0.48,
+          1.09
+        ]
+      ],
+      "dust": false,
+      "water": true,
+      "foreground": true
+    },
+    {
+      "id": "L3-shop",
+      "dur": 0.6666666666666666,
+      "type": "scene",
+      "plate": "interior",
+      "camera": [
+        [
+          0.6,
+          0.53,
+          1.4
+        ],
+        [
+          0.6,
+          0.53,
+          1.42
+        ]
+      ],
+      "cameraPortrait": [
+        [
+          0.6,
+          0.53,
+          1.2
+        ],
+        [
+          0.6,
+          0.53,
+          1.22
+        ]
+      ],
+      "dust": true
+    }
+  ],
+  "timeline": {
+    "cues": []
+  },
+  "propRects": [
+    [
+      16,
+      11,
+      871,
+      861
+    ],
+    [
+      887,
+      0,
+      872,
+      887
+    ]
+  ]
+}

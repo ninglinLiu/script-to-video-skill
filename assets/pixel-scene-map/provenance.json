@@ -1,0 +1,104 @@
+{
+  "created": "2026-10-29",
+  "method": "built-in imagegen; 9 original asset calls; reference video/images not submitted",
+  "images": [
+    {
+      "path": "plates/archive.png",
+      "sha256": "7e7cd0a925a55afb7be8d9a72bf450b6e9c2618f9f9fb81611d6d2bdf5878cc1",
+      "size": [
+        1086,
+        1448
+      ],
+      "source": "built-in imagegen original output"
+    },
+    {
+      "path": "plates/day.png",
+      "sha256": "68057115c938c675adec9d36c709cd4ee6ef4253ab0070bcd601e4dc3590124a",
+      "size": [
+        1086,
+        1448
+      ],
+      "source": "built-in imagegen original output"
+    },
+    {
+      "path": "plates/desk.png",
+      "sha256": "f82ba722c124ab8bbf3415745cb09b58f9721d081423b9ab7546d4d30ca006bb",
+      "size": [
+        1086,
+        1448
+      ],
+      "source": "built-in imagegen original output"
+    },
+    {
+      "path": "plates/interior.png",
+      "sha256": "c4fba3a1a32142827c7954e89f3f4c0141aa7e6788056965722bb9086454821f",
+      "size": [
+        1086,
+        1448
+      ],
+      "source": "built-in imagegen original output"
+    },
+    {
+      "path": "plates/street.png",
+      "sha256": "59e7c28f5dda4c58b8d7b720a4786a760aa7289257eaf20cabfe1e2935405708",
+      "size": [
+        1086,
+        1448
+      ],
+      "source": "built-in imagegen original output"
+    },
+    {
+      "path": "plates/waterfront.png",
+      "sha256": "69c34a16e969c71bfda57958f9f0117ca7746b1cd0fef8586a158e75273dbc63",
+      "size": [
+        1086,
+        1448
+      ],
+      "source": "built-in imagegen original output"
+    },
+    {
+      "path": "layers/actors.png",
+      "sha256": "f6d872bf822455eba8b8b87a66bb25fdd221609b4af08a5866099916a1afe457",
+      "size": [
+        2056,
+        765
+      ],
+      "source": "built-in imagegen original output"
+    },
+    {
+      "path": "layers/foreground.png",
+      "sha256": "692be673c9024e5654d92b4da5b6858a5533a74aede01f191e2eaa39f3e02a77",
+      "size": [
+        1086,
+        1448
+      ],
+      "source": "built-in imagegen original output"
+    },
+    {
+      "path": "layers/props.png",
+      "sha256": "ea307f9164ab4f0684cb37c8105d93f687d23d90894df84a69b63169eb76bf7c",
+      "size": [
+        1774,
+        887
+      ],
+      "source": "built-in imagegen"
+    }
+  ],
+  "layers": [
+    "6 whole-environment raster plates",
+    "4 independently cropped actor poses on alpha sprite sheet",
+    "independent foreground lantern/foliage alpha layer",
+    "runtime original map / route / markers",
+    "runtime paper props / captions / water mask / dust",
+    "independent clock and ledger alpha props"
+  ],
+  "limitations": "Whole architectural plates are flattened backgrounds, not fully separated PSD buildings. The delivered overlay layers are genuine independent alpha/code layers.",
+  "licenses": {
+    "generated": "AI-generated original project assets; no claim to rights in referenced video",
+    "font": "Noto Sans SC, SIL OFL 1.1",
+    "engine": "Canvas engine/util via assets/weilanx/canvas, upstream alchaincyf/huashu-art-motion, MIT; runtime/vendor/LICENSE-huashu.txt"
+  },
+  "upstream": "https://github.com/Azure12355/weilanx-claude-videos",
+  "external_reference": "LifeOS style/camera observations only; reference media not in asset pack",
+  "engineUpstream": "https://github.com/alchaincyf/huashu-art-motion"
+}

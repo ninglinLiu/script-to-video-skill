@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "kind": "proof",
+  "title": "回本以后，什么会改变？",
+  "label": "认知街区 / 像素场景",
+  "duration": 6.5,
+  "assets": {
+    "street": "plates/street.png",
+    "interior": "plates/interior.png",
+    "desk": "plates/desk.png",
+    "waterfront": "plates/waterfront.png",
+    "archive": "plates/archive.png",
+    "day": "plates/day.png",
+    "actors": "layers/actors.png",
+    "foreground": "layers/foreground.png",
+    "props": "layers/props.png"
+  },
+  "actorRects": [
+    [
+      25,
+      0,
+      489,
+      765
+    ],
+    [
+      529,
+      0,
+      499,
+      749
+    ],
+    [
+      1029,
+      21,
+      513,
+      730
+    ],
+    [
+      1547,
+      20,
+      499,
+      715
+    ]
+  ],
+  "values": {
+    "a": "100",
+    "b": "40",
+    "current": "60"
+  },
+  "shots": [
+    {
+      "id": "L2-route",
+      "dur": 5.333333333333333,
+      "type": "map",
+      "map": {
+        "from": [
+          680,
+          850,
+          1.1,
+          -0.08
+        ],
+        "to": [
+          660,
+          855,
+          1.1,
+          0.06
+        ]
+      },
+      "mapPortrait": {
+        "from": [
+          640,
+          730,
+          1.05,
+          -0.13
+        ],
+        "to": [
+          660,
+          855,
+          1.48,
+          0.6
+        ]
+      },
+      "routeStart": 0.35,
+      "routeEnd": 0.76,
+      "nodes": [
+        {
+          "xy": [
+            320,
+            660
+          ],
+          "name": "今天"
+        },
+        {
+          "xy": [
+            1000,
+            1050
+          ],
+          "name": "重新判断"
+        }
+      ]
+    },
+    {
+      "id": "L2-door",
+      "dur": 1.1666666666666667,
+      "type": "scene",
+      "plate": "street",
+      "camera": [
+        [
+          0.65,
+          0.53,
+          1.6
+        ],
+        [
+          0.66,
+          0.52,
+          1.63
+        ]
+      ],
+      "cameraPortrait": [
+        [
+          0.65,
+          0.54,
+          1.35
+        ],
+        [
+          0.65,
+          0.53,
+          1.39
+        ]
+      ],
+      "dust": false,
+      "water": true
+    }
+  ],
+  "timeline": {
+    "cues": [
+      {
+        "start": 0,
+        "end": 5.4,
+        "text": "沿着新证据，走到下一站。"
+      },
+      {
+        "start": 5.5,
+        "end": 6.5,
+        "text": "重新看这份资产。"
+      }
+    ]
+  },
+  "propRects": [
+    [
+      16,
+      11,
+      871,
+      861
+    ],
+    [
+      887,
+      0,
+      872,
+      887
+    ]
+  ]
+}

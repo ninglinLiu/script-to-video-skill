@@ -1,0 +1,238 @@
+{
+  "version": 1,
+  "kind": "proof",
+  "title": "回本以后，什么会改变？",
+  "label": "认知街区 / 像素场景",
+  "duration": 8,
+  "assets": {
+    "street": "plates/street.png",
+    "interior": "plates/interior.png",
+    "desk": "plates/desk.png",
+    "waterfront": "plates/waterfront.png",
+    "archive": "plates/archive.png",
+    "day": "plates/day.png",
+    "actors": "layers/actors.png",
+    "foreground": "layers/foreground.png",
+    "props": "layers/props.png"
+  },
+  "actorRects": [
+    [
+      25,
+      0,
+      489,
+      765
+    ],
+    [
+      529,
+      0,
+      499,
+      749
+    ],
+    [
+      1029,
+      21,
+      513,
+      730
+    ],
+    [
+      1547,
+      20,
+      499,
+      715
+    ]
+  ],
+  "values": {
+    "a": "100",
+    "b": "40",
+    "current": "60"
+  },
+  "shots": [
+    {
+      "id": "L1-street",
+      "dur": 0.43333333333333335,
+      "type": "scene",
+      "plate": "street",
+      "camera": [
+        [
+          0.5,
+          0.5,
+          1.03
+        ],
+        [
+          0.51,
+          0.48,
+          1.09
+        ]
+      ],
+      "cameraPortrait": [
+        [
+          0.55,
+          0.51,
+          1.03
+        ],
+        [
+          0.52,
+          0.48,
+          1.09
+        ]
+      ],
+      "dust": false,
+      "water": true,
+      "foreground": true,
+      "actors": [
+        {
+          "id": "a",
+          "x": 0.64,
+          "toX": 0.69,
+          "y": 0.65,
+          "h": 0.2,
+          "walk": true,
+          "portrait": {
+            "x": 0.55,
+            "toX": 0.61,
+            "y": 0.69,
+            "h": 0.18
+          }
+        },
+        {
+          "id": "b",
+          "x": 0.88,
+          "toX": 0.82,
+          "y": 0.66,
+          "h": 0.2,
+          "walk": true,
+          "portrait": {
+            "x": 0.85,
+            "toX": 0.78,
+            "y": 0.7,
+            "h": 0.18
+          }
+        }
+      ]
+    },
+    {
+      "id": "L1-dive",
+      "dur": 6.233333333333333,
+      "type": "map",
+      "map": {
+        "from": [
+          640,
+          730,
+          0.28,
+          -0.2
+        ],
+        "to": [
+          660,
+          855,
+          1.1,
+          0.06
+        ]
+      },
+      "mapPortrait": {
+        "from": [
+          640,
+          730,
+          0.34,
+          -0.2
+        ],
+        "to": [
+          660,
+          855,
+          1.48,
+          0.6
+        ]
+      },
+      "nodes": [
+        {
+          "xy": [
+            610,
+            660
+          ],
+          "name": "同一份资产"
+        },
+        {
+          "xy": [
+            1000,
+            1050
+          ],
+          "name": "账单室"
+        }
+      ],
+      "routeStart": 0.6,
+      "routeEnd": 0.88
+    },
+    {
+      "id": "L1-interior",
+      "dur": 1.3333333333333333,
+      "type": "scene",
+      "plate": "interior",
+      "camera": [
+        [
+          0.5,
+          0.5,
+          1.03
+        ],
+        [
+          0.51,
+          0.48,
+          1.09
+        ]
+      ],
+      "cameraPortrait": [
+        [
+          0.55,
+          0.51,
+          1.03
+        ],
+        [
+          0.52,
+          0.48,
+          1.09
+        ]
+      ],
+      "dust": true,
+      "actors": [
+        {
+          "id": "a",
+          "x": 0.25,
+          "y": 0.78,
+          "h": 0.31
+        },
+        {
+          "id": "b",
+          "x": 0.74,
+          "y": 0.78,
+          "h": 0.3
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "cues": [
+      {
+        "start": 0.6,
+        "end": 6.7,
+        "text": "从街区，进入同一个起点。"
+      },
+      {
+        "start": 6.9,
+        "end": 8,
+        "text": "两张账单，同一间店。"
+      }
+    ]
+  },
+  "propRects": [
+    [
+      16,
+      11,
+      871,
+      861
+    ],
+    [
+      887,
+      0,
+      872,
+      887
+    ]
+  ]
+}

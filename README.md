@@ -1,5 +1,7 @@
 # Script to Video · 视觉素材库与制作档案
 
+**LifeOS 路线的实际制作分支：[像素街区双画幅成片与三个连续实验](examples/pixel-scene-map/index.html)**。105.57秒固定凯撒稿，六张完整环境、独立人物/前景/道具、地图与相机配置；另有24秒第二内容在干净目录的复现测试。[可执行入口与边界](references/pixel-scene-map.md)。原参考媒体不进入仓库；本版尚不代表1:1审美通过。
+
 **2026-10-29 新增：[139条样片索引](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/) · [爽哥说 / LifeOS 两条参考与8段动作拆解](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/study.html)。** 索引复用35条仓库已有公开视频，其余保留记录、来源与浏览器本地加载入口。新增28段观察、[制作路径](references/reference-study-20261029/production-route.txt)和[结构化计划](references/reference-study-20261029/plan.json)；参考分析已完成相应抽样，1:1制作尚未验证。
 
 ```sh
@@ -9,7 +11,7 @@ python scripts/reference_study.py show --route pixel-scene-map
 python scripts/reference_study.py prepare --ref R26 --input /path/to/source.mp4 --clip S1
 ```
 
-分别交给制作 Agent 的完整任务提示词：[A · 凯撒 × 粒子字与连续场景](references/reference-study-20261029/prompts/caesar-particle.txt) · [B · 凯撒 × 像素场景与地图剪辑](references/reference-study-20261029/prompts/caesar-pixel.txt)。两条任务沿用同一份约106秒凯撒改编稿，把动画差异单独比较，并要求成片后固化可执行Skill；它们是待执行任务，尚未代表成片完成。
+分别交给制作 Agent 的完整任务提示词：[A · 凯撒 × 粒子字与连续场景](references/reference-study-20261029/prompts/caesar-particle.txt) · [B · 凯撒 × 像素场景与地图剪辑](references/reference-study-20261029/prompts/caesar-pixel.txt)。两条任务沿用同一份约106秒凯撒改编稿，把动画差异单独比较，并要求成片后固化可执行Skill；B路线在本分支已有成片及可执行交付，A路线的完成状态不由本次B路线测试推断。
 
 这是一个包含制作指令、脚本、素材和案例的 **Agent Skill**，需要能执行工具的 Agent 及视频运行环境。现有案例可复用；新文章的稳定生产、8–10分钟长片和跨模型复现尚未整体验收。详见[任务完成度、环境依赖与换模型说明](references/runtime-and-portability.md)。
 

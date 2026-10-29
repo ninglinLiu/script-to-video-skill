@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-29",
+  "base": "5e2e38d",
+  "branch": "feature/caesar-pixel",
+  "records": [
+    {
+      "film": "caesar",
+      "format": "original",
+      "cueCount": 64,
+      "traceFrames": 3167,
+      "encodedSamples": 128,
+      "mediaSha256": "7c092e335f8d07caf50a05f872e06da06fb3bbf4c0420c7c27fc876ee954faa2",
+      "checks": {
+        "frames": true,
+        "format": true,
+        "audio": true,
+        "captions": true,
+        "sourceBinding": true,
+        "encodedBinding": true
+      },
+      "coverage": [
+        0,
+        105.56666666666666
+      ],
+      "sequenceFrames": 211,
+      "nearStaticIntervals": []
+    },
+    {
+      "film": "caesar",
+      "format": "portrait",
+      "cueCount": 64,
+      "traceFrames": 3167,
+      "encodedSamples": 128,
+      "mediaSha256": "8efad25bcba5c8cb3c253fe91a4a2e1ca28c3e01217a280dd34ef0f6b44b0f46",
+      "checks": {
+        "frames": true,
+        "format": true,
+        "audio": true,
+        "captions": true,
+        "sourceBinding": true,
+        "encodedBinding": true
+      },
+      "coverage": [
+        0,
+        105.56666666666666
+      ],
+      "sequenceFrames": 211,
+      "nearStaticIntervals": []
+    },
+    {
+      "film": "second-content",
+      "format": "original",
+      "cueCount": 6,
+      "traceFrames": 720,
+      "encodedSamples": 12,
+      "mediaSha256": "2a478d326a912a31c88464ccfd504f64b28cdf094888e52c76f090ca6a333e95",
+      "checks": {
+        "frames": true,
+        "format": true,
+        "audio": true,
+        "captions": true,
+        "sourceBinding": true
+      },
+      "coverage": [
+        0,
+        24
+      ],
+      "sequenceFrames": 48,
+      "nearStaticIntervals": []
+    },
+    {
+      "film": "second-content",
+      "format": "portrait",
+      "cueCount": 6,
+      "traceFrames": 720,
+      "encodedSamples": 12,
+      "mediaSha256": "6ff0fff1ba23d0a4500040ce276a1ba119eabfaa84712be823bc7c897c78a067",
+      "checks": {
+        "frames": true,
+        "format": true,
+        "audio": true,
+        "captions": true,
+        "sourceBinding": true,
+        "encodedBinding": true
+      },
+      "coverage": [
+        0,
+        24
+      ],
+      "sequenceFrames": 48,
+      "nearStaticIntervals": []
+    }
+  ],
+  "portability": {
+    "freshDirectory": true,
+    "prepareCommand": "python scripts/pixel_scene.py prepare --episode episodes/caesar-pixel-portability",
+    "npmCommand": "npm ci --ignore-scripts",
+    "sameRuntimeSha256": "a9ab3bf7f429a7e4278625dc83c021797a8e97d148729c3ec107b546004b47ff",
+    "secondRuntimeSha256": "a9ab3bf7f429a7e4278625dc83c021797a8e97d148729c3ec107b546004b47ff",
+    "independentAgent": false
+  },
+  "limits": [
+    "Technical checks are not aesthetic approval",
+    "No human listening review",
+    "Backgrounds are flattened environmental plates; alpha/code overlays are separately editable",
+    "Reference footage only in local-only; absent from this example",
+    "540-wide pixel-art grid; 3:4 master is upscaled from 1080x1440",
+    "Finite pose animation, no skeletal gait"
+  ],
+  "previewFiles": [
+    {
+      "path": "media/assets.jpg",
+      "sha256": "959679dabfd4e564ee86e04c9190f487f9ef1e75dcc5d7206c0938b4a6c40bf2",
+      "bytes": 1007564
+    },
+    {
+      "path": "media/caesar-original.jpg",
+      "sha256": "00e2bc2336fa4f7d3c230a8335742e0cd4834171a82175b9456d5ec1bb70d353",
+      "bytes": 110644
+    },
+    {
+      "path": "media/caesar-original.mp4",
+      "sha256": "b5996ec83cce3f4c7d1a25420463ef6c8ddf63f491562826d67a8eb65c3ebd33",
+      "bytes": 35686345
+    },
+    {
+      "path": "media/caesar-portrait.jpg",
+      "sha256": "8995c409d7febb40d68e441d07ae9a2fdd21d809ad9c87b6559821341253f410",
+      "bytes": 98146
+    },
+    {
+      "path": "media/caesar-portrait.mp4",
+      "sha256": "dec883d223af97098470a37fb9ce0e54d787f3169d6547dcd913b8ea0866cdb7",
+      "bytes": 27176233
+    },
+    {
+      "path": "media/L1.mp4",
+      "sha256": "0f40adcc0467da7899e59f76dcc7a84fdac866f760f4c7c89dcbe7f72a329b1c",
+      "bytes": 1367081
+    },
+    {
+      "path": "media/L2.mp4",
+      "sha256": "20ec4698df310793675538c1659119aed708236c8771d358490f562cb05a9cdf",
+      "bytes": 690840
+    },
+    {
+      "path": "media/L3.mp4",
+      "sha256": "9a1b0bc53fd7fb3f982eb7734f2a29d7b27ee33c3a5ce8d42005e45f5fded758",
+      "bytes": 1800805
+    },
+    {
+      "path": "media/second-original.mp4",
+      "sha256": "5cebcd138d90c8de5b114d10b0599ee8f060a0d0c35890d021e0d474b8486a35",
+      "bytes": 7704381
+    },
+    {
+      "path": "media/second-portrait.mp4",
+      "sha256": "33b329572f620c410c69256e2633bea81162853f06506cda69ea6bb5724140f5",
+      "bytes": 6064547
+    }
+  ]
+}
