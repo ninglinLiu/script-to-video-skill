@@ -62,7 +62,7 @@ python scripts/start_episode.py --source chapter-01 --episode /path/to/new-episo
 | 泊松空间风格与recipe | `experience.py select --stage plan --route poisson-cinema`；[镜头分支](references/poisson-cinema.md)，R04改编失败，不抹去原片方向 |
 | 爽哥说或LifeOS真实参考 | `reference_study.py show --route particle-document`，随后将show换为fetch；或选pixel-scene-map，见[制作路径](references/reference-study-20261029/production-route.txt)；fetch按需给真实MP4、连续帧、动作阶段及哈希，先看运动，不能只读描述 |
 | 背景+贴纸、PPT、旧失败片、独立复测 | [反思入口](references/experience/reflections.md)，按ID取视频时间段及观察范围 |
-| 维护Skill架构或大库加载 | [现成方案对照与架构](docs/architecture.md)、[实际文件树](docs/repository-tree.md)，普通做片不必读 |
+| 维护Skill架构或大库加载 | 先读[维护步骤](CONTRIBUTING.md)及[架构](docs/architecture.md)；结构变化先改源图与目录职责，再实现；每次提交运行`repo_inventory.py --check`。普通做片不必读 |
 | 具体审看、数字与布局规则 | [生产规范](references/production.md) |
 | 长章节或长片 | [章节与素材组织](references/long-form.md) |
 | 选配乐、混音、音源不完整 | [声音与素材](references/audio-and-materials.md)，检索E14 |

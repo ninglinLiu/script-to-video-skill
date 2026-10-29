@@ -1,43 +1,46 @@
 {
-  "scope": "Tracked working files; excludes these three generated inventory outputs, ignored files, node_modules and Git history. Duplicate groups use staged Git blob identity, not a new media scan.",
-  "base_commit": "3e72d9fc46c8f722975fc7fa1266595d0a8ae7b6",
-  "files": 2011,
-  "bytes": 1110486266,
-  "entry_chars": 4117,
+  "scope": "Staged Git blobs; excludes three generated inventory outputs, ignored files and Git history. Tree includes all tracked paths plus generated outputs. Byte counts use canonical Git blobs, not OS working-copy line endings.",
+  "files": 2017,
+  "bytes": 1110507508,
+  "entry_chars": 4155,
   "entry_lines": 72,
-  "entry_utf8_bytes": 8447,
+  "entry_utf8_bytes": 8523,
   "groups": {
     "examples": {
       "files": 967,
-      "bytes": 1032062064
+      "bytes": 1032061823
     },
     "assets": {
       "files": 956,
-      "bytes": 78035919
+      "bytes": 78033476
     },
     "references": {
       "files": 55,
-      "bytes": 179686
+      "bytes": 178195
     },
     "scripts": {
       "files": 15,
-      "bytes": 121087
+      "bytes": 125901
     },
     "[root files]": {
-      "files": 8,
-      "bytes": 39597
+      "files": 10,
+      "bytes": 51994
     },
     "tests": {
-      "files": 7,
-      "bytes": 33357
+      "files": 8,
+      "bytes": 38031
     },
     "docs": {
-      "files": 1,
-      "bytes": 10909
+      "files": 3,
+      "bytes": 13552
     },
     "evals": {
       "files": 2,
       "bytes": 3647
+    },
+    ".github": {
+      "files": 1,
+      "bytes": 889
     }
   },
   "duplicates": [
@@ -126,12 +129,24 @@
       "bytes": 457
     },
     {
+      "path": ".github/workflows/architecture.yml",
+      "bytes": 889
+    },
+    {
       "path": ".gitignore",
       "bytes": 894
     },
     {
       "path": ".nojekyll",
       "bytes": 0
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1406
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 3423
     },
     {
       "path": "LICENSE",
@@ -143,11 +158,11 @@
     },
     {
       "path": "README.md",
-      "bytes": 23610
+      "bytes": 31174
     },
     {
       "path": "SKILL.md",
-      "bytes": 8519
+      "bytes": 8523
     },
     {
       "path": "assets/chapter-style-lock.json",
@@ -167,23 +182,23 @@
     },
     {
       "path": "assets/pixel-scene-map/configs/caesar.json",
-      "bytes": 22166
+      "bytes": 20863
     },
     {
       "path": "assets/pixel-scene-map/configs/proof-l1.json",
-      "bytes": 4056
+      "bytes": 3819
     },
     {
       "path": "assets/pixel-scene-map/configs/proof-l2.json",
-      "bytes": 2655
+      "bytes": 2494
     },
     {
       "path": "assets/pixel-scene-map/configs/proof-l3.json",
-      "bytes": 2625
+      "bytes": 2461
     },
     {
       "path": "assets/pixel-scene-map/configs/second-content.json",
-      "bytes": 6720
+      "bytes": 6352
     },
     {
       "path": "assets/pixel-scene-map/fonts/Noto-OFL.txt",
@@ -231,7 +246,7 @@
     },
     {
       "path": "assets/pixel-scene-map/provenance.json",
-      "bytes": 3410
+      "bytes": 3307
     },
     {
       "path": "assets/pixel-scene-map/runtime/index.html",
@@ -247,11 +262,11 @@
     },
     {
       "path": "assets/pixel-scene-map/runtime/render.mjs",
-      "bytes": 5842
+      "bytes": 5815
     },
     {
       "path": "assets/pixel-scene-map/runtime/scene-runtime.js",
-      "bytes": 18626
+      "bytes": 18546
     },
     {
       "path": "assets/pixel-scene-map/runtime/vendor/LICENSE-huashu.txt",
@@ -3974,8 +3989,16 @@
       "bytes": 117
     },
     {
+      "path": "docs/architecture-layout.json",
+      "bytes": 1154
+    },
+    {
       "path": "docs/architecture.md",
-      "bytes": 10909
+      "bytes": 10669
+    },
+    {
+      "path": "docs/architecture.mmd",
+      "bytes": 1729
     },
     {
       "path": "evals/README.md",
@@ -5779,11 +5802,11 @@
     },
     {
       "path": "examples/pixel-scene-map/README.md",
-      "bytes": 1531
+      "bytes": 1518
     },
     {
       "path": "examples/pixel-scene-map/index.html",
-      "bytes": 6305
+      "bytes": 6303
     },
     {
       "path": "examples/pixel-scene-map/media/L1.mp4",
@@ -5827,7 +5850,7 @@
     },
     {
       "path": "examples/pixel-scene-map/verification.json",
-      "bytes": 5257
+      "bytes": 5087
     },
     {
       "path": "examples/production-gates/README.md",
@@ -7851,7 +7874,7 @@
     },
     {
       "path": "examples/reflections/index.html",
-      "bytes": 18697
+      "bytes": 18641
     },
     {
       "path": "index.html",
@@ -7867,11 +7890,11 @@
     },
     {
       "path": "references/executable-production.md",
-      "bytes": 6470
+      "bytes": 6383
     },
     {
       "path": "references/experience/cards/E01.md",
-      "bytes": 1057
+      "bytes": 1044
     },
     {
       "path": "references/experience/cards/E02.md",
@@ -7959,7 +7982,7 @@
     },
     {
       "path": "references/experience/casebook.md",
-      "bytes": 3010
+      "bytes": 2974
     },
     {
       "path": "references/experience/evidence/chapter-repair.json",
@@ -8011,11 +8034,11 @@
     },
     {
       "path": "references/experience/index.json",
-      "bytes": 14475
+      "bytes": 13858
     },
     {
       "path": "references/experience/reflections.json",
-      "bytes": 14980
+      "bytes": 14649
     },
     {
       "path": "references/experience/reflections.md",
@@ -8023,11 +8046,11 @@
     },
     {
       "path": "references/experience/sources.json",
-      "bytes": 9627
+      "bytes": 9427
     },
     {
       "path": "references/experience/usage.md",
-      "bytes": 5552
+      "bytes": 5485
     },
     {
       "path": "references/long-form.md",
@@ -8035,11 +8058,11 @@
     },
     {
       "path": "references/pixel-scene-map.md",
-      "bytes": 6043
+      "bytes": 5983
     },
     {
       "path": "references/poisson-cinema.md",
-      "bytes": 7824
+      "bytes": 7744
     },
     {
       "path": "references/production-profiles.md",
@@ -8091,7 +8114,7 @@
     },
     {
       "path": "scripts/build_reflections.py",
-      "bytes": 6326
+      "bytes": 6268
     },
     {
       "path": "scripts/cinema.py",
@@ -8127,7 +8150,7 @@
     },
     {
       "path": "scripts/repo_inventory.py",
-      "bytes": 5104
+      "bytes": 9976
     },
     {
       "path": "scripts/select_visual.py",
@@ -8164,6 +8187,10 @@
     {
       "path": "tests/test_production.py",
       "bytes": 7653
+    },
+    {
+      "path": "tests/test_repo_inventory.py",
+      "bytes": 4674
     }
   ]
 }

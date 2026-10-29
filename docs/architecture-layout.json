@@ -1,0 +1,17 @@
+{
+  "SKILL.md": "Agent 的短入口；每次先读",
+  "AGENTS.md": "修改本仓库时遵守的约定",
+  "CONTRIBUTING.md": "先更新架构、再改内容、提交前检查的步骤",
+  "scripts/": "已有命令：取经验、迁移工程、取参考、核验交付",
+  "references/": "按任务选择的规则与路线，不要求全部通读",
+  "references/experience/": "经验卡、反思案例及来源；按阶段和路线检索",
+  "references/experience/reflections.json": "反思案例的唯一事实源；保留否决状态与证据范围",
+  "references/reference-study-20261029/": "参考片动作拆解、制作路径与独立任务提示词",
+  "assets/": "引擎、组件、字体及素材；供程序使用",
+  "examples/": "完整工程、实际样片、网页展厅；按需取用",
+  "examples/reflections/": "由案例记录生成的静音反思展示页",
+  "tests/": "确定性的工具回归，不是审美打分",
+  "evals/": "交给独立 Agent 的复测任务；运行结果另行记录",
+  "docs/": "架构、完整树和体积统计；维护时读取",
+  ".github/": "每次 push / PR 的架构一致性与工具检查"
+}

@@ -2,6 +2,14 @@
 
 2026-10-29。此文件回答库如何组织，不是成片质量已解决的声明。当前工作集中在 Skill 架构；不新增 SQL 服务或向量数据库。
 
+先看 [README完整架构图](../README.md#架构总览)。图的唯一源文件是 [architecture.mmd](architecture.mmd)，重要目录职责来自 [architecture-layout.json](architecture-layout.json)，README对应区块由现有inventory脚本同步；下文解释取舍与边界。
+
+## 维护架构与实际实现的一致性
+
+结构或职责改变时，先更新源图、目录职责及相关说明，再实现内容。每次提交前，从Git索引生成实际树并执行 `python scripts/repo_inventory.py --check`；push/PR由GitHub Actions再验证一次。新增顶层目录未登记、旧路径已消失、README图不同步、完整树与索引不符都会报告失败。具体步骤见 [CONTRIBUTING.md](../CONTRIBUTING.md)。
+
+图使用GitHub原生Mermaid；文件清单与对象大小直接由Git提供；测试沿用Python unittest。这次没有新增架构平台、数据库或第二个Skill执行器。自动检查覆盖文件一致性，不能证明图中职责描述正确，也不能代替Agent或用户观看实际影片；未配置分支保护时，CI失败不等于禁止直接推送。
+
 ## 先看实际问题
 
 本次盘点的基线版本有约1.11 GB已跟踪文件，主要是样片、字体和资产。精确计数、重复对象及完整路径见[文件树与体积](repository-tree.md)。文件在磁盘上不等于已经进上下文；当前更严重的问题是**选择器不知道某条路线已失败、迁移了外观却丢了主体动作、技术检查被误用作审美放行**。
@@ -22,25 +30,7 @@
 
 ## 现有目录的职责
 
-```text
-script-to-video-skill/
-├── SKILL.md                    Agent入口：交付对象、制作主线、直接路由
-├── scripts/                    现有CLI：经验检索、迁移、媒体获取、渲染/技术检查
-├── references/
-│   ├── experience/
-│   │   ├── index.json          22张经验卡的阶段、关键词和版本
-│   │   ├── cards/              每次最多读3张，默认输出≤6500字符
-│   │   ├── reflections.json   7个反思案例；状态、观察范围、取舍、视频时间段
-│   │   └── sources.json       追溯来源；需要时才读
-│   ├── production-profiles.md 不同内容、风格、画幅、时长的项目选择
-│   └── 各路线.md / 参考计划     仅在选中该路线时读
-├── assets/                     引擎、字体、分层素材；复制/渲染用，不整包当提示词
-├── examples/                   完整工程、参考媒体、用户展厅；不是默认启动上下文
-│   └── reflections/           从同一份案例JSON生成的静音查看页
-├── tests/                      工具回归：路径、数据、状态与遗漏；不是审美认证
-├── evals/evals.json            按成熟Skill评测字段组织的独立Agent任务，尚待实际运行
-└── docs/                       本架构、完整文件树；维护时读，做片无需通读
-```
+见 [README自动同步的目录职责树](../README.md#目录怎么找agent-会读多少) 与 [全部跟踪文件](repository-tree.txt)。这里只维护架构解释，不再保留第二份手写树。
 
 保持目录与现有调用兼容。现在不把每种画风拆成一个全新Skill，也不移动所有资产：那会制造重复主线和失效路径。一个Skill提供统一交付约定，路线决定引擎、素材、镜头和审查重点。
 

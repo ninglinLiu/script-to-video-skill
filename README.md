@@ -1,8 +1,117 @@
-# Script to Video · 视觉素材库与制作档案
+# Script to Video · 可复用的视频制作 Skill
+
+**把文章、参考镜头、已有工程和历史反馈，交给能使用工具的 Agent，按明确路线制作与审看视频。** 本库提供制作方法、可执行工具、素材和案例；模型、工具权限和运行环境需要另行准备。它已经具备复用与检验能力，尚未证明任意文章、风格或模型都能一次产出满意成片。
+
+[看完整样片展厅](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/) · [看139条样片索引](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/) · [看反思案例](https://ninglinliu.github.io/script-to-video-skill/examples/reflections/) · [Agent 从 SKILL.md 开始](SKILL.md)
+
+## 架构总览
+
+把它理解成一个制作工作室：**模型负责思考，Agent 负责调用工具并根据结果继续工作；harness 是让它能读文件、运行程序、查看画面的工作环境；Skill 是这个工作室的操作手册、工具和材料包。** 换模型时不必重写所有素材，但仍要确认它和所用环境是否具备读图、执行代码、渲染与审看的能力。
+
+下图描述当前实际分工。箭头是 Agent 应执行的工作关系，并不表示已有一个无人参与、必定成功的总控程序。
+
+<!-- BEGIN GENERATED: architecture -->
+```mermaid
+flowchart TB
+    U["你的任务<br/>文章 · 参考效果 · 时长 · 画幅"] --> A["Agent 负责执行和判断<br/>模型 + 工具环境（harness，需另行准备）"]
+    A --> E["SKILL.md<br/>短入口：识别任务、交付约定、读取路线"]
+
+    subgraph LIB["仓库提供的知识与素材 · 按需读取"]
+        direction LR
+        X["经验与反思<br/>experience.py<br/>先带出相关失败和适用边界"]
+        R["路线说明<br/>references/<br/>选择内容形式、镜头与运行方式"]
+        M["素材与完整工程<br/>assets/ + examples/<br/>真实组件、字体、镜头、连续参考"]
+        X --> R --> M
+    end
+    E --> X
+    M --> P["Agent 改编与装配<br/>证据 → 脚本 → 时间线 → 镜头动作"]
+    P --> T["调用现有工具<br/>迁移入口 · 配音 · 渲染 · 技术检查"]
+    T --> Q["审看实际编码成片<br/>字幕是否入画 · 主体动作 · 衔接 · 整片节奏"]
+    Q -->|发现问题，局部修复| P
+    Q --> O["交付与展示<br/>MP4 · SRT · 分层素材 · 工程 · 对照记录"]
+    O --> F["用户反馈与复测结果<br/>认可有范围；否决保留为反思案例"]
+    F -.更新案例及选路边界.-> X
+
+    C["维护与回归<br/>docs/ + tests/ + evals/ + GitHub 检查"] -.检查结构和工具行为.-> E
+    C -.不能代替影片审美判断.-> Q
+
+    classDef entry fill:#dceeff,stroke:#3161a3,color:#10263d;
+    classDef library fill:#fff0cd,stroke:#9a7020,color:#362706;
+    classDef production fill:#dff1e7,stroke:#438366,color:#143728;
+    classDef feedback fill:#fde4df,stroke:#ad5d4d,color:#49251c;
+    class A,E entry;
+    class X,R,M library;
+    class P,T,Q,O production;
+    class F,C feedback;
+```
+<!-- END GENERATED: architecture -->
+
+**统一的是入口、交付约定和反馈方式；可以变化的是内容形式、风格、时长、画幅与剪辑路线。** 新路线复用共用工具，明确自己的素材和验证范围；不能因为“素材在库里”就把被否决的版本当成熟模板。
+
+## 目录怎么找，Agent 会读多少
+
+README 给人理解全局；`SKILL.md` 给 Agent 一个短入口；大素材供程序读取与渲染。约1.11 GB 的仓库不等于一次把1.11 GB送进模型。经验命令默认最多返回3张卡、6500个 Unicode 字符；相关路线的否决状态优先返回。图片和连续视频的视觉读取另外按需进行。
+
+<!-- BEGIN GENERATED: architecture-tree -->
+```text
+script-to-video-skill/
+├── .github/  # 每次 push / PR 的架构一致性与工具检查
+├── assets/  # 引擎、组件、字体及素材；供程序使用
+├── docs/  # 架构、完整树和体积统计；维护时读取
+├── evals/  # 交给独立 Agent 的复测任务；运行结果另行记录
+├── examples/  # 完整工程、实际样片、网页展厅；按需取用
+│   └── reflections/  # 由案例记录生成的静音反思展示页
+├── references/  # 按任务选择的规则与路线，不要求全部通读
+│   ├── experience/  # 经验卡、反思案例及来源；按阶段和路线检索
+│   │   └── reflections.json  # 反思案例的唯一事实源；保留否决状态与证据范围
+│   └── reference-study-20261029/  # 参考片动作拆解、制作路径与独立任务提示词
+├── scripts/  # 已有命令：取经验、迁移工程、取参考、核验交付
+├── tests/  # 确定性的工具回归，不是审美打分
+├── AGENTS.md  # 修改本仓库时遵守的约定
+├── CONTRIBUTING.md  # 先更新架构、再改内容、提交前检查的步骤
+└── SKILL.md  # Agent 的短入口；每次先读
+```
+<!-- END GENERATED: architecture-tree -->
+
+[完整文件树与体积](docs/repository-tree.md) · [全部路径](docs/repository-tree.txt) · [详细架构和开源方案对照](docs/architecture.md) · [换模型及环境要求](references/runtime-and-portability.md)
+
+例如，Agent 想复用像素街区路线时，先运行下面的检索，就会得到 R01 的用户否决状态和相关经验；进一步查询才打开证据和具体时间段。
+
+```sh
+python scripts/experience.py select --stage plan --route pixel-scene-map
+python scripts/experience.py reflection R01
+```
+
+## 反思案例也属于可复用经验
+
+| 像素街区：背景与贴纸位移不能代替主体动画 | 《价签之外》：美术与局部运动没有形成完整交互 |
+|---|---|
+| [![像素街区实际连续帧](examples/reflections/R01-sequence.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/reflections/#R01) | [![价签之外实际连续帧](examples/reflections/R02-sequence.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/reflections/#R02) |
+
+共整理7个有明确范围的案例：保留原片、用户反馈、观测范围、失败做法、可保留部分和重测条件。它们接入既有经验选择器，不要求新 Agent 通读聊天。另有3个案例未捆绑原片，页面会标明证据限制；原版《泊松过程》保留用户喜欢的方向，不将局部落差扩大成整个风格失败。
+
+**工具检查通过、制作方自检、独立 Agent 复测、用户认可，是四种不同证据。** 目前的反思回归检查检索与记录是否正确，不能替代成片的动画质量判断。
+
+## 每次更新，图和文件树一起维护
+
+1. **先改设计。** 入口、目录职责或路线关系变化时，先改架构源图与目录职责表；既有类别新增案例无需虚改架构。
+2. **再改内容。** 实现工具、规则或素材，按实际反馈更新经验与反思。
+3. **提交前同步并检查。** 现有脚本从 Git 索引生成 README 图、目录树和体积统计；GitHub 每次 push / PR 再检查一遍。
+
+```sh
+# 按 CONTRIBUTING.md 暂存本次内容后
+python scripts/repo_inventory.py
+# 将生成的 README 和三份 inventory 输出暂存，再检查
+python scripts/repo_inventory.py --check
+```
+
+图的唯一来源是 [architecture.mmd](docs/architecture.mmd)，目录职责来自 [architecture-layout.json](docs/architecture-layout.json)。维护步骤写在 [CONTRIBUTING.md](CONTRIBUTING.md)，给 Agent 的约定写在 [AGENTS.md](AGENTS.md)。CI 会报告过期与遗漏；业务关系是否准确仍需审查，未启用分支保护时不能承诺失败提交会被自动阻止。
+
+## 制作分支、参考与完整素材展示
 
 **维护更新：** [反思资产：两条场景动画失败与5条相关复盘](examples/reflections/index.html) · [Skill架构及开源方案对照](docs/architecture.md) · [实际文件树与体积](docs/repository-tree.md)。已有失败状态进入经验选路；没有将工程可运行写成审美通过。
 
-> **2026-10-29：用户已否决本版：动画不流畅，主要仍是背景图推拉、字幕/纸卡叠加和人物贴纸位移；不作为已验证的成片路线。**
+> **2026-10-29：下述 LifeOS 像素街区改编版已被用户否决：动画不流畅，主要仍是背景图推拉、字幕/纸卡叠加和人物贴纸位移；不作为已验证的成片路线。此状态针对该版成片，不代表全部风格或原参考。**
 
 **LifeOS 路线的实际制作分支：[像素街区双画幅成片与三个连续实验](examples/pixel-scene-map/index.html)**。105.57秒固定凯撒稿，六张完整环境、独立人物/前景/道具、地图与相机配置；另有24秒第二内容在干净目录的复现测试。[可执行入口与边界](references/pixel-scene-map.md)。参考媒体现已按需提供；本版尚不代表1:1审美通过。
 

@@ -1,8 +1,8 @@
 # 仓库文件树与体积
 
-统计基线提交 `3e72d9f`，包含已加入索引的本轮工作文件。只统计当前跟踪工作文件；不计Git历史、忽略文件、node_modules以及本统计生成的3个文件。重复项以Git暂存对象身份计算，暂存后运行才是最新结果。
+从本次Git索引生成，体积按Git对象字节计算，避免Windows/Linux换行差异。体积不计Git历史、忽略文件、缓存和本统计生成的3个文件；完整树仍列出这3个文件。已跟踪依赖也会计入，不静默排除。
 
-**2011个文件，1,110,486,266字节（1.034 GiB）。** 这不是下载压缩包大小，也不是token数。
+**2017个统计文件，1,110,507,508字节（1.034 GiB）。** 这不是下载压缩包大小，也不是token数。
 
 | 目录 | 文件数 | MiB |
 |---|---:|---:|
@@ -10,12 +10,13 @@
 | assets | 956 | 74.42 |
 | references | 55 | 0.17 |
 | scripts | 15 | 0.12 |
-| [root files] | 8 | 0.04 |
-| tests | 7 | 0.03 |
-| docs | 1 | 0.01 |
+| [root files] | 10 | 0.05 |
+| tests | 8 | 0.04 |
+| docs | 3 | 0.01 |
 | evals | 2 | 0.00 |
+| .github | 1 | 0.00 |
 
-SKILL.md正文及元数据合计：4117个Unicode字符、72行、8447个UTF-8字节。实际token取决于模型分词器。经验命令默认最多3卡、6500字符输出；媒体视觉读取另计。
+SKILL.md正文及元数据合计：4155个Unicode字符、72行、8523个UTF-8字节。实际token取决于模型分词器。经验命令默认最多3卡、6500字符输出；媒体视觉读取另计。
 
 [全部跟踪文件树](repository-tree.txt) · [机器可读统计](repository-inventory.json) · [目录职责与架构](architecture.md)。做片Agent无需读取这份完整树。
 
@@ -32,6 +33,6 @@ SKILL.md正文及元数据合计：4117个Unicode字符、72行、8447个UTF-8�
 | 2份 | 0.22 | 0.22 | examples/pareto-revision/qa/caption-reference/06-end-without.png<br>examples/pareto-revision/qa/caption-reference/07-start-without.png |
 | 2份 | 0.20 | 0.20 | examples/pareto-revision/qa/caption-reference/09-end-without.png<br>examples/pareto-revision/qa/caption-reference/10-start-without.png |
 
-相同Git对象在Git对象库内可以共享，但工作区仍分别占用；这不等于可以随意删去独立工程所需字体。此轮不移动原素材、不重写历史。
+相同Git对象在Git对象库内可以共享，但检出时仍分别占用（实际大小可能受换行转换影响）；不能据此随意删去独立工程所需字体。
 
-复查：先将要纳入统计的文件加入Git索引，再运行 `python scripts/repo_inventory.py`。该脚本只读Git目录、文件大小及入口文字，不加载全部媒体内容。
+复查：按[维护步骤](../CONTRIBUTING.md)暂存本次文件，运行 python scripts/repo_inventory.py，再暂存生成结果并运行 python scripts/repo_inventory.py --check。脚本读取Git对象元数据与小型文档，不解码媒体、不调用模型。

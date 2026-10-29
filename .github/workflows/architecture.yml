@@ -1,0 +1,28 @@
+name: Architecture and reflection checks
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  consistency:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify architecture, README and tracked tree
+        run: python scripts/repo_inventory.py --check
+      - name: Check experience records
+        run: python scripts/experience.py validate
+      - name: Check generated reflection page
+        run: |
+          python scripts/build_reflections.py
+          git diff --exit-code -- examples/reflections/index.html
+      - name: Test maintenance and route retrieval
+        run: |
+          python -m unittest discover -s tests -p 'test_repo_inventory.py'
+          python -m unittest discover -s tests -p 'test_experience.py'

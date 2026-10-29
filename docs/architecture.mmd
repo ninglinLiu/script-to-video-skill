@@ -1,0 +1,31 @@
+flowchart TB
+    U["你的任务<br/>文章 · 参考效果 · 时长 · 画幅"] --> A["Agent 负责执行和判断<br/>模型 + 工具环境（harness，需另行准备）"]
+    A --> E["SKILL.md<br/>短入口：识别任务、交付约定、读取路线"]
+
+    subgraph LIB["仓库提供的知识与素材 · 按需读取"]
+        direction LR
+        X["经验与反思<br/>experience.py<br/>先带出相关失败和适用边界"]
+        R["路线说明<br/>references/<br/>选择内容形式、镜头与运行方式"]
+        M["素材与完整工程<br/>assets/ + examples/<br/>真实组件、字体、镜头、连续参考"]
+        X --> R --> M
+    end
+    E --> X
+    M --> P["Agent 改编与装配<br/>证据 → 脚本 → 时间线 → 镜头动作"]
+    P --> T["调用现有工具<br/>迁移入口 · 配音 · 渲染 · 技术检查"]
+    T --> Q["审看实际编码成片<br/>字幕是否入画 · 主体动作 · 衔接 · 整片节奏"]
+    Q -->|发现问题，局部修复| P
+    Q --> O["交付与展示<br/>MP4 · SRT · 分层素材 · 工程 · 对照记录"]
+    O --> F["用户反馈与复测结果<br/>认可有范围；否决保留为反思案例"]
+    F -.更新案例及选路边界.-> X
+
+    C["维护与回归<br/>docs/ + tests/ + evals/ + GitHub 检查"] -.检查结构和工具行为.-> E
+    C -.不能代替影片审美判断.-> Q
+
+    classDef entry fill:#dceeff,stroke:#3161a3,color:#10263d;
+    classDef library fill:#fff0cd,stroke:#9a7020,color:#362706;
+    classDef production fill:#dff1e7,stroke:#438366,color:#143728;
+    classDef feedback fill:#fde4df,stroke:#ad5d4d,color:#49251c;
+    class A,E entry;
+    class X,R,M library;
+    class P,T,Q,O production;
+    class F,C feedback;

@@ -1,4 +1,7 @@
 script-to-video-skill/
+├── .github/
+│   └── workflows/
+│       └── architecture.yml
 ├── assets/
 │   ├── film-tools/
 │   │   ├── CaptionProbe.tsx
@@ -1183,7 +1186,12 @@ script-to-video-skill/
 │   ├── chapter-style-lock.json
 │   └── style-lock.json
 ├── docs/
-│   └── architecture.md
+│   ├── architecture-layout.json
+│   ├── architecture.md
+│   ├── architecture.mmd
+│   ├── repository-inventory.json
+│   ├── repository-tree.md
+│   └── repository-tree.txt
 ├── evals/
 │   ├── README.md
 │   └── evals.json
@@ -2301,10 +2309,13 @@ script-to-video-skill/
 │   ├── test_experience.py
 │   ├── test_film_delivery.py
 │   ├── test_pixel_scene.py
-│   └── test_production.py
+│   ├── test_production.py
+│   └── test_repo_inventory.py
 ├── .gitattributes
 ├── .gitignore
 ├── .nojekyll
+├── AGENTS.md
+├── CONTRIBUTING.md
 ├── LICENSE
 ├── NOTICE.md
 ├── README.md
