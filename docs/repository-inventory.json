@@ -1,15 +1,15 @@
 {
   "scope": "Tracked working files; excludes these three generated inventory outputs, ignored files, node_modules and Git history. Duplicate groups use staged Git blob identity, not a new media scan.",
-  "base_commit": "b82a2db43091c897c09c3b3d20b1aa7ed6e731f4",
+  "base_commit": "3e72d9fc46c8f722975fc7fa1266595d0a8ae7b6",
   "files": 2011,
-  "bytes": 1110482909,
-  "entry_chars": 4110,
+  "bytes": 1110486266,
+  "entry_chars": 4117,
   "entry_lines": 72,
-  "entry_utf8_bytes": 8424,
+  "entry_utf8_bytes": 8447,
   "groups": {
     "examples": {
       "files": 967,
-      "bytes": 1032061705
+      "bytes": 1032062064
     },
     "assets": {
       "files": 956,
@@ -17,15 +17,15 @@
     },
     "references": {
       "files": 55,
-      "bytes": 177330
+      "bytes": 179686
     },
     "scripts": {
       "files": 15,
-      "bytes": 121044
+      "bytes": 121087
     },
     "[root files]": {
       "files": 8,
-      "bytes": 39574
+      "bytes": 39597
     },
     "tests": {
       "files": 7,
@@ -33,7 +33,7 @@
     },
     "docs": {
       "files": 1,
-      "bytes": 10333
+      "bytes": 10909
     },
     "evals": {
       "files": 2,
@@ -147,7 +147,7 @@
     },
     {
       "path": "SKILL.md",
-      "bytes": 8496
+      "bytes": 8519
     },
     {
       "path": "assets/chapter-style-lock.json",
@@ -3975,7 +3975,7 @@
     },
     {
       "path": "docs/architecture.md",
-      "bytes": 10333
+      "bytes": 10909
     },
     {
       "path": "evals/README.md",
@@ -7851,7 +7851,7 @@
     },
     {
       "path": "examples/reflections/index.html",
-      "bytes": 18338
+      "bytes": 18697
     },
     {
       "path": "index.html",
@@ -8015,7 +8015,7 @@
     },
     {
       "path": "references/experience/reflections.json",
-      "bytes": 12624
+      "bytes": 14980
     },
     {
       "path": "references/experience/reflections.md",
@@ -8091,7 +8091,7 @@
     },
     {
       "path": "scripts/build_reflections.py",
-      "bytes": 6283
+      "bytes": 6326
     },
     {
       "path": "scripts/cinema.py",

@@ -60,7 +60,7 @@ python scripts/start_episode.py --source chapter-01 --episode /path/to/new-episo
 |---|---|
 | 像素街区 / LifeOS对标 | `experience.py select --stage plan --route pixel-scene-map`；R01已否决，见[分支边界](references/pixel-scene-map.md) |
 | 泊松空间风格与recipe | `experience.py select --stage plan --route poisson-cinema`；[镜头分支](references/poisson-cinema.md)，R04改编失败，不抹去原片方向 |
-| 爽哥说或LifeOS真实参考 | `reference_study.py show/fetch --route particle-document` 或 `pixel-scene-map`，见[制作路径](references/reference-study-20261029/production-route.txt)；fetch按需给真实MP4、连续帧、动作阶段及哈希，先看运动，不能只读描述 |
+| 爽哥说或LifeOS真实参考 | `reference_study.py show --route particle-document`，随后将show换为fetch；或选pixel-scene-map，见[制作路径](references/reference-study-20261029/production-route.txt)；fetch按需给真实MP4、连续帧、动作阶段及哈希，先看运动，不能只读描述 |
 | 背景+贴纸、PPT、旧失败片、独立复测 | [反思入口](references/experience/reflections.md)，按ID取视频时间段及观察范围 |
 | 维护Skill架构或大库加载 | [现成方案对照与架构](docs/architecture.md)、[实际文件树](docs/repository-tree.md)，普通做片不必读 |
 | 具体审看、数字与布局规则 | [生产规范](references/production.md) |
