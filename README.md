@@ -333,7 +333,7 @@ python scripts/start_episode.py --source chapter-01 --episode ./episodes/new-fil
 
 ## 给下一位Agent的经验入口
 
-[18条决策卡](references/experience/casebook.md)来自已有制作方修复、用户反馈及未解决问题。每条写明：何时使用、先做什么、保留什么、例外、验证与回退、证据范围。不是要求模型通读工作日志。
+[经验决策卡](references/experience/casebook.md)来自已有制作方修复、用户反馈及未解决问题。每条写明：何时使用、先做什么、保留什么、例外、验证与回退、证据范围。不是要求模型通读工作日志；当前数量以目录索引及校验命令为准。
 
 ```sh
 python scripts/experience.py select --stage repair --query "字幕孤字，修后更挤"
