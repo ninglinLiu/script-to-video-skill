@@ -52,7 +52,7 @@ python scripts/start_episode.py --source chapter-01 --episode /path/to/new-episo
 
 ## 仅在相关时读取
 
-用户明确选择爽哥说的粒子字/实体解释或 LifeOS 的像素场景/地图剪辑时，先执行 `python scripts/reference_study.py show --route particle-document` 或 `--route pixel-scene-map`。它只读取对应[观察与制作计划](references/reference-study-20261029/plan.json)及重点时间段，不是已验证的成片模板。按计划准备本地原片、复现连续镜头后再改编；不能回退到只换配色的组件测试。详见[制作路径](references/reference-study-20261029/production-route.txt)。
+用户明确选择爽哥说的粒子字/实体解释或 LifeOS 的像素场景/地图剪辑时，先执行 `python scripts/reference_study.py show --route particle-document` 或 `--route pixel-scene-map`。它只读取对应[观察与制作计划](references/reference-study-20261029/plan.json)及重点时间段，不是已验证的成片模板。随后执行 `python scripts/reference_study.py fetch --route <同一route>`，得到有哈希的真实MP4、连续帧和 `bundle.json` 中的动作阶段。优先片段默认只占所选路线的小包，完整clone不必重复下载。先连续观看并按帧定位遮挡、运动路径和跨镜锚点，再做同构镜头；没有视觉工具时明确报告未能观看，不把文字说明当作视觉验收。全片用 `--full` 按需取得。复现连续镜头后再改编；不能回退到只换配色的组件测试。详见[制作路径](references/reference-study-20261029/production-route.txt)。
 
 | 情况 | 读取 |
 |---|---|

@@ -1,140 +1,140 @@
-﻿id,title,group,status,method,author,url,feedback,duration,width,height,availability,file_hint,media,poster
-W01,从价值创造到价值投资  七卡片初版,自己的样片与成片,用户否决视觉；仅作为流水线历史。,文稿预检→26条TTS→7张静态分镜→轻推镜→FFmpeg→SRT与PR XML。,,,明确指出不足,66.2,1080,1920,本地加载,video.mp4,,
-W02,返工 A  暖纸价值积木,自己的样片与成片,方向试验，无独立终验。,12秒连续动作；价值积木从创造端移动到研究端，框架延展为时间线。xilo原版渲染兼容性试验后转回泊松渲染器。,,,未单独确认,12.0,1080,1920,仓库已有公开视频,plan-a.mp4,../../examples/gallery/media/revision-2.mp4,../../examples/gallery/media/revision-2.jpg
-W03,返工 B  文稿档案,自己的样片与成片,方向试验，无独立终验。,原文证据条展开、并列、归档，再接年份档案；与A比较动作语言，不只是换颜色。,,,未单独确认,12.0,1080,1920,仓库已有公开视频,plan-b.mp4,../../examples/gallery/media/revision-3.mp4,../../examples/gallery/media/revision-3.jpg
-W04,从价值创造到价值投资  动画返工版,自己的样片与成片,返工候选，后来继续重构；未获最终认可。,沿用原旁白、字幕与来源；Canvas对象动画，泊松/Puppeteer渲染，xilo声音工具，7个真实动画段与XML。,,,未单独确认,66.2,1080,1920,仓库已有公开视频,revision_full.mp4,../../examples/gallery/media/revision-1.mp4,../../examples/gallery/media/revision-1.jpg
-W05,从创造价值到研究价值  12秒,自己的样片与成片,用户认可方向，但认为太慢。,5件分层生成资产，企业屋顶落位→后拉→观察者和镜框显露；Canvas 2.5D、真实词边界、Vastness。,,,认可过部分方向,12.0,1080,1920,本地加载,sample.mp4,,
-W06,从创造价值到研究价值  8秒加速版,自己的样片与成片,用户明确认可节奏，并授权扩成完整短片。,复用全部资产；提前落位与镜框进入，动作重叠衔接；整段重新配音+12%，按新词界重排。,,,认可过部分方向,8.0,1080,1920,仓库已有公开视频,sample.mp4,../../examples/gallery/media/paced-1.mp4,../../examples/gallery/media/paced-1.jpg
-W07,从创造价值到研究价值  完整短片,自己的样片与成片,按用户要求保存；用户认为灵动性、炫酷感、审美和衔接仍不足。,同一企业→研究维度→笔记资料→自主校验→回到主体。新增研究笔记资产；10段干净画面、独立声轨、SRT/ASS、PR XML。,,,明确指出不足,69.233333,1080,1920,仓库已有公开视频,video.mp4,../../examples/gallery/media/first-full-1.mp4,../../examples/gallery/media/first-full-1.jpg
-W08,价值创造  强图形排版,自己的样片与成片,用户总体认为几种风格可继续；不等于完整片验收。,九块拼合→橙块成为瞳孔→观察关系图；Canvas形状匹配与遮罩继承。复用泊松渲染链、音频、字体。,,,认可过部分方向,8.0,1080,1920,仓库已有公开视频,editorial.mp4,../../examples/gallery/media/style-studies-1.mp4,../../examples/gallery/media/style-studies-1.jpg
-W09,价值创造  空间几何,自己的样片与成片,用户总体认为几种风格可继续；不等于完整片验收。,实体落位→镜头绕同一结构→研究镜转水平框架；真实Three.js空间。复用泊松渲染链、音频、字体。,,,认可过部分方向,8.0,1080,1920,仓库已有公开视频,spatial.mp4,../../examples/gallery/media/style-studies-2.mp4,../../examples/gallery/media/style-studies-2.jpg
-W10,价值创造  像素工坊,自己的样片与成片,用户总体认为几种风格可继续；不等于完整片验收。,角色搭建→桌面变行动平台→走位→观察→研究记录；RuiC SpriteActor，16格动作与4格半身精灵。复用泊松渲染链、音频、字体。,,,认可过部分方向,8.0,1080,1920,仓库已有公开视频,pixel.mp4,../../examples/gallery/media/style-studies-3.mp4,../../examples/gallery/media/style-studies-3.jpg
-W11,认知复杂度  文章短样,自己的样片与成片,完成技术检查；后续要求改善选题，未逐条最终认可。,消息没回→悬住结论→忙、忘记、还在想三种解释；纸面编辑动画。整段Yunxi +12%，词边界对齐。,,,未单独确认,10.5,1080,1920,仓库已有公开视频,editorial.mp4,../../examples/gallery/media/article-studies-1.mp4,../../examples/gallery/media/article-studies-1.jpg
-W12,锚定效应  文章短样,自己的样片与成片,完成技术检查；后续要求改善选题，未逐条最终认可。,500与200旧价锚→解除单一参照→现金流与风险；空间几何。整段Yunxi +12%，词边界对齐。,,,未单独确认,10.5,1080,1920,仓库已有公开视频,spatial.mp4,../../examples/gallery/media/article-studies-2.mp4,../../examples/gallery/media/article-studies-2.jpg
-W13,勤奋之外  文章短样,自己的样片与成片,完成技术检查；后续要求改善选题，未逐条最终认可。,重复刷同一关→停下读规则→尝试新路径；像素角色与道具。整段Yunxi +12%，词边界对齐。,,,未单独确认,10.5,1080,1920,仓库已有公开视频,pixel.mp4,../../examples/gallery/media/article-studies-3.mp4,../../examples/gallery/media/article-studies-3.jpg
-W14,先别判  黑金对照,自己的样片与成片,风格研究；没有独立的完整片终验。,weilanx黑金组件、ep36预击冻结、消息手机与三间小屋；Remotion原生渲染；Vastness配乐，无口播。,,,未单独确认,12.0,1080,1920,本地加载,先别判-黑金对照-含配乐.mp4,,
-W15,别急着定义世界  红黑穿梭,自己的样片与成片,用户认为这几种风格不错，同时指出选题不好。,rtiaho 2026参考；红球、字带、切片、黑岩海面和多面线框持续承接。Remotion，新增1张生成环境板。,,,认可过部分方向,10.8,1080,1920,仓库已有公开视频,别急着定义世界-红黑穿梭-静音.mp4,../../examples/gallery/media/redshift-1.mp4,../../examples/gallery/media/redshift-1.jpg
-W16,划掉499  199就便宜吗,自己的样片与成片,用户认为缺少参考的艺术性；未接受为最终作品。,同一外套→499划线→省300念头→价格变锚→撤旧价→质量、同类与需要。沿用Canvas/Three.js/RuiC，整段配音，先13秒局部检查再30秒全片。,,,明确指出不足,30.0,1080,1920,仓库已有公开视频,editorial.mp4,../../examples/gallery/media/content-lab-1.mp4,../../examples/gallery/media/content-lab-1.jpg
-W17,100元没少  购买力去哪了,自己的样片与成片,用户认为缺少参考的艺术性；未接受为最终作品。,余额保持100；假设年涨价3%，购物篮逐步减少；30年购买量约为当下41.2%。沿用Canvas/Three.js/RuiC，整段配音，先13秒局部检查再30秒全片。,,,明确指出不足,30.0,1080,1920,仓库已有公开视频,spatial.mp4,../../examples/gallery/media/content-lab-2.mp4,../../examples/gallery/media/content-lab-2.jpg
-W18,忙了一天  为什么又从零开始,自己的样片与成片,用户认为缺少参考的艺术性；未接受为最终作品。,整理任务完成又重来→步骤存进模板→同类工作复用→保留维护成本。沿用Canvas/Three.js/RuiC，整段配音，先13秒局部检查再30秒全片。,,,明确指出不足,30.0,1080,1920,仓库已有公开视频,pixel.mp4,../../examples/gallery/media/content-lab-3.mp4,../../examples/gallery/media/content-lab-3.jpg
-W19,价签之外  新艺术样片,自己的样片与成片,用户明确否决；技术检查通过不能改写此状态。,生成店铺、人物、外套3张资产；weilanx新艺术曲线与音频库；Canvas绘制价签、蔓藤、布料与镜头；泊松渲染器。,,,明确指出不足,60.0,1080,1920,仓库已有公开视频,anchor.mp4,../../examples/gallery/media/anchor-art-1.mp4,../../examples/gallery/media/anchor-art-1.jpg
-W20,消失的25元,自己的样片与成片,用户确认选题；60秒版本已交付，尚无后续审美评价。,100等份方块→100变50再75→逆序100变150再75→回本需+100%。weilanx Remotion组件、投影、音频；12秒动作测试后扩展。,,,未单独确认,60.0,1080,1920,本地加载,消失的25元-60秒-带声音.mp4,,
-P01,认知复杂度  20秒技术探针,对照与过程,过程试验,HyperFrames/GSAP的前期运行探针；验证时间线与导出。,,,过程或测试,20.0,1920,1080,本地加载,probe_20s.mp4,,
-P02,认知复杂度  60秒横屏,自己的样片与成片,前期完整样片；不折算成Week1竖屏任务,HyperFrames 0.8.139、GSAP与FFmpeg，原创图形，Vastness配乐，无旁白。,,,未单独确认,60.0,1920,1080,仓库已有公开视频,cognitive_complexity_60s.mp4,../../examples/gallery/media/cognitive-first-1.mp4,../../examples/gallery/media/cognitive-first-1.jpg
-P03,泊松过程  初版30秒,自己的样片与成片,后续被诊断为主体小、图表化、淡化转场多,Canvas时间函数、投影人形、时钟碎裂、模拟分布与击球；参考原声。,,,未单独确认,30.0,1920,1080,仓库已有公开视频,poisson_30s.mp4,../../examples/gallery/media/poisson-first-1.mp4,../../examples/gallery/media/poisson-first-1.jpg
-P04,它不倒计时  Three.js 30秒,自己的样片与成片,用户否定审美与数学解释，保留为历史,Three.js r170、真实光影/Bloom、玻璃沙漏、粒子与击球；GPU Chrome逐帧。,,,明确指出不足,30.0,1920,1080,仓库已有公开视频,opus_poisson_30s.mp4,../../examples/gallery/media/poisson-opus-1.mp4,../../examples/gallery/media/poisson-opus-1.jpg
-P05,泊松过程  90秒完整片,自己的样片与成片,用户相对更喜欢；仍有动作未落地和美术落差,生成环境/人物+Canvas可校验计数分布公式+90秒参考音轨；分段逐帧渲染。,,,认可过部分方向,90.0,1920,1080,仓库已有公开视频,poisson_90s_full.mp4,../../examples/gallery/media/poisson-full-1.mp4,../../examples/gallery/media/poisson-full-1.jpg
-T01,Claudebao Vibe动效测试,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,代码动效的早期测试；不作为公众号改编交付。,,,未单独确认,30.0,1920,1080,本地加载,claudebao_vibe_v1.mp4,,
-T02,一瞬 出走  stock V1,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,Mixkit授权城市素材18镜头，音乐节拍、裁切与FFmpeg。,,,未单独确认,23.1,1080,1920,本地加载,short_stock_cut_v1.mp4,,
-T03,城市的间隙  stock V1,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,Mixkit授权城市素材24镜头；103.73秒不等于8–10分钟长视频。,,,未单独确认,103.733333,1920,1080,本地加载,long_stock_cut_v1.mp4,,
-T04,此刻 在场  V2,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,eden旅行照片与Ivan Sinelin开头动画；道路构图承接，照片轻运动。,,,未单独确认,24.9,1080,1920,本地加载,short_reference_sample_v2.mp4,,
-T05,把时间还给路上  V2,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,同一参考素材，出发到日常再到夜色；音乐与屏幕文字。,,,未单独确认,108.0,1920,1080,本地加载,long_reference_sample_v2.mp4,,
-T06,旅行短片 V3,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,V3参考素材再剪；具体镜头映射按该版本Blueprint，不以文件名判断原创拍摄。,,,未单独确认,25.8,1080,1920,本地加载,short_travel_v3.mp4,,
-T07,旅行长片 V3,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,V3长片重剪；仅102.7秒，作为旅行前史。,,,未单独确认,102.7,1920,1080,本地加载,long_travel_v3.mp4,,
-T08,日本旅行 Hypit混合 V4,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,Hypit原生两次导出出现空画面；保留镜头计划后转Python/OpenCV合成、FFmpeg。,,,未单独确认,15.0,1280,720,本地加载,japan_15s_hybrid_v1.mp4,,
-T09,日本旅行 V5,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,5条参考素材、24个时间段；逐帧取材与用户文字。,,,未单独确认,15.0,1280,720,本地加载,japan_15s_final_v5.mp4,,
-T10,日本旅行 V6,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,保留原片密集快切；前景分层；部分人物柔化。,,,未单独确认,15.0,1280,720,本地加载,japan_15s_final_v6.mp4,,
-T11,日本旅行 V7,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,按新要求撤掉突出主角，汽车/电车持续运动承接。,,,未单独确认,15.0,1280,720,本地加载,japan_15s_final_v7.mp4,,
-T12,日本旅行 V8,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,原速旋转开头；5帧分层换景；加入鸟居、绿树、海岸电车。,,,未单独确认,15.0,1280,720,本地加载,japan_15s_final_v8.mp4,,
-T13,日本旅行 V9,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,加入用户乐队、尾浪、鸟居与山景；取消人物限制；两帧黑白切换。,,,未单独确认,15.0,1280,720,本地加载,japan_15s_final_v9.mp4,,
-T14,日本旅行 V10,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,只改两段乐队：单帧曝光+两帧黑白后恢复连续动作，修复机械频闪。,,,未单独确认,15.0,1280,720,本地加载,japan_15s_final_v10.mp4,,
-T15,日本旅行 Andata 90秒,旅行旧作,历史样片；不代替本周任务二或公众号长片验收。,按90秒剪辑计划重组旅行参考和用户素材；精确来源见sources与frame_mapping。,,,未单独确认,90.0,1280,720,本地加载,andata_travel_90s_v1.mp4,,
-T16,Hypit原生失败导出 1,对照与过程,制作方检查失败；单列失败证据。,SVML/SVS/SVRun原生导出，时间修正未解决部分转场空画面。,,,过程或测试,15.0,1280,720,本地加载,rejected_before_timing_fix.mp4,,
-T17,Hypit原生失败导出 2,对照与过程,制作方检查失败；单列失败证据。,SVML/SVS/SVRun原生导出，时间修正未解决部分转场空画面。,,,过程或测试,15.0,1280,720,本地加载,rejected_timing_fix_attempt.mp4,,
-Q01,对照或过程文件  anchor-art-60s-20261021/qa/art-motion-10-22.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,12.0,540,960,本地加载,art-motion-10-22.mp4,,
-Q02,对照或过程文件  article-studies-20261020/out/compare-silent.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,10.5,1620,1056,仓库已有公开视频,compare-silent.mp4,../../examples/gallery/media/article-studies-4.mp4,../../examples/gallery/media/article-studies-4.jpg
-Q03,对照或过程文件  content-lab-20261021/out/compare-silent.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,30.0,1620,1056,仓库已有公开视频,compare-silent.mp4,../../examples/gallery/media/content-lab-4.mp4,../../examples/gallery/media/content-lab-4.jpg
-Q04,对照或过程文件  content-lab-20261021/qa/editorial-motion.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,13.0,540,960,本地加载,editorial-motion.mp4,,
-Q05,对照或过程文件  content-lab-20261021/qa/pixel-motion.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,13.0,540,960,本地加载,pixel-motion.mp4,,
-Q06,对照或过程文件  content-lab-20261021/qa/spatial-motion.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,13.0,540,960,本地加载,spatial-motion.mp4,,
-Q07,对照或过程文件  disappearing25-20261021/qa/action-test-v1.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,12.0,540,960,本地加载,action-test-v1.mp4,,
-Q08,对照或过程文件  disappearing25-20261021/qa/final-before-opening-patch.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,60.0,1080,1920,本地加载,final-before-opening-patch.mp4,,
-Q09,对照或过程文件  disappearing25-20261021/qa/opening-patch.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,4.0,1080,1920,本地加载,opening-patch.mp4,,
-Q10,对照或过程文件  full-short-20261018/out/picture-clean.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,69.233008,1080,1920,本地加载,picture-clean.mp4,,
-Q11,对照或过程文件  full-short-20261018/qa/draft.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,69.233008,540,960,本地加载,draft.mp4,,
-Q12,对照或过程文件  revision/qa/clip_0_12.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,12.0,1080,1920,本地加载,clip_0_12.mp4,,
-Q13,对照或过程文件  rtiaho-study-20261021/qa/draft.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,10.8,540,960,本地加载,draft.mp4,,
-Q14,对照或过程文件  runs/20261017_124639_fbaf94/video.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,66.2,1080,1920,本地加载,video.mp4,,
-Q15,对照或过程文件  runs/20261017_125059_82ae3e/video.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,66.2,1080,1920,本地加载,video.mp4,,
-Q16,对照或过程文件  style-studies-20261020/out/compare-silent.mp4,对照与过程,过程产物，不新增计为独立作品。,包括三联对照、局部动作测试、低清草稿、干净画面、修正前全片与补丁；详见文件名。,,,过程或测试,8.0,1620,1056,仓库已有公开视频,compare-silent.mp4,../../examples/gallery/media/style-studies-4.mp4,../../examples/gallery/media/style-studies-4.jpg
-N01,黄金三道传导 · 五步连续小样,自己的样片与成片,用户认为内容偏薄，随后要求扩展。,文章整理、内容蒸馏、事实核对、分镜、连续小样。,,,未单独确认,12.266667,1080,1920,仓库已有公开视频,final-silent.mp4,../../examples/gallery/media/gold-proof-1.mp4,../../examples/gallery/media/gold-proof-1.jpg
-N02,黄金三道传导 · 加深完整版,自己的样片与成片,已交付并汇入四条配音成片；没有明确整片审美通过记录。,沿黄金研究小样扩展解释镜头与真实旁白时间线。,,,未单独确认,84.633333,1080,1920,仓库已有公开视频,final-silent.mp4,../../examples/gallery/media/gold-full-1.mp4,../../examples/gallery/media/gold-full-1.jpg
-N03,指数会换人，为什么还会亏钱 · 指数进化机,自己的样片与成片,已交付并汇入四条配音成片；没有明确整片审美通过记录。,约三分钟横屏知识片；指数机制与数字解释。,,,未单独确认,179.4,1080,1920,仓库已有公开视频,final-silent.mp4,../../examples/gallery/media/index-machine-1.mp4,../../examples/gallery/media/index-machine-1.jpg
-N04,看行情，还是重做决定,自己的样片与成片,已制作的约三分钟新选题；不代表长片体系已验证。,真实配音驱动的完整解释视频。,,,未单独确认,173.466667,1080,1920,仓库已有公开视频,final-silent.mp4,../../examples/gallery/media/decision-frequency-1.mp4,../../examples/gallery/media/decision-frequency-1.jpg
-N05,回本以后 · 完整章节,自己的样片与成片,完整章节及可扩展工程；后续换过两次配乐。,暖纸账单、双账户对照、价格与回本机制解释；106秒左右章节。,,,未单独确认,105.566667,1920,1080,本地加载,回本以后-静音.mp4,,
-N06,帕累托 80/20 · 同题修改版,自己的样片与成片,用户说“ok”后要求独立验证；并非通用流水线审美通过。,从完整工程迁移字幕、构图、解释镜头；与 DeepSeek 原版同题对照。,,,认可过部分方向,68.433333,1080,1920,仓库已有公开视频,final-silent.mp4,../pareto-revision/media/after-silent.mp4,
-N07,情景意识基金 · 动画返工版,自己的样片与成片,针对 PPT 感直接返工；用户随后纠正重点应是让 Skill 支持独立生产。,基于已下载参考重做连续动画；不是独立 Agent 验证结果。,,,未单独确认,71.266667,1080,1920,本地加载,final-silent.mp4,,
-D01,凯利策略 · DeepSeek 独立测试,DeepSeek 独立测试,用户认为效果不好；没有接入现有艺术场景与动画组件。,Remotion 六镜；借用了字体、配音和渲染工程骨架。,,,明确指出不足,63.1,1080,1920,本地加载,final-silent.mp4,,
-D02,帕累托 80/20 · DeepSeek 原版,DeepSeek 独立测试,用户指出字幕缺失、节奏差、画风阴郁。,blackgold kit；人物、柱形、指数卡与对象交接。,,,明确指出不足,68.866667,1080,1920,仓库已有公开视频,final-silent.mp4,../pareto-revision/media/before-silent.mp4,
-D03,情景意识基金 · DeepSeek 迁移版,DeepSeek 独立测试,用户认为像 PPT，实际动画不足。,chapter-01 迁移；暖纸、账单与烧入字幕。,,,明确指出不足,61.933333,1080,1920,本地加载,final-silent.mp4,,
-D04,队列为什么会突然崩 · DeepSeek,DeepSeek 独立测试,用户明确指出动画质量不达标；本轮不把问题归到文案。,poisson-cinema 参数化 recipe；九镜队列、分布、公式、曲线和筛选。,,,明确指出不足,90.8,1920,1080,本地加载,final-silent.mp4,,
-C01,树状路径 A · 利润为什么下降,组件样片,用户认可首批方向并发布；后来明确指出组件复用不能证明成片质量。,前两组复用上游图形组件；轨道组复用本地 redshift 实现。,,https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/,组件方向可用,10.0,1080,1920,仓库已有公开视频,tree-business.mp4,../batch-01/out/tree-business.mp4,
-C02,树状路径 B · 学习为什么卡住,组件样片,用户认可首批方向并发布；后来明确指出组件复用不能证明成片质量。,前两组复用上游图形组件；轨道组复用本地 redshift 实现。,,https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/,组件方向可用,10.0,1080,1920,仓库已有公开视频,tree-learning.mp4,../batch-01/out/tree-learning.mp4,
-C03,收益矩阵 A · 两家店的降价困境,组件样片,用户认可首批方向并发布；后来明确指出组件复用不能证明成片质量。,前两组复用上游图形组件；轨道组复用本地 redshift 实现。,,https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/,组件方向可用,10.0,1080,1920,仓库已有公开视频,matrix-price.mp4,../batch-01/out/matrix-price.mp4,
-C04,收益矩阵 B · 两个团队的共享困境,组件样片,用户认可首批方向并发布；后来明确指出组件复用不能证明成片质量。,前两组复用上游图形组件；轨道组复用本地 redshift 实现。,,https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/,组件方向可用,10.0,1080,1920,仓库已有公开视频,matrix-sharing.mp4,../batch-01/out/matrix-sharing.mp4,
-C05,字带轨道 A · 信号与噪声,组件样片,用户认可首批方向并发布；后来明确指出组件复用不能证明成片质量。,前两组复用上游图形组件；轨道组复用本地 redshift 实现。,,https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/,组件方向可用,10.0,1080,1920,仓库已有公开视频,orbit-signal.mp4,../batch-01/out/orbit-signal.mp4,
-C06,字带轨道 B · 价格与价值,组件样片,用户认可首批方向并发布；后来明确指出组件复用不能证明成片质量。,前两组复用上游图形组件；轨道组复用本地 redshift 实现。,,https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/,组件方向可用,10.0,1080,1920,仓库已有公开视频,orbit-value.mp4,../batch-01/out/orbit-value.mp4,
-G01,gilded kit · 生产门槛测试,组件样片,技术测试，已降回组件测试和取材入口，不作为默认成片模板。,素材装配与动作验证。,,,过程或测试,12.0,960,540,本地加载,motion-proof.mp4,,
-G02,blackgold kit · 生产门槛测试,组件样片,技术测试，已降回组件测试和取材入口，不作为默认成片模板。,素材装配与动作验证。,,,过程或测试,12.0,540,960,本地加载,motion-proof.mp4,,
-G03,pixel kit · 生产门槛测试,组件样片,技术测试，已降回组件测试和取材入口，不作为默认成片模板。,素材装配与动作验证。,,,过程或测试,12.0,540,960,本地加载,motion-proof.mp4,,
-Q17,泊松 Three.js · review 版,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,30.0,1920,1080,本地加载,poisson_30s_review.mp4,,
-Q18,泊松 Three.js · 开场测试,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,8.0,1920,1080,本地加载,opening.mp4,,
-Q19,泊松 Three.js · swing 测试,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,7.0,1920,1080,本地加载,swing.mp4,,
-Q20,黄金小样 · draft,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,12.266667,540,960,本地加载,draft-silent.mp4,,
-Q21,黄金完整版 · 数值样片,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,15.5,540,960,本地加载,proof-numeric.mp4,,
-Q22,指数进化机 · 权重样片,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,13.0,540,960,本地加载,proof-weight.mp4,,
-Q23,指数进化机 · 舍入修复前,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,179.4,1080,1920,本地加载,pre-rounding-fix.mp4,,
-Q24,指数进化机 · 估值修复,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,24.866667,1080,1920,本地加载,valuation-repair.mp4,,
-Q25,决策频率 · 连续窗口样片,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,13.0,540,960,本地加载,proof-window.mp4,,
-Q26,决策频率 · 字幕区域测试,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,173.466667,1080,356,本地加载,subtitle-band.mp4,,
-Q27,回本以后 · 13秒连续样片,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,13.0,960,540,本地加载,proof-13s.mp4,,
-Q28,回本以后 · rough-v1,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,105.566667,960,540,本地加载,rough-v1.mp4,,
-Q29,回本以后 · 调色前,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,105.566667,1920,1080,本地加载,before-color-回本以后-静音.mp4,,
-Q30,帕累托同题修改 · 第一轮,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,68.366667,1080,1920,本地加载,final-with-audio.mp4,,
-Q31,情景意识动画返工 · 连续样片,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,11.0,540,960,本地加载,proof.mp4,,
-Q32,凯利策略 · DeepSeek 独立测试 · 动态 proof,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,63.1,540,960,本地加载,proof.mp4,,
-Q33,帕累托 80/20 · DeepSeek 原版 · 动态 proof,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,12.3,540,960,本地加载,motion-proof.mp4,,
-Q34,情景意识基金 · DeepSeek 迁移版 · 动态 proof,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,13.0,540,960,本地加载,proof.mp4,,
-Q35,队列为什么会突然崩 · DeepSeek · 动态 proof,对照与过程,过程文件，未另计为独立成片。,局部或历史版本检查。,,,过程或测试,12.0,1920,1080,本地加载,proof.mp4,,
-R01,信息论·惊奇之学,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,信息抽象到具体对象,电子智人,https://www.douyin.com/video/7690337875291950345,未单独确认,300.0,960,540,原作者链接 / 本地加载,preview-silent.mp4,,
-R02,人生容错率,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,一根线到一张网的连续隐喻,Nico,https://www.douyin.com/video/7697240924837748134,未单独确认,130.233333,540,960,原作者链接 / 本地加载,preview-silent.mp4,,
-R03,熵增,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,系统状态演变,比特新语,https://www.douyin.com/video/7691737108725140762,未单独确认,170.5,960,540,原作者链接 / 本地加载,preview-silent.mp4,,
-R04,运气的形状,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,用几何解释抽象概念,Iwanau,https://www.douyin.com/video/7690344836800913785,未单独确认,130.0,960,540,原作者链接 / 本地加载,preview-silent.mp4,,
-R05,知识诅咒,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,认知主题与叙事结构,黑洞科学馆,https://www.douyin.com/video/7692022955122937098,未单独确认,145.533333,960,540,原作者链接 / 本地加载,preview-silent.mp4,,
-R06,闪电从地面往上打,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,尺度切换与解释揭晓,音辞,https://www.douyin.com/video/7694898938109505713,未单独确认,132.0,540,960,原作者链接 / 本地加载,preview-silent.mp4,,
-R07,虚无主义，然后呢,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,情绪与构图,叁号暗房 Logos,https://www.douyin.com/video/7692319542446873700,未单独确认,165.7,960,540,原作者链接 / 本地加载,preview-silent.mp4,,
-R08,新鲜感的魔咒,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,生活问题与视觉隐喻,我滴个鬼鬼,https://www.douyin.com/video/7694277028904806730,未单独确认,115.6,960,540,原作者链接 / 本地加载,preview-silent.mp4,,
-R09,月老的算法,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,算法的对象化表达,Iwanau,https://www.douyin.com/video/7690785624487590054,未单独确认,143.333333,960,540,原作者链接 / 本地加载,preview-silent.mp4,,
-R10,庞加莱回归,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,时间尺度与连续运动,银河留了一盏灯,https://www.douyin.com/video/7695338421786545408,未单独确认,170.7,960,540,原作者链接 / 本地加载,preview-silent.mp4,,
-R11,第几个人·37%法则,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,选择问题的图形解释,Juno,https://www.douyin.com/video/7691038185459174656,未单独确认,130.5,960,540,原作者链接 / 本地加载,preview-silent.mp4,,
-R12,给不会来的狮子站岗,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,生活情境与心理主题,Nico,https://www.douyin.com/video/7698690169096782538,未单独确认,99.033333,540,960,原作者链接 / 本地加载,preview-silent.mp4,,
-R13,为什么中杯卖得最好,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,与公众号定价主题直接相关,Iwanau,https://www.douyin.com/video/7692118707825294713,未单独确认,146.0,960,540,原作者链接 / 本地加载,preview-silent.mp4,,
-R14,也许下一次,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,奖励反馈与重复结构,Iwanau,https://www.douyin.com/video/7693566099300496858,未单独确认,145.833333,960,540,原作者链接 / 本地加载,preview-silent.mp4,,
-R15,认知失调,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,较低互动样本，不能以审美偏好冒充爆款,一帧顿悟,https://www.douyin.com/video/7693938245129768219,未单独确认,154.5,960,540,原作者链接 / 本地加载,preview-silent.mp4,,
-R16,memories,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,短时构图与衔接,rtiaho,https://www.douyin.com/video/7695456829056455158,未单独确认,5.133008,960,542,原作者链接 / 本地加载,preview-silent.mp4,,
-R17,birthday,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,高密度图形节奏,rtiaho,https://www.douyin.com/video/7691690453951704740,未单独确认,18.0,960,720,原作者链接 / 本地加载,preview-silent.mp4,,
-R18,Chrome,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,较低互动的字体运动参考,rtiaho,https://www.douyin.com/video/7694965262256917226,未单独确认,5.666667,960,542,原作者链接 / 本地加载,preview-silent.mp4,,
-R19,2026,外部知识与动效参考,本地文件约6.33秒；用户曾质疑完整性，不能当作已确认完整原片。,用户指定参考，复用已下载文件,rtiaho,https://v.douyin.com/mioPWsaIFPc/,未单独确认,6.333333,960,542,原作者链接 / 本地加载,preview-silent.mp4,,
-R20,信噪比,外部知识与动效参考,已下载；收录不等于已选定为统一制作标准。,用户指定参考，复用已下载文件,一帧顿悟,https://www.douyin.com/video/7693407307773857065,未单独确认,162.6,960,540,原作者链接 / 本地加载,preview-silent.mp4,,
-R21,15亿次心跳,外部知识与动效参考,用户指定其中配乐；本地保存原视频。,配乐与知识动画参考。,VibeVerse . 脑洞宇宙,https://v.douyin.com/vX87XYIgSnc/,未单独确认,157.433333,1920,1080,原作者链接 / 本地加载,source.mp4,,
-R22,自律,外部知识与动效参考,前期已保存参考；没有逐条统一审美验收记录。,知识动画参考。,Ember余烬,https://www.douyin.com/video/7692657855442214321,未单独确认,110.248005,1920,1080,原作者链接 / 本地加载,dy01_self_discipline.mp4,,
-R23,为什么初恋特别难忘,外部知识与动效参考,前期已保存参考；没有逐条统一审美验收记录。,知识动画参考。,𝓐𝓵𝓽𝓮𝓻,https://www.douyin.com/video/7692830753985465626,未单独确认,130.517007,3840,2160,原作者链接 / 本地加载,dy02_first_love.mp4,,
-R24,图灵 · 纯代码成片,外部知识与动效参考,前期已保存参考；没有逐条统一审美验收记录。,知识动画参考。,影神,https://www.douyin.com/video/7691127115332591205,未单独确认,130.008005,1920,1080,原作者链接 / 本地加载,dy03_yingshen.mp4,,
-R25,AI 起源,外部知识与动效参考,前期已保存参考；没有逐条统一审美验收记录。,知识动画参考。,42,https://www.douyin.com/video/7690437690042453283,未单独确认,151.672993,1920,1080,原作者链接 / 本地加载,dy04_ai_origin.mp4,,
-R26,人选祸，天选福 · 勘误,外部知识与动效参考,完整下载；全片抽帧及关键动作加密观察完成；连续对照片段可看。尚未制作1:1复现。,重字形、点云聚散、实体插画、桥/石跨镜保留；柔光与背景暗部有层次。,爽哥说,https://v.douyin.com/k2CDMxtmGic/,未单独确认,485.266016,1080,1920,原作者链接 / 本地加载,preview-silent.mp4,,
-R27,上海万圣节 · 市区5处好去处,外部知识与动效参考,完整下载；全片抽帧及关键动作加密观察完成；连续对照片段可看。尚未制作1:1复现。,满幅像素街景，多景别资产与昼夜变化；地图缩放/倾斜与路线展开；多数所查场景有全局镜头推移；场景之间常硬切。,LifeOS 实验室,https://v.douyin.com/ywCcbE_pp4k/,未单独确认,182.233333,2160,2880,原作者链接 / 本地加载,preview-browser-silent.mp4,,
-X01,Winhao学AI Vibe知识大赏 6步做出知识科普视频,教程与旅行参考,已保存教程视频；不是我们的成片。,制作教程。,,,未单独确认,349.933333,1280,720,本地加载,2026-10-03_04.28.40_Winhao学AI_Vibe知识大赏_6步做出知识科普视频.mp4,,
-X02,艺雨YiLight 同济博二 如何用代码做视频,教程与旅行参考,已保存教程视频；不是我们的成片。,制作教程。,,,未单独确认,316.441542,720,958,本地加载,2026-10-06_01.29.24_艺雨YiLight_同济博二_如何用代码做视频.mp4,,
-X03,小风AI工坊 475个Opus 5 5作品，连提示词都给你了！,教程与旅行参考,已保存教程视频；不是我们的成片。,制作教程。,,,未单独确认,35.4,1280,720,本地加载,2026-10-06_05.11.08_小风AI工坊_475个Opus_5_5作品，连提示词都给你了！.mp4,,
-X04,MINIGOUKU 现实偏移 Ivan Sinelin,教程与旅行参考,旅行阶段下载的参考；与知识片分开查看。,旅行剪辑参考。,,,未单独确认,8.962902,720,1280,本地加载,2026-09-27_07.46.32_MINIGOUKU_现实偏移_Ivan_Sinelin.mp4,,
-X05,视力不好的SKY文 整点儿摄影节奏 RAINY NIGHT,教程与旅行参考,旅行阶段下载的参考；与知识片分开查看。,旅行剪辑参考。,,,未单独确认,48.084,1280,720,本地加载,2025-07-25_10.09.25_视力不好的SKY文_整点儿摄影节奏_RAINY_NIGHT.mp4,,
-X06,reyll kyoto 独自旅行的日子,教程与旅行参考,旅行阶段下载的参考；与知识片分开查看。,旅行剪辑参考。,,,未单独确认,85.2,960,720,本地加载,2025-10-21_03.46.58_reyll_kyoto_独自旅行的日子.mp4,,
-X07,text1997 空间越窄，思念越阔,教程与旅行参考,旅行阶段下载的参考；与知识片分开查看。,旅行剪辑参考。,,,未单独确认,187.136,960,720,本地加载,2026-04-06_23.03.53_text1997_空间越窄，思念越阔.mp4,,
-X08,Sso93 69dcc5d80000000022002d33,教程与旅行参考,旅行阶段下载的参考；与知识片分开查看。,旅行剪辑参考。,,,未单独确认,19.3,1280,720,本地加载,2026-04-13_06.30.48_Sso93_69dcc5d80000000022002d33.mp4,,
-X09,零石麻 请坐,教程与旅行参考,旅行阶段下载的参考；与知识片分开查看。,旅行剪辑参考。,,,未单独确认,6.479773,960,720,本地加载,2026-09-23_12.03.17_零石麻_请坐.mp4,,
-X10,咖喱元宵 如果用坂本龙一的歌来剪我的日本之旅,教程与旅行参考,旅行阶段下载的参考；与知识片分开查看。,旅行剪辑参考。,,,未单独确认,289.1889,1280,720,本地加载,2024-12-25_04.01.17_咖喱元宵_如果用坂本龙一的歌来剪我的日本之旅.mp4,,
-X11,CR Cho 东京日本旅行vlog这样剪,教程与旅行参考,旅行阶段下载的参考；与知识片分开查看。,旅行剪辑参考。,,,未单独确认,16.066757,1280,720,本地加载,2026-03-06_11.10.30_CR_Cho_东京日本旅行vlog这样剪.mp4,,
-X12,Hill Chang 《Walk and Shoot in Japan》,教程与旅行参考,旅行阶段下载的参考；与知识片分开查看。,旅行剪辑参考。,,,未单独确认,28.885333,1280,720,本地加载,2026-07-27_05.41.53_Hill_Chang_《Walk_and_Shoot_in_Japan》.mp4,,
-X13,耐 旅行碎片就这样剪 超简单！,教程与旅行参考,旅行阶段下载的参考；与知识片分开查看。,旅行剪辑参考。,,,未单独确认,24.126667,1280,720,本地加载,2026-09-23_08.18.13_耐_旅行碎片就这样剪_超简单！.mp4,,
-X14,Start 这次该我勇闯日本了,教程与旅行参考,旅行阶段下载的参考；与知识片分开查看。,旅行剪辑参考。,,,未单独确认,41.866667,1280,720,本地加载,2026-09-29_05.46.28_Start_这次该我勇闯日本了.mp4,,
-X15,桃几Hazelpeach 日本旅拍 不是电影感 是剪辑感,教程与旅行参考,旅行阶段下载的参考；与知识片分开查看。,旅行剪辑参考。,,,未单独确认,17.733333,1280,720,本地加载,2025-11-08_23.01.04_桃几Hazelpeach_日本旅拍_不是电影感_是剪辑感.mp4,,
+﻿id,title,group,author,duration,media,poster,media_sha256,media_bytes,url
+W01,从价值创造到价值投资  七卡片初版,自己的样片与成片,,66.2,media/W01.mp4,posters/W01.jpg,ac5e3103f19b0a3b624a6fb1b7a963035e121faf3dc5a16ce8cc018f55041a0e,7468252,
+W02,返工 A  暖纸价值积木,自己的样片与成片,,12.0,../../examples/gallery/media/revision-2.mp4,posters/W02.jpg,63e4aaad5f3864926a79749ac8de2b2552e4b79e228130e25a84d70de964093b,217680,
+W03,返工 B  文稿档案,自己的样片与成片,,12.0,../../examples/gallery/media/revision-3.mp4,posters/W03.jpg,7f565040f17d902ad3b5b1d7cc2081858f677963240d6ef4d65e1480a28324e7,220883,
+W04,从价值创造到价值投资  动画返工版,自己的样片与成片,,66.2,../../examples/gallery/media/revision-1.mp4,posters/W04.jpg,013c8a71a45b37e5a5e54b9c454930959a2cdf9e77db60f76a0fec30c655a70f,1495470,
+W05,从创造价值到研究价值  12秒,自己的样片与成片,,12.0,media/W05.mp4,posters/W05.jpg,21c9f09e9f848756131f0dbb3da906a8580f58e77a2b85ba004b1b16530f1fa8,1423385,
+W06,从创造价值到研究价值  8秒加速版,自己的样片与成片,,8.0,../../examples/gallery/media/paced-1.mp4,posters/W06.jpg,656ad9693937f0247e911c368cf1415baf481cd0c3115d4b275520d2050e3f4e,1142709,
+W07,从创造价值到研究价值  完整短片,自己的样片与成片,,69.233333,../../examples/gallery/media/first-full-1.mp4,posters/W07.jpg,6ffb64dc0021b731e4174827f338b4d263c5d06b6d09f00d8ddb6ca3242d9cca,6794487,
+W08,价值创造  强图形排版,自己的样片与成片,,8.0,../../examples/gallery/media/style-studies-1.mp4,posters/W08.jpg,468526984aaf635fc4755813f9892e6599bb13974e469df0dd7f6365105fac3a,371944,
+W09,价值创造  空间几何,自己的样片与成片,,8.0,../../examples/gallery/media/style-studies-2.mp4,posters/W09.jpg,586d025d2e122ad87225fdef3780f61aab1a35cf9925cc6b2b596f3754284b3e,668460,
+W10,价值创造  像素工坊,自己的样片与成片,,8.0,../../examples/gallery/media/style-studies-3.mp4,posters/W10.jpg,6fee3ab37ea97fe5e265538e5530ab9ebe40e7e1718430bbeb46606fb38b466d,256499,
+W11,认知复杂度  文章短样,自己的样片与成片,,10.5,../../examples/gallery/media/article-studies-1.mp4,posters/W11.jpg,6be79fbfe475f2ab18e5970346d6a204d99a99a47e173e3194f1f243ab232744,474982,
+W12,锚定效应  文章短样,自己的样片与成片,,10.5,../../examples/gallery/media/article-studies-2.mp4,posters/W12.jpg,d4ecffdb317e9012fb7b0e35f52ca37951872496e139bdd7a704e7a93daaf0ab,423050,
+W13,勤奋之外  文章短样,自己的样片与成片,,10.5,../../examples/gallery/media/article-studies-3.mp4,posters/W13.jpg,769dc64ec54d516bf68f6ab4089cf8d6bce259359b6993b0b3c87c0c801b1509,466107,
+W14,先别判  黑金对照,自己的样片与成片,,12.0,media/W14.mp4,posters/W14.jpg,cc9a0ee16c3f966dca338eaf750a41188cbab35e71c40b78fc26a74473eb6143,1350546,
+W15,别急着定义世界  红黑穿梭,自己的样片与成片,,10.8,../../examples/gallery/media/redshift-1.mp4,posters/W15.jpg,5ea1e256074d8515a674348b135812d36d32a1a9ed1550d5422616f0c30a097d,4686635,
+W16,划掉499  199就便宜吗,自己的样片与成片,,30.0,../../examples/gallery/media/content-lab-1.mp4,posters/W16.jpg,ba53f0dfc3c033074cb476abafcc8084b68e849ce4aa4dcdf3190bc2de876864,798354,
+W17,100元没少  购买力去哪了,自己的样片与成片,,30.0,../../examples/gallery/media/content-lab-2.mp4,posters/W17.jpg,31a37b4dc799dc08b9f994d6c8fee026dedc52e3a4b9e8448334cc0aef9b229f,1901735,
+W18,忙了一天  为什么又从零开始,自己的样片与成片,,30.0,../../examples/gallery/media/content-lab-3.mp4,posters/W18.jpg,88a2411fdb04916c5c7b972cd17d643f09a1648b726256b3847ecfaa27ee83d2,1093270,
+W19,价签之外  新艺术样片,自己的样片与成片,,60.0,../../examples/gallery/media/anchor-art-1.mp4,posters/W19.jpg,ca6b6f38f9895d0e20a5322ab61d12e08ffbcc27f079bbc086b1af2625a80157,15326059,
+W20,消失的25元,自己的样片与成片,,60.0,media/W20.mp4,posters/W20.jpg,41f3a44e87fbd715635a5639801651d261c14b8329ccba6d8c34f4342c0b18cf,6086598,
+P01,认知复杂度  20秒技术探针,对照与过程,,20.0,media/P01.mp4,posters/P01.jpg,fe06443a6abb021f4985be74ecb2296a588a67b68379834daa7c9007ca2b1b96,2553356,
+P02,认知复杂度  60秒横屏,自己的样片与成片,,60.0,../../examples/gallery/media/cognitive-first-1.mp4,posters/P02.jpg,9653e19f03ffee900eb6bf54c20d307d54b83b54c176cfc4485b0c8365e90084,706049,
+P03,泊松过程  初版30秒,自己的样片与成片,,30.0,../../examples/gallery/media/poisson-first-1.mp4,posters/P03.jpg,9cacde7878eeefb004ff2ce8cac3316d26415511dd39395da7b515475be4fdf4,3699346,
+P04,它不倒计时  Three.js 30秒,自己的样片与成片,,30.0,../../examples/gallery/media/poisson-opus-1.mp4,posters/P04.jpg,8442e77785b0b66f474625746622568873f258022a73e162c4aa665536cfc7f1,5504781,
+P05,泊松过程  90秒完整片,自己的样片与成片,,90.0,../../examples/gallery/media/poisson-full-1.mp4,posters/P05.jpg,0f28ad5af1d3045390bc67f7811125bd9b18b9693bc43f3524357eb5a82456d2,3269374,
+T01,Claudebao Vibe动效测试,旅行旧作,,30.0,media/T01.mp4,posters/T01.jpg,e3934234af27597e1c1836c65df0634bf52bbfb0145e90cb82eeb1027e5cb5a6,1117459,
+T02,一瞬 出走  stock V1,旅行旧作,,23.1,media/T02.mp4,posters/T02.jpg,d9f10a98d2dfee860a46965029a677ea1fc1011e45afcc0da5b42bf17fb2e6d3,2838583,
+T03,城市的间隙  stock V1,旅行旧作,,103.733333,media/T03.mp4,posters/T03.jpg,70e75274951706cefbf4c267c646082cd19cd357d40b9ad405eb4db131785243,9874442,
+T04,此刻 在场  V2,旅行旧作,,24.9,media/T04.mp4,posters/T04.jpg,2e3cc6851d7675ce6b6935023af3657d9c678c802e47ffa994fc87aa3ab778c8,3029601,
+T05,把时间还给路上  V2,旅行旧作,,108.0,media/T05.mp4,posters/T05.jpg,d80c59d65a0d04fc47092fb396906f5b973a98fca5e16ca63008f5a52880719a,9108001,
+T06,旅行短片 V3,旅行旧作,,25.8,media/T06.mp4,posters/T06.jpg,f8c4f3aa4030fa3e624f39ef59aae7a118b5f1deb86a5a50a7c3b5fdf77d4c54,3186147,
+T07,旅行长片 V3,旅行旧作,,102.7,media/T07.mp4,posters/T07.jpg,c7f6135fae22dbe6a4bd26e13409b8096ceb48019477cd83f9e8d8e64d85bbb9,9813711,
+T08,日本旅行 Hypit混合 V4,旅行旧作,,15.0,media/T08.mp4,posters/T08.jpg,ec8298185da5f36c374ffe949aa05e34b5ac9571a2e1d2869d52d93a0eba2222,10111595,
+T09,日本旅行 V5,旅行旧作,,15.0,media/T09.mp4,posters/T09.jpg,b2d602342d2e4c57859e4232aacc605e7bf0cc4394fd6a8474e13614e9ec1cc6,1874895,
+T10,日本旅行 V6,旅行旧作,,15.0,media/T10.mp4,posters/T10.jpg,032965e2405db49133996499bc587cdc2773bfacb1b8958063df42e6eb288892,10209532,
+T11,日本旅行 V7,旅行旧作,,15.0,media/T11.mp4,posters/T11.jpg,d6c5a4c7c67e764bca00f745c09877c157d30a4bbba0e4567bdd06c0c3d97285,10588226,
+T12,日本旅行 V8,旅行旧作,,15.0,media/T12.mp4,posters/T12.jpg,cab03d20499e7cf4b61e3681712d41fe622317fa67839d6292162fcf2e2622aa,1890384,
+T13,日本旅行 V9,旅行旧作,,15.0,media/T13.mp4,posters/T13.jpg,68556a99639222f5f8147415313ee14c220fb4ca43ecae6291f00f89d50cf79c,1888020,
+T14,日本旅行 V10,旅行旧作,,15.0,media/T14.mp4,posters/T14.jpg,2721f8b82a860a32ba35aa359894c62c9d1f7193b5687c61099b93d1c68d3e2a,1879211,
+T15,日本旅行 Andata 90秒,旅行旧作,,90.0,media/T15.mp4,posters/T15.jpg,d3c4c7af2e61bf18c905cdf786823d0f88c985a9c02626af1c91a0c893963851,9911869,
+T16,Hypit原生失败导出 1,对照与过程,,15.0,media/T16.mp4,posters/T16.jpg,5fcbfb15624fcc629a070dd6fba029f4238684d7c83d21e73e2f9c5af5fecabc,3608501,
+T17,Hypit原生失败导出 2,对照与过程,,15.0,media/T17.mp4,posters/T17.jpg,0f087e25ff2a274bba208a35dcac8b5784df3ac6246f1da4eeaeb19b73727c95,3600033,
+Q01,对照或过程文件  anchor-art-60s-20261021/qa/art-motion-10-22.mp4,对照与过程,,12.0,media/Q01.mp4,posters/Q01.jpg,f1f90c560574ad180b0e4ee291acccea781522a2bc3c4957c0c9294f2f777d85,1483942,
+Q02,对照或过程文件  article-studies-20261020/out/compare-silent.mp4,对照与过程,,10.5,../../examples/gallery/media/article-studies-4.mp4,posters/Q02.jpg,b51971f6f35bd815de70d1257e759ae9582ca091e1f5c430dd6c74da733292ab,689141,
+Q03,对照或过程文件  content-lab-20261021/out/compare-silent.mp4,对照与过程,,30.0,../../examples/gallery/media/content-lab-4.mp4,posters/Q03.jpg,3aa63c1fa280102b6a210202710d72db6cb14edcff34b7454a1bf38650ece0e4,1986777,
+Q04,对照或过程文件  content-lab-20261021/qa/editorial-motion.mp4,对照与过程,,13.0,media/Q04.mp4,posters/Q04.jpg,ac77aca9c82f29c1d8ef2c6af8f91b5756af769fc6296db94f1f84f7d49c64ff,1172777,
+Q05,对照或过程文件  content-lab-20261021/qa/pixel-motion.mp4,对照与过程,,13.0,media/Q05.mp4,posters/Q05.jpg,5b7afb2f145183a8fb66381020901c29fec87777b72edb824beae934c4d2d8f2,1236194,
+Q06,对照或过程文件  content-lab-20261021/qa/spatial-motion.mp4,对照与过程,,13.0,media/Q06.mp4,posters/Q06.jpg,13aae1d020679620d3e03c1e75e4ded0a2821e20234cadc19eb893018fde9287,1576122,
+Q07,对照或过程文件  disappearing25-20261021/qa/action-test-v1.mp4,对照与过程,,12.0,media/Q07.mp4,posters/Q07.jpg,2ceb34c068baf61e84cd180314e671f303b4a5148617e171fd889801458aa1a4,1437565,
+Q08,对照或过程文件  disappearing25-20261021/qa/final-before-opening-patch.mp4,对照与过程,,60.0,media/Q08.mp4,posters/Q08.jpg,01b09bb14eec60c881aff2b78f75f957668b49cd88a0e19c41cb93449275507c,6103019,
+Q09,对照或过程文件  disappearing25-20261021/qa/opening-patch.mp4,对照与过程,,4.0,media/Q09.mp4,posters/Q09.jpg,004f81ec7a872d78526ccbe0c97fc0f2344fece2fa8f5f671bb0b004bc795439,411016,
+Q10,对照或过程文件  full-short-20261018/out/picture-clean.mp4,对照与过程,,69.233008,media/Q10.mp4,posters/Q10.jpg,c7fc66efc36f4adc9c96f3bd5fa572cd22ed77b648b06f10aa34976538a3e7f5,8103908,
+Q11,对照或过程文件  full-short-20261018/qa/draft.mp4,对照与过程,,69.233008,media/Q11.mp4,posters/Q11.jpg,63a4d2b2f702f09b6e7268edea7ee7ee3ca7d37957767508a5f9f2a40861f928,8294861,
+Q12,对照或过程文件  revision/qa/clip_0_12.mp4,对照与过程,,12.0,media/Q12.mp4,posters/Q12.jpg,2901e36627849dc0d28894f3830bbc36fd2f14ce1cc0c2840ec282226a860d5c,505883,
+Q13,对照或过程文件  rtiaho-study-20261021/qa/draft.mp4,对照与过程,,10.8,media/Q13.mp4,posters/Q13.jpg,7171d2def349cfa1557916e499100af3b21461c4e23baab249b5ed558eefd6e6,1377362,
+Q14,对照或过程文件  runs/20261017_124639_fbaf94/video.mp4,对照与过程,,66.2,media/Q14.mp4,posters/Q14.jpg,a4fa4f60e2b388372cf3842eeda49dcf52d58f80bdcedc7861f8d0052789f639,7456559,
+Q15,对照或过程文件  runs/20261017_125059_82ae3e/video.mp4,对照与过程,,66.2,media/Q15.mp4,posters/Q15.jpg,01ef35fba5ca56ec18d766418043cf02cb6b75a48f4ba002ef54692446bebf76,7479970,
+Q16,对照或过程文件  style-studies-20261020/out/compare-silent.mp4,对照与过程,,8.0,../../examples/gallery/media/style-studies-4.mp4,posters/Q16.jpg,def48c9a9a43e3c2a6c1a8b5c7611a28eff9191e8f0e7d69ff420eba796d7c4d,625259,
+N01,黄金三道传导 · 五步连续小样,自己的样片与成片,,12.266667,../../examples/gallery/media/gold-proof-1.mp4,posters/N01.jpg,28f6ce01b2b4054f6daa195fe365310ff2144c06e440d101f7335611ffe8f6f9,736170,
+N02,黄金三道传导 · 加深完整版,自己的样片与成片,,84.633333,../../examples/gallery/media/gold-full-1.mp4,posters/N02.jpg,d6cf2af74a0c38fd16a65a087bdb0116c5d2d57658865aa4af5559de4ee8055e,2119066,
+N03,指数会换人，为什么还会亏钱 · 指数进化机,自己的样片与成片,,179.4,../../examples/gallery/media/index-machine-1.mp4,posters/N03.jpg,f5868cf19d72fc9dcb227fcbf10bd1265bbb13cb39a4798117a09a0913d6cc6e,4343235,
+N04,看行情，还是重做决定,自己的样片与成片,,173.466667,../../examples/gallery/media/decision-frequency-1.mp4,posters/N04.jpg,ebad5ff2af89cbd17997aa1aa9cbd7e19dca7dfa4b10a26f26a4c283ea6575d3,3962922,
+N05,回本以后 · 完整章节,自己的样片与成片,,105.566667,media/N05.mp4,posters/N05.jpg,9aec6012b7b3b3f416bac88ca26f53f2de111e383c801de81eb4c12effab43d9,6239664,
+N06,帕累托 80/20 · 同题修改版,自己的样片与成片,,68.433333,../pareto-revision/media/after-silent.mp4,posters/N06.jpg,c679b5c4c2cdb8e805e4d590f0790ca95fdecec9d434ec4103cf5eb3686d5d4d,1734719,
+N07,情景意识基金 · 动画返工版,自己的样片与成片,,71.266667,media/N07.mp4,posters/N07.jpg,2cc6aae3d0b7e645b5d7f85c5bc9ee231ea3be7f5e2a6455841ff15c1d7b5f14,5306945,
+D01,凯利策略 · DeepSeek 独立测试,DeepSeek 独立测试,,63.1,media/D01.mp4,posters/D01.jpg,9399812170d49a7a41f37d7812efbdc3cee568ad62042de61b032c6b0d93a057,2589010,
+D02,帕累托 80/20 · DeepSeek 原版,DeepSeek 独立测试,,68.866667,../pareto-revision/media/before-silent.mp4,posters/D02.jpg,f82de011a5fcd1621936025a05e31aa90c5620120c5c46939aa8413de6ec7a1d,386973,
+D03,情景意识基金 · DeepSeek 迁移版,DeepSeek 独立测试,,61.933333,media/D03.mp4,posters/D03.jpg,009d23cabfdd1f9eca4cde3cec3c8fa72ce9e0770baa4de74ab9f912de87b88a,10766031,
+D04,队列为什么会突然崩 · DeepSeek,DeepSeek 独立测试,,90.8,media/D04.mp4,posters/D04.jpg,7423ba8d32dd8b916ba8c24ae093a64e0b683dc437eb0a22b5aaf3a674cb3af3,7704041,
+C01,树状路径 A · 利润为什么下降,组件样片,,10.0,../batch-01/out/tree-business.mp4,posters/C01.jpg,03e2636ec18162a518d19e306e5fa14ec8704de2f552485bc351c0f34f581125,463163,https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/
+C02,树状路径 B · 学习为什么卡住,组件样片,,10.0,../batch-01/out/tree-learning.mp4,posters/C02.jpg,d334246842e4bcd9fbee2191a1929a9f2b43c7b1d6b7c69e748328872354124f,459318,https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/
+C03,收益矩阵 A · 两家店的降价困境,组件样片,,10.0,../batch-01/out/matrix-price.mp4,posters/C03.jpg,7cec164570480232246d25f116c2e67c5a09645605c4f45132b37be1f7e1b58f,510276,https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/
+C04,收益矩阵 B · 两个团队的共享困境,组件样片,,10.0,../batch-01/out/matrix-sharing.mp4,posters/C04.jpg,1659161f9b8fa74141c6a0543e1df5691c195c448de61a5cb6eee9e77b14683c,533598,https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/
+C05,字带轨道 A · 信号与噪声,组件样片,,10.0,../batch-01/out/orbit-signal.mp4,posters/C05.jpg,8a58db11293264e67f9903efee24635a9b7a8dcb9011488351ee59b8ace5efd9,8139073,https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/
+C06,字带轨道 B · 价格与价值,组件样片,,10.0,../batch-01/out/orbit-value.mp4,posters/C06.jpg,588794411fb53bb885c7de9d3627d6091eec3661280164f5599b255cb68c705f,8317363,https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/
+G01,gilded kit · 生产门槛测试,组件样片,,12.0,media/G01.mp4,posters/G01.jpg,1aa724015642d898a3bb033bc336b5ac179833da1eead139ed6e800df6780c6a,595820,
+G02,blackgold kit · 生产门槛测试,组件样片,,12.0,media/G02.mp4,posters/G02.jpg,c93b75757f5d20b7ff6fd4ab29b2362ecfc5b7601020a57485c6b112544cbc16,551022,
+G03,pixel kit · 生产门槛测试,组件样片,,12.0,media/G03.mp4,posters/G03.jpg,018a9c5420d78bc3166ff10abf5de6b79c009d51d5f632d0efae811a86c27ecf,366410,
+Q17,泊松 Three.js · review 版,对照与过程,,30.0,media/Q17.mp4,posters/Q17.jpg,e540d1b36907c02cc050dcf9e6d4ca11969698ada15642a17fbc4492f33bba37,3653034,
+Q18,泊松 Three.js · 开场测试,对照与过程,,8.0,media/Q18.mp4,posters/Q18.jpg,b4d77b526910fda3cbd3d00cd19c8c2e3adc62f23974af453e88b57f19e4c915,932855,
+Q19,泊松 Three.js · swing 测试,对照与过程,,7.0,media/Q19.mp4,posters/Q19.jpg,330061ebaa6341b41e3765e172030cbd4f8752d3beb31c174d511356cbea2b81,782746,
+Q20,黄金小样 · draft,对照与过程,,12.266667,media/Q20.mp4,posters/Q20.jpg,4b9c29d9d7a4956a83a017664f4eb04de6cdaa12c809536bd8cec45e21a21f8f,1442186,
+Q21,黄金完整版 · 数值样片,对照与过程,,15.5,media/Q21.mp4,posters/Q21.jpg,ef18e3d3c9d04b41720ca996dccc12d624a132b3afa120d3044be9c7bb1ca90b,785399,
+Q22,指数进化机 · 权重样片,对照与过程,,13.0,media/Q22.mp4,posters/Q22.jpg,ef941dcdde14efa865b1b39d53a46765cff9b1351adfe6930bc0f8bdb5fb3885,676100,
+Q23,指数进化机 · 舍入修复前,对照与过程,,179.4,media/Q23.mp4,posters/Q23.jpg,125ca56fc010368529b712411bed3ee171d2b15a823f7821fe5d61c993172538,5289308,
+Q24,指数进化机 · 估值修复,对照与过程,,24.866667,media/Q24.mp4,posters/Q24.jpg,c1650587bac044f3d4b42726fa688e57d2d3b957069420e171617c302e0e9c1c,1870981,
+Q25,决策频率 · 连续窗口样片,对照与过程,,13.0,media/Q25.mp4,posters/Q25.jpg,a69601523ea59e7330d1532451c5e992b3fd874772d98577bd0ffba72ea014f0,1198840,
+Q26,决策频率 · 字幕区域测试,对照与过程,,173.466667,media/Q26.mp4,posters/Q26.jpg,6b77394e00680ee2375612bcf660560e9a917c3047f62a672833cb774caaedd1,3912174,
+Q27,回本以后 · 13秒连续样片,对照与过程,,13.0,media/Q27.mp4,posters/Q27.jpg,b7907dd62e35addef9ac125ed9261c25e3e3012cda0f722c008ea279706fda1a,698500,
+Q28,回本以后 · rough-v1,对照与过程,,105.566667,media/Q28.mp4,posters/Q28.jpg,b5e19d577b82686412a6001afbd1645b7db88e6d8d68c977b48451acccec4a1f,4155022,
+Q29,回本以后 · 调色前,对照与过程,,105.566667,media/Q29.mp4,posters/Q29.jpg,2e37edecced4d465afacfe51f3b96c8ee1afa1e14940a28e975bd86c53ffd98e,3992135,
+Q30,帕累托同题修改 · 第一轮,对照与过程,,68.366667,media/Q30.mp4,posters/Q30.jpg,7df4245366f909ef1b7e13f1772483bbf59bb943eea3025cd02092425de63f27,3295212,
+Q31,情景意识动画返工 · 连续样片,对照与过程,,11.0,media/Q31.mp4,posters/Q31.jpg,588bf463a7e0f123f4d351060f9a4140950c72c434fe7bcd999b5e8d210c3ef1,334888,
+Q32,凯利策略 · DeepSeek 独立测试 · 动态 proof,对照与过程,,63.1,media/Q32.mp4,posters/Q32.jpg,e0bccb9bc0a34d8a9387f4a525f47882ace3b090c2642fbeef0a5b1d706de180,807471,
+Q33,帕累托 80/20 · DeepSeek 原版 · 动态 proof,对照与过程,,12.3,media/Q33.mp4,posters/Q33.jpg,44c1a5e18f063dd3cfd1e76b7b5e337dcbda7cacdb4ff9a8ebcdb588e18ef86c,564368,
+Q34,情景意识基金 · DeepSeek 迁移版 · 动态 proof,对照与过程,,13.0,media/Q34.mp4,posters/Q34.jpg,2460e7e437e13a0dc81d98d6c0378e788431d09309e2e3d3171f096ba307f795,203949,
+Q35,队列为什么会突然崩 · DeepSeek · 动态 proof,对照与过程,,12.0,media/Q35.mp4,posters/Q35.jpg,18898a4e7a75c8cc071b271eaf72b0f5764ba3104eb1a60d4c27118cb116c156,1223870,
+R01,信息论·惊奇之学,外部知识与动效参考,电子智人,300.0,media/R01.mp4,posters/R01.jpg,7d7bc24a5272fd7bc18ac5dd549d1dd630523106a60b198af022c2882716991d,11092826,https://www.douyin.com/video/7690337875291950345
+R02,人生容错率,外部知识与动效参考,Nico,130.233333,media/R02.mp4,posters/R02.jpg,d5235c8dc20414116a0e3978ada0d2528ab3cbf257fbad11575cf0bc6bf70268,5628772,https://www.douyin.com/video/7697240924837748134
+R03,熵增,外部知识与动效参考,比特新语,170.5,media/R03.mp4,posters/R03.jpg,5989435c82ca65f34c0d7b3f743f2503358e6ff384bc3691c9578924ce667baa,10229184,https://www.douyin.com/video/7691737108725140762
+R04,运气的形状,外部知识与动效参考,Iwanau,130.0,media/R04.mp4,posters/R04.jpg,0d47c4bfcf4f8bdcc2878a4354ecab59f8af7b1b2692db443a595b7b1c632671,6377757,https://www.douyin.com/video/7690344836800913785
+R05,知识诅咒,外部知识与动效参考,黑洞科学馆,145.533333,media/R05.mp4,posters/R05.jpg,4d47ff62248ca45270265bd8d89d362ef50d7603cd44b4375e06f1068b7bced2,3462548,https://www.douyin.com/video/7692022955122937098
+R06,闪电从地面往上打,外部知识与动效参考,音辞,132.0,media/R06.mp4,posters/R06.jpg,b722c1ba461aa2c6eeb6c280f76e6473141cccdd7838eec6ff95ea30937ada20,10727704,https://www.douyin.com/video/7694898938109505713
+R07,虚无主义，然后呢,外部知识与动效参考,叁号暗房 Logos,165.7,media/R07.mp4,posters/R07.jpg,b1d8b3f92a9f2c705858276e99990518350b1c5ee133589794013225a83f30ae,7581874,https://www.douyin.com/video/7692319542446873700
+R08,新鲜感的魔咒,外部知识与动效参考,我滴个鬼鬼,115.6,media/R08.mp4,posters/R08.jpg,39a8d1c6d361353e3819d3e15ae13c5e6ef9976799bde51f76d3bfe1021c304f,5795835,https://www.douyin.com/video/7694277028904806730
+R09,月老的算法,外部知识与动效参考,Iwanau,143.333333,media/R09.mp4,posters/R09.jpg,6b020a9924d89826ffd69b20f555f71ef60fbee06a982299fd8bbd18916dc558,5639360,https://www.douyin.com/video/7690785624487590054
+R10,庞加莱回归,外部知识与动效参考,银河留了一盏灯,170.7,media/R10.mp4,posters/R10.jpg,02039704988e6fb65c092d91ee858cdd83f8e0905272ad123c4c10b1f56b0d16,9691774,https://www.douyin.com/video/7695338421786545408
+R11,第几个人·37%法则,外部知识与动效参考,Juno,130.5,media/R11.mp4,posters/R11.jpg,13d32e308a357706b519ba3b0bc8a19fc6696c92d58b0e478c9e7e483a597027,2195346,https://www.douyin.com/video/7691038185459174656
+R12,给不会来的狮子站岗,外部知识与动效参考,Nico,99.033333,media/R12.mp4,posters/R12.jpg,b1ca7d5abb77871c49626da17c9198619891162989563fe9081593c2b08a96e3,5957364,https://www.douyin.com/video/7698690169096782538
+R13,为什么中杯卖得最好,外部知识与动效参考,Iwanau,146.0,media/R13.mp4,posters/R13.jpg,b16a890f695a0a46b43f13b11a3b481253765f6240a32511d1084e0d4f2a1032,7745865,https://www.douyin.com/video/7692118707825294713
+R14,也许下一次,外部知识与动效参考,Iwanau,145.833333,media/R14.mp4,posters/R14.jpg,e485873485d55a4b2df8cb2e4608fbf1c645845b05b4a341bc05d05805e7ec80,2892275,https://www.douyin.com/video/7693566099300496858
+R15,认知失调,外部知识与动效参考,一帧顿悟,154.5,media/R15.mp4,posters/R15.jpg,d5a9546a4431ec65e950f6ea8208bb34d9badd6ace24d6fd83ece1ca34d8da7b,4613724,https://www.douyin.com/video/7693938245129768219
+R16,memories,外部知识与动效参考,rtiaho,5.133008,media/R16.mp4,posters/R16.jpg,4c90ed2c6d9560fd4c984f97f8bdd6b0af6a7d18540bced60777dd16ee755c86,2496811,https://www.douyin.com/video/7695456829056455158
+R17,birthday,外部知识与动效参考,rtiaho,18.0,media/R17.mp4,posters/R17.jpg,386055c93142e5ce2f845d67709ba5467b58aba7beed89ff5a2c07c75efe484f,6600233,https://www.douyin.com/video/7691690453951704740
+R18,Chrome,外部知识与动效参考,rtiaho,5.666667,media/R18.mp4,posters/R18.jpg,cc1ad7fa758ded0e39aaa1e3916ffaab77430e7452f8e3ecc0d71d7afa885459,3840390,https://www.douyin.com/video/7694965262256917226
+R19,2026,外部知识与动效参考,rtiaho,6.333333,media/R19.mp4,posters/R19.jpg,7bfd84762f066bd60b0bf847d86c2cd48b4d6665ae5a2aa5d91b92e56f19db4f,2041558,https://v.douyin.com/mioPWsaIFPc/
+R20,信噪比,外部知识与动效参考,一帧顿悟,162.6,media/R20.mp4,posters/R20.jpg,28fc64cd4aab89d70029fe352ef94f251318320734ea91d91e97c8c9b1b0b8cd,6679445,https://www.douyin.com/video/7693407307773857065
+R21,15亿次心跳,外部知识与动效参考,VibeVerse . 脑洞宇宙,157.433333,media/R21.mp4,posters/R21.jpg,45e9fa37be372f164d81a5ea8829ef9847575eb32d7f806a547bc9ed8b8530ef,9389055,https://v.douyin.com/vX87XYIgSnc/
+R22,自律,外部知识与动效参考,Ember余烬,110.248005,media/R22.mp4,posters/R22.jpg,56e0d2ced3c6828d03313220e1bc777177f4d18cc6cc7aa5a2e4b69dfa20fe0e,5349694,https://www.douyin.com/video/7692657855442214321
+R23,为什么初恋特别难忘,外部知识与动效参考,𝓐𝓵𝓽𝓮𝓻,130.517007,media/R23.mp4,posters/R23.jpg,91a759a4c10b0baf6a3de40218b83721fa746e29c9cce980eb384f87d2ca55ba,7724839,https://www.douyin.com/video/7692830753985465626
+R24,图灵 · 纯代码成片,外部知识与动效参考,影神,130.008005,media/R24.mp4,posters/R24.jpg,9d7474d671255a759a3f0fd7d8e198c809bc0b9f081f28c10872b63a23bf50f5,9572855,https://www.douyin.com/video/7691127115332591205
+R25,AI 起源,外部知识与动效参考,42,151.672993,media/R25.mp4,posters/R25.jpg,d7d3eae73e2f3ff570e0d6ce1fd5606ca23ce07e4be1e3ea04106901181f4ca3,5929115,https://www.douyin.com/video/7690437690042453283
+R26,人选祸，天选福 · 勘误,外部知识与动效参考,爽哥说,485.266016,media/R26.mp4,posters/R26.jpg,e723cf3d21947c097a561994cb1aa6e283785839bf7fa2ba3c3dfab4fb53cd45,48019463,https://v.douyin.com/k2CDMxtmGic/
+R27,上海万圣节 · 市区5处好去处,外部知识与动效参考,LifeOS 实验室,182.233333,media/R27.mp4,posters/R27.jpg,824fccda0d6e28e4f91fe36ba2bca95d403ae098606d0231bac430be4a3ae394,22367145,https://v.douyin.com/ywCcbE_pp4k/
+X01,Winhao学AI Vibe知识大赏 6步做出知识科普视频,教程与旅行参考,,349.933333,media/X01.mp4,posters/X01.jpg,101d4e797097637542bcf36402986af38f88b3815e107e310d3bc55cd5c763bc,10917730,
+X02,艺雨YiLight 同济博二 如何用代码做视频,教程与旅行参考,,316.441542,media/X02.mp4,posters/X02.jpg,d7268686e3dfdf20084da93b66237973bfe7f25e98dcc772a9b50cae9eff7f83,8237328,
+X03,小风AI工坊 475个Opus 5 5作品，连提示词都给你了！,教程与旅行参考,,35.4,media/X03.mp4,posters/X03.jpg,a44ebb37ced65884e47ed4d6271c21f08cc3804f9cbfb1f97090fbd2d61d2d03,4935284,
+X04,MINIGOUKU 现实偏移 Ivan Sinelin,教程与旅行参考,,8.962902,media/X04.mp4,posters/X04.jpg,b160bc485c272eb1354477c334b99b7d6b26f9f719be097b55c400790ca39cc7,2156204,
+X05,视力不好的SKY文 整点儿摄影节奏 RAINY NIGHT,教程与旅行参考,,48.084,media/X05.mp4,posters/X05.jpg,285b9688f437fb20744d1ad35d7b4effeb31e66be5990a9bab5d1165ef7a1713,5674177,
+X06,reyll kyoto 独自旅行的日子,教程与旅行参考,,85.2,media/X06.mp4,posters/X06.jpg,d0ff9428ceea9da10b54e7c6a549b6ef9cb7941ae0fc9adbc2364745d2d3826e,9569349,
+X07,text1997 空间越窄，思念越阔,教程与旅行参考,,187.136,media/X07.mp4,posters/X07.jpg,a1a74c2d1e2ffa27b9fda51554c6c0b42dedd5468758b21d36c9639396bfb84f,9895164,
+X08,Sso93 69dcc5d80000000022002d33,教程与旅行参考,,19.3,media/X08.mp4,posters/X08.jpg,289ac37c0b1a93ef443b002d1a796d18b03000fd3a0ac9f7f28a396bad902ae2,6720458,
+X09,零石麻 请坐,教程与旅行参考,,6.479773,media/X09.mp4,posters/X09.jpg,6faa81277f15a6f78227daa631a8de09837866836ce281be18cb8610f92d326b,730768,
+X10,咖喱元宵 如果用坂本龙一的歌来剪我的日本之旅,教程与旅行参考,,289.1889,media/X10.mp4,posters/X10.jpg,f46142e8db0aa754b359c5307dd3c86175d43195e062ae905258f412f06fb37f,9666872,
+X11,CR Cho 东京日本旅行vlog这样剪,教程与旅行参考,,16.066757,media/X11.mp4,posters/X11.jpg,85822de292e123968477622c1c4e14073a3597fb7e642e1b7de0d8e9581c3da3,5928926,
+X12,Hill Chang 《Walk and Shoot in Japan》,教程与旅行参考,,28.885333,media/X12.mp4,posters/X12.jpg,205b77d0cb57fe014e6582b9ecf26a81bdf4c7f127674453c5dc89a7249838e5,3429430,
+X13,耐 旅行碎片就这样剪 超简单！,教程与旅行参考,,24.126667,media/X13.mp4,posters/X13.jpg,e9366a266c02b23ef841fbace042e21a23d4fad8d224c4aa6621ae1760a6926a,9503168,
+X14,Start 这次该我勇闯日本了,教程与旅行参考,,41.866667,media/X14.mp4,posters/X14.jpg,9749162977c5c7548e6b07094a45be5fe8a0baa81c552cc46252613546cfc73a,5191683,
+X15,桃几Hazelpeach 日本旅拍 不是电影感 是剪辑感,教程与旅行参考,,17.733333,media/X15.mp4,posters/X15.jpg,73de4d98b9549c27eac85938b7543d70baefe4e315c6e10e84fe163ef75241e1,4349060,

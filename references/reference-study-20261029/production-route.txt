@@ -62,7 +62,7 @@ metadata.json记录原片SHA256；每条抽取片段绑定原片和时间段。�
 七、跨机器读取与准备
 仓库入口：python scripts/reference_study.py show --route particle-document
 或：python scripts/reference_study.py show --route pixel-scene-map
-已有正确原片后：python scripts/reference_study.py prepare --ref R26 --input /path/to/source.mp4 --clip S1
-R27同理。默认写入已忽略的local-only/reference-study，校验来源SHA256；准备静音兼容预览及选定片段。无需重新解码研究本机路径。
+直接取可视证据：python scripts/reference_study.py fetch --route particle-document --output ./reference-cache
+像素路线将route改为pixel-scene-map；加--all-clips取该路线全部关键段，--full取全片浏览副本。默认取优先段MP4、连续帧与逐阶段bundle.json。先看实际片段，再读阶段，按帧定位，不以文字或单张封面代替动作。prepare仍可处理自己取得的原始文件，但不是默认前置步骤。
 本次研究使用本地DouK-Downloader 5.8下载、FFmpeg/ffprobe、既有viral-study抽帧工具及xilo分析脚本。抽帧观察不等于已完成同构动画。
-公开包只包含链接、时间码、观察和实现计划；原参考媒体按仓库NOTICE保留在本地。网页可本地选择原片，不上传文件。
+公开包现在包含139条视频入口和真实封面、8段原尺寸静音MP4、96张动作帧、28组三帧观察和分阶段说明。源码/资产的许可与第三方研究副本分开，原音轨与用户指定仅本地的敏感参考仍排除。此次补齐可视研究材料，不宣称我们的复现成片已经达标。

@@ -1,0 +1,2232 @@
+{
+  "date": "2026-10-29",
+  "scope": "139 allowlisted records only; previously excluded sensitive reference remains excluded",
+  "files": [
+    {
+      "id": "W01",
+      "media": "media/W01.mp4",
+      "source_sha256": "a65e56ec3c6bb7516bdea11ded4e2eb348f1c9048dcb78f8745e2b3fce46ec22",
+      "sha256": "ac5e3103f19b0a3b624a6fb1b7a963035e121faf3dc5a16ce8cc018f55041a0e",
+      "bytes": 7468252,
+      "duration": 66.2,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W02",
+      "media": "../../examples/gallery/media/revision-2.mp4",
+      "source_sha256": "d5334cbd1a659bd5d869a3247d85bac6efbe23099ae0308421d0caa66b0a96b7",
+      "sha256": "63e4aaad5f3864926a79749ac8de2b2552e4b79e228130e25a84d70de964093b",
+      "bytes": 217680,
+      "duration": 12.0,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W03",
+      "media": "../../examples/gallery/media/revision-3.mp4",
+      "source_sha256": "be8a6cd4d38721ad3cf9492d62e2a377b10aa7e2c6338ba54637d86146bc87d0",
+      "sha256": "7f565040f17d902ad3b5b1d7cc2081858f677963240d6ef4d65e1480a28324e7",
+      "bytes": 220883,
+      "duration": 12.0,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W04",
+      "media": "../../examples/gallery/media/revision-1.mp4",
+      "source_sha256": "d79f5d5faf671fb5b0f4e76c18b62761416c9c89c04a98956c630672fa01e9c7",
+      "sha256": "013c8a71a45b37e5a5e54b9c454930959a2cdf9e77db60f76a0fec30c655a70f",
+      "bytes": 1495470,
+      "duration": 66.2,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W05",
+      "media": "media/W05.mp4",
+      "source_sha256": "57ab57e5fe4ccd8b5274a4695b5b6209f285dd3df4b6bdb07bb919a0bec730a0",
+      "sha256": "21c9f09e9f848756131f0dbb3da906a8580f58e77a2b85ba004b1b16530f1fa8",
+      "bytes": 1423385,
+      "duration": 12.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W06",
+      "media": "../../examples/gallery/media/paced-1.mp4",
+      "source_sha256": "3c3db5058780bfd6369ac53fd4c7992c12a28d6264be57abb945daf541a663a6",
+      "sha256": "656ad9693937f0247e911c368cf1415baf481cd0c3115d4b275520d2050e3f4e",
+      "bytes": 1142709,
+      "duration": 8.0,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W07",
+      "media": "../../examples/gallery/media/first-full-1.mp4",
+      "source_sha256": "e468ea1ac7ccf198d917e8f730a7a277e0f4b8d9ea56543c8f70e0ae8d172d0f",
+      "sha256": "6ffb64dc0021b731e4174827f338b4d263c5d06b6d09f00d8ddb6ca3242d9cca",
+      "bytes": 6794487,
+      "duration": 69.233333,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W08",
+      "media": "../../examples/gallery/media/style-studies-1.mp4",
+      "source_sha256": "7f565d44b0f0d3b5f4f8a4efd74f788c2d18084478d957227b362ec3e0a8b3b2",
+      "sha256": "468526984aaf635fc4755813f9892e6599bb13974e469df0dd7f6365105fac3a",
+      "bytes": 371944,
+      "duration": 8.0,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W09",
+      "media": "../../examples/gallery/media/style-studies-2.mp4",
+      "source_sha256": "a8cb0f3aff96614187f8fa0ffb71ccb0da3b2893103d232c9bf1dac854841b69",
+      "sha256": "586d025d2e122ad87225fdef3780f61aab1a35cf9925cc6b2b596f3754284b3e",
+      "bytes": 668460,
+      "duration": 8.0,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W10",
+      "media": "../../examples/gallery/media/style-studies-3.mp4",
+      "source_sha256": "f9266803ba2724f223aab3ac978a7cab5bd6c81b99d4d5668f033e4fd70669d8",
+      "sha256": "6fee3ab37ea97fe5e265538e5530ab9ebe40e7e1718430bbeb46606fb38b466d",
+      "bytes": 256499,
+      "duration": 8.0,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W11",
+      "media": "../../examples/gallery/media/article-studies-1.mp4",
+      "source_sha256": "4a31ba67d8a85f9bfcc091672aa15a9614b20dbd635eaa4dd78d4b8ff48c1ae0",
+      "sha256": "6be79fbfe475f2ab18e5970346d6a204d99a99a47e173e3194f1f243ab232744",
+      "bytes": 474982,
+      "duration": 10.5,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W12",
+      "media": "../../examples/gallery/media/article-studies-2.mp4",
+      "source_sha256": "e5b85676009f057aa23354b8e9664e38db98132fc216fc31b8c2a39d17f5b16c",
+      "sha256": "d4ecffdb317e9012fb7b0e35f52ca37951872496e139bdd7a704e7a93daaf0ab",
+      "bytes": 423050,
+      "duration": 10.5,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W13",
+      "media": "../../examples/gallery/media/article-studies-3.mp4",
+      "source_sha256": "f3846249f2c1a0f98cb9626085eb9ad5e5af7eaec296243fe7d1738030ead841",
+      "sha256": "769dc64ec54d516bf68f6ab4089cf8d6bce259359b6993b0b3c87c0c801b1509",
+      "bytes": 466107,
+      "duration": 10.5,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W14",
+      "media": "media/W14.mp4",
+      "source_sha256": "9f19b7e1f2ec34f23bdf92a821e5645f0c01d08b1b6b80ef283ba368c3ad2b29",
+      "sha256": "cc9a0ee16c3f966dca338eaf750a41188cbab35e71c40b78fc26a74473eb6143",
+      "bytes": 1350546,
+      "duration": 12.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W15",
+      "media": "../../examples/gallery/media/redshift-1.mp4",
+      "source_sha256": "af90a1b71a045ad6f40f8897d4f912abdf6dbb45ca0cdffb87f77dcf2f3acdff",
+      "sha256": "5ea1e256074d8515a674348b135812d36d32a1a9ed1550d5422616f0c30a097d",
+      "bytes": 4686635,
+      "duration": 10.8,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W16",
+      "media": "../../examples/gallery/media/content-lab-1.mp4",
+      "source_sha256": "912e8d8e8650277b147594b3b8338b7fed882735dba7d36ae4efe7a846525a14",
+      "sha256": "ba53f0dfc3c033074cb476abafcc8084b68e849ce4aa4dcdf3190bc2de876864",
+      "bytes": 798354,
+      "duration": 30.0,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W17",
+      "media": "../../examples/gallery/media/content-lab-2.mp4",
+      "source_sha256": "380a1c1daec7eb04d2c34f24ba7bd46cf218af9e8bc72671bdcef04f06aea766",
+      "sha256": "31a37b4dc799dc08b9f994d6c8fee026dedc52e3a4b9e8448334cc0aef9b229f",
+      "bytes": 1901735,
+      "duration": 30.0,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W18",
+      "media": "../../examples/gallery/media/content-lab-3.mp4",
+      "source_sha256": "5198472f853ef41f520710f00352b54e29be2448785d8ab06333e7d24934f267",
+      "sha256": "88a2411fdb04916c5c7b972cd17d643f09a1648b726256b3847ecfaa27ee83d2",
+      "bytes": 1093270,
+      "duration": 30.0,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W19",
+      "media": "../../examples/gallery/media/anchor-art-1.mp4",
+      "source_sha256": "08c39a344511f8d882bcf34499b08b2119e47503efc8815887022f89764343bc",
+      "sha256": "ca6b6f38f9895d0e20a5322ab61d12e08ffbcc27f079bbc086b1af2625a80157",
+      "bytes": 15326059,
+      "duration": 60.0,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "W20",
+      "media": "media/W20.mp4",
+      "source_sha256": "2587cacb0d5d4a8c74bf7c03b1ed134e5dd3f1966f3a0077263a6213ace98024",
+      "sha256": "41f3a44e87fbd715635a5639801651d261c14b8329ccba6d8c34f4342c0b18cf",
+      "bytes": 6086598,
+      "duration": 60.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "P01",
+      "media": "media/P01.mp4",
+      "source_sha256": "55041670b14be1b78dc8d83d81f97ba4fd3e641022d6461d61c64510d6d3b275",
+      "sha256": "fe06443a6abb021f4985be74ecb2296a588a67b68379834daa7c9007ca2b1b96",
+      "bytes": 2553356,
+      "duration": 20.0,
+      "web_dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "P02",
+      "media": "../../examples/gallery/media/cognitive-first-1.mp4",
+      "source_sha256": "b22636b86a2c2c6eb7d3500d0f1402092499f0188e0cf6215a856c1e0b1bed2d",
+      "sha256": "9653e19f03ffee900eb6bf54c20d307d54b83b54c176cfc4485b0c8365e90084",
+      "bytes": 706049,
+      "duration": 60.0,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "P03",
+      "media": "../../examples/gallery/media/poisson-first-1.mp4",
+      "source_sha256": "c9654dbe4c712ce4109ed9521ca5ebd31ecaf878f0fad2da1b5b0d7e511eb6f9",
+      "sha256": "9cacde7878eeefb004ff2ce8cac3316d26415511dd39395da7b515475be4fdf4",
+      "bytes": 3699346,
+      "duration": 30.0,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "P04",
+      "media": "../../examples/gallery/media/poisson-opus-1.mp4",
+      "source_sha256": "83c6a848baebf6f5e8f4d4c565583da618ee9214d985efd2363132c3d3d788cc",
+      "sha256": "8442e77785b0b66f474625746622568873f258022a73e162c4aa665536cfc7f1",
+      "bytes": 5504781,
+      "duration": 30.0,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "P05",
+      "media": "../../examples/gallery/media/poisson-full-1.mp4",
+      "source_sha256": "390fac5d3ea5c57f2272fd9f23d6dd2259b1d4c918de0e6b4b54511e606b2166",
+      "sha256": "0f28ad5af1d3045390bc67f7811125bd9b18b9693bc43f3524357eb5a82456d2",
+      "bytes": 3269374,
+      "duration": 90.0,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T01",
+      "media": "media/T01.mp4",
+      "source_sha256": "9216e24da9cbaa69d624d67e141eea76b371af899c0c05278939780c05b3b7c4",
+      "sha256": "e3934234af27597e1c1836c65df0634bf52bbfb0145e90cb82eeb1027e5cb5a6",
+      "bytes": 1117459,
+      "duration": 30.0,
+      "web_dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T02",
+      "media": "media/T02.mp4",
+      "source_sha256": "141f949c050e899aff677a3b820bddfc8984d1a2802b8a8cda5910b6e48beebf",
+      "sha256": "d9f10a98d2dfee860a46965029a677ea1fc1011e45afcc0da5b42bf17fb2e6d3",
+      "bytes": 2838583,
+      "duration": 23.1,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T03",
+      "media": "media/T03.mp4",
+      "source_sha256": "41d4883a2ebfd08dc9045e13ede96407ab0325a5b52c12385babfcac4a04ef29",
+      "sha256": "70e75274951706cefbf4c267c646082cd19cd357d40b9ad405eb4db131785243",
+      "bytes": 9874442,
+      "duration": 103.733333,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_771k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T04",
+      "media": "media/T04.mp4",
+      "source_sha256": "fec78fb71be6563ef25498ea58542e931d1fae624e15b082474a212e955a1246",
+      "sha256": "2e3cc6851d7675ce6b6935023af3657d9c678c802e47ffa994fc87aa3ab778c8",
+      "bytes": 3029601,
+      "duration": 24.9,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T05",
+      "media": "media/T05.mp4",
+      "source_sha256": "42d305994065e73c62009c2b24e303adecd79672bd6beb8753ddc3214cd807a0",
+      "sha256": "d80c59d65a0d04fc47092fb396906f5b973a98fca5e16ca63008f5a52880719a",
+      "bytes": 9108001,
+      "duration": 108.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_740k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T06",
+      "media": "media/T06.mp4",
+      "source_sha256": "1b5afe369a63fce34bf4bbeeb4524dfcd1e35eb53235503a615a5c6dc6f72add",
+      "sha256": "f8c4f3aa4030fa3e624f39ef59aae7a118b5f1deb86a5a50a7c3b5fdf77d4c54",
+      "bytes": 3186147,
+      "duration": 25.8,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T07",
+      "media": "media/T07.mp4",
+      "source_sha256": "b547a6ac3ed140280f55a98f55f0a2a4743907d2a248d17e657578c260c11c9a",
+      "sha256": "c7f6135fae22dbe6a4bd26e13409b8096ceb48019477cd83f9e8d8e64d85bbb9",
+      "bytes": 9813711,
+      "duration": 102.7,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_778k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T08",
+      "media": "media/T08.mp4",
+      "source_sha256": "858a3ece656299d30510ca89682c72c5c97cfa45f5f2a2b239134845db365481",
+      "sha256": "ec8298185da5f36c374ffe949aa05e34b5ac9571a2e1d2869d52d93a0eba2222",
+      "bytes": 10111595,
+      "duration": 15.0,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T09",
+      "media": "media/T09.mp4",
+      "source_sha256": "6e132f9b7b805db5e53faebcbd41a4165d976d70bb2deea5741d926d5c44831f",
+      "sha256": "b2d602342d2e4c57859e4232aacc605e7bf0cc4394fd6a8474e13614e9ec1cc6",
+      "bytes": 1874895,
+      "duration": 15.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T10",
+      "media": "media/T10.mp4",
+      "source_sha256": "13fb05536ee47582836dc73d3715ee1386ff0bd9a78c1969206431a317f92d1e",
+      "sha256": "032965e2405db49133996499bc587cdc2773bfacb1b8958063df42e6eb288892",
+      "bytes": 10209532,
+      "duration": 15.0,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T11",
+      "media": "media/T11.mp4",
+      "source_sha256": "8a5f682c6f1ebe0636981313650e4c50956db62a26148661c6cf95ebb322a21b",
+      "sha256": "d6c5a4c7c67e764bca00f745c09877c157d30a4bbba0e4567bdd06c0c3d97285",
+      "bytes": 10588226,
+      "duration": 15.0,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T12",
+      "media": "media/T12.mp4",
+      "source_sha256": "7cf4aa35673bf617e5ad2f9d73d917c92c50e0c1018cf5e7bd13a5fe74491bde",
+      "sha256": "cab03d20499e7cf4b61e3681712d41fe622317fa67839d6292162fcf2e2622aa",
+      "bytes": 1890384,
+      "duration": 15.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T13",
+      "media": "media/T13.mp4",
+      "source_sha256": "b3ceb44e072aba79859daad5c2dd01b0909a44497f12590bee5f5644c48312a0",
+      "sha256": "68556a99639222f5f8147415313ee14c220fb4ca43ecae6291f00f89d50cf79c",
+      "bytes": 1888020,
+      "duration": 15.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T14",
+      "media": "media/T14.mp4",
+      "source_sha256": "7fbdbedcea0c245fc28122caf888483c614bc075268773f8d5e10fc760109c69",
+      "sha256": "2721f8b82a860a32ba35aa359894c62c9d1f7193b5687c61099b93d1c68d3e2a",
+      "bytes": 1879211,
+      "duration": 15.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T15",
+      "media": "media/T15.mp4",
+      "source_sha256": "3d73a47f8230efb71a6e819d0d9c474f89ee869e3a3dcdc60041123ab90142c6",
+      "sha256": "d3c4c7af2e61bf18c905cdf786823d0f88c985a9c02626af1c91a0c893963851",
+      "bytes": 9911869,
+      "duration": 90.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_888k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T16",
+      "media": "media/T16.mp4",
+      "source_sha256": "0d543fe81e5fdfd3c6b34199b808b4111f1decdb7947ff4d6a0fb4476524aaa4",
+      "sha256": "5fcbfb15624fcc629a070dd6fba029f4238684d7c83d21e73e2f9c5af5fecabc",
+      "bytes": 3608501,
+      "duration": 15.0,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "T17",
+      "media": "media/T17.mp4",
+      "source_sha256": "5ac2e7f8d0599349b2b1cef5cd68a10eddf551a55a8b476d2b1bb9cd3f08f791",
+      "sha256": "0f087e25ff2a274bba208a35dcac8b5784df3ac6246f1da4eeaeb19b73727c95",
+      "bytes": 3600033,
+      "duration": 15.0,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q01",
+      "media": "media/Q01.mp4",
+      "source_sha256": "8600e99624aba0e27d0704b2661aa7a3e61a69737c5e37083a670f2c5b9c8ec4",
+      "sha256": "f1f90c560574ad180b0e4ee291acccea781522a2bc3c4957c0c9294f2f777d85",
+      "bytes": 1483942,
+      "duration": 12.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q02",
+      "media": "../../examples/gallery/media/article-studies-4.mp4",
+      "source_sha256": "3eb3e8bd4b019242e4da7c343b5d247d73881e6def91981ae1a1ed9477bb558e",
+      "sha256": "b51971f6f35bd815de70d1257e759ae9582ca091e1f5c430dd6c74da733292ab",
+      "bytes": 689141,
+      "duration": 10.5,
+      "web_dimensions": [
+        1280,
+        834
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q03",
+      "media": "../../examples/gallery/media/content-lab-4.mp4",
+      "source_sha256": "57d59c3ef0f610ea87b699a44a8bd82f454981b0c0f41a78471071b1c03f82a4",
+      "sha256": "3aa63c1fa280102b6a210202710d72db6cb14edcff34b7454a1bf38650ece0e4",
+      "bytes": 1986777,
+      "duration": 30.0,
+      "web_dimensions": [
+        1280,
+        834
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q04",
+      "media": "media/Q04.mp4",
+      "source_sha256": "9358e191d9bc9c3b871ada2dcd49917badd8adee557d3f038bd70c24f86ff098",
+      "sha256": "ac77aca9c82f29c1d8ef2c6af8f91b5756af769fc6296db94f1f84f7d49c64ff",
+      "bytes": 1172777,
+      "duration": 13.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q05",
+      "media": "media/Q05.mp4",
+      "source_sha256": "7ddf7305fbbbf37badd93c446b413b969dc288877c1c044e17c04634a1c82c7a",
+      "sha256": "5b7afb2f145183a8fb66381020901c29fec87777b72edb824beae934c4d2d8f2",
+      "bytes": 1236194,
+      "duration": 13.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q06",
+      "media": "media/Q06.mp4",
+      "source_sha256": "1f1b35d1c6e809da7d86ed3b2b60e7479612f924e5609a0a29bb8e2f822893db",
+      "sha256": "13aae1d020679620d3e03c1e75e4ded0a2821e20234cadc19eb893018fde9287",
+      "bytes": 1576122,
+      "duration": 13.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q07",
+      "media": "media/Q07.mp4",
+      "source_sha256": "5881f8e563cd64a07e5591a7b9c9fd4d02d8290ee1c44c7ff454921d6264fadc",
+      "sha256": "2ceb34c068baf61e84cd180314e671f303b4a5148617e171fd889801458aa1a4",
+      "bytes": 1437565,
+      "duration": 12.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q08",
+      "media": "media/Q08.mp4",
+      "source_sha256": "4c8e2583f535dc9a58f63760f5206fe6efe3117908abec1146184fc78c57f4ed",
+      "sha256": "01b09bb14eec60c881aff2b78f75f957668b49cd88a0e19c41cb93449275507c",
+      "bytes": 6103019,
+      "duration": 60.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q09",
+      "media": "media/Q09.mp4",
+      "source_sha256": "c253571ebacd290f99e661b4c9ebc4086a1fb0443ccc382a833f42baac10eb73",
+      "sha256": "004f81ec7a872d78526ccbe0c97fc0f2344fece2fa8f5f671bb0b004bc795439",
+      "bytes": 411016,
+      "duration": 4.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q10",
+      "media": "media/Q10.mp4",
+      "source_sha256": "93a6324f3dc515d354e0b56ec55ee515c29f77d3fcef12540a4b198e049fe5b6",
+      "sha256": "c7fc66efc36f4adc9c96f3bd5fa572cd22ed77b648b06f10aa34976538a3e7f5",
+      "bytes": 8103908,
+      "duration": 69.233008,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q11",
+      "media": "media/Q11.mp4",
+      "source_sha256": "a7cd05b0793f3ff289d42f29777ebc63367d6de329e4b7d7bf850aedeacf5be5",
+      "sha256": "63a4d2b2f702f09b6e7268edea7ee7ee3ca7d37957767508a5f9f2a40861f928",
+      "bytes": 8294861,
+      "duration": 69.233008,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q12",
+      "media": "media/Q12.mp4",
+      "source_sha256": "21d2279f273e70d238d9cebb22583fba1218876e44c458017c7b3b792a4e8b36",
+      "sha256": "2901e36627849dc0d28894f3830bbc36fd2f14ce1cc0c2840ec282226a860d5c",
+      "bytes": 505883,
+      "duration": 12.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q13",
+      "media": "media/Q13.mp4",
+      "source_sha256": "4b33eda2540216c461b32ac30546c39df99456f201b98882c1294659647e458e",
+      "sha256": "7171d2def349cfa1557916e499100af3b21461c4e23baab249b5ed558eefd6e6",
+      "bytes": 1377362,
+      "duration": 10.8,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q14",
+      "media": "media/Q14.mp4",
+      "source_sha256": "7c236572623c725681a395d12e7690859194e07f27bbd9a69e3ceb813c38e80f",
+      "sha256": "a4fa4f60e2b388372cf3842eeda49dcf52d58f80bdcedc7861f8d0052789f639",
+      "bytes": 7456559,
+      "duration": 66.2,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q15",
+      "media": "media/Q15.mp4",
+      "source_sha256": "ac2ace3f097c123f835af6c34718868ba12abcf1319b0d2bfeff639bb5c7c905",
+      "sha256": "01ef35fba5ca56ec18d766418043cf02cb6b75a48f4ba002ef54692446bebf76",
+      "bytes": 7479970,
+      "duration": 66.2,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q16",
+      "media": "../../examples/gallery/media/style-studies-4.mp4",
+      "source_sha256": "73b8dbc9219cc292024ef0df240859d4751176e40c961eb5b8a3ba2fcb3724ae",
+      "sha256": "def48c9a9a43e3c2a6c1a8b5c7611a28eff9191e8f0e7d69ff420eba796d7c4d",
+      "bytes": 625259,
+      "duration": 8.0,
+      "web_dimensions": [
+        1280,
+        834
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "N01",
+      "media": "../../examples/gallery/media/gold-proof-1.mp4",
+      "source_sha256": "95b831b2832e37c75006c3ff819986d9e19e459c47432023aba7151c09048b14",
+      "sha256": "28f6ce01b2b4054f6daa195fe365310ff2144c06e440d101f7335611ffe8f6f9",
+      "bytes": 736170,
+      "duration": 12.266667,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "N02",
+      "media": "../../examples/gallery/media/gold-full-1.mp4",
+      "source_sha256": "3b93ef9a124e7fa1945bcb935b1c9d9bff758a8addd9a89b0510930d1142d3e8",
+      "sha256": "d6cf2af74a0c38fd16a65a087bdb0116c5d2d57658865aa4af5559de4ee8055e",
+      "bytes": 2119066,
+      "duration": 84.633333,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "N03",
+      "media": "../../examples/gallery/media/index-machine-1.mp4",
+      "source_sha256": "ed4e0926ccf8469c58baef829b8c03c7ca0abd6a0cd76069c934708ace84646e",
+      "sha256": "f5868cf19d72fc9dcb227fcbf10bd1265bbb13cb39a4798117a09a0913d6cc6e",
+      "bytes": 4343235,
+      "duration": 179.4,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "N04",
+      "media": "../../examples/gallery/media/decision-frequency-1.mp4",
+      "source_sha256": "e76640f250d1b0f2ceedd2e27ec7c022d7c0e5e80ff5e399eb761a47cc282713",
+      "sha256": "ebad5ff2af89cbd17997aa1aa9cbd7e19dca7dfa4b10a26f26a4c283ea6575d3",
+      "bytes": 3962922,
+      "duration": 173.466667,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "N05",
+      "media": "media/N05.mp4",
+      "source_sha256": "b18fa32ce907ae8a30c2bd9de158bbfc6b3f6437e30d7f1351bd7ce0122702b8",
+      "sha256": "9aec6012b7b3b3f416bac88ca26f53f2de111e383c801de81eb4c12effab43d9",
+      "bytes": 6239664,
+      "duration": 105.566667,
+      "web_dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "N06",
+      "media": "../pareto-revision/media/after-silent.mp4",
+      "source_sha256": "24c0eb392007544508250b4414b2d9a8488440e4332976b2c751b6bfdf96393e",
+      "sha256": "c679b5c4c2cdb8e805e4d590f0790ca95fdecec9d434ec4103cf5eb3686d5d4d",
+      "bytes": 1734719,
+      "duration": 68.433333,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "N07",
+      "media": "media/N07.mp4",
+      "source_sha256": "a36f047da5b60ea2b1e5b0686e8512efd0d1c26db9b1865f7175dcf0640d3b42",
+      "sha256": "2cc6aae3d0b7e645b5d7f85c5bc9ee231ea3be7f5e2a6455841ff15c1d7b5f14",
+      "bytes": 5306945,
+      "duration": 71.266667,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "D01",
+      "media": "media/D01.mp4",
+      "source_sha256": "3863a772c2c7ad84db56b6d526edb854b7048e4ba3d1e13f57a22ab4c9eb3f3c",
+      "sha256": "9399812170d49a7a41f37d7812efbdc3cee568ad62042de61b032c6b0d93a057",
+      "bytes": 2589010,
+      "duration": 63.1,
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "D02",
+      "media": "../pareto-revision/media/before-silent.mp4",
+      "source_sha256": "aba381c470aeecbc9390a0f7a9ddea2ee42833f66018c2a2afc371edf37ffa47",
+      "sha256": "f82de011a5fcd1621936025a05e31aa90c5620120c5c46939aa8413de6ec7a1d",
+      "bytes": 386973,
+      "duration": 68.866667,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "D03",
+      "media": "media/D03.mp4",
+      "source_sha256": "ca4bf331836ae96157d20edf7ca6847a2e3dd16adca27fcb8a7efc2dfba972da",
+      "sha256": "009d23cabfdd1f9eca4cde3cec3c8fa72ce9e0770baa4de74ab9f912de87b88a",
+      "bytes": 10766031,
+      "duration": 61.933333,
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "D04",
+      "media": "media/D04.mp4",
+      "source_sha256": "1b1f9d714bebfc978f95e6adf52b13dc784c5181abf3410421401500ca0a1182",
+      "sha256": "7423ba8d32dd8b916ba8c24ae093a64e0b683dc437eb0a22b5aaf3a674cb3af3",
+      "bytes": 7704041,
+      "duration": 90.8,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_881k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "C01",
+      "media": "../batch-01/out/tree-business.mp4",
+      "source_sha256": "03e2636ec18162a518d19e306e5fa14ec8704de2f552485bc351c0f34f581125",
+      "sha256": "03e2636ec18162a518d19e306e5fa14ec8704de2f552485bc351c0f34f581125",
+      "bytes": 463163,
+      "duration": 10.0,
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": "https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/"
+    },
+    {
+      "id": "C02",
+      "media": "../batch-01/out/tree-learning.mp4",
+      "source_sha256": "d334246842e4bcd9fbee2191a1929a9f2b43c7b1d6b7c69e748328872354124f",
+      "sha256": "d334246842e4bcd9fbee2191a1929a9f2b43c7b1d6b7c69e748328872354124f",
+      "bytes": 459318,
+      "duration": 10.0,
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": "https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/"
+    },
+    {
+      "id": "C03",
+      "media": "../batch-01/out/matrix-price.mp4",
+      "source_sha256": "7cec164570480232246d25f116c2e67c5a09645605c4f45132b37be1f7e1b58f",
+      "sha256": "7cec164570480232246d25f116c2e67c5a09645605c4f45132b37be1f7e1b58f",
+      "bytes": 510276,
+      "duration": 10.0,
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": "https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/"
+    },
+    {
+      "id": "C04",
+      "media": "../batch-01/out/matrix-sharing.mp4",
+      "source_sha256": "1659161f9b8fa74141c6a0543e1df5691c195c448de61a5cb6eee9e77b14683c",
+      "sha256": "1659161f9b8fa74141c6a0543e1df5691c195c448de61a5cb6eee9e77b14683c",
+      "bytes": 533598,
+      "duration": 10.0,
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": "https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/"
+    },
+    {
+      "id": "C05",
+      "media": "../batch-01/out/orbit-signal.mp4",
+      "source_sha256": "8a58db11293264e67f9903efee24635a9b7a8dcb9011488351ee59b8ace5efd9",
+      "sha256": "8a58db11293264e67f9903efee24635a9b7a8dcb9011488351ee59b8ace5efd9",
+      "bytes": 8139073,
+      "duration": 10.0,
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": "https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/"
+    },
+    {
+      "id": "C06",
+      "media": "../batch-01/out/orbit-value.mp4",
+      "source_sha256": "588794411fb53bb885c7de9d3627d6091eec3661280164f5599b255cb68c705f",
+      "sha256": "588794411fb53bb885c7de9d3627d6091eec3661280164f5599b255cb68c705f",
+      "bytes": 8317363,
+      "duration": 10.0,
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "existing_public_asset",
+      "reference": false,
+      "author": "",
+      "source_url": "https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/"
+    },
+    {
+      "id": "G01",
+      "media": "media/G01.mp4",
+      "source_sha256": "92b9ac7f7136be9b7ce043e8209339669ce6ecff508b0793e96976097677acc5",
+      "sha256": "1aa724015642d898a3bb033bc336b5ac179833da1eead139ed6e800df6780c6a",
+      "bytes": 595820,
+      "duration": 12.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "G02",
+      "media": "media/G02.mp4",
+      "source_sha256": "2cc767a055966d7d1cab335530fa8a1f8b441b0ae2bd23f5c97f893b1b4d4cca",
+      "sha256": "c93b75757f5d20b7ff6fd4ab29b2362ecfc5b7601020a57485c6b112544cbc16",
+      "bytes": 551022,
+      "duration": 12.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "G03",
+      "media": "media/G03.mp4",
+      "source_sha256": "2df0a2c3c6e90a8832799ed7dd7ef4efd896c0ef7fd1a54e2eb36ab055d70ad8",
+      "sha256": "018a9c5420d78bc3166ff10abf5de6b79c009d51d5f632d0efae811a86c27ecf",
+      "bytes": 366410,
+      "duration": 12.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q17",
+      "media": "media/Q17.mp4",
+      "source_sha256": "72539d712d258898063fd2c47f2ad0927733997b0966c4648233b59a3b68e62b",
+      "sha256": "e540d1b36907c02cc050dcf9e6d4ca11969698ada15642a17fbc4492f33bba37",
+      "bytes": 3653034,
+      "duration": 30.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q18",
+      "media": "media/Q18.mp4",
+      "source_sha256": "a6726ff44c0037236d8b5769ae65fc0c86cdbd2fca98d71305e47d0b3e1eb6c9",
+      "sha256": "b4d77b526910fda3cbd3d00cd19c8c2e3adc62f23974af453e88b57f19e4c915",
+      "bytes": 932855,
+      "duration": 8.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q19",
+      "media": "media/Q19.mp4",
+      "source_sha256": "d6d586e36f7e72e876b98298278b611c8bb1cfb38f06550fadc7a88ab6e1bc92",
+      "sha256": "330061ebaa6341b41e3765e172030cbd4f8752d3beb31c174d511356cbea2b81",
+      "bytes": 782746,
+      "duration": 7.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q20",
+      "media": "media/Q20.mp4",
+      "source_sha256": "1eacd819143f7ce87f71432fa80752c99d951d115559820cd1f37dc8836906cb",
+      "sha256": "4b9c29d9d7a4956a83a017664f4eb04de6cdaa12c809536bd8cec45e21a21f8f",
+      "bytes": 1442186,
+      "duration": 12.266667,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q21",
+      "media": "media/Q21.mp4",
+      "source_sha256": "23c6ea55ddf780e7e86d1532179d7f70cb92c55d5a95299713890d9f3a2e92db",
+      "sha256": "ef18e3d3c9d04b41720ca996dccc12d624a132b3afa120d3044be9c7bb1ca90b",
+      "bytes": 785399,
+      "duration": 15.5,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q22",
+      "media": "media/Q22.mp4",
+      "source_sha256": "6a1d2e413e9b3fbc4e57821c699463b2145658eba3f85bba41778dadf0e1bc05",
+      "sha256": "ef941dcdde14efa865b1b39d53a46765cff9b1351adfe6930bc0f8bdb5fb3885",
+      "bytes": 676100,
+      "duration": 13.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q23",
+      "media": "media/Q23.mp4",
+      "source_sha256": "ea353ce6656898f810b51597c10c81cfe1ab0b4580747bcd3b8c0454bbaba140",
+      "sha256": "125ca56fc010368529b712411bed3ee171d2b15a823f7821fe5d61c993172538",
+      "bytes": 5289308,
+      "duration": 179.4,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_445k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q24",
+      "media": "media/Q24.mp4",
+      "source_sha256": "f4e89597676a7d86f02c2dcb8373e326ae98e90d21f54c8e2e12bac896892950",
+      "sha256": "c1650587bac044f3d4b42726fa688e57d2d3b957069420e171617c302e0e9c1c",
+      "bytes": 1870981,
+      "duration": 24.866667,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q25",
+      "media": "media/Q25.mp4",
+      "source_sha256": "74ed5f95aa71a5d46338d3159664b2c3f77ef9fcfebb6ecd38429bb58dd60374",
+      "sha256": "a69601523ea59e7330d1532451c5e992b3fd874772d98577bd0ffba72ea014f0",
+      "bytes": 1198840,
+      "duration": 13.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q26",
+      "media": "media/Q26.mp4",
+      "source_sha256": "38da6a80166faded4dfb4c54d5dcbe04ba197d62c439341c663345c76cc40db2",
+      "sha256": "6b77394e00680ee2375612bcf660560e9a917c3047f62a672833cb774caaedd1",
+      "bytes": 3912174,
+      "duration": 173.466667,
+      "web_dimensions": [
+        960,
+        316
+      ],
+      "mode": "full_duration_H264_QSV_461k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q27",
+      "media": "media/Q27.mp4",
+      "source_sha256": "b0b06841f71ab87e22cd5523a25df768208bd1906a28cab33677dea8cd47e239",
+      "sha256": "b7907dd62e35addef9ac125ed9261c25e3e3012cda0f722c008ea279706fda1a",
+      "bytes": 698500,
+      "duration": 13.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q28",
+      "media": "media/Q28.mp4",
+      "source_sha256": "6ce32c3197b127227f72324a8e024cabdc145e474b5d23a6bbf379da8ccb60ab",
+      "sha256": "b5e19d577b82686412a6001afbd1645b7db88e6d8d68c977b48451acccec4a1f",
+      "bytes": 4155022,
+      "duration": 105.566667,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_757k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q29",
+      "media": "media/Q29.mp4",
+      "source_sha256": "9ffed57b1dd5b393da84f63c635d70fff6c75c293ad45d968383fdbfea0f0cce",
+      "sha256": "2e37edecced4d465afacfe51f3b96c8ee1afa1e14940a28e975bd86c53ffd98e",
+      "bytes": 3992135,
+      "duration": 105.566667,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_757k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q30",
+      "media": "media/Q30.mp4",
+      "source_sha256": "44edfa52e39196a581df99cbd11e7536885829e7c990d353106856e69c69b9e9",
+      "sha256": "7df4245366f909ef1b7e13f1772483bbf59bb943eea3025cd02092425de63f27",
+      "bytes": 3295212,
+      "duration": 68.366667,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q31",
+      "media": "media/Q31.mp4",
+      "source_sha256": "65e1649c73bea1a525e4c3dbad64199cf304d8c55d44276eb16808cd7e264af7",
+      "sha256": "588bf463a7e0f123f4d351060f9a4140950c72c434fe7bcd999b5e8d210c3ef1",
+      "bytes": 334888,
+      "duration": 11.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q32",
+      "media": "media/Q32.mp4",
+      "source_sha256": "6bcb8a804bae227128c9860396bd856bd6f8c5ed9cb8c2acdaf91574ca068318",
+      "sha256": "e0bccb9bc0a34d8a9387f4a525f47882ace3b090c2642fbeef0a5b1d706de180",
+      "bytes": 807471,
+      "duration": 63.1,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q33",
+      "media": "media/Q33.mp4",
+      "source_sha256": "597c1ed05b690aa789b4363ff7c61af33bbca7c1eb41577ff5c36a2dce557e89",
+      "sha256": "44c1a5e18f063dd3cfd1e76b7b5e337dcbda7cacdb4ff9a8ebcdb588e18ef86c",
+      "bytes": 564368,
+      "duration": 12.3,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q34",
+      "media": "media/Q34.mp4",
+      "source_sha256": "b52056c6aff96254251fba738e75ef31ddf26197c41b6519d5ba0c1cdaf22756",
+      "sha256": "2460e7e437e13a0dc81d98d6c0378e788431d09309e2e3d3171f096ba307f795",
+      "bytes": 203949,
+      "duration": 13.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "Q35",
+      "media": "media/Q35.mp4",
+      "source_sha256": "2d503b15cc3652cd1aa3909100bec22cc5155080194bd8c538da743e83543751",
+      "sha256": "18898a4e7a75c8cc071b271eaf72b0f5764ba3104eb1a60d4c27118cb116c156",
+      "bytes": 1223870,
+      "duration": 12.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": false,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "R01",
+      "media": "media/R01.mp4",
+      "source_sha256": "9e4be3e41e2e8bfd776f229831bef11c87139bf95334720d43742272dd5e5a2e",
+      "sha256": "7d7bc24a5272fd7bc18ac5dd549d1dd630523106a60b198af022c2882716991d",
+      "bytes": 11092826,
+      "duration": 300.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_266k_max960px_audio_removed",
+      "reference": true,
+      "author": "电子智人",
+      "source_url": "https://www.douyin.com/video/7690337875291950345"
+    },
+    {
+      "id": "R02",
+      "media": "media/R02.mp4",
+      "source_sha256": "153de57acc205fd81151756881c77f4a362fd07d220a5f2effabecacabe92194",
+      "sha256": "d5235c8dc20414116a0e3978ada0d2528ab3cbf257fbad11575cf0bc6bf70268",
+      "bytes": 5628772,
+      "duration": 130.233333,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "Nico",
+      "source_url": "https://www.douyin.com/video/7697240924837748134"
+    },
+    {
+      "id": "R03",
+      "media": "media/R03.mp4",
+      "source_sha256": "c2fea6f61799fa2a8909fabb694f9dd6dbc3abf84d8799e8e5246f3e4eff61a4",
+      "sha256": "5989435c82ca65f34c0d7b3f743f2503358e6ff384bc3691c9578924ce667baa",
+      "bytes": 10229184,
+      "duration": 170.5,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "比特新语",
+      "source_url": "https://www.douyin.com/video/7691737108725140762"
+    },
+    {
+      "id": "R04",
+      "media": "media/R04.mp4",
+      "source_sha256": "87681c8955107d691369f31d2210dcba28640fb1f3b8bbba09fecd23b96836df",
+      "sha256": "0d47c4bfcf4f8bdcc2878a4354ecab59f8af7b1b2692db443a595b7b1c632671",
+      "bytes": 6377757,
+      "duration": 130.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "Iwanau",
+      "source_url": "https://www.douyin.com/video/7690344836800913785"
+    },
+    {
+      "id": "R05",
+      "media": "media/R05.mp4",
+      "source_sha256": "7a66934102f2fc2e8e75a09ee79b3a547c9acd9f91b709b318854f8a5ee79bde",
+      "sha256": "4d47ff62248ca45270265bd8d89d362ef50d7603cd44b4375e06f1068b7bced2",
+      "bytes": 3462548,
+      "duration": 145.533333,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "黑洞科学馆",
+      "source_url": "https://www.douyin.com/video/7692022955122937098"
+    },
+    {
+      "id": "R06",
+      "media": "media/R06.mp4",
+      "source_sha256": "181cf4260fe74a50c6277565a11caa8bd4805c23077a424df7845bb4e68eb62a",
+      "sha256": "b722c1ba461aa2c6eeb6c280f76e6473141cccdd7838eec6ff95ea30937ada20",
+      "bytes": 10727704,
+      "duration": 132.0,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "音辞",
+      "source_url": "https://www.douyin.com/video/7694898938109505713"
+    },
+    {
+      "id": "R07",
+      "media": "media/R07.mp4",
+      "source_sha256": "dbd7aea145bba885265ed39139c285a1538dd0e4a994fb3b9e6c96523dfe5ac1",
+      "sha256": "b1d8b3f92a9f2c705858276e99990518350b1c5ee133589794013225a83f30ae",
+      "bytes": 7581874,
+      "duration": 165.7,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "叁号暗房 Logos",
+      "source_url": "https://www.douyin.com/video/7692319542446873700"
+    },
+    {
+      "id": "R08",
+      "media": "media/R08.mp4",
+      "source_sha256": "0567b309649f776b5121c67b780065db0d7c65282eb18cd1accde55ca0f51b75",
+      "sha256": "39a8d1c6d361353e3819d3e15ae13c5e6ef9976799bde51f76d3bfe1021c304f",
+      "bytes": 5795835,
+      "duration": 115.6,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "我滴个鬼鬼",
+      "source_url": "https://www.douyin.com/video/7694277028904806730"
+    },
+    {
+      "id": "R09",
+      "media": "media/R09.mp4",
+      "source_sha256": "9b979621d1067edaa7955823aaaa0e412f7f2b63d47dc148629fc733f47e77ea",
+      "sha256": "6b020a9924d89826ffd69b20f555f71ef60fbee06a982299fd8bbd18916dc558",
+      "bytes": 5639360,
+      "duration": 143.333333,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "Iwanau",
+      "source_url": "https://www.douyin.com/video/7690785624487590054"
+    },
+    {
+      "id": "R10",
+      "media": "media/R10.mp4",
+      "source_sha256": "cffbb59d7887dec4e61c738b3be9368f3b3757a82cb55cf3a5446b0e8d2850f4",
+      "sha256": "02039704988e6fb65c092d91ee858cdd83f8e0905272ad123c4c10b1f56b0d16",
+      "bytes": 9691774,
+      "duration": 170.7,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_468k_max960px_audio_removed",
+      "reference": true,
+      "author": "银河留了一盏灯",
+      "source_url": "https://www.douyin.com/video/7695338421786545408"
+    },
+    {
+      "id": "R11",
+      "media": "media/R11.mp4",
+      "source_sha256": "c458758620952af74ba8c095b1d3c43b22e7471ecece6b81f1a415cf80946d9d",
+      "sha256": "13d32e308a357706b519ba3b0bc8a19fc6696c92d58b0e478c9e7e483a597027",
+      "bytes": 2195346,
+      "duration": 130.5,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "Juno",
+      "source_url": "https://www.douyin.com/video/7691038185459174656"
+    },
+    {
+      "id": "R12",
+      "media": "media/R12.mp4",
+      "source_sha256": "3300fabfebac4f6eeb76ebe6495bfa48c51f0f64b9cfacb42c57ea08b969cae8",
+      "sha256": "b1ca7d5abb77871c49626da17c9198619891162989563fe9081593c2b08a96e3",
+      "bytes": 5957364,
+      "duration": 99.033333,
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "Nico",
+      "source_url": "https://www.douyin.com/video/7698690169096782538"
+    },
+    {
+      "id": "R13",
+      "media": "media/R13.mp4",
+      "source_sha256": "25dcb993c24f861ca4eb7f338dab560916a4ad09c54cb4eded4b6b8252f170aa",
+      "sha256": "b16a890f695a0a46b43f13b11a3b481253765f6240a32511d1084e0d4f2a1032",
+      "bytes": 7745865,
+      "duration": 146.0,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "Iwanau",
+      "source_url": "https://www.douyin.com/video/7692118707825294713"
+    },
+    {
+      "id": "R14",
+      "media": "media/R14.mp4",
+      "source_sha256": "4723369d490fabc2441f227be25978bade134e66bb1a51277f729d28aadec233",
+      "sha256": "e485873485d55a4b2df8cb2e4608fbf1c645845b05b4a341bc05d05805e7ec80",
+      "bytes": 2892275,
+      "duration": 145.833333,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "Iwanau",
+      "source_url": "https://www.douyin.com/video/7693566099300496858"
+    },
+    {
+      "id": "R15",
+      "media": "media/R15.mp4",
+      "source_sha256": "384de6ed240371bffa4902a47538dd66dc94ae2e88443c49d0c518e5f2de4003",
+      "sha256": "d5a9546a4431ec65e950f6ea8208bb34d9badd6ace24d6fd83ece1ca34d8da7b",
+      "bytes": 4613724,
+      "duration": 154.5,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "一帧顿悟",
+      "source_url": "https://www.douyin.com/video/7693938245129768219"
+    },
+    {
+      "id": "R16",
+      "media": "media/R16.mp4",
+      "source_sha256": "c66958162b221267fd64630f7c372e84e6bda53d1b9c4e018f1ba72adc31cc79",
+      "sha256": "4c90ed2c6d9560fd4c984f97f8bdd6b0af6a7d18540bced60777dd16ee755c86",
+      "bytes": 2496811,
+      "duration": 5.133008,
+      "web_dimensions": [
+        960,
+        542
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "rtiaho",
+      "source_url": "https://www.douyin.com/video/7695456829056455158"
+    },
+    {
+      "id": "R17",
+      "media": "media/R17.mp4",
+      "source_sha256": "c5f3ff0ef786a3daa9ba5a288fbcd69eb4e5e56c5f7b6f537e860da9c90f18b9",
+      "sha256": "386055c93142e5ce2f845d67709ba5467b58aba7beed89ff5a2c07c75efe484f",
+      "bytes": 6600233,
+      "duration": 18.0,
+      "web_dimensions": [
+        960,
+        720
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "rtiaho",
+      "source_url": "https://www.douyin.com/video/7691690453951704740"
+    },
+    {
+      "id": "R18",
+      "media": "media/R18.mp4",
+      "source_sha256": "a65666708d669b721b6375a9b3aefafc82af39f4adbb66501b040e6df3a8a0ee",
+      "sha256": "cc1ad7fa758ded0e39aaa1e3916ffaab77430e7452f8e3ecc0d71d7afa885459",
+      "bytes": 3840390,
+      "duration": 5.666667,
+      "web_dimensions": [
+        960,
+        542
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "rtiaho",
+      "source_url": "https://www.douyin.com/video/7694965262256917226"
+    },
+    {
+      "id": "R19",
+      "media": "media/R19.mp4",
+      "source_sha256": "bda549345ea7eb7bc1218926036b6337ccab6316c0973057e03f2f3e3e30df34",
+      "sha256": "7bfd84762f066bd60b0bf847d86c2cd48b4d6665ae5a2aa5d91b92e56f19db4f",
+      "bytes": 2041558,
+      "duration": 6.333333,
+      "web_dimensions": [
+        960,
+        542
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "rtiaho",
+      "source_url": "https://v.douyin.com/mioPWsaIFPc/"
+    },
+    {
+      "id": "R20",
+      "media": "media/R20.mp4",
+      "source_sha256": "b28c8922d75ffc6ebe4c5d75ae91e38d5273fc48b172f750adc81d2a66a4da91",
+      "sha256": "28fc64cd4aab89d70029fe352ef94f251318320734ea91d91e97c8c9b1b0b8cd",
+      "bytes": 6679445,
+      "duration": 162.6,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "一帧顿悟",
+      "source_url": "https://www.douyin.com/video/7693407307773857065"
+    },
+    {
+      "id": "R21",
+      "media": "media/R21.mp4",
+      "source_sha256": "54432d504c53eafcb9b3b3d7fc7f1d39124a70345a27aaf115b595e7caa1d02b",
+      "sha256": "45e9fa37be372f164d81a5ea8829ef9847575eb32d7f806a547bc9ed8b8530ef",
+      "bytes": 9389055,
+      "duration": 157.433333,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_508k_max960px_audio_removed",
+      "reference": true,
+      "author": "VibeVerse . 脑洞宇宙",
+      "source_url": "https://v.douyin.com/vX87XYIgSnc/"
+    },
+    {
+      "id": "R22",
+      "media": "media/R22.mp4",
+      "source_sha256": "31d6e37e49b4077928815644cc70263bb082ec0d92d5feb429f8794dfe029935",
+      "sha256": "56e0d2ced3c6828d03313220e1bc777177f4d18cc6cc7aa5a2e4b69dfa20fe0e",
+      "bytes": 5349694,
+      "duration": 110.248005,
+      "web_dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "Ember余烬",
+      "source_url": "https://www.douyin.com/video/7692657855442214321"
+    },
+    {
+      "id": "R23",
+      "media": "media/R23.mp4",
+      "source_sha256": "14bf953b81f1b0dee78333695542fe0385a977033b5fa2005419b9b909682e3d",
+      "sha256": "91a759a4c10b0baf6a3de40218b83721fa746e29c9cce980eb384f87d2ca55ba",
+      "bytes": 7724839,
+      "duration": 130.517007,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_612k_max960px_audio_removed",
+      "reference": true,
+      "author": "𝓐𝓵𝓽𝓮𝓻",
+      "source_url": "https://www.douyin.com/video/7692830753985465626"
+    },
+    {
+      "id": "R24",
+      "media": "media/R24.mp4",
+      "source_sha256": "ec766220f458a86e0cfb9d4912275b584f36bacb64867d61e4b362edf163aee1",
+      "sha256": "9d7474d671255a759a3f0fd7d8e198c809bc0b9f081f28c10872b63a23bf50f5",
+      "bytes": 9572855,
+      "duration": 130.008005,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_615k_max960px_audio_removed",
+      "reference": true,
+      "author": "影神",
+      "source_url": "https://www.douyin.com/video/7691127115332591205"
+    },
+    {
+      "id": "R25",
+      "media": "media/R25.mp4",
+      "source_sha256": "e7c26bc8fec2ce5a40c6129af907ac0fdfe6524be3c966cac90a1741dc86c8c9",
+      "sha256": "d7d3eae73e2f3ff570e0d6ce1fd5606ca23ce07e4be1e3ea04106901181f4ca3",
+      "bytes": 5929115,
+      "duration": 151.672993,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_527k_max960px_audio_removed",
+      "reference": true,
+      "author": "42",
+      "source_url": "https://www.douyin.com/video/7690437690042453283"
+    },
+    {
+      "id": "R26",
+      "media": "media/R26.mp4",
+      "source_sha256": "06fa80f1c2d03c1b3b65e4d6b8d74b7d142a280e78900c4abd1f01b5a8c70d62",
+      "sha256": "e723cf3d21947c097a561994cb1aa6e283785839bf7fa2ba3c3dfab4fb53cd45",
+      "bytes": 48019463,
+      "duration": 485.266016,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "full_duration_H264_QSV_850k_720x1280_audio_removed; final web budget pass; native excerpts unchanged",
+      "reference": true,
+      "author": "爽哥说",
+      "source_url": "https://v.douyin.com/k2CDMxtmGic/",
+      "intermediate_input_sha256": "ca41b05531200332fd71da3b7b784c7f9f5ae9d9c9974bc50001e2ba109ef163"
+    },
+    {
+      "id": "R27",
+      "media": "media/R27.mp4",
+      "source_sha256": "5d8e8c1844231cd39be8ad2454577e3c937a352154d1958e9d108c809c3e2768",
+      "sha256": "824fccda0d6e28e4f91fe36ba2bca95d403ae098606d0231bac430be4a3ae394",
+      "bytes": 22367145,
+      "duration": 182.233333,
+      "web_dimensions": [
+        960,
+        1280
+      ],
+      "mode": "full_duration_H264_QSV_1100k_max1280px_audio_removed",
+      "reference": true,
+      "author": "LifeOS 实验室",
+      "source_url": "https://v.douyin.com/ywCcbE_pp4k/"
+    },
+    {
+      "id": "X01",
+      "media": "media/X01.mp4",
+      "source_sha256": "ee016b15fa681547e56b9a13142243577955b018fccea52d872627f311396f52",
+      "sha256": "101d4e797097637542bcf36402986af38f88b3815e107e310d3bc55cd5c763bc",
+      "bytes": 10917730,
+      "duration": 349.933333,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_250k_max960px_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X02",
+      "media": "media/X02.mp4",
+      "source_sha256": "d93e8b592d0e8e18989099a44f087231bf9329c6b0eaea923abdc1bb64e2b1f0",
+      "sha256": "d7268686e3dfdf20084da93b66237973bfe7f25e98dcc772a9b50cae9eff7f83",
+      "bytes": 8237328,
+      "duration": 316.441542,
+      "web_dimensions": [
+        720,
+        958
+      ],
+      "mode": "full_duration_H264_QSV_252k_max960px_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X03",
+      "media": "media/X03.mp4",
+      "source_sha256": "692fb586a0aa55e42298c100fd80aeb7711edfa53cd110fd386c0be6d9a8f8aa",
+      "sha256": "a44ebb37ced65884e47ed4d6271c21f08cc3804f9cbfb1f97090fbd2d61d2d03",
+      "bytes": 4935284,
+      "duration": 35.4,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X04",
+      "media": "media/X04.mp4",
+      "source_sha256": "ef329e67e601f429c5050b53dc39b3af290fb0b0b0cc504e9c845d7e8f1b7e6d",
+      "sha256": "b160bc485c272eb1354477c334b99b7d6b26f9f719be097b55c400790ca39cc7",
+      "bytes": 2156204,
+      "duration": 8.962902,
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X05",
+      "media": "media/X05.mp4",
+      "source_sha256": "d79c2965f14c12ad1b0177f7b3d2f117b1457554c6289c677bd1a27e55ffabf4",
+      "sha256": "285b9688f437fb20744d1ad35d7b4effeb31e66be5990a9bab5d1165ef7a1713",
+      "bytes": 5674177,
+      "duration": 48.084,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X06",
+      "media": "media/X06.mp4",
+      "source_sha256": "0f5add91eae23074507ba900aec42d55d0288a0a9fb3858b62361d79b5da9877",
+      "sha256": "d0ff9428ceea9da10b54e7c6a549b6ef9cb7941ae0fc9adbc2364745d2d3826e",
+      "bytes": 9569349,
+      "duration": 85.2,
+      "web_dimensions": [
+        960,
+        720
+      ],
+      "mode": "full_duration_H264_QSV_938k_max960px_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X07",
+      "media": "media/X07.mp4",
+      "source_sha256": "48e548e3db30b7b6b79beee7d0fb3ab8c9a9155019ef47967602f75b62f48c62",
+      "sha256": "a1a74c2d1e2ffa27b9fda51554c6c0b42dedd5468758b21d36c9639396bfb84f",
+      "bytes": 9895164,
+      "duration": 187.136,
+      "web_dimensions": [
+        960,
+        720
+      ],
+      "mode": "full_duration_H264_QSV_427k_max960px_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X08",
+      "media": "media/X08.mp4",
+      "source_sha256": "7a8d4b728691e9bb69d5838154d62d255f29a5ce55d6ededff3d745559a8bf43",
+      "sha256": "289ac37c0b1a93ef443b002d1a796d18b03000fd3a0ac9f7f28a396bad902ae2",
+      "bytes": 6720458,
+      "duration": 19.3,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X09",
+      "media": "media/X09.mp4",
+      "source_sha256": "1ce370d411af70254f5ba0a4fcdd4618a3056f41ec9d2a6fa56a09354a055292",
+      "sha256": "6faa81277f15a6f78227daa631a8de09837866836ce281be18cb8610f92d326b",
+      "bytes": 730768,
+      "duration": 6.479773,
+      "web_dimensions": [
+        960,
+        720
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X10",
+      "media": "media/X10.mp4",
+      "source_sha256": "7cbdaee5c5788295090fec5ca953d8a3a7a49e08bac26c62b8526d95731e367d",
+      "sha256": "f46142e8db0aa754b359c5307dd3c86175d43195e062ae905258f412f06fb37f",
+      "bytes": 9666872,
+      "duration": 289.1889,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_276k_max960px_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X11",
+      "media": "media/X11.mp4",
+      "source_sha256": "43eba48dec85111392d7ffc696dc86fe6965c4635170b758cbf5ccc71e3de624",
+      "sha256": "85822de292e123968477622c1c4e14073a3597fb7e642e1b7de0d8e9581c3da3",
+      "bytes": 5928926,
+      "duration": 16.066757,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X12",
+      "media": "media/X12.mp4",
+      "source_sha256": "186d0ad867c7ea63a46b018c51396164b62b522a278a4ed3131c5744a62ade2b",
+      "sha256": "205b77d0cb57fe014e6582b9ecf26a81bdf4c7f127674453c5dc89a7249838e5",
+      "bytes": 3429430,
+      "duration": 28.885333,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X13",
+      "media": "media/X13.mp4",
+      "source_sha256": "bfda8a39e5ce4428c2356fe5c4037e8059d98c7ee209bac2f901e9e0ca6c9cc9",
+      "sha256": "e9366a266c02b23ef841fbace042e21a23d4fad8d224c4aa6621ae1760a6926a",
+      "bytes": 9503168,
+      "duration": 24.126667,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X14",
+      "media": "media/X14.mp4",
+      "source_sha256": "6f1c3dad7f939cecf00b2ae72f6eb176245bbc9b79e2308568b69abae62de339",
+      "sha256": "9749162977c5c7548e6b07094a45be5fe8a0baa81c552cc46252613546cfc73a",
+      "bytes": 5191683,
+      "duration": 41.866667,
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "mode": "full_duration_H264_QSV_1000k_max960px_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    },
+    {
+      "id": "X15",
+      "media": "media/X15.mp4",
+      "source_sha256": "942709361e3ead016df12b92c99c4d510b274fdaef9ff39dce6827551ac13f65",
+      "sha256": "73de4d98b9549c27eac85938b7543d70baefe4e315c6e10e84fe163ef75241e1",
+      "bytes": 4349060,
+      "duration": 17.733333,
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "mode": "video_stream_copy_audio_removed",
+      "reference": true,
+      "author": "",
+      "source_url": ""
+    }
+  ],
+  "source_hash_note": "source_sha256 hashes the exact web-export input, which may already be a silent derivative. The two original-download hashes are separately pinned in references/reference-study-20261029/plan.json."
+}

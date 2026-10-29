@@ -1,0 +1,674 @@
+[
+  {
+    "编号": "R26",
+    "开始秒_约": "0",
+    "结束秒_约": "4.5",
+    "镜头作用": "大字逐字强化",
+    "实际观察": "两行金白重宋体；主体大，字内部有颗粒",
+    "可实现方式_推断待验证": "字形与亮度层分离；先保住笔画厚度",
+    "对标重点": "开场稀疏小字不能代替重字形",
+    "frames": [
+      {
+        "source_time": 0.1,
+        "image": "motion/shot-01-0.jpg"
+      },
+      {
+        "source_time": 2.25,
+        "image": "motion/shot-01-1.jpg"
+      },
+      {
+        "source_time": 4.4,
+        "image": "motion/shot-01-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-01.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "4.5",
+    "结束秒_约": "9",
+    "镜头作用": "标题→粒子场→文献",
+    "实际观察": "标题向前景散开，颗粒填屏，再见文字矩阵",
+    "可实现方式_推断待验证": "同一粒子池由字形目标转为散开目标，再收敛到文献矩阵",
+    "对标重点": "不以黑场或两张标题卡淡入替代",
+    "frames": [
+      {
+        "source_time": 4.6,
+        "image": "motion/shot-02-0.jpg"
+      },
+      {
+        "source_time": 6.75,
+        "image": "motion/shot-02-1.jpg"
+      },
+      {
+        "source_time": 8.9,
+        "image": "motion/shot-02-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-02.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "17",
+    "结束秒_约": "28",
+    "镜头作用": "单字→姓名→年龄",
+    "实际观察": "巨大选字、姓名、90后依次占据视觉中心",
+    "可实现方式_推断待验证": "复用字形粒子掩模；保持主体尺度",
+    "对标重点": "短字幕与大字解释层分开",
+    "frames": [
+      {
+        "source_time": 17.1,
+        "image": "motion/shot-03-0.jpg"
+      },
+      {
+        "source_time": 22.5,
+        "image": "motion/shot-03-1.jpg"
+      },
+      {
+        "source_time": 27.9,
+        "image": "motion/shot-03-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-03.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "32",
+    "结束秒_约": "58",
+    "镜头作用": "事件图像与线稿",
+    "实际观察": "年份、AI示意图、船线稿、退回印章、金额",
+    "可实现方式_推断待验证": "照片/插画底板+线稿+贴物标签；证据/示意图身份标清",
+    "对标重点": "不是全片只有粒子背景",
+    "frames": [
+      {
+        "source_time": 32.1,
+        "image": "motion/shot-04-0.jpg"
+      },
+      {
+        "source_time": 45.0,
+        "image": "motion/shot-04-1.jpg"
+      },
+      {
+        "source_time": 57.9,
+        "image": "motion/shot-04-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-04.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "60",
+    "结束秒_约": "108",
+    "镜头作用": "波面/文献/关键词",
+    "实际观察": "文献文字铺满，局部词高亮，波面和词形接续",
+    "可实现方式_推断待验证": "长段用背景形态与强调词换重心",
+    "对标重点": "自动切镜检测会漏掉渐变和形变",
+    "frames": [
+      {
+        "source_time": 60.1,
+        "image": "motion/shot-05-0.jpg"
+      },
+      {
+        "source_time": 84.0,
+        "image": "motion/shot-05-1.jpg"
+      },
+      {
+        "source_time": 107.9,
+        "image": "motion/shot-05-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-05.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "111",
+    "结束秒_约": "128",
+    "镜头作用": "颗粒→书桌→单字→穹顶",
+    "实际观察": "颗粒显出书和台灯；字从书上起落；福字散成网格穹顶",
+    "可实现方式_推断待验证": "图片底板的亮度采样/遮罩+独立文字点云+线框目标",
+    "对标重点": "书桌光照与实体重量必须保留",
+    "frames": [
+      {
+        "source_time": 111.1,
+        "image": "motion/shot-06-0.jpg"
+      },
+      {
+        "source_time": 119.5,
+        "image": "motion/shot-06-1.jpg"
+      },
+      {
+        "source_time": 127.9,
+        "image": "motion/shot-06-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-06.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "140",
+    "结束秒_约": "172",
+    "镜头作用": "河流与两块石头",
+    "实际观察": "同一河流和左右对象持续出现，景深背景逐渐展开",
+    "可实现方式_推断待验证": "稳定左右锚点；河面点阵随场景推进",
+    "对标重点": "保留关系，不只加一层飘点",
+    "frames": [
+      {
+        "source_time": 140.1,
+        "image": "motion/shot-07-0.jpg"
+      },
+      {
+        "source_time": 156.0,
+        "image": "motion/shot-07-1.jpg"
+      },
+      {
+        "source_time": 171.9,
+        "image": "motion/shot-07-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-07.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "172",
+    "结束秒_约": "200",
+    "镜头作用": "场景插画与标注",
+    "实际观察": "树林、手触水、拿起石头等AI示意画面，石头有标注",
+    "可实现方式_推断待验证": "高质量场景资产+局部遮罩/标注；不要当实拍证据",
+    "对标重点": "实际生成工具未知",
+    "frames": [
+      {
+        "source_time": 172.1,
+        "image": "motion/shot-08-0.jpg"
+      },
+      {
+        "source_time": 186.0,
+        "image": "motion/shot-08-1.jpg"
+      },
+      {
+        "source_time": 199.9,
+        "image": "motion/shot-08-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-08.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "208",
+    "结束秒_约": "236",
+    "镜头作用": "文字链→环→硬币→图片",
+    "实际观察": "原因/结果/证据、圆环、硬币、圆形照片有轮廓承接",
+    "可实现方式_推断待验证": "圆形mask作为跨镜容器，coin对象不随镜头重置",
+    "对标重点": "轮廓匹配服务解释",
+    "frames": [
+      {
+        "source_time": 208.1,
+        "image": "motion/shot-09-0.jpg"
+      },
+      {
+        "source_time": 222.0,
+        "image": "motion/shot-09-1.jpg"
+      },
+      {
+        "source_time": 235.9,
+        "image": "motion/shot-09-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-09.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "244",
+    "结束秒_约": "296",
+    "镜头作用": "两侧对象持续对照",
+    "实际观察": "金/蓝石头、河流、景色，左右身份反复复现",
+    "可实现方式_推断待验证": "主角ID固定、颜色固定，镜头变化不换对象",
+    "对标重点": "可用于成本锚与新证据的对照",
+    "frames": [
+      {
+        "source_time": 244.1,
+        "image": "motion/shot-10-0.jpg"
+      },
+      {
+        "source_time": 270.0,
+        "image": "motion/shot-10-1.jpg"
+      },
+      {
+        "source_time": 295.9,
+        "image": "motion/shot-10-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-10.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "296",
+    "结束秒_约": "311",
+    "镜头作用": "两石→拱桥→标题",
+    "实际观察": "两侧向上长出桥拱，水面倒影出现，光点过桥，大字接入",
+    "可实现方式_推断待验证": "两个anchor+桥面路径采样+人物/光点路径+反射层",
+    "对标重点": "最值得做连续对照；不能画两个圆和一根连线算完成",
+    "frames": [
+      {
+        "source_time": 296.1,
+        "image": "motion/shot-11-0.jpg"
+      },
+      {
+        "source_time": 303.5,
+        "image": "motion/shot-11-1.jpg"
+      },
+      {
+        "source_time": 310.9,
+        "image": "motion/shot-11-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-11.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "311",
+    "结束秒_约": "328",
+    "镜头作用": "桥断→一侧粒子柱→数值",
+    "实际观察": "桥中央消失，左右身份仍在；单侧向上喷发，数字进入",
+    "可实现方式_推断待验证": "桥的可见区随t改变，粒子沿一侧上升；数字承接同对象",
+    "对标重点": "应继续看318–328秒的前后因果",
+    "frames": [
+      {
+        "source_time": 311.1,
+        "image": "motion/shot-12-0.jpg"
+      },
+      {
+        "source_time": 319.5,
+        "image": "motion/shot-12-1.jpg"
+      },
+      {
+        "source_time": 327.9,
+        "image": "motion/shot-12-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-12.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "328",
+    "结束秒_约": "384",
+    "镜头作用": "同一桥反复解释→波面",
+    "实际观察": "桥结构保留，文献/问题叠上；随后恢复桥和灯光，再入波面",
+    "可实现方式_推断待验证": "一个场景允许长时间复用，但局部状态必须有解释变化",
+    "对标重点": "不是每2秒强行换场",
+    "frames": [
+      {
+        "source_time": 328.1,
+        "image": "motion/shot-13-0.jpg"
+      },
+      {
+        "source_time": 356.0,
+        "image": "motion/shot-13-1.jpg"
+      },
+      {
+        "source_time": 383.9,
+        "image": "motion/shot-13-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-13.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "388",
+    "结束秒_约": "420",
+    "镜头作用": "记录页→扇形页阵→三石",
+    "实际观察": "记录逐行填入、整页缩小复制成扇面，各页颗粒汇出三石",
+    "可实现方式_推断待验证": "page主对象复制变换；按主题收集标记进入三目标",
+    "对标重点": "动作能表达多次记录→共同问题",
+    "frames": [
+      {
+        "source_time": 388.1,
+        "image": "motion/shot-14-0.jpg"
+      },
+      {
+        "source_time": 404.0,
+        "image": "motion/shot-14-1.jpg"
+      },
+      {
+        "source_time": 419.9,
+        "image": "motion/shot-14-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-14.jpg"
+  },
+  {
+    "编号": "R26",
+    "开始秒_约": "424",
+    "结束秒_约": "485.27",
+    "镜头作用": "实体场景→文献→手→尾字",
+    "实际观察": "窗前场景、粒子波、文字矩阵、手掌轮廓，末尾巨大选字",
+    "可实现方式_推断待验证": "照片/点阵/字形共享调色和主体位置；首尾字形呼应",
+    "对标重点": "尾段有多种素材形态，并非一种组件",
+    "frames": [
+      {
+        "source_time": 424.1,
+        "image": "motion/shot-15-0.jpg"
+      },
+      {
+        "source_time": 454.635,
+        "image": "motion/shot-15-1.jpg"
+      },
+      {
+        "source_time": 485.16999999999996,
+        "image": "motion/shot-15-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-15.jpg"
+  },
+  {
+    "编号": "R27",
+    "开始秒_约": "0",
+    "结束秒_约": "11.1",
+    "镜头作用": "像素夜街三幅开场",
+    "实际观察": "满幅街景、暖灯、南瓜、人群、水面，标题覆盖上方",
+    "可实现方式_推断待验证": "先完成有层次的场景画，再设镜头裁切轨迹",
+    "对标重点": "一个小像素人+几件道具不等价",
+    "frames": [
+      {
+        "source_time": 0.1,
+        "image": "motion/shot-16-0.jpg"
+      },
+      {
+        "source_time": 5.55,
+        "image": "motion/shot-16-1.jpg"
+      },
+      {
+        "source_time": 11.0,
+        "image": "motion/shot-16-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-16.jpg"
+  },
+  {
+    "编号": "R27",
+    "开始秒_约": "11.1",
+    "结束秒_约": "17.33",
+    "镜头作用": "城市→街区地图",
+    "实际观察": "深紫地图、橙色地点标注；旋转缩放到街区",
+    "可实现方式_推断待验证": "真实地图/明确示意地图底层；标记与镜头坐标分离",
+    "对标重点": "地图底部出现OpenStreetMap署名",
+    "frames": [
+      {
+        "source_time": 11.2,
+        "image": "motion/shot-17-0.jpg"
+      },
+      {
+        "source_time": 14.215,
+        "image": "motion/shot-17-1.jpg"
+      },
+      {
+        "source_time": 17.229999999999997,
+        "image": "motion/shot-17-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-17.jpg"
+  },
+  {
+    "编号": "R27",
+    "开始秒_约": "17.33",
+    "结束秒_约": "42.75",
+    "镜头作用": "地点1场景组",
+    "实际观察": "南瓜塔、甜点、旋转木马、林间灯、咖啡馆",
+    "可实现方式_推断待验证": "中景/特写/全景资产交替；慢推拉与硬切",
+    "对标重点": "多张丰富画面，不是一图横移3分钟",
+    "frames": [
+      {
+        "source_time": 17.43,
+        "image": "motion/shot-18-0.jpg"
+      },
+      {
+        "source_time": 30.04,
+        "image": "motion/shot-18-1.jpg"
+      },
+      {
+        "source_time": 42.65,
+        "image": "motion/shot-18-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-18.jpg"
+  },
+  {
+    "编号": "R27",
+    "开始秒_约": "42.75",
+    "结束秒_约": "51.5",
+    "镜头作用": "地图路线展开",
+    "实际观察": "路线从短橙线延展，地点图标逐个出现，随后切店面",
+    "可实现方式_推断待验证": "路径progress+位置marker+局部地图相机",
+    "对标重点": "L2密集帧可看48–51.5秒线路动作",
+    "frames": [
+      {
+        "source_time": 42.85,
+        "image": "motion/shot-19-0.jpg"
+      },
+      {
+        "source_time": 47.125,
+        "image": "motion/shot-19-1.jpg"
+      },
+      {
+        "source_time": 51.4,
+        "image": "motion/shot-19-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-19.jpg"
+  },
+  {
+    "编号": "R27",
+    "开始秒_约": "51.5",
+    "结束秒_约": "78.58",
+    "镜头作用": "地点2场景组",
+    "实际观察": "门店、街区、冰淇淋、日落到夜景、室内",
+    "可实现方式_推断待验证": "全景/近景和时段变化；画内光线统一",
+    "对标重点": "店面局部姿态多数稳定，别臆测角色绑定系统",
+    "frames": [
+      {
+        "source_time": 51.6,
+        "image": "motion/shot-20-0.jpg"
+      },
+      {
+        "source_time": 65.03999999999999,
+        "image": "motion/shot-20-1.jpg"
+      },
+      {
+        "source_time": 78.48,
+        "image": "motion/shot-20-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-20.jpg"
+  },
+  {
+    "编号": "R27",
+    "开始秒_约": "78.58",
+    "结束秒_约": "85.75",
+    "镜头作用": "地图换区域",
+    "实际观察": "从城市背景重新定位下一块区域",
+    "可实现方式_推断待验证": "章节地图复用同一视觉语言",
+    "对标重点": "地理定位是明确换章，不必伪造无缝变形",
+    "frames": [
+      {
+        "source_time": 78.67999999999999,
+        "image": "motion/shot-21-0.jpg"
+      },
+      {
+        "source_time": 82.16499999999999,
+        "image": "motion/shot-21-1.jpg"
+      },
+      {
+        "source_time": 85.65,
+        "image": "motion/shot-21-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-21.jpg"
+  },
+  {
+    "编号": "R27",
+    "开始秒_约": "85.75",
+    "结束秒_约": "113",
+    "镜头作用": "日间活动组",
+    "实际观察": "市集、乐队、皮纳塔、屋顶DJ、室内餐食、饮品",
+    "可实现方式_推断待验证": "亮度/景别变化缓解单一夜景疲劳",
+    "对标重点": "人物/物品尺度和像素密度需一致",
+    "frames": [
+      {
+        "source_time": 85.85,
+        "image": "motion/shot-22-0.jpg"
+      },
+      {
+        "source_time": 99.375,
+        "image": "motion/shot-22-1.jpg"
+      },
+      {
+        "source_time": 112.9,
+        "image": "motion/shot-22-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-22.jpg"
+  },
+  {
+    "编号": "R27",
+    "开始秒_约": "113",
+    "结束秒_约": "121.75",
+    "镜头作用": "地图换区域",
+    "实际观察": "再次定位/推到街区",
+    "可实现方式_推断待验证": "复用地图相机与标记组件",
+    "对标重点": "区间为粗抽样定位",
+    "frames": [
+      {
+        "source_time": 113.1,
+        "image": "motion/shot-23-0.jpg"
+      },
+      {
+        "source_time": 117.375,
+        "image": "motion/shot-23-1.jpg"
+      },
+      {
+        "source_time": 121.65,
+        "image": "motion/shot-23-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-23.jpg"
+  },
+  {
+    "编号": "R27",
+    "开始秒_约": "121.75",
+    "结束秒_约": "139.08",
+    "镜头作用": "市集与宠物场景",
+    "实际观察": "面包、宠物、户外表演、摊位",
+    "可实现方式_推断待验证": "道具近景与有纵深街景交替",
+    "对标重点": "不是不断切文字结论",
+    "frames": [
+      {
+        "source_time": 121.85,
+        "image": "motion/shot-24-0.jpg"
+      },
+      {
+        "source_time": 130.41500000000002,
+        "image": "motion/shot-24-1.jpg"
+      },
+      {
+        "source_time": 138.98000000000002,
+        "image": "motion/shot-24-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-24.jpg"
+  },
+  {
+    "编号": "R27",
+    "开始秒_约": "139.08",
+    "结束秒_约": "146.83",
+    "镜头作用": "滨水区域地图",
+    "实际观察": "地图移动并定位到滨水场所",
+    "可实现方式_推断待验证": "地域整体→局部路线",
+    "对标重点": "保留地图署名",
+    "frames": [
+      {
+        "source_time": 139.18,
+        "image": "motion/shot-25-0.jpg"
+      },
+      {
+        "source_time": 142.955,
+        "image": "motion/shot-25-1.jpg"
+      },
+      {
+        "source_time": 146.73000000000002,
+        "image": "motion/shot-25-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-25.jpg"
+  },
+  {
+    "编号": "R27",
+    "开始秒_约": "146.83",
+    "结束秒_约": "151",
+    "镜头作用": "河岸光秀",
+    "实际观察": "建筑霓虹与倒影构成主体，画面缓慢推移",
+    "可实现方式_推断待验证": "高完成度插画+相机；需要时单独做水面遮罩",
+    "对标重点": "ORB匹配支持全局变换，不证明没有局部动效",
+    "frames": [
+      {
+        "source_time": 146.93,
+        "image": "motion/shot-26-0.jpg"
+      },
+      {
+        "source_time": 148.91500000000002,
+        "image": "motion/shot-26-1.jpg"
+      },
+      {
+        "source_time": 150.9,
+        "image": "motion/shot-26-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-26.jpg"
+  },
+  {
+    "编号": "R27",
+    "开始秒_约": "151",
+    "结束秒_约": "169",
+    "镜头作用": "店面与滨水收束",
+    "实际观察": "唱片店、服装、滨水夜景；硬切继承夜景色彩",
+    "可实现方式_推断待验证": "不同完整资产，统一色板和字幕位置",
+    "对标重点": "不要把硬切误写成转场特效",
+    "frames": [
+      {
+        "source_time": 151.1,
+        "image": "motion/shot-27-0.jpg"
+      },
+      {
+        "source_time": 160.0,
+        "image": "motion/shot-27-1.jpg"
+      },
+      {
+        "source_time": 168.9,
+        "image": "motion/shot-27-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-27.jpg"
+  },
+  {
+    "编号": "R27",
+    "开始秒_约": "169",
+    "结束秒_约": "182.25",
+    "镜头作用": "总结表",
+    "实际观察": "地点/区域信息形成清晰总结",
+    "可实现方式_推断待验证": "克制的静态总结段",
+    "对标重点": "可读停留与前面丰富素材形成对比",
+    "frames": [
+      {
+        "source_time": 169.1,
+        "image": "motion/shot-28-0.jpg"
+      },
+      {
+        "source_time": 175.625,
+        "image": "motion/shot-28-1.jpg"
+      },
+      {
+        "source_time": 182.15,
+        "image": "motion/shot-28-2.jpg"
+      }
+    ],
+    "contact_sheet": "motion/shot-28.jpg"
+  }
+]

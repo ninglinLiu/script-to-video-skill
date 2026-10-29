@@ -13,8 +13,16 @@
       "duration": 66.2,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "video.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "video.mp4",
+      "media": "media/W01.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/W01.jpg",
+      "media_sha256": "ac5e3103f19b0a3b624a6fb1b7a963035e121faf3dc5a16ce8cc018f55041a0e",
+      "media_bytes": 7468252
     },
     {
       "id": "W02",
@@ -29,9 +37,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/revision-2.mp4",
-      "poster": "../../examples/gallery/media/revision-2.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "plan-a.mp4"
+      "poster": "posters/W02.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "plan-a.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "63e4aaad5f3864926a79749ac8de2b2552e4b79e228130e25a84d70de964093b",
+      "media_bytes": 217680
     },
     {
       "id": "W03",
@@ -46,9 +60,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/revision-3.mp4",
-      "poster": "../../examples/gallery/media/revision-3.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "plan-b.mp4"
+      "poster": "posters/W03.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "plan-b.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "7f565040f17d902ad3b5b1d7cc2081858f677963240d6ef4d65e1480a28324e7",
+      "media_bytes": 220883
     },
     {
       "id": "W04",
@@ -63,9 +83,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/revision-1.mp4",
-      "poster": "../../examples/gallery/media/revision-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "revision_full.mp4"
+      "poster": "posters/W04.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "revision_full.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "013c8a71a45b37e5a5e54b9c454930959a2cdf9e77db60f76a0fec30c655a70f",
+      "media_bytes": 1495470
     },
     {
       "id": "W05",
@@ -79,8 +105,16 @@
       "duration": 12.0,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "sample.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "sample.mp4",
+      "media": "media/W05.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/W05.jpg",
+      "media_sha256": "21c9f09e9f848756131f0dbb3da906a8580f58e77a2b85ba004b1b16530f1fa8",
+      "media_bytes": 1423385
     },
     {
       "id": "W06",
@@ -95,9 +129,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/paced-1.mp4",
-      "poster": "../../examples/gallery/media/paced-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "sample.mp4"
+      "poster": "posters/W06.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "sample.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "656ad9693937f0247e911c368cf1415baf481cd0c3115d4b275520d2050e3f4e",
+      "media_bytes": 1142709
     },
     {
       "id": "W07",
@@ -112,9 +152,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/first-full-1.mp4",
-      "poster": "../../examples/gallery/media/first-full-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "video.mp4"
+      "poster": "posters/W07.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "video.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "6ffb64dc0021b731e4174827f338b4d263c5d06b6d09f00d8ddb6ca3242d9cca",
+      "media_bytes": 6794487
     },
     {
       "id": "W08",
@@ -129,9 +175,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/style-studies-1.mp4",
-      "poster": "../../examples/gallery/media/style-studies-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "editorial.mp4"
+      "poster": "posters/W08.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "editorial.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "468526984aaf635fc4755813f9892e6599bb13974e469df0dd7f6365105fac3a",
+      "media_bytes": 371944
     },
     {
       "id": "W09",
@@ -146,9 +198,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/style-studies-2.mp4",
-      "poster": "../../examples/gallery/media/style-studies-2.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "spatial.mp4"
+      "poster": "posters/W09.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "spatial.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "586d025d2e122ad87225fdef3780f61aab1a35cf9925cc6b2b596f3754284b3e",
+      "media_bytes": 668460
     },
     {
       "id": "W10",
@@ -163,9 +221,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/style-studies-3.mp4",
-      "poster": "../../examples/gallery/media/style-studies-3.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "pixel.mp4"
+      "poster": "posters/W10.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "pixel.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "6fee3ab37ea97fe5e265538e5530ab9ebe40e7e1718430bbeb46606fb38b466d",
+      "media_bytes": 256499
     },
     {
       "id": "W11",
@@ -180,9 +244,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/article-studies-1.mp4",
-      "poster": "../../examples/gallery/media/article-studies-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "editorial.mp4"
+      "poster": "posters/W11.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "editorial.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "6be79fbfe475f2ab18e5970346d6a204d99a99a47e173e3194f1f243ab232744",
+      "media_bytes": 474982
     },
     {
       "id": "W12",
@@ -197,9 +267,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/article-studies-2.mp4",
-      "poster": "../../examples/gallery/media/article-studies-2.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "spatial.mp4"
+      "poster": "posters/W12.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "spatial.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "d4ecffdb317e9012fb7b0e35f52ca37951872496e139bdd7a704e7a93daaf0ab",
+      "media_bytes": 423050
     },
     {
       "id": "W13",
@@ -214,9 +290,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/article-studies-3.mp4",
-      "poster": "../../examples/gallery/media/article-studies-3.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "pixel.mp4"
+      "poster": "posters/W13.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "pixel.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "769dc64ec54d516bf68f6ab4089cf8d6bce259359b6993b0b3c87c0c801b1509",
+      "media_bytes": 466107
     },
     {
       "id": "W14",
@@ -230,8 +312,16 @@
       "duration": 12.0,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "先别判-黑金对照-含配乐.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "先别判-黑金对照-含配乐.mp4",
+      "media": "media/W14.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/W14.jpg",
+      "media_sha256": "cc9a0ee16c3f966dca338eaf750a41188cbab35e71c40b78fc26a74473eb6143",
+      "media_bytes": 1350546
     },
     {
       "id": "W15",
@@ -246,9 +336,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/redshift-1.mp4",
-      "poster": "../../examples/gallery/media/redshift-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "别急着定义世界-红黑穿梭-静音.mp4"
+      "poster": "posters/W15.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "别急着定义世界-红黑穿梭-静音.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "5ea1e256074d8515a674348b135812d36d32a1a9ed1550d5422616f0c30a097d",
+      "media_bytes": 4686635
     },
     {
       "id": "W16",
@@ -263,9 +359,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/content-lab-1.mp4",
-      "poster": "../../examples/gallery/media/content-lab-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "editorial.mp4"
+      "poster": "posters/W16.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "editorial.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "ba53f0dfc3c033074cb476abafcc8084b68e849ce4aa4dcdf3190bc2de876864",
+      "media_bytes": 798354
     },
     {
       "id": "W17",
@@ -280,9 +382,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/content-lab-2.mp4",
-      "poster": "../../examples/gallery/media/content-lab-2.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "spatial.mp4"
+      "poster": "posters/W17.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "spatial.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "31a37b4dc799dc08b9f994d6c8fee026dedc52e3a4b9e8448334cc0aef9b229f",
+      "media_bytes": 1901735
     },
     {
       "id": "W18",
@@ -297,9 +405,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/content-lab-3.mp4",
-      "poster": "../../examples/gallery/media/content-lab-3.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "pixel.mp4"
+      "poster": "posters/W18.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "pixel.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "88a2411fdb04916c5c7b972cd17d643f09a1648b726256b3847ecfaa27ee83d2",
+      "media_bytes": 1093270
     },
     {
       "id": "W19",
@@ -314,9 +428,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/anchor-art-1.mp4",
-      "poster": "../../examples/gallery/media/anchor-art-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "anchor.mp4"
+      "poster": "posters/W19.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "anchor.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "ca6b6f38f9895d0e20a5322ab61d12e08ffbcc27f079bbc086b1af2625a80157",
+      "media_bytes": 15326059
     },
     {
       "id": "W20",
@@ -330,8 +450,16 @@
       "duration": 60.0,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "消失的25元-60秒-带声音.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "消失的25元-60秒-带声音.mp4",
+      "media": "media/W20.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/W20.jpg",
+      "media_sha256": "41f3a44e87fbd715635a5639801651d261c14b8329ccba6d8c34f4342c0b18cf",
+      "media_bytes": 6086598
     },
     {
       "id": "P01",
@@ -345,8 +473,16 @@
       "duration": 20.0,
       "width": 1920,
       "height": 1080,
-      "availability": "本地加载",
-      "file_hint": "probe_20s.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "probe_20s.mp4",
+      "media": "media/P01.mp4",
+      "web_dimensions": [
+        1920,
+        1080
+      ],
+      "poster": "posters/P01.jpg",
+      "media_sha256": "fe06443a6abb021f4985be74ecb2296a588a67b68379834daa7c9007ca2b1b96",
+      "media_bytes": 2553356
     },
     {
       "id": "P02",
@@ -361,9 +497,15 @@
       "width": 1920,
       "height": 1080,
       "media": "../../examples/gallery/media/cognitive-first-1.mp4",
-      "poster": "../../examples/gallery/media/cognitive-first-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "cognitive_complexity_60s.mp4"
+      "poster": "posters/P02.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "cognitive_complexity_60s.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "media_sha256": "9653e19f03ffee900eb6bf54c20d307d54b83b54c176cfc4485b0c8365e90084",
+      "media_bytes": 706049
     },
     {
       "id": "P03",
@@ -378,9 +520,15 @@
       "width": 1920,
       "height": 1080,
       "media": "../../examples/gallery/media/poisson-first-1.mp4",
-      "poster": "../../examples/gallery/media/poisson-first-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "poisson_30s.mp4"
+      "poster": "posters/P03.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "poisson_30s.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "media_sha256": "9cacde7878eeefb004ff2ce8cac3316d26415511dd39395da7b515475be4fdf4",
+      "media_bytes": 3699346
     },
     {
       "id": "P04",
@@ -395,9 +543,15 @@
       "width": 1920,
       "height": 1080,
       "media": "../../examples/gallery/media/poisson-opus-1.mp4",
-      "poster": "../../examples/gallery/media/poisson-opus-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "opus_poisson_30s.mp4"
+      "poster": "posters/P04.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "opus_poisson_30s.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "media_sha256": "8442e77785b0b66f474625746622568873f258022a73e162c4aa665536cfc7f1",
+      "media_bytes": 5504781
     },
     {
       "id": "P05",
@@ -412,9 +566,15 @@
       "width": 1920,
       "height": 1080,
       "media": "../../examples/gallery/media/poisson-full-1.mp4",
-      "poster": "../../examples/gallery/media/poisson-full-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "poisson_90s_full.mp4"
+      "poster": "posters/P05.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "poisson_90s_full.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "media_sha256": "0f28ad5af1d3045390bc67f7811125bd9b18b9693bc43f3524357eb5a82456d2",
+      "media_bytes": 3269374
     },
     {
       "id": "T01",
@@ -428,8 +588,16 @@
       "duration": 30.0,
       "width": 1920,
       "height": 1080,
-      "availability": "本地加载",
-      "file_hint": "claudebao_vibe_v1.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "claudebao_vibe_v1.mp4",
+      "media": "media/T01.mp4",
+      "web_dimensions": [
+        1920,
+        1080
+      ],
+      "poster": "posters/T01.jpg",
+      "media_sha256": "e3934234af27597e1c1836c65df0634bf52bbfb0145e90cb82eeb1027e5cb5a6",
+      "media_bytes": 1117459
     },
     {
       "id": "T02",
@@ -443,8 +611,16 @@
       "duration": 23.1,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "short_stock_cut_v1.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "short_stock_cut_v1.mp4",
+      "media": "media/T02.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/T02.jpg",
+      "media_sha256": "d9f10a98d2dfee860a46965029a677ea1fc1011e45afcc0da5b42bf17fb2e6d3",
+      "media_bytes": 2838583
     },
     {
       "id": "T03",
@@ -458,8 +634,16 @@
       "duration": 103.733333,
       "width": 1920,
       "height": 1080,
-      "availability": "本地加载",
-      "file_hint": "long_stock_cut_v1.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "long_stock_cut_v1.mp4",
+      "media": "media/T03.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/T03.jpg",
+      "media_sha256": "70e75274951706cefbf4c267c646082cd19cd357d40b9ad405eb4db131785243",
+      "media_bytes": 9874442
     },
     {
       "id": "T04",
@@ -473,8 +657,16 @@
       "duration": 24.9,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "short_reference_sample_v2.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "short_reference_sample_v2.mp4",
+      "media": "media/T04.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/T04.jpg",
+      "media_sha256": "2e3cc6851d7675ce6b6935023af3657d9c678c802e47ffa994fc87aa3ab778c8",
+      "media_bytes": 3029601
     },
     {
       "id": "T05",
@@ -488,8 +680,16 @@
       "duration": 108.0,
       "width": 1920,
       "height": 1080,
-      "availability": "本地加载",
-      "file_hint": "long_reference_sample_v2.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "long_reference_sample_v2.mp4",
+      "media": "media/T05.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/T05.jpg",
+      "media_sha256": "d80c59d65a0d04fc47092fb396906f5b973a98fca5e16ca63008f5a52880719a",
+      "media_bytes": 9108001
     },
     {
       "id": "T06",
@@ -503,8 +703,16 @@
       "duration": 25.8,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "short_travel_v3.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "short_travel_v3.mp4",
+      "media": "media/T06.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/T06.jpg",
+      "media_sha256": "f8c4f3aa4030fa3e624f39ef59aae7a118b5f1deb86a5a50a7c3b5fdf77d4c54",
+      "media_bytes": 3186147
     },
     {
       "id": "T07",
@@ -518,8 +726,16 @@
       "duration": 102.7,
       "width": 1920,
       "height": 1080,
-      "availability": "本地加载",
-      "file_hint": "long_travel_v3.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "long_travel_v3.mp4",
+      "media": "media/T07.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/T07.jpg",
+      "media_sha256": "c7f6135fae22dbe6a4bd26e13409b8096ceb48019477cd83f9e8d8e64d85bbb9",
+      "media_bytes": 9813711
     },
     {
       "id": "T08",
@@ -533,8 +749,16 @@
       "duration": 15.0,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "japan_15s_hybrid_v1.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "japan_15s_hybrid_v1.mp4",
+      "media": "media/T08.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "poster": "posters/T08.jpg",
+      "media_sha256": "ec8298185da5f36c374ffe949aa05e34b5ac9571a2e1d2869d52d93a0eba2222",
+      "media_bytes": 10111595
     },
     {
       "id": "T09",
@@ -548,8 +772,16 @@
       "duration": 15.0,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "japan_15s_final_v5.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "japan_15s_final_v5.mp4",
+      "media": "media/T09.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/T09.jpg",
+      "media_sha256": "b2d602342d2e4c57859e4232aacc605e7bf0cc4394fd6a8474e13614e9ec1cc6",
+      "media_bytes": 1874895
     },
     {
       "id": "T10",
@@ -563,8 +795,16 @@
       "duration": 15.0,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "japan_15s_final_v6.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "japan_15s_final_v6.mp4",
+      "media": "media/T10.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "poster": "posters/T10.jpg",
+      "media_sha256": "032965e2405db49133996499bc587cdc2773bfacb1b8958063df42e6eb288892",
+      "media_bytes": 10209532
     },
     {
       "id": "T11",
@@ -578,8 +818,16 @@
       "duration": 15.0,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "japan_15s_final_v7.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "japan_15s_final_v7.mp4",
+      "media": "media/T11.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "poster": "posters/T11.jpg",
+      "media_sha256": "d6c5a4c7c67e764bca00f745c09877c157d30a4bbba0e4567bdd06c0c3d97285",
+      "media_bytes": 10588226
     },
     {
       "id": "T12",
@@ -593,8 +841,16 @@
       "duration": 15.0,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "japan_15s_final_v8.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "japan_15s_final_v8.mp4",
+      "media": "media/T12.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/T12.jpg",
+      "media_sha256": "cab03d20499e7cf4b61e3681712d41fe622317fa67839d6292162fcf2e2622aa",
+      "media_bytes": 1890384
     },
     {
       "id": "T13",
@@ -608,8 +864,16 @@
       "duration": 15.0,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "japan_15s_final_v9.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "japan_15s_final_v9.mp4",
+      "media": "media/T13.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/T13.jpg",
+      "media_sha256": "68556a99639222f5f8147415313ee14c220fb4ca43ecae6291f00f89d50cf79c",
+      "media_bytes": 1888020
     },
     {
       "id": "T14",
@@ -623,8 +887,16 @@
       "duration": 15.0,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "japan_15s_final_v10.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "japan_15s_final_v10.mp4",
+      "media": "media/T14.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/T14.jpg",
+      "media_sha256": "2721f8b82a860a32ba35aa359894c62c9d1f7193b5687c61099b93d1c68d3e2a",
+      "media_bytes": 1879211
     },
     {
       "id": "T15",
@@ -638,8 +910,16 @@
       "duration": 90.0,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "andata_travel_90s_v1.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "andata_travel_90s_v1.mp4",
+      "media": "media/T15.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/T15.jpg",
+      "media_sha256": "d3c4c7af2e61bf18c905cdf786823d0f88c985a9c02626af1c91a0c893963851",
+      "media_bytes": 9911869
     },
     {
       "id": "T16",
@@ -653,8 +933,16 @@
       "duration": 15.0,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "rejected_before_timing_fix.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "rejected_before_timing_fix.mp4",
+      "media": "media/T16.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "poster": "posters/T16.jpg",
+      "media_sha256": "5fcbfb15624fcc629a070dd6fba029f4238684d7c83d21e73e2f9c5af5fecabc",
+      "media_bytes": 3608501
     },
     {
       "id": "T17",
@@ -668,8 +956,16 @@
       "duration": 15.0,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "rejected_timing_fix_attempt.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "rejected_timing_fix_attempt.mp4",
+      "media": "media/T17.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "poster": "posters/T17.jpg",
+      "media_sha256": "0f087e25ff2a274bba208a35dcac8b5784df3ac6246f1da4eeaeb19b73727c95",
+      "media_bytes": 3600033
     },
     {
       "id": "Q01",
@@ -683,8 +979,16 @@
       "duration": 12.0,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "art-motion-10-22.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "art-motion-10-22.mp4",
+      "media": "media/Q01.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q01.jpg",
+      "media_sha256": "f1f90c560574ad180b0e4ee291acccea781522a2bc3c4957c0c9294f2f777d85",
+      "media_bytes": 1483942
     },
     {
       "id": "Q02",
@@ -699,9 +1003,15 @@
       "width": 1620,
       "height": 1056,
       "media": "../../examples/gallery/media/article-studies-4.mp4",
-      "poster": "../../examples/gallery/media/article-studies-4.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "compare-silent.mp4"
+      "poster": "posters/Q02.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "compare-silent.mp4",
+      "web_dimensions": [
+        1280,
+        834
+      ],
+      "media_sha256": "b51971f6f35bd815de70d1257e759ae9582ca091e1f5c430dd6c74da733292ab",
+      "media_bytes": 689141
     },
     {
       "id": "Q03",
@@ -716,9 +1026,15 @@
       "width": 1620,
       "height": 1056,
       "media": "../../examples/gallery/media/content-lab-4.mp4",
-      "poster": "../../examples/gallery/media/content-lab-4.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "compare-silent.mp4"
+      "poster": "posters/Q03.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "compare-silent.mp4",
+      "web_dimensions": [
+        1280,
+        834
+      ],
+      "media_sha256": "3aa63c1fa280102b6a210202710d72db6cb14edcff34b7454a1bf38650ece0e4",
+      "media_bytes": 1986777
     },
     {
       "id": "Q04",
@@ -732,8 +1048,16 @@
       "duration": 13.0,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "editorial-motion.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "editorial-motion.mp4",
+      "media": "media/Q04.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q04.jpg",
+      "media_sha256": "ac77aca9c82f29c1d8ef2c6af8f91b5756af769fc6296db94f1f84f7d49c64ff",
+      "media_bytes": 1172777
     },
     {
       "id": "Q05",
@@ -747,8 +1071,16 @@
       "duration": 13.0,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "pixel-motion.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "pixel-motion.mp4",
+      "media": "media/Q05.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q05.jpg",
+      "media_sha256": "5b7afb2f145183a8fb66381020901c29fec87777b72edb824beae934c4d2d8f2",
+      "media_bytes": 1236194
     },
     {
       "id": "Q06",
@@ -762,8 +1094,16 @@
       "duration": 13.0,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "spatial-motion.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "spatial-motion.mp4",
+      "media": "media/Q06.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q06.jpg",
+      "media_sha256": "13aae1d020679620d3e03c1e75e4ded0a2821e20234cadc19eb893018fde9287",
+      "media_bytes": 1576122
     },
     {
       "id": "Q07",
@@ -777,8 +1117,16 @@
       "duration": 12.0,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "action-test-v1.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "action-test-v1.mp4",
+      "media": "media/Q07.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q07.jpg",
+      "media_sha256": "2ceb34c068baf61e84cd180314e671f303b4a5148617e171fd889801458aa1a4",
+      "media_bytes": 1437565
     },
     {
       "id": "Q08",
@@ -792,8 +1140,16 @@
       "duration": 60.0,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "final-before-opening-patch.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "final-before-opening-patch.mp4",
+      "media": "media/Q08.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q08.jpg",
+      "media_sha256": "01b09bb14eec60c881aff2b78f75f957668b49cd88a0e19c41cb93449275507c",
+      "media_bytes": 6103019
     },
     {
       "id": "Q09",
@@ -807,8 +1163,16 @@
       "duration": 4.0,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "opening-patch.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "opening-patch.mp4",
+      "media": "media/Q09.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q09.jpg",
+      "media_sha256": "004f81ec7a872d78526ccbe0c97fc0f2344fece2fa8f5f671bb0b004bc795439",
+      "media_bytes": 411016
     },
     {
       "id": "Q10",
@@ -822,8 +1186,16 @@
       "duration": 69.233008,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "picture-clean.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "picture-clean.mp4",
+      "media": "media/Q10.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q10.jpg",
+      "media_sha256": "c7fc66efc36f4adc9c96f3bd5fa572cd22ed77b648b06f10aa34976538a3e7f5",
+      "media_bytes": 8103908
     },
     {
       "id": "Q11",
@@ -837,8 +1209,16 @@
       "duration": 69.233008,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "draft.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "draft.mp4",
+      "media": "media/Q11.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q11.jpg",
+      "media_sha256": "63a4d2b2f702f09b6e7268edea7ee7ee3ca7d37957767508a5f9f2a40861f928",
+      "media_bytes": 8294861
     },
     {
       "id": "Q12",
@@ -852,8 +1232,16 @@
       "duration": 12.0,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "clip_0_12.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "clip_0_12.mp4",
+      "media": "media/Q12.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q12.jpg",
+      "media_sha256": "2901e36627849dc0d28894f3830bbc36fd2f14ce1cc0c2840ec282226a860d5c",
+      "media_bytes": 505883
     },
     {
       "id": "Q13",
@@ -867,8 +1255,16 @@
       "duration": 10.8,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "draft.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "draft.mp4",
+      "media": "media/Q13.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q13.jpg",
+      "media_sha256": "7171d2def349cfa1557916e499100af3b21461c4e23baab249b5ed558eefd6e6",
+      "media_bytes": 1377362
     },
     {
       "id": "Q14",
@@ -882,8 +1278,16 @@
       "duration": 66.2,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "video.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "video.mp4",
+      "media": "media/Q14.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q14.jpg",
+      "media_sha256": "a4fa4f60e2b388372cf3842eeda49dcf52d58f80bdcedc7861f8d0052789f639",
+      "media_bytes": 7456559
     },
     {
       "id": "Q15",
@@ -897,8 +1301,16 @@
       "duration": 66.2,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "video.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "video.mp4",
+      "media": "media/Q15.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q15.jpg",
+      "media_sha256": "01ef35fba5ca56ec18d766418043cf02cb6b75a48f4ba002ef54692446bebf76",
+      "media_bytes": 7479970
     },
     {
       "id": "Q16",
@@ -913,9 +1325,15 @@
       "width": 1620,
       "height": 1056,
       "media": "../../examples/gallery/media/style-studies-4.mp4",
-      "poster": "../../examples/gallery/media/style-studies-4.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "compare-silent.mp4"
+      "poster": "posters/Q16.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "compare-silent.mp4",
+      "web_dimensions": [
+        1280,
+        834
+      ],
+      "media_sha256": "def48c9a9a43e3c2a6c1a8b5c7611a28eff9191e8f0e7d69ff420eba796d7c4d",
+      "media_bytes": 625259
     },
     {
       "id": "N01",
@@ -930,9 +1348,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/gold-proof-1.mp4",
-      "poster": "../../examples/gallery/media/gold-proof-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "final-silent.mp4"
+      "poster": "posters/N01.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "final-silent.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "28f6ce01b2b4054f6daa195fe365310ff2144c06e440d101f7335611ffe8f6f9",
+      "media_bytes": 736170
     },
     {
       "id": "N02",
@@ -947,9 +1371,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/gold-full-1.mp4",
-      "poster": "../../examples/gallery/media/gold-full-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "final-silent.mp4"
+      "poster": "posters/N02.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "final-silent.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "d6cf2af74a0c38fd16a65a087bdb0116c5d2d57658865aa4af5559de4ee8055e",
+      "media_bytes": 2119066
     },
     {
       "id": "N03",
@@ -964,9 +1394,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/index-machine-1.mp4",
-      "poster": "../../examples/gallery/media/index-machine-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "final-silent.mp4"
+      "poster": "posters/N03.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "final-silent.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "f5868cf19d72fc9dcb227fcbf10bd1265bbb13cb39a4798117a09a0913d6cc6e",
+      "media_bytes": 4343235
     },
     {
       "id": "N04",
@@ -981,9 +1417,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../../examples/gallery/media/decision-frequency-1.mp4",
-      "poster": "../../examples/gallery/media/decision-frequency-1.jpg",
-      "availability": "仓库已有公开视频",
-      "file_hint": "final-silent.mp4"
+      "poster": "posters/N04.jpg",
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "final-silent.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "media_sha256": "ebad5ff2af89cbd17997aa1aa9cbd7e19dca7dfa4b10a26f26a4c283ea6575d3",
+      "media_bytes": 3962922
     },
     {
       "id": "N05",
@@ -997,8 +1439,16 @@
       "duration": 105.566667,
       "width": 1920,
       "height": 1080,
-      "availability": "本地加载",
-      "file_hint": "回本以后-静音.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "回本以后-静音.mp4",
+      "media": "media/N05.mp4",
+      "web_dimensions": [
+        1920,
+        1080
+      ],
+      "poster": "posters/N05.jpg",
+      "media_sha256": "9aec6012b7b3b3f416bac88ca26f53f2de111e383c801de81eb4c12effab43d9",
+      "media_bytes": 6239664
     },
     {
       "id": "N06",
@@ -1013,8 +1463,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../pareto-revision/media/after-silent.mp4",
-      "availability": "仓库已有公开视频",
-      "file_hint": "final-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "final-silent.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "poster": "posters/N06.jpg",
+      "media_sha256": "c679b5c4c2cdb8e805e4d590f0790ca95fdecec9d434ec4103cf5eb3686d5d4d",
+      "media_bytes": 1734719
     },
     {
       "id": "N07",
@@ -1028,8 +1485,16 @@
       "duration": 71.266667,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "final-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "final-silent.mp4",
+      "media": "media/N07.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/N07.jpg",
+      "media_sha256": "2cc6aae3d0b7e645b5d7f85c5bc9ee231ea3be7f5e2a6455841ff15c1d7b5f14",
+      "media_bytes": 5306945
     },
     {
       "id": "D01",
@@ -1043,8 +1508,16 @@
       "duration": 63.1,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "final-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "final-silent.mp4",
+      "media": "media/D01.mp4",
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "poster": "posters/D01.jpg",
+      "media_sha256": "9399812170d49a7a41f37d7812efbdc3cee568ad62042de61b032c6b0d93a057",
+      "media_bytes": 2589010
     },
     {
       "id": "D02",
@@ -1059,8 +1532,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../pareto-revision/media/before-silent.mp4",
-      "availability": "仓库已有公开视频",
-      "file_hint": "final-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "final-silent.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/D02.jpg",
+      "media_sha256": "f82de011a5fcd1621936025a05e31aa90c5620120c5c46939aa8413de6ec7a1d",
+      "media_bytes": 386973
     },
     {
       "id": "D03",
@@ -1074,8 +1554,16 @@
       "duration": 61.933333,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "final-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "final-silent.mp4",
+      "media": "media/D03.mp4",
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "poster": "posters/D03.jpg",
+      "media_sha256": "009d23cabfdd1f9eca4cde3cec3c8fa72ce9e0770baa4de74ab9f912de87b88a",
+      "media_bytes": 10766031
     },
     {
       "id": "D04",
@@ -1089,8 +1577,16 @@
       "duration": 90.8,
       "width": 1920,
       "height": 1080,
-      "availability": "本地加载",
-      "file_hint": "final-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "final-silent.mp4",
+      "media": "media/D04.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/D04.jpg",
+      "media_sha256": "7423ba8d32dd8b916ba8c24ae093a64e0b683dc437eb0a22b5aaf3a674cb3af3",
+      "media_bytes": 7704041
     },
     {
       "id": "C01",
@@ -1105,8 +1601,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../batch-01/out/tree-business.mp4",
-      "availability": "仓库已有公开视频",
-      "file_hint": "tree-business.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "tree-business.mp4",
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "poster": "posters/C01.jpg",
+      "media_sha256": "03e2636ec18162a518d19e306e5fa14ec8704de2f552485bc351c0f34f581125",
+      "media_bytes": 463163
     },
     {
       "id": "C02",
@@ -1121,8 +1624,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../batch-01/out/tree-learning.mp4",
-      "availability": "仓库已有公开视频",
-      "file_hint": "tree-learning.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "tree-learning.mp4",
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "poster": "posters/C02.jpg",
+      "media_sha256": "d334246842e4bcd9fbee2191a1929a9f2b43c7b1d6b7c69e748328872354124f",
+      "media_bytes": 459318
     },
     {
       "id": "C03",
@@ -1137,8 +1647,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../batch-01/out/matrix-price.mp4",
-      "availability": "仓库已有公开视频",
-      "file_hint": "matrix-price.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "matrix-price.mp4",
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "poster": "posters/C03.jpg",
+      "media_sha256": "7cec164570480232246d25f116c2e67c5a09645605c4f45132b37be1f7e1b58f",
+      "media_bytes": 510276
     },
     {
       "id": "C04",
@@ -1153,8 +1670,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../batch-01/out/matrix-sharing.mp4",
-      "availability": "仓库已有公开视频",
-      "file_hint": "matrix-sharing.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "matrix-sharing.mp4",
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "poster": "posters/C04.jpg",
+      "media_sha256": "1659161f9b8fa74141c6a0543e1df5691c195c448de61a5cb6eee9e77b14683c",
+      "media_bytes": 533598
     },
     {
       "id": "C05",
@@ -1169,8 +1693,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../batch-01/out/orbit-signal.mp4",
-      "availability": "仓库已有公开视频",
-      "file_hint": "orbit-signal.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "orbit-signal.mp4",
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "poster": "posters/C05.jpg",
+      "media_sha256": "8a58db11293264e67f9903efee24635a9b7a8dcb9011488351ee59b8ace5efd9",
+      "media_bytes": 8139073
     },
     {
       "id": "C06",
@@ -1185,8 +1716,15 @@
       "width": 1080,
       "height": 1920,
       "media": "../batch-01/out/orbit-value.mp4",
-      "availability": "仓库已有公开视频",
-      "file_hint": "orbit-value.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "orbit-value.mp4",
+      "web_dimensions": [
+        1080,
+        1920
+      ],
+      "poster": "posters/C06.jpg",
+      "media_sha256": "588794411fb53bb885c7de9d3627d6091eec3661280164f5599b255cb68c705f",
+      "media_bytes": 8317363
     },
     {
       "id": "G01",
@@ -1200,8 +1738,16 @@
       "duration": 12.0,
       "width": 960,
       "height": 540,
-      "availability": "本地加载",
-      "file_hint": "motion-proof.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "motion-proof.mp4",
+      "media": "media/G01.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/G01.jpg",
+      "media_sha256": "1aa724015642d898a3bb033bc336b5ac179833da1eead139ed6e800df6780c6a",
+      "media_bytes": 595820
     },
     {
       "id": "G02",
@@ -1215,8 +1761,16 @@
       "duration": 12.0,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "motion-proof.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "motion-proof.mp4",
+      "media": "media/G02.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/G02.jpg",
+      "media_sha256": "c93b75757f5d20b7ff6fd4ab29b2362ecfc5b7601020a57485c6b112544cbc16",
+      "media_bytes": 551022
     },
     {
       "id": "G03",
@@ -1230,8 +1784,16 @@
       "duration": 12.0,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "motion-proof.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "motion-proof.mp4",
+      "media": "media/G03.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/G03.jpg",
+      "media_sha256": "018a9c5420d78bc3166ff10abf5de6b79c009d51d5f632d0efae811a86c27ecf",
+      "media_bytes": 366410
     },
     {
       "id": "Q17",
@@ -1245,8 +1807,16 @@
       "duration": 30.0,
       "width": 1920,
       "height": 1080,
-      "availability": "本地加载",
-      "file_hint": "poisson_30s_review.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "poisson_30s_review.mp4",
+      "media": "media/Q17.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/Q17.jpg",
+      "media_sha256": "e540d1b36907c02cc050dcf9e6d4ca11969698ada15642a17fbc4492f33bba37",
+      "media_bytes": 3653034
     },
     {
       "id": "Q18",
@@ -1260,8 +1830,16 @@
       "duration": 8.0,
       "width": 1920,
       "height": 1080,
-      "availability": "本地加载",
-      "file_hint": "opening.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "opening.mp4",
+      "media": "media/Q18.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/Q18.jpg",
+      "media_sha256": "b4d77b526910fda3cbd3d00cd19c8c2e3adc62f23974af453e88b57f19e4c915",
+      "media_bytes": 932855
     },
     {
       "id": "Q19",
@@ -1275,8 +1853,16 @@
       "duration": 7.0,
       "width": 1920,
       "height": 1080,
-      "availability": "本地加载",
-      "file_hint": "swing.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "swing.mp4",
+      "media": "media/Q19.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/Q19.jpg",
+      "media_sha256": "330061ebaa6341b41e3765e172030cbd4f8752d3beb31c174d511356cbea2b81",
+      "media_bytes": 782746
     },
     {
       "id": "Q20",
@@ -1290,8 +1876,16 @@
       "duration": 12.266667,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "draft-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "draft-silent.mp4",
+      "media": "media/Q20.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q20.jpg",
+      "media_sha256": "4b9c29d9d7a4956a83a017664f4eb04de6cdaa12c809536bd8cec45e21a21f8f",
+      "media_bytes": 1442186
     },
     {
       "id": "Q21",
@@ -1305,8 +1899,16 @@
       "duration": 15.5,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "proof-numeric.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "proof-numeric.mp4",
+      "media": "media/Q21.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q21.jpg",
+      "media_sha256": "ef18e3d3c9d04b41720ca996dccc12d624a132b3afa120d3044be9c7bb1ca90b",
+      "media_bytes": 785399
     },
     {
       "id": "Q22",
@@ -1320,8 +1922,16 @@
       "duration": 13.0,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "proof-weight.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "proof-weight.mp4",
+      "media": "media/Q22.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q22.jpg",
+      "media_sha256": "ef941dcdde14efa865b1b39d53a46765cff9b1351adfe6930bc0f8bdb5fb3885",
+      "media_bytes": 676100
     },
     {
       "id": "Q23",
@@ -1335,8 +1945,16 @@
       "duration": 179.4,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "pre-rounding-fix.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "pre-rounding-fix.mp4",
+      "media": "media/Q23.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q23.jpg",
+      "media_sha256": "125ca56fc010368529b712411bed3ee171d2b15a823f7821fe5d61c993172538",
+      "media_bytes": 5289308
     },
     {
       "id": "Q24",
@@ -1350,8 +1968,16 @@
       "duration": 24.866667,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "valuation-repair.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "valuation-repair.mp4",
+      "media": "media/Q24.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q24.jpg",
+      "media_sha256": "c1650587bac044f3d4b42726fa688e57d2d3b957069420e171617c302e0e9c1c",
+      "media_bytes": 1870981
     },
     {
       "id": "Q25",
@@ -1365,8 +1991,16 @@
       "duration": 13.0,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "proof-window.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "proof-window.mp4",
+      "media": "media/Q25.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q25.jpg",
+      "media_sha256": "a69601523ea59e7330d1532451c5e992b3fd874772d98577bd0ffba72ea014f0",
+      "media_bytes": 1198840
     },
     {
       "id": "Q26",
@@ -1380,8 +2014,16 @@
       "duration": 173.466667,
       "width": 1080,
       "height": 356,
-      "availability": "本地加载",
-      "file_hint": "subtitle-band.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "subtitle-band.mp4",
+      "media": "media/Q26.mp4",
+      "web_dimensions": [
+        960,
+        316
+      ],
+      "poster": "posters/Q26.jpg",
+      "media_sha256": "6b77394e00680ee2375612bcf660560e9a917c3047f62a672833cb774caaedd1",
+      "media_bytes": 3912174
     },
     {
       "id": "Q27",
@@ -1395,8 +2037,16 @@
       "duration": 13.0,
       "width": 960,
       "height": 540,
-      "availability": "本地加载",
-      "file_hint": "proof-13s.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "proof-13s.mp4",
+      "media": "media/Q27.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/Q27.jpg",
+      "media_sha256": "b7907dd62e35addef9ac125ed9261c25e3e3012cda0f722c008ea279706fda1a",
+      "media_bytes": 698500
     },
     {
       "id": "Q28",
@@ -1410,8 +2060,16 @@
       "duration": 105.566667,
       "width": 960,
       "height": 540,
-      "availability": "本地加载",
-      "file_hint": "rough-v1.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "rough-v1.mp4",
+      "media": "media/Q28.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/Q28.jpg",
+      "media_sha256": "b5e19d577b82686412a6001afbd1645b7db88e6d8d68c977b48451acccec4a1f",
+      "media_bytes": 4155022
     },
     {
       "id": "Q29",
@@ -1425,8 +2083,16 @@
       "duration": 105.566667,
       "width": 1920,
       "height": 1080,
-      "availability": "本地加载",
-      "file_hint": "before-color-回本以后-静音.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "before-color-回本以后-静音.mp4",
+      "media": "media/Q29.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/Q29.jpg",
+      "media_sha256": "2e37edecced4d465afacfe51f3b96c8ee1afa1e14940a28e975bd86c53ffd98e",
+      "media_bytes": 3992135
     },
     {
       "id": "Q30",
@@ -1440,8 +2106,16 @@
       "duration": 68.366667,
       "width": 1080,
       "height": 1920,
-      "availability": "本地加载",
-      "file_hint": "final-with-audio.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "final-with-audio.mp4",
+      "media": "media/Q30.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q30.jpg",
+      "media_sha256": "7df4245366f909ef1b7e13f1772483bbf59bb943eea3025cd02092425de63f27",
+      "media_bytes": 3295212
     },
     {
       "id": "Q31",
@@ -1455,8 +2129,16 @@
       "duration": 11.0,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "proof.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "proof.mp4",
+      "media": "media/Q31.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q31.jpg",
+      "media_sha256": "588bf463a7e0f123f4d351060f9a4140950c72c434fe7bcd999b5e8d210c3ef1",
+      "media_bytes": 334888
     },
     {
       "id": "Q32",
@@ -1470,8 +2152,16 @@
       "duration": 63.1,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "proof.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "proof.mp4",
+      "media": "media/Q32.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q32.jpg",
+      "media_sha256": "e0bccb9bc0a34d8a9387f4a525f47882ace3b090c2642fbeef0a5b1d706de180",
+      "media_bytes": 807471
     },
     {
       "id": "Q33",
@@ -1485,8 +2175,16 @@
       "duration": 12.3,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "motion-proof.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "motion-proof.mp4",
+      "media": "media/Q33.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q33.jpg",
+      "media_sha256": "44c1a5e18f063dd3cfd1e76b7b5e337dcbda7cacdb4ff9a8ebcdb588e18ef86c",
+      "media_bytes": 564368
     },
     {
       "id": "Q34",
@@ -1500,8 +2198,16 @@
       "duration": 13.0,
       "width": 540,
       "height": 960,
-      "availability": "本地加载",
-      "file_hint": "proof.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "proof.mp4",
+      "media": "media/Q34.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/Q34.jpg",
+      "media_sha256": "2460e7e437e13a0dc81d98d6c0378e788431d09309e2e3d3171f096ba307f795",
+      "media_bytes": 203949
     },
     {
       "id": "Q35",
@@ -1515,8 +2221,16 @@
       "duration": 12.0,
       "width": 1920,
       "height": 1080,
-      "availability": "本地加载",
-      "file_hint": "proof.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "proof.mp4",
+      "media": "media/Q35.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/Q35.jpg",
+      "media_sha256": "18898a4e7a75c8cc071b271eaf72b0f5764ba3104eb1a60d4c27118cb116c156",
+      "media_bytes": 1223870
     },
     {
       "id": "R01",
@@ -1530,8 +2244,16 @@
       "duration": 300.0,
       "width": 960,
       "height": 540,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R01.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R01.jpg",
+      "media_sha256": "7d7bc24a5272fd7bc18ac5dd549d1dd630523106a60b198af022c2882716991d",
+      "media_bytes": 11092826
     },
     {
       "id": "R02",
@@ -1545,8 +2267,16 @@
       "duration": 130.233333,
       "width": 540,
       "height": 960,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R02.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/R02.jpg",
+      "media_sha256": "d5235c8dc20414116a0e3978ada0d2528ab3cbf257fbad11575cf0bc6bf70268",
+      "media_bytes": 5628772
     },
     {
       "id": "R03",
@@ -1560,8 +2290,16 @@
       "duration": 170.5,
       "width": 960,
       "height": 540,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R03.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R03.jpg",
+      "media_sha256": "5989435c82ca65f34c0d7b3f743f2503358e6ff384bc3691c9578924ce667baa",
+      "media_bytes": 10229184
     },
     {
       "id": "R04",
@@ -1575,8 +2313,16 @@
       "duration": 130.0,
       "width": 960,
       "height": 540,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R04.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R04.jpg",
+      "media_sha256": "0d47c4bfcf4f8bdcc2878a4354ecab59f8af7b1b2692db443a595b7b1c632671",
+      "media_bytes": 6377757
     },
     {
       "id": "R05",
@@ -1590,8 +2336,16 @@
       "duration": 145.533333,
       "width": 960,
       "height": 540,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R05.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R05.jpg",
+      "media_sha256": "4d47ff62248ca45270265bd8d89d362ef50d7603cd44b4375e06f1068b7bced2",
+      "media_bytes": 3462548
     },
     {
       "id": "R06",
@@ -1605,8 +2359,16 @@
       "duration": 132.0,
       "width": 540,
       "height": 960,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R06.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/R06.jpg",
+      "media_sha256": "b722c1ba461aa2c6eeb6c280f76e6473141cccdd7838eec6ff95ea30937ada20",
+      "media_bytes": 10727704
     },
     {
       "id": "R07",
@@ -1620,8 +2382,16 @@
       "duration": 165.7,
       "width": 960,
       "height": 540,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R07.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R07.jpg",
+      "media_sha256": "b1d8b3f92a9f2c705858276e99990518350b1c5ee133589794013225a83f30ae",
+      "media_bytes": 7581874
     },
     {
       "id": "R08",
@@ -1635,8 +2405,16 @@
       "duration": 115.6,
       "width": 960,
       "height": 540,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R08.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R08.jpg",
+      "media_sha256": "39a8d1c6d361353e3819d3e15ae13c5e6ef9976799bde51f76d3bfe1021c304f",
+      "media_bytes": 5795835
     },
     {
       "id": "R09",
@@ -1650,8 +2428,16 @@
       "duration": 143.333333,
       "width": 960,
       "height": 540,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R09.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R09.jpg",
+      "media_sha256": "6b020a9924d89826ffd69b20f555f71ef60fbee06a982299fd8bbd18916dc558",
+      "media_bytes": 5639360
     },
     {
       "id": "R10",
@@ -1665,8 +2451,16 @@
       "duration": 170.7,
       "width": 960,
       "height": 540,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R10.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R10.jpg",
+      "media_sha256": "02039704988e6fb65c092d91ee858cdd83f8e0905272ad123c4c10b1f56b0d16",
+      "media_bytes": 9691774
     },
     {
       "id": "R11",
@@ -1680,8 +2474,16 @@
       "duration": 130.5,
       "width": 960,
       "height": 540,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R11.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R11.jpg",
+      "media_sha256": "13d32e308a357706b519ba3b0bc8a19fc6696c92d58b0e478c9e7e483a597027",
+      "media_bytes": 2195346
     },
     {
       "id": "R12",
@@ -1695,8 +2497,16 @@
       "duration": 99.033333,
       "width": 540,
       "height": 960,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R12.mp4",
+      "web_dimensions": [
+        540,
+        960
+      ],
+      "poster": "posters/R12.jpg",
+      "media_sha256": "b1ca7d5abb77871c49626da17c9198619891162989563fe9081593c2b08a96e3",
+      "media_bytes": 5957364
     },
     {
       "id": "R13",
@@ -1710,8 +2520,16 @@
       "duration": 146.0,
       "width": 960,
       "height": 540,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R13.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R13.jpg",
+      "media_sha256": "b16a890f695a0a46b43f13b11a3b481253765f6240a32511d1084e0d4f2a1032",
+      "media_bytes": 7745865
     },
     {
       "id": "R14",
@@ -1725,8 +2543,16 @@
       "duration": 145.833333,
       "width": 960,
       "height": 540,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R14.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R14.jpg",
+      "media_sha256": "e485873485d55a4b2df8cb2e4608fbf1c645845b05b4a341bc05d05805e7ec80",
+      "media_bytes": 2892275
     },
     {
       "id": "R15",
@@ -1740,8 +2566,16 @@
       "duration": 154.5,
       "width": 960,
       "height": 540,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R15.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R15.jpg",
+      "media_sha256": "d5a9546a4431ec65e950f6ea8208bb34d9badd6ace24d6fd83ece1ca34d8da7b",
+      "media_bytes": 4613724
     },
     {
       "id": "R16",
@@ -1755,8 +2589,16 @@
       "duration": 5.133008,
       "width": 960,
       "height": 542,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R16.mp4",
+      "web_dimensions": [
+        960,
+        542
+      ],
+      "poster": "posters/R16.jpg",
+      "media_sha256": "4c90ed2c6d9560fd4c984f97f8bdd6b0af6a7d18540bced60777dd16ee755c86",
+      "media_bytes": 2496811
     },
     {
       "id": "R17",
@@ -1770,8 +2612,16 @@
       "duration": 18.0,
       "width": 960,
       "height": 720,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R17.mp4",
+      "web_dimensions": [
+        960,
+        720
+      ],
+      "poster": "posters/R17.jpg",
+      "media_sha256": "386055c93142e5ce2f845d67709ba5467b58aba7beed89ff5a2c07c75efe484f",
+      "media_bytes": 6600233
     },
     {
       "id": "R18",
@@ -1785,8 +2635,16 @@
       "duration": 5.666667,
       "width": 960,
       "height": 542,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R18.mp4",
+      "web_dimensions": [
+        960,
+        542
+      ],
+      "poster": "posters/R18.jpg",
+      "media_sha256": "cc1ad7fa758ded0e39aaa1e3916ffaab77430e7452f8e3ecc0d71d7afa885459",
+      "media_bytes": 3840390
     },
     {
       "id": "R19",
@@ -1800,8 +2658,16 @@
       "duration": 6.333333,
       "width": 960,
       "height": 542,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R19.mp4",
+      "web_dimensions": [
+        960,
+        542
+      ],
+      "poster": "posters/R19.jpg",
+      "media_sha256": "7bfd84762f066bd60b0bf847d86c2cd48b4d6665ae5a2aa5d91b92e56f19db4f",
+      "media_bytes": 2041558
     },
     {
       "id": "R20",
@@ -1815,8 +2681,16 @@
       "duration": 162.6,
       "width": 960,
       "height": 540,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R20.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R20.jpg",
+      "media_sha256": "28fc64cd4aab89d70029fe352ef94f251318320734ea91d91e97c8c9b1b0b8cd",
+      "media_bytes": 6679445
     },
     {
       "id": "R21",
@@ -1830,8 +2704,16 @@
       "duration": 157.433333,
       "width": 1920,
       "height": 1080,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "source.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "source.mp4",
+      "media": "media/R21.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R21.jpg",
+      "media_sha256": "45e9fa37be372f164d81a5ea8829ef9847575eb32d7f806a547bc9ed8b8530ef",
+      "media_bytes": 9389055
     },
     {
       "id": "R22",
@@ -1845,8 +2727,16 @@
       "duration": 110.248005,
       "width": 1920,
       "height": 1080,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "dy01_self_discipline.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "dy01_self_discipline.mp4",
+      "media": "media/R22.mp4",
+      "web_dimensions": [
+        1920,
+        1080
+      ],
+      "poster": "posters/R22.jpg",
+      "media_sha256": "56e0d2ced3c6828d03313220e1bc777177f4d18cc6cc7aa5a2e4b69dfa20fe0e",
+      "media_bytes": 5349694
     },
     {
       "id": "R23",
@@ -1860,8 +2750,16 @@
       "duration": 130.517007,
       "width": 3840,
       "height": 2160,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "dy02_first_love.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "dy02_first_love.mp4",
+      "media": "media/R23.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R23.jpg",
+      "media_sha256": "91a759a4c10b0baf6a3de40218b83721fa746e29c9cce980eb384f87d2ca55ba",
+      "media_bytes": 7724839
     },
     {
       "id": "R24",
@@ -1875,8 +2773,16 @@
       "duration": 130.008005,
       "width": 1920,
       "height": 1080,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "dy03_yingshen.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "dy03_yingshen.mp4",
+      "media": "media/R24.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R24.jpg",
+      "media_sha256": "9d7474d671255a759a3f0fd7d8e198c809bc0b9f081f28c10872b63a23bf50f5",
+      "media_bytes": 9572855
     },
     {
       "id": "R25",
@@ -1890,8 +2796,16 @@
       "duration": 151.672993,
       "width": 1920,
       "height": 1080,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "dy04_ai_origin.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "dy04_ai_origin.mp4",
+      "media": "media/R25.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/R25.jpg",
+      "media_sha256": "d7d3eae73e2f3ff570e0d6ce1fd5606ca23ce07e4be1e3ea04106901181f4ca3",
+      "media_bytes": 5929115
     },
     {
       "id": "R26",
@@ -1905,8 +2819,16 @@
       "duration": 485.266016,
       "width": 1080,
       "height": 1920,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-silent.mp4",
+      "media": "media/R26.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "poster": "posters/R26.jpg",
+      "media_sha256": "e723cf3d21947c097a561994cb1aa6e283785839bf7fa2ba3c3dfab4fb53cd45",
+      "media_bytes": 48019463
     },
     {
       "id": "R27",
@@ -1920,8 +2842,16 @@
       "duration": 182.233333,
       "width": 2160,
       "height": 2880,
-      "availability": "原作者链接 / 本地加载",
-      "file_hint": "preview-browser-silent.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "preview-browser-silent.mp4",
+      "media": "media/R27.mp4",
+      "web_dimensions": [
+        960,
+        1280
+      ],
+      "poster": "posters/R27.jpg",
+      "media_sha256": "824fccda0d6e28e4f91fe36ba2bca95d403ae098606d0231bac430be4a3ae394",
+      "media_bytes": 22367145
     },
     {
       "id": "X01",
@@ -1935,8 +2865,16 @@
       "duration": 349.933333,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "2026-10-03_04.28.40_Winhao学AI_Vibe知识大赏_6步做出知识科普视频.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2026-10-03_04.28.40_Winhao学AI_Vibe知识大赏_6步做出知识科普视频.mp4",
+      "media": "media/X01.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/X01.jpg",
+      "media_sha256": "101d4e797097637542bcf36402986af38f88b3815e107e310d3bc55cd5c763bc",
+      "media_bytes": 10917730
     },
     {
       "id": "X02",
@@ -1950,8 +2888,16 @@
       "duration": 316.441542,
       "width": 720,
       "height": 958,
-      "availability": "本地加载",
-      "file_hint": "2026-10-06_01.29.24_艺雨YiLight_同济博二_如何用代码做视频.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2026-10-06_01.29.24_艺雨YiLight_同济博二_如何用代码做视频.mp4",
+      "media": "media/X02.mp4",
+      "web_dimensions": [
+        720,
+        958
+      ],
+      "poster": "posters/X02.jpg",
+      "media_sha256": "d7268686e3dfdf20084da93b66237973bfe7f25e98dcc772a9b50cae9eff7f83",
+      "media_bytes": 8237328
     },
     {
       "id": "X03",
@@ -1965,8 +2911,16 @@
       "duration": 35.4,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "2026-10-06_05.11.08_小风AI工坊_475个Opus_5_5作品，连提示词都给你了！.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2026-10-06_05.11.08_小风AI工坊_475个Opus_5_5作品，连提示词都给你了！.mp4",
+      "media": "media/X03.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "poster": "posters/X03.jpg",
+      "media_sha256": "a44ebb37ced65884e47ed4d6271c21f08cc3804f9cbfb1f97090fbd2d61d2d03",
+      "media_bytes": 4935284
     },
     {
       "id": "X04",
@@ -1980,8 +2934,16 @@
       "duration": 8.962902,
       "width": 720,
       "height": 1280,
-      "availability": "本地加载",
-      "file_hint": "2026-09-27_07.46.32_MINIGOUKU_现实偏移_Ivan_Sinelin.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2026-09-27_07.46.32_MINIGOUKU_现实偏移_Ivan_Sinelin.mp4",
+      "media": "media/X04.mp4",
+      "web_dimensions": [
+        720,
+        1280
+      ],
+      "poster": "posters/X04.jpg",
+      "media_sha256": "b160bc485c272eb1354477c334b99b7d6b26f9f719be097b55c400790ca39cc7",
+      "media_bytes": 2156204
     },
     {
       "id": "X05",
@@ -1995,8 +2957,16 @@
       "duration": 48.084,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "2025-07-25_10.09.25_视力不好的SKY文_整点儿摄影节奏_RAINY_NIGHT.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2025-07-25_10.09.25_视力不好的SKY文_整点儿摄影节奏_RAINY_NIGHT.mp4",
+      "media": "media/X05.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/X05.jpg",
+      "media_sha256": "285b9688f437fb20744d1ad35d7b4effeb31e66be5990a9bab5d1165ef7a1713",
+      "media_bytes": 5674177
     },
     {
       "id": "X06",
@@ -2010,8 +2980,16 @@
       "duration": 85.2,
       "width": 960,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "2025-10-21_03.46.58_reyll_kyoto_独自旅行的日子.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2025-10-21_03.46.58_reyll_kyoto_独自旅行的日子.mp4",
+      "media": "media/X06.mp4",
+      "web_dimensions": [
+        960,
+        720
+      ],
+      "poster": "posters/X06.jpg",
+      "media_sha256": "d0ff9428ceea9da10b54e7c6a549b6ef9cb7941ae0fc9adbc2364745d2d3826e",
+      "media_bytes": 9569349
     },
     {
       "id": "X07",
@@ -2025,8 +3003,16 @@
       "duration": 187.136,
       "width": 960,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "2026-04-06_23.03.53_text1997_空间越窄，思念越阔.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2026-04-06_23.03.53_text1997_空间越窄，思念越阔.mp4",
+      "media": "media/X07.mp4",
+      "web_dimensions": [
+        960,
+        720
+      ],
+      "poster": "posters/X07.jpg",
+      "media_sha256": "a1a74c2d1e2ffa27b9fda51554c6c0b42dedd5468758b21d36c9639396bfb84f",
+      "media_bytes": 9895164
     },
     {
       "id": "X08",
@@ -2040,8 +3026,16 @@
       "duration": 19.3,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "2026-04-13_06.30.48_Sso93_69dcc5d80000000022002d33.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2026-04-13_06.30.48_Sso93_69dcc5d80000000022002d33.mp4",
+      "media": "media/X08.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "poster": "posters/X08.jpg",
+      "media_sha256": "289ac37c0b1a93ef443b002d1a796d18b03000fd3a0ac9f7f28a396bad902ae2",
+      "media_bytes": 6720458
     },
     {
       "id": "X09",
@@ -2055,8 +3049,16 @@
       "duration": 6.479773,
       "width": 960,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "2026-09-23_12.03.17_零石麻_请坐.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2026-09-23_12.03.17_零石麻_请坐.mp4",
+      "media": "media/X09.mp4",
+      "web_dimensions": [
+        960,
+        720
+      ],
+      "poster": "posters/X09.jpg",
+      "media_sha256": "6faa81277f15a6f78227daa631a8de09837866836ce281be18cb8610f92d326b",
+      "media_bytes": 730768
     },
     {
       "id": "X10",
@@ -2070,8 +3072,16 @@
       "duration": 289.1889,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "2024-12-25_04.01.17_咖喱元宵_如果用坂本龙一的歌来剪我的日本之旅.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2024-12-25_04.01.17_咖喱元宵_如果用坂本龙一的歌来剪我的日本之旅.mp4",
+      "media": "media/X10.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/X10.jpg",
+      "media_sha256": "f46142e8db0aa754b359c5307dd3c86175d43195e062ae905258f412f06fb37f",
+      "media_bytes": 9666872
     },
     {
       "id": "X11",
@@ -2085,8 +3095,16 @@
       "duration": 16.066757,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "2026-03-06_11.10.30_CR_Cho_东京日本旅行vlog这样剪.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2026-03-06_11.10.30_CR_Cho_东京日本旅行vlog这样剪.mp4",
+      "media": "media/X11.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "poster": "posters/X11.jpg",
+      "media_sha256": "85822de292e123968477622c1c4e14073a3597fb7e642e1b7de0d8e9581c3da3",
+      "media_bytes": 5928926
     },
     {
       "id": "X12",
@@ -2100,8 +3118,16 @@
       "duration": 28.885333,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "2026-07-27_05.41.53_Hill_Chang_《Walk_and_Shoot_in_Japan》.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2026-07-27_05.41.53_Hill_Chang_《Walk_and_Shoot_in_Japan》.mp4",
+      "media": "media/X12.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/X12.jpg",
+      "media_sha256": "205b77d0cb57fe014e6582b9ecf26a81bdf4c7f127674453c5dc89a7249838e5",
+      "media_bytes": 3429430
     },
     {
       "id": "X13",
@@ -2115,8 +3141,16 @@
       "duration": 24.126667,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "2026-09-23_08.18.13_耐_旅行碎片就这样剪_超简单！.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2026-09-23_08.18.13_耐_旅行碎片就这样剪_超简单！.mp4",
+      "media": "media/X13.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "poster": "posters/X13.jpg",
+      "media_sha256": "e9366a266c02b23ef841fbace042e21a23d4fad8d224c4aa6621ae1760a6926a",
+      "media_bytes": 9503168
     },
     {
       "id": "X14",
@@ -2130,8 +3164,16 @@
       "duration": 41.866667,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "2026-09-29_05.46.28_Start_这次该我勇闯日本了.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2026-09-29_05.46.28_Start_这次该我勇闯日本了.mp4",
+      "media": "media/X14.mp4",
+      "web_dimensions": [
+        960,
+        540
+      ],
+      "poster": "posters/X14.jpg",
+      "media_sha256": "9749162977c5c7548e6b07094a45be5fe8a0baa81c552cc46252613546cfc73a",
+      "media_bytes": 5191683
     },
     {
       "id": "X15",
@@ -2145,8 +3187,16 @@
       "duration": 17.733333,
       "width": 1280,
       "height": 720,
-      "availability": "本地加载",
-      "file_hint": "2025-11-08_23.01.04_桃几Hazelpeach_日本旅拍_不是电影感_是剪辑感.mp4"
+      "availability": "在线播放 / 直接下载",
+      "file_hint": "2025-11-08_23.01.04_桃几Hazelpeach_日本旅拍_不是电影感_是剪辑感.mp4",
+      "media": "media/X15.mp4",
+      "web_dimensions": [
+        1280,
+        720
+      ],
+      "poster": "posters/X15.jpg",
+      "media_sha256": "73de4d98b9549c27eac85938b7543d70baefe4e315c6e10e84fe163ef75241e1",
+      "media_bytes": 4349060
     }
   ],
   "counts": {
@@ -2159,5 +3209,6 @@
     "教程与旅行参考": 15
   },
   "scope": "本地已识别的完整成片、独立样片、组件测试、对照片和下载参考。音轨/码率副本合并；分段编码、镜头素材、缓存和不相关下载不计为独立样片。",
-  "online_media_count": 35
+  "online_media_count": 139,
+  "distribution": "User-requested public silent study copies; original authors retain third-party rights; not production reuse licenses."
 }
