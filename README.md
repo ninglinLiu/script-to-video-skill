@@ -9,6 +9,8 @@ python scripts/reference_study.py show --route pixel-scene-map
 python scripts/reference_study.py prepare --ref R26 --input /path/to/source.mp4 --clip S1
 ```
 
+分别交给制作 Agent 的完整任务提示词：[A · 凯撒 × 粒子字与连续场景](references/reference-study-20261029/prompts/caesar-particle.txt) · [B · 凯撒 × 像素场景与地图剪辑](references/reference-study-20261029/prompts/caesar-pixel.txt)。两条任务沿用同一份约106秒凯撒改编稿，把动画差异单独比较，并要求成片后固化可执行Skill；它们是待执行任务，尚未代表成片完成。
+
 这是一个包含制作指令、脚本、素材和案例的 **Agent Skill**，需要能执行工具的 Agent 及视频运行环境。现有案例可复用；新文章的稳定生产、8–10分钟长片和跨模型复现尚未整体验收。详见[任务完成度、环境依赖与换模型说明](references/runtime-and-portability.md)。
 
 **新 Agent 从这里开始：[迁移完整工程并审看整片](references/executable-production.md)。**
