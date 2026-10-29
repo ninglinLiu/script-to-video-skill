@@ -56,3 +56,12 @@ python scripts/experience.py check-use --receipt /path/to/episode/plans/experien
 只有新的实际反馈或修复证据才更新卡；把观察、制作方建议和用户认可分开。失败反例保留，新增例外时不抹去旧范围。通用规则留在卡，具体项目参数留在工程。变更卡正文后更新索引哈希，运行`python scripts/experience.py validate`和检索回归检查。
 
 来源索引仅在追溯时读取；包含未解决的问题，不把全部历史建议写成已证实的成功配方。主创模型采用用户选择的当前高能力模型；其他模型的可移植性测试不成为正常制作的前置阻塞。
+
+
+## 路线关联的反思资产
+
+`python scripts/experience.py select --stage plan --route pixel-scene-map`会同时返回用户评价摘要及对应经验卡；不依赖Agent恰好输入“背景图”等投诉词。路线名未知会报告，而不是默认为通过。已有路线包括pixel-scene-map、anchor-art、poisson-cinema、chapter-01、blackgold、component-kits、kelly-test、poisson-original。路线只用于找相关历史，不能代替当前选型。
+
+`python scripts/experience.py reflection`只列简表；加R01等ID返回具体证据、观察范围、视频路径与区间。未捆绑原片的记录不会虚构播放链接。案例JSON是单一事实源，网页由build_reflections.py生成。新反馈优先修订相关案例/卡片，再更新索引哈希；不要把聊天逐条追加进入口。
+
+路线摘要、经验记录与回归测试不构成硬性审美门禁；调用者可绕过工具，Markdown也不能保证理解。需要独立验证时使用evals/evals.json和实际工具轨迹，未执行不能称跨模型通过。

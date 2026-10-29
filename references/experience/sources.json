@@ -188,6 +188,13 @@
       "files": [
         "references/executable-production.md"
       ]
+    },
+    {
+      "id": "reflection-user-feedback-20261029",
+      "kind": "user-feedback-and-scoped-artifact-observation",
+      "label": "用户确认像素街区与价签之外为失败案例；关联既有独立复测反馈",
+      "extract": "references/experience/reflections.json",
+      "scope": "具体案例内分别标注用户评价、制作方自述、源码与画面观察；不附私有参考，不推广为所有风格失败。"
     }
   ]
 }

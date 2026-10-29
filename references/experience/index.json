@@ -27,8 +27,8 @@
         "user-content-feedback",
         "chapter-review"
       ],
-      "chars": 388,
-      "sha256": "ba0c2a290d0a266002ef2e0be3413baeb800e91bcd8d57b7136b9d34ff0cdb0a"
+      "chars": 431,
+      "sha256": "a2bd2bbb4ec312b03d2fd4aae64d343e475db0558d8124acecd6278afc580a79"
     },
     {
       "id": "E02",
@@ -534,6 +534,84 @@
       ],
       "chars": 483,
       "sha256": "1a17b1f227edf51e6345405db86b94b83a7976550b14087672e9e8192622fa3c"
+    },
+    {
+      "id": "E20",
+      "title": "精细背景加贴纸，仍不是场景动画",
+      "stages": [
+        "plan",
+        "storyboard",
+        "review",
+        "repair"
+      ],
+      "signals": [
+        "LifeOS",
+        "像素街区",
+        "贴纸",
+        "背景图",
+        "裙子",
+        "价签之外",
+        "外套",
+        "主体动画",
+        "动画不流畅"
+      ],
+      "card": "references/experience/cards/E20.md",
+      "sources": [
+        "reflection-user-feedback-20261029"
+      ],
+      "chars": 544,
+      "sha256": "95cb6a92640b180fb20a0a86d9fe5ecbafbe174723b69664976d4847fcf9241b"
+    },
+    {
+      "id": "E21",
+      "title": "迁移没有保住原镜头的视觉质量",
+      "stages": [
+        "plan",
+        "storyboard",
+        "review",
+        "repair"
+      ],
+      "signals": [
+        "队列",
+        "queue",
+        "poisson-cinema",
+        "recipe",
+        "参数化",
+        "小点",
+        "PPT",
+        "动画质量",
+        "纸面"
+      ],
+      "card": "references/experience/cards/E21.md",
+      "sources": [
+        "reflection-user-feedback-20261029"
+      ],
+      "chars": 509,
+      "sha256": "5d4360df6fb864339ca001798b28a09f6f4d825bbe37b7d86851fd067e3fff8d"
+    },
+    {
+      "id": "E22",
+      "title": "修Skill不等于当前Agent代做成片",
+      "stages": [
+        "plan",
+        "review",
+        "repair",
+        "delivery"
+      ],
+      "signals": [
+        "独立验证",
+        "DeepSeek",
+        "修Skill",
+        "独立Agent",
+        "代做",
+        "流水线"
+      ],
+      "card": "references/experience/cards/E22.md",
+      "sources": [
+        "reflection-user-feedback-20261029"
+      ],
+      "chars": 435,
+      "sha256": "bf15d9010e2e9a8fc3df963f797601811ecad2eb084934616558dd15c427e53a"
     }
   ]
 }

@@ -1,5 +1,7 @@
 # Script to Video · 视觉素材库与制作档案
 
+**维护更新：** [反思资产：两条场景动画失败与5条相关复盘](examples/reflections/index.html) · [Skill架构及开源方案对照](docs/architecture.md) · [实际文件树与体积](docs/repository-tree.md)。已有失败状态进入经验选路；没有将工程可运行写成审美通过。
+
 > **2026-10-29：用户已否决本版：动画不流畅，主要仍是背景图推拉、字幕/纸卡叠加和人物贴纸位移；不作为已验证的成片路线。**
 
 **LifeOS 路线的实际制作分支：[像素街区双画幅成片与三个连续实验](examples/pixel-scene-map/index.html)**。105.57秒固定凯撒稿，六张完整环境、独立人物/前景/道具、地图与相机配置；另有24秒第二内容在干净目录的复现测试。[可执行入口与边界](references/pixel-scene-map.md)。参考媒体现已按需提供；本版尚不代表1:1审美通过。

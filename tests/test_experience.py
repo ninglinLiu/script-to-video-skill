@@ -29,6 +29,47 @@ class ExperienceTests(unittest.TestCase):
     def test_no_match_does_not_invent_evidence(self):
         self.assertEqual(experience.select('repair', 'unmapped-zzzz-topic')['cases'], [])
 
+    def test_rejected_route_is_found_without_complaint_keywords(self):
+        result = experience.select('plan', route='pixel-scene-map')
+        self.assertEqual(result['reflections'][0]['id'], 'R01')
+        self.assertEqual(result['reflections'][0]['status'], 'user-rejected')
+        self.assertIn('E20', [c['id'] for c in result['cases']])
+        self.assertLessEqual(len(experience.encode(result)) + 1, 6500)
+
+    def test_budget_never_silently_drops_rejection(self):
+        result = experience.select('plan', route='pixel-scene-map', max_chars=2000)
+        self.assertEqual(result['reflections'][0]['status'], 'user-rejected')
+        self.assertLessEqual(len(experience.encode(result)) + 1, 2000)
+
+    def test_confirmed_dress_alias_finds_anchor_not_new_drawing(self):
+        result = experience.select('repair', '那个制作裙子的失败样片')
+        self.assertIn('R02', [c['id'] for c in result['reflections']])
+        self.assertEqual(result['cases'][0]['id'], 'E20')
+
+    def test_original_preference_is_not_erased_by_failed_adaptation(self):
+        original = experience.select('plan', route='poisson-original')
+        adaptation = experience.select('plan', route='poisson-cinema')
+        self.assertEqual(original['reflections'][0]['status'], 'mixed-feedback')
+        self.assertEqual(adaptation['reflections'][0]['status'], 'user-rejected')
+
+    def test_missing_media_is_not_fabricated(self):
+        self.assertNotIn('media', experience.reflection('R04'))
+        self.assertTrue(experience.reflection('R04')['observation_scope'])
+
+    def test_unknown_route_does_not_claim_success(self):
+        with self.assertRaisesRegex(ValueError, 'Unknown reflection route'):
+            experience.select('plan', route='new-untested-route')
+        with self.assertRaises(ValueError):
+            experience.reflection('R99')
+
+    def test_full_checkout_reflection_evidence_paths(self):
+        # Distribution smoke test; skip absent media on deliberately sparse installs.
+        import subprocess
+        tracked = set(subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0'))
+        for case in experience.reflections():
+            for rel in case['evidence'] + [case[k] for k in ('media', 'poster') if k in case]:
+                self.assertTrue((ROOT / rel).is_file() or rel in tracked, rel)
+
     def test_budget_defers_whole_cards(self):
         result = experience.select('repair', '字幕 配音 修复 重叠 字体', limit=5, max_chars=2000)
         self.assertLessEqual(len(experience.encode(result)) + 1, 2000)

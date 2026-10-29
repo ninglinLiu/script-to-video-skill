@@ -17,17 +17,19 @@ description: 将中文文章或研究选题改编为知识视频。按项目选�
 
 ```sh
 python scripts/experience.py select --stage plan --receipt /path/to/episode/plans/experience-plan.json
+# 选过的路线要带出历史用户评价；不是只检索泛化规则
+python scripts/experience.py select --stage plan --route pixel-scene-map
+python scripts/experience.py reflection R01
 python scripts/experience.py select --stage repair --query "字幕孤字，修后更挤" --receipt /path/to/episode/plans/experience-repair.json
 ```
 
-默认最多三张卡，按需追溯来源。首次使用看[经验应用方法](references/experience/usage.md)，为每个返回条目记录具体应用或不适用理由、保留条件和验证区间，运行`check-use`。不要通读整个经验库、展厅或上游工程。记录检查不证明模型理解或作品质量；实际画面仍须验证。
+默认最多三张卡、6500字符，按需追溯来源。路线与症状会同时返回相关反思摘要；完整案例按ID读，不读整份目录。被否决版本只作研究/取材，不推荐为已通过模板；旧技术检查不能覆盖用户否决。首次使用看[经验应用方法](references/experience/usage.md)，为每个返回条目记录具体应用或不适用理由、保留条件和验证区间，运行`check-use`。不要通读整个经验库、展厅或上游工程。记录检查不证明模型理解或作品质量；实际画面仍须验证。
 
 ## 制作主线
 
 新项目先走[完整工程迁移入口](references/executable-production.md)。明确选择一个已确认方向的完整案例，带着字幕、构图、解释镜头一起改编；不按关键词自动选最容易运行的 kit。
 
-**用户选《泊松过程》的黑金空间＋浅纸推导风格时，读取[可执行镜头分支](references/poisson-cinema.md)，使用 `--source poisson-cinema`。** 该分支把原图、人物、字体与七类实际解释动作复制进独立工程；新 Agent 主要填写本片数据与 cue 绑定，无需从空画布重写。它明确限于横屏，不能拿测试样例充当文章内容或真实旁白。其它文章/风格仍按实际需求选源，不统一套用这个分支。
-
+风格与来源按当前任务选择；选定路线后查下方路由表。原版被喜欢不等于其数据化分支跨文章已通过。
 ```sh
 python scripts/start_episode.py --source chapter-01 --episode /path/to/new-episode
 ```
@@ -52,16 +54,19 @@ python scripts/start_episode.py --source chapter-01 --episode /path/to/new-episo
 
 ## 仅在相关时读取
 
-**LifeOS像素街区失败案例（用户已否决）：** 用户已否决本版：动画不流畅，主要仍是背景图推拉、字幕/纸卡叠加和人物贴纸位移；不作为已验证的成片路线。 仅供诊断与取材，不作为默认成片来源。原技术入口： 读[像素街区生产入口](references/pixel-scene-map.md)，运行 `scripts/pixel_scene.py prepare/render`。它带完整环境、独立人物/前景/道具、地图与相机配置、两种画幅及第二内容示例；`scripts/pixel_inspect.py`检查编码字幕与整片序列。该分支限于已提供的街区资产与镜头语法，不把跨配置运行等同于稳定审美或独立模型通过。
-
-用户明确选择爽哥说的粒子字/实体解释或 LifeOS 的像素场景/地图剪辑时，先执行 `python scripts/reference_study.py show --route particle-document` 或 `--route pixel-scene-map`。它只读取对应[观察与制作计划](references/reference-study-20261029/plan.json)及重点时间段，不是已验证的成片模板。随后执行 `python scripts/reference_study.py fetch --route <同一route>`，得到有哈希的真实MP4、连续帧和 `bundle.json` 中的动作阶段。优先片段默认只占所选路线的小包，完整clone不必重复下载。先连续观看并按帧定位遮挡、运动路径和跨镜锚点，再做同构镜头；没有视觉工具时明确报告未能观看，不把文字说明当作视觉验收。全片用 `--full` 按需取得。复现连续镜头后再改编；不能回退到只换配色的组件测试。详见[制作路径](references/reference-study-20261029/production-route.txt)。
+先读被选路线的文档与关联反思，不同时打开全部路线。原始参考、失败改编、组件测试与候选成片不是同一种状态。
 
 | 情况 | 读取 |
 |---|---|
+| 像素街区 / LifeOS对标 | `experience.py select --stage plan --route pixel-scene-map`；R01已否决，见[分支边界](references/pixel-scene-map.md) |
+| 泊松空间风格与recipe | `experience.py select --stage plan --route poisson-cinema`；[镜头分支](references/poisson-cinema.md)，R04改编失败，不抹去原片方向 |
+| 爽哥说或LifeOS真实参考 | `reference_study.py show/fetch --route particle-document` 或 `pixel-scene-map`，见[制作路径](references/reference-study-20261029/production-route.txt)；fetch按需给真实MP4、连续帧、动作阶段及哈希，先看运动，不能只读描述 |
+| 背景+贴纸、PPT、旧失败片、独立复测 | [反思入口](references/experience/reflections.md)，按ID取视频时间段及观察范围 |
+| 维护Skill架构或大库加载 | [现成方案对照与架构](docs/architecture.md)、[实际文件树](docs/repository-tree.md)，普通做片不必读 |
 | 具体审看、数字与布局规则 | [生产规范](references/production.md) |
 | 长章节或长片 | [章节与素材组织](references/long-form.md) |
 | 选配乐、混音、音源不完整 | [声音与素材](references/audio-and-materials.md)，检索E14 |
-| 经验未匹配或需人工浏览目录 | [19条经验目录](references/experience/casebook.md) |
+| 经验未匹配或需人工浏览目录 | [22条经验目录](references/experience/casebook.md) |
 | 安装、换模型、迁移机器、原任务完成度 | [运行环境与可移植性](references/runtime-and-portability.md) |
 
 这是Agent编排Skill。两篇开发、一篇独立验收及同文短长片、旁白修改、失败处理仍需完整验证；8–10分钟长片和跨模型稳定质量尚未证明。案例成功不推广为任意风格、文章或时长一次完美。

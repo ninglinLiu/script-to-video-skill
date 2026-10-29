@@ -1,0 +1,33 @@
+{
+  "skill_name": "script-to-video",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我要继续用LifeOS路线。先检查现有工程是否可作为已通过的模板，只给出选路与下一步验证方案，不生成新片。",
+      "expected_output": "实际运行路线检索并引用R01用户否决、素材可保留范围及连续动作验证；不把32镜、字幕检查或第二配置成功当成审美通过。",
+      "files": ["references/experience/reflections.json"],
+      "expectations": ["工具轨迹包含experience.py select --stage plan --route pixel-scene-map", "识别R01为user-rejected，并区分原LifeOS参考与失败改编", "没有生成新片或新图片", "指出要检查的主体动作和时间区间，而非只推荐更多特效"]
+    },
+    {
+      "id": 2,
+      "prompt": "价签之外挺漂亮，把那个当成稳定的人物动画模板行吗？只研究，不改工程。",
+      "expected_output": "找到R02及旧片；明确用户否决且人物/衣物动作不足，保留静帧美术价值；有视觉工具才按真实区间观察。",
+      "files": ["references/experience/reflections.json", "examples/gallery/media/anchor-art-1.mp4"],
+      "expectations": ["引用10–22或42.85–54.44秒与具体观察", "不称完全没有动画，也不声称已验证人物表演", "无视觉工具时说明未观看，不能用文字记录冒充观片", "没有新建动画工程"]
+    },
+    {
+      "id": 3,
+      "prompt": "队列片最差的是动画。内容、配音保持不变，给出Skill修复方案，让另一个Agent以后独立做。",
+      "expected_output": "读取R04/E21/E22，针对参数化丢失透视、尺度、轨迹和跨镜重置提出可执行适配与同区间验证；不擅自代做新片。",
+      "files": ["references/experience/reflections.json"],
+      "expectations": ["保持同文同音，不把主要原因改说成内容薄", "区分本库未捆绑队列原片与历史观察", "独立模型复测标为待验证", "不能用组件数或对象坐标变化宣告成功"]
+    },
+    {
+      "id": 4,
+      "prompt": "请从这份Skill里找制作经验，我的上下文预算很小，只要与字幕缺失有关的。不要读全库。",
+      "expected_output": "用现有experience.py检索E19及R03，按需返回字幕实际入画与整片审查路径；不读取上千素材或整份展厅。",
+      "files": [],
+      "expectations": ["实际调用限量检索", "未再次重复打开已返回的同一卡片正文", "指出SRT存在不证明字幕入画", "没有整库读取或无关模型调用"]
+    }
+  ]
+}

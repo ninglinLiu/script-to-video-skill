@@ -1,0 +1,2312 @@
+script-to-video-skill/
+├── assets/
+│   ├── film-tools/
+│   │   ├── CaptionProbe.tsx
+│   │   └── render.mjs
+│   ├── pixel-scene-map/
+│   │   ├── configs/
+│   │   │   ├── caesar.json
+│   │   │   ├── proof-l1.json
+│   │   │   ├── proof-l2.json
+│   │   │   ├── proof-l3.json
+│   │   │   └── second-content.json
+│   │   ├── fonts/
+│   │   │   ├── Noto-OFL.txt
+│   │   │   └── NotoSansSC-VF.ttf
+│   │   ├── layers/
+│   │   │   ├── actors.png
+│   │   │   ├── foreground.png
+│   │   │   └── props.png
+│   │   ├── plates/
+│   │   │   ├── archive.png
+│   │   │   ├── day.png
+│   │   │   ├── desk.png
+│   │   │   ├── interior.png
+│   │   │   ├── street.png
+│   │   │   └── waterfront.png
+│   │   ├── runtime/
+│   │   │   ├── vendor/
+│   │   │   │   ├── LICENSE-huashu.txt
+│   │   │   │   ├── engine.js
+│   │   │   │   └── util.js
+│   │   │   ├── index.html
+│   │   │   ├── package-lock.json
+│   │   │   ├── package.json
+│   │   │   ├── render.mjs
+│   │   │   └── scene-runtime.js
+│   │   ├── asset-guide.md
+│   │   └── provenance.json
+│   ├── poisson-cinema/
+│   │   ├── fixtures/
+│   │   │   ├── queue-film.json
+│   │   │   ├── queue-timeline.json
+│   │   │   ├── sampling-film.json
+│   │   │   └── sampling-timeline.json
+│   │   ├── reference-source/
+│   │   │   ├── core.js
+│   │   │   ├── film.js
+│   │   │   ├── scenes-a.js
+│   │   │   ├── scenes-b.js
+│   │   │   ├── scenes-c.js
+│   │   │   └── timing.js
+│   │   ├── runtime/
+│   │   │   ├── assets/
+│   │   │   │   ├── environment.png
+│   │   │   │   └── observer.png
+│   │   │   ├── core.js
+│   │   │   ├── index.html
+│   │   │   ├── original-silent.html
+│   │   │   ├── package-lock.json
+│   │   │   ├── package.json
+│   │   │   ├── recipes.js
+│   │   │   ├── render.mjs
+│   │   │   └── runtime.js
+│   │   ├── README.md
+│   │   ├── provenance.json
+│   │   └── validation.json
+│   ├── production-kit/
+│   │   ├── template/
+│   │   │   ├── src/
+│   │   │   │   ├── Film.tsx
+│   │   │   │   ├── entry.tsx
+│   │   │   │   └── motion.tsx
+│   │   │   ├── package-lock.json
+│   │   │   ├── package.json
+│   │   │   └── render.mjs
+│   │   ├── content.json
+│   │   ├── edit-plan.json
+│   │   └── registry.json
+│   ├── weilanx/
+│   │   ├── canvas/
+│   │   │   ├── lib/
+│   │   │   │   ├── fonts/
+│   │   │   │   │   ├── AlfaSlabOne-400.woff
+│   │   │   │   │   ├── Anton-400.woff
+│   │   │   │   │   ├── ArchivoBlack-400.woff
+│   │   │   │   │   ├── Bangers-400.woff
+│   │   │   │   │   ├── Caveat-600.woff
+│   │   │   │   │   ├── Cinzel-400.woff
+│   │   │   │   │   ├── Cinzel-700.woff
+│   │   │   │   │   ├── CormorantGaramond-500.woff
+│   │   │   │   │   ├── CormorantGaramond-500i.woff
+│   │   │   │   │   ├── CormorantGaramond-700.woff
+│   │   │   │   │   ├── EBGaramond-400.woff
+│   │   │   │   │   ├── EBGaramond-400i.woff
+│   │   │   │   │   ├── EBGaramond-600.woff
+│   │   │   │   │   ├── Exo2-800i.woff
+│   │   │   │   │   ├── GochiHand-400.woff
+│   │   │   │   │   ├── IMFellEnglish-400.woff
+│   │   │   │   │   ├── IMFellEnglish-400i.woff
+│   │   │   │   │   ├── Inter-var.woff
+│   │   │   │   │   ├── JosefinSans-700.woff
+│   │   │   │   │   ├── Kalam-700.woff
+│   │   │   │   │   ├── LICENSES.md
+│   │   │   │   │   ├── LXGWWenKai-500.woff
+│   │   │   │   │   ├── LibreBaskerville-400.woff
+│   │   │   │   │   ├── LibreBaskerville-700.woff
+│   │   │   │   │   ├── LilitaOne-400.woff
+│   │   │   │   │   ├── Marcellus-400.woff
+│   │   │   │   │   ├── NotoSansSC-500.woff
+│   │   │   │   │   ├── NotoSansSC-700.woff
+│   │   │   │   │   ├── NotoSansSC-800.woff
+│   │   │   │   │   ├── NotoSansSC-900.woff
+│   │   │   │   │   ├── NotoSansSC-sub.woff
+│   │   │   │   │   ├── NotoSerifJP-600.woff
+│   │   │   │   │   ├── NotoSerifSC-sub.woff
+│   │   │   │   │   ├── OFL.txt
+│   │   │   │   │   ├── PlayfairDisplay-400i.woff
+│   │   │   │   │   ├── PlayfairDisplay-700.woff
+│   │   │   │   │   ├── PlayfairDisplay-700i.woff
+│   │   │   │   │   ├── Poppins-600.woff
+│   │   │   │   │   ├── Poppins-700.woff
+│   │   │   │   │   ├── Poppins-800.woff
+│   │   │   │   │   ├── PressStart2P-400.woff
+│   │   │   │   │   ├── Righteous-400.woff
+│   │   │   │   │   ├── RobotoCondensed-var.woff
+│   │   │   │   │   ├── Rye-400.woff
+│   │   │   │   │   ├── UnifrakturMaguntia-400.woff
+│   │   │   │   │   ├── cmunrm.woff
+│   │   │   │   │   ├── cmunti.woff
+│   │   │   │   │   └── index.json
+│   │   │   │   ├── THREE_LICENSE.txt
+│   │   │   │   ├── brush.js
+│   │   │   │   ├── camera.js
+│   │   │   │   ├── chart.js
+│   │   │   │   ├── collage.js
+│   │   │   │   ├── diagram.js
+│   │   │   │   ├── finish.js
+│   │   │   │   ├── fonts.js
+│   │   │   │   ├── kit.js
+│   │   │   │   ├── media.js
+│   │   │   │   ├── medium.js
+│   │   │   │   ├── motion.js
+│   │   │   │   ├── paint.js
+│   │   │   │   ├── palettes.js
+│   │   │   │   ├── post.js
+│   │   │   │   ├── render.js
+│   │   │   │   ├── rig.js
+│   │   │   │   ├── rig_huashu.js
+│   │   │   │   ├── three.min.js
+│   │   │   │   ├── toon.js
+│   │   │   │   ├── typo.js
+│   │   │   │   ├── ui.js
+│   │   │   │   └── util.js
+│   │   │   ├── scenes/
+│   │   │   │   ├── 01_cave.js
+│   │   │   │   ├── 02_egypt.js
+│   │   │   │   ├── 03_greek.js
+│   │   │   │   ├── 04_roman.js
+│   │   │   │   ├── 05_gothic.js
+│   │   │   │   ├── 06_renaissance.js
+│   │   │   │   ├── 08_impressionism.js
+│   │   │   │   ├── 09_postimp.js
+│   │   │   │   ├── 10_nouveau.js
+│   │   │   │   ├── 11_cubism.js
+│   │   │   │   ├── 12_bauhaus.js
+│   │   │   │   ├── 13_pop.js
+│   │   │   │   ├── 14_8bit.js
+│   │   │   │   ├── 15_raytrace.js
+│   │   │   │   ├── 16_2026.js
+│   │   │   │   ├── 17_ink.js
+│   │   │   │   ├── 18_klimt.js
+│   │   │   │   ├── 19_munch.js
+│   │   │   │   ├── 20_dunhuang.js
+│   │   │   │   ├── 21_kusama.js
+│   │   │   │   ├── 22_constructivism.js
+│   │   │   │   ├── 23_dali.js
+│   │   │   │   ├── 24_hopper.js
+│   │   │   │   ├── 25_ghibli.js
+│   │   │   │   ├── 26_vaporwave.js
+│   │   │   │   ├── 27_kirby.js
+│   │   │   │   ├── 28_monet.js
+│   │   │   │   ├── 29_seurat.js
+│   │   │   │   ├── 30_matisse.js
+│   │   │   │   ├── 31_haring.js
+│   │   │   │   ├── 32_rembrandt.js
+│   │   │   │   ├── 33_rubberhose.js
+│   │   │   │   ├── 34_shadowpuppet.js
+│   │   │   │   ├── 35_shinkai.js
+│   │   │   │   ├── 36_picasso_blue.js
+│   │   │   │   └── index.js
+│   │   │   ├── LICENSE
+│   │   │   ├── engine.js
+│   │   │   ├── eras_gallery.js
+│   │   │   ├── index.html
+│   │   │   ├── render.py
+│   │   │   └── transitions.js
+│   │   ├── upstream/
+│   │   │   ├── .claude/
+│   │   │   │   └── skills/
+│   │   │   │       ├── weilanx-creator-blackgold-video/
+│   │   │   │       │   ├── references/
+│   │   │   │       │   │   ├── 卡点与音效.md
+│   │   │   │       │   │   ├── 封面与发布.md
+│   │   │   │       │   │   ├── 画面与镜头.md
+│   │   │   │       │   │   └── 选题与脚本.md
+│   │   │   │       │   ├── scripts/
+│   │   │   │       │   │   ├── qa.mjs
+│   │   │   │       │   │   └── subtitles.mjs
+│   │   │   │       │   └── SKILL.md
+│   │   │   │       ├── weilanx-creator-desk-video/
+│   │   │   │       │   ├── references/
+│   │   │   │       │   │   ├── 工程模板.md
+│   │   │   │       │   │   └── 画面配方.md
+│   │   │   │       │   └── SKILL.md
+│   │   │   │       ├── weilanx-creator-distill-video/
+│   │   │   │       │   ├── references/
+│   │   │   │       │   │   ├── 拆解方法.md
+│   │   │   │       │   │   └── 配方卡模板.md
+│   │   │   │       │   ├── scripts/
+│   │   │   │       │   │   ├── analyze.py
+│   │   │   │       │   │   └── strip.py
+│   │   │   │       │   └── SKILL.md
+│   │   │   │       ├── weilanx-creator-fps-video/
+│   │   │   │       │   ├── references/
+│   │   │   │       │   │   ├── 卡点与音效.md
+│   │   │   │       │   │   ├── 封面与发布.md
+│   │   │   │       │   │   ├── 数据复盘.md
+│   │   │   │       │   │   ├── 画面与镜头.md
+│   │   │   │       │   │   └── 选题与叙事.md
+│   │   │   │       │   ├── scripts/
+│   │   │   │       │   │   ├── qa.mjs
+│   │   │   │       │   │   ├── stats.py
+│   │   │   │       │   │   └── subtitle-doc.mjs
+│   │   │   │       │   └── SKILL.md
+│   │   │   │       ├── weilanx-creator-gilded-video/
+│   │   │   │       │   ├── references/
+│   │   │   │       │   │   ├── 叙事与字幕.md
+│   │   │   │       │   │   ├── 画面与转场.md
+│   │   │   │       │   │   └── 配乐与卡点.md
+│   │   │   │       │   ├── scripts/
+│   │   │   │       │   │   └── beats.py
+│   │   │   │       │   └── SKILL.md
+│   │   │   │       ├── weilanx-creator-lamplight-video/
+│   │   │   │       │   ├── references/
+│   │   │   │       │   │   ├── 叙事与卡点.md
+│   │   │   │       │   │   ├── 封面与发布.md
+│   │   │   │       │   │   ├── 画面与镜头.md
+│   │   │   │       │   │   └── 选题与史料.md
+│   │   │   │       │   ├── scripts/
+│   │   │   │       │   │   ├── beat_accents.py
+│   │   │   │       │   │   ├── shot_frames.py
+│   │   │   │       │   │   ├── subtitle_doc.py
+│   │   │   │       │   │   └── timeline_lib.py
+│   │   │   │       │   └── SKILL.md
+│   │   │   │       ├── weilanx-creator-pixel-video/
+│   │   │   │       │   └── SKILL.md
+│   │   │   │       └── weilanx-creator-vox-video/
+│   │   │   │           ├── references/
+│   │   │   │           │   ├── 画面.md
+│   │   │   │           │   ├── 素材.md
+│   │   │   │           │   ├── 语气与写稿.md
+│   │   │   │           │   └── 配乐.md
+│   │   │   │           ├── scripts/
+│   │   │   │           │   ├── commons.py
+│   │   │   │           │   ├── tts_expressive.py
+│   │   │   │           │   └── voice_stats.py
+│   │   │   │           └── SKILL.md
+│   │   │   ├── audio/
+│   │   │   │   ├── episodes/
+│   │   │   │   │   ├── ep00-demo.mjs
+│   │   │   │   │   ├── ep01-agent.mjs
+│   │   │   │   │   ├── ep02-llm.mjs
+│   │   │   │   │   ├── ep03-cc.mjs
+│   │   │   │   │   ├── ep04-opus55.mjs
+│   │   │   │   │   ├── ep05-token.mjs
+│   │   │   │   │   ├── ep06-context.mjs
+│   │   │   │   │   ├── ep07-agent.mjs
+│   │   │   │   │   ├── ep08-hallucination.mjs
+│   │   │   │   │   ├── ep09-prompt.mjs
+│   │   │   │   │   ├── ep10-multimodal.mjs
+│   │   │   │   │   ├── ep11-mcp.mjs
+│   │   │   │   │   ├── ep12-skill.mjs
+│   │   │   │   │   ├── ep13-subagent.mjs
+│   │   │   │   │   ├── ep14-agent-permission.mjs
+│   │   │   │   │   ├── ep15-prompt-injection.mjs
+│   │   │   │   │   ├── ep16-agent-done.mjs
+│   │   │   │   │   ├── ep17-sycophancy.mjs
+│   │   │   │   │   ├── ep18-ai-history.mjs
+│   │   │   │   │   ├── ep19-apple-history.mjs
+│   │   │   │   │   ├── ep20-nvidia-history.mjs
+│   │   │   │   │   ├── ep21-nobel-physics.mjs
+│   │   │   │   │   ├── ep22-nobel-chemistry.mjs
+│   │   │   │   │   ├── ep23-wheat-chessboard.mjs
+│   │   │   │   │   ├── ep24-birthday-paradox.mjs
+│   │   │   │   │   ├── ep25-behind-cover.mjs
+│   │   │   │   │   ├── ep26-opus-video.mjs
+│   │   │   │   │   ├── ep27-opus-video-full.mjs
+│   │   │   │   │   ├── ep28-express-relay.mjs
+│   │   │   │   │   ├── ep29-footsteps.mjs
+│   │   │   │   │   ├── ep30-tang-divorce.mjs
+│   │   │   │   │   ├── ep31-rigged.mjs
+│   │   │   │   │   ├── ep32-love-lasts.mjs
+│   │   │   │   │   ├── ep33-teammates.mjs
+│   │   │   │   │   ├── ep34-song-takeout.mjs
+│   │   │   │   │   ├── ep35-choke.mjs
+│   │   │   │   │   ├── ep36-boxed-pigs.mjs
+│   │   │   │   │   ├── ep37-bhop.mjs
+│   │   │   │   │   ├── ep38-butterfly.mjs
+│   │   │   │   │   ├── ep39-latency.mjs
+│   │   │   │   │   ├── ep40-counter-strafe.mjs
+│   │   │   │   │   ├── ep41-flying-money.mjs
+│   │   │   │   │   ├── ep42-tap-fire.mjs
+│   │   │   │   │   ├── ep43-one-more-game.mjs
+│   │   │   │   │   ├── ep45-callouts.mjs
+│   │   │   │   │   ├── ep46-song-ice.mjs
+│   │   │   │   │   ├── ep47-spotlight.mjs
+│   │   │   │   │   ├── ep48-jiggle-peek.mjs
+│   │   │   │   │   ├── ep49-ad-strafe.mjs
+│   │   │   │   │   ├── ep50-late-night.mjs
+│   │   │   │   │   ├── ep51-practice.mjs
+│   │   │   │   │   └── library-halftone.mjs
+│   │   │   │   ├── bgm.mjs
+│   │   │   │   ├── music.mjs
+│   │   │   │   ├── score.mjs
+│   │   │   │   ├── sfx-lamplight.mjs
+│   │   │   │   ├── sfx-tactical.mjs
+│   │   │   │   └── synth.mjs
+│   │   │   ├── docs/
+│   │   │   │   ├── assets/
+│   │   │   │   │   ├── styles/
+│   │   │   │   │   │   ├── art-styles.jpg
+│   │   │   │   │   │   ├── blackgold.jpg
+│   │   │   │   │   │   ├── editor-room.jpg
+│   │   │   │   │   │   ├── gilded-ep23.jpg
+│   │   │   │   │   │   ├── gilded.jpg
+│   │   │   │   │   │   ├── grammars.jpg
+│   │   │   │   │   │   ├── halftone.jpg
+│   │   │   │   │   │   ├── lamplight.jpg
+│   │   │   │   │   │   ├── pixel-handdrawn.jpg
+│   │   │   │   │   │   ├── pixel-sticker.jpg
+│   │   │   │   │   │   ├── tactical.jpg
+│   │   │   │   │   │   ├── vector.jpg
+│   │   │   │   │   │   ├── vox-cut.jpg
+│   │   │   │   │   │   ├── vox-timeline.jpg
+│   │   │   │   │   │   └── warm-desk.jpg
+│   │   │   │   │   ├── preview-demo.jpg
+│   │   │   │   │   ├── preview-pixel.jpg
+│   │   │   │   │   └── project-icon.svg
+│   │   │   │   └── superpowers/
+│   │   │   │       ├── plans/
+│   │   │   │       │   └── 2026-09-26-remotion-30s-demo.md
+│   │   │   │       └── specs/
+│   │   │   │           ├── 2026-09-26-agent-explainer-design.md
+│   │   │   │           └── 2026-09-26-remotion-30s-demo-design.md
+│   │   │   ├── public/
+│   │   │   │   ├── fonts/
+│   │   │   │   │   ├── vox/
+│   │   │   │   │   │   ├── Anton-400.woff
+│   │   │   │   │   │   ├── Caveat-600.woff
+│   │   │   │   │   │   ├── EBGaramond-400.woff
+│   │   │   │   │   │   ├── EBGaramond-600.woff
+│   │   │   │   │   │   ├── LICENSES.md
+│   │   │   │   │   │   ├── NotoSansSC-900.woff
+│   │   │   │   │   │   ├── OFL.txt
+│   │   │   │   │   │   ├── PlayfairDisplay-700.woff
+│   │   │   │   │   │   └── PlayfairDisplay-700i.woff
+│   │   │   │   │   ├── LICENSES.md
+│   │   │   │   │   └── ZCOOLKuaiLe-Regular.ttf
+│   │   │   │   └── music/
+│   │   │   │       └── README.md
+│   │   │   ├── scripts/
+│   │   │   │   ├── ep-dir.sh
+│   │   │   │   ├── export.sh
+│   │   │   │   ├── mix-stems.sh
+│   │   │   │   └── srt2json.mjs
+│   │   │   ├── src/
+│   │   │   │   ├── episodes/
+│   │   │   │   │   ├── ep00-demo/
+│   │   │   │   │   │   ├── components/
+│   │   │   │   │   │   │   ├── AdjustPanel.tsx
+│   │   │   │   │   │   │   ├── Buddy.tsx
+│   │   │   │   │   │   │   ├── EditorUI.tsx
+│   │   │   │   │   │   │   ├── Icons.tsx
+│   │   │   │   │   │   │   ├── MediaPanel.tsx
+│   │   │   │   │   │   │   ├── Outro.tsx
+│   │   │   │   │   │   │   ├── Phone.tsx
+│   │   │   │   │   │   │   ├── SceneArt.tsx
+│   │   │   │   │   │   │   └── Timeline.tsx
+│   │   │   │   │   │   ├── lib/
+│   │   │   │   │   │   │   ├── buddy.ts
+│   │   │   │   │   │   │   ├── camera.ts
+│   │   │   │   │   │   │   ├── state.ts
+│   │   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   │   └── Ep00Demo.tsx
+│   │   │   │   │   ├── ep01-agent/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── finale.tsx
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── intro.tsx
+│   │   │   │   │   │   │   ├── loop.tsx
+│   │   │   │   │   │   │   ├── safety.tsx
+│   │   │   │   │   │   │   └── setup.tsx
+│   │   │   │   │   │   ├── Ep01Agent.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep02-llm/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep02Llm.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep03-cc/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── aroll.tsx
+│   │   │   │   │   │   │   ├── broll1.tsx
+│   │   │   │   │   │   │   ├── broll2.tsx
+│   │   │   │   │   │   │   └── index.ts
+│   │   │   │   │   │   ├── Ep03Cc.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep04-opus55/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep04Opus55.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep05-token/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep05Token.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep06-context/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── tall/
+│   │   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep06Context.tsx
+│   │   │   │   │   │   ├── Ep06ContextTall.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep07-agent/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── tall/
+│   │   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep07Agent.tsx
+│   │   │   │   │   │   ├── Ep07AgentTall.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep08-hallucination/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── tall/
+│   │   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep08Hallucination.tsx
+│   │   │   │   │   │   ├── Ep08HallucinationTall.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep09-prompt/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep09Prompt.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep10-multimodal/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep10Multimodal.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep11-mcp/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep11Mcp.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep12-skill/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep12Skill.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep13-subagent/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep13Subagent.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep14-agent-permission/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep14AgentPermission.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep15-prompt-injection/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep15PromptInjection.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep16-agent-done/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep16AgentDone.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep17-sycophancy/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   │   ├── part1.tsx
+│   │   │   │   │   │   │   └── part2.tsx
+│   │   │   │   │   │   ├── Ep17Sycophancy.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep18-ai-history/
+│   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   ├── CoverTall.tsx
+│   │   │   │   │   │   ├── Ep18AiHistory.tsx
+│   │   │   │   │   │   ├── art.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   ├── cues.ts
+│   │   │   │   │   │   ├── film.tsx
+│   │   │   │   │   │   ├── scrapbook.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep19-apple-history/
+│   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   ├── CoverTall.tsx
+│   │   │   │   │   │   ├── Ep19AppleHistory.tsx
+│   │   │   │   │   │   ├── art.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   ├── cues.ts
+│   │   │   │   │   │   ├── film.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep20-nvidia-history/
+│   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   ├── CoverTall.tsx
+│   │   │   │   │   │   ├── Ep20NvidiaHistory.tsx
+│   │   │   │   │   │   ├── art.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   ├── cues.ts
+│   │   │   │   │   │   ├── film.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep21-nobel-physics/
+│   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   ├── Ep21NobelPhysics.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   ├── cues.ts
+│   │   │   │   │   │   └── film.tsx
+│   │   │   │   │   ├── ep22-nobel-chemistry/
+│   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   ├── Ep22NobelChemistry.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   ├── cues.ts
+│   │   │   │   │   │   └── film.tsx
+│   │   │   │   │   ├── ep23-wheat-chessboard/
+│   │   │   │   │   │   ├── Ep23Wheat.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep24-birthday-paradox/
+│   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   ├── Ep24Birthday.tsx
+│   │   │   │   │   │   ├── ring.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep25-behind-cover/
+│   │   │   │   │   │   ├── Ep25Cover.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep26-opus-video/
+│   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   ├── Ep26OpusVideo.tsx
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   ├── cues.ts
+│   │   │   │   │   │   └── scenes.tsx
+│   │   │   │   │   ├── ep27-opus-video-full/
+│   │   │   │   │   │   ├── scenes/
+│   │   │   │   │   │   │   ├── index.tsx
+│   │   │   │   │   │   │   └── kit.tsx
+│   │   │   │   │   │   ├── Cover.tsx
+│   │   │   │   │   │   ├── Ep27OpusVideoFull.tsx
+│   │   │   │   │   │   ├── assets.ts
+│   │   │   │   │   │   ├── cues.json
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── ep28-express-relay/
+│   │   │   │   │   │   ├── CoverTall.tsx
+│   │   │   │   │   │   ├── Ep28Relay.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep29-footsteps/
+│   │   │   │   │   │   ├── Ep29Footsteps.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep30-tang-divorce/
+│   │   │   │   │   │   ├── CoverTall.tsx
+│   │   │   │   │   │   ├── Ep30Divorce.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep31-rigged/
+│   │   │   │   │   │   ├── Ep31Rigged.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep32-love-lasts/
+│   │   │   │   │   │   ├── Ep32Love.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep33-teammates/
+│   │   │   │   │   │   ├── Ep33Teammates.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep34-song-takeout/
+│   │   │   │   │   │   ├── CoverTall.tsx
+│   │   │   │   │   │   ├── Ep34Takeout.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep35-choke/
+│   │   │   │   │   │   ├── Ep35Choke.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep36-boxed-pigs/
+│   │   │   │   │   │   ├── CoverTall.tsx
+│   │   │   │   │   │   ├── Ep36Pigs.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep37-bhop/
+│   │   │   │   │   │   ├── Ep37Bhop.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep38-butterfly/
+│   │   │   │   │   │   ├── CoverTall.tsx
+│   │   │   │   │   │   ├── Ep38Butterfly.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep39-latency/
+│   │   │   │   │   │   ├── Ep39Latency.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep40-counter-strafe/
+│   │   │   │   │   │   ├── Ep40CounterStrafe.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep41-flying-money/
+│   │   │   │   │   │   ├── CoverTall.tsx
+│   │   │   │   │   │   ├── Ep41FlyingMoney.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep42-tap-fire/
+│   │   │   │   │   │   ├── Ep42TapFire.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep43-one-more-game/
+│   │   │   │   │   │   ├── Ep43OneMoreGame.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep45-callouts/
+│   │   │   │   │   │   ├── Ep45Callouts.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep46-song-ice/
+│   │   │   │   │   │   ├── CoverTall.tsx
+│   │   │   │   │   │   ├── Ep46SongIce.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep47-spotlight/
+│   │   │   │   │   │   ├── Ep47Spotlight.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep48-jiggle-peek/
+│   │   │   │   │   │   ├── Ep48JigglePeek.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep49-ad-strafe/
+│   │   │   │   │   │   ├── Ep49AdStrafe.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   ├── ep50-late-night/
+│   │   │   │   │   │   ├── Ep50LateNight.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   └── timeline.ts
+│   │   │   │   │   └── ep51-practice/
+│   │   │   │   │       ├── Ep51Practice.tsx
+│   │   │   │   │       ├── scenes.tsx
+│   │   │   │   │       └── timeline.ts
+│   │   │   │   ├── library/
+│   │   │   │   │   ├── blackgold/
+│   │   │   │   │   │   ├── chaos.tsx
+│   │   │   │   │   │   ├── charts.tsx
+│   │   │   │   │   │   ├── pen.tsx
+│   │   │   │   │   │   ├── props.tsx
+│   │   │   │   │   │   ├── stage.tsx
+│   │   │   │   │   │   └── theme.ts
+│   │   │   │   │   ├── character/
+│   │   │   │   │   │   ├── Accessories.tsx
+│   │   │   │   │   │   ├── Arm.tsx
+│   │   │   │   │   │   ├── BuddyFigure.tsx
+│   │   │   │   │   │   ├── Char.tsx
+│   │   │   │   │   │   ├── PixelBuddy.tsx
+│   │   │   │   │   │   └── types.ts
+│   │   │   │   │   ├── editor-room/
+│   │   │   │   │   │   ├── canvas.tsx
+│   │   │   │   │   │   ├── mascots.tsx
+│   │   │   │   │   │   ├── stage.tsx
+│   │   │   │   │   │   └── theme.ts
+│   │   │   │   │   ├── gilded/
+│   │   │   │   │   │   ├── charts.tsx
+│   │   │   │   │   │   ├── props.tsx
+│   │   │   │   │   │   ├── stage.tsx
+│   │   │   │   │   │   └── theme.ts
+│   │   │   │   │   ├── halftone/
+│   │   │   │   │   │   ├── props.tsx
+│   │   │   │   │   │   ├── stage.tsx
+│   │   │   │   │   │   ├── suspect.tsx
+│   │   │   │   │   │   └── theme.ts
+│   │   │   │   │   ├── items/
+│   │   │   │   │   │   ├── apps.tsx
+│   │   │   │   │   │   ├── media.tsx
+│   │   │   │   │   │   └── objects.tsx
+│   │   │   │   │   ├── lamplight/
+│   │   │   │   │   │   ├── charts.tsx
+│   │   │   │   │   │   ├── ice.tsx
+│   │   │   │   │   │   ├── props.tsx
+│   │   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   │   ├── stage.tsx
+│   │   │   │   │   │   └── theme.ts
+│   │   │   │   │   ├── previews/
+│   │   │   │   │   │   ├── BlackGoldDemo.tsx
+│   │   │   │   │   │   ├── EditorRoomDemo.tsx
+│   │   │   │   │   │   ├── GildedDemo.tsx
+│   │   │   │   │   │   ├── HalftoneDemo.tsx
+│   │   │   │   │   │   ├── LamplightDemo.tsx
+│   │   │   │   │   │   ├── PixelWardrobe.tsx
+│   │   │   │   │   │   ├── TacticalDemo.tsx
+│   │   │   │   │   │   ├── Wardrobe.tsx
+│   │   │   │   │   │   ├── WarmDeskDemo.tsx
+│   │   │   │   │   │   └── WarmDeskShowDemo.tsx
+│   │   │   │   │   ├── sets/
+│   │   │   │   │   │   └── Studio.tsx
+│   │   │   │   │   ├── tactical/
+│   │   │   │   │   │   ├── attention.tsx
+│   │   │   │   │   │   ├── charts.tsx
+│   │   │   │   │   │   ├── hearing.tsx
+│   │   │   │   │   │   ├── movement.tsx
+│   │   │   │   │   │   ├── pipeline.tsx
+│   │   │   │   │   │   ├── practice.tsx
+│   │   │   │   │   │   ├── range.tsx
+│   │   │   │   │   │   ├── ranked.tsx
+│   │   │   │   │   │   ├── reward.tsx
+│   │   │   │   │   │   ├── sleep.tsx
+│   │   │   │   │   │   ├── spread.tsx
+│   │   │   │   │   │   ├── stage.tsx
+│   │   │   │   │   │   ├── theme.ts
+│   │   │   │   │   │   ├── tracking.tsx
+│   │   │   │   │   │   ├── vectors.tsx
+│   │   │   │   │   │   └── window.tsx
+│   │   │   │   │   ├── vox/
+│   │   │   │   │   │   ├── CoverTall.tsx
+│   │   │   │   │   │   ├── VoxShow.tsx
+│   │   │   │   │   │   ├── desk.tsx
+│   │   │   │   │   │   ├── footage.tsx
+│   │   │   │   │   │   ├── hud.tsx
+│   │   │   │   │   │   ├── portrait.tsx
+│   │   │   │   │   │   ├── props.tsx
+│   │   │   │   │   │   ├── shots.tsx
+│   │   │   │   │   │   ├── stickers.tsx
+│   │   │   │   │   │   └── theme.ts
+│   │   │   │   │   ├── warm-desk/
+│   │   │   │   │   │   ├── CoverTall.tsx
+│   │   │   │   │   │   ├── DeskShow.tsx
+│   │   │   │   │   │   ├── HostCam.tsx
+│   │   │   │   │   │   ├── Slot.tsx
+│   │   │   │   │   │   ├── immersive.tsx
+│   │   │   │   │   │   ├── mascot.tsx
+│   │   │   │   │   │   ├── motifs.tsx
+│   │   │   │   │   │   ├── props.tsx
+│   │   │   │   │   │   ├── stage.tsx
+│   │   │   │   │   │   └── theme.ts
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── Show.tsx
+│   │   │   │   │   ├── Subtitles.tsx
+│   │   │   │   │   ├── anim.ts
+│   │   │   │   │   ├── cues.ts
+│   │   │   │   │   ├── fonts.ts
+│   │   │   │   │   ├── fx.tsx
+│   │   │   │   │   ├── icons.tsx
+│   │   │   │   │   ├── theme.ts
+│   │   │   │   │   ├── types.ts
+│   │   │   │   │   └── ui.tsx
+│   │   │   │   ├── Root.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── styles/
+│   │   │   │   ├── 我的风格/
+│   │   │   │   │   ├── 像素手绘风/
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   ├── 像素贴纸风/
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   ├── 协作剪辑台风/
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   ├── 战术屏科普风/
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── 爆款解析.md
+│   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   ├── 暖纸工作台风/
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   ├── 暗金文献风/
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   ├── 灯火史话风/
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   ├── 矢量手绘风/
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   ├── 网点档案风/
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   └── 黑金光影风/
+│   │   │   │   │       ├── README.md
+│   │   │   │   │       └── 预览.jpg
+│   │   │   │   ├── 艺术风格/
+│   │   │   │   │   ├── 01_古代与传统/
+│   │   │   │   │   │   ├── 01_cave_洞穴岩画/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 02_egypt_埃及壁画/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 03_greek_古希腊黑绘/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 04_roman_罗马马赛克/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 05_gothic_哥特手抄本/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 17_ink_水墨写意/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 20_dunhuang_敦煌壁画/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   └── 34_shadowpuppet_皮影/
+│   │   │   │   │   │       ├── 场景代码.js
+│   │   │   │   │   │       ├── 配方卡.md
+│   │   │   │   │   │       └── 预览.jpg
+│   │   │   │   │   ├── 02_古典油画/
+│   │   │   │   │   │   ├── 06_renaissance_文艺复兴/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   └── 32_rembrandt_伦勃朗明暗/
+│   │   │   │   │   │       ├── 场景代码.js
+│   │   │   │   │   │       ├── 配方卡.md
+│   │   │   │   │   │       └── 预览.jpg
+│   │   │   │   │   ├── 03_印象派与后印象/
+│   │   │   │   │   │   ├── 08_impressionism_印象派/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 09_postimp_梵高/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 28_monet_莫奈/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   └── 29_seurat_修拉点彩/
+│   │   │   │   │   │       ├── 场景代码.js
+│   │   │   │   │   │       ├── 配方卡.md
+│   │   │   │   │   │       └── 预览.jpg
+│   │   │   │   │   ├── 04_现代主义/
+│   │   │   │   │   │   ├── 10_nouveau_慕夏新艺术/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 11_cubism_立体主义/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 12_bauhaus_包豪斯/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 18_klimt_克里姆特/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 19_munch_蒙克/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 22_constructivism_构成主义/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 23_dali_达利超现实/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 24_hopper_霍珀/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 30_matisse_马蒂斯剪纸/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   └── 36_picasso_blue_毕加索蓝色时期/
+│   │   │   │   │   │       ├── 场景代码.js
+│   │   │   │   │   │       ├── 配方卡.md
+│   │   │   │   │   │       └── 预览.jpg
+│   │   │   │   │   ├── 05_波普与街头/
+│   │   │   │   │   │   ├── 13_pop_波普艺术/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 21_kusama_草间弥生波点/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 27_kirby_漫威Kirby/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   └── 31_haring_哈林涂鸦/
+│   │   │   │   │   │       ├── 场景代码.js
+│   │   │   │   │   │       ├── 配方卡.md
+│   │   │   │   │   │       └── 预览.jpg
+│   │   │   │   │   ├── 06_卡通与动画/
+│   │   │   │   │   │   ├── 16_2026_当代扁平插画/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 25_ghibli_吉卜力水彩/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 33_rubberhose_橡皮管卡通/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   └── 35_shinkai_新海诚光影/
+│   │   │   │   │   │       ├── 场景代码.js
+│   │   │   │   │   │       ├── 配方卡.md
+│   │   │   │   │   │       └── 预览.jpg
+│   │   │   │   │   ├── 07_数字与像素/
+│   │   │   │   │   │   ├── 14_8bit_8-bit像素/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── 15_raytrace_早期光追CGI/
+│   │   │   │   │   │   │   ├── 场景代码.js
+│   │   │   │   │   │   │   ├── 配方卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   └── 26_vaporwave_蒸汽波/
+│   │   │   │   │   │       ├── 场景代码.js
+│   │   │   │   │   │       ├── 配方卡.md
+│   │   │   │   │   │       └── 预览.jpg
+│   │   │   │   │   ├── 原版总索引.md
+│   │   │   │   │   ├── 转场_迁移测试.md
+│   │   │   │   │   └── 音轨_艺术史速通.md
+│   │   │   │   ├── 解说语法/
+│   │   │   │   │   ├── 01_科普图解/
+│   │   │   │   │   │   ├── t1_3b1b_3Blue1Brown/
+│   │   │   │   │   │   │   ├── 示范工程/
+│   │   │   │   │   │   │   │   ├── eras.js
+│   │   │   │   │   │   │   │   ├── t1_s1.js
+│   │   │   │   │   │   │   │   ├── t1_s2.js
+│   │   │   │   │   │   │   │   └── t1_s3.js
+│   │   │   │   │   │   │   ├── 参数示例.json
+│   │   │   │   │   │   │   ├── 片段代码.js
+│   │   │   │   │   │   │   ├── 语法卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── y1_kurzgesagt_Kurzgesagt/
+│   │   │   │   │   │   │   ├── 示范工程/
+│   │   │   │   │   │   │   │   ├── eras.js
+│   │   │   │   │   │   │   │   └── kurzgesagt.js
+│   │   │   │   │   │   │   ├── 参数示例.json
+│   │   │   │   │   │   │   ├── 片段代码.js
+│   │   │   │   │   │   │   ├── 语法卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   └── y3_whiteboard_白板/
+│   │   │   │   │   │       ├── 示范工程/
+│   │   │   │   │   │       │   ├── eras.js
+│   │   │   │   │   │       │   └── whiteboard.js
+│   │   │   │   │   │       ├── 参数示例.json
+│   │   │   │   │   │       ├── 片段代码.js
+│   │   │   │   │   │       ├── 语法卡.md
+│   │   │   │   │   │       └── 预览.jpg
+│   │   │   │   │   ├── 02_新闻与数据/
+│   │   │   │   │   │   ├── t2_keynote_ui_发布会/
+│   │   │   │   │   │   │   ├── 示范工程/
+│   │   │   │   │   │   │   │   ├── eras.js
+│   │   │   │   │   │   │   │   ├── t2_s1.js
+│   │   │   │   │   │   │   │   ├── t2_s2.js
+│   │   │   │   │   │   │   │   └── t2_s3.js
+│   │   │   │   │   │   │   ├── 参数示例.json
+│   │   │   │   │   │   │   ├── 片段代码.js
+│   │   │   │   │   │   │   ├── 语法卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   ├── t3_finance_chart_财经图表/
+│   │   │   │   │   │   │   ├── 示范工程/
+│   │   │   │   │   │   │   │   ├── eras.js
+│   │   │   │   │   │   │   │   ├── t3_s1.js
+│   │   │   │   │   │   │   │   ├── t3_s2.js
+│   │   │   │   │   │   │   │   └── t3_s3.js
+│   │   │   │   │   │   │   ├── 参数示例.json
+│   │   │   │   │   │   │   ├── 片段代码.js
+│   │   │   │   │   │   │   ├── 语法卡.md
+│   │   │   │   │   │   │   └── 预览.jpg
+│   │   │   │   │   │   └── y2_vox_Vox/
+│   │   │   │   │   │       ├── 示范工程/
+│   │   │   │   │   │       │   ├── eras.js
+│   │   │   │   │   │       │   └── vox.js
+│   │   │   │   │   │       ├── 参数示例.json
+│   │   │   │   │   │       ├── 片段代码.js
+│   │   │   │   │   │       ├── 语法卡.md
+│   │   │   │   │   │       └── 预览.jpg
+│   │   │   │   │   └── 03_节奏与人物/
+│   │   │   │   │       ├── y4_storytime_Storytime/
+│   │   │   │   │       │   ├── 示范工程/
+│   │   │   │   │       │   │   ├── eras.js
+│   │   │   │   │       │   │   ├── s1_desk.js
+│   │   │   │   │       │   │   ├── s2_screen.js
+│   │   │   │   │       │   │   ├── s3_react.js
+│   │   │   │   │       │   │   ├── s4_wide.js
+│   │   │   │   │       │   │   ├── s5_close.js
+│   │   │   │   │       │   │   ├── story.js
+│   │   │   │   │       │   │   ├── vo_env.js
+│   │   │   │   │       │   │   └── world.js
+│   │   │   │   │       │   ├── 参数示例.json
+│   │   │   │   │       │   ├── 片段代码.js
+│   │   │   │   │       │   ├── 语法卡.md
+│   │   │   │   │       │   └── 预览.jpg
+│   │   │   │   │       ├── y5_kinetic_type_动态文字/
+│   │   │   │   │       │   ├── 示范工程/
+│   │   │   │   │       │   │   ├── eras.js
+│   │   │   │   │       │   │   ├── k1_title.js
+│   │   │   │   │       │   │   ├── k2_complete.js
+│   │   │   │   │       │   │   ├── k3_chat.js
+│   │   │   │   │       │   │   ├── k4_agent.js
+│   │   │   │   │       │   │   └── kinetic.js
+│   │   │   │   │       │   ├── 参数示例.json
+│   │   │   │   │       │   ├── 片段代码.js
+│   │   │   │   │       │   ├── 语法卡.md
+│   │   │   │   │       │   └── 预览.jpg
+│   │   │   │   │       └── y6_presenter_explainer_讲解员/
+│   │   │   │   │           └── 语法卡.md
+│   │   │   │   ├── LICENSE-huashu-art-motion
+│   │   │   │   └── README.md
+│   │   │   ├── tests/
+│   │   │   │   ├── episodes/
+│   │   │   │   │   ├── ep00-demo.test.ts
+│   │   │   │   │   ├── ep01-agent-cues.test.ts
+│   │   │   │   │   ├── ep01-agent-scenes.test.ts
+│   │   │   │   │   ├── ep02-llm.test.ts
+│   │   │   │   │   ├── ep03-cc.test.ts
+│   │   │   │   │   ├── ep04-opus55.test.ts
+│   │   │   │   │   ├── ep05-token.test.ts
+│   │   │   │   │   ├── ep06-context.test.ts
+│   │   │   │   │   ├── ep07-agent.test.ts
+│   │   │   │   │   ├── ep08-hallucination.test.ts
+│   │   │   │   │   ├── ep09-prompt.test.ts
+│   │   │   │   │   ├── ep10-multimodal.test.ts
+│   │   │   │   │   ├── ep11-mcp.test.ts
+│   │   │   │   │   ├── ep12-skill.test.ts
+│   │   │   │   │   ├── ep13-subagent.test.ts
+│   │   │   │   │   ├── ep14-agent-permission.test.ts
+│   │   │   │   │   ├── ep15-prompt-injection.test.ts
+│   │   │   │   │   ├── ep16-agent-done.test.ts
+│   │   │   │   │   ├── ep17-sycophancy.test.ts
+│   │   │   │   │   ├── ep18-ai-history.test.ts
+│   │   │   │   │   ├── ep19-apple-history.test.ts
+│   │   │   │   │   ├── ep20-nvidia-history.test.ts
+│   │   │   │   │   ├── ep21-nobel-physics.test.ts
+│   │   │   │   │   ├── ep22-nobel-chemistry.test.ts
+│   │   │   │   │   ├── ep23-wheat-chessboard.test.ts
+│   │   │   │   │   ├── ep24-birthday-paradox.test.ts
+│   │   │   │   │   ├── ep25-behind-cover.test.ts
+│   │   │   │   │   ├── ep26-opus-video.test.ts
+│   │   │   │   │   ├── ep27-opus-video-full.test.ts
+│   │   │   │   │   ├── ep28-express-relay.test.ts
+│   │   │   │   │   ├── ep29-footsteps.test.ts
+│   │   │   │   │   ├── ep30-tang-divorce.test.ts
+│   │   │   │   │   ├── ep31-rigged.test.ts
+│   │   │   │   │   ├── ep32-love-lasts.test.ts
+│   │   │   │   │   ├── ep33-teammates.test.ts
+│   │   │   │   │   ├── ep34-song-takeout.test.ts
+│   │   │   │   │   ├── ep35-choke.test.ts
+│   │   │   │   │   ├── ep36-boxed-pigs.test.ts
+│   │   │   │   │   ├── ep37-bhop.test.ts
+│   │   │   │   │   ├── ep38-butterfly.test.ts
+│   │   │   │   │   ├── ep39-latency.test.ts
+│   │   │   │   │   ├── ep40-counter-strafe.test.ts
+│   │   │   │   │   ├── ep41-flying-money.test.ts
+│   │   │   │   │   ├── ep42-tap-fire.test.ts
+│   │   │   │   │   ├── ep43-one-more-game.test.ts
+│   │   │   │   │   ├── ep45-callouts.test.ts
+│   │   │   │   │   ├── ep46-song-ice.test.ts
+│   │   │   │   │   ├── ep47-spotlight.test.ts
+│   │   │   │   │   ├── ep48-jiggle-peek.test.ts
+│   │   │   │   │   ├── ep49-ad-strafe.test.ts
+│   │   │   │   │   ├── ep50-late-night.test.ts
+│   │   │   │   │   └── ep51-practice.test.ts
+│   │   │   │   └── library/
+│   │   │   │       ├── anim.test.ts
+│   │   │   │       ├── bgm.test.ts
+│   │   │   │       ├── blackgold.test.ts
+│   │   │   │       ├── halftone.test.ts
+│   │   │   │       ├── lamplight.test.ts
+│   │   │   │       ├── srt.test.ts
+│   │   │   │       ├── subtitles.test.ts
+│   │   │   │       ├── synth.test.ts
+│   │   │   │       ├── tactical.test.ts
+│   │   │   │       └── warm-desk.test.ts
+│   │   │   ├── .gitignore
+│   │   │   ├── AGENTS.md
+│   │   │   ├── CLAUDE.md
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── README.zh-CN.md
+│   │   │   ├── package-lock.json
+│   │   │   ├── package.json
+│   │   │   ├── remotion.config.ts
+│   │   │   ├── tsconfig.json
+│   │   │   └── vitest.config.ts
+│   │   ├── canvas-validation.json
+│   │   ├── catalog.json
+│   │   └── provenance.json
+│   ├── chapter-style-lock.json
+│   └── style-lock.json
+├── docs/
+│   └── architecture.md
+├── evals/
+│   ├── README.md
+│   └── evals.json
+├── examples/
+│   ├── batch-01/
+│   │   ├── licenses/
+│   │   │   └── weilanx-MIT.txt
+│   │   ├── out/
+│   │   │   ├── matrix-price.mp4
+│   │   │   ├── matrix-sharing.mp4
+│   │   │   ├── orbit-signal.mp4
+│   │   │   ├── orbit-value.mp4
+│   │   │   ├── tree-business.mp4
+│   │   │   └── tree-learning.mp4
+│   │   ├── public/
+│   │   │   └── fonts/
+│   │   │       ├── ep52/
+│   │   │       │   ├── NotoSerifSC-VF.ttf
+│   │   │       │   └── OFL.txt
+│   │   │       └── vox/
+│   │   │           ├── Anton-400.woff
+│   │   │           ├── Caveat-600.woff
+│   │   │           ├── EBGaramond-400.woff
+│   │   │           ├── EBGaramond-600.woff
+│   │   │           ├── LICENSES.md
+│   │   │           ├── NotoSansSC-900.woff
+│   │   │           ├── OFL.txt
+│   │   │           ├── PlayfairDisplay-700.woff
+│   │   │           └── PlayfairDisplay-700i.woff
+│   │   ├── qa/
+│   │   │   ├── stills/
+│   │   │   │   ├── matrix-price-150.jpg
+│   │   │   │   ├── matrix-price-260.jpg
+│   │   │   │   ├── matrix-price-40.jpg
+│   │   │   │   ├── matrix-sharing-150.jpg
+│   │   │   │   ├── matrix-sharing-260.jpg
+│   │   │   │   ├── matrix-sharing-40.jpg
+│   │   │   │   ├── orbit-signal-150.jpg
+│   │   │   │   ├── orbit-signal-260.jpg
+│   │   │   │   ├── orbit-signal-40.jpg
+│   │   │   │   ├── orbit-value-150.jpg
+│   │   │   │   ├── orbit-value-260.jpg
+│   │   │   │   ├── orbit-value-40.jpg
+│   │   │   │   ├── tree-business-150.jpg
+│   │   │   │   ├── tree-business-260.jpg
+│   │   │   │   ├── tree-business-40.jpg
+│   │   │   │   ├── tree-learning-150.jpg
+│   │   │   │   ├── tree-learning-260.jpg
+│   │   │   │   └── tree-learning-40.jpg
+│   │   │   ├── encoded-contact.jpg
+│   │   │   ├── matrix-price-continuous.jpg
+│   │   │   ├── orbit-signal-continuous.jpg
+│   │   │   ├── package-check.json
+│   │   │   ├── producer-review.json
+│   │   │   ├── tree-business-continuous.jpg
+│   │   │   ├── validation.json
+│   │   │   ├── viewer-check.json
+│   │   │   ├── viewer-desktop.png
+│   │   │   └── viewer-mobile.png
+│   │   ├── src/
+│   │   │   ├── local/
+│   │   │   │   └── redshift/
+│   │   │   │       ├── props.tsx
+│   │   │   │       └── theme.ts
+│   │   │   ├── upstream/
+│   │   │   │   ├── blackgold/
+│   │   │   │   │   ├── charts.tsx
+│   │   │   │   │   └── theme.ts
+│   │   │   │   ├── gilded/
+│   │   │   │   │   ├── theme.ts
+│   │   │   │   │   └── tree.tsx
+│   │   │   │   ├── vox/
+│   │   │   │   │   └── theme.ts
+│   │   │   │   └── anim.ts
+│   │   │   ├── Demo.tsx
+│   │   │   ├── catalog.ts
+│   │   │   └── entry.tsx
+│   │   ├── README.md
+│   │   ├── catalog.json
+│   │   ├── check_viewer.py
+│   │   ├── index.html
+│   │   ├── native-import-status.json
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── provenance.json
+│   │   ├── references.json
+│   │   ├── render.mjs
+│   │   ├── tsconfig.json
+│   │   └── validate.py
+│   ├── chapter-01/
+│   │   ├── assets/
+│   │   │   ├── timeline.json
+│   │   │   ├── voice-track.wav
+│   │   │   ├── voice.mp3
+│   │   │   └── word-boundaries.json
+│   │   ├── evidence/
+│   │   │   ├── fact-review.json
+│   │   │   ├── script-review.json
+│   │   │   └── source-manifest.json
+│   │   ├── native/
+│   │   │   ├── segments/
+│   │   │   │   ├── accounts.mp4
+│   │   │   │   ├── boundary.mp4
+│   │   │   │   ├── decision.mp4
+│   │   │   │   ├── evidence.mp4
+│   │   │   │   ├── future.mp4
+│   │   │   │   ├── recovery.mp4
+│   │   │   │   └── return.mp4
+│   │   │   └── clean-master.mp4
+│   │   ├── out/
+│   │   │   ├── final-silent.mp4
+│   │   │   ├── final-with-audio.mp4
+│   │   │   └── subtitles.srt
+│   │   ├── plans/
+│   │   │   ├── chapter.json
+│   │   │   └── five-steps.json
+│   │   ├── qa/
+│   │   │   ├── final-frames/
+│   │   │   │   ├── 00.jpg
+│   │   │   │   ├── 01.jpg
+│   │   │   │   ├── 02.jpg
+│   │   │   │   ├── 03.jpg
+│   │   │   │   ├── 04.jpg
+│   │   │   │   ├── 05.jpg
+│   │   │   │   ├── 06.jpg
+│   │   │   │   ├── 07.jpg
+│   │   │   │   ├── 08.jpg
+│   │   │   │   ├── 09.jpg
+│   │   │   │   ├── 10.jpg
+│   │   │   │   ├── 11.jpg
+│   │   │   │   ├── 12.jpg
+│   │   │   │   ├── 13.jpg
+│   │   │   │   ├── 14.jpg
+│   │   │   │   ├── 15.jpg
+│   │   │   │   ├── 16.jpg
+│   │   │   │   ├── 17.jpg
+│   │   │   │   ├── 18.jpg
+│   │   │   │   ├── 19.jpg
+│   │   │   │   ├── 20.jpg
+│   │   │   │   ├── 21.jpg
+│   │   │   │   ├── 22.jpg
+│   │   │   │   ├── 23.jpg
+│   │   │   │   ├── 24.jpg
+│   │   │   │   ├── 25.jpg
+│   │   │   │   ├── 26.jpg
+│   │   │   │   ├── 27.jpg
+│   │   │   │   ├── 28.jpg
+│   │   │   │   ├── 29.jpg
+│   │   │   │   ├── 30.jpg
+│   │   │   │   └── 31.jpg
+│   │   │   ├── audit.json
+│   │   │   ├── editor-import.json
+│   │   │   ├── final-board-1.jpg
+│   │   │   ├── final-board-2.jpg
+│   │   │   ├── final-board-3.jpg
+│   │   │   ├── final-board-4.jpg
+│   │   │   ├── final-board-5.jpg
+│   │   │   ├── final-board-6.jpg
+│   │   │   ├── final-frame-times.json
+│   │   │   ├── final-visual-review.json
+│   │   │   ├── portable-proof.jpg
+│   │   │   ├── production-review.json
+│   │   │   ├── proof-13s.mp4
+│   │   │   ├── release-validation.json
+│   │   │   ├── render-full.json
+│   │   │   ├── render-proof.json
+│   │   │   └── voice.json
+│   │   ├── source/
+│   │   │   ├── draft.txt
+│   │   │   ├── script.json
+│   │   │   └── storyboard.json
+│   │   ├── 工程/
+│   │   │   ├── public/
+│   │   │   │   ├── fonts/
+│   │   │   │   │   ├── Anton-OFL.txt
+│   │   │   │   │   ├── Anton.woff
+│   │   │   │   │   ├── Noto-OFL.txt
+│   │   │   │   │   ├── NotoSansSC-VF.ttf
+│   │   │   │   │   ├── NotoSerifSC-VF.ttf
+│   │   │   │   │   └── README.md
+│   │   │   │   └── paper-title.png
+│   │   │   ├── src/
+│   │   │   │   ├── Chapter.tsx
+│   │   │   │   ├── entry.tsx
+│   │   │   │   ├── style.css
+│   │   │   │   └── timing.json
+│   │   │   ├── package-lock.json
+│   │   │   ├── package.json
+│   │   │   ├── render.mjs
+│   │   │   └── tsconfig.json
+│   │   ├── README.md
+│   │   ├── asset-manifest.json
+│   │   ├── export_timeline.py
+│   │   ├── index.html
+│   │   ├── music-reference.json
+│   │   ├── provenance.json
+│   │   ├── requirements.txt
+│   │   └── voice.py
+│   ├── gallery/
+│   │   ├── media/
+│   │   │   ├── anchor-art-1.jpg
+│   │   │   ├── anchor-art-1.mp4
+│   │   │   ├── article-studies-1.jpg
+│   │   │   ├── article-studies-1.mp4
+│   │   │   ├── article-studies-2.jpg
+│   │   │   ├── article-studies-2.mp4
+│   │   │   ├── article-studies-3.jpg
+│   │   │   ├── article-studies-3.mp4
+│   │   │   ├── article-studies-4.jpg
+│   │   │   ├── article-studies-4.mp4
+│   │   │   ├── blackgold-study-1.jpg
+│   │   │   ├── blackgold-study-1.mp4
+│   │   │   ├── cognitive-first-1.jpg
+│   │   │   ├── cognitive-first-1.mp4
+│   │   │   ├── content-lab-1.jpg
+│   │   │   ├── content-lab-1.mp4
+│   │   │   ├── content-lab-2.jpg
+│   │   │   ├── content-lab-2.mp4
+│   │   │   ├── content-lab-3.jpg
+│   │   │   ├── content-lab-3.mp4
+│   │   │   ├── content-lab-4.jpg
+│   │   │   ├── content-lab-4.mp4
+│   │   │   ├── decision-frequency-1.jpg
+│   │   │   ├── decision-frequency-1.mp4
+│   │   │   ├── disappearing25-1.jpg
+│   │   │   ├── disappearing25-1.mp4
+│   │   │   ├── first-full-1.jpg
+│   │   │   ├── first-full-1.mp4
+│   │   │   ├── gold-full-1.jpg
+│   │   │   ├── gold-full-1.mp4
+│   │   │   ├── gold-proof-1.jpg
+│   │   │   ├── gold-proof-1.mp4
+│   │   │   ├── index-machine-1.jpg
+│   │   │   ├── index-machine-1.mp4
+│   │   │   ├── paced-1.jpg
+│   │   │   ├── paced-1.mp4
+│   │   │   ├── poisson-first-1.jpg
+│   │   │   ├── poisson-first-1.mp4
+│   │   │   ├── poisson-full-1.jpg
+│   │   │   ├── poisson-full-1.mp4
+│   │   │   ├── poisson-opus-1.jpg
+│   │   │   ├── poisson-opus-1.mp4
+│   │   │   ├── redshift-1.jpg
+│   │   │   ├── redshift-1.mp4
+│   │   │   ├── revision-1.jpg
+│   │   │   ├── revision-1.mp4
+│   │   │   ├── revision-2.jpg
+│   │   │   ├── revision-2.mp4
+│   │   │   ├── revision-3.jpg
+│   │   │   ├── revision-3.mp4
+│   │   │   ├── style-studies-1.jpg
+│   │   │   ├── style-studies-1.mp4
+│   │   │   ├── style-studies-2.jpg
+│   │   │   ├── style-studies-2.mp4
+│   │   │   ├── style-studies-3.jpg
+│   │   │   ├── style-studies-3.mp4
+│   │   │   ├── style-studies-4.jpg
+│   │   │   └── style-studies-4.mp4
+│   │   ├── stills/
+│   │   │   ├── decision-frequency/
+│   │   │   │   ├── final-contact-1.jpg
+│   │   │   │   ├── final-contact-2.jpg
+│   │   │   │   └── final-contact-3.jpg
+│   │   │   ├── gold-full/
+│   │   │   │   ├── final-contact-1.jpg
+│   │   │   │   ├── final-contact-2.jpg
+│   │   │   │   └── final-contact-3.jpg
+│   │   │   ├── gold-proof/
+│   │   │   │   └── contact-sheet.jpg
+│   │   │   ├── index-machine/
+│   │   │   │   ├── final-contact-1.jpg
+│   │   │   │   ├── final-contact-2.jpg
+│   │   │   │   └── final-contact-3.jpg
+│   │   │   └── poisson-storyboards/
+│   │   │       ├── 01_waiting.png
+│   │   │       ├── 02_frame.png
+│   │   │       ├── 03_frame.png
+│   │   │       ├── 04_frame.png
+│   │   │       ├── 05_frame_v2.png
+│   │   │       ├── 06_frame_v2.png
+│   │   │       ├── 07_frame.png
+│   │   │       ├── 08_frame.png
+│   │   │       └── 09_frame.png
+│   │   ├── art-01.html
+│   │   ├── art-02.html
+│   │   ├── art-03.html
+│   │   ├── art-04.html
+│   │   ├── art-05.html
+│   │   ├── art-06.html
+│   │   ├── art-07.html
+│   │   ├── browser-validation.json
+│   │   ├── film-anchor-art.html
+│   │   ├── film-article-studies.html
+│   │   ├── film-blackgold-study.html
+│   │   ├── film-cognitive-first.html
+│   │   ├── film-content-lab.html
+│   │   ├── film-decision-frequency.html
+│   │   ├── film-disappearing25.html
+│   │   ├── film-first-full.html
+│   │   ├── film-gold-full.html
+│   │   ├── film-gold-proof.html
+│   │   ├── film-index-machine.html
+│   │   ├── film-paced.html
+│   │   ├── film-poisson-first.html
+│   │   ├── film-poisson-full.html
+│   │   ├── film-poisson-opus.html
+│   │   ├── film-redshift.html
+│   │   ├── film-revision.html
+│   │   ├── film-style-studies.html
+│   │   ├── gallery.css
+│   │   ├── gallery.js
+│   │   ├── grammar-01.html
+│   │   ├── grammar-02.html
+│   │   ├── grammar-03.html
+│   │   ├── history.json
+│   │   ├── index.html
+│   │   ├── manifest.json
+│   │   ├── original-anchor-art.html
+│   │   ├── original-article-studies.html
+│   │   ├── original-blackgold-study.html
+│   │   ├── original-cognitive-first.html
+│   │   ├── original-content-lab.html
+│   │   ├── original-decision-frequency.html
+│   │   ├── original-disappearing25.html
+│   │   ├── original-gold-full.html
+│   │   ├── original-gold-proof.html
+│   │   ├── original-index-machine.html
+│   │   ├── original-poisson-first.html
+│   │   ├── original-poisson-full.html
+│   │   ├── original-poisson-opus.html
+│   │   ├── original-redshift.html
+│   │   ├── original-revision.html
+│   │   ├── original-style-studies.html
+│   │   ├── reuse.html
+│   │   ├── style-blackgold.html
+│   │   ├── style-editor-room.html
+│   │   ├── style-gilded-ep23.html
+│   │   ├── style-gilded.html
+│   │   ├── style-halftone.html
+│   │   ├── style-lamplight.html
+│   │   ├── style-pixel-handdrawn.html
+│   │   ├── style-pixel-sticker.html
+│   │   ├── style-tactical.html
+│   │   ├── style-vector.html
+│   │   ├── style-vox-cut.html
+│   │   ├── style-vox-timeline.html
+│   │   ├── style-warm-desk.html
+│   │   └── validation.json
+│   ├── pareto-revision/
+│   │   ├── assets/
+│   │   │   ├── timeline.json
+│   │   │   ├── voice-track.wav
+│   │   │   ├── voice.mp3
+│   │   │   └── word-boundaries.json
+│   │   ├── evidence/
+│   │   │   ├── fact-review.json
+│   │   │   ├── script-review.json
+│   │   │   └── source-manifest.json
+│   │   ├── media/
+│   │   │   ├── after-silent.mp4
+│   │   │   ├── after-with-audio.mp4
+│   │   │   ├── after.jpg
+│   │   │   ├── before-silent.mp4
+│   │   │   ├── before.jpg
+│   │   │   ├── manifest.json
+│   │   │   └── subtitles.srt
+│   │   ├── plans/
+│   │   │   ├── captions.json
+│   │   │   ├── comparison.json
+│   │   │   ├── content-binding.json
+│   │   │   ├── migration.json
+│   │   │   └── project.json
+│   │   ├── qa/
+│   │   │   ├── caption-reference/
+│   │   │   │   ├── 00-end-with.png
+│   │   │   │   ├── 00-end-without.png
+│   │   │   │   ├── 00-start-with.png
+│   │   │   │   ├── 00-start-without.png
+│   │   │   │   ├── 01-end-with.png
+│   │   │   │   ├── 01-end-without.png
+│   │   │   │   ├── 01-start-with.png
+│   │   │   │   ├── 01-start-without.png
+│   │   │   │   ├── 02-end-with.png
+│   │   │   │   ├── 02-end-without.png
+│   │   │   │   ├── 02-start-with.png
+│   │   │   │   ├── 02-start-without.png
+│   │   │   │   ├── 03-end-with.png
+│   │   │   │   ├── 03-end-without.png
+│   │   │   │   ├── 03-start-with.png
+│   │   │   │   ├── 03-start-without.png
+│   │   │   │   ├── 04-end-with.png
+│   │   │   │   ├── 04-end-without.png
+│   │   │   │   ├── 04-start-with.png
+│   │   │   │   ├── 04-start-without.png
+│   │   │   │   ├── 05-end-with.png
+│   │   │   │   ├── 05-end-without.png
+│   │   │   │   ├── 05-start-with.png
+│   │   │   │   ├── 05-start-without.png
+│   │   │   │   ├── 06-end-with.png
+│   │   │   │   ├── 06-end-without.png
+│   │   │   │   ├── 06-start-with.png
+│   │   │   │   ├── 06-start-without.png
+│   │   │   │   ├── 07-end-with.png
+│   │   │   │   ├── 07-end-without.png
+│   │   │   │   ├── 07-start-with.png
+│   │   │   │   ├── 07-start-without.png
+│   │   │   │   ├── 08-end-with.png
+│   │   │   │   ├── 08-end-without.png
+│   │   │   │   ├── 08-start-with.png
+│   │   │   │   ├── 08-start-without.png
+│   │   │   │   ├── 09-end-with.png
+│   │   │   │   ├── 09-end-without.png
+│   │   │   │   ├── 09-start-with.png
+│   │   │   │   ├── 09-start-without.png
+│   │   │   │   ├── 10-end-with.png
+│   │   │   │   ├── 10-end-without.png
+│   │   │   │   ├── 10-start-with.png
+│   │   │   │   ├── 10-start-without.png
+│   │   │   │   ├── 11-end-with.png
+│   │   │   │   ├── 11-end-without.png
+│   │   │   │   ├── 11-start-with.png
+│   │   │   │   ├── 11-start-without.png
+│   │   │   │   ├── 12-end-with.png
+│   │   │   │   ├── 12-end-without.png
+│   │   │   │   ├── 12-start-with.png
+│   │   │   │   └── 12-start-without.png
+│   │   │   ├── encoded-caption-frames/
+│   │   │   │   ├── 001.png
+│   │   │   │   ├── 002.png
+│   │   │   │   ├── 003.png
+│   │   │   │   ├── 004.png
+│   │   │   │   ├── 005.png
+│   │   │   │   ├── 006.png
+│   │   │   │   ├── 007.png
+│   │   │   │   ├── 008.png
+│   │   │   │   ├── 009.png
+│   │   │   │   ├── 010.png
+│   │   │   │   ├── 011.png
+│   │   │   │   ├── 012.png
+│   │   │   │   ├── 013.png
+│   │   │   │   ├── 014.png
+│   │   │   │   ├── 015.png
+│   │   │   │   ├── 016.png
+│   │   │   │   ├── 017.png
+│   │   │   │   ├── 018.png
+│   │   │   │   ├── 019.png
+│   │   │   │   ├── 020.png
+│   │   │   │   ├── 021.png
+│   │   │   │   ├── 022.png
+│   │   │   │   ├── 023.png
+│   │   │   │   ├── 024.png
+│   │   │   │   ├── 025.png
+│   │   │   │   └── 026.png
+│   │   │   ├── audit.json
+│   │   │   ├── caption-reference.json
+│   │   │   ├── caption-trace.json
+│   │   │   ├── caption-verification.json
+│   │   │   ├── comparison-metrics.json
+│   │   │   ├── editor-import.json
+│   │   │   ├── full-review.json
+│   │   │   ├── full-sequence-00.jpg
+│   │   │   ├── full-sequence-01.jpg
+│   │   │   ├── full-sequence-02.jpg
+│   │   │   ├── full-sequence-03.jpg
+│   │   │   ├── full-sequence-04.jpg
+│   │   │   ├── pace.json
+│   │   │   ├── production-review.json
+│   │   │   ├── render-full.json
+│   │   │   └── repair-v1.json
+│   │   ├── scripts/
+│   │   │   └── verify_claims.py
+│   │   ├── source/
+│   │   │   ├── content.json
+│   │   │   ├── draft.txt
+│   │   │   ├── script.json
+│   │   │   └── storyboard.json
+│   │   ├── tools/
+│   │   │   ├── film_delivery.py
+│   │   │   └── production.py
+│   │   ├── 工程/
+│   │   │   ├── public/
+│   │   │   │   ├── fonts/
+│   │   │   │   │   ├── Anton-OFL.txt
+│   │   │   │   │   ├── Anton.woff
+│   │   │   │   │   ├── Noto-OFL.txt
+│   │   │   │   │   ├── NotoSansSC-VF.ttf
+│   │   │   │   │   ├── NotoSerifSC-VF.ttf
+│   │   │   │   │   └── README.md
+│   │   │   │   └── paper-title.png
+│   │   │   ├── src/
+│   │   │   │   ├── CaptionProbe.tsx
+│   │   │   │   ├── Chapter.tsx
+│   │   │   │   ├── PaperSystem.tsx
+│   │   │   │   ├── content.generated.json
+│   │   │   │   ├── entry.tsx
+│   │   │   │   ├── style.css
+│   │   │   │   └── timing.json
+│   │   │   ├── package-lock.json
+│   │   │   ├── package.json
+│   │   │   ├── render.mjs
+│   │   │   └── tsconfig.json
+│   │   ├── README.md
+│   │   ├── index.html
+│   │   ├── requirements.txt
+│   │   └── voice.py
+│   ├── pixel-scene-map/
+│   │   ├── media/
+│   │   │   ├── L1.mp4
+│   │   │   ├── L2.mp4
+│   │   │   ├── L3.mp4
+│   │   │   ├── assets.jpg
+│   │   │   ├── caesar-original.jpg
+│   │   │   ├── caesar-original.mp4
+│   │   │   ├── caesar-portrait.jpg
+│   │   │   ├── caesar-portrait.mp4
+│   │   │   ├── second-original.mp4
+│   │   │   └── second-portrait.mp4
+│   │   ├── README.md
+│   │   ├── index.html
+│   │   └── verification.json
+│   ├── production-gates/
+│   │   ├── evidence/
+│   │   │   ├── blackgold-checks.json
+│   │   │   ├── blackgold-dense.jpg
+│   │   │   ├── blackgold-review.json
+│   │   │   ├── blackgold-trace.json
+│   │   │   ├── gilded-checks.json
+│   │   │   ├── gilded-dense.jpg
+│   │   │   ├── gilded-review.json
+│   │   │   ├── gilded-trace.json
+│   │   │   ├── pixel-checks.json
+│   │   │   ├── pixel-cut.jpg
+│   │   │   ├── pixel-dense.jpg
+│   │   │   ├── pixel-review.json
+│   │   │   └── pixel-trace.json
+│   │   ├── README.md
+│   │   ├── blackgold.jpg
+│   │   ├── blackgold.mp4
+│   │   ├── gilded.jpg
+│   │   ├── gilded.mp4
+│   │   ├── index.html
+│   │   ├── pixel.jpg
+│   │   ├── pixel.mp4
+│   │   └── validation.json
+│   ├── reference-study-20261029/
+│   │   ├── media/
+│   │   │   ├── D01.mp4
+│   │   │   ├── D03.mp4
+│   │   │   ├── D04.mp4
+│   │   │   ├── G01.mp4
+│   │   │   ├── G02.mp4
+│   │   │   ├── G03.mp4
+│   │   │   ├── N05.mp4
+│   │   │   ├── N07.mp4
+│   │   │   ├── P01.mp4
+│   │   │   ├── Q01.mp4
+│   │   │   ├── Q04.mp4
+│   │   │   ├── Q05.mp4
+│   │   │   ├── Q06.mp4
+│   │   │   ├── Q07.mp4
+│   │   │   ├── Q08.mp4
+│   │   │   ├── Q09.mp4
+│   │   │   ├── Q10.mp4
+│   │   │   ├── Q11.mp4
+│   │   │   ├── Q12.mp4
+│   │   │   ├── Q13.mp4
+│   │   │   ├── Q14.mp4
+│   │   │   ├── Q15.mp4
+│   │   │   ├── Q17.mp4
+│   │   │   ├── Q18.mp4
+│   │   │   ├── Q19.mp4
+│   │   │   ├── Q20.mp4
+│   │   │   ├── Q21.mp4
+│   │   │   ├── Q22.mp4
+│   │   │   ├── Q23.mp4
+│   │   │   ├── Q24.mp4
+│   │   │   ├── Q25.mp4
+│   │   │   ├── Q26.mp4
+│   │   │   ├── Q27.mp4
+│   │   │   ├── Q28.mp4
+│   │   │   ├── Q29.mp4
+│   │   │   ├── Q30.mp4
+│   │   │   ├── Q31.mp4
+│   │   │   ├── Q32.mp4
+│   │   │   ├── Q33.mp4
+│   │   │   ├── Q34.mp4
+│   │   │   ├── Q35.mp4
+│   │   │   ├── R01.mp4
+│   │   │   ├── R02.mp4
+│   │   │   ├── R03.mp4
+│   │   │   ├── R04.mp4
+│   │   │   ├── R05.mp4
+│   │   │   ├── R06.mp4
+│   │   │   ├── R07.mp4
+│   │   │   ├── R08.mp4
+│   │   │   ├── R09.mp4
+│   │   │   ├── R10.mp4
+│   │   │   ├── R11.mp4
+│   │   │   ├── R12.mp4
+│   │   │   ├── R13.mp4
+│   │   │   ├── R14.mp4
+│   │   │   ├── R15.mp4
+│   │   │   ├── R16.mp4
+│   │   │   ├── R17.mp4
+│   │   │   ├── R18.mp4
+│   │   │   ├── R19.mp4
+│   │   │   ├── R20.mp4
+│   │   │   ├── R21.mp4
+│   │   │   ├── R22.mp4
+│   │   │   ├── R23.mp4
+│   │   │   ├── R24.mp4
+│   │   │   ├── R25.mp4
+│   │   │   ├── R26.mp4
+│   │   │   ├── R27.mp4
+│   │   │   ├── T01.mp4
+│   │   │   ├── T02.mp4
+│   │   │   ├── T03.mp4
+│   │   │   ├── T04.mp4
+│   │   │   ├── T05.mp4
+│   │   │   ├── T06.mp4
+│   │   │   ├── T07.mp4
+│   │   │   ├── T08.mp4
+│   │   │   ├── T09.mp4
+│   │   │   ├── T10.mp4
+│   │   │   ├── T11.mp4
+│   │   │   ├── T12.mp4
+│   │   │   ├── T13.mp4
+│   │   │   ├── T14.mp4
+│   │   │   ├── T15.mp4
+│   │   │   ├── T16.mp4
+│   │   │   ├── T17.mp4
+│   │   │   ├── W01.mp4
+│   │   │   ├── W05.mp4
+│   │   │   ├── W14.mp4
+│   │   │   ├── W20.mp4
+│   │   │   ├── X01.mp4
+│   │   │   ├── X02.mp4
+│   │   │   ├── X03.mp4
+│   │   │   ├── X04.mp4
+│   │   │   ├── X05.mp4
+│   │   │   ├── X06.mp4
+│   │   │   ├── X07.mp4
+│   │   │   ├── X08.mp4
+│   │   │   ├── X09.mp4
+│   │   │   ├── X10.mp4
+│   │   │   ├── X11.mp4
+│   │   │   ├── X12.mp4
+│   │   │   ├── X13.mp4
+│   │   │   ├── X14.mp4
+│   │   │   └── X15.mp4
+│   │   ├── motion/
+│   │   │   ├── L1-00.jpg
+│   │   │   ├── L1-01.jpg
+│   │   │   ├── L1-02.jpg
+│   │   │   ├── L1-03.jpg
+│   │   │   ├── L1-04.jpg
+│   │   │   ├── L1-05.jpg
+│   │   │   ├── L1-06.jpg
+│   │   │   ├── L1-07.jpg
+│   │   │   ├── L1-08.jpg
+│   │   │   ├── L1-09.jpg
+│   │   │   ├── L1-10.jpg
+│   │   │   ├── L1-11.jpg
+│   │   │   ├── L1-sequence.jpg
+│   │   │   ├── L1.mp4
+│   │   │   ├── L2-00.jpg
+│   │   │   ├── L2-01.jpg
+│   │   │   ├── L2-02.jpg
+│   │   │   ├── L2-03.jpg
+│   │   │   ├── L2-04.jpg
+│   │   │   ├── L2-05.jpg
+│   │   │   ├── L2-06.jpg
+│   │   │   ├── L2-07.jpg
+│   │   │   ├── L2-08.jpg
+│   │   │   ├── L2-09.jpg
+│   │   │   ├── L2-10.jpg
+│   │   │   ├── L2-11.jpg
+│   │   │   ├── L2-sequence.jpg
+│   │   │   ├── L2.mp4
+│   │   │   ├── L3-00.jpg
+│   │   │   ├── L3-01.jpg
+│   │   │   ├── L3-02.jpg
+│   │   │   ├── L3-03.jpg
+│   │   │   ├── L3-04.jpg
+│   │   │   ├── L3-05.jpg
+│   │   │   ├── L3-06.jpg
+│   │   │   ├── L3-07.jpg
+│   │   │   ├── L3-08.jpg
+│   │   │   ├── L3-09.jpg
+│   │   │   ├── L3-10.jpg
+│   │   │   ├── L3-11.jpg
+│   │   │   ├── L3-sequence.jpg
+│   │   │   ├── L3.mp4
+│   │   │   ├── S1-00.jpg
+│   │   │   ├── S1-01.jpg
+│   │   │   ├── S1-02.jpg
+│   │   │   ├── S1-03.jpg
+│   │   │   ├── S1-04.jpg
+│   │   │   ├── S1-05.jpg
+│   │   │   ├── S1-06.jpg
+│   │   │   ├── S1-07.jpg
+│   │   │   ├── S1-08.jpg
+│   │   │   ├── S1-09.jpg
+│   │   │   ├── S1-10.jpg
+│   │   │   ├── S1-11.jpg
+│   │   │   ├── S1-sequence.jpg
+│   │   │   ├── S1.mp4
+│   │   │   ├── S2-00.jpg
+│   │   │   ├── S2-01.jpg
+│   │   │   ├── S2-02.jpg
+│   │   │   ├── S2-03.jpg
+│   │   │   ├── S2-04.jpg
+│   │   │   ├── S2-05.jpg
+│   │   │   ├── S2-06.jpg
+│   │   │   ├── S2-07.jpg
+│   │   │   ├── S2-08.jpg
+│   │   │   ├── S2-09.jpg
+│   │   │   ├── S2-10.jpg
+│   │   │   ├── S2-11.jpg
+│   │   │   ├── S2-sequence.jpg
+│   │   │   ├── S2.mp4
+│   │   │   ├── S3-00.jpg
+│   │   │   ├── S3-01.jpg
+│   │   │   ├── S3-02.jpg
+│   │   │   ├── S3-03.jpg
+│   │   │   ├── S3-04.jpg
+│   │   │   ├── S3-05.jpg
+│   │   │   ├── S3-06.jpg
+│   │   │   ├── S3-07.jpg
+│   │   │   ├── S3-08.jpg
+│   │   │   ├── S3-09.jpg
+│   │   │   ├── S3-10.jpg
+│   │   │   ├── S3-11.jpg
+│   │   │   ├── S3-sequence.jpg
+│   │   │   ├── S3.mp4
+│   │   │   ├── S4-00.jpg
+│   │   │   ├── S4-01.jpg
+│   │   │   ├── S4-02.jpg
+│   │   │   ├── S4-03.jpg
+│   │   │   ├── S4-04.jpg
+│   │   │   ├── S4-05.jpg
+│   │   │   ├── S4-06.jpg
+│   │   │   ├── S4-07.jpg
+│   │   │   ├── S4-08.jpg
+│   │   │   ├── S4-09.jpg
+│   │   │   ├── S4-10.jpg
+│   │   │   ├── S4-11.jpg
+│   │   │   ├── S4-sequence.jpg
+│   │   │   ├── S4.mp4
+│   │   │   ├── S5-00.jpg
+│   │   │   ├── S5-01.jpg
+│   │   │   ├── S5-02.jpg
+│   │   │   ├── S5-03.jpg
+│   │   │   ├── S5-04.jpg
+│   │   │   ├── S5-05.jpg
+│   │   │   ├── S5-06.jpg
+│   │   │   ├── S5-07.jpg
+│   │   │   ├── S5-08.jpg
+│   │   │   ├── S5-09.jpg
+│   │   │   ├── S5-10.jpg
+│   │   │   ├── S5-11.jpg
+│   │   │   ├── S5-sequence.jpg
+│   │   │   ├── S5.mp4
+│   │   │   ├── shot-01-0.jpg
+│   │   │   ├── shot-01-1.jpg
+│   │   │   ├── shot-01-2.jpg
+│   │   │   ├── shot-01.jpg
+│   │   │   ├── shot-02-0.jpg
+│   │   │   ├── shot-02-1.jpg
+│   │   │   ├── shot-02-2.jpg
+│   │   │   ├── shot-02.jpg
+│   │   │   ├── shot-03-0.jpg
+│   │   │   ├── shot-03-1.jpg
+│   │   │   ├── shot-03-2.jpg
+│   │   │   ├── shot-03.jpg
+│   │   │   ├── shot-04-0.jpg
+│   │   │   ├── shot-04-1.jpg
+│   │   │   ├── shot-04-2.jpg
+│   │   │   ├── shot-04.jpg
+│   │   │   ├── shot-05-0.jpg
+│   │   │   ├── shot-05-1.jpg
+│   │   │   ├── shot-05-2.jpg
+│   │   │   ├── shot-05.jpg
+│   │   │   ├── shot-06-0.jpg
+│   │   │   ├── shot-06-1.jpg
+│   │   │   ├── shot-06-2.jpg
+│   │   │   ├── shot-06.jpg
+│   │   │   ├── shot-07-0.jpg
+│   │   │   ├── shot-07-1.jpg
+│   │   │   ├── shot-07-2.jpg
+│   │   │   ├── shot-07.jpg
+│   │   │   ├── shot-08-0.jpg
+│   │   │   ├── shot-08-1.jpg
+│   │   │   ├── shot-08-2.jpg
+│   │   │   ├── shot-08.jpg
+│   │   │   ├── shot-09-0.jpg
+│   │   │   ├── shot-09-1.jpg
+│   │   │   ├── shot-09-2.jpg
+│   │   │   ├── shot-09.jpg
+│   │   │   ├── shot-10-0.jpg
+│   │   │   ├── shot-10-1.jpg
+│   │   │   ├── shot-10-2.jpg
+│   │   │   ├── shot-10.jpg
+│   │   │   ├── shot-11-0.jpg
+│   │   │   ├── shot-11-1.jpg
+│   │   │   ├── shot-11-2.jpg
+│   │   │   ├── shot-11.jpg
+│   │   │   ├── shot-12-0.jpg
+│   │   │   ├── shot-12-1.jpg
+│   │   │   ├── shot-12-2.jpg
+│   │   │   ├── shot-12.jpg
+│   │   │   ├── shot-13-0.jpg
+│   │   │   ├── shot-13-1.jpg
+│   │   │   ├── shot-13-2.jpg
+│   │   │   ├── shot-13.jpg
+│   │   │   ├── shot-14-0.jpg
+│   │   │   ├── shot-14-1.jpg
+│   │   │   ├── shot-14-2.jpg
+│   │   │   ├── shot-14.jpg
+│   │   │   ├── shot-15-0.jpg
+│   │   │   ├── shot-15-1.jpg
+│   │   │   ├── shot-15-2.jpg
+│   │   │   ├── shot-15.jpg
+│   │   │   ├── shot-16-0.jpg
+│   │   │   ├── shot-16-1.jpg
+│   │   │   ├── shot-16-2.jpg
+│   │   │   ├── shot-16.jpg
+│   │   │   ├── shot-17-0.jpg
+│   │   │   ├── shot-17-1.jpg
+│   │   │   ├── shot-17-2.jpg
+│   │   │   ├── shot-17.jpg
+│   │   │   ├── shot-18-0.jpg
+│   │   │   ├── shot-18-1.jpg
+│   │   │   ├── shot-18-2.jpg
+│   │   │   ├── shot-18.jpg
+│   │   │   ├── shot-19-0.jpg
+│   │   │   ├── shot-19-1.jpg
+│   │   │   ├── shot-19-2.jpg
+│   │   │   ├── shot-19.jpg
+│   │   │   ├── shot-20-0.jpg
+│   │   │   ├── shot-20-1.jpg
+│   │   │   ├── shot-20-2.jpg
+│   │   │   ├── shot-20.jpg
+│   │   │   ├── shot-21-0.jpg
+│   │   │   ├── shot-21-1.jpg
+│   │   │   ├── shot-21-2.jpg
+│   │   │   ├── shot-21.jpg
+│   │   │   ├── shot-22-0.jpg
+│   │   │   ├── shot-22-1.jpg
+│   │   │   ├── shot-22-2.jpg
+│   │   │   ├── shot-22.jpg
+│   │   │   ├── shot-23-0.jpg
+│   │   │   ├── shot-23-1.jpg
+│   │   │   ├── shot-23-2.jpg
+│   │   │   ├── shot-23.jpg
+│   │   │   ├── shot-24-0.jpg
+│   │   │   ├── shot-24-1.jpg
+│   │   │   ├── shot-24-2.jpg
+│   │   │   ├── shot-24.jpg
+│   │   │   ├── shot-25-0.jpg
+│   │   │   ├── shot-25-1.jpg
+│   │   │   ├── shot-25-2.jpg
+│   │   │   ├── shot-25.jpg
+│   │   │   ├── shot-26-0.jpg
+│   │   │   ├── shot-26-1.jpg
+│   │   │   ├── shot-26-2.jpg
+│   │   │   ├── shot-26.jpg
+│   │   │   ├── shot-27-0.jpg
+│   │   │   ├── shot-27-1.jpg
+│   │   │   ├── shot-27-2.jpg
+│   │   │   ├── shot-27.jpg
+│   │   │   ├── shot-28-0.jpg
+│   │   │   ├── shot-28-1.jpg
+│   │   │   ├── shot-28-2.jpg
+│   │   │   └── shot-28.jpg
+│   │   ├── posters/
+│   │   │   ├── C01.jpg
+│   │   │   ├── C02.jpg
+│   │   │   ├── C03.jpg
+│   │   │   ├── C04.jpg
+│   │   │   ├── C05.jpg
+│   │   │   ├── C06.jpg
+│   │   │   ├── D01.jpg
+│   │   │   ├── D02.jpg
+│   │   │   ├── D03.jpg
+│   │   │   ├── D04.jpg
+│   │   │   ├── G01.jpg
+│   │   │   ├── G02.jpg
+│   │   │   ├── G03.jpg
+│   │   │   ├── N01.jpg
+│   │   │   ├── N02.jpg
+│   │   │   ├── N03.jpg
+│   │   │   ├── N04.jpg
+│   │   │   ├── N05.jpg
+│   │   │   ├── N06.jpg
+│   │   │   ├── N07.jpg
+│   │   │   ├── P01.jpg
+│   │   │   ├── P02.jpg
+│   │   │   ├── P03.jpg
+│   │   │   ├── P04.jpg
+│   │   │   ├── P05.jpg
+│   │   │   ├── Q01.jpg
+│   │   │   ├── Q02.jpg
+│   │   │   ├── Q03.jpg
+│   │   │   ├── Q04.jpg
+│   │   │   ├── Q05.jpg
+│   │   │   ├── Q06.jpg
+│   │   │   ├── Q07.jpg
+│   │   │   ├── Q08.jpg
+│   │   │   ├── Q09.jpg
+│   │   │   ├── Q10.jpg
+│   │   │   ├── Q11.jpg
+│   │   │   ├── Q12.jpg
+│   │   │   ├── Q13.jpg
+│   │   │   ├── Q14.jpg
+│   │   │   ├── Q15.jpg
+│   │   │   ├── Q16.jpg
+│   │   │   ├── Q17.jpg
+│   │   │   ├── Q18.jpg
+│   │   │   ├── Q19.jpg
+│   │   │   ├── Q20.jpg
+│   │   │   ├── Q21.jpg
+│   │   │   ├── Q22.jpg
+│   │   │   ├── Q23.jpg
+│   │   │   ├── Q24.jpg
+│   │   │   ├── Q25.jpg
+│   │   │   ├── Q26.jpg
+│   │   │   ├── Q27.jpg
+│   │   │   ├── Q28.jpg
+│   │   │   ├── Q29.jpg
+│   │   │   ├── Q30.jpg
+│   │   │   ├── Q31.jpg
+│   │   │   ├── Q32.jpg
+│   │   │   ├── Q33.jpg
+│   │   │   ├── Q34.jpg
+│   │   │   ├── Q35.jpg
+│   │   │   ├── R01.jpg
+│   │   │   ├── R02.jpg
+│   │   │   ├── R03.jpg
+│   │   │   ├── R04.jpg
+│   │   │   ├── R05.jpg
+│   │   │   ├── R06.jpg
+│   │   │   ├── R07.jpg
+│   │   │   ├── R08.jpg
+│   │   │   ├── R09.jpg
+│   │   │   ├── R10.jpg
+│   │   │   ├── R11.jpg
+│   │   │   ├── R12.jpg
+│   │   │   ├── R13.jpg
+│   │   │   ├── R14.jpg
+│   │   │   ├── R15.jpg
+│   │   │   ├── R16.jpg
+│   │   │   ├── R17.jpg
+│   │   │   ├── R18.jpg
+│   │   │   ├── R19.jpg
+│   │   │   ├── R20.jpg
+│   │   │   ├── R21.jpg
+│   │   │   ├── R22.jpg
+│   │   │   ├── R23.jpg
+│   │   │   ├── R24.jpg
+│   │   │   ├── R25.jpg
+│   │   │   ├── R26.jpg
+│   │   │   ├── R27.jpg
+│   │   │   ├── T01.jpg
+│   │   │   ├── T02.jpg
+│   │   │   ├── T03.jpg
+│   │   │   ├── T04.jpg
+│   │   │   ├── T05.jpg
+│   │   │   ├── T06.jpg
+│   │   │   ├── T07.jpg
+│   │   │   ├── T08.jpg
+│   │   │   ├── T09.jpg
+│   │   │   ├── T10.jpg
+│   │   │   ├── T11.jpg
+│   │   │   ├── T12.jpg
+│   │   │   ├── T13.jpg
+│   │   │   ├── T14.jpg
+│   │   │   ├── T15.jpg
+│   │   │   ├── T16.jpg
+│   │   │   ├── T17.jpg
+│   │   │   ├── W01.jpg
+│   │   │   ├── W02.jpg
+│   │   │   ├── W03.jpg
+│   │   │   ├── W04.jpg
+│   │   │   ├── W05.jpg
+│   │   │   ├── W06.jpg
+│   │   │   ├── W07.jpg
+│   │   │   ├── W08.jpg
+│   │   │   ├── W09.jpg
+│   │   │   ├── W10.jpg
+│   │   │   ├── W11.jpg
+│   │   │   ├── W12.jpg
+│   │   │   ├── W13.jpg
+│   │   │   ├── W14.jpg
+│   │   │   ├── W15.jpg
+│   │   │   ├── W16.jpg
+│   │   │   ├── W17.jpg
+│   │   │   ├── W18.jpg
+│   │   │   ├── W19.jpg
+│   │   │   ├── W20.jpg
+│   │   │   ├── X01.jpg
+│   │   │   ├── X02.jpg
+│   │   │   ├── X03.jpg
+│   │   │   ├── X04.jpg
+│   │   │   ├── X05.jpg
+│   │   │   ├── X06.jpg
+│   │   │   ├── X07.jpg
+│   │   │   ├── X08.jpg
+│   │   │   ├── X09.jpg
+│   │   │   ├── X10.jpg
+│   │   │   ├── X11.jpg
+│   │   │   ├── X12.jpg
+│   │   │   ├── X13.jpg
+│   │   │   ├── X14.jpg
+│   │   │   └── X15.jpg
+│   │   ├── browser-validation.json
+│   │   ├── catalog.csv
+│   │   ├── catalog.js
+│   │   ├── catalog.json
+│   │   ├── index.html
+│   │   ├── media-manifest.json
+│   │   ├── motion-events.json
+│   │   ├── motion.css
+│   │   ├── names.txt
+│   │   ├── shot-evidence.json
+│   │   ├── study.html
+│   │   ├── study.js
+│   │   ├── style.css
+│   │   └── validation.json
+│   └── reflections/
+│       ├── R01-sequence.jpg
+│       ├── R02-sequence.jpg
+│       └── index.html
+├── references/
+│   ├── experience/
+│   │   ├── cards/
+│   │   │   ├── E01.md
+│   │   │   ├── E02.md
+│   │   │   ├── E03.md
+│   │   │   ├── E04.md
+│   │   │   ├── E05.md
+│   │   │   ├── E06.md
+│   │   │   ├── E07.md
+│   │   │   ├── E08.md
+│   │   │   ├── E09.md
+│   │   │   ├── E10.md
+│   │   │   ├── E11.md
+│   │   │   ├── E12.md
+│   │   │   ├── E13.md
+│   │   │   ├── E14.md
+│   │   │   ├── E15.md
+│   │   │   ├── E16.md
+│   │   │   ├── E17.md
+│   │   │   ├── E18.md
+│   │   │   ├── E19.md
+│   │   │   ├── E20.md
+│   │   │   ├── E21.md
+│   │   │   └── E22.md
+│   │   ├── evidence/
+│   │   │   ├── chapter-repair.json
+│   │   │   ├── chapter-review.json
+│   │   │   ├── disappearing-review.json
+│   │   │   ├── frequency-captions.json
+│   │   │   ├── frequency-review.json
+│   │   │   ├── full-short.json
+│   │   │   ├── index-review.json
+│   │   │   ├── index-segment.json
+│   │   │   ├── index-voice.json
+│   │   │   ├── paced-sample.json
+│   │   │   ├── poisson-retrospective.json
+│   │   │   └── rejected-film.json
+│   │   ├── casebook.md
+│   │   ├── index.json
+│   │   ├── reflections.json
+│   │   ├── reflections.md
+│   │   ├── sources.json
+│   │   └── usage.md
+│   ├── reference-study-20261029/
+│   │   ├── prompts/
+│   │   │   ├── caesar-particle.txt
+│   │   │   └── caesar-pixel.txt
+│   │   ├── plan.json
+│   │   ├── production-route.txt
+│   │   └── shot-observations.csv
+│   ├── audio-and-materials.md
+│   ├── episode-contract.md
+│   ├── executable-production.md
+│   ├── long-form.md
+│   ├── pixel-scene-map.md
+│   ├── poisson-cinema.md
+│   ├── production-profiles.md
+│   ├── production.md
+│   ├── runtime-and-portability.md
+│   └── visual-library.md
+├── scripts/
+│   ├── audit_episode.py
+│   ├── audit_gallery.py
+│   ├── build_reference_evidence.py
+│   ├── build_reflections.py
+│   ├── cinema.py
+│   ├── experience.py
+│   ├── film_delivery.py
+│   ├── mix_music.py
+│   ├── pixel_inspect.py
+│   ├── pixel_scene.py
+│   ├── production.py
+│   ├── reference_study.py
+│   ├── repo_inventory.py
+│   ├── select_visual.py
+│   └── start_episode.py
+├── tests/
+│   ├── run_cinema_browser.py
+│   ├── test_audit_episode.py
+│   ├── test_cinema.py
+│   ├── test_experience.py
+│   ├── test_film_delivery.py
+│   ├── test_pixel_scene.py
+│   └── test_production.py
+├── .gitattributes
+├── .gitignore
+├── .nojekyll
+├── LICENSE
+├── NOTICE.md
+├── README.md
+├── SKILL.md
+└── index.html

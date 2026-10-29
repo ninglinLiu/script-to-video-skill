@@ -1,5 +1,7 @@
 # 完整工程迁移、同文改编与整片审看
 
+> 迁移完整工程仍可能只保住字体和装饰、丢掉实际解释动作。chapter-01的后续纸面改编失败见 `experience.py reflection R06`；只复制文件不能视为质量验收。先用 `experience.py select --stage plan --route chapter-01` 带出相关经验。
+
 ## 1. 先选完整影片，再迁移
 
 先看用户已认可方向的完整案例，而非按关键词选容易运行的组件。仓库内 `examples/chapter-01` 提供完整纸面章节；`examples/pareto-revision` 保存同文修改对照。两者是可复现案例，不代表所有文章应使用纸面风格。

@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-29",
+  "scope": "反思资产：用户反馈、实际观察和下一次取舍。技术记录与用户评价分别保留；不是新的审美评分。所有路径相对仓库根目录。",
+  "cases": [
+    {
+      "id": "R01",
+      "title": "LifeOS 对标 · 凯撒像素街区",
+      "status": "user-rejected",
+      "routes": [
+        "pixel-scene-map"
+      ],
+      "experience_ids": [
+        "E20",
+        "E12"
+      ],
+      "signals": [
+        "LifeOS",
+        "像素街区",
+        "贴纸",
+        "背景图",
+        "pixel-scene-map"
+      ],
+      "feedback": "用户否决105.57秒双画幅版本：不流畅，像背景图叠字幕，人物只是贴纸上下移动。耗时约三个半小时没有换来相称的动画效果。",
+      "observation_scope": "用户成片反馈；核对32镜配置和scene-runtime.js中的actor/sceneActors；本轮补充局部编码序列。没有重新审听。",
+      "observations": [
+        "actor在walk=true时选一个固定裁切区域，并用sin(t*10)*3上下偏移；并非随时间更换步态帧。",
+        "sceneActors主要插值x/toX；大量镜头重复同一组1.03→1.09背景推近。环境精细程度不能代替人物与物体的动作。",
+        "verification.json的字幕、解码和第二配置检查仍保留，但不能覆盖用户否决。"
+      ],
+      "failed_strategy": "先画完整背景，再靠镜头推拉、卡片和人物整体位移凑成全片。",
+      "decision": "仅作反思、取材和旧版复现；不推荐为已验证的成片模板。LifeOS原参考仍可使用，其质量不因本次失败被否定。",
+      "preserve": [
+        "背景与分层素材",
+        "配音时间线和字幕",
+        "双画幅配置及缓存渲染工具"
+      ],
+      "retest": "若获重做授权，保持同一稿与配音，先对照指定连续镜头：主体有可辨认的动作过程、接触/遮挡、动作结果及下一镜承接。仅摄像机移动或切到更漂亮背景不能放行扩片。",
+      "media": "examples/pixel-scene-map/media/caesar-original.mp4",
+      "poster": "examples/pixel-scene-map/media/caesar-original.jpg",
+      "evidence": [
+        "assets/pixel-scene-map/runtime/scene-runtime.js",
+        "assets/pixel-scene-map/configs/caesar.json",
+        "examples/pixel-scene-map/verification.json"
+      ],
+      "spans": [
+        {
+          "start": 0,
+          "end": 8.87,
+          "look_for": "固定人物姿态整体移动、反复背景推近与卡片承接；不要把景物细节计作动作。"
+        },
+        {
+          "start": 89,
+          "end": 105.56,
+          "look_for": "结尾提问与场景切换是否由主体动作推进，而非只有纸卡和运镜。"
+        }
+      ],
+      "media_sha256": "b5996ec83cce3f4c7d1a25420463ef6c8ddf63f491562826d67a8eb65c3ebd33"
+    },
+    {
+      "id": "R02",
+      "title": "《价签之外》· 红裙人物与绿色外套",
+      "status": "user-rejected",
+      "routes": [
+        "anchor-art"
+      ],
+      "experience_ids": [
+        "E20",
+        "E04"
+      ],
+      "signals": [
+        "价签之外",
+        "裙子",
+        "外套",
+        "新艺术",
+        "anchor-art"
+      ],
+      "feedback": "旧版已被用户否决；2026-10-29用户确认，这就是本次要求找回的‘裙子’失败案例。它实际表现商店中的价签与衣物比较，并不是制作裙子的教程。",
+      "observation_scope": "旧制作审看记录、公开展厅状态、用户本次确认；本轮审看已有接触表和局部编码序列。",
+      "observations": [
+        "商店、人物、外套来自三张生成资产；人物只做轻微形变和倾斜，缺少逐关节表演。",
+        "价签放大、测量盘指针和衣物推近确有动作，不能写成完全没有动画；但它们不足以支撑用户所期待的完整场景表演。",
+        "旧修复处理过文字拥挤、衣物重叠、背景黑边和方向模糊。这些局部改善没有解决主要的主体动作问题。"
+      ],
+      "failed_strategy": "把完成度较高的静帧美术与附着其上的图解运动，等同于成熟的艺术动画。",
+      "decision": "保留为反思资产和美术取材入口，不作动画质量已通过的范本。",
+      "preserve": [
+        "店铺构图、配色与衣物素材",
+        "价格参照的视觉隐喻",
+        "修复前后记录"
+      ],
+      "retest": "对同一店铺、人物和外套设计可观察的交互：动作发起、手与物体接触、衣物响应、视线/重心变化、结果。如何实现由选定引擎决定，不能仅增加漂浮或镜头缩放。",
+      "media": "examples/gallery/media/anchor-art-1.mp4",
+      "poster": "examples/gallery/media/anchor-art-1.jpg",
+      "evidence": [
+        "examples/gallery/film-anchor-art.html",
+        "examples/reference-study-20261029/catalog.json"
+      ],
+      "spans": [
+        {
+          "start": 10,
+          "end": 22,
+          "look_for": "价签变参照盘时，人物与衣物是否发生足以支撑镜头时长的动作。"
+        },
+        {
+          "start": 42.85,
+          "end": 54.44,
+          "look_for": "布料特写、衣物比较与人物之间，哪些是实质交互，哪些只是推近或叠放。"
+        }
+      ],
+      "media_sha256": "ca6b6f38f9895d0e20a5322ab61d12e08ffbcc27f079bbc086b1af2625a80157"
+    },
+    {
+      "id": "R03",
+      "title": "DeepSeek · 帕累托68.83秒初版",
+      "status": "user-rejected",
+      "routes": [
+        "blackgold",
+        "component-kits"
+      ],
+      "experience_ids": [
+        "E19",
+        "E18"
+      ],
+      "signals": [
+        "帕累托",
+        "Pareto",
+        "没字幕",
+        "阴郁",
+        "12秒",
+        "kit"
+      ],
+      "feedback": "用户指出没字幕、节奏差、画风阴郁。",
+      "observation_scope": "历史本地成片/源码核查和用户反馈；本轮不重新宣称已连续看完整片。",
+      "observations": [
+        "旁挂SRT有12条，但实际工程没有绘制口播字幕。",
+        "12.3秒proof只覆盖全片约18%，没有代表多段长时间停滞。",
+        "六项生产检查通过、25/26交付项通过，也没有证明观看效果。"
+      ],
+      "failed_strategy": "把组件装配测试的五个人物和两处交接撑成完整短片。",
+      "decision": "三个kit只作组件测试与取材；修订版单独评价，不自动继承认可。",
+      "preserve": [
+        "可复算的数据",
+        "配音与字幕时间戳",
+        "原片及同文修订对照"
+      ],
+      "retest": "检查最终编码字幕，连续审看全片；保持同一文章，复用实际完整镜头并验证视觉推进。",
+      "media": "examples/pareto-revision/media/before-silent.mp4",
+      "evidence": [
+        "examples/pareto-revision/index.html",
+        "references/experience/cards/E19.md"
+      ],
+      "spans": [
+        {
+          "start": 30.73,
+          "end": 50.07,
+          "look_for": "主体长时间保持，不能把字幕文件或坐标记录当作画面推进。"
+        }
+      ],
+      "media_sha256": "f82de011a5fcd1621936025a05e31aa90c5620120c5c46939aa8413de6ec7a1d"
+    },
+    {
+      "id": "R04",
+      "title": "《队列为什么会突然崩》· 泊松分支独立复测",
+      "status": "user-rejected",
+      "routes": [
+        "poisson-cinema"
+      ],
+      "experience_ids": [
+        "E21",
+        "E05"
+      ],
+      "signals": [
+        "队列",
+        "queue",
+        "poisson-cinema",
+        "recipe",
+        "小点",
+        "参数化"
+      ],
+      "feedback": "用户明确把优先级纠正为动画视觉质量；内容写得更好不能弥补动画不达标。",
+      "observation_scope": "2026-10-29历史核查：90.8秒2fps编码序列、77.9–79.1秒10fps连续帧、46秒全尺寸帧及recipes源码。本轮只整理已有结论；此库没有捆绑该原片。",
+      "observations": [
+        "0–15.69秒主要是几层框缓慢整体缩放。43.30–57.69秒公式切换把短动作拉成数秒半透明中间态。",
+        "九镜全部cut；78.37秒同一批点回到左侧重新开始。",
+        "filters复用7条纵坐标和相同终点，多点重叠；记录对象数量不等于可见对象数量。",
+        "参数化分支把原版的倾斜画框、分层轨迹和局部强调简化为正面窄框、小点。"
+      ],
+      "failed_strategy": "把能换数据的recipe误当作保留了原片美术与动作的完整镜头。",
+      "decision": "分支可用于机制研究，但跨文章动画质量未通过；不能由原片风格受认可推出本分支已稳定。",
+      "preserve": [
+        "原版泊松完整镜头",
+        "数据与证据",
+        "原配音便于同文同音比较"
+      ],
+      "retest": "先保住原镜头的尺度、透视、材质和动作时序，再替换数据；相同输入和相同时间区间对照，重点检查对象遮挡、重置和转场状态。",
+      "evidence": [
+        "references/poisson-cinema.md"
+      ],
+      "spans": [
+        {
+          "start": 43.3,
+          "end": 57.69,
+          "look_for": "历史观察区间；当前库不提供该原片，不能声称已播放。"
+        },
+        {
+          "start": 77.9,
+          "end": 79.1,
+          "look_for": "同一批对象跨镜重置；需要用户本地原片才能复核。"
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "title": "DeepSeek · Kelly独立测试",
+      "status": "user-rejected",
+      "routes": [
+        "kelly-test"
+      ],
+      "experience_ids": [
+        "E18",
+        "E22"
+      ],
+      "signals": [
+        "Kelly",
+        "凯利",
+        "手写700行",
+        "只复用字体"
+      ],
+      "feedback": "用户认为效果差，并要求把问题真正修进Skill，让其他Agent复用已有素材和剪辑。",
+      "observation_scope": "用户提供的制作方自述、历史视觉落地核查。未把自述中的审美判断当成事实；此库未捆绑原片。",
+      "observations": [
+        "复用了字体、voice.py、依赖锁和渲染骨架，主要画面重新写，既有艺术场景和解释组件未接入。",
+        "没有用指定8–13秒连续小样，静帧抽样代替了主要动态检查。",
+        "数值证据和交付记录改善了可靠性，没有自动带来美术与剪辑质量。"
+      ],
+      "failed_strategy": "只迁移运行环境，把视觉问题重新交给每次从零写画面。",
+      "decision": "复用必须落到实际镜头和运动，不用资产数量或import数量证明成片质量。",
+      "preserve": [
+        "证据重算",
+        "真实配音时间线",
+        "环境排障经验"
+      ],
+      "retest": "由另一Agent在干净工作区复现指定连续镜头，再做第二内容适配；当前Agent代做不能冒充独立验证。",
+      "evidence": [
+        "references/experience/sources.json",
+        "references/experience/cards/E18.md"
+      ],
+      "spans": []
+    },
+    {
+      "id": "R06",
+      "title": "DeepSeek · 基金清仓61.93秒纸面版",
+      "status": "user-rejected",
+      "routes": [
+        "chapter-01"
+      ],
+      "experience_ids": [
+        "E21",
+        "E02"
+      ],
+      "signals": [
+        "kaisa-next",
+        "基金清仓",
+        "纸面",
+        "PPT",
+        "61.93"
+      ],
+      "feedback": "用户认为仍像PPT、缺动画，要求结合下载的抖音样片与Claude参考重新处理。",
+      "observation_scope": "用户反馈及制作方交付自述。此库没有本片MP4，未新增连续观片结论。",
+      "observations": [
+        "移植了纸色、字级、账单卡、条码、印章和字幕，但原版主要解释镜头未入画。",
+        "制作方承认6镜中4段近静止，较长保持约7.4秒和8.6秒；开场0–0.6秒空白。",
+        "15条字幕实际入画和整片检查通过，依然没有解决主体运动问题。"
+      ],
+      "failed_strategy": "把版式、字体和装饰符号迁移误当成完整镜头与剪辑迁移。",
+      "decision": "chapter-01源片与失败改编分开：源片可作明确选择的改编输入，不作为任意文章的自动合格模板。",
+      "preserve": [
+        "字幕修复",
+        "纸面视觉体系",
+        "迁移文件哈希与数据证据"
+      ],
+      "retest": "同稿同音比较主体如何从一个状态到下一状态；同时检查第2、3镜重复大数字的视觉功能。不能只再增加字幕像素检查。",
+      "evidence": [
+        "references/experience/cards/E21.md"
+      ],
+      "spans": []
+    },
+    {
+      "id": "R07",
+      "title": "原版《泊松过程》· 喜欢方向，不等于动作全部完成",
+      "status": "mixed-feedback",
+      "routes": [
+        "poisson-original"
+      ],
+      "experience_ids": [
+        "E04",
+        "E05",
+        "E12"
+      ],
+      "signals": [
+        "原版泊松",
+        "分镜没有做到",
+        "53个动作",
+        "未来窗口"
+      ],
+      "feedback": "用户更喜欢原版的视觉方向；历史复盘仍指出分镜与实现、概念图与真实帧之间的差距。不能将原片整体标成被否决。",
+      "observation_scope": "用户提供的制作复盘与后续明确偏好；本轮未重新完整审看原片。",
+      "observations": [
+        "分镜53个动作点、实现9个场景，条目数量不能证明节奏。",
+        "比较段写了未来窗口移动对齐，实际主要为固定窗口、数字、连线与等号。",
+        "概念图中的层次和光照没有等量进入代码成片，小字、细线和大留白降低主体重量。"
+      ],
+      "failed_strategy": "用分镜声明、生成概念图和技术完成度代替实际解释动作的检查。",
+      "decision": "保留被认可方向；只针对具体落差修复，不能把整个风格抹去或宣称已全面通过。",
+      "preserve": [
+        "原片的空间与材质方向",
+        "正确的数学解释",
+        "已有完整镜头"
+      ],
+      "retest": "每个关键解释动作对应真实时间码和连续画面；同尺度窗口实际移动对齐，且不误导时间方向。",
+      "evidence": [
+        "examples/gallery/film-poisson-full.html"
+      ],
+      "spans": [],
+      "media": "examples/gallery/media/poisson-full-1.mp4",
+      "poster": "examples/gallery/media/poisson-full-1.jpg",
+      "media_sha256": "0f28ad5af1d3045390bc67f7811125bd9b18b9693bc43f3524357eb5a82456d2"
+    }
+  ]
+}
