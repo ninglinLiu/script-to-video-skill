@@ -54,7 +54,7 @@ python scripts/start_episode.py --source chapter-01 --episode /path/to/new-episo
 
 **LifeOS像素街区失败案例（用户已否决）：** 用户已否决本版：动画不流畅，主要仍是背景图推拉、字幕/纸卡叠加和人物贴纸位移；不作为已验证的成片路线。 仅供诊断与取材，不作为默认成片来源。原技术入口： 读[像素街区生产入口](references/pixel-scene-map.md)，运行 `scripts/pixel_scene.py prepare/render`。它带完整环境、独立人物/前景/道具、地图与相机配置、两种画幅及第二内容示例；`scripts/pixel_inspect.py`检查编码字幕与整片序列。该分支限于已提供的街区资产与镜头语法，不把跨配置运行等同于稳定审美或独立模型通过。
 
-用户明确选择爽哥说的粒子字/实体解释或 LifeOS 的像素场景/地图剪辑时，先执行 `python scripts/reference_study.py show --route particle-document` 或 `--route pixel-scene-map`。它只读取对应[观察与制作计划](references/reference-study-20261029/plan.json)及重点时间段，不是已验证的成片模板。按计划准备本地原片、复现连续镜头后再改编；不能回退到只换配色的组件测试。详见[制作路径](references/reference-study-20261029/production-route.txt)。
+用户明确选择爽哥说的粒子字/实体解释或 LifeOS 的像素场景/地图剪辑时，先执行 `python scripts/reference_study.py show --route particle-document` 或 `--route pixel-scene-map`。它只读取对应[观察与制作计划](references/reference-study-20261029/plan.json)及重点时间段，不是已验证的成片模板。随后执行 `python scripts/reference_study.py fetch --route <同一route>`，得到有哈希的真实MP4、连续帧和 `bundle.json` 中的动作阶段。优先片段默认只占所选路线的小包，完整clone不必重复下载。先连续观看并按帧定位遮挡、运动路径和跨镜锚点，再做同构镜头；没有视觉工具时明确报告未能观看，不把文字说明当作视觉验收。全片用 `--full` 按需取得。复现连续镜头后再改编；不能回退到只换配色的组件测试。详见[制作路径](references/reference-study-20261029/production-route.txt)。
 
 | 情况 | 读取 |
 |---|---|

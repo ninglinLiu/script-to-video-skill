@@ -1,23 +1,1482 @@
 {
-  "date": "2026-10-29",
   "catalog_records": 139,
-  "existing_public_videos": 35,
-  "reference_spans": 8,
-  "observations": 28,
-  "browser": {
-    "javascript_errors": 0,
-    "local_reference_bind_and_play": [
-      "R26",
-      "R27"
-    ],
-    "default_muted": true,
-    "mobile_width": 390,
-    "mobile_document_width": 390
-  },
-  "cli": {
-    "R26_S1_prepared_and_probed": true,
-    "R27_commands_dry_run": true
-  },
-  "original_reference_media_in_commit": false,
-  "replication_film_verified": false
+  "online_media_count": 139,
+  "native_clips": [
+    {
+      "id": "S1",
+      "duration": 7.0,
+      "fps": "30/1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "errors": []
+    },
+    {
+      "id": "S2",
+      "duration": 17.0,
+      "fps": "30/1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "errors": []
+    },
+    {
+      "id": "S3",
+      "duration": 15.0,
+      "fps": "30/1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "errors": []
+    },
+    {
+      "id": "S4",
+      "duration": 10.0,
+      "fps": "30/1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "errors": []
+    },
+    {
+      "id": "S5",
+      "duration": 12.0,
+      "fps": "30/1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "errors": []
+    },
+    {
+      "id": "L1",
+      "duration": 8.0,
+      "fps": "30/1",
+      "dimensions": [
+        2160,
+        2880
+      ],
+      "errors": []
+    },
+    {
+      "id": "L2",
+      "duration": 6.5,
+      "fps": "30/1",
+      "dimensions": [
+        2160,
+        2880
+      ],
+      "errors": []
+    },
+    {
+      "id": "L3",
+      "duration": 5.0,
+      "fps": "30/1",
+      "dimensions": [
+        2160,
+        2880
+      ],
+      "errors": []
+    }
+  ],
+  "motion_frames": 96,
+  "shot_observations": 28,
+  "all_playable_media_checks": [
+    {
+      "id": "W01",
+      "duration": 66.2,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "W02",
+      "duration": 12.0,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W03",
+      "duration": 12.0,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W04",
+      "duration": 66.2,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W05",
+      "duration": 12.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "W06",
+      "duration": 8.0,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W07",
+      "duration": 69.233333,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W08",
+      "duration": 8.0,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W09",
+      "duration": 8.0,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W10",
+      "duration": 8.0,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W11",
+      "duration": 10.5,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W12",
+      "duration": 10.5,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W13",
+      "duration": 10.5,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W14",
+      "duration": 12.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "W15",
+      "duration": 10.8,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W16",
+      "duration": 30.0,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W17",
+      "duration": 30.0,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W18",
+      "duration": 30.0,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W19",
+      "duration": 60.0,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "W20",
+      "duration": 60.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "P01",
+      "duration": 20.0,
+      "fps": "30/1",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "errors": []
+    },
+    {
+      "id": "P02",
+      "duration": 60.0,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "P03",
+      "duration": 30.0,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "P04",
+      "duration": 30.0,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "P05",
+      "duration": 90.0,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "T01",
+      "duration": 30.0,
+      "fps": "30/1",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "errors": []
+    },
+    {
+      "id": "T02",
+      "duration": 23.1,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "T03",
+      "duration": 103.733333,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "T04",
+      "duration": 24.9,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "T05",
+      "duration": 108.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "T06",
+      "duration": 25.8,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "T07",
+      "duration": 102.7,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "T08",
+      "duration": 15.0,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "T09",
+      "duration": 15.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "T10",
+      "duration": 15.0,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "T11",
+      "duration": 15.0,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "T12",
+      "duration": 15.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "T13",
+      "duration": 15.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "T14",
+      "duration": 15.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "T15",
+      "duration": 90.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "T16",
+      "duration": 15.0,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "T17",
+      "duration": 15.0,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q01",
+      "duration": 12.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q02",
+      "duration": 10.5,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        834
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q03",
+      "duration": 30.0,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        834
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q04",
+      "duration": 13.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q05",
+      "duration": 13.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q06",
+      "duration": 13.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q07",
+      "duration": 12.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q08",
+      "duration": 60.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q09",
+      "duration": 4.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q10",
+      "duration": 69.233333,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q11",
+      "duration": 69.233333,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q12",
+      "duration": 12.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q13",
+      "duration": 10.8,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q14",
+      "duration": 66.2,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q15",
+      "duration": 66.2,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q16",
+      "duration": 8.0,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        834
+      ],
+      "errors": []
+    },
+    {
+      "id": "N01",
+      "duration": 12.266667,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "N02",
+      "duration": 84.633333,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "N03",
+      "duration": 179.4,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "N04",
+      "duration": 173.466667,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "N05",
+      "duration": 105.566667,
+      "fps": "30/1",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "errors": []
+    },
+    {
+      "id": "N06",
+      "duration": 68.433333,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "N07",
+      "duration": 71.266667,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "D01",
+      "duration": 63.1,
+      "fps": "30/1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "errors": []
+    },
+    {
+      "id": "D02",
+      "duration": 68.833333,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "D03",
+      "duration": 61.933333,
+      "fps": "30/1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "errors": []
+    },
+    {
+      "id": "D04",
+      "duration": 90.8,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "C01",
+      "duration": 10.0,
+      "fps": "30/1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "errors": []
+    },
+    {
+      "id": "C02",
+      "duration": 10.0,
+      "fps": "30/1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "errors": []
+    },
+    {
+      "id": "C03",
+      "duration": 10.0,
+      "fps": "30/1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "errors": []
+    },
+    {
+      "id": "C04",
+      "duration": 10.0,
+      "fps": "30/1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "errors": []
+    },
+    {
+      "id": "C05",
+      "duration": 10.0,
+      "fps": "30/1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "errors": []
+    },
+    {
+      "id": "C06",
+      "duration": 10.0,
+      "fps": "30/1",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "errors": []
+    },
+    {
+      "id": "G01",
+      "duration": 12.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "G02",
+      "duration": 12.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "G03",
+      "duration": 12.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q17",
+      "duration": 30.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q18",
+      "duration": 8.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q19",
+      "duration": 7.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q20",
+      "duration": 12.266667,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q21",
+      "duration": 15.5,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q22",
+      "duration": 13.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q23",
+      "duration": 179.4,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q24",
+      "duration": 24.866667,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q25",
+      "duration": 13.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q26",
+      "duration": 173.466667,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        316
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q27",
+      "duration": 13.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q28",
+      "duration": 105.566667,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q29",
+      "duration": 105.566667,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q30",
+      "duration": 68.366667,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q31",
+      "duration": 11.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q32",
+      "duration": 63.1,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q33",
+      "duration": 12.3,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q34",
+      "duration": 13.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "Q35",
+      "duration": 12.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R01",
+      "duration": 300.0,
+      "fps": "60/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R02",
+      "duration": 130.233333,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "R03",
+      "duration": 170.5,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R04",
+      "duration": 130.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R05",
+      "duration": 145.533333,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R06",
+      "duration": 132.0,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "R07",
+      "duration": 165.7,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R08",
+      "duration": 115.6,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R09",
+      "duration": 143.333333,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R10",
+      "duration": 170.7,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R11",
+      "duration": 130.5,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R12",
+      "duration": 99.033333,
+      "fps": "30/1",
+      "dimensions": [
+        540,
+        960
+      ],
+      "errors": []
+    },
+    {
+      "id": "R13",
+      "duration": 146.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R14",
+      "duration": 145.833333,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R15",
+      "duration": 154.5,
+      "fps": "60/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R16",
+      "duration": 5.133008,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        542
+      ],
+      "errors": []
+    },
+    {
+      "id": "R17",
+      "duration": 18.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "R18",
+      "duration": 5.666667,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        542
+      ],
+      "errors": []
+    },
+    {
+      "id": "R19",
+      "duration": 6.333333,
+      "fps": "24/1",
+      "dimensions": [
+        960,
+        542
+      ],
+      "errors": []
+    },
+    {
+      "id": "R20",
+      "duration": 162.6,
+      "fps": "60/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R21",
+      "duration": 157.433333,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R22",
+      "duration": 110.233333,
+      "fps": "30/1",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "errors": []
+    },
+    {
+      "id": "R23",
+      "duration": 130.5,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R24",
+      "duration": 130.0,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R25",
+      "duration": 151.666667,
+      "fps": "60/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "R26",
+      "duration": 485.266667,
+      "fps": "30/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "R27",
+      "duration": 182.233333,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "X01",
+      "duration": 349.933333,
+      "fps": "157440/5249",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "X02",
+      "duration": 316.433333,
+      "fps": "284760/9493",
+      "dimensions": [
+        720,
+        958
+      ],
+      "errors": []
+    },
+    {
+      "id": "X03",
+      "duration": 35.4,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "X04",
+      "duration": 8.916667,
+      "fps": "24/1",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "errors": []
+    },
+    {
+      "id": "X05",
+      "duration": 48.08,
+      "fps": "25/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "X06",
+      "duration": 85.2,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "X07",
+      "duration": 187.125,
+      "fps": "24/1",
+      "dimensions": [
+        960,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "X08",
+      "duration": 19.3,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "X09",
+      "duration": 6.458,
+      "fps": "24/1",
+      "dimensions": [
+        960,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "X10",
+      "duration": 289.1889,
+      "fps": "30000/1001",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "X11",
+      "duration": 16.066667,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "X12",
+      "duration": 28.88,
+      "fps": "25/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "X13",
+      "duration": 24.12,
+      "fps": "25/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    },
+    {
+      "id": "X14",
+      "duration": 41.866667,
+      "fps": "30/1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "errors": []
+    },
+    {
+      "id": "X15",
+      "duration": 17.733333,
+      "fps": "30/1",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "scope": "Media accessibility/integrity only; not aesthetic approval or completed reproduction."
 }

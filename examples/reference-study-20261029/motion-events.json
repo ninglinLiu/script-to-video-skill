@@ -1,0 +1,1333 @@
+{
+  "schema": "reference-motion-evidence/1",
+  "timing_note": "时间为已观察帧的近似边界，关键段包含原尺寸、30fps连续MP4。单帧/接触表用于定位，不能替代连续观看；动作说明不冒充作者源码或实测原始缓动曲线。",
+  "review_scope": "两条全片接触表、8段加密帧序列；未完整连续审看两条全片，未审听。",
+  "clips": [
+    {
+      "id": "S1",
+      "reference": "shuangge",
+      "start": 2,
+      "end": 9,
+      "label": "大字 → 前景粒子 → 文献",
+      "checkpoints": [
+        2,
+        3,
+        4.43,
+        4.74,
+        5.04,
+        5.65,
+        6.26,
+        6.87,
+        7.17,
+        7.48,
+        8,
+        8.97
+      ],
+      "phases": [
+        {
+          "start": 2,
+          "end": 4.43,
+          "name": "强化字形",
+          "observed": "两行厚重金白字占住中上部，先建立完整可辨的字形；局部亮度和颗粒变化，主体没有变成细线。",
+          "match": "重字形保持中心、两行关系和字重。",
+          "clip_start": 0,
+          "clip_end": 2.43,
+          "frame_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "start": 4.43,
+          "end": 5.35,
+          "name": "前景遮挡",
+          "observed": "中心粒子团向前景扩散，颗粒越过并遮住字，注意力由可读字转到扑面的颗粒。",
+          "match": "先遮挡后失去字形，不能直接淡出标题。",
+          "clip_start": 2.43,
+          "clip_end": 3.35,
+          "frame_indices": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "start": 5.35,
+          "end": 6.87,
+          "name": "满屏过桥",
+          "observed": "颗粒覆盖范围扩大成稠密金色场，文献矩阵在颗粒后方开始显出。",
+          "match": "有前后景与覆盖阶段；不是一层星点背景。",
+          "clip_start": 3.35,
+          "clip_end": 4.87,
+          "frame_indices": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "start": 6.87,
+          "end": 9,
+          "name": "收束成文献",
+          "observed": "矩阵行列变清楚，亮行和暗行产生层级；底部字幕保持独立读区。",
+          "match": "最后必须落成可读信息面，保留亮暗行对比。",
+          "clip_start": 4.87,
+          "clip_end": 7,
+          "frame_indices": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "implementation_status": "observations only; reproduction not validated",
+      "video": "motion/S1.mp4",
+      "sha256": "ade31e95a1d7cc96efd0c73aa449f1f7bf5730b5255d00f8fd166a48da5bb42c",
+      "bytes": 10021751,
+      "frames": [
+        {
+          "source_time": 2,
+          "clip_time": 0,
+          "image": "motion/S1-00.jpg",
+          "sha256": "bf12fa35e9888163f66dd39757ba8c895874ca7ba2f441c509ea8aae7f3a31ec"
+        },
+        {
+          "source_time": 3,
+          "clip_time": 1,
+          "image": "motion/S1-01.jpg",
+          "sha256": "d30d7860872f8c1ec1607aeeb51b2788b4f5e95f5356534ab5f68246cbede51f"
+        },
+        {
+          "source_time": 4.43,
+          "clip_time": 2.43,
+          "image": "motion/S1-02.jpg",
+          "sha256": "74bc368fca7ce43a393ffcb29f78bb7648b60391d7d0f1062a9caa41a259b738"
+        },
+        {
+          "source_time": 4.74,
+          "clip_time": 2.74,
+          "image": "motion/S1-03.jpg",
+          "sha256": "a8fae7184c62a330aa27f58592edd463db820f9356e6762b8fc44c51c6bda16c"
+        },
+        {
+          "source_time": 5.04,
+          "clip_time": 3.04,
+          "image": "motion/S1-04.jpg",
+          "sha256": "7b4c6202126077701e05cfbc70c6310e1ed52a698a9bb0b3c953b13deb0daa00"
+        },
+        {
+          "source_time": 5.65,
+          "clip_time": 3.65,
+          "image": "motion/S1-05.jpg",
+          "sha256": "774913828d90b6c9643fd3dc199af8cdbfaf600c87cde7a9b51d2c106cd758c2"
+        },
+        {
+          "source_time": 6.26,
+          "clip_time": 4.26,
+          "image": "motion/S1-06.jpg",
+          "sha256": "86d53bf1ee3dd3944a536da9eb67cd03ff128625590229577af3a8bfee9a5b2d"
+        },
+        {
+          "source_time": 6.87,
+          "clip_time": 4.87,
+          "image": "motion/S1-07.jpg",
+          "sha256": "36b9cb6e09748f4ac66829e8ebaeebd54c514096c9171c704505bad114cb87b3"
+        },
+        {
+          "source_time": 7.17,
+          "clip_time": 5.17,
+          "image": "motion/S1-08.jpg",
+          "sha256": "5e7eb48a2c6a2eebc61719a033b4bb4146634f104981a37b3199fb31b4e198aa"
+        },
+        {
+          "source_time": 7.48,
+          "clip_time": 5.48,
+          "image": "motion/S1-09.jpg",
+          "sha256": "270f74acdb685c55a4a6e9aef5c465e376475f093426346cb41545c9b4d7a960"
+        },
+        {
+          "source_time": 8,
+          "clip_time": 6,
+          "image": "motion/S1-10.jpg",
+          "sha256": "cf3fb1ce4f2e27d7a20d216bc31414d2a6125ecd6852d5dc907537b6dcece5cb"
+        },
+        {
+          "source_time": 8.97,
+          "clip_time": 6.97,
+          "image": "motion/S1-11.jpg",
+          "sha256": "4902839576842a3f3b31bcc76d2b0cc3afca26a468bdf910311f9a2840e4b558"
+        }
+      ],
+      "poster": "motion/S1-00.jpg",
+      "contact_sheet": "motion/S1-sequence.jpg",
+      "contact_sheet_sha256": "32703b320e149604923b95acf82d494d1f6955662221bd3b8e575608dd786ff2",
+      "frames_per_second": 30,
+      "source_dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "id": "S2",
+      "reference": "shuangge",
+      "start": 111,
+      "end": 128,
+      "label": "点云 → 实体书桌 → 单字 → 穹顶",
+      "checkpoints": [
+        111,
+        112.48,
+        113.22,
+        115.43,
+        118.39,
+        119.87,
+        122.09,
+        123.56,
+        124.3,
+        125.04,
+        127.26,
+        127.97
+      ],
+      "phases": [
+        {
+          "start": 111,
+          "end": 113.22,
+          "name": "显出实体",
+          "observed": "颗粒让出画面，书、台灯与斜向照明组成有重量的桌面。",
+          "match": "灯、书、背景分层；实体插画的光照不能被轮廓线代替。",
+          "clip_start": 0,
+          "clip_end": 2.22,
+          "frame_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "start": 113.22,
+          "end": 119.13,
+          "name": "字在书上起落",
+          "observed": "较大的字出现在书上方并占据注意力，随后退去，书仍留在下方。",
+          "match": "书是连续锚点，大字是独立层。",
+          "clip_start": 2.22,
+          "clip_end": 8.13,
+          "frame_indices": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "start": 119.13,
+          "end": 124.3,
+          "name": "小引文与流动字",
+          "observed": "小引文移到上方区域；发光字/粒子从书附近升起，书逐渐退出。",
+          "match": "小引文可读与流动字属于不同运动层。",
+          "clip_start": 8.13,
+          "clip_end": 13.3,
+          "frame_indices": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "start": 124.3,
+          "end": 128,
+          "name": "单字接穹顶",
+          "observed": "粒子遮渡后出现巨大“福”；末尾字形再散开，网格穹顶接入。",
+          "match": "实体 → 字形 → 空间网格三种形态；作者算法未知。",
+          "clip_start": 13.3,
+          "clip_end": 17,
+          "frame_indices": [
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "implementation_status": "observations only; reproduction not validated",
+      "video": "motion/S2.mp4",
+      "sha256": "a668c9f9040460be30eee89b8183ac79d12d820caa28faaff8282f1053f2eab3",
+      "bytes": 14727970,
+      "frames": [
+        {
+          "source_time": 111,
+          "clip_time": 0,
+          "image": "motion/S2-00.jpg",
+          "sha256": "cb5c8e738224cf9360fb7348dc27058233d745730c320fe1a86f34d8472975aa"
+        },
+        {
+          "source_time": 112.48,
+          "clip_time": 1.48,
+          "image": "motion/S2-01.jpg",
+          "sha256": "fbafead83d476cab70c5891d3fec8f43ad61706f3e67e8d0d01df70d68349fb4"
+        },
+        {
+          "source_time": 113.22,
+          "clip_time": 2.22,
+          "image": "motion/S2-02.jpg",
+          "sha256": "e0a2753976dd5f8aa491beb722c974747e72cd86493afb2d947a1a3b06b8e3ae"
+        },
+        {
+          "source_time": 115.43,
+          "clip_time": 4.43,
+          "image": "motion/S2-03.jpg",
+          "sha256": "0664f5516a0e382dc13d355c1b6590e76a2ee23bd5941d7b80fcc68e62cb7c37"
+        },
+        {
+          "source_time": 118.39,
+          "clip_time": 7.39,
+          "image": "motion/S2-04.jpg",
+          "sha256": "1e7a8ce8e4b1e403da1c43db6b2f4fc23baebb16ce82387f8ccfeb4aded644a8"
+        },
+        {
+          "source_time": 119.87,
+          "clip_time": 8.87,
+          "image": "motion/S2-05.jpg",
+          "sha256": "f56e4715a79e26997fe9e6a44010790cd433150a594134d918db9ab8ea7f6926"
+        },
+        {
+          "source_time": 122.09,
+          "clip_time": 11.09,
+          "image": "motion/S2-06.jpg",
+          "sha256": "ad35fb04fe7517b6e84b46871665dae60100b78eb7af9044cb55fae75cbafb32"
+        },
+        {
+          "source_time": 123.56,
+          "clip_time": 12.56,
+          "image": "motion/S2-07.jpg",
+          "sha256": "dd26953984c8357636ea7c48877df8ba76a66c108b79d945704c04bca0ad183c"
+        },
+        {
+          "source_time": 124.3,
+          "clip_time": 13.3,
+          "image": "motion/S2-08.jpg",
+          "sha256": "f3c491e582576af3bd8899a73e3506c489d453aed19a8a474411c6b3ac25b9db"
+        },
+        {
+          "source_time": 125.04,
+          "clip_time": 14.04,
+          "image": "motion/S2-09.jpg",
+          "sha256": "4da2df89464f46cd302591301e9343a86b86df0555ff4cf868dcb1462e0a7a08"
+        },
+        {
+          "source_time": 127.26,
+          "clip_time": 16.26,
+          "image": "motion/S2-10.jpg",
+          "sha256": "5b759e6b25ba3450fcdcd2171c9244c19b09405c806cb4691e3b98db20259b77"
+        },
+        {
+          "source_time": 127.97,
+          "clip_time": 16.97,
+          "image": "motion/S2-11.jpg",
+          "sha256": "6309a1682d724b8d84aff75a322bdc01208b3c25b860f4c1e7176838bd47cf7c"
+        }
+      ],
+      "poster": "motion/S2-00.jpg",
+      "contact_sheet": "motion/S2-sequence.jpg",
+      "contact_sheet_sha256": "dcc7b586b035b4d53b6407d3a67981bd7313744e2ea84c3aed2ec8dd411dd3d0",
+      "frames_per_second": 30,
+      "source_dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "id": "S3",
+      "reference": "shuangge",
+      "start": 296,
+      "end": 311,
+      "label": "两石 → 拱桥生长 → 光点过桥",
+      "checkpoints": [
+        296,
+        297.3,
+        297.96,
+        298.61,
+        299.26,
+        299.91,
+        300.56,
+        301.22,
+        303.17,
+        305.78,
+        309.7,
+        310.97
+      ],
+      "phases": [
+        {
+          "start": 296,
+          "end": 297.96,
+          "name": "建立两端",
+          "observed": "左金石、右蓝石保持左右身份，小字从上方落入并整合。",
+          "match": "两块石头的颜色和位置是跨镜锚点。",
+          "clip_start": 0,
+          "clip_end": 1.96,
+          "frame_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "start": 297.96,
+          "end": 300.56,
+          "name": "拱桥长成",
+          "observed": "两侧结构向上并向中央延伸，桥拱合拢；构图向下展开，桥身厚度、远山、水面及倒影逐步出现。",
+          "match": "端点不重置；不要用一根线连接两个圆。",
+          "clip_start": 1.96,
+          "clip_end": 4.56,
+          "frame_indices": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "start": 300.56,
+          "end": 305.78,
+          "name": "光点走过桥",
+          "observed": "同一桥保留，亮点从左侧沿弧面走向右侧，随后沿桥返回；两端轮流强化，石头身份和水面倒影保持。",
+          "match": "路径运动发生在已成立的结构上。",
+          "clip_start": 4.56,
+          "clip_end": 9.78,
+          "frame_indices": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "start": 305.78,
+          "end": 311,
+          "name": "改变注意力",
+          "observed": "左侧对象被强化；上方颗粒集结为大标题，桥仍作为前一阶段留下的关系。",
+          "match": "用层级改变承接解释，不整屏清空再出现标题。",
+          "clip_start": 9.78,
+          "clip_end": 15,
+          "frame_indices": [
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "implementation_status": "observations only; reproduction not validated",
+      "video": "motion/S3.mp4",
+      "sha256": "202fd9df0a121946b02fdc028c0081a5e5466e650397a33d525dc372f2c3854b",
+      "bytes": 5988626,
+      "frames": [
+        {
+          "source_time": 296,
+          "clip_time": 0,
+          "image": "motion/S3-00.jpg",
+          "sha256": "6380e8bb2768eeaeda9b27ddb201e87d920d64d0ccc5188db3f40fa296dd10f2"
+        },
+        {
+          "source_time": 297.3,
+          "clip_time": 1.3,
+          "image": "motion/S3-01.jpg",
+          "sha256": "33c978627cb351f4eac560cfaef434d273a2d187fd17283951caf66aaa0a9551"
+        },
+        {
+          "source_time": 297.96,
+          "clip_time": 1.96,
+          "image": "motion/S3-02.jpg",
+          "sha256": "275a3c8acd838a19b4daa3eb1ea23b092f523d76e3f7a80409c090629695b0bb"
+        },
+        {
+          "source_time": 298.61,
+          "clip_time": 2.61,
+          "image": "motion/S3-03.jpg",
+          "sha256": "a3fce78f7c94b89363bbb6c8577cac6f5839738946b11360783cc9b9eceeefc1"
+        },
+        {
+          "source_time": 299.26,
+          "clip_time": 3.26,
+          "image": "motion/S3-04.jpg",
+          "sha256": "7e5a9f31c56657136bd9d207704529a434a10f576304aa2f8a30394a0cd3fb3a"
+        },
+        {
+          "source_time": 299.91,
+          "clip_time": 3.91,
+          "image": "motion/S3-05.jpg",
+          "sha256": "ad2726bea00461fa2632c35682aad97d0d9918e924fcf732b8e3b185898b3adf"
+        },
+        {
+          "source_time": 300.56,
+          "clip_time": 4.56,
+          "image": "motion/S3-06.jpg",
+          "sha256": "ffd3d3273875312d599435be960f951d83c7d0f6314d2f239897cec6b787c0c2"
+        },
+        {
+          "source_time": 301.22,
+          "clip_time": 5.22,
+          "image": "motion/S3-07.jpg",
+          "sha256": "4492155826a38ed75525c7c4b1af2c1db32d555e4a2c8da1a235eb369df16546"
+        },
+        {
+          "source_time": 303.17,
+          "clip_time": 7.17,
+          "image": "motion/S3-08.jpg",
+          "sha256": "ad99d15d65cbeac990ec3dac77b4968281554cc6e3765fda85471cad9b5e56af"
+        },
+        {
+          "source_time": 305.78,
+          "clip_time": 9.78,
+          "image": "motion/S3-09.jpg",
+          "sha256": "416331253bdedd999494660166ad29794aa7116b0cd573c5ef568a1ae7d73186"
+        },
+        {
+          "source_time": 309.7,
+          "clip_time": 13.7,
+          "image": "motion/S3-10.jpg",
+          "sha256": "fac5bf935a5b7eac160dc160500ca2032818c18957623c61e80183b62126f738"
+        },
+        {
+          "source_time": 310.97,
+          "clip_time": 14.97,
+          "image": "motion/S3-11.jpg",
+          "sha256": "6ecdcd284f4b13efc035f5df0c66463ffedb8cb4543f4f47875862f30c721d71"
+        }
+      ],
+      "poster": "motion/S3-00.jpg",
+      "contact_sheet": "motion/S3-sequence.jpg",
+      "contact_sheet_sha256": "28c09b0e09c67cec5f124353321bdd23848cefc5a00135c99df251853b69c736",
+      "frames_per_second": 30,
+      "source_dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "id": "S4",
+      "reference": "shuangge",
+      "start": 318,
+      "end": 328,
+      "label": "断桥 → 单侧喷发 → 数字",
+      "checkpoints": [
+        318,
+        318.87,
+        319.74,
+        320.61,
+        321.48,
+        322.35,
+        323.22,
+        324.09,
+        324.96,
+        326.7,
+        327.13,
+        327.97
+      ],
+      "phases": [
+        {
+          "start": 318,
+          "end": 320.17,
+          "name": "保留断裂",
+          "observed": "中央已经断开的桥仍可见，整体构图下移/压平，两端保持身份。",
+          "match": "缺口是结构变化，不是换了一张无关背景。",
+          "clip_start": 0,
+          "clip_end": 2.17,
+          "frame_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "start": 320.17,
+          "end": 324.09,
+          "name": "左侧上升",
+          "observed": "左侧物体周围释放向上的颗粒柱，右侧相对稳定，密度与高度先增加后减退。",
+          "match": "运动是不对称的；不能给左右同时加烟花。",
+          "clip_start": 2.17,
+          "clip_end": 6.09,
+          "frame_indices": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "start": 324.09,
+          "end": 326.7,
+          "name": "结构再出现",
+          "observed": "喷发收束后桥面/栏杆结构重新显出，仍占据原来的关系区域。",
+          "match": "从喷发留下的场景继续，不重置左右对象。",
+          "clip_start": 6.09,
+          "clip_end": 8.7,
+          "frame_indices": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "start": 326.7,
+          "end": 328,
+          "name": "数值接管",
+          "observed": "年龄/数值文字进入，较大数字递增到约千万量级，左侧竖向结构支持注意力。",
+          "match": "数字出现晚于结构动作，不从开头一直贴满全屏。",
+          "clip_start": 8.7,
+          "clip_end": 10,
+          "frame_indices": [
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "implementation_status": "observations only; reproduction not validated",
+      "video": "motion/S4.mp4",
+      "sha256": "282c005bb2ae191220fa7b91711a381beead079000792193799a5ad7d2829aac",
+      "bytes": 6766811,
+      "frames": [
+        {
+          "source_time": 318,
+          "clip_time": 0,
+          "image": "motion/S4-00.jpg",
+          "sha256": "4e5ccb1623a00b540da8a01e508a5eb2cd3b1809c39ca3a6b7b16cf125a4f256"
+        },
+        {
+          "source_time": 318.87,
+          "clip_time": 0.87,
+          "image": "motion/S4-01.jpg",
+          "sha256": "fcdd533894ebb1775a35ba2204aa62e01f832d54bc95272f8edb36c24c77de13"
+        },
+        {
+          "source_time": 319.74,
+          "clip_time": 1.74,
+          "image": "motion/S4-02.jpg",
+          "sha256": "5441ffc6d1d28f71f5c6d06d9c705ced395769a671b5cb6739b3f70055b4cb6d"
+        },
+        {
+          "source_time": 320.61,
+          "clip_time": 2.61,
+          "image": "motion/S4-03.jpg",
+          "sha256": "8360fa30c56c51baa28b2ff571c55911df80bf3f88788f2fdfc0b13f499f9234"
+        },
+        {
+          "source_time": 321.48,
+          "clip_time": 3.48,
+          "image": "motion/S4-04.jpg",
+          "sha256": "ae54f1cb09bfcbf7d2e04ceea8d90e59de00f83160807274f237869882e876b1"
+        },
+        {
+          "source_time": 322.35,
+          "clip_time": 4.35,
+          "image": "motion/S4-05.jpg",
+          "sha256": "ce7b33a12b1a89003e13b5b1e72ee59e9e0a96cc1cb0ef1ea2cd47822f5a9e59"
+        },
+        {
+          "source_time": 323.22,
+          "clip_time": 5.22,
+          "image": "motion/S4-06.jpg",
+          "sha256": "5c73eee46304f84f67456c1bda29ef04608509a4c703b573a73aa0a1ee0f1bbb"
+        },
+        {
+          "source_time": 324.09,
+          "clip_time": 6.09,
+          "image": "motion/S4-07.jpg",
+          "sha256": "0efb6cf6ed8dfebc265c203c347890faff77f3721568a244fd004fd1f1b2f023"
+        },
+        {
+          "source_time": 324.96,
+          "clip_time": 6.96,
+          "image": "motion/S4-08.jpg",
+          "sha256": "359112f8d41bea486353312261c48f1e5eb238c8dc79d88575231049119efb5f"
+        },
+        {
+          "source_time": 326.7,
+          "clip_time": 8.7,
+          "image": "motion/S4-09.jpg",
+          "sha256": "927e59de89847c499a4f3471e954cca592f66b686484ce21ecf8938f6a4cfd4f"
+        },
+        {
+          "source_time": 327.13,
+          "clip_time": 9.13,
+          "image": "motion/S4-10.jpg",
+          "sha256": "de8ae0119c77152f48015d4d2069f2e1f6877801c7d0f7b0a598f9f93fa770f4"
+        },
+        {
+          "source_time": 327.97,
+          "clip_time": 9.97,
+          "image": "motion/S4-11.jpg",
+          "sha256": "477dbfdb1f84da81dc66ff940cf3e37a05d3f898c93fcee81af297d96626bb56"
+        }
+      ],
+      "poster": "motion/S4-00.jpg",
+      "contact_sheet": "motion/S4-sequence.jpg",
+      "contact_sheet_sha256": "2c424c29aeea0bb22adadd251e6970983fa48fe96311edffa00e3bfc612b7fb0",
+      "frames_per_second": 30,
+      "source_dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "id": "S5",
+      "reference": "shuangge",
+      "start": 408,
+      "end": 420,
+      "label": "记录页 → 扇面页阵 → 三石",
+      "checkpoints": [
+        408,
+        409.56,
+        410.09,
+        410.61,
+        411.13,
+        411.65,
+        413.74,
+        414.26,
+        415.3,
+        415.83,
+        416.35,
+        419.97
+      ],
+      "phases": [
+        {
+          "start": 408,
+          "end": 410.09,
+          "name": "单页读完",
+          "observed": "中心记录页保持可读，末行强化，随后整页缩小。",
+          "match": "先给一页明确身份，再进入集合。",
+          "clip_start": 0,
+          "clip_end": 2.09,
+          "frame_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "start": 410.09,
+          "end": 411.65,
+          "name": "复制展开",
+          "observed": "缩小的页面出现多个副本，围绕下方共同枢轴旋转，展开成宽扇面。",
+          "match": "不是多张卡片无关联地弹出；保留页形与旋转支点。",
+          "clip_start": 2.09,
+          "clip_end": 3.65,
+          "frame_indices": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "start": 411.65,
+          "end": 415.3,
+          "name": "页内信息移动",
+          "observed": "页阵保持，各页的点/标记沿行流动并形成汇聚趋势。",
+          "match": "集合已存在后再解释共同信息。",
+          "clip_start": 3.65,
+          "clip_end": 7.3,
+          "frame_indices": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "start": 415.3,
+          "end": 420,
+          "name": "汇成三组",
+          "observed": "三组发光对象从页阵上方出现并成形为三块石头，左中右秩序固定，扇面留在下方。",
+          "match": "多次记录 → 三类结果；下方来源对象不能突然消失。",
+          "clip_start": 7.3,
+          "clip_end": 12,
+          "frame_indices": [
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "implementation_status": "observations only; reproduction not validated",
+      "video": "motion/S5.mp4",
+      "sha256": "7150753cc6c5ece933055bd979d5e7672a3c5c172a2c4589f377d5cf9e8a5b9e",
+      "bytes": 1511032,
+      "frames": [
+        {
+          "source_time": 408,
+          "clip_time": 0,
+          "image": "motion/S5-00.jpg",
+          "sha256": "eac7c3b99e73d0de8740499ef12eb5c6214aa67a1753d27826d24243a53b3091"
+        },
+        {
+          "source_time": 409.56,
+          "clip_time": 1.56,
+          "image": "motion/S5-01.jpg",
+          "sha256": "6c6953cae2e6e2359ae21dc710e7db31a1be5deb66f02f5fe229d4a058434802"
+        },
+        {
+          "source_time": 410.09,
+          "clip_time": 2.09,
+          "image": "motion/S5-02.jpg",
+          "sha256": "4a286ef58311693ee78ee15c2093a2fdda988e71a4a263ab7623ee51f1e62c17"
+        },
+        {
+          "source_time": 410.61,
+          "clip_time": 2.61,
+          "image": "motion/S5-03.jpg",
+          "sha256": "2c86ba6e3c3cdbc2a094cb45f075d1d578beae8ffdf49b9dab424da6bd8e66ad"
+        },
+        {
+          "source_time": 411.13,
+          "clip_time": 3.13,
+          "image": "motion/S5-04.jpg",
+          "sha256": "f4af470a23725afc99b46ec4409c54c2bf21f02ae3eda2e4aa2885fc783e78d9"
+        },
+        {
+          "source_time": 411.65,
+          "clip_time": 3.65,
+          "image": "motion/S5-05.jpg",
+          "sha256": "8ec55b3599ad5030c154b9d6538a9d555dd0f5974a37d1fa402ab8fbf400885a"
+        },
+        {
+          "source_time": 413.74,
+          "clip_time": 5.74,
+          "image": "motion/S5-06.jpg",
+          "sha256": "5657f95a83fb5a7b7ac20ce8cb2d6e704d82e26a62332ae205aa0e679ccc22aa"
+        },
+        {
+          "source_time": 414.26,
+          "clip_time": 6.26,
+          "image": "motion/S5-07.jpg",
+          "sha256": "88092acebb7c61360e7e12968314f014a72891e23b7968e7637dc2a754ebf17a"
+        },
+        {
+          "source_time": 415.3,
+          "clip_time": 7.3,
+          "image": "motion/S5-08.jpg",
+          "sha256": "159e4dbc49590a38ae4950255793736b943a5eb4cf487c6cbb1ed120eb29001f"
+        },
+        {
+          "source_time": 415.83,
+          "clip_time": 7.83,
+          "image": "motion/S5-09.jpg",
+          "sha256": "3fba5fe0ddfc355203d679db0a560a87cfd1a37c4fae6b44925e48a92b150566"
+        },
+        {
+          "source_time": 416.35,
+          "clip_time": 8.35,
+          "image": "motion/S5-10.jpg",
+          "sha256": "632bbe0d56d38f131775b720733d94b75e37a878099329c769e51fd19c9ac476"
+        },
+        {
+          "source_time": 419.97,
+          "clip_time": 11.97,
+          "image": "motion/S5-11.jpg",
+          "sha256": "d8a7fccbf382be17ff92bd0e52afcc4e3def94c1acfe233fe7b3d743ec767b9e"
+        }
+      ],
+      "poster": "motion/S5-00.jpg",
+      "contact_sheet": "motion/S5-sequence.jpg",
+      "contact_sheet_sha256": "4b41bb3851730f4744956bac5a9b208cec7e9c4678aa15d3d29482d16831eee3",
+      "frames_per_second": 30,
+      "source_dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "id": "L1",
+      "reference": "lifeos",
+      "start": 10.5,
+      "end": 18.5,
+      "label": "夜街 → 地图下潜 → 满幅场景",
+      "checkpoints": [
+        10.5,
+        10.85,
+        11.2,
+        11.54,
+        12.24,
+        13.28,
+        14.33,
+        15.37,
+        16.76,
+        17.11,
+        17.46,
+        18.47
+      ],
+      "phases": [
+        {
+          "start": 10.5,
+          "end": 11.2,
+          "name": "夜街切地图",
+          "observed": "满幅夜街和上方文字结束，硬切到深紫城市地图。",
+          "match": "这里是硬切，不应写成街道变形成地图。",
+          "clip_start": 0.0,
+          "clip_end": 0.7,
+          "frame_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "start": 11.2,
+          "end": 13.28,
+          "name": "定位与下潜",
+          "observed": "橙色地点标记出现；相机旋转并放大，城市路网逐渐变成更密的街区路网。",
+          "match": "标记与地理位置绑定，镜头围绕目标定位。",
+          "clip_start": 0.7,
+          "clip_end": 2.78,
+          "frame_indices": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "start": 13.28,
+          "end": 17.33,
+          "name": "抵达街区",
+          "observed": "更细的路网和地点图标出现，推近逐渐缓和，给出目标附近关系。",
+          "match": "保留地图署名；图标不能漂在屏幕固定点假装地理定位。",
+          "clip_start": 2.78,
+          "clip_end": 6.83,
+          "frame_indices": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "start": 17.33,
+          "end": 18.5,
+          "name": "硬切完整插画",
+          "observed": "硬切到高密度南瓜塔场景；前景、人物、塔、建筑和天空一起成立，镜头继续轻推。",
+          "match": "需要完成的场景资产，小像素角色不是替代品。",
+          "clip_start": 6.83,
+          "clip_end": 8.0,
+          "frame_indices": [
+            10,
+            11
+          ]
+        }
+      ],
+      "implementation_status": "observations only; reproduction not validated",
+      "video": "motion/L1.mp4",
+      "sha256": "ff46e5817ea1ff9d1db4fa74be9aeaa98f053ccc5d48a2338b193fcbfc244918",
+      "bytes": 6798548,
+      "frames": [
+        {
+          "source_time": 10.5,
+          "clip_time": 0.0,
+          "image": "motion/L1-00.jpg",
+          "sha256": "1519d6ddd34ec028c8631b38bb531d08dcc9e50269ed01445a2bad95b9c05192"
+        },
+        {
+          "source_time": 10.85,
+          "clip_time": 0.35,
+          "image": "motion/L1-01.jpg",
+          "sha256": "048164a6bfc17cd6eb0d1e6261ae102182d5759415da2950171a4c07c432b427"
+        },
+        {
+          "source_time": 11.2,
+          "clip_time": 0.7,
+          "image": "motion/L1-02.jpg",
+          "sha256": "1147e552275b3447a47f9491f849ba37833c20a34318f9cc73b38ae2b5e72ac7"
+        },
+        {
+          "source_time": 11.54,
+          "clip_time": 1.04,
+          "image": "motion/L1-03.jpg",
+          "sha256": "52daa4bee116da970940b6aa349865197a6132babe092357eab54f34e1c78170"
+        },
+        {
+          "source_time": 12.24,
+          "clip_time": 1.74,
+          "image": "motion/L1-04.jpg",
+          "sha256": "b0fbaa9b6d25486d1b19b1e4785797bc9ca785f5129a6e137bcfabcab33c3efe"
+        },
+        {
+          "source_time": 13.28,
+          "clip_time": 2.78,
+          "image": "motion/L1-05.jpg",
+          "sha256": "32b65385d69e2a0d0ef2502eb82cf16c495f03d7cc094c77ef2e38d8b82112ba"
+        },
+        {
+          "source_time": 14.33,
+          "clip_time": 3.83,
+          "image": "motion/L1-06.jpg",
+          "sha256": "609416c0d7140f2ea41ae68c66533cd437597830021a2e0756770732d527c658"
+        },
+        {
+          "source_time": 15.37,
+          "clip_time": 4.87,
+          "image": "motion/L1-07.jpg",
+          "sha256": "250ab2626e7a8cfb27139a664a5412bd427faed22ea0ee57299b26058895021e"
+        },
+        {
+          "source_time": 16.76,
+          "clip_time": 6.26,
+          "image": "motion/L1-08.jpg",
+          "sha256": "9e1bcc6481a2d08ebd80fa1e2a8a4b9f33983c4c35d3a7beb2c6210f6a178c80"
+        },
+        {
+          "source_time": 17.11,
+          "clip_time": 6.61,
+          "image": "motion/L1-09.jpg",
+          "sha256": "e16b092ff5384284e4d93f16dc7fbff1386c9cc1bdf842683cb9e8a305f8c5d2"
+        },
+        {
+          "source_time": 17.46,
+          "clip_time": 6.96,
+          "image": "motion/L1-10.jpg",
+          "sha256": "98a7e8b401dd1361167909437e8c1a82c5a63cff3cfb8c99b2b983ad032fad5a"
+        },
+        {
+          "source_time": 18.47,
+          "clip_time": 7.97,
+          "image": "motion/L1-11.jpg",
+          "sha256": "5b898fbed2ea250e9e1601b31fdb771bbe501bd5fc87fa4091f0170a28017830"
+        }
+      ],
+      "poster": "motion/L1-00.jpg",
+      "contact_sheet": "motion/L1-sequence.jpg",
+      "contact_sheet_sha256": "901d9e5e4b5f718d2927ca89afbde80a37dae57a537b6c00fe0e3d36e5f3f835",
+      "frames_per_second": 30,
+      "source_dimensions": [
+        2160,
+        2880
+      ]
+    },
+    {
+      "id": "L2",
+      "reference": "lifeos",
+      "start": 46,
+      "end": 52.5,
+      "label": "地图路线逐段生长 → 店面",
+      "checkpoints": [
+        46,
+        47.13,
+        47.98,
+        48.26,
+        48.54,
+        49.11,
+        49.67,
+        49.96,
+        50.52,
+        51.09,
+        51.65,
+        52.47
+      ],
+      "phases": [
+        {
+          "start": 46,
+          "end": 48.26,
+          "name": "保留地图关系",
+          "observed": "局部地图轻微移动，已有标记维持位置关系，短橙线开始出现。",
+          "match": "起点位置明确，先有地图再有路线。",
+          "clip_start": 0,
+          "clip_end": 2.26,
+          "frame_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "start": 48.26,
+          "end": 49.96,
+          "name": "线头沿道路推进",
+          "observed": "橙色短线逐步延长，弯折与道路匹配，左侧路线范围扩展。",
+          "match": "以路径进度驱动线头，不能整条路径同时淡入。",
+          "clip_start": 2.26,
+          "clip_end": 3.96,
+          "frame_indices": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "start": 49.96,
+          "end": 51.5,
+          "name": "图标补足",
+          "observed": "路线保持，地点图标继续加入，形成可读的多点关系。",
+          "match": "路径和标记属于同一地图坐标系。",
+          "clip_start": 3.96,
+          "clip_end": 5.5,
+          "frame_indices": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "start": 51.5,
+          "end": 52.5,
+          "name": "落入街景",
+          "observed": "硬切店面：门头、人物、南瓜装饰和近景构成新的满幅资产。",
+          "match": "用地点承接镜头；不要让地图无理由融成商店。",
+          "clip_start": 5.5,
+          "clip_end": 6.5,
+          "frame_indices": [
+            10,
+            11
+          ]
+        }
+      ],
+      "implementation_status": "observations only; reproduction not validated",
+      "video": "motion/L2.mp4",
+      "sha256": "24415e17031c462989d45ea1f94631c335d7f80a894e2e98242beb1b9d1b739d",
+      "bytes": 1601777,
+      "frames": [
+        {
+          "source_time": 46,
+          "clip_time": 0,
+          "image": "motion/L2-00.jpg",
+          "sha256": "9d3774d90af4a9b6490546087d5b91d63bd25205fccd29b5bebef125d3cc42e1"
+        },
+        {
+          "source_time": 47.13,
+          "clip_time": 1.13,
+          "image": "motion/L2-01.jpg",
+          "sha256": "c2920e1e0f5645453bcb5e5434ad5985a86ad1fd2064505040b0c4585ccce270"
+        },
+        {
+          "source_time": 47.98,
+          "clip_time": 1.98,
+          "image": "motion/L2-02.jpg",
+          "sha256": "fd764cbd412ef1380c2c0db02d40ea98a6140d78d240082f8584bbd8c81ec2b4"
+        },
+        {
+          "source_time": 48.26,
+          "clip_time": 2.26,
+          "image": "motion/L2-03.jpg",
+          "sha256": "20c64960ad6b297531c649edb2746ad86c1eef30d42fa7537573b5b1299c9a6b"
+        },
+        {
+          "source_time": 48.54,
+          "clip_time": 2.54,
+          "image": "motion/L2-04.jpg",
+          "sha256": "9c6562db59789cb99b5a205079e12588e6dc0e43f9ef6f69222900a65edc3cb4"
+        },
+        {
+          "source_time": 49.11,
+          "clip_time": 3.11,
+          "image": "motion/L2-05.jpg",
+          "sha256": "013ac4c7b0f7368f57bf0690e8bb60b7d99d5c3d405ead13e45b9bfbb2decf44"
+        },
+        {
+          "source_time": 49.67,
+          "clip_time": 3.67,
+          "image": "motion/L2-06.jpg",
+          "sha256": "1219fa58ee455e3bdad383c6954b2d0d3d00bacb99e5844540589845c2faa26b"
+        },
+        {
+          "source_time": 49.96,
+          "clip_time": 3.96,
+          "image": "motion/L2-07.jpg",
+          "sha256": "e95143168f660061c85a9b1b4b60624bcd0ac3a07357ed90b97e5f85ec20b3ba"
+        },
+        {
+          "source_time": 50.52,
+          "clip_time": 4.52,
+          "image": "motion/L2-08.jpg",
+          "sha256": "9d41192102669afd1eb70b38bc8dc2d8240a1054465090dbea97d529a903c5d0"
+        },
+        {
+          "source_time": 51.09,
+          "clip_time": 5.09,
+          "image": "motion/L2-09.jpg",
+          "sha256": "1a3be483136c7a3eaf97c71667405fe374ba5b46809d40c1e2bac1d93c90225a"
+        },
+        {
+          "source_time": 51.65,
+          "clip_time": 5.65,
+          "image": "motion/L2-10.jpg",
+          "sha256": "416dab60e150117623aa3e142042f7688de30932f4eccd8c6fe5ad53cd4adacd"
+        },
+        {
+          "source_time": 52.47,
+          "clip_time": 6.47,
+          "image": "motion/L2-11.jpg",
+          "sha256": "790f05fe7dff7df5d37676c8ace22e09fdb001d9f54140e2c18a3b30f7e3721b"
+        }
+      ],
+      "poster": "motion/L2-00.jpg",
+      "contact_sheet": "motion/L2-sequence.jpg",
+      "contact_sheet_sha256": "ba6bbc455f2244c09dbf56dce5166293b3ba6a9aaaaa058ad8c00e3d8ddc5faf",
+      "frames_per_second": 30,
+      "source_dimensions": [
+        2160,
+        2880
+      ]
+    },
+    {
+      "id": "L3",
+      "reference": "lifeos",
+      "start": 146.5,
+      "end": 151.5,
+      "label": "地图 → 霓虹河岸 → 唱片店",
+      "checkpoints": [
+        146.5,
+        146.72,
+        146.94,
+        147.37,
+        147.8,
+        148.46,
+        149.11,
+        149.76,
+        150.2,
+        150.85,
+        151.06,
+        151.47
+      ],
+      "phases": [
+        {
+          "start": 146.5,
+          "end": 146.83,
+          "name": "地图收尾",
+          "observed": "滨水区域地图结束，保留定位信息。",
+          "match": "地图承担换章定位。",
+          "clip_start": 0.0,
+          "clip_end": 0.33,
+          "frame_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "start": 146.83,
+          "end": 150.85,
+          "name": "完整夜景缓推",
+          "observed": "硬切霓虹建筑与水面倒影；同一完整构图缓慢推移，色彩、窗灯、人物尺度和反射提供视觉丰富度。",
+          "match": "相邻帧支持全局镜头变换；没有证据把每个细节都描述成独立绑定动画。",
+          "clip_start": 0.33,
+          "clip_end": 4.35,
+          "frame_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "start": 150.85,
+          "end": 151.5,
+          "name": "夜色继承",
+          "observed": "约151秒硬切到唱片店，夜景色彩和字幕位置延续，空间与物件换新。",
+          "match": "连续感来自色彩、阅读位置和场景用途，不是每镜无缝形变。",
+          "clip_start": 4.35,
+          "clip_end": 5.0,
+          "frame_indices": [
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "implementation_status": "observations only; reproduction not validated",
+      "video": "motion/L3.mp4",
+      "sha256": "fb631e47fb964b6a2e3e4adb49109af929a5d869cbe2f194a006e04a2c6dfc2c",
+      "bytes": 5145217,
+      "frames": [
+        {
+          "source_time": 146.5,
+          "clip_time": 0.0,
+          "image": "motion/L3-00.jpg",
+          "sha256": "18ee486601b696677b49fc7472e91ef20437ca91883159c67ba5dd60b138f3dd"
+        },
+        {
+          "source_time": 146.72,
+          "clip_time": 0.22,
+          "image": "motion/L3-01.jpg",
+          "sha256": "6274714d628c8adb182055938c5be1ba22a88a49168e84a0435fba15e9c29b34"
+        },
+        {
+          "source_time": 146.94,
+          "clip_time": 0.44,
+          "image": "motion/L3-02.jpg",
+          "sha256": "42265c7af85316b21664e04df883e278b0739d786d0f86b807f011dff141f0a4"
+        },
+        {
+          "source_time": 147.37,
+          "clip_time": 0.87,
+          "image": "motion/L3-03.jpg",
+          "sha256": "e4a6bd12e3d6b25cd1bc2a50408ae1db4a959242d65927b842d7a9651d7c9d04"
+        },
+        {
+          "source_time": 147.8,
+          "clip_time": 1.3,
+          "image": "motion/L3-04.jpg",
+          "sha256": "09799a1134114858dce96beda21f857fcc4ea00c686d876ebe33adc66e126f72"
+        },
+        {
+          "source_time": 148.46,
+          "clip_time": 1.96,
+          "image": "motion/L3-05.jpg",
+          "sha256": "a6e89ffbb6f85c7fb74c9b9d9ba4ac4b8a61459df1adb6e194673c89abf6b896"
+        },
+        {
+          "source_time": 149.11,
+          "clip_time": 2.61,
+          "image": "motion/L3-06.jpg",
+          "sha256": "c89a051a30f01dee0390c960f412bbf149df41c5df7ae72b7b725c5b09e8e763"
+        },
+        {
+          "source_time": 149.76,
+          "clip_time": 3.26,
+          "image": "motion/L3-07.jpg",
+          "sha256": "3eb52655af96116e76dd4d6f261ba27c6bb4cbbe6c56f565e6f1220fe7320325"
+        },
+        {
+          "source_time": 150.2,
+          "clip_time": 3.7,
+          "image": "motion/L3-08.jpg",
+          "sha256": "45b3dafe199de3ae16e49f4d88305d431a899ba7f30f7dca0fad4e99bff644b5"
+        },
+        {
+          "source_time": 150.85,
+          "clip_time": 4.35,
+          "image": "motion/L3-09.jpg",
+          "sha256": "f8086118ad1774b5ded8701e84f2978d1e28325210d8e9ee77e1a062debad54a"
+        },
+        {
+          "source_time": 151.06,
+          "clip_time": 4.56,
+          "image": "motion/L3-10.jpg",
+          "sha256": "2846e4e6f8aaaca0ea2c2580dbc1a6dfeca27b34319553cc138420c7a35612d4"
+        },
+        {
+          "source_time": 151.47,
+          "clip_time": 4.97,
+          "image": "motion/L3-11.jpg",
+          "sha256": "13c7b87d3fee03ca6b646b6053351bc7c9d9d467de96218035751b35e197e532"
+        }
+      ],
+      "poster": "motion/L3-00.jpg",
+      "contact_sheet": "motion/L3-sequence.jpg",
+      "contact_sheet_sha256": "8b888fc4c7a98cd2f0bf8f404b95915fcc92cd319d28be76f7f42b7f00fabcc3",
+      "frames_per_second": 30,
+      "source_dimensions": [
+        2160,
+        2880
+      ]
+    }
+  ]
+}

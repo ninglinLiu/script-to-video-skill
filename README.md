@@ -2,16 +2,25 @@
 
 > **2026-10-29：用户已否决本版：动画不流畅，主要仍是背景图推拉、字幕/纸卡叠加和人物贴纸位移；不作为已验证的成片路线。**
 
-**LifeOS 路线的实际制作分支：[像素街区双画幅成片与三个连续实验](examples/pixel-scene-map/index.html)**。105.57秒固定凯撒稿，六张完整环境、独立人物/前景/道具、地图与相机配置；另有24秒第二内容在干净目录的复现测试。[可执行入口与边界](references/pixel-scene-map.md)。原参考媒体不进入仓库；本版尚不代表1:1审美通过。
+**LifeOS 路线的实际制作分支：[像素街区双画幅成片与三个连续实验](examples/pixel-scene-map/index.html)**。105.57秒固定凯撒稿，六张完整环境、独立人物/前景/道具、地图与相机配置；另有24秒第二内容在干净目录的复现测试。[可执行入口与边界](references/pixel-scene-map.md)。参考媒体现已按需提供；本版尚不代表1:1审美通过。
 
-**2026-10-29 新增：[139条样片索引](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/) · [爽哥说 / LifeOS 两条参考与8段动作拆解](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/study.html)。** 索引复用35条仓库已有公开视频，其余保留记录、来源与浏览器本地加载入口。新增28段观察、[制作路径](references/reference-study-20261029/production-route.txt)和[结构化计划](references/reference-study-20261029/plan.json)；参考分析已完成相应抽样，1:1制作尚未验证。
+**2026-10-29 新增：[139条样片索引](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/) · [爽哥说 / LifeOS 两条参考与8段动作拆解](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/study.html)。** 139条记录现均有在线MP4与真实封面；新增8段原尺寸/30fps关键片段、96张动作帧、28组三帧观察。支持0.5×/0.25×播放、逐帧步进、阶段循环和直接下载。全片网页副本降低体积但不截短；关键片段保留原尺寸。新增28段观察、[制作路径](references/reference-study-20261029/production-route.txt)和[结构化计划](references/reference-study-20261029/plan.json)；参考分析已完成相应抽样，1:1制作尚未验证。
 
 ```sh
 python scripts/reference_study.py show --route particle-document
 python scripts/reference_study.py show --route pixel-scene-map
-# 正确原片在本机时，准备无音轨预览和指定片段；输出到已忽略的 local-only/
-python scripts/reference_study.py prepare --ref R26 --input /path/to/source.mp4 --clip S1
+# 直接取得实际MP4、帧序列和动作阶段，验证哈希；完整clone时复用仓库文件
+python scripts/reference_study.py fetch --route particle-document --output ./reference-cache
+python scripts/reference_study.py fetch --route pixel-scene-map --output ./reference-cache
+# 可加 --all-clips 取得该路线全部关键段，或 --full 取得全片网页副本
 ```
+
+| 粒子与实体连续场景 · S3 | 像素场景与地图 · L1 |
+| --- | --- |
+| [![S3连续帧](examples/reference-study-20261029/motion/S3-sequence.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/study.html#S3) | [![L1连续帧](examples/reference-study-20261029/motion/L1-sequence.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/study.html#L1) |
+| [原尺寸静音MP4](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/motion/S3.mp4) | [原尺寸静音MP4](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/motion/L1.mp4) |
+
+点击图进入可播放、减速、逐帧和阶段循环的对照页。帧图来自实际参考片，不是生成的分镜；复现效果尚待独立制作验证。
 
 分别交给制作 Agent 的完整任务提示词：[A · 凯撒 × 粒子字与连续场景](references/reference-study-20261029/prompts/caesar-particle.txt) · [B · 凯撒 × 像素场景与地图剪辑](references/reference-study-20261029/prompts/caesar-pixel.txt)。两条任务沿用同一份约106秒凯撒改编稿，把动画差异单独比较，并要求成片后固化可执行Skill；B路线在本分支已有成片及可执行交付，A路线的完成状态不由本次B路线测试推断。
 

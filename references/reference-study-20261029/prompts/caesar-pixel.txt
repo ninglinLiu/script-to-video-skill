@@ -8,7 +8,7 @@
 
 先同步 main，读 SKILL.md 和当前适用的长期反馈；执行：
 python scripts/reference_study.py show --route pixel-scene-map
-按需读 references/reference-study-20261029/production-route.txt 和 shot-observations.csv。取得正确原片；scripts/reference_study.py prepare 可准备静音H.264预览。参考原画幅2160×2880，是3:4；先按原比例对标，再实际重排9:16，不能拉伸。
+按需读 references/reference-study-20261029/production-route.txt 和 shot-observations.csv。执行 python scripts/reference_study.py fetch --route pixel-scene-map --output ./reference-cache，取得真实MP4、连续帧和bundle.json；逐阶段看地图定位、路径展开及硬切，不只读文字。参考原画幅2160×2880，是3:4；先按原比例对标，再实际重排9:16，不能拉伸。
 
 内容固定为 examples/chapter-01/source/draft.txt 中《回本以后，什么会改变？》，结合案例 evidence/ 使用。它是凯撒文章的既有改编稿，不冒充完整公众号正文。优先复用约106秒的独立旁白及真实时间线，与A路线保持相同论点、数字和顺序；不要换选题。保留假设算例及处置效应不等同于锚定的限定；必要改稿另记。
 
@@ -24,4 +24,4 @@ python scripts/reference_study.py show --route pixel-scene-map
 再换一小段新内容做第二份配置，证明场景与镜头方法能复用而不降低质量；保留失败与修复记录，说明仍须补资产的情况。SKILL.md只放短路由，细则按需加载。第二配置测试不能冒充其他模型的独立验收。
 
 交付：两个画幅的配音MP4及无音轨预览、SRT、独立旁白、源码与真实时间线、分层资产/来源/许可、镜头配置、参考连续对照、已知差距、耗时成本、Skill分支与复现命令。用户已免除重复剪映/PR导入验证，不以此阻塞。
-外部参考原片/音轨/截帧及私密参考仅保留local-only。不要把原参考镜头直接拼进凯撒成片冒充复现。预览默认暂停。完成后给出可审阅的代码与成片，未经另行要求不自动发布或push。目标可以严格，但不能预先宣布“完美”或“1:1已通过”。
+公开研究包已有用户指定参考的静音副本和帧图；原音轨及用户指定仅本地的敏感参考仍保留local-only。不要把原参考镜头直接拼进凯撒成片冒充复现。预览默认暂停。完成后给出可审阅的代码与成片，未经另行要求不自动发布或push。目标可以严格，但不能预先宣布“完美”或“1:1已通过”。

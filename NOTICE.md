@@ -12,16 +12,16 @@ MIT applies to original workflow, scripts and original animation code. It does n
 - `examples/chapter-01/工程/public/paper-title.png`: limited title/author excerpt of Terrance Odean's 1998 paper *Are Investors Reluctant to Realize Their Losses?*, used to identify the evidence on screen. This third-party excerpt is not MIT. Source: https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/areinvestorsreluctant.pdf . The complete paper is not distributed.
 - `source/draft.txt`: independently authored adaptation using original hypothetical examples, informed by the user's supplied Caesar article. The full article is not distributed. See the example's source manifest and fact review.
 
-## References, not bundled media
+## Reference sources and media scope
 
 - https://github.com/Azure12355/weilanx-claude-videos — Remotion production, audio/font organization and the attributed batch-01 components.
 - https://github.com/Kianzzz/xilo-opus-video — object state descriptions, continuous proofs and frame review.
-- https://www.douyin.com/video/7697146047227694975 — rtiaho edit reference; original reference audio/video not bundled.
-- https://v.douyin.com/vX87XYIgSnc/ — user-selected VibeVerse《15亿次心跳》music reference; original audio/video not bundled.
+- https://www.douyin.com/video/7697146047227694975 — rtiaho edit reference; selected silent study copies are in the dated catalog; original audio is not bundled.
+- https://v.douyin.com/vX87XYIgSnc/ — user-selected VibeVerse《15亿次心跳》reference; a silent visual study copy is in the dated catalog; its music/audio is not bundled.
 
-Reference media and music without an established redistribution license remain local. Public examples include links, provenance and an import/mix command. Sensitive references, credentials, original article caches and complete papers are excluded. Remotion and other runtime dependencies retain their respective licenses.
+The dated visual study pack below is published at the user’s explicit request and contains third-party silent reference copies and stills. Their original authors retain all rights; publication here is not a claim of ownership or a grant of a production reuse license. Reference music/audio, sensitive references, credentials, original article caches and complete papers are excluded. Remotion and other runtime dependencies retain their respective licenses.
 
-`examples/reference-study-20261029/` indexes 139 local records and reuses 35 already published videos without copying new third-party media. Its two new Douyin studies publish source links, timecodes, observations and proposed implementation routes. Original videos, audio, stills and the eight extracted reference clips are not bundled. Browser file inputs create local object URLs without uploading the selected file; `scripts/reference_study.py` prepares reference media under ignored `local-only/`. Observed reference behavior does not establish that a reproduction has been implemented or passed.
+`examples/reference-study-20261029/` now provides 139 playable records: 35 reuse existing public video files and 104 add full-length silent study copies. `media-manifest.json` records provenance, source hashes, derivative hashes, sizes and dimensions. Eight selected excerpts preserve their source resolution and 30fps; consecutive frames and 28 illustrated observations are included. Full-length web derivatives may reduce resolution/bitrate and remove audio; they are not original downloads. Third-party reference copies/stills are outside the MIT license. `scripts/reference_study.py fetch` makes selected video/frame bundles available to another Agent without a manual local file picker. Observed reference behavior does not establish that a reproduction has been implemented or passed.
 
 ## 视觉资产扩展（2026-10-24）
 

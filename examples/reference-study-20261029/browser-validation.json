@@ -1,0 +1,64 @@
+{
+  "base": "local HTTP server with byte-range support",
+  "cards": {
+    "count": 139,
+    "posters": 139,
+    "downloads": 139,
+    "comparisonButtons": 139
+  },
+  "counts": {
+    "clips": 8,
+    "frames": 96,
+    "observations": 28,
+    "emptyPlayers": 0,
+    "requiredFileInputs": 0
+  },
+  "playback": [
+    {
+      "id": "clip-S1",
+      "width": 1080,
+      "height": 1920,
+      "time": 0.207,
+      "muted": true,
+      "blob": false
+    },
+    {
+      "id": "clip-S3",
+      "width": 1080,
+      "height": 1920,
+      "time": 0.2036,
+      "muted": true,
+      "blob": false
+    },
+    {
+      "id": "clip-L1",
+      "width": 2160,
+      "height": 2880,
+      "time": 0.2063,
+      "muted": true,
+      "blob": false
+    },
+    {
+      "id": "clip-L2",
+      "width": 2160,
+      "height": 2880,
+      "time": 0.2083,
+      "muted": true,
+      "blob": false
+    },
+    {
+      "id": "clip-L3",
+      "width": 2160,
+      "height": 2880,
+      "time": 0.2095,
+      "muted": true,
+      "blob": false
+    }
+  ],
+  "frameStep": 0.033332999999999835,
+  "mobile": {
+    "width": 390,
+    "scroll": 390
+  },
+  "errors": []
+}

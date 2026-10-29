@@ -16,7 +16,13 @@
       "height": 1920,
       "fps": "30/1",
       "sha256": "2d4676cc7742821e81fc10b3417cff294e773936f1baa29359b623519a557248",
-      "review_scope": "全片接触表已静音抽看：爽哥说每4秒、LifeOS每2秒；另检视8段加密帧序列。已提取连续无音轨片段供逐段播放。本轮未完整连续观看两条全片、未审听，不声称作者软件已知或复现通过。"
+      "review_scope": "全片接触表已静音抽看：爽哥说每4秒、LifeOS每2秒；另检视8段加密帧序列。已提取连续无音轨片段供逐段播放。本轮未完整连续观看两条全片、未审听，不声称作者软件已知或复现通过。",
+      "web_video": "examples/reference-study-20261029/media/R26.mp4",
+      "web_sha256": "e723cf3d21947c097a561994cb1aa6e283785839bf7fa2ba3c3dfab4fb53cd45",
+      "web_dimensions": [
+        720,
+        1280
+      ]
     },
     {
       "key": "lifeos",
@@ -30,14 +36,20 @@
       "height": 2880,
       "fps": "30/1",
       "sha256": "85a0a90b5dd20e54d4c34b9ab2f259863b40a2e7311c86fba6e9b9942dee222c",
-      "review_scope": "全片接触表已静音抽看：爽哥说每4秒、LifeOS每2秒；另检视8段加密帧序列。已提取连续无音轨片段供逐段播放。本轮未完整连续观看两条全片、未审听，不声称作者软件已知或复现通过。"
+      "review_scope": "全片接触表已静音抽看：爽哥说每4秒、LifeOS每2秒；另检视8段加密帧序列。已提取连续无音轨片段供逐段播放。本轮未完整连续观看两条全片、未审听，不声称作者软件已知或复现通过。",
+      "web_video": "examples/reference-study-20261029/media/R27.mp4",
+      "web_sha256": "824fccda0d6e28e4f91fe36ba2bca95d403ae098606d0231bac430be4a3ae394",
+      "web_dimensions": [
+        960,
+        1280
+      ]
     }
   ],
   "read_order": [
     "Run python scripts/reference_study.py show --route <route-id>",
-    "Open the indicated public source or bind the corresponding local original with prepare",
-    "Read shot-observations.csv only for surrounding context",
-    "Keep observed implementation separate from planned and untested reproduction"
+    "Run python scripts/reference_study.py fetch --route <route-id> --output ./reference-cache",
+    "View the actual MP4 plus consecutive frames and phases in the returned bundle.json before coding",
+    "Use --full for surrounding context; observations and an untested reproduction plan are not a passed film"
   ],
   "clips": [
     {
@@ -46,7 +58,10 @@
       "start": 2,
       "end": 9,
       "label": "大字→前景粒子→文献",
-      "video": "local-only/reference-study/shuangge/S1-silent.mp4"
+      "video": "examples/reference-study-20261029/motion/S1.mp4",
+      "sha256": "ade31e95a1d7cc96efd0c73aa449f1f7bf5730b5255d00f8fd166a48da5bb42c",
+      "frames": "examples/reference-study-20261029/motion/S1-sequence.jpg",
+      "motion_events": "examples/reference-study-20261029/motion-events.json#S1"
     },
     {
       "reference": "shuangge",
@@ -54,7 +69,10 @@
       "start": 111,
       "end": 128,
       "label": "粒子→实体书桌→穹顶",
-      "video": "local-only/reference-study/shuangge/S2-silent.mp4"
+      "video": "examples/reference-study-20261029/motion/S2.mp4",
+      "sha256": "a668c9f9040460be30eee89b8183ac79d12d820caa28faaff8282f1053f2eab3",
+      "frames": "examples/reference-study-20261029/motion/S2-sequence.jpg",
+      "motion_events": "examples/reference-study-20261029/motion-events.json#S2"
     },
     {
       "reference": "shuangge",
@@ -62,7 +80,10 @@
       "start": 296,
       "end": 311,
       "label": "两石→拱桥→标题",
-      "video": "local-only/reference-study/shuangge/S3-silent.mp4"
+      "video": "examples/reference-study-20261029/motion/S3.mp4",
+      "sha256": "202fd9df0a121946b02fdc028c0081a5e5466e650397a33d525dc372f2c3854b",
+      "frames": "examples/reference-study-20261029/motion/S3-sequence.jpg",
+      "motion_events": "examples/reference-study-20261029/motion-events.json#S3"
     },
     {
       "reference": "shuangge",
@@ -70,7 +91,10 @@
       "start": 318,
       "end": 328,
       "label": "断桥→粒子柱→数字",
-      "video": "local-only/reference-study/shuangge/S4-silent.mp4"
+      "video": "examples/reference-study-20261029/motion/S4.mp4",
+      "sha256": "282c005bb2ae191220fa7b91711a381beead079000792193799a5ad7d2829aac",
+      "frames": "examples/reference-study-20261029/motion/S4-sequence.jpg",
+      "motion_events": "examples/reference-study-20261029/motion-events.json#S4"
     },
     {
       "reference": "shuangge",
@@ -78,7 +102,10 @@
       "start": 408,
       "end": 420,
       "label": "记录页→扇面→三石",
-      "video": "local-only/reference-study/shuangge/S5-silent.mp4"
+      "video": "examples/reference-study-20261029/motion/S5.mp4",
+      "sha256": "7150753cc6c5ece933055bd979d5e7672a3c5c172a2c4589f377d5cf9e8a5b9e",
+      "frames": "examples/reference-study-20261029/motion/S5-sequence.jpg",
+      "motion_events": "examples/reference-study-20261029/motion-events.json#S5"
     },
     {
       "reference": "lifeos",
@@ -86,7 +113,10 @@
       "start": 10.5,
       "end": 18.5,
       "label": "夜街→地图下潜→场景",
-      "video": "local-only/reference-study/lifeos/L1-silent.mp4"
+      "video": "examples/reference-study-20261029/motion/L1.mp4",
+      "sha256": "ff46e5817ea1ff9d1db4fa74be9aeaa98f053ccc5d48a2338b193fcbfc244918",
+      "frames": "examples/reference-study-20261029/motion/L1-sequence.jpg",
+      "motion_events": "examples/reference-study-20261029/motion-events.json#L1"
     },
     {
       "reference": "lifeos",
@@ -94,7 +124,10 @@
       "start": 46,
       "end": 52.5,
       "label": "路线生长→店面",
-      "video": "local-only/reference-study/lifeos/L2-silent.mp4"
+      "video": "examples/reference-study-20261029/motion/L2.mp4",
+      "sha256": "24415e17031c462989d45ea1f94631c335d7f80a894e2e98242beb1b9d1b739d",
+      "frames": "examples/reference-study-20261029/motion/L2-sequence.jpg",
+      "motion_events": "examples/reference-study-20261029/motion-events.json#L2"
     },
     {
       "reference": "lifeos",
@@ -102,7 +135,10 @@
       "start": 146.5,
       "end": 151.5,
       "label": "地图→霓虹河岸→唱片店",
-      "video": "local-only/reference-study/lifeos/L3-silent.mp4"
+      "video": "examples/reference-study-20261029/motion/L3.mp4",
+      "sha256": "fb631e47fb964b6a2e3e4adb49109af929a5d869cbe2f194a006e04a2c6dfc2c",
+      "frames": "examples/reference-study-20261029/motion/L3-sequence.jpg",
+      "motion_events": "examples/reference-study-20261029/motion-events.json#L3"
     }
   ],
   "routes": [

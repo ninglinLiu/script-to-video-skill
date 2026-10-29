@@ -9,7 +9,7 @@
 先同步 main，读 SKILL.md 和当前适用的长期反馈；执行：
 python scripts/reference_study.py show --route particle-document
 按需读 references/reference-study-20261029/production-route.txt 和 shot-observations.csv，不通读整个仓库。
-从指定分享链接或本机已有原片取得参考，核对来源；scripts/reference_study.py prepare 可准备静音预览。只有接触表/文字描述时不能假装已看连续动画。
+执行 python scripts/reference_study.py fetch --route particle-document --output ./reference-cache。直接读取bundle.json中的实际MP4、连续帧与动作阶段，不需要人工选择原片。逐阶段看遮挡、锚点、轨迹和停顿；只有接触表/文字描述时不能假装已看连续动画。
 
 内容固定为 examples/chapter-01/source/draft.txt 中《回本以后，什么会改变？》，结合该案例 evidence/ 核对范围。它是有来源说明的凯撒文章改编稿，不是完整公众号原文。优先复用这条片子的独立配音与真实时间线，约106秒；旁白、数字和论证不因换画风而重写。确需修改只列必要差异，并更新受影响字幕。保留100/40/60元、回本涨幅、处置效应与锚定不等同等边界；假设算例不能当真实市场事实。
 
@@ -25,4 +25,4 @@ python scripts/reference_study.py show --route particle-document
 换一小段不同内容做第二份配置，保持视觉与衔接质量，记录不能泛化的部分。文档检查或制作方第二次运行不能称为另一个模型已独立验证。保留修复记录与输入输出样例，让新Agent不必重新手写场景。
 
 交付：配音MP4、无音轨预览、SRT、独立旁白、可编辑源码和实际时间线、分段画面、素材来源/许可、与参考的本地连续对照、实际差距、耗时成本、可复用分支和复现命令。用户已免除重复剪映/PR导入验证，不把它作为阻塞。
-外部参考原片/音轨/截帧以及任何私密参考留在local-only，不进公开包。保持默认暂停。完成后给出可审阅的代码和成片，未经另行要求不自动发布或push。所谓“绝对对标”是制作目标，不能用它代替完成证据。
+公开研究包已有用户指定参考的静音副本和帧图；不把这些第三方画面冒充原创复现。原音轨以及任何用户指定仅本地的敏感参考仍留在local-only。保持默认暂停。完成后给出可审阅的代码和成片，未经另行要求不自动发布或push。所谓“绝对对标”是制作目标，不能用它代替完成证据。
