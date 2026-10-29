@@ -158,5 +158,14 @@
       "sha256": "33b329572f620c410c69256e2633bea81162853f06506cda69ea6bb5724140f5",
       "bytes": 6064547
     }
-  ]
+  ],
+  "userAcceptance": {
+    "status": "rejected",
+    "date": "2026-10-29",
+    "source": "direct user feedback",
+    "reason": "用户已否决本版：动画不流畅，主要仍是背景图推拉、字幕/纸卡叠加和人物贴纸位移；不作为已验证的成片路线。",
+    "scope": "visual animation quality; technical checks do not imply acceptance",
+    "productionCommit": "1879524",
+    "automaticRemakeAuthorized": false
+  }
 }
