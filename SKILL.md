@@ -52,6 +52,8 @@ python scripts/start_episode.py --source chapter-01 --episode /path/to/new-episo
 
 ## 仅在相关时读取
 
+用户明确选择爽哥说的粒子字/实体解释或 LifeOS 的像素场景/地图剪辑时，先执行 `python scripts/reference_study.py show --route particle-document` 或 `--route pixel-scene-map`。它只读取对应[观察与制作计划](references/reference-study-20261029/plan.json)及重点时间段，不是已验证的成片模板。按计划准备本地原片、复现连续镜头后再改编；不能回退到只换配色的组件测试。详见[制作路径](references/reference-study-20261029/production-route.txt)。
+
 | 情况 | 读取 |
 |---|---|
 | 具体审看、数字与布局规则 | [生产规范](references/production.md) |

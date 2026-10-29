@@ -1,0 +1,232 @@
+{
+  "schema": "reference-production-route/1",
+  "date": "2026-10-29",
+  "purpose": "给后续Agent读取的视觉对标与生产记录；不是已完成的Skill或成片",
+  "review_scope": "全片接触表已静音抽看：爽哥说每4秒、LifeOS每2秒；另检视8段加密帧序列。已提取连续无音轨片段供逐段播放。本轮未完整连续观看两条全片、未审听，不声称作者软件已知或复现通过。",
+  "sources": [
+    {
+      "key": "shuangge",
+      "id": "7696340582859279626",
+      "share_url": "https://v.douyin.com/k2CDMxtmGic/",
+      "canonical_url": "https://www.douyin.com/video/7696340582859279626",
+      "title": "人选祸，天选福 · 勘误",
+      "author": "爽哥说",
+      "duration": 485.266667,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "sha256": "2d4676cc7742821e81fc10b3417cff294e773936f1baa29359b623519a557248",
+      "review_scope": "全片接触表已静音抽看：爽哥说每4秒、LifeOS每2秒；另检视8段加密帧序列。已提取连续无音轨片段供逐段播放。本轮未完整连续观看两条全片、未审听，不声称作者软件已知或复现通过。"
+    },
+    {
+      "key": "lifeos",
+      "id": "7701376219433946411",
+      "share_url": "https://v.douyin.com/ywCcbE_pp4k/",
+      "canonical_url": "https://www.douyin.com/video/7701376219433946411",
+      "title": "上海万圣节 · 市区5处好去处",
+      "author": "LifeOS 实验室",
+      "duration": 182.25,
+      "width": 2160,
+      "height": 2880,
+      "fps": "30/1",
+      "sha256": "85a0a90b5dd20e54d4c34b9ab2f259863b40a2e7311c86fba6e9b9942dee222c",
+      "review_scope": "全片接触表已静音抽看：爽哥说每4秒、LifeOS每2秒；另检视8段加密帧序列。已提取连续无音轨片段供逐段播放。本轮未完整连续观看两条全片、未审听，不声称作者软件已知或复现通过。"
+    }
+  ],
+  "read_order": [
+    "Run python scripts/reference_study.py show --route <route-id>",
+    "Open the indicated public source or bind the corresponding local original with prepare",
+    "Read shot-observations.csv only for surrounding context",
+    "Keep observed implementation separate from planned and untested reproduction"
+  ],
+  "clips": [
+    {
+      "reference": "shuangge",
+      "id": "S1",
+      "start": 2,
+      "end": 9,
+      "label": "大字→前景粒子→文献",
+      "video": "local-only/reference-study/shuangge/S1-silent.mp4"
+    },
+    {
+      "reference": "shuangge",
+      "id": "S2",
+      "start": 111,
+      "end": 128,
+      "label": "粒子→实体书桌→穹顶",
+      "video": "local-only/reference-study/shuangge/S2-silent.mp4"
+    },
+    {
+      "reference": "shuangge",
+      "id": "S3",
+      "start": 296,
+      "end": 311,
+      "label": "两石→拱桥→标题",
+      "video": "local-only/reference-study/shuangge/S3-silent.mp4"
+    },
+    {
+      "reference": "shuangge",
+      "id": "S4",
+      "start": 318,
+      "end": 328,
+      "label": "断桥→粒子柱→数字",
+      "video": "local-only/reference-study/shuangge/S4-silent.mp4"
+    },
+    {
+      "reference": "shuangge",
+      "id": "S5",
+      "start": 408,
+      "end": 420,
+      "label": "记录页→扇面→三石",
+      "video": "local-only/reference-study/shuangge/S5-silent.mp4"
+    },
+    {
+      "reference": "lifeos",
+      "id": "L1",
+      "start": 10.5,
+      "end": 18.5,
+      "label": "夜街→地图下潜→场景",
+      "video": "local-only/reference-study/lifeos/L1-silent.mp4"
+    },
+    {
+      "reference": "lifeos",
+      "id": "L2",
+      "start": 46,
+      "end": 52.5,
+      "label": "路线生长→店面",
+      "video": "local-only/reference-study/lifeos/L2-silent.mp4"
+    },
+    {
+      "reference": "lifeos",
+      "id": "L3",
+      "start": 146.5,
+      "end": 151.5,
+      "label": "地图→霓虹河岸→唱片店",
+      "video": "local-only/reference-study/lifeos/L3-silent.mp4"
+    }
+  ],
+  "routes": [
+    {
+      "id": "particle-document",
+      "reference": "R26",
+      "format": {
+        "width": 1080,
+        "height": 1920,
+        "fps": 30
+      },
+      "priority_spans": [
+        "S1",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "observed": "重字形、点云聚散、实体插画、桥/石跨镜保留；柔光与背景暗部有层次。",
+      "proposed_implementation": "确定性Canvas/WebGL场景；字形离屏掩模采样为位置目标；固定seed/粒子ID在不同形状目标间运动；图像底板独立保留；桥面按曲线路径采样，反射与光点另层；用实际渲染和参考并排校正。作者原工具未知。",
+      "required_assets": [
+        "粗笔画宋体字形候选与许可/字宽验证",
+        "文字掩模与点位目标缓存",
+        "有光照和实体重量的场景底板",
+        "桥/石轮廓、路径与反射遮罩",
+        "字幕与大字分层",
+        "固定seed和跨镜对象状态"
+      ],
+      "reuse_candidates": [
+        "assets/weilanx/canvas/engine.js",
+        "assets/weilanx/canvas/lib/three.min.js",
+        "assets/weilanx/upstream/src/library/lamplight"
+      ],
+      "reuse_limit": "这些路径已存在，但未证实直接包含本片粒子变形/桥结构。只作为渲染、场景和光照基础；不能把blackgold kit自动视为已对标。",
+      "continuity_ids": [
+        "glyph-main",
+        "particles-main",
+        "anchor-left",
+        "anchor-right",
+        "bridge",
+        "evidence-page"
+      ],
+      "first_proof": "先做7秒S1视觉复现，再做15秒S3完整动作复现；同尺寸、同时间范围并排。之后才换成凯撒口播。",
+      "failure_signals": [
+        "字太细或主体太小",
+        "粒子仅是背景装饰",
+        "桥/石在切镜重建而非接续",
+        "整屏光团抹掉细节",
+        "以两张标题卡交叉淡入代替形变"
+      ],
+      "status": "observed_and_planned_not_reproduced"
+    },
+    {
+      "id": "pixel-scene-map",
+      "reference": "R27",
+      "format": {
+        "width": 2160,
+        "height": 2880,
+        "fps": 30
+      },
+      "priority_spans": [
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "observed": "满幅像素街景，多景别资产与昼夜变化；地图缩放/倾斜与路线展开；部分所查场景以全局镜头推移为主；场景之间常硬切。",
+      "proposed_implementation": "先做场景资产，不先堆图表：前景/人物/门店/天际线/光影和反射。统一像素尺度与色板。相机轨迹裁切全场景，确有必要再分层视差/水面。地图用地理底图或明确标识的概念关系图，标记和路径驱动镜头。作者资产工具未知。",
+      "required_assets": [
+        "同一地点全景/中景/近景与昼夜资产",
+        "一致人物和建筑比例",
+        "窗灯/水面等可选局部遮罩",
+        "含署名的地图底图或原创示意图",
+        "地点/节点标记与路径数据",
+        "不遮住场景的字幕"
+      ],
+      "reuse_candidates": [
+        "assets/weilanx/canvas/engine.js",
+        "assets/weilanx/canvas/scenes",
+        "examples/chapter-01/voice.py"
+      ],
+      "reuse_limit": "现有像素手绘示例可供取材；目前没有确认与本片同质量的上海像素场景素材。缺的是全场景资产，不能退回小吉祥物模板。",
+      "continuity_ids": [
+        "hero-location",
+        "camera",
+        "map-marker",
+        "route",
+        "scene-palette",
+        "caption-region"
+      ],
+      "first_proof": "先按原3:4画幅做8秒L1同构镜头和6.5秒L2路径镜头；确认资产和剪辑相似后，再另做9:16重排。",
+      "failure_signals": [
+        "只有一个小像素人物",
+        "地图缩放但标记漂移",
+        "把画面硬拉伸成9:16",
+        "场景细节密度与参考差一档",
+        "每个镜头都同一张图慢移"
+      ],
+      "status": "observed_and_planned_not_reproduced"
+    }
+  ],
+  "caesar_controlled_adaptation": {
+    "source": "用户此前提供的凯撒《一招破解：锚定效应》全文",
+    "selected_idea": "过去的标价本身不足以说明当前是否划算",
+    "stage": "建议的后续对照，未制作",
+    "variables_to_hold": [
+      "同一段含义",
+      "同一时长与字幕/旁白",
+      "各自在原参考画幅下先检验，再转换比例"
+    ],
+    "particle_version": "旧价格字形→同一字形分散→当前证据出现；主体锚点保持。不要仅写三张概念卡。",
+    "pixel_version": "同一店面旧价签→关系图定位→回店面看到新证据；靠完整场景与路线镜头讲同一意思。",
+    "original_example": "价格和店面若使用虚构示例，明确标为示意，不冒充真实市场资料。"
+  },
+  "evaluation": {
+    "implementation_exists": false,
+    "continuous_reproduction_reviewed": false,
+    "one_to_one_claim": false,
+    "compare_dimensions": [
+      "主体大小与视线落点",
+      "材质/光照/像素密度",
+      "对象状态如何接到下一镜",
+      "动作开始、加速、落定的时间",
+      "同一段连续观看的差距"
+    ],
+    "note": "下载、抽帧和技术参数正确，不等于动画制作达标。"
+  },
+  "privacy": "This public pack contains observations, source links, timecodes and executable local-media preparation. Original reference videos/audio/frames remain local under NOTICE.md. No sensitive reference material is included."
+}

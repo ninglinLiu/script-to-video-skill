@@ -1,5 +1,14 @@
 # Script to Video · 视觉素材库与制作档案
 
+**2026-10-29 新增：[139条样片索引](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/) · [爽哥说 / LifeOS 两条参考与8段动作拆解](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/study.html)。** 索引复用35条仓库已有公开视频，其余保留记录、来源与浏览器本地加载入口。新增28段观察、[制作路径](references/reference-study-20261029/production-route.txt)和[结构化计划](references/reference-study-20261029/plan.json)；参考分析已完成相应抽样，1:1制作尚未验证。
+
+```sh
+python scripts/reference_study.py show --route particle-document
+python scripts/reference_study.py show --route pixel-scene-map
+# 正确原片在本机时，准备无音轨预览和指定片段；输出到已忽略的 local-only/
+python scripts/reference_study.py prepare --ref R26 --input /path/to/source.mp4 --clip S1
+```
+
 这是一个包含制作指令、脚本、素材和案例的 **Agent Skill**，需要能执行工具的 Agent 及视频运行环境。现有案例可复用；新文章的稳定生产、8–10分钟长片和跨模型复现尚未整体验收。详见[任务完成度、环境依赖与换模型说明](references/runtime-and-portability.md)。
 
 **新 Agent 从这里开始：[迁移完整工程并审看整片](references/executable-production.md)。**

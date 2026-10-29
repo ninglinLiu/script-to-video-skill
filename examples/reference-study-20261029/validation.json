@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-29",
+  "catalog_records": 139,
+  "existing_public_videos": 35,
+  "reference_spans": 8,
+  "observations": 28,
+  "browser": {
+    "javascript_errors": 0,
+    "local_reference_bind_and_play": [
+      "R26",
+      "R27"
+    ],
+    "default_muted": true,
+    "mobile_width": 390,
+    "mobile_document_width": 390
+  },
+  "cli": {
+    "R26_S1_prepared_and_probed": true,
+    "R27_commands_dry_run": true
+  },
+  "original_reference_media_in_commit": false,
+  "replication_film_verified": false
+}
