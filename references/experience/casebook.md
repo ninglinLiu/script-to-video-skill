@@ -28,9 +28,10 @@
 | [E20](cards/E20.md) | 精细背景加贴纸，仍不是场景动画 | plan / storyboard / review / repair |
 | [E21](cards/E21.md) | 迁移没有保住原镜头的视觉质量 | plan / storyboard / review / repair |
 | [E22](cards/E22.md) | 修Skill不等于当前Agent代做成片 | plan / review / repair / delivery |
+| [E23](cards/E23.md) | 用户认可的基准：真 3D、主体做事、交接画出来 | plan / storyboard / render / review |
 
 [来源与观察范围](sources.json)只在需要追溯时加载。已公开历史片可在[展厅](../../examples/gallery/index.html)按项目名称查看；网页轻量副本与生产原片的哈希不同。
 
 
 
-[7个反思案例及反馈覆盖](reflections.md)：只有需要证据时才读具体案例。
+[8个反思案例及反馈覆盖](reflections.md)：只有需要证据时才读具体案例。

@@ -1,46 +1,46 @@
 {
   "scope": "Staged Git blobs; excludes three generated inventory outputs, ignored files and Git history. Tree includes all tracked paths plus generated outputs. Byte counts use canonical Git blobs, not OS working-copy line endings.",
-  "files": 2017,
-  "bytes": 1110507560,
-  "entry_chars": 4155,
-  "entry_lines": 72,
-  "entry_utf8_bytes": 8523,
+  "files": 1599,
+  "bytes": 538462597,
+  "entry_chars": 3257,
+  "entry_lines": 83,
+  "entry_utf8_bytes": 6159,
   "groups": {
     "examples": {
-      "files": 967,
-      "bytes": 1032061823
+      "files": 511,
+      "bytes": 439509754
     },
     "assets": {
-      "files": 956,
-      "bytes": 78033476
+      "files": 969,
+      "bytes": 78098183
+    },
+    "docs": {
+      "files": 20,
+      "bytes": 20390244
     },
     "references": {
-      "files": 55,
-      "bytes": 178195
+      "files": 59,
+      "bytes": 202779
     },
     "scripts": {
-      "files": 15,
-      "bytes": 125901
+      "files": 18,
+      "bytes": 158632
     },
     "[root files]": {
       "files": 10,
-      "bytes": 52046
+      "bytes": 50298
     },
     "tests": {
-      "files": 8,
-      "bytes": 38031
-    },
-    "docs": {
-      "files": 3,
-      "bytes": 13552
+      "files": 9,
+      "bytes": 44973
     },
     "evals": {
       "files": 2,
-      "bytes": 3647
+      "bytes": 6777
     },
     ".github": {
       "files": 1,
-      "bytes": 889
+      "bytes": 957
     }
   },
   "duplicates": [
@@ -130,11 +130,11 @@
     },
     {
       "path": ".github/workflows/architecture.yml",
-      "bytes": 889
+      "bytes": 957
     },
     {
       "path": ".gitignore",
-      "bytes": 894
+      "bytes": 1107
     },
     {
       "path": ".nojekyll",
@@ -142,11 +142,11 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1406
+      "bytes": 1686
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes": 3423
+      "bytes": 3899
     },
     {
       "path": "LICENSE",
@@ -154,19 +154,71 @@
     },
     {
       "path": "NOTICE.md",
-      "bytes": 4587
+      "bytes": 5198
     },
     {
       "path": "README.md",
-      "bytes": 31226
+      "bytes": 30262
     },
     {
       "path": "SKILL.md",
-      "bytes": 8523
+      "bytes": 6159
     },
     {
       "path": "assets/chapter-style-lock.json",
       "bytes": 2011
+    },
+    {
+      "path": "assets/diorama-kit/README.md",
+      "bytes": 3693
+    },
+    {
+      "path": "assets/diorama-kit/package-lock.json",
+      "bytes": 944
+    },
+    {
+      "path": "assets/diorama-kit/package.json",
+      "bytes": 250
+    },
+    {
+      "path": "assets/diorama-kit/render.mjs",
+      "bytes": 6403
+    },
+    {
+      "path": "assets/diorama-kit/srt.py",
+      "bytes": 1155
+    },
+    {
+      "path": "assets/diorama-kit/tts.py",
+      "bytes": 2282
+    },
+    {
+      "path": "assets/diorama-kit/web/catalog.js",
+      "bytes": 6159
+    },
+    {
+      "path": "assets/diorama-kit/web/index.html",
+      "bytes": 859
+    },
+    {
+      "path": "assets/diorama-kit/web/motion.js",
+      "bytes": 3534
+    },
+    {
+      "path": "assets/diorama-kit/web/overlay.js",
+      "bytes": 6569
+    },
+    {
+      "path": "assets/diorama-kit/web/props.js",
+      "bytes": 19590
+    },
+    {
+      "path": "assets/diorama-kit/web/scene.js",
+      "bytes": 2953
+    },
+    {
+      "path": "assets/diorama-kit/web/stage.js",
+      "bytes": 10316
     },
     {
       "path": "assets/film-tools/CaptionProbe.tsx",
@@ -3989,24 +4041,92 @@
       "bytes": 117
     },
     {
+      "path": "docs/README-20261029.md",
+      "bytes": 31515
+    },
+    {
       "path": "docs/architecture-layout.json",
-      "bytes": 1154
+      "bytes": 1832
     },
     {
       "path": "docs/architecture.md",
-      "bytes": 10669
+      "bytes": 12496
     },
     {
       "path": "docs/architecture.mmd",
-      "bytes": 1729
+      "bytes": 1949
+    },
+    {
+      "path": "docs/media/atlas-binance.jpg",
+      "bytes": 937128
+    },
+    {
+      "path": "docs/media/components.jpg",
+      "bytes": 219460
+    },
+    {
+      "path": "docs/media/gif-flow.gif",
+      "bytes": 1305993
+    },
+    {
+      "path": "docs/media/gif-freeze.gif",
+      "bytes": 888429
+    },
+    {
+      "path": "docs/media/gif-gate.gif",
+      "bytes": 1132019
+    },
+    {
+      "path": "docs/media/gif-mascot.gif",
+      "bytes": 966540
+    },
+    {
+      "path": "docs/media/gif-pareto-dial.gif",
+      "bytes": 1859309
+    },
+    {
+      "path": "docs/media/gif-pareto-land.gif",
+      "bytes": 1289059
+    },
+    {
+      "path": "docs/media/hero-binance.gif",
+      "bytes": 7178402
+    },
+    {
+      "path": "docs/media/history-wall.jpg",
+      "bytes": 275983
+    },
+    {
+      "path": "docs/media/look-test-rounds.jpg",
+      "bytes": 697711
+    },
+    {
+      "path": "docs/media/motion-compare.png",
+      "bytes": 467718
+    },
+    {
+      "path": "docs/media/same-text-pareto.jpg",
+      "bytes": 221108
+    },
+    {
+      "path": "docs/media/storyboard-binance.jpg",
+      "bytes": 1456177
+    },
+    {
+      "path": "docs/media/storyboard-pareto.jpg",
+      "bytes": 1446130
+    },
+    {
+      "path": "docs/production-flow.mmd",
+      "bytes": 1286
     },
     {
       "path": "evals/README.md",
-      "bytes": 1032
+      "bytes": 1429
     },
     {
       "path": "evals/evals.json",
-      "bytes": 2615
+      "bytes": 5348
     },
     {
       "path": "examples/batch-01/README.md",
@@ -4283,6 +4403,70 @@
     {
       "path": "examples/batch-01/validate.py",
       "bytes": 3305
+    },
+    {
+      "path": "examples/binance-1029/README.md",
+      "bytes": 4562
+    },
+    {
+      "path": "examples/binance-1029/audio/timeline.json",
+      "bytes": 12335
+    },
+    {
+      "path": "examples/binance-1029/index.html",
+      "bytes": 1934
+    },
+    {
+      "path": "examples/binance-1029/media/final-1080p.mp4",
+      "bytes": 24789455
+    },
+    {
+      "path": "examples/binance-1029/media/preview.mp4",
+      "bytes": 5415015
+    },
+    {
+      "path": "examples/binance-1029/media/subtitles.srt",
+      "bytes": 1469
+    },
+    {
+      "path": "examples/binance-1029/qa/contact-2fps-1.jpg",
+      "bytes": 116484
+    },
+    {
+      "path": "examples/binance-1029/qa/contact-2fps-2.jpg",
+      "bytes": 118481
+    },
+    {
+      "path": "examples/binance-1029/qa/contact-2fps-3.jpg",
+      "bytes": 118277
+    },
+    {
+      "path": "examples/binance-1029/qa/contact-2fps-4.jpg",
+      "bytes": 116398
+    },
+    {
+      "path": "examples/binance-1029/qa/delivery.json",
+      "bytes": 369
+    },
+    {
+      "path": "examples/binance-1029/qa/look-test.jpg",
+      "bytes": 137555
+    },
+    {
+      "path": "examples/binance-1029/qa/motion-trip-10fps.jpg",
+      "bytes": 147206
+    },
+    {
+      "path": "examples/binance-1029/source/script.json",
+      "bytes": 2932
+    },
+    {
+      "path": "examples/binance-1029/source/sources.md",
+      "bytes": 1787
+    },
+    {
+      "path": "examples/binance-1029/web/scene.js",
+      "bytes": 43291
     },
     {
       "path": "examples/chapter-01/README.md",
@@ -5233,6 +5417,42 @@
       "bytes": 298
     },
     {
+      "path": "examples/pareto-diorama/README.md",
+      "bytes": 2926
+    },
+    {
+      "path": "examples/pareto-diorama/audio/timeline.json",
+      "bytes": 11872
+    },
+    {
+      "path": "examples/pareto-diorama/index.html",
+      "bytes": 1743
+    },
+    {
+      "path": "examples/pareto-diorama/media/poster.jpg",
+      "bytes": 55215
+    },
+    {
+      "path": "examples/pareto-diorama/media/preview.mp4",
+      "bytes": 5318045
+    },
+    {
+      "path": "examples/pareto-diorama/media/subtitles.srt",
+      "bytes": 1488
+    },
+    {
+      "path": "examples/pareto-diorama/source/script.json",
+      "bytes": 2631
+    },
+    {
+      "path": "examples/pareto-diorama/source/source-manifest.json",
+      "bytes": 3256
+    },
+    {
+      "path": "examples/pareto-diorama/web/scene.js",
+      "bytes": 16299
+    },
+    {
       "path": "examples/pareto-revision/README.md",
       "bytes": 3702
     },
@@ -5941,1930 +6161,6 @@
       "bytes": 3246
     },
     {
-      "path": "examples/reference-study-20261029/browser-validation.json",
-      "bytes": 1129
-    },
-    {
-      "path": "examples/reference-study-20261029/catalog.csv",
-      "bytes": 26822
-    },
-    {
-      "path": "examples/reference-study-20261029/catalog.js",
-      "bytes": 3133
-    },
-    {
-      "path": "examples/reference-study-20261029/catalog.json",
-      "bytes": 111812
-    },
-    {
-      "path": "examples/reference-study-20261029/index.html",
-      "bytes": 1819
-    },
-    {
-      "path": "examples/reference-study-20261029/media-manifest.json",
-      "bytes": 69328
-    },
-    {
-      "path": "examples/reference-study-20261029/media/D01.mp4",
-      "bytes": 2589010
-    },
-    {
-      "path": "examples/reference-study-20261029/media/D03.mp4",
-      "bytes": 10766031
-    },
-    {
-      "path": "examples/reference-study-20261029/media/D04.mp4",
-      "bytes": 7704041
-    },
-    {
-      "path": "examples/reference-study-20261029/media/G01.mp4",
-      "bytes": 595820
-    },
-    {
-      "path": "examples/reference-study-20261029/media/G02.mp4",
-      "bytes": 551022
-    },
-    {
-      "path": "examples/reference-study-20261029/media/G03.mp4",
-      "bytes": 366410
-    },
-    {
-      "path": "examples/reference-study-20261029/media/N05.mp4",
-      "bytes": 6239664
-    },
-    {
-      "path": "examples/reference-study-20261029/media/N07.mp4",
-      "bytes": 5306945
-    },
-    {
-      "path": "examples/reference-study-20261029/media/P01.mp4",
-      "bytes": 2553356
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q01.mp4",
-      "bytes": 1483942
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q04.mp4",
-      "bytes": 1172777
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q05.mp4",
-      "bytes": 1236194
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q06.mp4",
-      "bytes": 1576122
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q07.mp4",
-      "bytes": 1437565
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q08.mp4",
-      "bytes": 6103019
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q09.mp4",
-      "bytes": 411016
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q10.mp4",
-      "bytes": 8103908
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q11.mp4",
-      "bytes": 8294861
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q12.mp4",
-      "bytes": 505883
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q13.mp4",
-      "bytes": 1377362
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q14.mp4",
-      "bytes": 7456559
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q15.mp4",
-      "bytes": 7479970
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q17.mp4",
-      "bytes": 3653034
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q18.mp4",
-      "bytes": 932855
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q19.mp4",
-      "bytes": 782746
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q20.mp4",
-      "bytes": 1442186
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q21.mp4",
-      "bytes": 785399
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q22.mp4",
-      "bytes": 676100
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q23.mp4",
-      "bytes": 5289308
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q24.mp4",
-      "bytes": 1870981
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q25.mp4",
-      "bytes": 1198840
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q26.mp4",
-      "bytes": 3912174
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q27.mp4",
-      "bytes": 698500
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q28.mp4",
-      "bytes": 4155022
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q29.mp4",
-      "bytes": 3992135
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q30.mp4",
-      "bytes": 3295212
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q31.mp4",
-      "bytes": 334888
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q32.mp4",
-      "bytes": 807471
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q33.mp4",
-      "bytes": 564368
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q34.mp4",
-      "bytes": 203949
-    },
-    {
-      "path": "examples/reference-study-20261029/media/Q35.mp4",
-      "bytes": 1223870
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R01.mp4",
-      "bytes": 11092826
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R02.mp4",
-      "bytes": 5628772
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R03.mp4",
-      "bytes": 10229184
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R04.mp4",
-      "bytes": 6377757
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R05.mp4",
-      "bytes": 3462548
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R06.mp4",
-      "bytes": 10727704
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R07.mp4",
-      "bytes": 7581874
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R08.mp4",
-      "bytes": 5795835
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R09.mp4",
-      "bytes": 5639360
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R10.mp4",
-      "bytes": 9691774
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R11.mp4",
-      "bytes": 2195346
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R12.mp4",
-      "bytes": 5957364
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R13.mp4",
-      "bytes": 7745865
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R14.mp4",
-      "bytes": 2892275
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R15.mp4",
-      "bytes": 4613724
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R16.mp4",
-      "bytes": 2496811
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R17.mp4",
-      "bytes": 6600233
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R18.mp4",
-      "bytes": 3840390
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R19.mp4",
-      "bytes": 2041558
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R20.mp4",
-      "bytes": 6679445
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R21.mp4",
-      "bytes": 9389055
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R22.mp4",
-      "bytes": 5349694
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R23.mp4",
-      "bytes": 7724839
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R24.mp4",
-      "bytes": 9572855
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R25.mp4",
-      "bytes": 5929115
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R26.mp4",
-      "bytes": 48019463
-    },
-    {
-      "path": "examples/reference-study-20261029/media/R27.mp4",
-      "bytes": 22367145
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T01.mp4",
-      "bytes": 1117459
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T02.mp4",
-      "bytes": 2838583
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T03.mp4",
-      "bytes": 9874442
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T04.mp4",
-      "bytes": 3029601
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T05.mp4",
-      "bytes": 9108001
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T06.mp4",
-      "bytes": 3186147
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T07.mp4",
-      "bytes": 9813711
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T08.mp4",
-      "bytes": 10111595
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T09.mp4",
-      "bytes": 1874895
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T10.mp4",
-      "bytes": 10209532
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T11.mp4",
-      "bytes": 10588226
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T12.mp4",
-      "bytes": 1890384
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T13.mp4",
-      "bytes": 1888020
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T14.mp4",
-      "bytes": 1879211
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T15.mp4",
-      "bytes": 9911869
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T16.mp4",
-      "bytes": 3608501
-    },
-    {
-      "path": "examples/reference-study-20261029/media/T17.mp4",
-      "bytes": 3600033
-    },
-    {
-      "path": "examples/reference-study-20261029/media/W01.mp4",
-      "bytes": 7468252
-    },
-    {
-      "path": "examples/reference-study-20261029/media/W05.mp4",
-      "bytes": 1423385
-    },
-    {
-      "path": "examples/reference-study-20261029/media/W14.mp4",
-      "bytes": 1350546
-    },
-    {
-      "path": "examples/reference-study-20261029/media/W20.mp4",
-      "bytes": 6086598
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X01.mp4",
-      "bytes": 10917730
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X02.mp4",
-      "bytes": 8237328
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X03.mp4",
-      "bytes": 4935284
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X04.mp4",
-      "bytes": 2156204
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X05.mp4",
-      "bytes": 5674177
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X06.mp4",
-      "bytes": 9569349
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X07.mp4",
-      "bytes": 9895164
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X08.mp4",
-      "bytes": 6720458
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X09.mp4",
-      "bytes": 730768
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X10.mp4",
-      "bytes": 9666872
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X11.mp4",
-      "bytes": 5928926
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X12.mp4",
-      "bytes": 3429430
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X13.mp4",
-      "bytes": 9503168
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X14.mp4",
-      "bytes": 5191683
-    },
-    {
-      "path": "examples/reference-study-20261029/media/X15.mp4",
-      "bytes": 4349060
-    },
-    {
-      "path": "examples/reference-study-20261029/motion-events.json",
-      "bytes": 41883
-    },
-    {
-      "path": "examples/reference-study-20261029/motion.css",
-      "bytes": 2054
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1-00.jpg",
-      "bytes": 97920
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1-01.jpg",
-      "bytes": 97916
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1-02.jpg",
-      "bytes": 56985
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1-03.jpg",
-      "bytes": 58195
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1-04.jpg",
-      "bytes": 54993
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1-05.jpg",
-      "bytes": 63296
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1-06.jpg",
-      "bytes": 72921
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1-07.jpg",
-      "bytes": 72924
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1-08.jpg",
-      "bytes": 70908
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1-09.jpg",
-      "bytes": 70507
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1-10.jpg",
-      "bytes": 125826
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1-11.jpg",
-      "bytes": 127198
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1-sequence.jpg",
-      "bytes": 406842
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L1.mp4",
-      "bytes": 6798548
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2-00.jpg",
-      "bytes": 49704
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2-01.jpg",
-      "bytes": 48914
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2-02.jpg",
-      "bytes": 50248
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2-03.jpg",
-      "bytes": 50084
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2-04.jpg",
-      "bytes": 50061
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2-05.jpg",
-      "bytes": 51674
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2-06.jpg",
-      "bytes": 51759
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2-07.jpg",
-      "bytes": 52699
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2-08.jpg",
-      "bytes": 52711
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2-09.jpg",
-      "bytes": 52734
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2-10.jpg",
-      "bytes": 99886
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2-11.jpg",
-      "bytes": 100322
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2-sequence.jpg",
-      "bytes": 317927
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L2.mp4",
-      "bytes": 1601777
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3-00.jpg",
-      "bytes": 69009
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3-01.jpg",
-      "bytes": 123993
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3-02.jpg",
-      "bytes": 122969
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3-03.jpg",
-      "bytes": 121831
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3-04.jpg",
-      "bytes": 121026
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3-05.jpg",
-      "bytes": 120814
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3-06.jpg",
-      "bytes": 117435
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3-07.jpg",
-      "bytes": 115658
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3-08.jpg",
-      "bytes": 114943
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3-09.jpg",
-      "bytes": 94846
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3-10.jpg",
-      "bytes": 94509
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3-11.jpg",
-      "bytes": 93266
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3-sequence.jpg",
-      "bytes": 523483
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/L3.mp4",
-      "bytes": 5145217
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1-00.jpg",
-      "bytes": 67189
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1-01.jpg",
-      "bytes": 72389
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1-02.jpg",
-      "bytes": 65003
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1-03.jpg",
-      "bytes": 148376
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1-04.jpg",
-      "bytes": 180424
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1-05.jpg",
-      "bytes": 162180
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1-06.jpg",
-      "bytes": 170536
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1-07.jpg",
-      "bytes": 85090
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1-08.jpg",
-      "bytes": 75188
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1-09.jpg",
-      "bytes": 73342
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1-10.jpg",
-      "bytes": 80807
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1-11.jpg",
-      "bytes": 81532
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1-sequence.jpg",
-      "bytes": 473808
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S1.mp4",
-      "bytes": 10021751
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2-00.jpg",
-      "bytes": 187334
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2-01.jpg",
-      "bytes": 147815
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2-02.jpg",
-      "bytes": 106476
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2-03.jpg",
-      "bytes": 98139
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2-04.jpg",
-      "bytes": 76172
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2-05.jpg",
-      "bytes": 76807
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2-06.jpg",
-      "bytes": 47736
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2-07.jpg",
-      "bytes": 46233
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2-08.jpg",
-      "bytes": 173414
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2-09.jpg",
-      "bytes": 23274
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2-10.jpg",
-      "bytes": 99109
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2-11.jpg",
-      "bytes": 81492
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2-sequence.jpg",
-      "bytes": 484883
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S2.mp4",
-      "bytes": 14727970
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3-00.jpg",
-      "bytes": 67228
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3-01.jpg",
-      "bytes": 32142
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3-02.jpg",
-      "bytes": 34732
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3-03.jpg",
-      "bytes": 41145
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3-04.jpg",
-      "bytes": 38643
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3-05.jpg",
-      "bytes": 36142
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3-06.jpg",
-      "bytes": 37722
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3-07.jpg",
-      "bytes": 40937
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3-08.jpg",
-      "bytes": 45932
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3-09.jpg",
-      "bytes": 45390
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3-10.jpg",
-      "bytes": 42915
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3-11.jpg",
-      "bytes": 45607
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3-sequence.jpg",
-      "bytes": 243584
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S3.mp4",
-      "bytes": 5988626
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4-00.jpg",
-      "bytes": 26528
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4-01.jpg",
-      "bytes": 27298
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4-02.jpg",
-      "bytes": 27012
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4-03.jpg",
-      "bytes": 42923
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4-04.jpg",
-      "bytes": 56861
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4-05.jpg",
-      "bytes": 66423
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4-06.jpg",
-      "bytes": 66774
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4-07.jpg",
-      "bytes": 25941
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4-08.jpg",
-      "bytes": 42076
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4-09.jpg",
-      "bytes": 45814
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4-10.jpg",
-      "bytes": 50406
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4-11.jpg",
-      "bytes": 50069
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4-sequence.jpg",
-      "bytes": 264167
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S4.mp4",
-      "bytes": 6766811
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5-00.jpg",
-      "bytes": 45080
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5-01.jpg",
-      "bytes": 46312
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5-02.jpg",
-      "bytes": 19405
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5-03.jpg",
-      "bytes": 18979
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5-04.jpg",
-      "bytes": 27815
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5-05.jpg",
-      "bytes": 37366
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5-06.jpg",
-      "bytes": 37006
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5-07.jpg",
-      "bytes": 35502
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5-08.jpg",
-      "bytes": 33085
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5-09.jpg",
-      "bytes": 36880
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5-10.jpg",
-      "bytes": 30246
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5-11.jpg",
-      "bytes": 29073
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5-sequence.jpg",
-      "bytes": 207069
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/S5.mp4",
-      "bytes": 1511032
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-01-0.jpg",
-      "bytes": 48058
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-01-1.jpg",
-      "bytes": 48704
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-01-2.jpg",
-      "bytes": 45641
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-01.jpg",
-      "bytes": 80368
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-02-0.jpg",
-      "bytes": 63966
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-02-1.jpg",
-      "bytes": 63315
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-02-2.jpg",
-      "bytes": 61129
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-02.jpg",
-      "bytes": 102561
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-03-0.jpg",
-      "bytes": 149993
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-03-1.jpg",
-      "bytes": 18891
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-03-2.jpg",
-      "bytes": 71731
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-03.jpg",
-      "bytes": 99620
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-04-0.jpg",
-      "bytes": 14346
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-04-1.jpg",
-      "bytes": 30197
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-04-2.jpg",
-      "bytes": 9512
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-04.jpg",
-      "bytes": 43203
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-05-0.jpg",
-      "bytes": 103545
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-05-1.jpg",
-      "bytes": 14327
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-05-2.jpg",
-      "bytes": 71803
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-05.jpg",
-      "bytes": 100644
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-06-0.jpg",
-      "bytes": 153094
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-06-1.jpg",
-      "bytes": 60617
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-06-2.jpg",
-      "bytes": 60680
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-06.jpg",
-      "bytes": 131826
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-07-0.jpg",
-      "bytes": 121130
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-07-1.jpg",
-      "bytes": 80004
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-07-2.jpg",
-      "bytes": 79409
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-07.jpg",
-      "bytes": 143591
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-08-0.jpg",
-      "bytes": 78521
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-08-1.jpg",
-      "bytes": 36090
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-08-2.jpg",
-      "bytes": 79513
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-08.jpg",
-      "bytes": 107043
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-09-0.jpg",
-      "bytes": 32648
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-09-1.jpg",
-      "bytes": 66675
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-09-2.jpg",
-      "bytes": 125386
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-09.jpg",
-      "bytes": 111409
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-10-0.jpg",
-      "bytes": 26153
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-10-1.jpg",
-      "bytes": 104973
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-10-2.jpg",
-      "bytes": 46467
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-10.jpg",
-      "bytes": 81407
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-11-0.jpg",
-      "bytes": 51702
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-11-1.jpg",
-      "bytes": 35256
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-11-2.jpg",
-      "bytes": 35808
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-11.jpg",
-      "bytes": 67844
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-12-0.jpg",
-      "bytes": 35171
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-12-1.jpg",
-      "bytes": 20922
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-12-2.jpg",
-      "bytes": 36972
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-12.jpg",
-      "bytes": 60691
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-13-0.jpg",
-      "bytes": 38278
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-13-1.jpg",
-      "bytes": 39677
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-13-2.jpg",
-      "bytes": 59832
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-13.jpg",
-      "bytes": 83813
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-14-0.jpg",
-      "bytes": 18370
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-14-1.jpg",
-      "bytes": 40118
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-14-2.jpg",
-      "bytes": 21141
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-14.jpg",
-      "bytes": 53213
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-15-0.jpg",
-      "bytes": 41653
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-15-1.jpg",
-      "bytes": 137040
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-15-2.jpg",
-      "bytes": 25123
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-15.jpg",
-      "bytes": 108719
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-16-0.jpg",
-      "bytes": 66332
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-16-1.jpg",
-      "bytes": 81550
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-16-2.jpg",
-      "bytes": 49443
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-16.jpg",
-      "bytes": 105914
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-17-0.jpg",
-      "bytes": 44676
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-17-1.jpg",
-      "bytes": 54448
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-17-2.jpg",
-      "bytes": 100560
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-17.jpg",
-      "bytes": 105943
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-18-0.jpg",
-      "bytes": 100362
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-18-1.jpg",
-      "bytes": 87798
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-18-2.jpg",
-      "bytes": 44619
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-18.jpg",
-      "bytes": 122365
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-19-0.jpg",
-      "bytes": 42369
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-19-1.jpg",
-      "bytes": 36642
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-19-2.jpg",
-      "bytes": 80658
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-19.jpg",
-      "bytes": 91213
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-20-0.jpg",
-      "bytes": 79293
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-20-1.jpg",
-      "bytes": 84291
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-20-2.jpg",
-      "bytes": 44535
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-20.jpg",
-      "bytes": 113839
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-21-0.jpg",
-      "bytes": 43855
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-21-1.jpg",
-      "bytes": 55334
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-21-2.jpg",
-      "bytes": 114781
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-21.jpg",
-      "bytes": 110174
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-22-0.jpg",
-      "bytes": 116048
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-22-1.jpg",
-      "bytes": 108673
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-22-2.jpg",
-      "bytes": 104926
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-22.jpg",
-      "bytes": 159809
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-23-0.jpg",
-      "bytes": 44730
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-23-1.jpg",
-      "bytes": 42296
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-23-2.jpg",
-      "bytes": 104057
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-23.jpg",
-      "bytes": 104304
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-24-0.jpg",
-      "bytes": 102628
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-24-1.jpg",
-      "bytes": 75321
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-24-2.jpg",
-      "bytes": 44559
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-24.jpg",
-      "bytes": 120099
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-25-0.jpg",
-      "bytes": 45340
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-25-1.jpg",
-      "bytes": 51068
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-25-2.jpg",
-      "bytes": 98585
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-25.jpg",
-      "bytes": 102307
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-26-0.jpg",
-      "bytes": 97511
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-26-1.jpg",
-      "bytes": 95751
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-26-2.jpg",
-      "bytes": 74457
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-26.jpg",
-      "bytes": 134941
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-27-0.jpg",
-      "bytes": 74537
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-27-1.jpg",
-      "bytes": 97007
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-27-2.jpg",
-      "bytes": 27326
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-27.jpg",
-      "bytes": 102113
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-28-0.jpg",
-      "bytes": 31829
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-28-1.jpg",
-      "bytes": 36856
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-28-2.jpg",
-      "bytes": 4699
-    },
-    {
-      "path": "examples/reference-study-20261029/motion/shot-28.jpg",
-      "bytes": 41669
-    },
-    {
-      "path": "examples/reference-study-20261029/names.txt",
-      "bytes": 9907
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/C01.jpg",
-      "bytes": 6570
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/C02.jpg",
-      "bytes": 6478
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/C03.jpg",
-      "bytes": 7912
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/C04.jpg",
-      "bytes": 8096
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/C05.jpg",
-      "bytes": 7589
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/C06.jpg",
-      "bytes": 8052
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/D01.jpg",
-      "bytes": 1642
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/D02.jpg",
-      "bytes": 4595
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/D03.jpg",
-      "bytes": 5507
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/D04.jpg",
-      "bytes": 9303
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/G01.jpg",
-      "bytes": 7873
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/G02.jpg",
-      "bytes": 4306
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/G03.jpg",
-      "bytes": 3678
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/N01.jpg",
-      "bytes": 11181
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/N02.jpg",
-      "bytes": 8996
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/N03.jpg",
-      "bytes": 11041
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/N04.jpg",
-      "bytes": 13407
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/N05.jpg",
-      "bytes": 8890
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/N06.jpg",
-      "bytes": 8706
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/N07.jpg",
-      "bytes": 8325
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/P01.jpg",
-      "bytes": 10332
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/P02.jpg",
-      "bytes": 7905
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/P03.jpg",
-      "bytes": 4739
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/P04.jpg",
-      "bytes": 9797
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/P05.jpg",
-      "bytes": 9794
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q01.jpg",
-      "bytes": 14221
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q02.jpg",
-      "bytes": 23162
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q03.jpg",
-      "bytes": 23765
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q04.jpg",
-      "bytes": 8604
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q05.jpg",
-      "bytes": 10067
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q06.jpg",
-      "bytes": 11890
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q07.jpg",
-      "bytes": 7892
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q08.jpg",
-      "bytes": 10357
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q09.jpg",
-      "bytes": 10143
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q10.jpg",
-      "bytes": 11428
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q11.jpg",
-      "bytes": 11737
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q12.jpg",
-      "bytes": 4959
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q13.jpg",
-      "bytes": 9166
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q14.jpg",
-      "bytes": 7225
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q15.jpg",
-      "bytes": 7301
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q16.jpg",
-      "bytes": 22230
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q17.jpg",
-      "bytes": 11054
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q18.jpg",
-      "bytes": 8453
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q19.jpg",
-      "bytes": 7451
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q20.jpg",
-      "bytes": 11440
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q21.jpg",
-      "bytes": 8749
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q22.jpg",
-      "bytes": 11043
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q23.jpg",
-      "bytes": 10983
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q24.jpg",
-      "bytes": 13542
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q25.jpg",
-      "bytes": 12177
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q26.jpg",
-      "bytes": 12046
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q27.jpg",
-      "bytes": 17262
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q28.jpg",
-      "bytes": 8819
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q29.jpg",
-      "bytes": 8990
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q30.jpg",
-      "bytes": 8708
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q31.jpg",
-      "bytes": 10398
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q32.jpg",
-      "bytes": 1687
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q33.jpg",
-      "bytes": 5383
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q34.jpg",
-      "bytes": 5174
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/Q35.jpg",
-      "bytes": 8480
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R01.jpg",
-      "bytes": 7181
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R02.jpg",
-      "bytes": 1823
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R03.jpg",
-      "bytes": 5211
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R04.jpg",
-      "bytes": 12228
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R05.jpg",
-      "bytes": 17835
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R06.jpg",
-      "bytes": 6076
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R07.jpg",
-      "bytes": 7404
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R08.jpg",
-      "bytes": 15119
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R09.jpg",
-      "bytes": 18953
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R10.jpg",
-      "bytes": 19626
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R11.jpg",
-      "bytes": 7612
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R12.jpg",
-      "bytes": 6625
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R13.jpg",
-      "bytes": 11919
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R14.jpg",
-      "bytes": 9288
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R15.jpg",
-      "bytes": 7873
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R16.jpg",
-      "bytes": 22548
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R17.jpg",
-      "bytes": 17595
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R18.jpg",
-      "bytes": 31750
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R19.jpg",
-      "bytes": 4979
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R20.jpg",
-      "bytes": 4128
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R21.jpg",
-      "bytes": 13149
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R22.jpg",
-      "bytes": 9078
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R23.jpg",
-      "bytes": 12096
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R24.jpg",
-      "bytes": 23386
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R25.jpg",
-      "bytes": 10448
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R26.jpg",
-      "bytes": 7065
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/R27.jpg",
-      "bytes": 10905
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T01.jpg",
-      "bytes": 1387
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T02.jpg",
-      "bytes": 15454
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T03.jpg",
-      "bytes": 14962
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T04.jpg",
-      "bytes": 8382
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T05.jpg",
-      "bytes": 16842
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T06.jpg",
-      "bytes": 18078
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T07.jpg",
-      "bytes": 22078
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T08.jpg",
-      "bytes": 17101
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T09.jpg",
-      "bytes": 34891
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T10.jpg",
-      "bytes": 18729
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T11.jpg",
-      "bytes": 33769
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T12.jpg",
-      "bytes": 23321
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T13.jpg",
-      "bytes": 23221
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T14.jpg",
-      "bytes": 23022
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T15.jpg",
-      "bytes": 23174
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T16.jpg",
-      "bytes": 39427
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/T17.jpg",
-      "bytes": 39434
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W01.jpg",
-      "bytes": 7308
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W02.jpg",
-      "bytes": 5281
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W03.jpg",
-      "bytes": 5866
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W04.jpg",
-      "bytes": 6079
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W05.jpg",
-      "bytes": 13352
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W06.jpg",
-      "bytes": 13310
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W07.jpg",
-      "bytes": 11869
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W08.jpg",
-      "bytes": 8806
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W09.jpg",
-      "bytes": 8226
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W10.jpg",
-      "bytes": 9133
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W11.jpg",
-      "bytes": 7769
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W12.jpg",
-      "bytes": 10183
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W13.jpg",
-      "bytes": 9238
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W14.jpg",
-      "bytes": 5562
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W15.jpg",
-      "bytes": 9001
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W16.jpg",
-      "bytes": 8058
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W17.jpg",
-      "bytes": 10321
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W18.jpg",
-      "bytes": 9386
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W19.jpg",
-      "bytes": 14345
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/W20.jpg",
-      "bytes": 10358
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X01.jpg",
-      "bytes": 20625
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X02.jpg",
-      "bytes": 15315
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X03.jpg",
-      "bytes": 18217
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X04.jpg",
-      "bytes": 6373
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X05.jpg",
-      "bytes": 5122
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X06.jpg",
-      "bytes": 20448
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X07.jpg",
-      "bytes": 9857
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X08.jpg",
-      "bytes": 25007
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X09.jpg",
-      "bytes": 20267
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X10.jpg",
-      "bytes": 17878
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X11.jpg",
-      "bytes": 30394
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X12.jpg",
-      "bytes": 11197
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X13.jpg",
-      "bytes": 21071
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X14.jpg",
-      "bytes": 17796
-    },
-    {
-      "path": "examples/reference-study-20261029/posters/X15.jpg",
-      "bytes": 31648
-    },
-    {
-      "path": "examples/reference-study-20261029/shot-evidence.json",
-      "bytes": 19727
-    },
-    {
-      "path": "examples/reference-study-20261029/study.html",
-      "bytes": 2342
-    },
-    {
-      "path": "examples/reference-study-20261029/study.js",
-      "bytes": 5035
-    },
-    {
-      "path": "examples/reference-study-20261029/style.css",
-      "bytes": 2065
-    },
-    {
-      "path": "examples/reference-study-20261029/validation.json",
-      "bytes": 22935
-    },
-    {
       "path": "examples/reflections/R01-sequence.jpg",
       "bytes": 215258
     },
@@ -7874,7 +6170,7 @@
     },
     {
       "path": "examples/reflections/index.html",
-      "bytes": 18641
+      "bytes": 21612
     },
     {
       "path": "index.html",
@@ -7883,6 +6179,10 @@
     {
       "path": "references/audio-and-materials.md",
       "bytes": 2231
+    },
+    {
+      "path": "references/diorama-3d.md",
+      "bytes": 6591
     },
     {
       "path": "references/episode-contract.md",
@@ -7981,8 +6281,12 @@
       "bytes": 1038
     },
     {
+      "path": "references/experience/cards/E23.md",
+      "bytes": 1464
+    },
+    {
       "path": "references/experience/casebook.md",
-      "bytes": 2974
+      "bytes": 3102
     },
     {
       "path": "references/experience/evidence/chapter-repair.json",
@@ -8034,27 +6338,35 @@
     },
     {
       "path": "references/experience/index.json",
-      "bytes": 13858
+      "bytes": 14535
     },
     {
       "path": "references/experience/reflections.json",
-      "bytes": 14649
+      "bytes": 16178
     },
     {
       "path": "references/experience/reflections.md",
-      "bytes": 2238
+      "bytes": 2360
     },
     {
       "path": "references/experience/sources.json",
-      "bytes": 9427
+      "bytes": 9686
     },
     {
       "path": "references/experience/usage.md",
       "bytes": 5485
     },
     {
+      "path": "references/legacy-workflow.md",
+      "bytes": 8505
+    },
+    {
       "path": "references/long-form.md",
       "bytes": 4401
+    },
+    {
+      "path": "references/motion-craft.md",
+      "bytes": 4827
     },
     {
       "path": "references/pixel-scene-map.md",
@@ -8066,7 +6378,7 @@
     },
     {
       "path": "references/production-profiles.md",
-      "bytes": 3575
+      "bytes": 3894
     },
     {
       "path": "references/production.md",
@@ -8078,7 +6390,7 @@
     },
     {
       "path": "references/reference-study-20261029/production-route.txt",
-      "bytes": 7599
+      "bytes": 7762
     },
     {
       "path": "references/reference-study-20261029/prompts/caesar-particle.txt",
@@ -8109,20 +6421,28 @@
       "bytes": 3218
     },
     {
+      "path": "scripts/build_readme_media.py",
+      "bytes": 13196
+    },
+    {
       "path": "scripts/build_reference_evidence.py",
       "bytes": 3867
     },
     {
       "path": "scripts/build_reflections.py",
-      "bytes": 6268
+      "bytes": 6385
     },
     {
       "path": "scripts/cinema.py",
       "bytes": 12635
     },
     {
+      "path": "scripts/diorama.py",
+      "bytes": 16825
+    },
+    {
       "path": "scripts/experience.py",
-      "bytes": 10942
+      "bytes": 10959
     },
     {
       "path": "scripts/film_delivery.py",
@@ -8131,6 +6451,10 @@
     {
       "path": "scripts/mix_music.py",
       "bytes": 5645
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "bytes": 2122
     },
     {
       "path": "scripts/pixel_inspect.py",
@@ -8146,11 +6470,11 @@
     },
     {
       "path": "scripts/reference_study.py",
-      "bytes": 8478
+      "bytes": 8714
     },
     {
       "path": "scripts/repo_inventory.py",
-      "bytes": 9976
+      "bytes": 10194
     },
     {
       "path": "scripts/select_visual.py",
@@ -8171,6 +6495,10 @@
     {
       "path": "tests/test_cinema.py",
       "bytes": 4855
+    },
+    {
+      "path": "tests/test_diorama.py",
+      "bytes": 6942
     },
     {
       "path": "tests/test_experience.py",

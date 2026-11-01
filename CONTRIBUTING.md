@@ -32,12 +32,21 @@ python scripts/repo_inventory.py --check
 python scripts/experience.py validate
 python -m unittest discover -s tests -p "test_repo_inventory.py"
 python -m unittest discover -s tests -p "test_experience.py"
+python -m unittest discover -s tests -p "test_diorama.py"
 # 改了生产工具时，再运行对应生产测试；此处不代替它们
 git diff --cached --stat
 git commit -m "Describe the change"
 ```
 
 生成器读取 Git 索引中的文件清单和对象大小，统计不受 Windows 换行符影响。三个 inventory 输出不计入体积，避免自我引用；完整树仍显示它们。统计不包含忽略文件、缓存或 Git 历史，也不会把媒体内容送给模型。
+
+## 改 README 的图
+
+`docs/media/` 的图和 GIF 由 `scripts/build_readme_media.py` 从实际成片生成，不手工修图，也不放第三方参考片的画面。`docs/production-flow.mmd` 和 `docs/architecture.mmd` 一样由 inventory 同步进 README。
+
+## 删除要先问
+
+删除仓库里已有的文件或目录前，先告诉用户要删什么、为什么删，等确认后再动。Git 历史也一样。
 
 ## GitHub 检查与边界
 

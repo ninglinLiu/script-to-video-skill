@@ -612,6 +612,36 @@
       ],
       "chars": 435,
       "sha256": "bf15d9010e2e9a8fc3df963f797601811ecad2eb084934616558dd15c427e53a"
+    },
+    {
+      "id": "E23",
+      "title": "用户认可的基准：真 3D、主体做事、交接画出来",
+      "stages": [
+        "plan",
+        "storyboard",
+        "render",
+        "review"
+      ],
+      "signals": [
+        "3D",
+        "3d",
+        "一镜到底",
+        "微缩",
+        "diorama",
+        "three",
+        "代码动画",
+        "币安",
+        "基准",
+        "认可",
+        "从哪开始",
+        "样片"
+      ],
+      "card": "references/experience/cards/E23.md",
+      "sources": [
+        "binance-approval"
+      ],
+      "chars": 695,
+      "sha256": "4e5f29a22b3d7abf423b41088b246dfb03ba77e4e36a3a3d69b5be9b91caad4b"
     }
   ]
 }

@@ -1,0 +1,53 @@
+{
+  "source": {
+    "kind": "encyclopedia-article",
+    "title": "帕累托法则（二八法则）",
+    "url": "https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%85%AB%E5%AE%9A%E5%BE%8B",
+    "accessedAt": "2026-10-25T17:10:00+08:00",
+    "fetchMethod": "HTTP GET via local proxy，正文段落保存为 tmp/wiki-8020.html，仅取叙述段与公式段",
+    "scope": "取用的原文范围：开篇定义段（帕累托 1896 年在意大利观察土地与豌豆）、『在数学上……帕累托分布』一段、帕累托指数 α = log₄5 ≈ 1.16 一段、以及『这个想法在很多地方有经验法则，但它通常被误用』一段。",
+    "whatIsNotUsed": "未使用条目中的管理学案例清单（微软 20% 缺陷、职业安全、医疗 20/80 等）、未使用图片与表格、未复制原文长句。"
+  },
+  "claims": [
+    {
+      "spoken": "20% 的人拥有 80% 的财富",
+      "origin": "article",
+      "articleText": "例如：義大利約有80％的土地由20％的人口所有、80%的豌豆產量來自20%的植株",
+      "boundTo": "values.p20 / derived.top80"
+    },
+    {
+      "spoken": "意大利 80% 的土地归 20% 的人；豌豆 80% 的产量来自 20% 的植株",
+      "origin": "article",
+      "articleText": "同上（帕累托 1896 年观察）",
+      "boundTo": "derived.top80, values.p20"
+    },
+    {
+      "spoken": "指数为 1.16 的帕累托分布才给出 80/20",
+      "origin": "article",
+      "articleText": "如果作为表征帕累托分布的参数之一的帕累托指数 α, α = log45 ≈ 1.16，那么有80％的效应来自20％的原因",
+      "boundTo": "values.alpha161（1.160964 = ln5/ln4，脚本重算并核对 log₄5）"
+    },
+    {
+      "spoken": "指数 1.5 时 20% 占 58%；指数 2.0 时 20% 占 45%",
+      "origin": "own-derivation",
+      "articleText": "文中只给出 α 与 80/20 的对应，未给出其他 α 的份额；这两个数字由本片脚本用同一公式 p^(1−1/α) 计算",
+      "boundTo": "derived.top15（0.5848）/ derived.top20（0.4472）"
+    },
+    {
+      "spoken": "文章自己也提醒，只说符合 80% 并不构成解释",
+      "origin": "article",
+      "articleText": "這個想法在很多地方有經驗法則，但它通常被誤用……僅僅因為符合80％的案例，就是為了解決問題『符合80/20規則』是錯誤的",
+      "boundTo": "叙述，无数字绑定"
+    }
+  ],
+  "assumptions": [
+    "份额按帕累托 I 型分布计算：顶部分位 p 的份额 = p^(1−1/α)，α 为尾指数（α>1）。",
+    "『20% 的人拥有 80% 的财富』是经验陈述，不是帕累托分布的定义；片中已区分观察与数学条件。",
+    "不把 80/20 当作因果或管理建议。"
+  ],
+  "limitations": [
+    "原文是百科条目而非新闻调查；条目本身标注翻译质量不佳，因此只取其中可独立核对的叙述与公式。",
+    "未核对帕累托 1896 年原始著作；片中把该观察标注为『文章的说法』并在来源区标明条目。"
+  ],
+  "provenanceNote": "Source excerpt and fetch record inherited from the original same-topic project; no new retrieval claimed. See script-review.json for this revision and its narrower historical attribution."
+}

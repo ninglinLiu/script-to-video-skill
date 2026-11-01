@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 LIB = ROOT / 'references/experience'
 STAGES = ('plan', 'script', 'storyboard', 'render', 'review', 'repair', 'delivery')
 DEFAULTS = {
-    'plan': ['E20', 'E03', 'E16'], 'script': ['E01', 'E03', 'E09'],
+    'plan': ['E23', 'E20', 'E03'], 'script': ['E01', 'E03', 'E09'],
     'storyboard': ['E20', 'E21', 'E05'], 'render': ['E09', 'E18', 'E15'],
     'review': ['E20', 'E19', 'E21'], 'repair': ['E11', 'E20', 'E21'],
     'delivery': ['E19', 'E12'],
@@ -128,7 +128,7 @@ def validate_library():
         if case['id'] in reflection_ids:
             errors.append('Duplicate reflection: ' + case['id'])
         reflection_ids.add(case['id'])
-        if case['status'] not in ('user-rejected', 'mixed-feedback', 'unverified'):
+        if case['status'] not in ('user-approved', 'user-rejected', 'mixed-feedback', 'unverified'):
             errors.append('Invalid reflection status: ' + case['id'])
         for eid in case['experience_ids']:
             if eid not in ids:

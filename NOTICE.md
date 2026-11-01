@@ -23,6 +23,12 @@ The dated visual study pack below is published at the user’s explicit request 
 
 `examples/reference-study-20261029/` now provides 139 playable records: 35 reuse existing public video files and 104 add full-length silent study copies. `media-manifest.json` records provenance, source hashes, derivative hashes, sizes and dimensions. Eight selected excerpts preserve their source resolution and 30fps; consecutive frames and 28 illustrated observations are included. Full-length web derivatives may reduce resolution/bitrate and remove audio; they are not original downloads. Third-party reference copies/stills are outside the MIT license. `scripts/reference_study.py fetch` makes selected video/frame bundles available to another Agent without a manual local file picker. Observed reference behavior does not establish that a reproduction has been implemented or passed.
 
+> 2026-11-01 更新：`examples/reference-study-20261029/` 已从当前版本移除（媒体仍存在于 Git 历史中）。上面对它的描述只作历史记录。
+
+## 3D 微缩路线（2026-11-01）
+
+`assets/diorama-kit/` 与 `examples/binance-1029/`、`examples/pareto-diorama/` 为原创代码和原创渲染，MIT。运行依赖 three.js（MIT）和 Playwright（Apache-2.0），不随仓库分发。旁白由 Edge TTS 合成。对标参考片（一页枝鸥、安迪的 AI 日记）只保存链接和文字观察，原片与截图不进仓库。币安样片的事实来源见其 `source/sources.md`。
+
 ## 视觉资产扩展（2026-10-24）
 
 `assets/weilanx/upstream/` 是 Azure12355/weilanx-claude-videos 固定提交的未改动已跟踪文件快照；MIT许可全文随包保留，字体仍适用各自OFL。包含13个制作展示、35个艺术场景、9类解说语法、预览与源码。详细版本和逐文件哈希见 `assets/weilanx/provenance.json`。这些上游预览不冒充本仓库作者的独立作品。

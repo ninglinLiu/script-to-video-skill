@@ -1,0 +1,25 @@
+flowchart TB
+    A["文章 / 事件"] --> B["① 证据和稿件<br/>source/script.json<br/>每句带来源"]
+    B --> C["② 配音<br/>tts.py<br/>真实词界 timeline.json"]
+    C --> D["③ 站点表<br/>主体 · 发起→接触→结果<br/>改变了哪个数"]
+    D --> S["④ 搭场景<br/>web/scene.js<br/>stage + props + overlay"]
+    S --> F["⑤ 观感测试<br/>stills 8–12 张<br/>clip 4–8 秒抽帧"]
+    F -->|光照、可读性、动作不对| S
+    F --> H{"用户在场？"}
+    H -->|看一眼，不通过| S
+    H -->|通过或不在场| I["⑥ 整片<br/>render.mjs full<br/>srt.py"]
+    I --> J["⑦ 检查<br/>deliver · motion<br/>storyboard · atlas"]
+    J -->|整片问题，局部修| S
+    J --> K["交付<br/>MP4 · SRT · 来源<br/>工程 · 分镜总览"]
+    K --> L["用户反馈"]
+    L -->|认可：写清范围<br/>否决：保留案例| X["reflections.json<br/>经验卡"]
+    X -.下一条片先查.-> D
+
+    classDef input fill:#dceeff,stroke:#3161a3,color:#10263d;
+    classDef make fill:#dff1e7,stroke:#438366,color:#143728;
+    classDef gate fill:#fff0cd,stroke:#9a7020,color:#362706;
+    classDef loop fill:#fde4df,stroke:#ad5d4d,color:#49251c;
+    class A,B,C input;
+    class D,S,I,K make;
+    class F,H,J gate;
+    class L,X loop;

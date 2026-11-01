@@ -39,3 +39,9 @@ examples/chapter-01/native/timeline.xml
 # Selected same-article comparison evidence; production caches and full masters stay local.
 !examples/pareto-revision/qa/
 !examples/pareto-revision/qa/**
+
+# 3D diorama sample: look-test stills, motion frames, full-film contact sheets, delivery probe.
+!examples/binance-1029/qa/
+!examples/binance-1029/qa/**
+!examples/pareto-diorama/qa/
+!examples/pareto-diorama/qa/**

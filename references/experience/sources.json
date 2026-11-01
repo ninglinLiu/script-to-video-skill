@@ -195,6 +195,12 @@
       "label": "用户确认像素街区与价签之外为失败案例；关联既有独立复测反馈",
       "extract": "references/experience/reflections.json",
       "scope": "具体案例内分别标注用户评价、制作方自述、源码与画面观察；不附私有参考，不推广为所有风格失败。"
+    },
+    {
+      "id": "binance-approval",
+      "kind": "user-feedback",
+      "scope": "用户 2026-11-01 看过 60 秒币安样片后的评价；原话见 reflections.json R08。",
+      "label": "用户看过币安 60 秒样片后认可为初版基准"
     }
   ]
 }

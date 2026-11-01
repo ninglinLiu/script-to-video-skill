@@ -1,72 +1,83 @@
 ---
 name: script-to-video
-description: 将中文文章或研究选题改编为知识视频。按项目选择风格、内容形式、时长与剪辑，复用素材和历史修复经验，完成证据核对、真实配音时间线、跨镜动画、分段渲染与自检，交付MP4、SRT、素材和工程。不处理旅行素材精剪。
+description: 把中文文章、研究选题或事件复盘改编成配音知识视频。默认路线是用户已认可的代码 3D 微缩一镜到底（three.js 逐帧渲染 + 真实词界配音 + 动作组件库），也保留纸面章节、泊松空间等已有路线。交付 MP4、SRT、来源和工程。不处理旅行素材精剪。
 ---
 
-# 文字转视频工作流
+# 文字转视频
 
-以用户选定项目为生产根目录，先读适用项目说明和用户长期反馈。沿用已确认的工程、资产及主创模型；仅补本次内容的缺口，不从零搭引擎或重新画整套图。用户一次给原文或主题，Agent内部完成制作和修复，不把每镜审批推回用户。
+做片的目标只有一个：**观众不看字幕，也能看懂画面里谁对谁做了什么。** 质量基准是用户认可的[币安样片](examples/binance-1029/README.md)，先看它的[分镜总览](docs/media/storyboard-binance.jpg)再动手。用户的原话是"符合初版要求"，并说它还没达到参考动画的效果，约五成，所以它是起点，不是上限。
 
-## 开始与收到反馈时
+## 先分清要交付什么
 
-先识别交付对象。用户要求“修好 Skill，让另一个 Agent 独立产出”时，交付是可执行入口、素材适配、失败测试和独立复测说明；不要代做一条成片来冒充流水线修复。只有渲染软件测试所需的帧/片段，不能宣称完成了另一个模型的独立验证。
+- **做片**：按下面的默认路线走。用户一次给文章或主题，内部完成制作和修复，只在观感测试时请用户看一眼。
+- **改 Skill**：交付工具、文档和回归测试，不要拿一条新片冒充流水线修好了。维护步骤看 [CONTRIBUTING](CONTRIBUTING.md)。
+- **研究**：给选路和证据，不生成新片。
 
-1. 盘点已有正文、工程、字体、音轨、素材和工具能力。用户的当前选择优先于历史偏好。
-2. 按[项目配置](references/production-profiles.md)选内容组织、主视觉、时长画幅和剪辑方法；已有brief直接继承。共用生产接口，不把所有片锁成一种风格。
-3. **读取相关经验后再改。** 在Skill根目录执行下列命令，用实际症状替换查询。输出包含正文，不再重复打开同一批卡；无匹配时换词或按ID读取，不能编造经验。
+用户当前的要求优先于这里的默认值。
+
+## 选路线
+
+| 路线 | 什么时候用 | 状态 |
+|---|---|---|
+| [3D 微缩一镜到底](references/diorama-3d.md) | 默认。机制、资金或数据流向、事件复盘、因果链 | R08 用户认可（币安这一条，横屏 60 秒） |
+| [泊松空间镜头](references/poisson-cinema.md) | 用户指定这种电影感风格 | 原片方向被喜欢（R07），参数化改编被否决（R04） |
+| [纸面章节迁移](references/executable-production.md) | 用户指定纸面风格或要改这条旧片 | 工程可运行，改编被否决（R06） |
+| [像素街区](references/pixel-scene-map.md) | 只研究或取材 | 用户否决（R01） |
+
+选非默认路线，或拿不准时，先查历史评价：`python scripts/experience.py select --stage plan --route <路线>`。旧流程的完整约束在[旧路线工作流](references/legacy-workflow.md)。
+
+## 默认路线七步
 
 ```sh
-python scripts/experience.py select --stage plan --receipt /path/to/episode/plans/experience-plan.json
-# 选过的路线要带出历史用户评价；不是只检索泛化规则
-python scripts/experience.py select --stage plan --route pixel-scene-map
-python scripts/experience.py reflection R01
-python scripts/experience.py select --stage repair --query "字幕孤字，修后更挤" --receipt /path/to/episode/plans/experience-repair.json
+python scripts/diorama.py doctor                              # 查依赖
+python scripts/diorama.py new --episode ./ep                  # 起工程；加 --source binance-1029 可从完整案例改
 ```
 
-默认最多三张卡、6500字符，按需追溯来源。路线与症状会同时返回相关反思摘要；完整案例按ID读，不读整份目录。被否决版本只作研究/取材，不推荐为已通过模板；旧技术检查不能覆盖用户否决。首次使用看[经验应用方法](references/experience/usage.md)，为每个返回条目记录具体应用或不适用理由、保留条件和验证区间，运行`check-use`。不要通读整个经验库、展厅或上游工程。记录检查不证明模型理解或作品质量；实际画面仍须验证。
+1. **证据和稿件**：写 `source/script.json`，每句有 `text`、字幕分行 `sub`、来源 `src`。事实核对到一手来源；第三方统计在画面上注明出处，没复算就写没复算。
+2. **配音**：`python tts.py .` 得到真实词界时间线。所有动画时间都写成 `C.L4.start + .3`，改稿重配后画面自动跟上。
+3. **站点表**：每句旁白对应一个站点，写清"主体、发起 → 接触 → 结果、结果改变了哪个数、镜头怎么走"。这张表比代码重要。
+4. **搭场景**：在 `web/scene.js` 里用 [组件库](assets/diorama-kit/README.md)。缺组件就加进 `props.js`，别为这条片单写一次性代码。动作参数看[动效手艺](references/motion-craft.md)。
+5. **观感测试**：`node render.mjs stills …` 出 8–12 张静帧修光照和可读性，`node render.mjs clip a b --mb 4` 渲 4–8 秒连续片，抽 10fps 帧看动作过程。**用户在场就把这一段给用户看，通过了再渲整片。**
+6. **整片**：`node render.mjs full --mb 4`，再 `python srt.py .`。
+7. **检查和交付**：`python scripts/diorama.py deliver --episode .`，`motion` 查长停留，`storyboard` 出分镜总览，从头看到尾。交付 `out/final.mp4`、SRT、来源、工程和分镜总览。
 
-## 制作主线
+## 质量底线
 
-新项目先走[完整工程迁移入口](references/executable-production.md)。明确选择一个已确认方向的完整案例，带着字幕、构图、解释镜头一起改编；不按关键词自动选最容易运行的 kit。
+- 每个站点至少一个主体动作，有发起、接触和结果，结果改变画面上的某个量。
+- 交接要画出来：东西从 A 飞到 B。凭空出现等于动作没发生。
+- 尺寸由数据决定：柱高是价格，冰块高度是冻结比例，堆高是金额。
+- 不同对象用不同曲线和时长，错峰启动；重物先蓄力再落下。
+- 镜头走连续轨道，站点内也缓慢推绕，站点之间跟着飞行物走。
+- 画面明亮、颜色饱和。用户否决过阴郁的画风，泛光过强也会把画面冲白。
+- 字幕烧进画面，按真实词界分行。旁挂 SRT 不算有字幕。
+- 只有局部通过不能交付，整片要从头看到尾。
 
-风格与来源按当前任务选择；选定路线后查下方路由表。原版被喜欢不等于其数据化分支跨文章已通过。
+## 经验与反馈
+
+遇到具体问题先查经验，输出已包含卡片正文：
+
 ```sh
-python scripts/start_episode.py --source chapter-01 --episode /path/to/new-episode
+python scripts/experience.py select --stage repair --query "实际症状"
+python scripts/experience.py reflection R08
 ```
 
-这是迁移已有完整影片的生产输入，不是给任何文章自动套同一模板。`chapter-01` 是可复现示例，也可显式指定兼容完整工程目录。新主题需改编对象、证据、动作及构图；画幅变化要实际重排。**gilded / blackgold / pixel 已降为组件测试和取材入口**，用 `production.py component-test` 在独立目录取模块，不能再据此初始化默认成片。旧 `init` 命令已撤下。
+**工具检查通过、制作方自查、独立 Agent 复测、用户认可是四种不同的证据**，分开记录，不互相替代。用户否决的案例保留，认可也要写清范围。认可或否决后更新 `references/experience/reflections.json`。
 
-1. **原文与证据**：保存来源范围、事实、限定语和原创假设。只有标题不得冒充全文改编；缺证据就补证、改写或明确缺口。
-2. **内容与分镜**：先形成问题及有效论证，再设计解释动作。对象ID、起止状态、数值口径、旁白cue及下一镜承接写清。按所选形式组织，不强套固定九镜或三点论。
-3. **声音与时间**：事实稿审过后生成/复用真实配音和词界。缓存绑定稿件、音色、语速与服务版本；改稿后重建受影响时间线，不等比缩旧字幕。
-4. **资产与渲染**：从选定完整工程迁移实际入画的字幕、构图与解释镜头；[视觉目录](references/visual-library.md)用于补缺口。数字和稿件可用 `production.py compile` 同源生成。以真实词界驱动动画，先用 `node render.mjs proof 起秒 终秒` 检查高风险交接，再渲完整片；局部小样通过不授权交付整片。
-5. **内部修复**：基于实际编码片段、连续帧和目标观看尺寸定位。保留最好版本；每个候选记录问题、影响范围、必须保留条件和同区间对照。候选变差则不替换原版。最多三轮同类局部修复，无进展就重新诊断或标明待修。
-6. **整片审查与交付**：先运行 `film_delivery.py inspect` 检查真实MP4字幕像素并生成整片2fps序列和主体近静止区间。逐段核查到片尾，快动作加密检查；填入真实观察后运行 `film_delivery.py check`。旁挂SRT、DOM记录或12秒样片均不能代替整片字幕与节奏检查。运行[技术验收器](scripts/audit_episode.py)，协议见[输入与记录](references/episode-contract.md)。交齐配音MP4、SRT、源码/工程、分段画面、独立声音、来源、耗时成本与介入记录。技术通过、制作方审查、用户认可分别记录。
+反馈修复默认同文对照：保留原片，说明改了什么、保留了什么。预览静音，不外放。敏感或仅本地的素材不进公共仓库或外部服务。第三方参考片只留链接和时间码。
 
-## 共用约束与模式
+模型要能读图才能做观感测试。宿主不能看图时如实说明，可以验证编码和数据，但不能说画面过关。看图、生成图、配音、渲染是不同能力，按宿主实际情况核实。
 
-- 反馈修复默认同文对照：保留原片，明确保持项和变化项；必要的事实修正另列，避免同时换题掩盖问题。
-- 不外放；预览优先无音轨、默认暂停。敏感或仅本地素材不进入公共包或外部分析服务。
-- 读图、生成图、TTS和渲染是不同工具能力。正式制作使用用户选定的高能力主创模型；其他模型移植测试不阻塞正常制作，不假定每个模型自带图像生成。
-- 默认`task-short`：60–90秒、1080×1920/30fps、H.264≥8Mbps、AAC、真实对齐字幕；默认5–8镜，用户另有明确形式时调整并记录。
-- `extended`：约三分钟；`chapter-proof`：90–150秒横屏1920×1080/30fps。自定义时长和画幅写入任务配置，不能冒充原任务规格已通过。
-- 剪映/PR/FCP可编辑交付与Remotion源码分别标明。用户已手动确认既有编辑器流程并免除复验时继续制作，不重复启动编辑器；不将该确认套给其他用户或虚构Agent打开了新工程。XML标为交换时间线。
-
-## 仅在相关时读取
-
-先读被选路线的文档与关联反思，不同时打开全部路线。原始参考、失败改编、组件测试与候选成片不是同一种状态。
+## 按需读取
 
 | 情况 | 读取 |
 |---|---|
-| 像素街区 / LifeOS对标 | `experience.py select --stage plan --route pixel-scene-map`；R01已否决，见[分支边界](references/pixel-scene-map.md) |
-| 泊松空间风格与recipe | `experience.py select --stage plan --route poisson-cinema`；[镜头分支](references/poisson-cinema.md)，R04改编失败，不抹去原片方向 |
-| 爽哥说或LifeOS真实参考 | `reference_study.py show --route particle-document`，随后将show换为fetch；或选pixel-scene-map，见[制作路径](references/reference-study-20261029/production-route.txt)；fetch按需给真实MP4、连续帧、动作阶段及哈希，先看运动，不能只读描述 |
-| 背景+贴纸、PPT、旧失败片、独立复测 | [反思入口](references/experience/reflections.md)，按ID取视频时间段及观察范围 |
-| 维护Skill架构或大库加载 | 先读[维护步骤](CONTRIBUTING.md)及[架构](docs/architecture.md)；结构变化先改源图与目录职责，再实现；每次提交运行`repo_inventory.py --check`。普通做片不必读 |
-| 具体审看、数字与布局规则 | [生产规范](references/production.md) |
-| 长章节或长片 | [章节与素材组织](references/long-form.md) |
-| 选配乐、混音、音源不完整 | [声音与素材](references/audio-and-materials.md)，检索E14 |
-| 经验未匹配或需人工浏览目录 | [22条经验目录](references/experience/casebook.md) |
-| 安装、换模型、迁移机器、原任务完成度 | [运行环境与可移植性](references/runtime-and-portability.md) |
+| 曲线、时长、错峰、镜头参数 | [动效手艺](references/motion-craft.md) |
+| 换题材怎么搭 | [第二内容示例](examples/pareto-diorama/README.md) |
+| 长片、章节 | [章节组织](references/long-form.md)（8–10 分钟未验证） |
+| 配乐、混音 | [声音与素材](references/audio-and-materials.md) |
+| 风格素材 | [视觉目录](references/visual-library.md)、[项目配置](references/production-profiles.md) |
+| 旧路线、技术验收器、剪辑工程交付 | [旧路线工作流](references/legacy-workflow.md) |
+| 换模型、迁移机器 | [运行环境与可移植性](references/runtime-and-portability.md) |
+| 维护本仓库 | [CONTRIBUTING](CONTRIBUTING.md)、[架构](docs/architecture.md) |
 
-这是Agent编排Skill。两篇开发、一篇独立验收及同文短长片、旁白修改、失败处理仍需完整验证；8–10分钟长片和跨模型稳定质量尚未证明。案例成功不推广为任意风格、文章或时长一次完美。
+已验证的范围：币安这一条经用户认可；竖屏、长片、跨模型复现都还没有验证。

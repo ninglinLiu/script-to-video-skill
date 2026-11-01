@@ -1,5 +1,5 @@
 """Read one observed route or prepare local reference media; not a film renderer."""
-import argparse,hashlib,json,pathlib,subprocess,sys,shutil,urllib.request
+import argparse,hashlib,json,pathlib,subprocess,sys,shutil,urllib.error,urllib.request
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 PLAN=ROOT/'references/reference-study-20261029/plan.json'
@@ -9,7 +9,10 @@ REMOTE='https://raw.githubusercontent.com/ninglinLiu/script-to-video-skill/main/
 def read_json(relative):
     p=ROOT/relative
     if p.exists():return json.loads(p.read_text('utf8'))
-    with urllib.request.urlopen(REMOTE+relative,timeout=60) as r:return json.load(r)
+    try:
+        with urllib.request.urlopen(REMOTE+relative,timeout=60) as r:return json.load(r)
+    except urllib.error.HTTPError as e:
+        raise SystemExit('参考媒体已于 2026-11-01 从公开仓库移除：'+relative+'。fetch 不再可用，请用 prepare 处理自己本地的参考文件。')
 
 def acquire(relative,dest,expected=None):
     dest.parent.mkdir(parents=True,exist_ok=True)

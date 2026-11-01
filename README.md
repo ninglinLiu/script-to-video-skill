@@ -1,36 +1,84 @@
-# Script to Video · 可复用的视频制作 Skill
+<div align="center">
 
-**把文章、参考镜头、已有工程和历史反馈，交给能使用工具的 Agent，按明确路线制作与审看视频。** 本库提供制作方法、可执行工具、素材和案例；模型、工具权限和运行环境需要另行准备。它已经具备复用与检验能力，尚未证明任意文章、风格或模型都能一次产出满意成片。
+# Script to Video
 
-[看完整样片展厅](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/) · [看139条样片索引](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/) · [看反思案例](https://ninglinliu.github.io/script-to-video-skill/examples/reflections/) · [Agent 从 SKILL.md 开始](SKILL.md)
+### 把一篇文章，变成一段 3D 知识动画
+
+**交给能用工具的 Agent：查证据 → 写稿 → 配音 → 搭 3D 场景 → 逐帧渲染 → 看片修改 → 交付**
+
+![状态](https://img.shields.io/badge/初版基准-用户已认可-e1423a) ![渲染](https://img.shields.io/badge/渲染-three.js%20逐帧-2fa39a) ![配音](https://img.shields.io/badge/配音-真实词界-6a5acd) ![组件](https://img.shields.io/badge/动作组件-14%20个-f08c2e) ![许可](https://img.shields.io/badge/license-MIT-5f6b76)
+
+<a href="https://ninglinliu.github.io/script-to-video-skill/examples/binance-1029/"><img src="docs/media/hero-binance.gif" alt="币安样片片段：资金流出、冰冻、闸门、搬砖小人、窗口、拉远" width="760"></a>
+
+**[▶ 带声音看完整 60 秒](https://ninglinliu.github.io/script-to-video-skill/examples/binance-1029/)** · [分镜总览](#一张图看完一条片) · [架构](#架构总览) · [制作流程](#制作流程) · [组件库](#组件库每个组件都带动作) · [安装](#安装) · [Agent 入口](SKILL.md)
+
+</div>
+
+上面这段动画全部由代码生成：没有素材库、没有 AE、没有手工关键帧。它讲的是 2026 年 10 月币安热钱包被盗时，链上出现的那一小时价差窗口。
+
+**这条样片已获用户认可，是本 Skill 的初版质量基准。** 用户原话："我很满意，符合初版要求。虽然还没达到那两条参考动画的效果，但做到参考效果的五成左右，我就已经比较满意了。"所以它是起点，不是上限。认可也只覆盖这一条 60 秒横屏，[现在做到哪一步](#现在做到哪一步)写了还差什么。
+
+---
+
+## 一张图看完一条片
+
+120 个画面，每 0.5 秒一格，颜色对应旁白的每一句。全部取自实际编码成片，不是概念图。**点开看原图（3962 像素宽）。**
+
+<a href="docs/media/storyboard-binance.jpg"><img src="docs/media/storyboard-binance.jpg" alt="币安样片 120 格分镜总览"></a>
+
+这张图用一条命令就能从任何成片生成，它也是做片时的检查工具：从头到尾扫一遍，哪段画面长得都一样，哪段就有问题。
+
+```sh
+python scripts/diorama.py storyboard --video out/final.mp4 --timeline audio/timeline.json --cols 12 --rows 10 --title "片名" --out storyboard.jpg
+```
+
+---
+
+## 画面里真的有事发生
+
+历史上被否决的片子，问题几乎都是同一个：**像 PPT，主体不动**。这次的核心改变是让主体一路在做事，结果直接改变画面上的数。
+
+| 十条链依次点亮，资金涌出 | 冰块长出，高度就是冻结比例 |
+|:---:|:---:|
+| ![资金流出](docs/media/gif-flow.gif) | ![冰冻](docs/media/gif-freeze.gif) |
+| **闸门先蓄力，砸下回弹扬尘** | **小人接币、起跳、卖出、换回** |
+| ![闸门](docs/media/gif-gate.gif) | ![搬砖小人](docs/media/gif-mascot.gif) |
+
+下面是八个关键动作的连续帧，每行从左到右是一个动作的完整过程。
+
+<a href="docs/media/atlas-binance.jpg"><img src="docs/media/atlas-binance.jpg" alt="八个动作的连续帧图集"></a>
+
+---
 
 ## 架构总览
 
-把它理解成一个制作工作室：**模型负责思考，Agent 负责调用工具并根据结果继续工作；harness 是让它能读文件、运行程序、查看画面的工作环境；Skill 是这个工作室的操作手册、工具和材料包。** 换模型时不必重写所有素材，但仍要确认它和所用环境是否具备读图、执行代码、渲染与审看的能力。
+把它理解成一个制作工作室：**模型负责思考，Agent 负责调用工具并根据结果继续工作；harness 是让它能读文件、运行程序、查看画面的工作环境；Skill 是这个工作室的操作手册、工具和材料包。** 换模型时不必重写素材，但要确认环境具备读图、执行代码、渲染的能力。
 
-下图描述当前实际分工。箭头是 Agent 应执行的工作关系，并不表示已有一个无人参与、必定成功的总控程序。
+下图是实际分工。箭头是 Agent 应执行的工作关系，并不表示已有一个无人参与、必定成功的总控程序。
 
 <!-- BEGIN GENERATED: architecture -->
 ```mermaid
 flowchart TB
-    U["你的任务<br/>文章 · 参考效果 · 时长 · 画幅"] --> A["Agent 负责执行和判断<br/>模型 + 工具环境（harness，需另行准备）"]
-    A --> E["SKILL.md<br/>短入口：识别任务、交付约定、读取路线"]
+    U["你的任务<br/>文章 · 事件 · 参考效果 · 时长 · 画幅"] --> A["Agent 负责执行和判断<br/>模型 + 工具环境（harness，需另行准备）"]
+    A --> E["SKILL.md<br/>短入口：分清交付物、选路线、默认七步、质量底线"]
 
     subgraph LIB["仓库提供的知识与素材 · 按需读取"]
         direction LR
-        X["经验与反思<br/>experience.py<br/>先带出相关失败和适用边界"]
-        R["路线说明<br/>references/<br/>选择内容形式、镜头与运行方式"]
-        M["素材与完整工程<br/>assets/ + examples/<br/>真实组件、字体、镜头、连续参考"]
+        X["经验与反思<br/>experience.py<br/>带出相关认可、否决和适用边界"]
+        R["路线说明<br/>references/<br/>3D 微缩（默认）· 动效手艺 · 旧路线"]
+        M["组件库与案例<br/>assets/diorama-kit · examples/<br/>动作组件、币安基准、第二内容、历史工程"]
         X --> R --> M
     end
     E --> X
-    M --> P["Agent 改编与装配<br/>证据 → 脚本 → 时间线 → 镜头动作"]
-    P --> T["调用现有工具<br/>迁移入口 · 配音 · 渲染 · 技术检查"]
-    T --> Q["审看实际编码成片<br/>字幕是否入画 · 主体动作 · 衔接 · 整片节奏"]
+    M --> P["Agent 改编与装配<br/>证据 → 稿件 → 真实词界 → 站点表 → 场景代码"]
+    P --> T["调用现有工具<br/>diorama.py · tts.py · render.mjs · srt.py"]
+    T --> G["观感测试<br/>静帧 + 4–8 秒连续片<br/>用户在场就看一眼"]
+    G -->|光照、构图、动作不对| P
+    G --> Q["审看实际编码成片<br/>分镜总览 · 动作图集 · 字幕 · 长停留 · 整片节奏"]
     Q -->|发现问题，局部修复| P
-    Q --> O["交付与展示<br/>MP4 · SRT · 分层素材 · 工程 · 对照记录"]
-    O --> F["用户反馈与复测结果<br/>认可有范围；否决保留为反思案例"]
-    F -.更新案例及选路边界.-> X
+    Q --> O["交付与展示<br/>MP4 · SRT · 来源 · 工程 · 分镜总览"]
+    O --> F["用户反馈与复测结果<br/>认可写清范围；否决保留为反思案例"]
+    F -.更新案例、基准及选路边界.-> X
 
     C["维护与回归<br/>docs/ + tests/ + evals/ + GitHub 检查"] -.检查结构和工具行为.-> E
     C -.不能代替影片审美判断.-> Q
@@ -41,365 +89,336 @@ flowchart TB
     classDef feedback fill:#fde4df,stroke:#ad5d4d,color:#49251c;
     class A,E entry;
     class X,R,M library;
-    class P,T,Q,O production;
+    class P,T,G,Q,O production;
     class F,C feedback;
 ```
 <!-- END GENERATED: architecture -->
 
-**统一的是入口、交付约定和反馈方式；可以变化的是内容形式、风格、时长、画幅与剪辑路线。** 新路线复用共用工具，明确自己的素材和验证范围；不能因为“素材在库里”就把被否决的版本当成熟模板。
+### 每一层是什么
 
-## 目录怎么找，Agent 会读多少
+| 层 | 文件 | 负责什么 | Agent 什么时候读 |
+|---|---|---|---|
+| **入口** | [SKILL.md](SKILL.md) | 分清交付物、选路线、默认七步、质量底线。不到 100 行 | 每次都读 |
+| **路线** | [diorama-3d](references/diorama-3d.md) · [motion-craft](references/motion-craft.md) | 默认路线怎么走，曲线、时长、错峰、镜头、灯光的具体参数 | 选定路线后 |
+| **组件库** | [assets/diorama-kit](assets/diorama-kit/README.md) | 舞台、叠加层、14 个带动作的组件、配音、逐帧渲染 | 搭场景时 |
+| **案例** | [币安基准](examples/binance-1029/README.md) · [第二内容](examples/pareto-diorama/README.md) | 完整源码、稿件、时间线、成片、弱点记录 | 要参考或改编时 |
+| **工具** | [diorama.py](scripts/diorama.py) | 起工程、查环境、分镜总览、动作图集、动作量、交付检查 | 制作全程 |
+| **经验** | [experience.py](scripts/experience.py) · [reflections.json](references/experience/reflections.json) | 23 张经验卡、8 个认可和否决案例，按路线和症状检索 | 遇到具体问题时 |
+| **旧路线** | [legacy-workflow](references/legacy-workflow.md) | 纸面章节、泊松空间等旧路线的完整约束 | 走旧路线时 |
+| **维护** | [docs/](docs/architecture.md) · [tests/](tests/) · [evals/](evals/README.md) · GitHub 检查 | 结构一致性、工具回归、独立复测任务 | 改 Skill 时 |
 
-README 给人理解全局；`SKILL.md` 给 Agent 一个短入口；大素材供程序读取与渲染。约1.11 GB 的仓库不等于一次把1.11 GB送进模型。经验命令默认最多返回3张卡、6500个 Unicode 字符；相关路线的否决状态优先返回。图片和连续视频的视觉读取另外按需进行。
+**统一的是入口、证据和交付方式；可以变化的是题材、风格、时长和画幅。** 架构图的唯一来源是 [architecture.mmd](docs/architecture.mmd)，由脚本同步进这里；为什么这样改，见[架构说明](docs/architecture.md)。
+
+### 目录怎么找
+
+README 给人看全局，`SKILL.md` 给 Agent 一个短入口，大素材只供程序读取。仓库有多大不等于要把多少东西送进模型：经验命令默认最多返回 3 张卡、6500 字符。
 
 <!-- BEGIN GENERATED: architecture-tree -->
 ```text
 script-to-video-skill/
 ├── .github/  # 每次 push / PR 的架构一致性与工具检查
 ├── assets/  # 引擎、组件、字体及素材；供程序使用
+│   └── diorama-kit/  # 3D微缩一镜到底套件：动效原语、逐帧渲染、真实词界配音
 ├── docs/  # 架构、完整树和体积统计；维护时读取
+│   └── media/  # README 的图和 GIF，由 build_readme_media.py 从实际成片生成
 ├── evals/  # 交给独立 Agent 的复测任务；运行结果另行记录
 ├── examples/  # 完整工程、实际样片、网页展厅；按需取用
+│   ├── binance-1029/  # 用户认可的初版基准：源码、成片、分镜、来源
+│   ├── pareto-diorama/  # 第二内容验证：只用组件库搭建，用户未看
 │   └── reflections/  # 由案例记录生成的静音反思展示页
 ├── references/  # 按任务选择的规则与路线，不要求全部通读
 │   ├── experience/  # 经验卡、反思案例及来源；按阶段和路线检索
 │   │   └── reflections.json  # 反思案例的唯一事实源；保留否决状态与证据范围
-│   └── reference-study-20261029/  # 参考片动作拆解、制作路径与独立任务提示词
-├── scripts/  # 已有命令：取经验、迁移工程、取参考、核验交付
+│   ├── reference-study-20261029/  # 参考片动作拆解、制作路径与独立任务提示词
+│   ├── diorama-3d.md  # 默认路线：3D 微缩一镜到底
+│   ├── legacy-workflow.md  # 旧版入口全文，旧路线的约束来源
+│   └── motion-craft.md  # 动作曲线、错峰、镜头、灯光参数
+├── scripts/  # 命令：起工程、出分镜总览、量动作、查交付、取经验、打包
 ├── tests/  # 确定性的工具回归，不是审美打分
 ├── AGENTS.md  # 修改本仓库时遵守的约定
 ├── CONTRIBUTING.md  # 先更新架构、再改内容、提交前检查的步骤
-└── SKILL.md  # Agent 的短入口；每次先读
+└── SKILL.md  # Agent 的短入口：分清交付物、选路线、默认七步、质量底线
 ```
 <!-- END GENERATED: architecture-tree -->
 
-[完整文件树与体积](docs/repository-tree.md) · [全部路径](docs/repository-tree.txt) · [详细架构和开源方案对照](docs/architecture.md) · [换模型及环境要求](references/runtime-and-portability.md)
+[完整文件树与体积](docs/repository-tree.md) · [全部路径](docs/repository-tree.txt) · [换模型及环境要求](references/runtime-and-portability.md)
 
-例如，Agent 想复用像素街区路线时，先运行下面的检索，就会得到 R01 的用户否决状态和相关经验；进一步查询才打开证据和具体时间段。
+---
 
-```sh
-python scripts/experience.py select --stage plan --route pixel-scene-map
-python scripts/experience.py reflection R01
+## 制作流程
+
+<!-- BEGIN GENERATED: production-flow -->
+```mermaid
+flowchart TB
+    A["文章 / 事件"] --> B["① 证据和稿件<br/>source/script.json<br/>每句带来源"]
+    B --> C["② 配音<br/>tts.py<br/>真实词界 timeline.json"]
+    C --> D["③ 站点表<br/>主体 · 发起→接触→结果<br/>改变了哪个数"]
+    D --> S["④ 搭场景<br/>web/scene.js<br/>stage + props + overlay"]
+    S --> F["⑤ 观感测试<br/>stills 8–12 张<br/>clip 4–8 秒抽帧"]
+    F -->|光照、可读性、动作不对| S
+    F --> H{"用户在场？"}
+    H -->|看一眼，不通过| S
+    H -->|通过或不在场| I["⑥ 整片<br/>render.mjs full<br/>srt.py"]
+    I --> J["⑦ 检查<br/>deliver · motion<br/>storyboard · atlas"]
+    J -->|整片问题，局部修| S
+    J --> K["交付<br/>MP4 · SRT · 来源<br/>工程 · 分镜总览"]
+    K --> L["用户反馈"]
+    L -->|认可：写清范围<br/>否决：保留案例| X["reflections.json<br/>经验卡"]
+    X -.下一条片先查.-> D
+
+    classDef input fill:#dceeff,stroke:#3161a3,color:#10263d;
+    classDef make fill:#dff1e7,stroke:#438366,color:#143728;
+    classDef gate fill:#fff0cd,stroke:#9a7020,color:#362706;
+    classDef loop fill:#fde4df,stroke:#ad5d4d,color:#49251c;
+    class A,B,C input;
+    class D,S,I,K make;
+    class F,H,J gate;
+    class L,X loop;
 ```
+<!-- END GENERATED: production-flow -->
 
-## 反思案例也属于可复用经验
+每一步的产物都在工程目录里，下一步直接读：
+
+| 步骤 | 做什么 | 命令 | 产物 |
+|---|---|---|---|
+| **起工程** | 复制组件库；可从完整案例起步 | `python scripts/diorama.py new --episode ./ep` | 工程目录 |
+| **① 证据和稿件** | 事实核对到一手来源，每句写来源。第三方统计在画面上注明 | 人工 + 检索 | `source/script.json` |
+| **② 配音** | 逐句合成，保存真实词界。所有动画时间都引用它，改稿后画面自动跟上 | `python tts.py .` | `audio/timeline.json`、`voice.wav` |
+| **③ 站点表** | 每句写清"主体、发起 → 接触 → 结果、改变了哪个数、镜头怎么走" | 写在计划里 | 站点表 |
+| **④ 搭场景** | 用组件搭，缺什么加进组件库 | 编辑 `web/scene.js` | 场景代码 |
+| **⑤ 观感测试** | 静帧修光照和可读性，连续片看动作。用户在场就先看一眼 | `node render.mjs stills 1,8,15`<br>`node render.mjs clip 17 24 --mb 4` | `qa/` |
+| **⑥ 整片** | 1080p、4 子帧运动模糊，RTX 4060 约 0.35 秒/帧 | `node render.mjs full --mb 4`<br>`python srt.py .` | `out/final.mp4`、SRT |
+| **⑦ 检查** | 规格、解码、字幕、来源、长停留，从头到尾看分镜总览 | `diorama.py deliver` · `motion` · `storyboard` | 检查报告 |
+
+反馈回来后：认可写清范围，否决保留成案例，都记进 [reflections.json](references/experience/reflections.json)，下一条片选路时自动带出来。
+
+<details><summary><b>为什么要先出静帧、再出连续片？看币安样片的五轮观感测试</b></summary>
+
+每轮的问题都是渲出来、看了才发现的。泛光把画面冲白、小人只见侧脸、币凭空出现在头上，这些写多少规则都防不住，只能靠早看。
+
+<a href="docs/media/look-test-rounds.jpg"><img src="docs/media/look-test-rounds.jpg" alt="五轮观感测试对照"></a>
+
+</details>
+
+---
+
+## 组件库：每个组件都带动作
+
+不是一堆好看的模型，而是"一个动作"：闸门会蓄力再砸下，冰块会长出来，币会飞过去。下图由 [catalog.js](assets/diorama-kit/web/catalog.js) 实际渲染，脱离币安内容独立运行。
+
+<a href="docs/media/components.jpg"><img src="docs/media/components.jpg" alt="组件目录"></a>
+
+| 组件 | 动作 | 数据怎么进来 |
+|---|---|---|
+| `createFlights` | 物体从 A 抛物线飞到 B，可数已落地 | 落地数驱动计数和柱高 |
+| `createStack` | 钱币一枚枚落下叠高 | 堆高 = 金额 |
+| `createPipes` | 多路玻璃管，按时间窗点亮，代币流过 | 每路金额和到达比例 |
+| `createTank` | 液面升降 | 液面 = 余额比例 |
+| `createFreeze` | 冰块从底部长出，碎冰四溅 | 冰块高度 = 冻结比例 |
+| `createGauge` | 带背板和刻度的数值柱 | 柱高 = 数值 |
+| `createGate` | 蓄力、砸下、回弹、扬尘、警示灯 | 关闭和打开的时刻 |
+| `createBeam` | 光束逐段长出，脉冲持续传递 | 表示信息过得去、实物过不去 |
+| `createMascot` | 暖色方块角色，3/4 朝向，挤压拉伸 | 位置、朝向、携带物 |
+| `createShuttle` | 往返搬运，四次交接，逐趟加速 | 已完成趟数驱动累计量 |
+| `hopPath` | 按落地时刻排一路跳跃 | 时刻、位置、朝向 |
+| `createCrowd` | 小人方阵，错峰站起，可变色、升高 | 每个人的状态 |
+| `createBoard` | 结论立牌，从上方落下回弹 | 文字行 |
+| `createInstances` | 通用实例组：地块、柱阵、豆荚 | 每个实例的位置、大小、颜色 |
+
+底下还有[舞台](assets/diorama-kit/web/stage.js)（景深、泛光、运动模糊、连续镜头）和[叠加层](assets/diorama-kit/web/overlay.js)（跟随 3D 物体的标签、数字面板、按真实词界分行的字幕）。
+
+---
+
+## 动效手艺
+
+"像 PPT"有一个机械定义：**同一曲线、同一时长、同一时刻起止，镜头在关键帧之间停住。** 旧章节工程就是这样：只有一条缓动曲线，所有对象在章节起点同时插值。[motion-craft](references/motion-craft.md) 给的都是能直接用的参数：
+
+| 动作 | 写法 | 时长 |
+|---|---|---|
+| 落位、出现 | `spring(t, 1.6–2.2, .3–.45)`，过冲一次再稳 | 0.4–0.8 秒 |
+| 重物砸下 | 反向蓄力 0.3 秒，再 `spring(t, 1.5, .32)` | 约 0.8 秒 |
+| 飞行 | 位置 `inOutSine`，高度 `arc(p, h)`，边飞边转 | 0.9–1.6 秒 |
+| 同类对象 | `stagger` 错峰，总跨度是单个动作的 1.5–3 倍 | — |
+| 往返动作 | 每趟越来越快：2.1 → 0.86 秒，先看懂再加速 | — |
+| 跳跃 | 蓄力压扁、腾空拉长、落地阻尼回弹 | 约 0.5 秒 |
+| 镜头 | `track()` 经过关键帧不减速，焦点跟目标走 | 关键帧间 2.5–6 秒 |
+
+**动作量能量化吗？只能量化一半。** 下图是 6 条实际影片的主体区逐帧变化量：
+
+<a href="docs/media/motion-compare.png"><img src="docs/media/motion-compare.png" alt="六条影片的主体区变化量小倍图"></a>
+
+R03 有 94% 的时间不动，一眼就能看出来。但 R01 的均值比币安还高：那些规律的尖刺是硬切，中间的小鼓包是推背景，"贴纸加推镜头"也算动。所以 `diorama.py motion` 只用来提醒去看某一段，**不能当审美分，更不能用来放行**。只有一条认可样本，这些数也不能当阈值。
+
+---
+
+## 换一个题材也能跑
+
+验证方法是不是只能做币安，选了仓库里一篇现成的稿子：《帕累托法则》。它的初版就是被否决的 R03。场景[只用组件库搭建](examples/pareto-diorama/web/scene.js)，没有一行币安专用代码。**这条是制作方自查，用户还没看过。** [▶ 在线播放](https://ninglinliu.github.io/script-to-video-skill/examples/pareto-diorama/)
+
+<a href="docs/media/storyboard-pareto.jpg"><img src="docs/media/storyboard-pareto.jpg" alt="二八法则 120 格分镜总览"></a>
+
+| 小人跳过地块，80% 翻成橙色 | 转动指数 α，分布和份额一起变 |
+|:---:|:---:|
+| ![地块](docs/media/gif-pareto-land.gif) | ![旋钮](docs/media/gif-pareto-dial.gif) |
+
+同一篇稿子、相同论证节点的三个版本：
+
+<a href="docs/media/same-text-pareto.jpg"><img src="docs/media/same-text-pareto.jpg" alt="同一篇稿件三个版本对照"></a>
+
+它也暴露了弱点：27–40 秒分镜总览的第 5、6 行几乎一样，镜头基本不动，主要靠柱子变化。[具体记录在这里](examples/pareto-diorama/README.md#观察到的弱点)。
+
+---
+
+## 现在做到哪一步
+
+**工具检查通过、制作方自查、独立 Agent 复测、用户认可，是四种不同的证据**，不互相替代：
+
+| 证据 | 现状 |
+|---|---|
+| 用户认可 | ✅ 币安 60 秒横屏，初版基准，约为参考效果五成 |
+| 制作方自查 | ✅ 币安、二八法则，弱点写在各自的 README |
+| 工具检查 | ✅ 仓库文件在空目录重建币安样片，10 个时间点与认可成片 SSIM 0.973–0.996；组件和链接回归见 [tests/](tests/) |
+| 独立 Agent 复测 | ⬜ 任务已写好（[evals](evals/README.md)），还没有运行 |
+
+**对标的两条参考片**（只留链接，原片和截图不进仓库）：[一页枝鸥《代码做动画的天花板》](https://v.douyin.com/axv5k7ECGBQ/) · [安迪的 AI 日记《一张草图，盖成一栋楼》](https://v.douyin.com/qrpydewcVA0/)
+
+| 还差什么 | 现状 | 方向 |
+|---|---|---|
+| 质感 | 干净的玩具模型感，没有全局光照和丰富材质 | 一页枝鸥用 Blender 渲染，这是下一步；本库还没跑过 |
+| 光影变化 | 全片一种光 | 安迪那条有昼夜变化，组件库可以加时间轴灯光 |
+| 开场钩子 | 币安前 5 秒偏平 | 开场就给最大的动作 |
+| 场景丰富度 | 物件偏简单 | 扩充组件库 |
+| 未验证 | 竖屏成片、8–10 分钟长片、跨模型复现 | 用 evals 逐项验证 |
+
+---
+
+## 选哪条路线
+
+| 路线 | 适合 | 状态 | 入口 |
+|---|---|---|---|
+| **3D 微缩一镜到底** | 默认。机制、资金或数据流向、事件复盘、因果链 | **用户认可（币安）** | [diorama-3d](references/diorama-3d.md) |
+| 泊松空间镜头 | 用户指定这种电影感风格 | 原片方向被喜欢，参数化改编被否决 | [poisson-cinema](references/poisson-cinema.md) |
+| 纸面章节迁移 | 用户指定纸面风格或改旧片 | 可运行，改编被否决 | [executable-production](references/executable-production.md) |
+| 像素街区 | 只研究或取材 | 用户否决 | [pixel-scene-map](references/pixel-scene-map.md) |
+
+不适合：真人表演、写实面部、实拍质感。
+
+---
+
+## 走到这里的路
+
+<a href="docs/media/history-wall.jpg"><img src="docs/media/history-wall.jpg" alt="18 组历史制作的封面和状态"></a>
+
+失败也是资产。8 个案例都保留原片、用户反馈、观测范围和重测条件，[在线查看](https://ninglinliu.github.io/script-to-video-skill/examples/reflections/)；Agent 选路时会自动带出相关评价，不用通读聊天记录。
+
+| 案例 | 状态 | 关键教训 |
+|---|---|---|
+| **R08 币安 3D 微缩** | **用户认可** | 真 3D、主体做事、交接画出来 |
+| R01 像素街区 | 用户否决 | 背景加贴纸加推镜头，不等于主体动画 |
+| R02 价签之外 | 用户否决 | 精美静帧加图解运动，不等于艺术动画 |
+| R03 帕累托初版 | 用户否决 | 组件测试不能扩成成片；有 SRT 不等于字幕入画 |
+| R04 队列片 | 用户否决 | 参数化丢了原片的美术和动作 |
+| R05 Kelly 测试 | 用户否决 | 只迁移运行环境，画面还是从零写 |
+| R06 基金清仓纸面版 | 用户否决 | 字幕修好了，仍像 PPT |
+| R07 原版泊松 | 方向保留 | 喜欢方向，部分解释动作没实现 |
 
 | 像素街区：背景与贴纸位移不能代替主体动画 | 《价签之外》：美术与局部运动没有形成完整交互 |
 |---|---|
 | [![像素街区实际连续帧](examples/reflections/R01-sequence.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/reflections/#R01) | [![价签之外实际连续帧](examples/reflections/R02-sequence.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/reflections/#R02) |
 
-共整理7个有明确范围的案例：保留原片、用户反馈、观测范围、失败做法、可保留部分和重测条件。它们接入既有经验选择器，不要求新 Agent 通读聊天。另有3个案例未捆绑原片，页面会标明证据限制；原版《泊松过程》保留用户喜欢的方向，不将局部落差扩大成整个风格失败。
-
-**工具检查通过、制作方自检、独立 Agent 复测、用户认可，是四种不同证据。** 目前的反思回归检查检索与记录是否正确，不能替代成片的动画质量判断。
-
-## 每次更新，图和文件树一起维护
-
-1. **先改设计。** 入口、目录职责或路线关系变化时，先改架构源图与目录职责表；既有类别新增案例无需虚改架构。
-2. **再改内容。** 实现工具、规则或素材，按实际反馈更新经验与反思。
-3. **提交前同步并检查。** 现有脚本从 Git 索引生成 README 图、目录树和体积统计；GitHub 每次 push / PR 再检查一遍。
-
 ```sh
-# 按 CONTRIBUTING.md 暂存本次内容后
-python scripts/repo_inventory.py
-# 将生成的 README 和三份 inventory 输出暂存，再检查
-python scripts/repo_inventory.py --check
+python scripts/experience.py select --stage plan --route diorama-3d     # 选路时带出历史评价
+python scripts/experience.py select --stage repair --query "字幕孤字"    # 按症状查经验
+python scripts/experience.py reflection R08                             # 看完整案例
 ```
 
-图的唯一来源是 [architecture.mmd](docs/architecture.mmd)，目录职责来自 [architecture-layout.json](docs/architecture-layout.json)。维护步骤写在 [CONTRIBUTING.md](CONTRIBUTING.md)，给 Agent 的约定写在 [AGENTS.md](AGENTS.md)。CI 会报告过期与遗漏；业务关系是否准确仍需审查，未启用分支保护时不能承诺失败提交会被自动阻止。
+---
 
-## 制作分支、参考与完整素材展示
+## 素材库与旧路线展厅
 
-**维护更新：** [反思资产：两条场景动画失败与5条相关复盘](examples/reflections/index.html) · [Skill架构及开源方案对照](docs/architecture.md) · [实际文件树与体积](docs/repository-tree.md)。已有失败状态进入经验选路；没有将工程可运行写成审美通过。
+[**打开完整在线展厅：43 个专题页 →**](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/) 13 个制作风格展示、35 种艺术场景、9 类解说语法、18 组历史制作。默认路线需要换风格时从这里取。
 
-> **2026-10-29：下述 LifeOS 像素街区改编版已被用户否决：动画不流畅，主要仍是背景图推拉、字幕/纸卡叠加和人物贴纸位移；不作为已验证的成片路线。此状态针对该版成片，不代表全部风格或原参考。**
+> 下面的风格图来自 [weilanx](https://github.com/Azure12355/weilanx-claude-videos) / [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) 的公开代码预览，归原作者，MIT 及字体 OFL 随素材保留，不是本仓库的创作。每张对应的源码和配方都在库里。
 
-**LifeOS 路线的实际制作分支：[像素街区双画幅成片与三个连续实验](examples/pixel-scene-map/index.html)**。105.57秒固定凯撒稿，六张完整环境、独立人物/前景/道具、地图与相机配置；另有24秒第二内容在干净目录的复现测试。[可执行入口与边界](references/pixel-scene-map.md)。参考媒体现已按需提供；本版尚不代表1:1审美通过。
+| | | |
+|:---:|:---:|:---:|
+| [![黑金光影](assets/weilanx/upstream/docs/assets/styles/blackgold.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-blackgold.html)<br>**黑金光影** · 矩阵接分支树 | [![战术屏科普](assets/weilanx/upstream/docs/assets/styles/tactical.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-tactical.html)<br>**战术屏科普** · 同空间重演 | [![灯火史话](assets/weilanx/upstream/docs/assets/styles/lamplight.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-lamplight.html)<br>**灯火史话** · 路径逐段点亮 |
+| [![暖纸工作台](assets/weilanx/upstream/docs/assets/styles/warm-desk.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-warm-desk.html)<br>**暖纸工作台** · 卡片换位 | [![网点档案](assets/weilanx/upstream/docs/assets/styles/halftone.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-halftone.html)<br>**网点档案** · 印章与遮挡转场 | [![协作剪辑台](assets/weilanx/upstream/docs/assets/styles/editor-room.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-editor-room.html)<br>**协作剪辑台** · 群聊触发动作 |
+| [![暗金文献](assets/weilanx/upstream/docs/assets/styles/gilded.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-gilded.html)<br>**暗金文献** · 曲线逐步绘制 | [![暗金音乐短片](assets/weilanx/upstream/docs/assets/styles/gilded-ep23.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-gilded-ep23.html)<br>**暗金音乐短片** · 锚词落节拍 | [![Vox时间长卷](assets/weilanx/upstream/docs/assets/styles/vox-timeline.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-vox-timeline.html)<br>**Vox 时间长卷** · 相机跟因果线 |
+| [![Vox硬切拼贴](assets/weilanx/upstream/docs/assets/styles/vox-cut.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-vox-cut.html)<br>**Vox 硬切拼贴** · 证据画面切入 | [![像素手绘演播室](assets/weilanx/upstream/docs/assets/styles/pixel-handdrawn.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-pixel-handdrawn.html)<br>**像素手绘演播室** · 道具回桌面 | [![矢量手绘](assets/weilanx/upstream/docs/assets/styles/vector.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-vector.html)<br>**矢量手绘** · 表情配旁白 |
+| [![像素贴纸](assets/weilanx/upstream/docs/assets/styles/pixel-sticker.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-pixel-sticker.html)<br>**像素贴纸** · 注意力轮转 | | |
 
-**2026-10-29 新增：[139条样片索引](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/) · [爽哥说 / LifeOS 两条参考与8段动作拆解](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/study.html)。** 139条记录现均有在线MP4与真实封面；新增8段原尺寸/30fps关键片段、96张动作帧、28组三帧观察。支持0.5×/0.25×播放、逐帧步进、阶段循环和直接下载。全片网页副本降低体积但不截短；关键片段保留原尺寸。新增28段观察、[制作路径](references/reference-study-20261029/production-route.txt)和[结构化计划](references/reference-study-20261029/plan.json)；参考分析已完成相应抽样，1:1制作尚未验证。
+<details><summary><b>35 种艺术风格与 9 类解说语法</b></summary>
 
-```sh
-python scripts/reference_study.py show --route particle-document
-python scripts/reference_study.py show --route pixel-scene-map
-# 直接取得实际MP4、帧序列和动作阶段，验证哈希；完整clone时复用仓库文件
-python scripts/reference_study.py fetch --route particle-document --output ./reference-cache
-python scripts/reference_study.py fetch --route pixel-scene-map --output ./reference-cache
-# 可加 --all-clips 取得该路线全部关键段，或 --full 取得全片网页副本
-```
-
-| 粒子与实体连续场景 · S3 | 像素场景与地图 · L1 |
-| --- | --- |
-| [![S3连续帧](examples/reference-study-20261029/motion/S3-sequence.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/study.html#S3) | [![L1连续帧](examples/reference-study-20261029/motion/L1-sequence.jpg)](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/study.html#L1) |
-| [原尺寸静音MP4](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/motion/S3.mp4) | [原尺寸静音MP4](https://ninglinliu.github.io/script-to-video-skill/examples/reference-study-20261029/motion/L1.mp4) |
-
-点击图进入可播放、减速、逐帧和阶段循环的对照页。帧图来自实际参考片，不是生成的分镜；复现效果尚待独立制作验证。
-
-分别交给制作 Agent 的完整任务提示词：[A · 凯撒 × 粒子字与连续场景](references/reference-study-20261029/prompts/caesar-particle.txt) · [B · 凯撒 × 像素场景与地图剪辑](references/reference-study-20261029/prompts/caesar-pixel.txt)。两条任务沿用同一份约106秒凯撒改编稿，把动画差异单独比较，并要求成片后固化可执行Skill；B路线在本分支已有成片及可执行交付，A路线的完成状态不由本次B路线测试推断。
-
-这是一个包含制作指令、脚本、素材和案例的 **Agent Skill**，需要能执行工具的 Agent 及视频运行环境。现有案例可复用；新文章的稳定生产、8–10分钟长片和跨模型复现尚未整体验收。详见[任务完成度、环境依赖与换模型说明](references/runtime-and-portability.md)。
-
-**新 Agent 从这里开始：[迁移完整工程并审看整片](references/executable-production.md)。**
-
-新增 **[《泊松过程》可执行制作分支](references/poisson-cinema.md)**：原有背景、人物、字体和实际解释动作一起复用，按新文章的数据与真实配音 cue 改编。支持事件重排、样本归类、窗口移动对齐、符号消去、曲线与逐门筛选，字幕直接烧入；不再只给配色和说明，让 Agent 自己重画。当前支持 1920×1080，跨文章审美与 DeepSeek 独立成功率仍待实测。
-
-```sh
-python scripts/start_episode.py --source poisson-cinema --episode ./episodes/new-cinema
-```
-
-本分支的[两组测试输入](assets/poisson-cinema/fixtures/)仅验证不同数据能调用同一套动作，不能作为实测旁白或成片通过记录。下方纸面章节入口仍保留。
-
-```sh
-python scripts/start_episode.py --source chapter-01 --episode ./episodes/new-film
-```
-
-入口直接保留完整案例的字幕、构图、解释镜头、字体和配音时间线，并接入编码字幕像素检查、整片节奏审看。按新内容改编，不再从12秒组件小样扩写默认影片。三个 kit 已降为**组件测试和取材**，旧 `production.py init` 已撤下。
-
-[同一篇《帕累托法则》修改前后对照](https://ninglinliu.github.io/script-to-video-skill/examples/pareto-revision/)：保留原片，展示迁移来源、字幕实际入画及全片审看证据；制作方检查不等于用户审美认可。
-
-**[打开完整在线展厅：43个专题页 →](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/)**
-
-13个制作风格展示 · 35种艺术场景 · 9类解说语法 · 18组历史制作 · 29条历史静音视频，另有第一批6条组件测试与106秒完整章节。16个旧HTML已整理接入；所有网页播放器默认暂停。
-
-![weilanx 35种艺术风格总览](assets/weilanx/upstream/docs/assets/styles/art-styles.jpg)
-
-> 上图与下方风格图来自 weilanx / huashu-art-motion 的公开代码预览，归原作者；MIT及字体OFL随素材保留。不是我们的重新创作成果。每张图对应的源码、配方与来源已经存进Skill。
-
-**怎么整理：原样保存 → 蒸馏选择规则 → 对照实际渲染。**
-
-- `assets/weilanx/upstream/`：固定提交导出的778个原版文件，包括组件、50余期示例源码、8个工作流、全部README本地图像和配方。原声、实拍和音乐缺项按上游说明保留，不假装整期媒体齐全。
-- `assets/weilanx/canvas/`：补齐35个艺术场景的运行库和字体，可单独播放；默认暂停、无音频。
-- [选材与接入方法](references/visual-library.md)、[机器目录](assets/weilanx/catalog.json)、[逐文件来源与哈希](assets/weilanx/provenance.json)。一个项目锁定主风格，按比较、分支、传播、证据更新等解释动作选组件。
-- [制作档案](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/#films)：保留成功方向与被否决版本；历史片是完整时长的轻量网页副本，本地原文件未覆盖。
-
-## README全部视觉内容 · 制作风格
-
-下方13个展示均可点进专题页，查看完整配方与对应源码。上游有8套独立风格工具包，展示条目数不等于工具包数。
-
-### [黑金光影](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-blackgold.html)
-
-![黑金光影](assets/weilanx/upstream/docs/assets/styles/blackgold.jpg)
-
-矩阵先显示行动与收益，再用箭头解释选择；同一节点进入分支树。
-
-### [战术屏科普](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-tactical.html)
-
-![战术屏科普](assets/weilanx/upstream/docs/assets/styles/tactical.jpg)
-
-在同一空间重演位置、视线和时间差，再接解释图。
-
-### [灯火史话](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-lamplight.html)
-
-![灯火史话](assets/weilanx/upstream/docs/assets/styles/lamplight.jpg)
-
-同一火光从烽燧到城市网格，地理路径逐段点亮。
-
-### [暖纸工作台](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-warm-desk.html)
-
-![暖纸工作台](assets/weilanx/upstream/docs/assets/styles/warm-desk.jpg)
-
-固定工作台保留卡片身份，卡片换位并让步骤条接住进度。
-
-### [网点档案](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-halftone.html)
-
-![网点档案](assets/weilanx/upstream/docs/assets/styles/halftone.jpg)
-
-资料依次进入案卷，印章对应论证结果，网点形成遮挡转场。
-
-### [协作剪辑台](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-editor-room.html)
-
-![协作剪辑台](assets/weilanx/upstream/docs/assets/styles/editor-room.jpg)
-
-群聊触发画布动作，角色沿时间轴移动同一片段。
-
-### [暗金文献](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-gilded.html)
-
-![暗金文献](assets/weilanx/upstream/docs/assets/styles/gilded.jpg)
-
-年份、文献和逐步绘制的曲线保留稳定对应。
-
-### [暗金音乐短片](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-gilded-ep23.html)
-
-![暗金音乐短片](assets/weilanx/upstream/docs/assets/styles/gilded-ep23.jpg)
-
-锚词在节拍落稳，前一对象接入增长画面。
-
-### [Vox时间长卷](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-vox-timeline.html)
-
-![Vox时间长卷](assets/weilanx/upstream/docs/assets/styles/vox-timeline.jpg)
-
-时间尺承载照片与事件，相机跟随同一条因果线。
-
-### [Vox硬切拼贴](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-vox-cut.html)
-
-![Vox硬切拼贴](assets/weilanx/upstream/docs/assets/styles/vox-cut.jpg)
-
-按旁白切入承担证据任务的资料画面，再回到解释对象。
-
-### [像素手绘演播室](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-pixel-handdrawn.html)
-
-![像素手绘演播室](assets/weilanx/upstream/docs/assets/styles/pixel-handdrawn.jpg)
-
-主持角色把注意力交给图解，道具回到同一桌面。
-
-### [矢量手绘](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-vector.html)
-
-![矢量手绘](assets/weilanx/upstream/docs/assets/styles/vector.jpg)
-
-表情和道具配合旁白动作，固定人物身份贯穿解释。
-
-### [像素贴纸](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/style-pixel-sticker.html)
-
-![像素贴纸](assets/weilanx/upstream/docs/assets/styles/pixel-sticker.jpg)
-
-角色、贴纸和关键词轮流占据注意力中心。
-
-## 艺术场景与解说语法
-
-35种艺术风格：古代与传统、古典油画、印象派与后印象、现代主义、波普与街头、卡通与动画、数字与像素。每种含预览、配方卡、场景代码及播放入口。详见[七组艺术专题](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/art-01.html)。
+![35种艺术风格总览](assets/weilanx/upstream/docs/assets/styles/art-styles.jpg)
 
 ![9类解说语法](assets/weilanx/upstream/docs/assets/styles/grammars.jpg)
 
-[科普图解](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/grammar-01.html) · [新闻与数据](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/grammar-02.html) · [节奏与人物](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/grammar-03.html)
+[七组艺术专题](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/art-01.html) · [科普图解](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/grammar-01.html) · [新闻与数据](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/grammar-02.html) · [节奏与人物](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/grammar-03.html) · [选材方法](references/visual-library.md)
 
-## 我们已有的样片和完整片
+</details>
 
-[泊松过程90秒](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-poisson-full.html) · [三个30秒内容实验](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-content-lab.html) · [红黑穿梭](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-redshift.html) · [价签之外（被否决）](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-anchor-art.html) · [消失的25元](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-disappearing25.html) · [黄金研究完整版](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-gold-full.html) · [指数三分钟](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-index-machine.html) · [看行情还是重做决定](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/film-decision-frequency.html)
+<details><summary><b>旧路线的完整工程：106 秒章节、泊松分支、第一批组件</b></summary>
 
-[完整43页目录](https://ninglinliu.github.io/script-to-video-skill/examples/gallery/)同时包含早期版本、并列对照、真实分镜和原HTML整理版。静帧、组件数量与技术通过都不替代用户对成片的认可。
+**[《回本以后，什么会改变？》](https://ninglinliu.github.io/script-to-video-skill/examples/chapter-01/)**：105.57 秒，1920×1080，7 段，含完整源码、配音、字幕和事实证据。[说明](examples/chapter-01/README.md)。后续的纸面改编被否决（R06）。
 
----
+![章节画面](examples/chapter-01/qa/final-frames/00.jpg)
 
-## 新增：106秒完整章节及素材
+**[《泊松过程》可执行分支](references/poisson-cinema.md)**：`python scripts/start_episode.py --source poisson-cinema --episode ./episodes/new-cinema`
 
-**[打开《回本以后，什么会改变？》静音预览 →](https://ninglinliu.github.io/script-to-video-skill/examples/chapter-01/)**
-
-![同一对象贯穿章节](examples/chapter-01/qa/final-frames/00.jpg)
-
-从凯撒文章的“成本价陷阱”蒸馏出一个具体问题。两张账单、同一现价依次进入未来路径、回本基数、研究证据与现实反例。**105.57秒，1920×1080，30fps，7段；完整长片质量仍待验证。**
-
-[完整源码与运行说明](examples/chapter-01/README.md) · [配音MP4](examples/chapter-01/out/final-with-audio.mp4) · [静音MP4](examples/chapter-01/out/final-silent.mp4) · [SRT](examples/chapter-01/out/subtitles.srt)
-
-- **可编辑生产素材**：七段干净画面、全片干净画面、独立配音WAV/MP3、真实WordBoundary时间线、OFL字体及许可、有限论文题头引用。
-- **五步流程实录**：原文整理、内容蒸馏、脚本核对、跨镜分镜、连续小样与完整章节。附事实证据、对象状态及具体修复记录。
-- **长片补充**：章节论证、信息推进、素材分工、对象接力、全局时码、局部重渲；不是把组件串起来就叫长视频。
-- **声音工具**：本地混音、旁白避让、响度与峰值检查、视频码流不变核对。用户指定的第三方BGM只在本地版使用，仓库记录来源并支持自行导入；公开有声版保留旁白。
-
-用户已手动验证既有剪映／PR导入、编辑和导出，并要求不重复验证。新文件的实际Agent验证另记；不把XML称作原生工程。素材范围见[来源与许可](NOTICE.md)。
-
----
-
-## 先看具体动作，再定组件库
-
-**[打开在线可播放对照页 →](https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/)**
-
-页面完整保留双内容对照、来源说明、组件参数与本地选择记录。所有自制小样无音轨、默认暂停。
+**[第一批组件对照](https://ninglinliu.github.io/script-to-video-skill/examples/batch-01/)**：6 条 10 秒竖屏小样。[说明](examples/batch-01/README.md)。
 
 ![第一批六条真实渲染](examples/batch-01/qa/encoded-contact.jpg)
 
-| 组件 | 示例 A（10 秒 MP4） | 示例 B（10 秒 MP4） | 来源 |
-|---|---|---|---|
-| 分支生长与路径追踪 | [利润下降](examples/batch-01/out/tree-business.mp4) | [学习受阻](examples/batch-01/out/tree-learning.mp4) | weilanx GoldTree，MIT |
-| 收益比较与选择箭头 | [降价竞争](examples/batch-01/out/matrix-price.mp4) | [团队共享](examples/batch-01/out/matrix-sharing.mp4) | weilanx PayoffMatrix，MIT |
-| 空间字带与主词落稳 | [信号与噪声](examples/batch-01/out/orbit-signal.mp4) | [价格与价值](examples/batch-01/out/orbit-value.mp4) | 既有 rtiaho 研究版原创代码 |
+**[帕累托同文修订对照](https://ninglinliu.github.io/script-to-video-skill/examples/pareto-revision/)** · **[像素街区分支](examples/pixel-scene-map/index.html)**（用户否决，保留研究）
 
-每组两套内容共用同一动画逻辑。分支树展开原因再沿证据追踪；矩阵先比较收益再显示选择方向；空间字带穿出后停稳主词，用于短促重音。
+技术验收器：`python scripts/audit_episode.py --episode <目录> --profile task-short --output audit.json`，协议见 [episode-contract](references/episode-contract.md)。它检查规格、解码、音轨和记录，不能证明观众满意。
 
-**[第一批源码与运行说明](examples/batch-01/README.md)** · [六套输入配置](examples/batch-01/src/catalog.ts) · [来源及代码哈希](examples/batch-01/provenance.json) · [技术验证](examples/batch-01/qa/validation.json) · [制作方画面检查](examples/batch-01/qa/producer-review.json)
-
-### 参考的是哪几秒
-
-| 原作 | 时间码 | 借鉴动作 |
-|---|---|---|
-| [Iwanau · 运气的形状](https://www.douyin.com/video/7690344836800913785) | 3.80–7.20s | 同一实体保留轮廓，变成解释模型；待实现 |
-| [Nico · 人生容错率](https://www.douyin.com/video/7697240924837748134) | 8.00–11.20s | 同一节点长出多条路径 |
-| [Iwanau · 为什么中杯卖得最好](https://www.douyin.com/video/7692118707825294713) | 1.80–7.20s | 加入选项后改变比较关系；待实现 |
-| [rtiaho · memories](https://www.douyin.com/video/7695456829056455158) | 1.70–3.50s | 字带、透视和前后遮挡 |
-
-参考作品仅链接引用。原作视频、截图、配乐不随仓库分发；生成小样不宣称与参考同等质量。
-
-### 当前完成到哪里
-
-- 已完成：3 个组件候选、6 条 1080×1920 / 30 fps / 10 秒渲染、双内容参数配置、来源与许可、技术和局部连续帧检查。
-- 已获认可：第一批组件方向；不等于之后所有文章或成片自动通过审美验收。
-- 待验证：跨新文章的稳定质量、更多素材类型和8–10分钟长片观看体验。编辑器工作流已有用户手动确认，不再重复验收。
-- 程序动画内部在 Remotion 源码中编辑；渲染 MP4 不等于剪映原生动画图层。
+</details>
 
 ---
 
-## Skill 工作流
+## 安装
 
-中文知识视频的 Agent 工作流 Skill：按项目选择视觉、内容形式、时长和剪辑方法，共用证据、资产、时间线与检查方式，由 Agent 在内部制作、检查、修复，再交付配音 MP4、字幕和工程。详见[多样性与项目配置](references/production-profiles.md)。
-
-**提供工作流指令、风格配置、验收器、第一批3组组件与6条小样，以及完整章节的渲染工程、真实配音素材、TTS适配脚本和局部重渲入口。** 外部TTS与渲染运行时按各自条件使用；这不是任意文章自动生成好镜头的确定性程序。 需要与自己的制作工程配合使用；不承诺任意文章首遍完美，也不将技术检测当作审美认可。
-
-## 给下一位Agent的经验入口
-
-[经验决策卡](references/experience/casebook.md)来自已有制作方修复、用户反馈及未解决问题。每条写明：何时使用、先做什么、保留什么、例外、验证与回退、证据范围。不是要求模型通读工作日志；当前数量以目录索引及校验命令为准。
+需要一个能执行工具、能看图的 Agent。三选一，目录都命名为 `script-to-video`，已有同名 Skill 时先备份：
 
 ```sh
-python scripts/experience.py select --stage repair --query "字幕孤字，修后更挤"
-```
+# ① 只要默认路线（推荐）：稀疏克隆，约 60 MB，不下载历史媒体
+git clone --filter=blob:none --sparse https://github.com/ninglinLiu/script-to-video-skill.git ~/.codex/skills/script-to-video
+cd ~/.codex/skills/script-to-video
+git sparse-checkout set scripts references tests evals docs assets/diorama-kit examples/binance-1029 examples/pareto-diorama
 
-默认最多返回三条相关经验；实际应用见[读取、决策记录与防退步方法](references/experience/usage.md)。检索脚本不调用模型或网络，输出有字符上限；记录检查能抓遗漏，不能证明模型理解或审美正确。
+# ② 打一个轻量安装包：在完整仓库里运行，再解压到 Skill 目录
+python scripts/package_skill.py --out dist/script-to-video-core.zip
 
-- [显慢的两种原因](references/experience/cards/E01.md)：信息不推进与[动作等待](references/experience/cards/E02.md)分开诊断。
-- [字幕修复反而产生孤字行](references/experience/cards/E08.md)：先按最终字体平衡断行，复用不受影响的画面与声音。
-- [跨镜对象与问题继承](references/experience/cards/E05.md)：窗口、路径、证据门等实际例子，动作表不替代实现。
-- [保留最好版本](references/experience/cards/E11.md)：同区间比较候选，不能因某项改善而接受新的事实或画面错误。
-- [验收范围](references/experience/cards/E12.md)：方向认可、制作方抽样和用户整片认可分别记录。
-
-正式制作使用用户选择的高能力主创模型；看图、生成图、配音与渲染能力分别配置。复用已有素材后只补缺口；DeepSeek等模型的移植验证不成为制作前置条件。
-
-## 使用 Skill
-
-将本仓库克隆到 Codex 的 Skill 目录，文件夹命名为 `script-to-video`，例如：
-
-```sh
+# ③ 完整仓库：含全部旧路线和历史影片
 git clone https://github.com/ninglinLiu/script-to-video-skill.git ~/.codex/skills/script-to-video
 ```
 
-Windows PowerShell 可将目标目录写成 `$env:USERPROFILE/.codex/skills/script-to-video`。已有同名 Skill 时先比较或备份，不要直接覆盖。其他兼容 Agent 可按自身规则加载根目录 `SKILL.md`。
+运行依赖：Python 3.11+、Node 18+、ffmpeg/ffprobe、edge-tts、系统上的 Chrome 或 Edge。`python scripts/diorama.py doctor` 会逐项检查。其他兼容 Agent 按自身规则加载根目录的 `SKILL.md`。
 
 调用示例：
 
-> 使用 $script-to-video，将这篇文章制作成 60–90 秒竖屏视频。使用我的现有渲染工程，保持固定风格，内部检查并修复字幕与动画衔接，交付 MP4、SRT 和工程。预览静音。
+> 使用 $script-to-video，把这篇文章做成 60 秒 3D 动画。先给我看一段观感测试片，通过了再渲整片。预览静音。
 
-制作方依次完成：原文与证据 → 核心问题与脚本 → 真实配音时间线 → 对象状态与镜头 → 连续小样 → 内部修复 → 成片与验收。
+默认规格：60–90 秒，1920×1080/30fps，H.264 CRF14，AAC，字幕烧入并附 SRT。竖屏和其他规格见[项目配置](references/production-profiles.md)。
 
-Windows渲染若在`%TEMP%`的`pre-encode.mp4`报`Permission denied`，见[工程临时目录处理方法](examples/chapter-01/README.md#windows临时目录拒绝写入)：在启动渲染前，将当前终端的`TEMP/TMP`指向可写的`工程/.tmp`。
+---
 
-## 默认交付规格
+## 维护这个仓库
 
-| 模式 | 时长 | 画面 | 其他要求 |
-|---|---|---|---|
-| `task-short` | 60–90 秒 | 1080×1920，30 fps | 5–8 分镜；H.264 ≥8 Mbps；AAC；SRT；已验证的剪辑工程 |
-| `extended` | 165–195 秒 | 1080×1920，30 fps | H.264 ≥8 Mbps；AAC；SRT；剪辑工程单独记录 |
-| `chapter-proof` | 90–150秒 | 1920×1080，30fps | CRF质量控制；AAC；SRT；独立分段素材与配音 |
-
-这些是此 Skill 的默认验收配置，不是通用行业标准。用户另有规格时应修改配置及验收器，不能把三分钟扩展版称作短片任务通过。
-
-## 独立使用验收脚本
-
-依赖 Python 3.11+，以及 PATH 中的 FFmpeg / ffprobe；脚本只使用 Python 标准库。无需 API 密钥，不上传文件、不播放声音。
+1. **先改设计。** 入口、目录职责或路线关系变化时，先改 [architecture.mmd](docs/architecture.mmd)、[production-flow.mmd](docs/production-flow.mmd) 和[目录职责表](docs/architecture-layout.json)。
+2. **再改内容。** 实现工具、规则或素材，按实际反馈更新经验与反思。README 的图用 `scripts/build_readme_media.py` 从实际成片生成。
+3. **提交前同步并检查。** 脚本从 Git 索引生成 README 的两张图、目录树和体积统计，GitHub 每次 push / PR 再查一遍。
 
 ```sh
-python scripts/audit_episode.py --episode /path/to/episode --profile task-short --output /path/to/audit.json
+python scripts/repo_inventory.py          # 暂存本次内容后运行，再暂存生成结果
+python scripts/repo_inventory.py --check
+python -m unittest discover -s tests -p "test_diorama.py"
 ```
 
-退出码 `0` 表示脚本所列的技术及记录检查通过，`2` 表示交付不完整。输入损坏、依赖缺失或其他执行错误也可能产生非零退出码。目录、JSON、审稿哈希和记录字段见 [输入协议](references/episode-contract.md)。
+**删除已有文件前先问用户。** 步骤见 [CONTRIBUTING](CONTRIBUTING.md)，给 Agent 的约定见 [AGENTS](AGENTS.md)。检查器能发现文件不一致，不能判断片子好不好看。2026-10-29 版的 README 全文保存在[这里](docs/README-20261029.md)。
 
-验收器检查视频规格、码率、解码、音轨、语音时间戳、字幕区间、稿件与审查哈希、镜头状态及交付记录。它读取已有制作方审查记录，不能独立证明观众满意、实际做过审美审查或编辑器真实导入成功；也不重新判断金融论点或科学事实。
+## 许可
 
-## 仓库内容
-
-- `SKILL.md`：Agent 编排入口与停止条件。
-- `references/runtime-and-portability.md`：原任务完成度、模型与Agent职责、运行环境和跨模型验收条件。
-- `references/production.md`：固定风格、解释动作和内部审查规则。
-- `references/episode-contract.md`：验收器所需的目录和数据协议。
-- `assets/style-lock.json`：示例视觉配置；不包含字体文件。
-- `scripts/audit_episode.py`：可独立运行的交付验收器。
-- `references/long-form.md`：章节论证、跨镜继承、分段生产与尚未验证的范围。
-- `references/audio-and-materials.md`：完整音乐辨认、静音混音与素材分发。
-- `scripts/mix_music.py`：音乐、配音和已渲染画面的本地混合。
-- `examples/chapter-01/`：完整章节、可运行源码、独立素材及审查记录。
-
-第一批组件已完成双内容参数化测试；完整章节经过制作方抽样修复。大规模跨新文章回归及8–10分钟长片质量尚未完成验证，不能由技术通过推出审美通过。参考项目及使用边界见 [NOTICE.md](NOTICE.md)。本仓库原创部分使用 MIT 许可。
+原创工作流、脚本和动画代码用 MIT。第三方组件、字体和引用材料的许可与来源见 [NOTICE](NOTICE.md)。币安样片的事实来自 [TRM Labs](https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history) 和 [@0xNaiXi](https://x.com/0xNaiXi/status/2115967318274789609)，套利收益是后者的链上统计，未独立复算，内容不构成投资建议。

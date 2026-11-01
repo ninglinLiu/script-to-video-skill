@@ -92,6 +92,9 @@ def outputs(root):
     readme = staged_text(root, 'README.md')
     readme = replace_block(readme, 'architecture', FENCE + 'mermaid\n' + diagram + '\n' + FENCE)
     readme = replace_block(readme, 'architecture-tree', FENCE + 'text\n' + tree_lines(roles, roles) + FENCE)
+    if 'docs/production-flow.mmd' in all_paths:
+        flow = staged_text(root, 'docs/production-flow.mmd').strip()
+        readme = replace_block(readme, 'production-flow', FENCE + 'mermaid\n' + flow + '\n' + FENCE)
 
     # Compute the generated README blob size now so one generation converges.
     readme_bytes = readme.encode('utf-8')

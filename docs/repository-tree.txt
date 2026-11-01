@@ -3,6 +3,21 @@ script-to-video-skill/
 │   └── workflows/
 │       └── architecture.yml
 ├── assets/
+│   ├── diorama-kit/
+│   │   ├── web/
+│   │   │   ├── catalog.js
+│   │   │   ├── index.html
+│   │   │   ├── motion.js
+│   │   │   ├── overlay.js
+│   │   │   ├── props.js
+│   │   │   ├── scene.js
+│   │   │   └── stage.js
+│   │   ├── README.md
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── render.mjs
+│   │   ├── srt.py
+│   │   └── tts.py
 │   ├── film-tools/
 │   │   ├── CaptionProbe.tsx
 │   │   └── render.mjs
@@ -1186,9 +1201,27 @@ script-to-video-skill/
 │   ├── chapter-style-lock.json
 │   └── style-lock.json
 ├── docs/
+│   ├── media/
+│   │   ├── atlas-binance.jpg
+│   │   ├── components.jpg
+│   │   ├── gif-flow.gif
+│   │   ├── gif-freeze.gif
+│   │   ├── gif-gate.gif
+│   │   ├── gif-mascot.gif
+│   │   ├── gif-pareto-dial.gif
+│   │   ├── gif-pareto-land.gif
+│   │   ├── hero-binance.gif
+│   │   ├── history-wall.jpg
+│   │   ├── look-test-rounds.jpg
+│   │   ├── motion-compare.png
+│   │   ├── same-text-pareto.jpg
+│   │   ├── storyboard-binance.jpg
+│   │   └── storyboard-pareto.jpg
+│   ├── README-20261029.md
 │   ├── architecture-layout.json
 │   ├── architecture.md
 │   ├── architecture.mmd
+│   ├── production-flow.mmd
 │   ├── repository-inventory.json
 │   ├── repository-tree.md
 │   └── repository-tree.txt
@@ -1281,6 +1314,28 @@ script-to-video-skill/
 │   │   ├── render.mjs
 │   │   ├── tsconfig.json
 │   │   └── validate.py
+│   ├── binance-1029/
+│   │   ├── audio/
+│   │   │   └── timeline.json
+│   │   ├── media/
+│   │   │   ├── final-1080p.mp4
+│   │   │   ├── preview.mp4
+│   │   │   └── subtitles.srt
+│   │   ├── qa/
+│   │   │   ├── contact-2fps-1.jpg
+│   │   │   ├── contact-2fps-2.jpg
+│   │   │   ├── contact-2fps-3.jpg
+│   │   │   ├── contact-2fps-4.jpg
+│   │   │   ├── delivery.json
+│   │   │   ├── look-test.jpg
+│   │   │   └── motion-trip-10fps.jpg
+│   │   ├── source/
+│   │   │   ├── script.json
+│   │   │   └── sources.md
+│   │   ├── web/
+│   │   │   └── scene.js
+│   │   ├── README.md
+│   │   └── index.html
 │   ├── chapter-01/
 │   │   ├── assets/
 │   │   │   ├── timeline.json
@@ -1540,6 +1595,20 @@ script-to-video-skill/
 │   │   ├── style-vox-timeline.html
 │   │   ├── style-warm-desk.html
 │   │   └── validation.json
+│   ├── pareto-diorama/
+│   │   ├── audio/
+│   │   │   └── timeline.json
+│   │   ├── media/
+│   │   │   ├── poster.jpg
+│   │   │   ├── preview.mp4
+│   │   │   └── subtitles.srt
+│   │   ├── source/
+│   │   │   ├── script.json
+│   │   │   └── source-manifest.json
+│   │   ├── web/
+│   │   │   └── scene.js
+│   │   ├── README.md
+│   │   └── index.html
 │   ├── pareto-revision/
 │   │   ├── assets/
 │   │   │   ├── timeline.json
@@ -1736,491 +1805,6 @@ script-to-video-skill/
 │   │   ├── pixel.jpg
 │   │   ├── pixel.mp4
 │   │   └── validation.json
-│   ├── reference-study-20261029/
-│   │   ├── media/
-│   │   │   ├── D01.mp4
-│   │   │   ├── D03.mp4
-│   │   │   ├── D04.mp4
-│   │   │   ├── G01.mp4
-│   │   │   ├── G02.mp4
-│   │   │   ├── G03.mp4
-│   │   │   ├── N05.mp4
-│   │   │   ├── N07.mp4
-│   │   │   ├── P01.mp4
-│   │   │   ├── Q01.mp4
-│   │   │   ├── Q04.mp4
-│   │   │   ├── Q05.mp4
-│   │   │   ├── Q06.mp4
-│   │   │   ├── Q07.mp4
-│   │   │   ├── Q08.mp4
-│   │   │   ├── Q09.mp4
-│   │   │   ├── Q10.mp4
-│   │   │   ├── Q11.mp4
-│   │   │   ├── Q12.mp4
-│   │   │   ├── Q13.mp4
-│   │   │   ├── Q14.mp4
-│   │   │   ├── Q15.mp4
-│   │   │   ├── Q17.mp4
-│   │   │   ├── Q18.mp4
-│   │   │   ├── Q19.mp4
-│   │   │   ├── Q20.mp4
-│   │   │   ├── Q21.mp4
-│   │   │   ├── Q22.mp4
-│   │   │   ├── Q23.mp4
-│   │   │   ├── Q24.mp4
-│   │   │   ├── Q25.mp4
-│   │   │   ├── Q26.mp4
-│   │   │   ├── Q27.mp4
-│   │   │   ├── Q28.mp4
-│   │   │   ├── Q29.mp4
-│   │   │   ├── Q30.mp4
-│   │   │   ├── Q31.mp4
-│   │   │   ├── Q32.mp4
-│   │   │   ├── Q33.mp4
-│   │   │   ├── Q34.mp4
-│   │   │   ├── Q35.mp4
-│   │   │   ├── R01.mp4
-│   │   │   ├── R02.mp4
-│   │   │   ├── R03.mp4
-│   │   │   ├── R04.mp4
-│   │   │   ├── R05.mp4
-│   │   │   ├── R06.mp4
-│   │   │   ├── R07.mp4
-│   │   │   ├── R08.mp4
-│   │   │   ├── R09.mp4
-│   │   │   ├── R10.mp4
-│   │   │   ├── R11.mp4
-│   │   │   ├── R12.mp4
-│   │   │   ├── R13.mp4
-│   │   │   ├── R14.mp4
-│   │   │   ├── R15.mp4
-│   │   │   ├── R16.mp4
-│   │   │   ├── R17.mp4
-│   │   │   ├── R18.mp4
-│   │   │   ├── R19.mp4
-│   │   │   ├── R20.mp4
-│   │   │   ├── R21.mp4
-│   │   │   ├── R22.mp4
-│   │   │   ├── R23.mp4
-│   │   │   ├── R24.mp4
-│   │   │   ├── R25.mp4
-│   │   │   ├── R26.mp4
-│   │   │   ├── R27.mp4
-│   │   │   ├── T01.mp4
-│   │   │   ├── T02.mp4
-│   │   │   ├── T03.mp4
-│   │   │   ├── T04.mp4
-│   │   │   ├── T05.mp4
-│   │   │   ├── T06.mp4
-│   │   │   ├── T07.mp4
-│   │   │   ├── T08.mp4
-│   │   │   ├── T09.mp4
-│   │   │   ├── T10.mp4
-│   │   │   ├── T11.mp4
-│   │   │   ├── T12.mp4
-│   │   │   ├── T13.mp4
-│   │   │   ├── T14.mp4
-│   │   │   ├── T15.mp4
-│   │   │   ├── T16.mp4
-│   │   │   ├── T17.mp4
-│   │   │   ├── W01.mp4
-│   │   │   ├── W05.mp4
-│   │   │   ├── W14.mp4
-│   │   │   ├── W20.mp4
-│   │   │   ├── X01.mp4
-│   │   │   ├── X02.mp4
-│   │   │   ├── X03.mp4
-│   │   │   ├── X04.mp4
-│   │   │   ├── X05.mp4
-│   │   │   ├── X06.mp4
-│   │   │   ├── X07.mp4
-│   │   │   ├── X08.mp4
-│   │   │   ├── X09.mp4
-│   │   │   ├── X10.mp4
-│   │   │   ├── X11.mp4
-│   │   │   ├── X12.mp4
-│   │   │   ├── X13.mp4
-│   │   │   ├── X14.mp4
-│   │   │   └── X15.mp4
-│   │   ├── motion/
-│   │   │   ├── L1-00.jpg
-│   │   │   ├── L1-01.jpg
-│   │   │   ├── L1-02.jpg
-│   │   │   ├── L1-03.jpg
-│   │   │   ├── L1-04.jpg
-│   │   │   ├── L1-05.jpg
-│   │   │   ├── L1-06.jpg
-│   │   │   ├── L1-07.jpg
-│   │   │   ├── L1-08.jpg
-│   │   │   ├── L1-09.jpg
-│   │   │   ├── L1-10.jpg
-│   │   │   ├── L1-11.jpg
-│   │   │   ├── L1-sequence.jpg
-│   │   │   ├── L1.mp4
-│   │   │   ├── L2-00.jpg
-│   │   │   ├── L2-01.jpg
-│   │   │   ├── L2-02.jpg
-│   │   │   ├── L2-03.jpg
-│   │   │   ├── L2-04.jpg
-│   │   │   ├── L2-05.jpg
-│   │   │   ├── L2-06.jpg
-│   │   │   ├── L2-07.jpg
-│   │   │   ├── L2-08.jpg
-│   │   │   ├── L2-09.jpg
-│   │   │   ├── L2-10.jpg
-│   │   │   ├── L2-11.jpg
-│   │   │   ├── L2-sequence.jpg
-│   │   │   ├── L2.mp4
-│   │   │   ├── L3-00.jpg
-│   │   │   ├── L3-01.jpg
-│   │   │   ├── L3-02.jpg
-│   │   │   ├── L3-03.jpg
-│   │   │   ├── L3-04.jpg
-│   │   │   ├── L3-05.jpg
-│   │   │   ├── L3-06.jpg
-│   │   │   ├── L3-07.jpg
-│   │   │   ├── L3-08.jpg
-│   │   │   ├── L3-09.jpg
-│   │   │   ├── L3-10.jpg
-│   │   │   ├── L3-11.jpg
-│   │   │   ├── L3-sequence.jpg
-│   │   │   ├── L3.mp4
-│   │   │   ├── S1-00.jpg
-│   │   │   ├── S1-01.jpg
-│   │   │   ├── S1-02.jpg
-│   │   │   ├── S1-03.jpg
-│   │   │   ├── S1-04.jpg
-│   │   │   ├── S1-05.jpg
-│   │   │   ├── S1-06.jpg
-│   │   │   ├── S1-07.jpg
-│   │   │   ├── S1-08.jpg
-│   │   │   ├── S1-09.jpg
-│   │   │   ├── S1-10.jpg
-│   │   │   ├── S1-11.jpg
-│   │   │   ├── S1-sequence.jpg
-│   │   │   ├── S1.mp4
-│   │   │   ├── S2-00.jpg
-│   │   │   ├── S2-01.jpg
-│   │   │   ├── S2-02.jpg
-│   │   │   ├── S2-03.jpg
-│   │   │   ├── S2-04.jpg
-│   │   │   ├── S2-05.jpg
-│   │   │   ├── S2-06.jpg
-│   │   │   ├── S2-07.jpg
-│   │   │   ├── S2-08.jpg
-│   │   │   ├── S2-09.jpg
-│   │   │   ├── S2-10.jpg
-│   │   │   ├── S2-11.jpg
-│   │   │   ├── S2-sequence.jpg
-│   │   │   ├── S2.mp4
-│   │   │   ├── S3-00.jpg
-│   │   │   ├── S3-01.jpg
-│   │   │   ├── S3-02.jpg
-│   │   │   ├── S3-03.jpg
-│   │   │   ├── S3-04.jpg
-│   │   │   ├── S3-05.jpg
-│   │   │   ├── S3-06.jpg
-│   │   │   ├── S3-07.jpg
-│   │   │   ├── S3-08.jpg
-│   │   │   ├── S3-09.jpg
-│   │   │   ├── S3-10.jpg
-│   │   │   ├── S3-11.jpg
-│   │   │   ├── S3-sequence.jpg
-│   │   │   ├── S3.mp4
-│   │   │   ├── S4-00.jpg
-│   │   │   ├── S4-01.jpg
-│   │   │   ├── S4-02.jpg
-│   │   │   ├── S4-03.jpg
-│   │   │   ├── S4-04.jpg
-│   │   │   ├── S4-05.jpg
-│   │   │   ├── S4-06.jpg
-│   │   │   ├── S4-07.jpg
-│   │   │   ├── S4-08.jpg
-│   │   │   ├── S4-09.jpg
-│   │   │   ├── S4-10.jpg
-│   │   │   ├── S4-11.jpg
-│   │   │   ├── S4-sequence.jpg
-│   │   │   ├── S4.mp4
-│   │   │   ├── S5-00.jpg
-│   │   │   ├── S5-01.jpg
-│   │   │   ├── S5-02.jpg
-│   │   │   ├── S5-03.jpg
-│   │   │   ├── S5-04.jpg
-│   │   │   ├── S5-05.jpg
-│   │   │   ├── S5-06.jpg
-│   │   │   ├── S5-07.jpg
-│   │   │   ├── S5-08.jpg
-│   │   │   ├── S5-09.jpg
-│   │   │   ├── S5-10.jpg
-│   │   │   ├── S5-11.jpg
-│   │   │   ├── S5-sequence.jpg
-│   │   │   ├── S5.mp4
-│   │   │   ├── shot-01-0.jpg
-│   │   │   ├── shot-01-1.jpg
-│   │   │   ├── shot-01-2.jpg
-│   │   │   ├── shot-01.jpg
-│   │   │   ├── shot-02-0.jpg
-│   │   │   ├── shot-02-1.jpg
-│   │   │   ├── shot-02-2.jpg
-│   │   │   ├── shot-02.jpg
-│   │   │   ├── shot-03-0.jpg
-│   │   │   ├── shot-03-1.jpg
-│   │   │   ├── shot-03-2.jpg
-│   │   │   ├── shot-03.jpg
-│   │   │   ├── shot-04-0.jpg
-│   │   │   ├── shot-04-1.jpg
-│   │   │   ├── shot-04-2.jpg
-│   │   │   ├── shot-04.jpg
-│   │   │   ├── shot-05-0.jpg
-│   │   │   ├── shot-05-1.jpg
-│   │   │   ├── shot-05-2.jpg
-│   │   │   ├── shot-05.jpg
-│   │   │   ├── shot-06-0.jpg
-│   │   │   ├── shot-06-1.jpg
-│   │   │   ├── shot-06-2.jpg
-│   │   │   ├── shot-06.jpg
-│   │   │   ├── shot-07-0.jpg
-│   │   │   ├── shot-07-1.jpg
-│   │   │   ├── shot-07-2.jpg
-│   │   │   ├── shot-07.jpg
-│   │   │   ├── shot-08-0.jpg
-│   │   │   ├── shot-08-1.jpg
-│   │   │   ├── shot-08-2.jpg
-│   │   │   ├── shot-08.jpg
-│   │   │   ├── shot-09-0.jpg
-│   │   │   ├── shot-09-1.jpg
-│   │   │   ├── shot-09-2.jpg
-│   │   │   ├── shot-09.jpg
-│   │   │   ├── shot-10-0.jpg
-│   │   │   ├── shot-10-1.jpg
-│   │   │   ├── shot-10-2.jpg
-│   │   │   ├── shot-10.jpg
-│   │   │   ├── shot-11-0.jpg
-│   │   │   ├── shot-11-1.jpg
-│   │   │   ├── shot-11-2.jpg
-│   │   │   ├── shot-11.jpg
-│   │   │   ├── shot-12-0.jpg
-│   │   │   ├── shot-12-1.jpg
-│   │   │   ├── shot-12-2.jpg
-│   │   │   ├── shot-12.jpg
-│   │   │   ├── shot-13-0.jpg
-│   │   │   ├── shot-13-1.jpg
-│   │   │   ├── shot-13-2.jpg
-│   │   │   ├── shot-13.jpg
-│   │   │   ├── shot-14-0.jpg
-│   │   │   ├── shot-14-1.jpg
-│   │   │   ├── shot-14-2.jpg
-│   │   │   ├── shot-14.jpg
-│   │   │   ├── shot-15-0.jpg
-│   │   │   ├── shot-15-1.jpg
-│   │   │   ├── shot-15-2.jpg
-│   │   │   ├── shot-15.jpg
-│   │   │   ├── shot-16-0.jpg
-│   │   │   ├── shot-16-1.jpg
-│   │   │   ├── shot-16-2.jpg
-│   │   │   ├── shot-16.jpg
-│   │   │   ├── shot-17-0.jpg
-│   │   │   ├── shot-17-1.jpg
-│   │   │   ├── shot-17-2.jpg
-│   │   │   ├── shot-17.jpg
-│   │   │   ├── shot-18-0.jpg
-│   │   │   ├── shot-18-1.jpg
-│   │   │   ├── shot-18-2.jpg
-│   │   │   ├── shot-18.jpg
-│   │   │   ├── shot-19-0.jpg
-│   │   │   ├── shot-19-1.jpg
-│   │   │   ├── shot-19-2.jpg
-│   │   │   ├── shot-19.jpg
-│   │   │   ├── shot-20-0.jpg
-│   │   │   ├── shot-20-1.jpg
-│   │   │   ├── shot-20-2.jpg
-│   │   │   ├── shot-20.jpg
-│   │   │   ├── shot-21-0.jpg
-│   │   │   ├── shot-21-1.jpg
-│   │   │   ├── shot-21-2.jpg
-│   │   │   ├── shot-21.jpg
-│   │   │   ├── shot-22-0.jpg
-│   │   │   ├── shot-22-1.jpg
-│   │   │   ├── shot-22-2.jpg
-│   │   │   ├── shot-22.jpg
-│   │   │   ├── shot-23-0.jpg
-│   │   │   ├── shot-23-1.jpg
-│   │   │   ├── shot-23-2.jpg
-│   │   │   ├── shot-23.jpg
-│   │   │   ├── shot-24-0.jpg
-│   │   │   ├── shot-24-1.jpg
-│   │   │   ├── shot-24-2.jpg
-│   │   │   ├── shot-24.jpg
-│   │   │   ├── shot-25-0.jpg
-│   │   │   ├── shot-25-1.jpg
-│   │   │   ├── shot-25-2.jpg
-│   │   │   ├── shot-25.jpg
-│   │   │   ├── shot-26-0.jpg
-│   │   │   ├── shot-26-1.jpg
-│   │   │   ├── shot-26-2.jpg
-│   │   │   ├── shot-26.jpg
-│   │   │   ├── shot-27-0.jpg
-│   │   │   ├── shot-27-1.jpg
-│   │   │   ├── shot-27-2.jpg
-│   │   │   ├── shot-27.jpg
-│   │   │   ├── shot-28-0.jpg
-│   │   │   ├── shot-28-1.jpg
-│   │   │   ├── shot-28-2.jpg
-│   │   │   └── shot-28.jpg
-│   │   ├── posters/
-│   │   │   ├── C01.jpg
-│   │   │   ├── C02.jpg
-│   │   │   ├── C03.jpg
-│   │   │   ├── C04.jpg
-│   │   │   ├── C05.jpg
-│   │   │   ├── C06.jpg
-│   │   │   ├── D01.jpg
-│   │   │   ├── D02.jpg
-│   │   │   ├── D03.jpg
-│   │   │   ├── D04.jpg
-│   │   │   ├── G01.jpg
-│   │   │   ├── G02.jpg
-│   │   │   ├── G03.jpg
-│   │   │   ├── N01.jpg
-│   │   │   ├── N02.jpg
-│   │   │   ├── N03.jpg
-│   │   │   ├── N04.jpg
-│   │   │   ├── N05.jpg
-│   │   │   ├── N06.jpg
-│   │   │   ├── N07.jpg
-│   │   │   ├── P01.jpg
-│   │   │   ├── P02.jpg
-│   │   │   ├── P03.jpg
-│   │   │   ├── P04.jpg
-│   │   │   ├── P05.jpg
-│   │   │   ├── Q01.jpg
-│   │   │   ├── Q02.jpg
-│   │   │   ├── Q03.jpg
-│   │   │   ├── Q04.jpg
-│   │   │   ├── Q05.jpg
-│   │   │   ├── Q06.jpg
-│   │   │   ├── Q07.jpg
-│   │   │   ├── Q08.jpg
-│   │   │   ├── Q09.jpg
-│   │   │   ├── Q10.jpg
-│   │   │   ├── Q11.jpg
-│   │   │   ├── Q12.jpg
-│   │   │   ├── Q13.jpg
-│   │   │   ├── Q14.jpg
-│   │   │   ├── Q15.jpg
-│   │   │   ├── Q16.jpg
-│   │   │   ├── Q17.jpg
-│   │   │   ├── Q18.jpg
-│   │   │   ├── Q19.jpg
-│   │   │   ├── Q20.jpg
-│   │   │   ├── Q21.jpg
-│   │   │   ├── Q22.jpg
-│   │   │   ├── Q23.jpg
-│   │   │   ├── Q24.jpg
-│   │   │   ├── Q25.jpg
-│   │   │   ├── Q26.jpg
-│   │   │   ├── Q27.jpg
-│   │   │   ├── Q28.jpg
-│   │   │   ├── Q29.jpg
-│   │   │   ├── Q30.jpg
-│   │   │   ├── Q31.jpg
-│   │   │   ├── Q32.jpg
-│   │   │   ├── Q33.jpg
-│   │   │   ├── Q34.jpg
-│   │   │   ├── Q35.jpg
-│   │   │   ├── R01.jpg
-│   │   │   ├── R02.jpg
-│   │   │   ├── R03.jpg
-│   │   │   ├── R04.jpg
-│   │   │   ├── R05.jpg
-│   │   │   ├── R06.jpg
-│   │   │   ├── R07.jpg
-│   │   │   ├── R08.jpg
-│   │   │   ├── R09.jpg
-│   │   │   ├── R10.jpg
-│   │   │   ├── R11.jpg
-│   │   │   ├── R12.jpg
-│   │   │   ├── R13.jpg
-│   │   │   ├── R14.jpg
-│   │   │   ├── R15.jpg
-│   │   │   ├── R16.jpg
-│   │   │   ├── R17.jpg
-│   │   │   ├── R18.jpg
-│   │   │   ├── R19.jpg
-│   │   │   ├── R20.jpg
-│   │   │   ├── R21.jpg
-│   │   │   ├── R22.jpg
-│   │   │   ├── R23.jpg
-│   │   │   ├── R24.jpg
-│   │   │   ├── R25.jpg
-│   │   │   ├── R26.jpg
-│   │   │   ├── R27.jpg
-│   │   │   ├── T01.jpg
-│   │   │   ├── T02.jpg
-│   │   │   ├── T03.jpg
-│   │   │   ├── T04.jpg
-│   │   │   ├── T05.jpg
-│   │   │   ├── T06.jpg
-│   │   │   ├── T07.jpg
-│   │   │   ├── T08.jpg
-│   │   │   ├── T09.jpg
-│   │   │   ├── T10.jpg
-│   │   │   ├── T11.jpg
-│   │   │   ├── T12.jpg
-│   │   │   ├── T13.jpg
-│   │   │   ├── T14.jpg
-│   │   │   ├── T15.jpg
-│   │   │   ├── T16.jpg
-│   │   │   ├── T17.jpg
-│   │   │   ├── W01.jpg
-│   │   │   ├── W02.jpg
-│   │   │   ├── W03.jpg
-│   │   │   ├── W04.jpg
-│   │   │   ├── W05.jpg
-│   │   │   ├── W06.jpg
-│   │   │   ├── W07.jpg
-│   │   │   ├── W08.jpg
-│   │   │   ├── W09.jpg
-│   │   │   ├── W10.jpg
-│   │   │   ├── W11.jpg
-│   │   │   ├── W12.jpg
-│   │   │   ├── W13.jpg
-│   │   │   ├── W14.jpg
-│   │   │   ├── W15.jpg
-│   │   │   ├── W16.jpg
-│   │   │   ├── W17.jpg
-│   │   │   ├── W18.jpg
-│   │   │   ├── W19.jpg
-│   │   │   ├── W20.jpg
-│   │   │   ├── X01.jpg
-│   │   │   ├── X02.jpg
-│   │   │   ├── X03.jpg
-│   │   │   ├── X04.jpg
-│   │   │   ├── X05.jpg
-│   │   │   ├── X06.jpg
-│   │   │   ├── X07.jpg
-│   │   │   ├── X08.jpg
-│   │   │   ├── X09.jpg
-│   │   │   ├── X10.jpg
-│   │   │   ├── X11.jpg
-│   │   │   ├── X12.jpg
-│   │   │   ├── X13.jpg
-│   │   │   ├── X14.jpg
-│   │   │   └── X15.jpg
-│   │   ├── browser-validation.json
-│   │   ├── catalog.csv
-│   │   ├── catalog.js
-│   │   ├── catalog.json
-│   │   ├── index.html
-│   │   ├── media-manifest.json
-│   │   ├── motion-events.json
-│   │   ├── motion.css
-│   │   ├── names.txt
-│   │   ├── shot-evidence.json
-│   │   ├── study.html
-│   │   ├── study.js
-│   │   ├── style.css
-│   │   └── validation.json
 │   └── reflections/
 │       ├── R01-sequence.jpg
 │       ├── R02-sequence.jpg
@@ -2249,7 +1833,8 @@ script-to-video-skill/
 │   │   │   ├── E19.md
 │   │   │   ├── E20.md
 │   │   │   ├── E21.md
-│   │   │   └── E22.md
+│   │   │   ├── E22.md
+│   │   │   └── E23.md
 │   │   ├── evidence/
 │   │   │   ├── chapter-repair.json
 │   │   │   ├── chapter-review.json
@@ -2277,9 +1862,12 @@ script-to-video-skill/
 │   │   ├── production-route.txt
 │   │   └── shot-observations.csv
 │   ├── audio-and-materials.md
+│   ├── diorama-3d.md
 │   ├── episode-contract.md
 │   ├── executable-production.md
+│   ├── legacy-workflow.md
 │   ├── long-form.md
+│   ├── motion-craft.md
 │   ├── pixel-scene-map.md
 │   ├── poisson-cinema.md
 │   ├── production-profiles.md
@@ -2289,12 +1877,15 @@ script-to-video-skill/
 ├── scripts/
 │   ├── audit_episode.py
 │   ├── audit_gallery.py
+│   ├── build_readme_media.py
 │   ├── build_reference_evidence.py
 │   ├── build_reflections.py
 │   ├── cinema.py
+│   ├── diorama.py
 │   ├── experience.py
 │   ├── film_delivery.py
 │   ├── mix_music.py
+│   ├── package_skill.py
 │   ├── pixel_inspect.py
 │   ├── pixel_scene.py
 │   ├── production.py
@@ -2306,6 +1897,7 @@ script-to-video-skill/
 │   ├── run_cinema_browser.py
 │   ├── test_audit_episode.py
 │   ├── test_cinema.py
+│   ├── test_diorama.py
 │   ├── test_experience.py
 │   ├── test_film_delivery.py
 │   ├── test_pixel_scene.py

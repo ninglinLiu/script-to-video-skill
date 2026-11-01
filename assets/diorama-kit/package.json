@@ -1,0 +1,10 @@
+{
+  "name": "diorama-episode",
+  "private": true,
+  "type": "module",
+  "description": "代码 3D 微缩一镜到底工程的渲染依赖；Chrome 用系统已有的",
+  "dependencies": {
+    "playwright-core": "1.63.0",
+    "three": "0.158.0"
+  }
+}
