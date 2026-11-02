@@ -383,7 +383,7 @@ python scripts/experience.py reflection R08                             # 看完
 需要一个能执行工具、能看图的 Agent。三选一，目录都命名为 `script-to-video`，已有同名 Skill 时先备份：
 
 ```sh
-# ① 只要默认路线（推荐）：稀疏克隆，约 60 MB，不下载历史媒体
+# ① 只要默认路线（推荐）：部分克隆 + 稀疏检出，只取所选目录（实际下载量未实测）
 git clone --filter=blob:none --sparse https://github.com/ninglinLiu/script-to-video-skill.git ~/.codex/skills/script-to-video
 cd ~/.codex/skills/script-to-video
 git sparse-checkout set scripts references tests evals docs assets/diorama-kit examples/binance-1029 examples/pareto-diorama

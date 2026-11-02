@@ -1,14 +1,14 @@
 {
   "scope": "Staged Git blobs; excludes three generated inventory outputs, ignored files and Git history. Tree includes all tracked paths plus generated outputs. Byte counts use canonical Git blobs, not OS working-copy line endings.",
   "files": 1599,
-  "bytes": 538462597,
+  "bytes": 538462714,
   "entry_chars": 3257,
   "entry_lines": 83,
   "entry_utf8_bytes": 6159,
   "groups": {
     "examples": {
       "files": 511,
-      "bytes": 439509754
+      "bytes": 439509841
     },
     "assets": {
       "files": 969,
@@ -28,7 +28,7 @@
     },
     "[root files]": {
       "files": 10,
-      "bytes": 50298
+      "bytes": 50328
     },
     "tests": {
       "files": 9,
@@ -158,7 +158,7 @@
     },
     {
       "path": "README.md",
-      "bytes": 30262
+      "bytes": 30292
     },
     {
       "path": "SKILL.md",
@@ -4462,7 +4462,7 @@
     },
     {
       "path": "examples/binance-1029/source/sources.md",
-      "bytes": 1787
+      "bytes": 1874
     },
     {
       "path": "examples/binance-1029/web/scene.js",
