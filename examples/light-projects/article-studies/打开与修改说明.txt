@@ -1,0 +1,32 @@
+三篇文章 · 三种动画样片
+
+1. 先看 out/compare-silent.mp4（无音轨，三屏同时对照）。
+2. 单独看 out/editorial-silent.mp4、spatial-silent.mp4、pixel-silent.mp4；均为1080×1920、30fps、10.5秒。
+3. 双击 watch.html 可使用普通浏览器打开，页面仅引用无音轨视频，不自动播放。
+4. out/editorial.mp4、spatial.mp4、pixel.mp4 是单独保存的配音版。没有在本轮外放试听。
+
+这次是三个不同内容的样片，不是三篇全文成片。
+原文和脚本：source/用户提供的三篇正文.txt、source/scripts.json。
+字幕来自整段云希配音的真实词时间戳，每条对应 out/*.srt。
+场景动作：style-editorial.mjs / style-spatial.mjs / style-pixel.mjs。
+尺寸、字体和字幕入口：main.mjs / common.mjs / index.html。
+复用的角色、字体、音乐和注册清单都在 assets/。
+
+重新导出：
+在项目目录执行 run.ps1。依赖现有 C:/Python311/python.exe、C:/Program Files/nodejs/node.exe、Chrome、ffmpeg 和历史 Puppeteer 缓存路径。
+renderer 中 Puppeteer 路径是本机现有安装；搬到别的电脑时需修改 createRequire 指向实际 puppeteer-core 安装。
+本工程可在当前设备复现，不宣称是已打包的跨设备安装程序。
+不要使用 render.mjs 的历史 full 模式；本项目统一使用 clip 0 10.5。
+
+run.ps1 默认复用内容相同的配音缓存；改动 narration 会重新请求 TTS，不要手工伪造字幕时间。
+改变旁白或动画时，应同步更新实际动作、音效点、时长及 QA 截取点。
+正常导出只在文件中写入音频，不启动音频设备。
+
+范围和验收：
+BRIEF.txt：对象、动作、时间段、来源边界。
+qa/final-checks.json：视频规格、解码和音轨检查。
+qa/*-determinism.json：跨时间跳转后，同一帧字节一致。
+qa/*-final-sheet.jpg：成片手机尺寸抽帧。
+qa/*-continuous-*.jpg：关键动作处连续12帧。
+qa/制作方审看.txt：实际发现和修正情况。
+技术验证通过不等于用户审美验收。本轮没有做外放听审。

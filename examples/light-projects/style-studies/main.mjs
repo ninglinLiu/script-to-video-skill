@@ -1,0 +1,20 @@
+import {subtitle,txt,line} from './common.mjs';
+import {editorial} from './style-editorial.mjs';
+import {createSpatial} from './style-spatial.mjs';
+import {createPixel} from './style-pixel.mjs';
+window.ready=false;
+const c=document.querySelector('#film').getContext('2d',{alpha:false});
+const style=new URLSearchParams(location.search).get('style')||'editorial';
+const timeline=await (await fetch('assets/timeline.json')).json();
+const chinese=timeline.text+'创造投资亲手搭建退后观察研究价值视角改变凯撒的复利实验室原创风格样片像素工坊换个位置搭建观察研究原创角色演绎非作者肖像→/03';
+await Promise.all([document.fonts.load('900 240px Sans',chinese),document.fonts.load('600 90px Serif',chinese),document.fonts.load('60px "Fusion Pixel 12px Proportional Simplified Chinese"',chinese)]);
+await document.fonts.ready;
+const renderStyle=style==='pixel'?await createPixel():style==='spatial'?await createSpatial():editorial;
+window.meta={style,width:1080,height:1920,duration:8,fps:30,voiceReuse:'sample-paced-20261018',audioPlayback:'disabled'};
+window.render=t=>{
+ t=Math.max(0,Math.min(8,t));c.resetTransform();c.globalAlpha=1;c.globalCompositeOperation='source-over';c.clearRect(0,0,1080,1920);
+ renderStyle(c,t);
+ subtitle(c,t,timeline.cues,{color:style==='editorial'?'#202720':'#f8ead3',shadow:style!=='editorial',font:style==='pixel'?'Fusion Pixel 12px Proportional Simplified Chinese':'Sans'});
+};
+window.__player={total:8000,set:ms=>window.render(ms/1000)};
+window.render(0);window.ready=true;

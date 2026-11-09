@@ -1,0 +1,20 @@
+{
+  "mode": "proof",
+  "seconds": 42.754,
+  "composition": {
+    "id": "gold-transmission",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationInFrames": 2539,
+    "props": {},
+    "defaultProps": {},
+    "defaultCodec": null,
+    "defaultOutName": null,
+    "defaultVideoImageFormat": null,
+    "defaultPixelFormat": null,
+    "defaultProResProfile": null,
+    "defaultSampleRate": null
+  },
+  "output": "qa/proof-numeric.mp4"
+}

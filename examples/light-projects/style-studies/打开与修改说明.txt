@@ -1,0 +1,37 @@
+三种风格研究 / 2026-10-20
+
+先看 watch.html：三版均无音轨，不自动播放，可点击“同步播放”。out/compare-silent.mp4 是并排无声版。
+out/editorial-silent.mp4、spatial-silent.mp4、pixel-silent.mp4：8 秒、1080×1920、30 fps、无声预览。
+去掉 -silent 后缀的三个 MP4：同画面的配音、配乐版。只有主动打开这些文件才可能外放。
+
+这轮只做样片；旧 69 秒版另存 ../archive/20261020-blackgold-v1，原工程仍在 ../full-short-20261018。
+
+修改入口：
+style-editorial.mjs：图形排版、九格变成眼睛、观察视野展开。
+style-spatial.mjs：Three.js 几何、材质、镜头路径、研究镜与结构展开。
+style-pixel.mjs：人物走位、半身/小人切换、搭建、放大镜、书本。
+common.mjs：绘图函数和共同字幕。
+assets/timeline.json：复用的真实旁白时间和字幕。
+mix_audio.py：离线声音构建，不调用音频设备。
+render.mjs：复用 Poisson / 上一版的确定性渲染器，已加 --mute-audio。
+run.ps1：重渲三版，合成正常配音版和无声版，输出质检图与结果。
+
+本机运行：
+powershell -ExecutionPolicy Bypass -File .\run.ps1
+Python / Node / Chrome / Puppeteer 沿用本机现有路径；异机需要改 render.mjs 与 run.ps1 的运行时路径。FFmpeg 和 ffprobe 需要在 PATH。
+浏览器 preview 若限制本地模块，使用 Python http.server 服务本目录；成片 watch.html 直接打开即可。
+
+RuiC 上游：
+https://github.com/HRuiCcc/RuiC-pixel-explainer
+提交 79253e11e643a27e2e4514aa404e2ae159c75f60
+本次使用其 register_actor_sheet.py（实际执行）、SpriteActor（实际渲染调用）、drawOpenBook / drawPaper / drawRewardBadge 组件和 Fusion Pixel 字体。
+角色动作表及半身表是本次内置 imagegen 原创生成，提示词在 source/image-prompts.json。注册 manifest 保留透明通道、统一尺度和锚点。
+Three.js 从既有 HyperFrames vendor 复用，随附 Three-LICENSE.txt；并未把本工程称为使用完整 HyperFrames 框架。
+Fusion Pixel 许可在 assets/pixel-fonts/LICENSE-fusion-pixel-webfont.txt。
+音乐 Vastness / Andrew Ev，来源 https://assets.mixkit.co/music/184/184.mp3，许可记录 https://mixkit.co/license/#musicFree。
+
+审看范围：
+技术：视频规格、240 帧、全文件解码、音频存在/缺失、峰值与响度、确定性重复取帧。
+制作方：手机尺寸图、关键连续帧、遮挡和文字安全区。
+听感：按用户安静要求未外放；不能把响度检测冒充听感验收。
+用户审美验收：待定。技术通过不等于“足够好看”。

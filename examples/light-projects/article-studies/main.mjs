@@ -1,0 +1,21 @@
+import {subtitle} from './common.mjs';
+import {editorial} from './style-editorial.mjs';
+import {createSpatial} from './style-spatial.mjs';
+import {createPixel} from './style-pixel.mjs';
+window.ready=false;
+const style=new URLSearchParams(location.search).get('style')||'editorial';
+const timeline=await(await fetch(`assets/timeline-${style}.json`)).json();
+const labels='凯撒的复利实验室认知复杂度消息没回不靠谱先悬住结论未回复事实推断可能在忙可能忘了可能还在想解释不止一种锚定效应旧价格便宜吗现金流风险示意非真实报价判断价值参照不等于结论勤奋之外重复刷关规则路线试新路径文章观点游戏比喻不代表收益读规则尝试新路径努力需要方向不确定性估值情境不代表证券报价每天都在刷同一关';
+const glyphs=(await Promise.all(['style-editorial.mjs','style-spatial.mjs','style-pixel.mjs'].map(f=>fetch(f).then(r=>r.text())))).join('');
+await Promise.all([document.fonts.load('900 200px Sans',timeline.text+labels+glyphs),document.fonts.load('600 90px Serif',timeline.text+labels+glyphs),document.fonts.load('60px "Fusion Pixel 12px Proportional Simplified Chinese"',timeline.text+labels+glyphs)]);
+await document.fonts.ready;
+const draw=style==='spatial'?await createSpatial():style==='pixel'?await createPixel():editorial;
+const c=document.querySelector('#film').getContext('2d',{alpha:false});
+window.meta={style,width:1080,height:1920,duration:10.5,fps:30,source:timeline.title,audioPlayback:'disabled'};
+window.render=t=>{
+ t=Math.max(0,Math.min(10.5,t));c.reset();c.globalAlpha=1;c.globalCompositeOperation='source-over';
+ draw(c,t);
+ subtitle(c,t,timeline.cues,{color:style==='editorial'?'#202820':'#fff1d6',shadow:style!=='editorial',font:style==='pixel'?'Fusion Pixel 12px Proportional Simplified Chinese':'Sans',baseline:1652});
+};
+window.__player={total:10500,set:ms=>window.render(ms/1000)};
+window.render(0);window.ready=true;

@@ -1,0 +1,9 @@
+{
+  "firstStillAndProofExit": "outputs rendered successfully; browser cleanup failed because close() needed a silent argument",
+  "repair": "close({silent:true}) used; full render subsequently exited with code 0",
+  "finalFullRenderSecondsExcludingBundle": 440.39,
+  "dedicatedBrowser": "Chrome Headless Shell; no user browser profile and no external sound",
+  "continuousFrameJpegs": "constant quality q=2 used to avoid adaptive JPEG degradation in contact strips",
+  "manualLaborCost": "unknown",
+  "electricityCost": "unknown"
+}

@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "updated": "2026-11-02",
+  "note": "配乐曲目目录。音频不入库，用 scripts/music_library.py fetch 从作者站点下载并校验哈希。用户状态只说明对应那条片的配乐效果，不代表这首曲子适合所有题材。",
+  "tracks": [
+    {
+      "id": "crypto-kevin-macleod",
+      "title": "Crypto",
+      "artist": "Kevin MacLeod",
+      "isrc": "USUAN1600013",
+      "mood": "低频悬疑",
+      "use_for": "风险揭示、财经调查、等待坏消息",
+      "official_feel": "Dark, Eerie, Unnerving, Suspenseful",
+      "bpm": 80,
+      "instruments": "Flute, Percussion, Synths",
+      "seconds": 204.068594,
+      "source_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1600013",
+      "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Crypto.mp3",
+      "sha256": "f09ba8bff00baca85fcdcde3b7f5d6b34a09c2c0b44b007a9123ee42f7d1bcf2",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_checked": "2026-11-02：incompetech.com FAQ 写明全部音乐按 CC BY 4.0 提供并给出署名格式；曲目信息取自站点 pieces.json，ISRC 与 MP3 标签一致。",
+      "credit": "\"Crypto\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/",
+      "user_status": "user-approved",
+      "user_scope": "用户 2026-11-02 认可《AI不是泡沫：OpenAI才是》的 A「低频悬疑」配乐版，范围是这次配乐效果（R09）。",
+      "mix": {
+        "music_lufs": -29,
+        "fade_in": 0.25,
+        "fade_out": 1.2
+      },
+      "music_only": {
+        "master_lufs": -14,
+        "fade_in": 0.5,
+        "fade_out": 3.0
+      }
+    },
+    {
+      "id": "cipher-kevin-macleod",
+      "title": "Cipher",
+      "artist": "Kevin MacLeod",
+      "isrc": "USUAN1100844",
+      "mood": "电子节奏",
+      "use_for": "轻快的科技解说、节奏推进",
+      "official_feel": "Bright, Grooving, Uplifting",
+      "bpm": 150,
+      "instruments": "Synths, Electric Piano, Percussion, Strings",
+      "seconds": 231.26205,
+      "source_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100844",
+      "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Cipher2.mp3",
+      "sha256": "d3d0614535a61d748e2fd8d5117fc4d781022a7624794802a2462d8af3fdd522",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_checked": "2026-11-02：同上。",
+      "credit": "\"Cipher\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/",
+      "user_status": "auditioned-not-selected",
+      "user_scope": "同片 B 版试听，用户选了 A。没有被否决，只是这条片没选它。",
+      "mix": {
+        "music_lufs": -30,
+        "fade_in": 0.25,
+        "fade_out": 1.2
+      }
+    },
+    {
+      "id": "stay-the-course-kevin-macleod",
+      "title": "Stay the Course",
+      "artist": "Kevin MacLeod",
+      "isrc": "USUAN1900018",
+      "mood": "暗金沉稳",
+      "use_for": "纯音乐的数据模拟短片（临界点风格）、冷静揭示一个数",
+      "official_feel": "Suspenseful, Dark, Calming",
+      "bpm": 60,
+      "instruments": "Synths, Percussion",
+      "seconds": 272.065325,
+      "source_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1900018",
+      "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Stay%20the%20Course.mp3",
+      "sha256": "f7a2eefd36878a811fa479af45bd9e3efc433dd312366ba7c5ba69e493cf3321",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_checked": "2026-11-09：曲目信息取自 incompetech.com 的 pieces.json，MP3 标签里的 ISRC 一致；授权同 Crypto，见作者站点 FAQ。",
+      "credit": "\"Stay the Course\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/",
+      "user_status": "candidate",
+      "user_scope": "2026-11-09 凯利公式样片的 A 版配乐，用户还没听。",
+      "mix": {
+        "music_lufs": -29,
+        "fade_in": 0.25,
+        "fade_out": 1.2
+      },
+      "music_only": {
+        "master_lufs": -14,
+        "fade_in": 0.5,
+        "fade_out": 3.0
+      }
+    }
+  ]
+}

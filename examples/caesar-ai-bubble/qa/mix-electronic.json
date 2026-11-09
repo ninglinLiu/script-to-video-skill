@@ -1,0 +1,30 @@
+{
+  "status": "technical_checks_passed",
+  "inputVideo": "final.mp4",
+  "inputVoice": "mix.wav",
+  "inputMusic": "Cipher2.mp3",
+  "output": "final-music-electronic.mp4",
+  "outputSha256": "ea2ecf602df4967fb3d26d4f39814d24dd9a5dfd55ced78ef5ef70a8d1327c1a",
+  "sourceMusicSha256": "d3d0614535a61d748e2fd8d5117fc4d781022a7624794802a2462d8af3fdd522",
+  "seconds": 47.8,
+  "sourceMusicSeconds": 231.26205,
+  "repeats": 1,
+  "loopCrossfadeSeconds": 0.12,
+  "musicTargetLUFS": -30.0,
+  "ducking": {
+    "threshold": 0.035,
+    "ratio": 8,
+    "attackMs": 15,
+    "releaseMs": 350
+  },
+  "measuredIntegratedLUFS": -16.66,
+  "measuredTruePeakDBTP": -1.43,
+  "originalVideoStreamPreserved": true,
+  "fullDecode": true,
+  "speakerPlayback": false,
+  "manualListening": false,
+  "limitations": [
+    "Signal measurements do not verify musical phrasing or listening comfort.",
+    "The supplied audio source must be identified separately; this tool does not certify an instrumental master."
+  ]
+}

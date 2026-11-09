@@ -1,0 +1,85 @@
+盯盘、反馈频率与决策频率：新片事实核查
+核查日期：2026-10-23（Asia/Taipei）
+用途：新三分钟视频的证据与原创演示；不是个性化投资建议。
+
+核心判断
+可以说：短视损失厌恶将损失敏感与较窄的评价框架联系起来；某些实验发现，较长的评估/承诺周期与较高的风险资产投入相关。
+不能说：观察账户次数本身会机械降低收益；研究证明所有人只要少看就赚更多；短视损失厌恶等于频繁交易；提高风险承担一定是好事。
+片中应该拆开三个环节：信息被看见 → 盈亏被单独评价 → 决策被改写。前两者不会直接改动持仓，第三者才可能改变收益路径和交易成本。
+
+一、核心第一方来源（正文使用原创转述，不复制论文长段落）
+
+F1 Benartzi / Thaler，Myopic Loss Aversion and the Equity Premium Puzzle
+https://www.nber.org/papers/w4369
+https://www.nber.org/system/files/working_papers/w4369/w4369.pdf
+1993 NBER 工作论文；1995 QJE 发表版本。已读官方检索摘要与论文首页，直开NBER出现403。
+支持：该模型结合损失敏感与频繁评价，即使投资目标很长期也可能出现短视评价。
+不支持：将模型解释当成全人群定律；把所有亏损归咎于看盘；把损失感受精确固定为收益的两倍。
+可用口播：同样大小的亏损，往往比盈利更刺眼；反复把短期涨跌单独结算，可能改变你对风险的感觉。
+
+F2 Bellemare / Krause / Kröger / Zhang，Myopic loss aversion: Information feedback vs. investment flexibility
+https://www.sciencedirect.com/science/article/pii/S0165176505000558
+https://doi.org/10.1016/j.econlet.2004.12.011
+2005 Economics Letters 87(3)，319–324。已读出版商索引返回的摘要、设计、引言、结论；直接打开出现403。
+支持：这项实验在保持决策灵活性条件下改变反馈，得到与反馈作用一致的结果。
+不支持：单篇早期研究决定所有情境；忽略后续不一致结果。
+经典Gneezy/Potters研究同时改变反馈与决策周期的设计问题，在本篇和新论文中均有明确讨论。
+
+F3 Schwaiger / Strucks / Zeisberger，Decision Flexibility, Not Information Feedback, Explains Myopic Loss Aversion
+https://www.netspar.nl/en/knowledge-hub/decision-flexibility-not-information-feedback-explains-myopic-loss-aversion/
+https://www.netspar.nl/wp-content/uploads/AP_2026_006_Zeisberger.pdf
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6213023
+https://doi.org/10.2139/ssrn.6213023
+状态核验：https://www.rene-schwaiger.online/working-papers/
+稿日期2025-11-08；SSRN记录2026-02-10；Netspar于2026-06-23发布AP_2026_006。作者页面列为工作论文、在European Economic Review审稿中，未核实已正式发表。姓名按PDF和SSRN：Rene Schwaiger、Markus Strucks、Stefan Zeisberger；作者主页有“Michael”字样，不沿用该差异。
+已读PDF的摘要、方法、主要结果与讨论。两项在线学生实验分别操纵反馈频率和决策频率；招募1810，分析样本737+981=1718。第一项主要差异不显著，第二项及合并结果支持决策周期作用，未发现反馈频率作用。
+边界：学生、简化独立彩票、短实验、特定屏幕设计；不能直接推导真实市场盈利。该工作与部分早期结果不同，应作为新证据而非“完全推翻”。
+安全口播：较新的工作论文把看信息和做决定拆开，结果提示，关键可能更在于反复重做决定。研究仍有边界，少看屏幕并不保证赚钱。
+
+F4 Klos，Myopic loss aversion: Potential causes of replication failures
+https://www.cambridge.org/core/journals/judgment-and-decision-making/article/myopic-loss-aversion-potential-causes-of-replication-failures/5DCAF0528D2344B78EC9A0BE83681384
+https://doi.org/10.1017/S1930297500003703
+原刊2013，页面线上日期2023-01-01，不误写为2023新实验。已读期刊正文的摘要和引言。
+支持：任务形式和人们理解长期回报分布的难度会影响结果，重复研究可能不一致。
+不支持：将观察到的行为差异全部归为单一心理机制；把未复制简化为“理论造假”。
+
+F5 SEC / Investor.gov，Saving and Investing，How Should I Monitor My Investments?
+https://www.investor.gov/sites/investorgov/files/2019-02/Saving-and-Investing.pdf
+已读官方索引返回对应段落（PDF印刷第24页）。
+支持：监控频率需结合投资目标和资产；需要核对表现、风险、费用和交易确认。不能只盯行情，也不能长期放弃检查。
+不支持：存在适合所有人的固定最佳看盘次数；任何新信息都应延后处理。
+可用口播：把价格提醒、定期复盘和风险警报分开。信用、仓位或现金需求变了，该处理的风险仍要处理。
+
+F6 SEC / Investor.gov，Investor Alert: Excessive Trading at Investors’ Expense
+https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-alerts/investor-42
+2017-01-09，已读官方正文。
+支持：频繁买卖伴随佣金等费用，可能使账户承担不必要成本；核对交易理由及费用。
+不支持：所有主动交易都是过度交易；用历史执法个案证明所有交易必然亏损。
+数值费用演示是原创假设，来源仅支持费用会侵蚀回报的一般机制。
+
+二、原创连续镜头算例（不是原文数据，不是市场统计）
+
+路径示例
+起点100，随后七期末依次102、101、104、103、106、104、108。
+共8个时点、7个区间；上涨4个区间，下跌3个区间；末值108，持有总回报8%。
+每段绝对变化：+2、-1、+3、-1、+3、-2、+4。它们是净值点数，不应标成百分比。
+逐期看到三个负变化；只比起点与终点看到+8%。同一持仓、同一价格路径、无交易、无费用，所以真实收益完全相同。不同展示并不抹掉中间回撤。
+不要把‘3/7’称为亏损概率；它只是这条人为构造路径的负区间比例。
+若需要分组，明确不同窗口长度；7个区间不能假装正好是三个等长组。
+
+费用示例
+假设市场价格全程不变；从10000元开始；每笔单边交易按当时账户余额扣0.2%；资金均被重新投入；无其他费用/税/收益；十次往返共20笔。
+终值 = 10000 × (1 - 0.002)^20 = 9607.50957026343元。
+损失 = 392.49042973657元；比例 = 3.92490429736573%，画面可写约3.9%。
+若表达交易费用，不能含糊写‘一次费用0.2%’然后让观众自行猜单边还是双边。
+这个算例只隔离成本，不证明所有多交易策略输给少交易；有信息优势的收益也可能覆盖成本，但需证据。
+
+三、口播与画面需保留的护栏
+1. 每个原创图旁标“假设路径/机制示意”。
+2. 工作论文标签保留；学术证据只说风险配置/行为，不替换成实盘盈利保证。
+3. ‘少做无依据的临时决定’是本片提出的管理思路，不包装成论文规定。
+4. 不对称盈亏感受若做动画，用示意而不报统一2倍。
+5. 把重大风险监控作为独立通道，不能鼓励闭眼持有或忽略资金需要。
+6. 不使用猴子实验、草原大脑、确定性的神经机制来解释所有投资者。
+
+所有链接由助手本轮检索发现；不是用户新提供链接。无外放、无付费服务、无第三方发送。

@@ -1,0 +1,17 @@
+{
+  "measurement": {
+    "input_i": "-14.03",
+    "input_tp": "-1.00",
+    "input_lra": "2.80",
+    "input_thresh": "-24.66",
+    "output_i": "-14.05",
+    "output_tp": "-1.00",
+    "output_lra": "2.80",
+    "output_thresh": "-24.70",
+    "normalization_type": "dynamic",
+    "target_offset": "0.05"
+  },
+  "speakerPlayback": false,
+  "listeningReview": "not_performed",
+  "source": "weilanx synth.mjs and bgm.mjs; Yunxi whole paragraph"
+}

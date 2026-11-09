@@ -1,0 +1,157 @@
+{
+  "status": "reviewed",
+  "mediaSha256": "2702e52c6d8cd3271edcc6dcc2b95e34fa998a7cea3896d7e381f70766f46ff3",
+  "method": "whole-film-dense-sequence",
+  "sections": [
+    {
+      "start": 0,
+      "end": 7.1,
+      "observed": "黑金空间三层窗口由 1.3 倍收到 1 倍，人物在左下；页眉与标题稳定",
+      "newInformation": "先把观察对象定死：一个人、一条队列、一个服务台"
+    },
+    {
+      "start": 7.1,
+      "end": 15.7,
+      "observed": "空间层保持，字幕依次给出「从进队到离开」「三个量」「一次只服务一个人」",
+      "newInformation": "明确等待的定义与三个参量，属于阅读段"
+    },
+    {
+      "start": 15.7,
+      "end": 22.0,
+      "observed": "12 个金点从等间隔滑到模拟位置，出现聚簇与空档",
+      "newInformation": "到达不均匀，「平均 0.67 分钟」会掩盖成串"
+    },
+    {
+      "start": 22.0,
+      "end": 29.0,
+      "observed": "60 个点飞入四个区间，柱高依次长到 17/15/21/7",
+      "newInformation": "等待时间是长尾，不是钟形"
+    },
+    {
+      "start": 29.0,
+      "end": 34.9,
+      "observed": "柱状图保持，字幕点出「少数人等很久」「长尾才是成本」「平均值看不出」",
+      "newInformation": "把长尾与平均值对照"
+    },
+    {
+      "start": 34.9,
+      "end": 43.3,
+      "observed": "两条同尺度窗口移到中央重叠，0.67 与 0.6 分钟标签分置上下",
+      "newInformation": "两个时长只差 10%，系统看起来刚刚好"
+    },
+    {
+      "start": 43.3,
+      "end": 51.5,
+      "observed": "W = 1/(μ−λ) 中的 (μ−λ) 划掉、10 补上",
+      "newInformation": "参数代入，得到 1/10"
+    },
+    {
+      "start": 51.5,
+      "end": 57.7,
+      "observed": "1/10 划掉，换成 W = 6 分钟",
+      "newInformation": "换算成分钟"
+    },
+    {
+      "start": 57.7,
+      "end": 71.3,
+      "observed": "坐标轴上依次画出 50%→1.2、80%→3、90%→6 分钟三段",
+      "newInformation": "等待随利用率上翘，90% 是逼近极限"
+    },
+    {
+      "start": 71.3,
+      "end": 78.4,
+      "observed": "60 个点过「≤2 分」一道门，17 个通过",
+      "newInformation": "同样这批人，2 分钟内办完的是少数"
+    },
+    {
+      "start": 78.4,
+      "end": 90.8,
+      "observed": "换成两道门（≤2 分、≤6 分）：17 过两门、19 过一门、24 没过；结论停在片尾",
+      "newInformation": "放宽门槛也只多放进一部分，余量才是保险"
+    }
+  ],
+  "holds": [
+    {
+      "id": "hold-0",
+      "start": 7.1,
+      "end": 15.7,
+      "seconds": 8.6,
+      "decision": "keep",
+      "reason": "动作在 7 秒结束，之后是字幕给出等待的定义与三个参量；三层窗口的标签需要被读完。"
+    },
+    {
+      "id": "hold-1",
+      "start": 15.7,
+      "end": 22.033333,
+      "seconds": 6.333,
+      "decision": "keep",
+      "reason": "到达点已落位，位置本身就是证据；字幕在解释「一段挤一段空」，继续抖动只会变成噪声。"
+    },
+    {
+      "id": "hold-2",
+      "start": 22.033333,
+      "end": 26.266667,
+      "seconds": 4.233,
+      "decision": "keep",
+      "reason": "这一段的动效是 60 个点飞入，点小、密度高，freezedetect 判为近静止；实际每 0.2 秒都有点落位（见 qa/cinema-probes/s3-*）。"
+    },
+    {
+      "id": "hold-3",
+      "start": 28.966667,
+      "end": 34.866667,
+      "seconds": 5.9,
+      "decision": "keep",
+      "reason": "柱高已长满，4 秒是让人数清 17/15/21/7。"
+    },
+    {
+      "id": "hold-4",
+      "start": 43.333333,
+      "end": 51.5,
+      "seconds": 8.167,
+      "decision": "keep",
+      "reason": "第一段公式完成代入后停住，读 W = 1/10 与 μ、λ 的说明。"
+    },
+    {
+      "id": "hold-5",
+      "start": 51.5,
+      "end": 57.7,
+      "seconds": 6.2,
+      "decision": "keep",
+      "reason": "第二段公式完成换算后停住，读 W = 6 分钟。"
+    },
+    {
+      "id": "hold-6",
+      "start": 57.7,
+      "end": 71.266667,
+      "seconds": 13.567,
+      "decision": "keep",
+      "reason": "曲线三点在 64.9 秒前画完，之后 6 秒读出 6 分钟与「逼近极限」。freezedetect 把整段 13.6 秒判为静止，实际前 7 秒有描线（cinema-probes/s7-*）。"
+    },
+    {
+      "id": "hold-7",
+      "start": 71.266667,
+      "end": 90.8,
+      "seconds": 19.533,
+      "decision": "keep",
+      "reason": "两道筛选的终点分布保持到片尾，字幕给结论。这是有意为之的收尾静止，但也是全片最长的 19.5 秒近静止段。"
+    }
+  ],
+  "unresolved": [],
+  "contactSheets": [
+    "qa/full-sequence-00.jpg",
+    "qa/full-sequence-01.jpg",
+    "qa/full-sequence-02.jpg",
+    "qa/full-sequence-03.jpg",
+    "qa/full-sequence-04.jpg",
+    "qa/full-sequence-05.jpg",
+    "qa/full-sequence-06.jpg"
+  ],
+  "scope": "Producer full-film observation; not user acceptance.",
+  "methodDetail": "整片 2fps 接触表 7 张（qa/full-sequence-00..06.jpg）从 0 看到 90.8 秒；曲线与筛选另用 qa/cinema-probes 的逐镜五帧加密核对。近静止区间按「字幕是否在推进论证」逐条判断，不用静帧冒充动作。",
+  "knownWeaknesses": [
+    "8 段近静止里，曲线段 13.6 秒与筛选段 19.5 秒最长；freezedetect 只按整帧亮度差判断，小面积点位移动会被算成静止，但观感上仍偏讲解式。",
+    "开场 0–7 秒画面几乎不动，靠字幕进入主题。",
+    "histogram 与 filters 的点直径小，手机尺寸下会偏碎。",
+    "曲线只有三个点，说服力不如密集采样，但 recipe 只接受 2–8 个点。"
+  ]
+}

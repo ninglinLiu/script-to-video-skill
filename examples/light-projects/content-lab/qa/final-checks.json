@@ -1,0 +1,192 @@
+[
+  {
+    "style": "editorial",
+    "duration": 30.0,
+    "frames": 900,
+    "size": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "silentPreviewAudioStreams": 0,
+    "normalVersionAudioStreams": 1,
+    "fullDecode": "pass",
+    "loudness": {
+      "input_i": "-18.68",
+      "input_tp": "-2.53",
+      "input_lra": "9.90",
+      "input_thresh": "-30.18",
+      "output_i": "-16.29",
+      "output_tp": "-1.00",
+      "output_lra": "4.60",
+      "output_thresh": "-27.46",
+      "normalization_type": "dynamic",
+      "target_offset": "0.29"
+    },
+    "events": [
+      [
+        1.501458,
+        "tap"
+      ],
+      [
+        3.006291,
+        "stamp"
+      ],
+      [
+        6.281541,
+        "chime"
+      ],
+      [
+        12.337375,
+        "chain"
+      ],
+      [
+        14.230583,
+        "turn"
+      ],
+      [
+        20.189333,
+        "tap"
+      ],
+      [
+        22.567958,
+        "tap"
+      ],
+      [
+        24.315541,
+        "chime"
+      ]
+    ],
+    "sha256": "912e8d8e8650277b147594b3b8338b7fed882735dba7d36ae4efe7a846525a14",
+    "listening": "not performed; user requested no speaker playback",
+    "userAcceptance": "pending"
+  },
+  {
+    "style": "spatial",
+    "duration": 30.0,
+    "frames": 900,
+    "size": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "silentPreviewAudioStreams": 0,
+    "normalVersionAudioStreams": 1,
+    "fullDecode": "pass",
+    "loudness": {
+      "input_i": "-19.38",
+      "input_tp": "-2.32",
+      "input_lra": "12.90",
+      "input_thresh": "-30.63",
+      "output_i": "-17.07",
+      "output_tp": "-1.00",
+      "output_lra": "5.20",
+      "output_thresh": "-27.69",
+      "normalization_type": "dynamic",
+      "target_offset": "1.07"
+    },
+    "events": [
+      [
+        3.050916,
+        "turn"
+      ],
+      [
+        5.805541,
+        "tap"
+      ],
+      [
+        10.967583,
+        "tap"
+      ],
+      [
+        13.351833,
+        "chime"
+      ],
+      [
+        15.898166,
+        "turn"
+      ]
+    ],
+    "sha256": "380a1c1daec7eb04d2c34f24ba7bd46cf218af9e8bc72671bdcef04f06aea766",
+    "listening": "not performed; user requested no speaker playback",
+    "userAcceptance": "pending"
+  },
+  {
+    "style": "pixel",
+    "duration": 30.0,
+    "frames": 900,
+    "size": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "silentPreviewAudioStreams": 0,
+    "normalVersionAudioStreams": 1,
+    "fullDecode": "pass",
+    "loudness": {
+      "input_i": "-18.83",
+      "input_tp": "-2.51",
+      "input_lra": "13.10",
+      "input_thresh": "-30.20",
+      "output_i": "-16.88",
+      "output_tp": "-1.00",
+      "output_lra": "2.40",
+      "output_thresh": "-27.72",
+      "normalization_type": "dynamic",
+      "target_offset": "0.88"
+    },
+    "events": [
+      [
+        0.3,
+        "step"
+      ],
+      [
+        0.64,
+        "step"
+      ],
+      [
+        0.98,
+        "step"
+      ],
+      [
+        1.32,
+        "step"
+      ],
+      [
+        1.6600000000000001,
+        "step"
+      ],
+      [
+        1.774041,
+        "tap"
+      ],
+      [
+        11.264166,
+        "turn"
+      ],
+      [
+        12.797166,
+        "chime"
+      ],
+      [
+        14.7665,
+        "chain"
+      ],
+      [
+        16.134416,
+        "tap"
+      ],
+      [
+        21.382083,
+        "turn"
+      ],
+      [
+        25.202833,
+        "chime"
+      ]
+    ],
+    "sha256": "5198472f853ef41f520710f00352b54e29be2448785d8ab06333e7d24934f267",
+    "listening": "not performed; user requested no speaker playback",
+    "userAcceptance": "pending"
+  }
+]

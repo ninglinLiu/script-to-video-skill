@@ -1,0 +1,21 @@
+{
+  "status": "revision_candidate",
+  "technical_passed": true,
+  "checks": {
+    "size": true,
+    "duration": true,
+    "fps": true,
+    "bitrate": true,
+    "audio": true,
+    "av_end": true,
+    "full_decode": true,
+    "no_black_250ms": true,
+    "no_silence_1300ms": true
+  },
+  "duration": "66.200000",
+  "video_bitrate": "9033092",
+  "sha256": "d79f5d5faf671fb5b0f4e76c18b62761416c9c89c04a98956c630672fa01e9c7",
+  "aesthetic_acceptance": "not claimed; prior version rejected",
+  "audio_review": "-16.1 LUFS, -1.0 dBTP measured; no human listening certification",
+  "editor_import": "XML structure only; Premiere not opened"
+}

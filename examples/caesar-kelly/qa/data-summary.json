@@ -1,0 +1,40 @@
+{
+ "p": 0.6,
+ "n": 100,
+ "runs": 10000,
+ "seed": 2026,
+ "sequence": "HHTHTHTTHHTHTHHHHTHHHTTHTHHHHHHHHTTHHTHTTHHTTTTTHHHTHTHHHHTHTHHTTTHTHHHHHTTHHTHTHHHTHHHTTTTHTTHTHHHH",
+ "finals60_40": {
+  "0.1": 4.500507471877808,
+  "0.2": 7.489869357112161,
+  "0.3": 4.370415612848331,
+  "0.4": 0.7829466244153039,
+  "0.5": 0.03344072749035424
+ },
+ "threshold": 0.3893906833348594,
+ "kelly": 0.19999999999999996,
+ "stats": {
+  "0.2": {
+   "profit": 0.8215,
+   "under1pct": 0.0004,
+   "median": 7.489869357112179,
+   "expected": 50.50494818426959
+  },
+  "0.5": {
+   "profit": 0.2445,
+   "under1pct": 0.3781,
+   "median": 0.03344072749035431,
+   "expected": 13780.612339822103
+  }
+ },
+ "experiment": {
+  "players": 61,
+  "bust": 17,
+  "bustShare": 0.28,
+  "stake": 25,
+  "minutes": 30,
+  "source": "Haghani & Dewey (2016), Rational Decision-Making under Uncertainty, arXiv:1701.01427: 28% of participants went bust"
+ },
+ "pathPeak50": 10.95970846095588,
+ "pathMin20": 0.8493465600000001
+}

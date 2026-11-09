@@ -1,0 +1,44 @@
+{
+  "reviewedDate": "2026-10-23",
+  "reviewer": "frequency_facts independent research agent",
+  "status": "approved_for_tts_with_visual_guardrails",
+  "blockingIssues": [],
+  "scope": "逐章逐句事实与数值审核；未改稿；不等于审美验收或真实金融建议有效性检验。",
+  "reviewedFiles": [
+    {"path": "source/draft.txt", "sha256": "c2153de3436ed3cc343a2ddfd81e874c54b6efc5a382e6c73f0fb94c6a61d1e6"},
+    {"path": "source/script.json", "sha256": "3d4f8e2798a47428177b4bedd4d2609faeb5f37412f14b0581363a20eeff59e0"}
+  ],
+  "chapterReview": [
+    {"id": "hook", "result": "pass", "note": "两个人不同感受是原创情景，不是研究参与者记录。开头画面就标假设路径，避免被当作真实投资业绩。"},
+    {"id": "path", "result": "pass", "note": "8个时点7次变化，3次下跌，100到108为8%。价格不应额外画出成交，才能保持同一持仓收益相同。相邻绝对差是净值点数，勿全标为百分比。"},
+    {"id": "reference", "result": "pass", "note": "104相对买入100为+4%，相对高点106为约-1.89%；若展示-2必须标净值点，而非-2%。这一节是回看第6期，不应把108后回放104当作新一期下跌。损失厌恶表述保留个体差异及非固定两倍。"},
+    {"id": "model", "result": "pass", "note": "符合经典模型组合，并明确区分反馈频率与决策频率。"},
+    {"id": "research", "result": "pass", "note": "1810为招募数，准确；剔除后样本为737+981=1718，可放来源说明，不必挤入口播。第一项主要处理差异不显著，第二项及合并分析支持决策频率。工作论文/在审/风险投入并非股票收益等限定已到位。"},
+    {"id": "cost", "result": "pass", "note": "20笔单边交易，每笔按余额扣0.2%，10000×0.998^20=9607.509570...，四舍五入9608，损失约3.9%。属于明确假设，不是实际券商收费公式。图中必须显示‘单边0.2%/零市场收益/全仓20笔’，计算数值需从统一函数派生。"},
+    {"id": "signal", "result": "pass", "note": "列举改变决策的示例，保留价格可能含信息。片中不要把这些例子标成唯一充分条件。"},
+    {"id": "protocol", "result": "pass", "note": "制作方提出的决策管理思路，不是论文实验直接验证的实盘获利策略。保留风险监测和提前处理条件。"},
+    {"id": "end", "result": "pass", "note": "原创结尾，不构成收益承诺。"}
+  ],
+  "paperVerification": {
+    "title": "Decision Flexibility, Not Information Feedback, Explains Myopic Loss Aversion",
+    "authors": ["Rene Schwaiger", "Markus Strucks", "Stefan Zeisberger"],
+    "status": "Working paper; author's page says under review at European Economic Review; no verified journal acceptance",
+    "manuscriptDate": "2025-11-08",
+    "ssrnPosted": "2026-02-10",
+    "netsparPublished": "2026-06-23",
+    "doi": "10.2139/ssrn.6213023",
+    "olderVersionDoi": "10.2139/ssrn.5721542",
+    "urls": [
+      "https://www.netspar.nl/en/knowledge-hub/decision-flexibility-not-information-feedback-explains-myopic-loss-aversion/",
+      "https://www.netspar.nl/wp-content/uploads/AP_2026_006_Zeisberger.pdf",
+      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6213023",
+      "https://www.rene-schwaiger.online/working-papers/"
+    ],
+    "readingRange": "PDF abstract, introduction, design, major results, discussion; official repository and author status pages",
+    "limits": "Students in incentivized simplified online lotteries, not a trial of stock-investment profits. Earlier studies are mixed. Non-significance does not prove universal zero effect."
+  },
+  "factReport": "../../research-new-20261023/facts/事实核查与原创算例.txt",
+  "ttsAllowed": true,
+  "audioPlayed": false,
+  "userAcceptance": "pending"
+}

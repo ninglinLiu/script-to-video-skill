@@ -1,0 +1,16 @@
+实际工具返回的高清逐段渲染耗时（修正接触位置后的完整一轮）
+scene 1: 218 frames, 24.3 seconds
+scene 2: 249 frames, 26.4 seconds
+scene 3: 160 frames, 15.2 seconds
+scene 4: 142 frames, 13.8 seconds
+scene 5: 179 frames, 16.8 seconds
+scene 6: 248 frames, 20.8 seconds
+scene 7: 228 frames, 21.6 seconds
+scene 8: 151 frames, 14.3 seconds
+scene 9: 181 frames, 21.4 seconds
+scene 10: 321 frames, 37.5 seconds
+共2077帧；逐段编码/画面采集耗时之和212.1秒，不含浏览器初始化、最终字幕编码与技术检查。
+完整低清预览：2077帧，540×960，1个时间样本，61.1秒。
+高清：1080×1920，30 fps，每帧3个时间样本。
+第一轮高清在第二段期间主动中止，以修正企业展示台接触位置；第一段当时已用25.1秒。该部分没有冒充最终交付。
+首次字幕编码扫描了整个assets目录，libass报告部分PNG/WAV不是字体；两份TTF仍可读取。后续入口已改为只含字体的font-cache目录，避免这些无关提示。

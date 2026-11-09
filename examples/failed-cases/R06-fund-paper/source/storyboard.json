@@ -1,0 +1,62 @@
+[
+  {
+    "objectId": "statement-card",
+    "before": "只有标题与一张空的成交记录卡",
+    "after": "账单卡填满五行：卖方、团队 8 人、160 亿美元、36 小时、买方 Citadel，并盖上「折价成交」",
+    "cue": "2026 年 7 月 30 日，一家只有 8 人的基金，把 16 亿美元的公开持仓，36 小时内卖给了 Citadel。",
+    "entry": "卡片 0.5 秒淡入，行数据从 cue2 起逐行进入",
+    "exit": "9.04 秒切到统计行",
+    "numericInvariant": "8 人 / 160 亿美元 / 36 小时 全部来自 content.json 的绑定值",
+    "verificationTime": "0.70–9.04s"
+  },
+  {
+    "objectId": "three-stats",
+    "before": "统计区只有 439% 一行",
+    "after": "三行读数：439% 净回报、2.25 亿→450 亿（200 倍）、4 倍杠杆，并加一句「必须一直对」",
+    "cue": "创始人 25 岁，OpenAI 出身；上半年回报 439%，规模从 2.25 亿美元做到 450 亿美元，靠的是 4 倍杠杆。",
+    "entry": "每行在对应 cue 前 0.15 秒从右侧滑入",
+    "exit": "20.28 秒切到两侧对照",
+    "numericInvariant": "200 = 450 / 2.25（compile 派生）；439% = 4.39 按百分比格式化",
+    "verificationTime": "9.17–20.28s"
+  },
+  {
+    "objectId": "two-legs",
+    "before": "画面只有标题",
+    "after": "左栏做多 −48%（其中 SanDisk −56%），右栏做空「反弹」，下方 4 倍乘数",
+    "cue": "七月，他做多的 AI 基建暴跌，Nebius 跌 48%，SanDisk 跌 56%；做空的软件股却在反弹，多空两头挨打，杠杆把亏损放大。",
+    "entry": "左栏随 cue5、右栏随 cue6、乘数随 cue7 依次进入",
+    "exit": "33.14 秒切到时间线",
+    "numericInvariant": "48% / 56% / 4 倍 均绑定，画面与口播同源",
+    "verificationTime": "20.41–33.14s"
+  },
+  {
+    "objectId": "timeline",
+    "before": "空白竖线",
+    "after": "三个日期节点：07/24 募集信、07/29 追加保证金、07/30 折价卖出",
+    "cue": "二十四号他还在募集资金；二十九号，三家主经纪商同时要求追加保证金；三十号，全部持仓折价卖出。",
+    "entry": "竖线 33.3 秒生长，节点按 cue 依次出现",
+    "exit": "43.20 秒切到反转",
+    "numericInvariant": "日期来自文章原文，不使用口播里未出现的数字",
+    "verificationTime": "33.27–43.20s"
+  },
+  {
+    "objectId": "reversal-rows",
+    "before": "两行空白读数",
+    "after": "卖出当天纳指 100 +3%；AI 概念股 +15%–25%；下方给出「黎明前五分钟」",
+    "cue": "卖掉当天，纳斯达克一百涨 3%，AI 股反弹 15% 到 25%；他看对了方向，却死在黎明前五分钟。",
+    "entry": "两行分别在 cue11、cue12 淡入",
+    "exit": "53.17 秒切到结论",
+    "numericInvariant": "3% / 15% / 25% 绑定；不用柱高暗示两者倍数",
+    "verificationTime": "43.33–53.17s"
+  },
+  {
+    "objectId": "verdict",
+    "before": "空白纸面",
+    "after": "两行结论 + 一行出处说明，保持到片尾",
+    "cue": "杠杆不改变方向，只改变速度；方向再对，也要活到兑现的那一天。",
+    "entry": "两段分别在 cue13、cue14 落定",
+    "exit": "61.93 秒结束",
+    "numericInvariant": "结论句不含新数字",
+    "verificationTime": "53.30–61.93s"
+  }
+]

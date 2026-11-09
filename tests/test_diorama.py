@@ -110,7 +110,9 @@ class Docs(unittest.TestCase):
     def test_relative_links_point_to_tracked_files(self):
         files = tracked()
         dirs = {str(Path(f).parent).replace('\\', '/') for f in files}
-        for doc in ('README.md', 'SKILL.md', 'references/diorama-3d.md', 'references/motion-craft.md', 'assets/diorama-kit/README.md', 'examples/binance-1029/README.md', 'examples/pareto-diorama/README.md', 'evals/README.md'):
+        for doc in ('README.md', 'SKILL.md', 'references/diorama-3d.md', 'references/motion-craft.md', 'assets/diorama-kit/README.md', 'examples/binance-1029/README.md', 'examples/pareto-diorama/README.md', 'evals/README.md',
+                    'references/audio-and-materials.md', 'examples/caesar-ai-bubble/README.md', 'examples/failed-cases/README.md', 'docs/sample-catalog.md', 'docs/removals.md',
+                    'references/sim-typography.md', 'assets/sim-kit/README.md', 'examples/caesar-kelly/README.md'):
             base = Path(doc).parent
             for link in self.LINK.findall((ROOT / doc).read_text('utf-8')):
                 if re.match(r'[a-z]+:', link):

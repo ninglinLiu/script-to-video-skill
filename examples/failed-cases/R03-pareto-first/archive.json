@@ -1,0 +1,12 @@
+{
+  "reflection": "R03",
+  "status": "user-rejected",
+  "local_project": "Claudebao/productions/pareto-8020-60s",
+  "local_film_sha256": "c57642fc4e885e012ccceddd0bed970f864b7a05f10778872a3fbb447dccb0d4",
+  "seconds": 68.83,
+  "width": 1080,
+  "height": 1920,
+  "preview_sha256": "5bd8e16eb9329bf3e886cf13af4b5e23ea53795ee0076a1fa2631cd080ac476d",
+  "copied_text_files": 39,
+  "note": "高码率原片与依赖留在本机；此处预览由原片转码，去掉音轨。"
+}

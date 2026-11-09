@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script type="module">
+import {stage, frame} from './engine.js';
+import {build} from './scene.js';
+try {
+  // 字体由 render.mjs 从系统字体目录提供：/font/serif（思源宋体/Noto Serif SC）、/font/mono（等宽）
+  for (const [name, url, weight] of [['KSerif', '/font/serif', '200 900'], ['KMono', '/font/mono', '200 900']]) {
+    const f = new FontFace(name, `url(${url})`, {weight}); await f.load(); document.fonts.add(f);
+  }
+  const data = await (await fetch('data.json')).json();
+  const {sections, duration} = build(data);
+  const S = stage(document.getElementById('c'));
+  window.__dur = duration;
+  window.__cards = sections.map(s => ({start: s.t0, end: s.t1, text: s.name || ''}));
+  window.renderFrame = t => frame(S, t, sections);
+  window.renderFrame(0);
+  window.__ready = true;
+} catch (e) { window.__bootFailed = String(e && e.stack || e); }
+</script></body></html>

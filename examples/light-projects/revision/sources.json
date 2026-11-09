@@ -1,0 +1,30 @@
+{
+  "renderer": {
+    "repository": "https://github.com/Kianzzz/xilo-opus-video",
+    "commit": "f2cd828e2692e7186186408ee01a936707c2c38d",
+    "file": "skills/xilo-opus-video/scripts/render.py",
+    "modified": false
+  },
+  "fonts": "../vibe-knowledge-test/productions/opus_poisson_30s/assets/fonts",
+  "music": {
+    "title": "Vastness",
+    "artist": "Andrew Ev",
+    "source": "https://assets.mixkit.co/music/184/184.mp3",
+    "license": "https://mixkit.co/license/#musicFree"
+  },
+  "narration": "reused from first render; not newly synthesized",
+  "article": "https://mp.weixin.qq.com/s/ywlZ9BKrsn1yA8V6ugmgnA",
+  "visuals": "new authored composition; structural method from xilo and existing Poisson project",
+  "final_renderer": {
+    "file": "render_existing.mjs",
+    "derived_from": "vibe-knowledge-test/productions/poisson_90s/render.mjs",
+    "changes": [
+      "portrait dimensions",
+      "local composition URL",
+      "duration",
+      "output paths",
+      "9Mbps target",
+      "exit timeout"
+    ]
+  }
+}

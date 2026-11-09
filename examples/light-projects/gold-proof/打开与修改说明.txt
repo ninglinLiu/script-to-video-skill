@@ -1,0 +1,26 @@
+﻿《降息，为什么不等于放水？》五步执行包 / 2026-10-22
+
+入口：双击 五步执行报告.html，含完整原文整理、候选决策、口播稿、分镜、实际样片及来源。
+静音样片：out/final-silent.mp4。12.27秒，9:16，1080×1920，30fps。
+带声音文件：out/sample-with-audio.mp4。需用户自行播放；本轮未外放、未人工听音。
+字幕：out/两种工具_样片.srt。来自云希的真实 WordBoundary，不是逐字平均分配。
+原文和核查：source/。原始全文未改动，所有原文位置按 source/原文逐行编号.txt。
+实际渲染分镜与连续帧：qa/。
+工程：工程/src/TwoControls.tsx（物件与镜头）、工程/src/timing.json（配音时间线）。
+
+环境：Node.js、Remotion、React、FFmpeg、Python3 + edge-tts。已有电脑通过node_modules目录联接复用weilanx安装；ZIP不包含node_modules。新电脑进入工程目录运行 npm ci，再运行 render.ps1 -Mode final（Windows需在脚本中指定本机Chrome无头浏览器路径）。
+重新生成配音：在外层目录运行 python prepare_audio.py。需网络；现有MP3与词时间戳已随包，无需重复请求。
+重新配乐：进入工程目录运行 node music.mjs，再回到外层运行 python mix_audio.py。
+重新报告：python make_report.py。最终复查：python finalize.py。
+更换文案后须重新核对配音缓存、时间线与分镜，不能只换字幕。
+
+本轮不是60–90秒全片：完整口播稿约290个汉字，六段分镜暂排65秒；只导出其中的连续解释小样。
+全片其他段落没有渲染。技术通过不等于审美通过，不宣称任意文章的自动化质量已稳定。
+
+实际使用的GitHub项目：
+https://github.com/Azure12355/weilanx-claude-videos
+复用Remotion工程、缓动/投影、字体与合成声音组件；许可证见工程/WEILANX-LICENSE。
+https://github.com/Kianzzz/xilo-opus-video
+读取并采用对象状态和实际连续小样验收方法；没有运行其渲染器。
+
+独立新目录，未覆盖旧片；本轮没有向飞书上传，也没有发布到公众号。

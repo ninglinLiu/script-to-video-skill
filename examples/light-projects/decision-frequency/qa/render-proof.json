@@ -1,0 +1,23 @@
+{
+  "mode": "proof",
+  "seconds": 18.86,
+  "composition": {
+    "id": "decision-machine",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationInFrames": 5204,
+    "props": {},
+    "defaultProps": {},
+    "defaultCodec": null,
+    "defaultOutName": null,
+    "defaultVideoImageFormat": null,
+    "defaultPixelFormat": null,
+    "defaultProResProfile": null,
+    "defaultSampleRate": null
+  },
+  "range": [
+    800,
+    1189
+  ]
+}

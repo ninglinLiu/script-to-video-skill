@@ -1,0 +1,11 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {buildBgm} from './audio/bgm.mjs';
+import {SR,renderSfx,encodeWav,mixInto} from './audio/synth.mjs';
+const tl=JSON.parse(readFileSync('src/timing.json','utf8'));
+const rate=tl.cues[2].start-.2,bond=tl.cues[3].start-.2,back=tl.cues[4].start-.15;
+buildBgm({voice:'../assets/voice-track.wav',out:'../assets/music-track.wav',sections:[[0,'light'],[rate,'break'],[bond,'light'],[back,'end']],level:.024,depth:.72});
+const fx=new Float32Array(Math.ceil(tl.seconds*SR));
+const events=[[.32,'click',.055],[rate,'whoosh',.03],[rate+.4,'click',.055],[bond+.35,'paper',.065],[bond+1.85,'click',.06],[back+.65,'ding',.035]];
+for(const [at,name,gain] of events)mixInto(fx,renderSfx(name),at,gain);
+writeFileSync('../assets/sfx-track.wav',encodeWav(fx,SR));
+writeFileSync('../qa/audio-events.json',JSON.stringify(events.map(([time,name,gain])=>({time,name,gain})),null,2));

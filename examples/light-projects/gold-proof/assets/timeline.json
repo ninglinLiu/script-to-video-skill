@@ -1,0 +1,40 @@
+{
+  "cues": [
+    {
+      "text": "降息和缩表",
+      "start": 0.44999999999999996,
+      "end": 1.5875
+    },
+    {
+      "text": "可以同时发生",
+      "start": 1.775,
+      "end": 2.8625000000000003
+    },
+    {
+      "text": "一个调低短期资金的价格",
+      "start": 3.4375,
+      "end": 5.324999999999999
+    },
+    {
+      "text": "一个减少央行持有的证券",
+      "start": 5.55,
+      "end": 7.3625
+    },
+    {
+      "text": "两件事",
+      "start": 7.9375,
+      "end": 8.674999999999999
+    },
+    {
+      "text": "别看成同一个按钮",
+      "start": 8.924999999999999,
+      "end": 10.1625
+    }
+  ],
+  "seconds": 12.266666666666667,
+  "frames": 368,
+  "fps": 30,
+  "voiceDelay": 0.35,
+  "wordBoundarySource": "edge-tts real WordBoundary; not character interpolation",
+  "key": "7ac004d836aea6263dc150909cb753cf81a88484f722730518428838efc51fcc"
+}

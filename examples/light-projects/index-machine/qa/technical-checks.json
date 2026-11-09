@@ -1,0 +1,36 @@
+{
+  "outputs": [
+    {
+      "file": "final-silent.mp4",
+      "seconds": 179.4,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 5382,
+      "audioStreams": 0,
+      "pixelFormat": "yuv420p",
+      "decode": "pass",
+      "bytes": 23042582,
+      "sha256": "ed4e0926ccf8469c58baef829b8c03c7ca0abd6a0cd76069c934708ace84646e"
+    },
+    {
+      "file": "final-with-audio.mp4",
+      "seconds": 179.4,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 5382,
+      "audioStreams": 1,
+      "pixelFormat": "yuv420p",
+      "decode": "pass",
+      "bytes": 27433115,
+      "sha256": "2f6c29e5036f5dcdad19d3d67cb9197d22195c235f1f857794ad9e920e7a107b"
+    }
+  ],
+  "subtitles": 55,
+  "subtitleTiming": "real Edge TTS WordBoundary, validated start/end and no overlap",
+  "mathematicalChecks": "passed, five-company loss / EPS / PE",
+  "noSpeakerPlayback": true,
+  "listeningReview": false,
+  "aestheticAcceptance": "not claimed"
+}

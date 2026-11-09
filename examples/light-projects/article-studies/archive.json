@@ -1,0 +1,11 @@
+{
+  "sample": "article-studies",
+  "status": "experiment",
+  "local_project": "Claudebao/video-week1/article-studies-20261020",
+  "copied_text_files": 42,
+  "excluded_article_files": [
+    "source/用户提供的三篇正文.txt"
+  ],
+  "excluded_copied_text": [],
+  "note": "原工程留在制作者本机；文章全文、依赖、字体和媒体不入库。视频在 catalog 的 media 字段。"
+}

@@ -1,0 +1,335 @@
+{
+  "profile": "task-short",
+  "episode": "Claudebao\\productions\\kaisa-next-60s",
+  "status": "incomplete",
+  "checks": [
+    {
+      "name": "narrated_mp4",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\kaisa-next-60s\\out\\final-with-audio.mp4"
+    },
+    {
+      "name": "duration",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "actual": 61.933333,
+        "min": 60,
+        "max": 90,
+        "profile": "task-short"
+      }
+    },
+    {
+      "name": "video_format",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640028",
+        "width": 1080,
+        "height": 1920,
+        "coded_width": 1080,
+        "coded_height": 1920,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "9:16",
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "chroma_location": "center",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 951296,
+        "duration": "61.933333",
+        "bit_rate": "9968270",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "1858",
+        "extradata_size": 63,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc62.28.102 libx264"
+        }
+      }
+    },
+    {
+      "name": "video_bitrate",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "actual": 9968270,
+        "policy": "minimum 8Mbps"
+      }
+    },
+    {
+      "name": "audio",
+      "passed": true,
+      "required": true,
+      "detail": [
+        "aac"
+      ]
+    },
+    {
+      "name": "full_decode",
+      "passed": true,
+      "required": true,
+      "detail": ""
+    },
+    {
+      "name": "real_voice_timestamps",
+      "passed": true,
+      "required": true,
+      "detail": "real edge-tts WordBoundary"
+    },
+    {
+      "name": "subtitle_intervals",
+      "passed": true,
+      "required": true,
+      "detail": 15
+    },
+    {
+      "name": "subtitle_voice_alignment",
+      "passed": true,
+      "required": true,
+      "detail": "SRT groups must start/end on measured voice cues"
+    },
+    {
+      "name": "srt_file",
+      "passed": true,
+      "required": true,
+      "detail": "one or more authored SRT files"
+    },
+    {
+      "name": "source_evidence",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\kaisa-next-60s\\evidence\\source-manifest.json"
+    },
+    {
+      "name": "script_review",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\kaisa-next-60s\\evidence\\script-review.json"
+    },
+    {
+      "name": "shot_contracts",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\kaisa-next-60s\\source\\storyboard.json"
+    },
+    {
+      "name": "approved_script_unchanged",
+      "passed": true,
+      "required": true,
+      "detail": "Review hash and actual spoken content both checked"
+    },
+    {
+      "name": "shot_state_contracts",
+      "passed": true,
+      "required": true,
+      "detail": 6
+    },
+    {
+      "name": "task_shot_count",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "actual": 6,
+        "min": 5,
+        "max": 8
+      }
+    },
+    {
+      "name": "render_record",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\kaisa-next-60s\\qa\\render-full.json"
+    },
+    {
+      "name": "final_visual_review",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "status": "reviewed_with_fixes",
+        "reviewedFinalSha256": "aef4284480b6919debb680e0ec4f1909761dcd0c5a42d882ff8ff4aa4c404e89",
+        "reviewedAt": "2026-10-26T12:05:00+08:00",
+        "reviewer": "producer (agent)",
+        "method": "从最终 MP4 解码 14 帧 + 整片 2fps 接触表 5 张，逐段核对对象、数字、字幕与口播顺序",
+        "framesReviewed": [
+          {
+            "t": 1.0,
+            "observed": "标题与 36 小时入场，账单卡仍空",
+            "note": "0–0.6 秒是空白纸面，开场偏慢"
+          },
+          {
+            "t": 6.5,
+            "observed": "五行数据 + 折价成交印章齐备，字幕念同一组数字",
+            "note": "无异常"
+          },
+          {
+            "t": 10.0,
+            "observed": "439% 独占一行，其余两行未出现",
+            "note": "与 cue 对齐"
+          },
+          {
+            "t": 14.0,
+            "observed": "439% 与 2.25 亿→450 亿两行同屏，200 倍小字在右下",
+            "note": "无异常"
+          },
+          {
+            "t": 19.5,
+            "observed": "第三行 4 倍杠杆 + 「必须一直对」",
+            "note": "这一镜到 20.3 秒才切走，停留 7.4 秒，是全片最长的一段"
+          },
+          {
+            "t": 22.0,
+            "observed": "左栏 −48% / 其中 SanDisk −56%",
+            "note": "右栏此时仍空"
+          },
+          {
+            "t": 29.0,
+            "observed": "右栏「反弹」出现，与左栏形成对照",
+            "note": "无异常"
+          },
+          {
+            "t": 31.0,
+            "observed": "4 倍乘数与「方向没错，两边一起亏」",
+            "note": "无异常"
+          },
+          {
+            "t": 35.5,
+            "observed": "时间线：07/24 与 07/29 两行，竖线已生长",
+            "note": "无异常"
+          },
+          {
+            "t": 41.0,
+            "observed": "07/30 折价卖出入列，三行齐",
+            "note": "无异常"
+          },
+          {
+            "t": 44.6,
+            "observed": "卖出当天 +3% 与 AI 股 +15%–25% 同屏",
+            "note": "修复后复看：此前第二行要等到 50.5 秒，晚于口播 6 秒"
+          },
+          {
+            "t": 50.6,
+            "observed": "「他看对了方向，却死在黎明前五分钟」落定",
+            "note": "无异常"
+          },
+          {
+            "t": 54.0,
+            "observed": "结论第一行「杠杆不改变方向，只改变速度」",
+            "note": "无异常"
+          },
+          {
+            "t": 58.0,
+            "observed": "结论第二行与出处说明，保持到片尾",
+            "note": "有意静止"
+          }
+        ],
+        "fixesBeforeFinalRender": [
+          "字幕探测读数恒为不可见：根 AbsoluteFill 未设宽高时，第一帧布局里父容器是 0×0，字幕被逐字换行；给根容器显式 1080×1920 后 15/15 帧恢复可见",
+          "第一镜标题在「卖了出去。」处折行成孤字，改为更短的句子",
+          "第 2 镜杠杆写成「4 倍倍」（标签已带单位），改为直接取绑定标签",
+          "纳指 +3% 与 AI 股 +15–25% 原本画成同轴双柱，柱高暗示了不存在的倍数关系，改成两行独立读数",
+          "第 5 镜第二行读数绑定到了 cue12，比口播晚 6 秒，改绑 cue11+0.9 秒"
+        ],
+        "notChecked": [
+          "未做真人审听（Agent 无法播放声音）",
+          "未在剪映 / Premiere 中打开工程",
+          "未做手机端实际播放"
+        ]
+      }
+    },
+    {
+      "name": "native_editor_project",
+      "passed": false,
+      "required": true,
+      "detail": {
+        "status": "not_verified",
+        "editor": null,
+        "openedSuccessfully": null,
+        "agentRepeated": false,
+        "reason": "本机没有把工程导入剪映或 Premiere；Remotion 源码不是原生工程。",
+        "howToVerify": "人工导入 out/final-with-audio.mp4 + out/subtitles.srt + 工程/ 后，再把 openedSuccessfully 记为 true。"
+      }
+    },
+    {
+      "name": "deterministic_source",
+      "passed": true,
+      "required": true,
+      "detail": "Static check only; no aesthetic claim"
+    },
+    {
+      "name": "film_workflow",
+      "passed": true,
+      "required": true,
+      "detail": "Complete-film migration required. Component tests are not film deliveries."
+    },
+    {
+      "name": "complete_source_migration",
+      "passed": true,
+      "required": true,
+      "detail": "Retain the actual source film and record adapted shots; source files alone do not prove quality."
+    },
+    {
+      "name": "captions_visible_in_encoded_video",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "subtitles": 15,
+        "pixelSamples": 30,
+        "scope": "Actual encoded pixels vs caption-on/off render references, plus full-frame text trace."
+      }
+    },
+    {
+      "name": "whole_film_review",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "seconds": 61.93333333333333,
+        "scope": "Complete interval coverage and reviewed holds; not a measure of artistic quality."
+      }
+    }
+  ],
+  "userAestheticAcceptance": "not_implied",
+  "universalPipelineValidated": false
+}

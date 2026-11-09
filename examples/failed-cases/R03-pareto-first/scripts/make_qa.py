@@ -1,0 +1,81 @@
+"""Delivery records for the Pareto episode. Run after the final mux; touches only qa/.
+
+Keeps the audit honest: the editor import is recorded as not verified, and the
+production review is bound to the SHA256 of the file that was actually inspected.
+"""
+from pathlib import Path
+import hashlib
+import json
+
+ROOT = Path(__file__).resolve().parent.parent
+final = ROOT / "out/final-with-audio.mp4"
+sha = hashlib.sha256(final.read_bytes()).hexdigest()
+
+frames = [
+    {"t": 1.2, "cue": "你多半听过二八法则", "observed": "标题与「五组人，各占 20% 的人口」落定，五个小人头顶 3%/4%/5%/8%/80%", "note": "80% 标签为青色，字号明显大于其余四组"},
+    {"t": 4.6, "cue": "20% 的人拥有 80% 的财富", "observed": "人物一排静止，字幕已切到结论句", "note": "无异常"},
+    {"t": 12.0, "cue": "意大利 80% 的土地归 20% 的人", "observed": "同一排人物保持，字幕推进到出处", "note": "约 14 秒无动画，靠字幕推进，属于解释段落"},
+    {"t": 20.9, "cue": "但它不是自然规律", "observed": "五个小人开始移动，柱形从基线长出", "note": "match-move 交接"},
+    {"t": 22.4, "cue": "要让 20% 占 80%", "observed": "最高组站在 0.32 高度，聚光灯已亮；其余四组站在 0.66，柱形只剩细线", "note": "3% 与 80% 同屏可读"},
+    {"t": 31.6, "cue": "指数换成 1.5", "observed": "硬切完成，三张卡片可读：1.16→80%、1.5→58%、2.0→45%", "note": "evidence-cut 交接"},
+    {"t": 45.0, "cue": "不是可以套用的原因", "observed": "卡片保持，人物在底部一行", "note": "无异常"},
+    {"t": 49.6, "cue": "80% 的 80% 是 64%，20% 的 20% 是 4%", "observed": "尾部动作：80% 那一组放大到 0.86，其余四组缩到 0.42", "note": "64/4 两个数只在口播与字幕中，没有上屏"},
+    {"t": 55.0, "cue": "文章自己也提醒", "observed": "构图保持，结论尚未出现", "note": "无异常"},
+    {"t": 63.0, "cue": "先问尾巴有多厚", "observed": "结论两行「先量尾巴有多厚 / 再谈 80 / 20」落定", "note": "修复后复看：此前结论在 33 秒就出现，比口播早 29 秒"},
+    {"t": 68.4, "cue": "尾帧", "observed": "画面保持到结尾，68.87 秒淡出", "note": "无残留"},
+]
+
+review = {
+    "status": "reviewed_with_fixes",
+    "reviewedFinalSha256": sha,
+    "reviewedAt": "2026-10-25T18:05:00+08:00",
+    "reviewer": "producer (agent), frame-level inspection of the encoded MP4",
+    "method": "从最终 MP4 解码 11 帧（qa/final-frames/）逐帧检查对象、数字、字幕与遮挡；连续动效部分以 qa/motion-proof.mp4 的密集帧为依据",
+    "framesReviewed": frames,
+    "fixesBeforeFinalRender": [
+        "收尾句原本在 33 秒就出现（T2+3.4），比口播早 29 秒；改为 plan.duration-6.9 触发，62 秒落定",
+        "42–62 秒原本完全静止；在 64/4 那一句加了一个尾部动作：80% 组放大、其余四组缩小",
+        "标签从人物脚下移到头顶，避免 80% 白字压在青色柱子上",
+        "柱形基线上移、柱高加大，减少竖屏中段的空白",
+        "指数卡片下移到 27%，不再遮住第二行字幕；卡片内字号缩小",
+        "卡片淡入推迟到硬切后 0.45 秒，缩短与人物下移的重叠",
+        "硬切后第二行字幕改为「同一个 20%，换一个指数就换一个答案」，不再复述卡片数字"
+    ],
+    "notChecked": [
+        "未做真人审听（Agent 无法播放声音）",
+        "未在剪映 / Premiere 中打开工程",
+        "未验证手机端实际播放"
+    ],
+}
+(ROOT / "qa/production-review.json").write_text(json.dumps(review, ensure_ascii=False, indent=2), encoding="utf-8")
+
+editor = {
+    "status": "not_verified",
+    "editor": None,
+    "openedSuccessfully": None,
+    "agentRepeated": False,
+    "reason": "本机没有把工程导入剪映或 Premiere；Remotion 源码不是原生工程。",
+    "howToVerify": "把 out/final-with-audio.mp4、out/subtitles.srt 与 工程/ 交给人工导入后，再把 openedSuccessfully 记为 true。",
+}
+(ROOT / "qa/editor-import.json").write_text(json.dumps(editor, ensure_ascii=False, indent=2), encoding="utf-8")
+
+delivery = {
+    "episode": "pareto-8020-60s",
+    "profile": "task-short",
+    "kit": "blackgold",
+    "entry": "production.py init → compile → voice → align → proof → dense review → check --stage render → final",
+    "cost": {
+        "wallClockMinutes": 78,
+        "ttsRequests": 2,
+        "renders": ["proof 540×960 12.3s ×2（source_digest 变化后重渲）", "final 1080×1920 ×2（第一次因渲染期间写入 storyboard.json 被拒认证）"],
+        "paidApiCalls": 0,
+        "manualListening": False,
+        "userInterventions": 0,
+    },
+    "failures": [
+        "第一次 final 渲染期间写入 source/storyboard.json，source_digest 变化，render.mjs 拒绝认证且未写 qa/render-full.json；重渲后才拿到。",
+        "写入 storyboard 同时让已 capture 的样片过期，需重新 capture 并重绑 motion-review.json。"
+    ],
+}
+(ROOT / "qa/delivery.json").write_text(json.dumps(delivery, ensure_ascii=False, indent=2), encoding="utf-8")
+print("wrote qa/production-review.json, qa/editor-import.json, qa/delivery.json; final sha:", sha)

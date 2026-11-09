@@ -1,0 +1,18 @@
+{
+    "reviewedFiles":  [
+                          {
+                              "sha256":  "c9b1f25196d84cae08f0c9523a9d234314492f9b1e47d6579e94c73df8aff238",
+                              "path":  "source/draft.txt"
+                          }
+                      ],
+    "reviewedAt":  "2026-10-25T17:32:00+08:00",
+    "factsStatus":  "approved-source-and-derivation-checked",
+    "method":  "逐句比对维基条目取用范围；片中每个数字由 scripts/verify_claims.py 用条目自身公式重算",
+    "ttsAllowed":  true,
+    "reviewer":  "producer (agent)",
+    "notes":  [
+                  "「帕累托 1896 年的观察」标注为文章的说法，未核对原始著作。",
+                  "1.5 / 2.0 两种指数的份额与 64/4 均为本片自算。",
+                  "续用 80/20 的表述只作为经验观察，不作因果。"
+              ]
+}

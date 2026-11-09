@@ -1,0 +1,30 @@
+{
+  "status": "passed-technical-only",
+  "chineseCharacters": 913,
+  "timelineSeconds": 179.4,
+  "audioProbe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ],
+    "format": {
+      "duration": "179.400000"
+    }
+  },
+  "cueCount": 107,
+  "subtitleCount": 55,
+  "maximumSubtitleChineseCharacters": 27,
+  "minimumSubtitleSeconds": 0.8504160000000098,
+  "noSubtitleOverlap": true,
+  "subtitlesDoNotCrossChapters": true,
+  "realWordBoundaries": true,
+  "speakerPlayback": false,
+  "manualListening": false,
+  "visualRenderReviewed": false,
+  "issues": []
+}

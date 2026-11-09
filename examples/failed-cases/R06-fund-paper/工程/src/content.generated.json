@@ -1,0 +1,48 @@
+{
+  "values": {
+    "one": 1,
+    "people": 8,
+    "book": 16,
+    "hours": 36,
+    "age": 25,
+    "aumStart": 2.25,
+    "aumPeak": 450,
+    "ret": 4.39,
+    "lev": 4,
+    "marginDebt": 1.502,
+    "marginGrowth": 0.49,
+    "top10": 0.4,
+    "nasdaq": 0.03,
+    "reboundLow": 0.15,
+    "reboundHigh": 0.25,
+    "nebius": 0.48,
+    "sandisk": 0.56,
+    "aumMultiple": 200.0
+  },
+  "labels": {
+    "book": "16",
+    "hours": "36",
+    "people": "8",
+    "age": "25 岁",
+    "aumStart": "2.25",
+    "aumPeak": "450",
+    "aumMultiple": "200 倍",
+    "ret": "439%",
+    "lev": "4 倍",
+    "marginDebt": "1.502 万亿美元",
+    "marginGrowth": "49%",
+    "top10": "40%",
+    "nasdaq": "3%",
+    "reboundLow": "15%",
+    "reboundHigh": "25%",
+    "nebius": "48%",
+    "sandisk": "56%"
+  },
+  "text": {
+    "title": "看对了时代，死在了黎明前",
+    "kicker": "凯撒的复利实验室 · 事件复盘",
+    "footer": "克劳德 · 依据凯撒文章整理，非投资建议",
+    "fact": "2026 年 7 月 30 日 · 36 小时 · 16 持仓",
+    "verdict": "杠杆不改变方向，只改变速度"
+  }
+}

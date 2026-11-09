@@ -201,6 +201,18 @@
       "kind": "user-feedback",
       "scope": "用户 2026-11-01 看过 60 秒币安样片后的评价；原话见 reflections.json R08。",
       "label": "用户看过币安 60 秒样片后认可为初版基准"
+    },
+    {
+      "id": "caesar-music-approval",
+      "kind": "user-feedback",
+      "scope": "用户 2026-11-02 听过凯撒样片 A/B 两个配乐版后的评价；原话见 reflections.json R09。只覆盖这次配乐效果，不含画面。",
+      "label": "用户认可凯撒样片 A「低频悬疑」配乐版"
+    },
+    {
+      "id": "boss-likes-percolation-reference",
+      "kind": "user-feedback",
+      "scope": "用户 2026-11-09 转达：老板（凯撒）喜欢参考片《临界点：渗流理论》，要按这个标准做凯撒公众号的样片，并保留 3D 微缩作为并列选项、开工前先问风格。这是对参考片的偏好，不是对本库任何成片的评价；参考片只在用户本机，不入库。",
+      "label": "老板喜欢《临界点》参考片；要求两种风格并列、先问再做"
     }
   ]
 }

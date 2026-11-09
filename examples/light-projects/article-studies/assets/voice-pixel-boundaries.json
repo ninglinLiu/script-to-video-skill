@@ -1,0 +1,164 @@
+[
+  {
+    "type": "WordBoundary",
+    "offset": 946250,
+    "duration": 6138330,
+    "text": "每天"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 7977500,
+    "duration": 1227500,
+    "text": "都"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 9205410,
+    "duration": 1004580,
+    "text": "在"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 10210000,
+    "duration": 1674160,
+    "text": "刷"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 11995410,
+    "duration": 1785830,
+    "text": "同"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 13781250,
+    "duration": 892910,
+    "text": "一"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 14674160,
+    "duration": 2567080,
+    "text": "关"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 20254580,
+    "duration": 3013330,
+    "text": "努力"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 23491250,
+    "duration": 669580,
+    "text": "就"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 24272500,
+    "duration": 2343750,
+    "text": "一定"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 26616250,
+    "duration": 892910,
+    "text": "有"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 27620410,
+    "duration": 3906250,
+    "text": "突破"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 36607080,
+    "duration": 1785830,
+    "text": "这"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 38392910,
+    "duration": 1227500,
+    "text": "篇"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 39732080,
+    "duration": 3013330,
+    "text": "文章"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 42968750,
+    "duration": 2232080,
+    "text": "提醒"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 45312500,
+    "duration": 3236660,
+    "text": "我们"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 51450830,
+    "duration": 2232080,
+    "text": "停"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 53682910,
+    "duration": 3906250,
+    "text": "一下"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 60267910,
+    "duration": 1785830,
+    "text": "读"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 62053750,
+    "duration": 1227500,
+    "text": "懂"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 63392910,
+    "duration": 5468750,
+    "text": "规则"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 70982080,
+    "duration": 1450830,
+    "text": "再"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 72544580,
+    "duration": 3348330,
+    "text": "尝试"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 76004580,
+    "duration": 2120410,
+    "text": "一条"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 78348330,
+    "duration": 2232080,
+    "text": "新"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 80580410,
+    "duration": 3348330,
+    "text": "路径"
+  }
+]

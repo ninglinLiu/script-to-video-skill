@@ -1,0 +1,11 @@
+{
+  "sample": "disappearing25",
+  "status": "no-verdict",
+  "local_project": "Claudebao/video-week1/disappearing25-20261021",
+  "copied_text_files": 38,
+  "excluded_article_files": [
+    "source/公众号原文.txt"
+  ],
+  "excluded_copied_text": [],
+  "note": "原工程留在制作者本机；文章全文、依赖、字体和媒体不入库。视频在 catalog 的 media 字段。"
+}

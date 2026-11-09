@@ -1,0 +1,16 @@
+{
+  "times": [
+    33.6,
+    56
+  ],
+  "meta": {
+    "width": 1080,
+    "height": 1920,
+    "duration": 60,
+    "fps": 30,
+    "title": "价签之外",
+    "engine": "Poisson renderer + weilanx Nouveau curves + original illustration layers",
+    "audioPlayback": "disabled"
+  },
+  "errors": []
+}

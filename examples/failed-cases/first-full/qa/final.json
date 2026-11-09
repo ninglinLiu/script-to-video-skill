@@ -1,0 +1,65 @@
+{
+  "status": "technical_checks_passed",
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "avg_frame_rate": "30/1",
+        "duration": "69.233333",
+        "bit_rate": "11532903",
+        "nb_frames": "2077",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "avg_frame_rate": "0/0",
+        "duration": "69.233000",
+        "bit_rate": "256524",
+        "nb_frames": "3247"
+      }
+    ],
+    "format": {
+      "duration": "69.233333",
+      "size": "102105500"
+    }
+  },
+  "decoded_frames": 2077,
+  "loudness": {
+    "input_i": "-17.60",
+    "input_tp": "-1.09",
+    "input_lra": "3.10",
+    "input_thresh": "-28.17",
+    "output_i": "-16.25",
+    "output_tp": "-1.00",
+    "output_lra": "2.90",
+    "output_thresh": "-26.75",
+    "normalization_type": "dynamic",
+    "target_offset": "0.25"
+  },
+  "mean_luma_range": [
+    33.449829603909464,
+    66.20371977880659
+  ],
+  "max_adjacent_frame_difference": 10.295331790123457,
+  "subtitle_cues": 41,
+  "alignment": "actual word boundaries from one complete TTS request, with 120 ms placement",
+  "qualifications_retained": [
+    "仅观点分享，非投资建议",
+    "所提案例仅供复盘参考，不具实操指向",
+    "市场运行受多重复杂变量影响",
+    "独立思考",
+    "自主逻辑校验"
+  ],
+  "sha256": "e468ea1ac7ccf198d917e8f730a7a277e0f4b8d9ea56543c8f70e0ae8d172d0f",
+  "independent_human_listening": false,
+  "editor_import_verified": false,
+  "user_full_film_acceptance": "pending"
+}

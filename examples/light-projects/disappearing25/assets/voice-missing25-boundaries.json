@@ -1,0 +1,746 @@
+[
+  {
+    "type": "WordBoundary",
+    "offset": 962910,
+    "duration": 1620410,
+    "text": "给"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 2583330,
+    "duration": 694580,
+    "text": "你"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 3393330,
+    "duration": 2315000,
+    "text": "一百"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 5708330,
+    "duration": 3472080,
+    "text": "元"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 14351660,
+    "duration": 3935000,
+    "text": "先跌"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 18518330,
+    "duration": 9375000,
+    "text": "百分之五十"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 29513750,
+    "duration": 1851660,
+    "text": "再"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 31365830,
+    "duration": 1736250,
+    "text": "涨"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 33333330,
+    "duration": 9143330,
+    "text": "百分之五十"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 47800830,
+    "duration": 2083330,
+    "text": "你"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 49884160,
+    "duration": 4166660,
+    "text": "觉得"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 57638750,
+    "duration": 2777910,
+    "text": "能"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 60416660,
+    "duration": 1273330,
+    "text": "回"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 61805410,
+    "duration": 1041660,
+    "text": "本"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 62847080,
+    "duration": 2777910,
+    "text": "吗"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 70833330,
+    "duration": 4050830,
+    "text": "看"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 79050830,
+    "duration": 2083330,
+    "text": "先"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 81250000,
+    "duration": 2662080,
+    "text": "拿走"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 84027910,
+    "duration": 3125000,
+    "text": "一半"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 90046250,
+    "duration": 2083330,
+    "text": "只"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 92129580,
+    "duration": 1736250,
+    "text": "剩"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 93981660,
+    "duration": 4976660,
+    "text": "五十"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 104282500,
+    "duration": 4282500,
+    "text": "接下来"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 108796250,
+    "duration": 3240830,
+    "text": "上涨"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 112037080,
+    "duration": 694580,
+    "text": "的"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 112847080,
+    "duration": 3819580,
+    "text": "一半"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 118865830,
+    "duration": 1851660,
+    "text": "是"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 120717500,
+    "duration": 925830,
+    "text": "这"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 121875000,
+    "duration": 2777910,
+    "text": "五十"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 124652910,
+    "duration": 694580,
+    "text": "的"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 125462910,
+    "duration": 3587910,
+    "text": "一半"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 132523330,
+    "duration": 5902910,
+    "text": "二十五"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 143634160,
+    "duration": 1504580,
+    "text": "补"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 145138750,
+    "duration": 3935000,
+    "text": "回去"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 153125000,
+    "duration": 2083330,
+    "text": "只有"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 155324160,
+    "duration": 4629580,
+    "text": "七十五"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 165277910,
+    "duration": 4050830,
+    "text": "少掉"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 169328750,
+    "duration": 810000,
+    "text": "的"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 170254580,
+    "duration": 4745410,
+    "text": "二十五"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 177662080,
+    "duration": 2083330,
+    "text": "藏"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 179745410,
+    "duration": 4745410,
+    "text": "在哪儿"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 189699160,
+    "duration": 1967500,
+    "text": "那"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 191666660,
+    "duration": 694580,
+    "text": "就"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 192476660,
+    "duration": 5324160,
+    "text": "反过来"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 203125000,
+    "duration": 2662080,
+    "text": "先"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 205787080,
+    "duration": 1273330,
+    "text": "涨"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 207175830,
+    "duration": 3356660,
+    "text": "一半"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 213773330,
+    "duration": 2893330,
+    "text": "一百"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 216666660,
+    "duration": 1157500,
+    "text": "变"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 218055410,
+    "duration": 7060000,
+    "text": "一百五十"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 230440000,
+    "duration": 2198750,
+    "text": "再"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 232638750,
+    "duration": 1041660,
+    "text": "跌"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 233796250,
+    "duration": 3935000,
+    "text": "一半"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 240509160,
+    "duration": 4745410,
+    "text": "剩下"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 245254580,
+    "duration": 2199160,
+    "text": "的"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 250000000,
+    "duration": 3009160,
+    "text": "还是"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 253125000,
+    "duration": 4861250,
+    "text": "七十五"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 263310000,
+    "duration": 3703750,
+    "text": "顺序"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 267129580,
+    "duration": 2430410,
+    "text": "换"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 269560000,
+    "duration": 2430410,
+    "text": "了"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 274884160,
+    "duration": 3125000,
+    "text": "终点"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 278125000,
+    "duration": 1504580,
+    "text": "没"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 279629580,
+    "duration": 2199160,
+    "text": "变"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 286921250,
+    "duration": 2083330,
+    "text": "因为"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 289236250,
+    "duration": 4976660,
+    "text": "百分比"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 294444580,
+    "duration": 2199160,
+    "text": "不是"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 296759160,
+    "duration": 2662080,
+    "text": "固定"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 299421250,
+    "duration": 694580,
+    "text": "的"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 300231660,
+    "duration": 4745410,
+    "text": "钱数"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 308680410,
+    "duration": 1388750,
+    "text": "它"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 310185000,
+    "duration": 3125000,
+    "text": "每次"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 313425830,
+    "duration": 1041660,
+    "text": "都"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 314467500,
+    "duration": 1388750,
+    "text": "从"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 316087910,
+    "duration": 2546250,
+    "text": "当时"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 318634160,
+    "duration": 694580,
+    "text": "的"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 319444580,
+    "duration": 3240830,
+    "text": "本金"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 322916660,
+    "duration": 2315000,
+    "text": "开始"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 325231660,
+    "duration": 2430410,
+    "text": "算"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 332870410,
+    "duration": 1388750,
+    "text": "再"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 334375000,
+    "duration": 2662080,
+    "text": "看回"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 337037080,
+    "duration": 2430410,
+    "text": "本"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 344097080,
+    "duration": 4166660,
+    "text": "五十"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 348379580,
+    "duration": 925830,
+    "text": "要"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 349421250,
+    "duration": 2083330,
+    "text": "回到"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 351620410,
+    "duration": 4050830,
+    "text": "一百"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 357870410,
+    "duration": 1273330,
+    "text": "得"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 359259160,
+    "duration": 1273330,
+    "text": "再"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 360532500,
+    "duration": 1736250,
+    "text": "赚"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 362384160,
+    "duration": 4629580,
+    "text": "五十"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 372337910,
+    "duration": 4745410,
+    "text": "相对于"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 377315000,
+    "duration": 2893330,
+    "text": "剩下"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 380208330,
+    "duration": 694580,
+    "text": "的"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 381018330,
+    "duration": 5440000,
+    "text": "五十"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 388541660,
+    "duration": 1504580,
+    "text": "这"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 390046250,
+    "duration": 925830,
+    "text": "叫"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 391087910,
+    "duration": 3472080,
+    "text": "上涨"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 394791660,
+    "duration": 7291660,
+    "text": "百分之一百"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 407407500,
+    "duration": 2314580,
+    "text": "两"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 409722080,
+    "duration": 578750,
+    "text": "个"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 410532500,
+    "duration": 1851660,
+    "text": "看"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 412384160,
+    "duration": 1736250,
+    "text": "起来"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 414351660,
+    "duration": 2315000,
+    "text": "一样"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 416666660,
+    "duration": 1157500,
+    "text": "的"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 418055410,
+    "duration": 8912080,
+    "text": "百分之五十"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 430671250,
+    "duration": 2083330,
+    "text": "第一"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 432754580,
+    "duration": 1273330,
+    "text": "次"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 434259160,
+    "duration": 2315000,
+    "text": "对应"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 436690000,
+    "duration": 5208330,
+    "text": "五十"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 443981660,
+    "duration": 2661660,
+    "text": "第二"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 446643330,
+    "duration": 3009160,
+    "text": "次"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 450694580,
+    "duration": 1851660,
+    "text": "却"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 452662080,
+    "duration": 1272910,
+    "text": "只"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 453935000,
+    "duration": 2315000,
+    "text": "对应"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 456481660,
+    "duration": 5092500,
+    "text": "二十五"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 466898330,
+    "duration": 3356660,
+    "text": "看懂"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 470370410,
+    "duration": 4629580,
+    "text": "涨跌"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 478009160,
+    "duration": 2430410,
+    "text": "先"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 480440000,
+    "duration": 2083330,
+    "text": "看"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 482523330,
+    "duration": 3240830,
+    "text": "它"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 486690000,
+    "duration": 2083330,
+    "text": "站"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 488773330,
+    "duration": 1041660,
+    "text": "在"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 490046250,
+    "duration": 2430410,
+    "text": "哪个"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 492592500,
+    "duration": 2893330,
+    "text": "本金"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 495486250,
+    "duration": 2315000,
+    "text": "上"
+  }
+]

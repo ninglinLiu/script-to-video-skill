@@ -1,0 +1,49 @@
+{
+  "episode": "video-60s-kelly",
+  "profile": "task-short",
+  "deliveredAt": "2026-10-25T15:40:00+08:00",
+  "files": {
+    "out/final-with-audio.mp4": {
+      "sha256": "9a514e7e48c5438e925b7286384dad1aa795582891e5e926506cd978f6f9ba45",
+      "role": "配音成片（字幕烧入，10Mbps CBR 交付规格）"
+    },
+    "out/final-compact.mp4": {
+      "role": "分享版（视频直拷，约 0.3Mbps）"
+    },
+    "out/final-silent.mp4": {
+      "role": "CRF19 静音母版"
+    },
+    "out/subtitles.srt": {
+      "role": "字幕"
+    },
+    "assets/voice-track.wav": {
+      "role": "独立旁白 48kHz/−16LUFS"
+    },
+    "assets/timeline.json": {
+      "role": "真实 WordBoundary 时间线"
+    },
+    "工程/": {
+      "role": "Remotion 源码（画面可编辑层）"
+    }
+  },
+  "cost": {
+    "wallClockMinutes": 62,
+    "ttsRequests": 3,
+    "renders": [
+      "proof 540×960 全片",
+      "final 1080×1920 ×2（前两次失败）",
+      "final 1080×1920 定稿"
+    ],
+    "paidApiCalls": 0,
+    "manualListening": false,
+    "userInterventions": 0
+  },
+  "failures": [
+    "Remotion 的 ffmpeg 在 %TEMP% 下报 Permission denied（EPIPE / pre-encode.mp4）；改用 工程/.tmp 作为 TEMP 后通过"
+  ],
+  "knownGaps": [
+    "未做编辑器导入验证",
+    "未做配乐与混音",
+    "未做真人审听"
+  ]
+}

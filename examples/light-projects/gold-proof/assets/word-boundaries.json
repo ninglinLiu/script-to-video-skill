@@ -1,0 +1,146 @@
+[
+  {
+    "type": "WordBoundary",
+    "offset": 1000000,
+    "duration": 5000000,
+    "text": "降息"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 6250000,
+    "duration": 1000000,
+    "text": "和"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 7375000,
+    "duration": 5000000,
+    "text": "缩表"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 14250000,
+    "duration": 2375000,
+    "text": "可以"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 16875000,
+    "duration": 3375000,
+    "text": "同时"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 20375000,
+    "duration": 4750000,
+    "text": "发生"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 30875000,
+    "duration": 2375000,
+    "text": "一个"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 33375000,
+    "duration": 3750000,
+    "text": "调低"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 37375000,
+    "duration": 3625000,
+    "text": "短期"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 41125000,
+    "duration": 2375000,
+    "text": "资金"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 43500000,
+    "duration": 750000,
+    "text": "的"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 44375000,
+    "duration": 5375000,
+    "text": "价格"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 52000000,
+    "duration": 2000000,
+    "text": "一个"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 54125000,
+    "duration": 4125000,
+    "text": "减少"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 58500000,
+    "duration": 3625000,
+    "text": "央行"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 62250000,
+    "duration": 2875000,
+    "text": "持有"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 65125000,
+    "duration": 625000,
+    "text": "的"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 65875000,
+    "duration": 4250000,
+    "text": "证券"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 75875000,
+    "duration": 4000000,
+    "text": "两件"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 79875000,
+    "duration": 3375000,
+    "text": "事"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 85750000,
+    "duration": 1375000,
+    "text": "别"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 87250000,
+    "duration": 3500000,
+    "text": "看成"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 91000000,
+    "duration": 1875000,
+    "text": "同"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 93000000,
+    "duration": 5125000,
+    "text": "一个按钮"
+  }
+]

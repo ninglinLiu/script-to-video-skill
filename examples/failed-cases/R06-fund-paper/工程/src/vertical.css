@@ -1,0 +1,5 @@
+/* Vertical re-layout of the migrated paper caption system.
+   Later import wins over style.css; the plate keeps light glyphs on a dark plate,
+   which is what the bundled pixel check assumes. */
+.subtitle{position:absolute;top:1492px;left:60px;right:60px;display:flex;justify-content:center;text-align:center;font-size:40px;font-weight:600;line-height:1.45}
+.subtitle span{background:#112B37;color:#fff9e9;padding:10px 24px;max-width:940px;box-shadow:0 8px 22px #112b3718}

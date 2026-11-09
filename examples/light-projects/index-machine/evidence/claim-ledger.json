@@ -1,0 +1,225 @@
+{
+  "title": "指数会换人，就不会亏钱吗？｜三分钟视频一手事实核查",
+  "checkedAt": "2026-10-22",
+  "articleContext": {
+    "title": "美股长期牛市的底层逻辑【凯撒的复利实验室】",
+    "url": "https://xueqiu.com/9435177215/364950243",
+    "role": "改编选题来源；下列金融事实另以官方材料核对，不把文章的因果推断当作证据。"
+  },
+  "scope": "解释机制，不使用实时指数点位、当期前十大权重或未来收益预测。所有演示数字均须标记假设。",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "S&P U.S. Indices Methodology",
+      "publisher": "S&P Dow Jones Indices",
+      "url": "https://www.spglobal.com/spdji/en/documents/methodologies/methodology-sp-us-indices.pdf",
+      "version": "July 2026；PDF 页码按文件内页码",
+      "locator": "Eligibility Criteria pp.7–11；Index Construction p.12；Index Calculations p.16；Maintenance p.17；Governance p.22",
+      "note": "核对了资格、委员会裁量、FMC 权重、继续留存与新加入标准的区别。"
+    },
+    {
+      "id": "S2",
+      "title": "Methodology Matters",
+      "publisher": "S&P Dow Jones Indices",
+      "url": "https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/",
+      "locator": "Market-Capitalization Weighting；Float-Adjusted Market-Cap Weighting；The Divisor in Action；Types of Returns",
+      "note": "核对权重公式、除数维持成分变动前后连续性、价格回报与总回报。"
+    },
+    {
+      "id": "S3",
+      "title": "Index Funds",
+      "publisher": "SEC / Investor.gov",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-4",
+      "locator": "What is in an index fund?；What are some risks of index funds?",
+      "note": "指数与基金不同；基金可全复制或抽样，有标的风险、费用及跟踪误差。"
+    },
+    {
+      "id": "S4",
+      "title": "Price-earnings (P/E) Ratio",
+      "publisher": "SEC / Investor.gov",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/price-earnings-pe-ratio",
+      "locator": "P/E 定义正文",
+      "note": "PE 为股价除以每股收益；由此代数重排为价格 = EPS × PE。"
+    },
+    {
+      "id": "S5",
+      "title": "Capital Stock and Share Repurchase / Note 9 Earnings per Share",
+      "publisher": "公司向 SEC 提交的原始财报附注",
+      "url": "https://www.sec.gov/Archives/edgar/data/6955/000000695526000025/R17.htm",
+      "locator": "Six Months Ended February 28, 2026；净利润、基本/稀释加权平均股数和 EPS 对照表",
+      "note": "原始披露中实际存在回购现金支出、股票薪酬稀释；股数减少同时 EPS 仍可能因盈利下降而下降。视频不需使用该公司的具体数字。"
+    },
+    {
+      "id": "S6",
+      "title": "Berkshire Hathaway 2022 Shareholder Letter",
+      "publisher": "Berkshire Hathaway",
+      "url": "https://www.berkshirehathaway.com/letters/2022ltr.pdf",
+      "locator": "PDF 第5页，印刷页码6：回购段落",
+      "note": "管理层一手资本配置观点：回购的每股价值效果依赖支付价格，过价回购损害继续持有者。不是统计意义上的普遍实证结论。"
+    },
+    {
+      "id": "S7",
+      "title": "Diversify Your Investments",
+      "publisher": "SEC / Investor.gov",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/diversify-your-investments",
+      "locator": "正文唯一段落",
+      "note": "分散不能保证市场整体下跌时不受损。"
+    },
+    {
+      "id": "S8",
+      "title": "Mutual Fund Investing: Look at More Than a Fund's Past Performance",
+      "publisher": "SEC",
+      "url": "https://www.sec.gov/files/investor/pubs/mfperform.htm",
+      "locator": "开头及波动性提示",
+      "note": "历史业绩不保证未来；短期限用款可能无暇等待市场恢复。"
+    },
+    {
+      "id": "S9",
+      "title": "Beginners' Guide to Financial Statement",
+      "publisher": "SEC",
+      "url": "https://www.sec.gov/investor/pubs/begfinstmtguide.htm",
+      "locator": "Balance Sheets；Cash Flow Statements",
+      "note": "现金是资产；资本分配有资产负债表和现金流后果。"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "safeScript": "标普500不是市值排行榜前500名自动入场。它有规模、流动性、公众流通量和财务等资格要求，再由指数委员会选择。",
+      "sources": [
+        "S1"
+      ],
+      "supports": "代表美国大型股的500家公司；按资格和委员会裁量选择，并考虑行业代表性。",
+      "cannotSupport": "满足条件就必入选；500只股票数永远恰好500；所有成分股永远盈利；一亏损就剔除。加入资格不等同持续留存条件，方法论亦有例外。",
+      "visualGuardrail": "筛选门写“资格 + 委员会”；不画成市值排序机械截取，也不把某公司移出等同它破产。"
+    },
+    {
+      "id": "C2",
+      "safeScript": "权重按可公开交易部分的市值分配。价格上涨，即便一股没多买，占比也会自然变大。",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "supports": "权重 = 个股自由流通市值 ÷ 成分自由流通市值合计。固定股数且其他条件不变时，价格变化导致权重变化。",
+      "cannotSupport": "基金完全不交易；指数每天主动卖掉输家追买赢家；所有不同指数采用相同权重规则。成分调整、股数变动、资金申赎仍可能带来交易。",
+      "originalExample": "两项自由流通市值各100，只有A翻倍至200：权重由1/2变为2/3。此例没有增买股票。",
+      "visualGuardrail": "先锁定持有股数/筹码数，再改变价格标签及市值面积。"
+    },
+    {
+      "id": "C3",
+      "safeScript": "换掉一家公司，不会把此前的亏损擦掉。成分更换时，除数会调整，避免仅靠换名单就让指数跳涨。",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "supports": "若股票价格不变，除数调整使成分调整前后的指数水平连续；由此推论更替本身不是凭空创造收益。",
+      "cannotSupport": "换股从不影响未来表现；换股没有交易成本或价格影响；指数会在企业下跌前精准退出。",
+      "visualGuardrail": "替换前后指数读数保持连续，旧亏损保留；不能删除旧公司的历史曲线再重算一个更好看的历史。"
+    },
+    {
+      "id": "C4",
+      "safeScript": "再看回购。利润不变、平均股数真正减少，每股收益会提高；这首先是分母变化，不等于经营突然更强。",
+      "sources": [
+        "S4",
+        "S5"
+      ],
+      "supports": "基本EPS使用归属普通股的收益与期间加权平均股数；回购可能降低股数。",
+      "cannotSupport": "回购金额等于EPS增量；期末股数可以无条件替代全年加权平均股数；减少公众可流通股份与EPS分母完全相同。",
+      "originalExample": "忽略优先股、税费和融资影响，归属普通股利润保持100，整个期间的加权平均股数100→90，EPS为1→1.111…，约+11.1%。",
+      "visualGuardrail": "标“假设：利润不变”；利润物体总体保持100，分割数减少；不能同时凭空增大利润池。"
+    },
+    {
+      "id": "C5",
+      "safeScript": "但回购要花钱，也可能被股权激励增发抵消。买得太贵、削弱现金储备或挤占更好的投资，每股数字变漂亮，不等于股东更富。",
+      "sources": [
+        "S5",
+        "S6",
+        "S9"
+      ],
+      "supports": "原始披露证明回购现金支出与股票薪酬稀释可并存；回购价格影响价值是管理层明确论述。机会成本是预算约束下的分析推论，必须用“可能”。",
+      "cannotSupport": "回购必然提高股价；回购全部有益或全部有害；高EPS增长全由经营改善；现金支出就必然浪费。股权激励的实际净抵消程度要看实际发行、回购及稀释数据。",
+      "visualGuardrail": "股份退出时现金同时流出；显示“净股数”而不只显示回购额。"
+    },
+    {
+      "id": "C6",
+      "safeScript": "盈利增长和投资收益之间，还隔着价格。假设每股收益从10到12，但市场愿付的市盈率从30倍降到20倍：股价从300变240，仍然下跌20%。",
+      "sources": [
+        "S4"
+      ],
+      "supports": "同口径正EPS下，P = EPS × PE是定义的代数重排；示例的乘法成立。",
+      "cannotSupport": "实际标普数据；未来预测；三项独立因果变量；盈利增长率与PE变化率可以简单相加；价格变化已经包含分红。",
+      "originalExample": {
+        "kind": "原创假设，非真实证券",
+        "eps": [
+          10,
+          12
+        ],
+        "pe": [
+          30,
+          20
+        ],
+        "price": [
+          300,
+          240
+        ],
+        "epsChange": 0.2,
+        "peChange": -0.3333333333,
+        "priceReturn": -0.2,
+        "formula": "(12/10) × (20/30) − 1 = −20%",
+        "excludes": [
+          "分红",
+          "交易费",
+          "税"
+        ]
+      },
+      "visualGuardrail": "两个因子同屏，维持可读。标“假设示例｜不含分红”；不要将10→12画成总盈利数据而口述EPS。"
+    },
+    {
+      "id": "C7",
+      "safeScript": "500个名字，不代表500份相等、独立的风险。权重大，影响就大；不同公司也可能一起暴露于同一轮利率、估值和需求冲击。",
+      "sources": [
+        "S2",
+        "S3",
+        "S7"
+      ],
+      "supports": "市值权重使大公司对指数影响更大；分散不能消除全市场下跌风险。共同冲击是机制解释，未量化具体敏感度。",
+      "cannotSupport": "当前前十大准确权重；固定几家公司必然同涨同跌；数量多就绝对安全；集中度高必然马上下跌。",
+      "originalExample": "可选假设：占组合40%的一组股票下跌25%，其余价格不变、无调仓及分红，则组合价格回报为−10%。不当作当前指数持仓。",
+      "visualGuardrail": "先展示权重大小不同，再让共同冲击穿过全部公司；不能把500家公司画成500等份后仍声称是市值加权。"
+    },
+    {
+      "id": "C8",
+      "safeScript": "指数解决了持仓更新的问题，却不能替你保证买入价格、持有期限和未来收益。历史回报是一段记录，不是一张承诺书。",
+      "sources": [
+        "S3",
+        "S7",
+        "S8"
+      ],
+      "supports": "基金承受标的风险；费用与跟踪误差会影响实际回报；历史成绩不保证未来。",
+      "cannotSupport": "长期必赚；固定年化回报；某一持有年限必定回本；所有投资者都适合这个指数。",
+      "visualGuardrail": "结尾不画无上限确定向上的收益箭头；可以用同一对象的“盈利/价格/期限”三项检查完成解释。"
+    }
+  ],
+  "bannedPhrases": [
+    "标普500就是美国市值最大的500家公司",
+    "亏损公司会立刻被踢出",
+    "指数只留下赢家，所以不会亏",
+    "剔除输家等于删除过去亏损",
+    "市值加权就是每天追涨杀跌",
+    "回购免费提高股东财富",
+    "EPS涨多少，股价就该涨多少",
+    "标普500是一台永动机",
+    "只要长期持有就稳赚 / 必定回本",
+    "历史年化就是未来保证",
+    "500家公司等于500份独立风险",
+    "盈利涨20%、估值降33.3%，股价只跌13.3%"
+  ],
+  "productionChecks": [
+    "第一次给出数字演示即写“假设示例”，全片保留同样的数字口径。",
+    "指数、ETF/基金、单家公司分别命名，不互换。",
+    "EPS分母为平均股数，指数权重分母为全部自由流通市值；不要复用同一个比例条让人误以为它们相同。",
+    "不展示未经核对的2026年指数权重、年化收益或收益预测。",
+    "参考链接必须在交付来源清单中完整保留。"
+  ]
+}

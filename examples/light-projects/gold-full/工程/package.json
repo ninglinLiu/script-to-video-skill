@@ -1,0 +1,26 @@
+{
+  "name": "weilanx-claude-videos",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/entry.tsx",
+    "audio": "node music.mjs",
+    "proof": "node render.mjs proof",
+    "render": "node render.mjs full",
+    "typecheck": "tsc -p . --noUnusedLocals",
+    "master": "python ../finish.py"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.529",
+    "@remotion/google-fonts": "^4.0.529",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "^4.0.529"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.2"
+  }
+}

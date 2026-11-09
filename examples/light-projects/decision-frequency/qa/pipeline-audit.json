@@ -1,0 +1,292 @@
+{
+  "profile": "extended",
+  "episode": "Claudebao\\video-week1\\decision-frequency-20261023",
+  "status": "technical_and_producer_checks_passed",
+  "checks": [
+    {
+      "name": "narrated_mp4",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\video-week1\\decision-frequency-20261023\\out\\final-with-audio.mp4"
+    },
+    {
+      "name": "duration",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "actual": 173.466667,
+        "min": 165,
+        "max": 195,
+        "profile": "extended"
+      }
+    },
+    {
+      "name": "video_format",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640028",
+        "width": 1080,
+        "height": 1920,
+        "coded_width": 1080,
+        "coded_height": 1920,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "9:16",
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "color_range": "tv",
+        "color_space": "bt470bg",
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 2664448,
+        "duration": "173.466667",
+        "bit_rate": "8490643",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "5204",
+        "extradata_size": 63,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc62.28.102 libx264"
+        },
+        "side_data_list": [
+          {
+            "side_data_type": "ICC Profile"
+          }
+        ]
+      }
+    },
+    {
+      "name": "video_bitrate",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "actual": 8490643,
+        "minimum": 8000000
+      }
+    },
+    {
+      "name": "audio",
+      "passed": true,
+      "required": true,
+      "detail": [
+        "aac"
+      ]
+    },
+    {
+      "name": "full_decode",
+      "passed": true,
+      "required": true,
+      "detail": ""
+    },
+    {
+      "name": "real_voice_timestamps",
+      "passed": true,
+      "required": true,
+      "detail": "real edge-tts WordBoundary"
+    },
+    {
+      "name": "subtitle_intervals",
+      "passed": true,
+      "required": true,
+      "detail": 52
+    },
+    {
+      "name": "subtitle_voice_alignment",
+      "passed": true,
+      "required": true,
+      "detail": "SRT groups must start/end on measured voice cues"
+    },
+    {
+      "name": "srt_file",
+      "passed": true,
+      "required": true,
+      "detail": "one or more authored SRT files"
+    },
+    {
+      "name": "source_evidence",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\video-week1\\decision-frequency-20261023\\evidence\\source-manifest.json"
+    },
+    {
+      "name": "script_review",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\video-week1\\decision-frequency-20261023\\evidence\\script-review.json"
+    },
+    {
+      "name": "shot_contracts",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\video-week1\\decision-frequency-20261023\\source\\storyboard.json"
+    },
+    {
+      "name": "approved_script_unchanged",
+      "passed": true,
+      "required": true,
+      "detail": "Review hash and actual spoken content both checked"
+    },
+    {
+      "name": "shot_state_contracts",
+      "passed": true,
+      "required": true,
+      "detail": 9
+    },
+    {
+      "name": "render_record",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\video-week1\\decision-frequency-20261023\\qa\\render-full.json"
+    },
+    {
+      "name": "final_visual_review",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "status": "reviewed_with_fixes",
+        "reviewedFinalSha256": "2fe6f87f3381d89c2cedc88a46dcf22067049292507f2ff2b260c4224d2d8fc3",
+        "reviewer": "Production agent; independent fact review and assisted mechanism-layout review; not independent full-film aesthetic acceptance",
+        "framesReviewed": [
+          2.2914,
+          7.0015,
+          10.438599999999997,
+          17.037399999999998,
+          25.891500000000004,
+          32.3526,
+          40.1736,
+          47.396,
+          52.666399999999996,
+          58.9628,
+          64.683,
+          68.8572,
+          75.6288,
+          83.828,
+          89.81120000000001,
+          97.97600000000001,
+          106.56000000000002,
+          112.82400000000001,
+          120.88080000000001,
+          128.858,
+          134.6792,
+          142.619,
+          150.9625,
+          157.051,
+          163.33419999999998,
+          167.90616666666665,
+          171.24246666666667
+        ],
+        "continuousProof": "qa/proof-window.mp4,13 seconds",
+        "sequenceChecks": [
+          "result-handoff-12.jpg",
+          "cost-debit-12.jpg",
+          "world-transition-12.jpg",
+          "evidence-gate-12.jpg"
+        ],
+        "issues": [
+          {
+            "time": "17.04 / 32.35 / 142.62",
+            "observed": "Initial numeric list exceeded caption width; first repair produced isolated 1–2 character rows",
+            "fix": "Shared balanced layout: 6–18 characters per multiline row, max 3 rows; re-render only caption band",
+            "verified": "All 52 groups checked for text preservation and line limits, final frame review"
+          },
+          {
+            "time": "25.89",
+            "observed": "Three-down label overlapped total-return label during handoff",
+            "fix": "Separated outgoing and incoming opacity windows",
+            "verified": "Final contact and 12-frame handoff strip"
+          },
+          {
+            "time": "26.66–36.66",
+            "observed": "Chart held unchanged through explanation of evaluation window",
+            "fix": "Observation rectangle moves across same path then expands; account result remains +8%",
+            "verified": "13-second continuous proof and final contact"
+          },
+          {
+            "time": "58.96",
+            "observed": "Adjacent dials/boxes touched; connection line crossed secondary label",
+            "fix": "Increase initial controller spacing, move connector start below label",
+            "verified": "Actual repaired still and final contact"
+          },
+          {
+            "time": "106.56",
+            "observed": "Exponent separated too far from cost factor",
+            "fix": "Use one SVG text with true superscript tspan",
+            "verified": "Final 10000×0.998^20, 9607.51, fee392.49"
+          },
+          {
+            "time": "169–171",
+            "observed": "Evidence originally crossed a static barrier",
+            "fix": "Gate opens before evidence moves and closes afterward",
+            "verified": "Final gate sequence"
+          },
+          {
+            "time": "whole output",
+            "observed": "Previous workflow had no minimum video bitrate enforcement",
+            "fix": "8.5 Mbps CBR master; verify actual stream bitrate≥8Mbps",
+            "verified": "ffprobe and task-aware audit"
+          }
+        ],
+        "remainingLimits": [
+          "No speaker playback or manual listening",
+          "No verified native editing-app project",
+          "No verified full text of originating WeChat title; independent research content",
+          "No user aesthetic approval claimed"
+        ],
+        "userAestheticAcceptance": "pending",
+        "universalPipelineValidated": false
+      }
+    },
+    {
+      "name": "native_editor_project",
+      "passed": false,
+      "required": false,
+      "detail": "No verified native editor import. Remotion source is not a substitute."
+    },
+    {
+      "name": "deterministic_source",
+      "passed": true,
+      "required": true,
+      "detail": "Static check only; no aesthetic claim"
+    }
+  ],
+  "userAestheticAcceptance": "not_implied",
+  "universalPipelineValidated": false
+}

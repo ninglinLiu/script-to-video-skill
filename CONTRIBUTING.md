@@ -33,7 +33,11 @@ python scripts/experience.py validate
 python -m unittest discover -s tests -p "test_repo_inventory.py"
 python -m unittest discover -s tests -p "test_experience.py"
 python -m unittest discover -s tests -p "test_diorama.py"
+python -m unittest discover -s tests -p "test_samples.py"
+python -m unittest discover -s tests -p "test_mix_music.py"    # 没有 ffmpeg 时自动跳过
+python -m unittest discover -s tests -p "test_simfilm.py"
 # 改了生产工具时，再运行对应生产测试；此处不代替它们
+git diff --cached --diff-filter=D --name-only                  # 这次删了什么，应该为空，否则按下面“补充为主”处理
 git diff --cached --stat
 git commit -m "Describe the change"
 ```
@@ -44,9 +48,29 @@ git commit -m "Describe the change"
 
 `docs/media/` 的图和 GIF 由 `scripts/build_readme_media.py` 从实际成片生成，不手工修图，也不放第三方参考片的画面。`docs/production-flow.mmd` 和 `docs/architecture.mmd` 一样由 inventory 同步进 README。
 
+## 加一条样片
+
+在 `references/sample-catalog.json` 加一条记录，写清评价、工程位置和取用方式，然后：
+
+```sh
+python scripts/samples.py measure    # 抽帧测明暗
+python scripts/samples.py doc        # 重新生成 docs/sample-catalog.md 和 README 里的两张样片表
+```
+
+评价只记发生过的事。用户没点名的片子不要加认可；效果差的也留着，标清楚。明暗是测量值，不代表好坏。README 的样片墙用 `samples.py wall` 重新生成。
+
 ## 删除要先问
 
 删除仓库里已有的文件或目录前，先告诉用户要删什么、为什么删，等确认后再动。Git 历史也一样。
+
+## 补充为主，删减要说明
+
+用户 2026-11-02 的要求：“希望以后迭代以补充、修正和整理为主，尽量减少大段删除或整体覆盖；必要删减时说明原因、保留去向。”
+
+- **改错**：直接修正，必要时写明日期，别让旧说法和新说法打架。
+- **大段改写**：先把旧全文存档，比如 `docs/README-20261029.md`、`references/legacy-workflow.md`，再改。
+- **必要删减**：提交前说明删了什么、为什么、去了哪，记进 [docs/removals.md](docs/removals.md)。提交说明里也写一句。
+- **README**：样片图片、分镜、GIF、视频入口和架构图都保留，新内容往里加。放不下就折叠或挪到样片目录，不要直接删。
 
 ## GitHub 检查与边界
 

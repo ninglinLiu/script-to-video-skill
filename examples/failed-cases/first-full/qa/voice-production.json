@@ -1,0 +1,10 @@
+{
+  "key": "96c3cf3a82519864a695ce1c55af3df0662439823a6c043ae51b2d506937851e",
+  "cached": true,
+  "successful_requests": 0,
+  "voiceDuration": 68.76,
+  "duration": 69.23333333333333,
+  "elapsed_seconds": 0.32020020484924316,
+  "provider": "edge-tts",
+  "version": "7.3.1"
+}

@@ -1,0 +1,32 @@
+{
+  "workflow": "adapted-film",
+  "styleReference": "chapter-01",
+  "captionMode": "visible-in-video",
+  "fullFilmReview": "required",
+  "episode": "kaisa-leopold-60s",
+  "source": "chapter-01（完整工程迁移）",
+  "contentForm": "事件复盘：一次 36 小时的清仓，以及它之前的 439%",
+  "durationSeconds": 61.93,
+  "aspect": "1080x1920 / 30fps",
+  "editGrammar": "账单特写 → 统计行 → 两侧对照 → 竖排时间线 → 反转 → 结论；硬切为主，段落淡入淡出",
+  "assetReuse": [
+    "Chapter.tsx 的纸面配色、Serif/Anton 字体层级、kicker/rule/进度条/页脚",
+    ".receipt 账单样式与 .stamp、.barcode",
+    "CaptionProbe 与 render.mjs 的整片渲染、字幕对照组流程",
+    "voice.py、requirements.txt、字体许可"
+  ],
+  "notReused": [
+    "chapter-01 的 A/B 双账单、Price 圆盘、Recovery 双柱、Evidence 论文页的具体场景",
+    "原稿 source/draft.txt 与旧 SRT（只在迁移记录里保留）"
+  ],
+  "decisions": [
+    { "choice": "竖屏重排而非缩放", "reason": "1920×1080 的字幕在 1080×1920 会残留 1680px 宽；字幕区、账单卡与时间线都按新画幅重排" },
+    { "choice": "用账单卡承载第一镜", "reason": "文章本身是一条成交记录，账单比柱状图更贴近证据" },
+    { "choice": "不把纳指与 AI 股画成同轴双柱", "reason": "两者口径不同，同一坐标轴会暗示错误倍数；改为两行独立读数" }
+  ],
+  "knownGaps": [
+    "未做真人审听",
+    "未做剪映 / Premiere 导入",
+    "数字沿用凯撒文章的转述口径，未回原始报道逐条核对"
+  ]
+}

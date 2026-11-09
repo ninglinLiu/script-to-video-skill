@@ -1,0 +1,7 @@
+{
+  "workflow": "cinema-recipes",
+  "styleReference": "poisson-cinema",
+  "captionMode": "visible-in-video",
+  "fullFilmReview": "required",
+  "status": "unwritten"
+}

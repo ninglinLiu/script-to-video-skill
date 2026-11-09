@@ -1,0 +1,14 @@
+{
+  "service": "edge-tts",
+  "version": "7.3.1",
+  "voice": "zh-CN-YunxiNeural",
+  "cached": false,
+  "successfulRequests": 1,
+  "requestElapsed": 5.0543224811553955,
+  "duration": 10.704,
+  "text": "降息和缩表，可以同时发生。一个调低短期资金的价格，一个减少央行持有的证券。两件事，别看成同一个按钮。",
+  "key": "7ac004d836aea6263dc150909cb753cf81a88484f722730518428838efc51fcc",
+  "manualListening": false,
+  "speakerPlayback": false,
+  "billing": "无付费API请求；本地算力/电费未计价"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "t": 1.234,
+    "sha256": "80dc785a33b3c7f7fc6ddbc4eb9258b38a58665ad6e50b3f5ec431cf0a87827b",
+    "identical": true
+  },
+  {
+    "t": 3.147,
+    "sha256": "3132724e669309bac3bc8e38ef54de31b3d9ddd9e263424c50677bebd8e76202",
+    "identical": true
+  },
+  {
+    "t": 6.237,
+    "sha256": "951b5e019c40a0ef2672fb331b1aed991e39d9bcec98ff62e1cc5d04acd5732c",
+    "identical": true
+  }
+]

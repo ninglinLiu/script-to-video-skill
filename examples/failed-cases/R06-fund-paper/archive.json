@@ -1,0 +1,12 @@
+{
+  "reflection": "R06",
+  "status": "user-rejected",
+  "local_project": "Claudebao/productions/kaisa-next-60s",
+  "local_film_sha256": "aef4284480b6919debb680e0ec4f1909761dcd0c5a42d882ff8ff4aa4c404e89",
+  "seconds": 61.93,
+  "width": 1080,
+  "height": 1920,
+  "preview_sha256": "f04ccb6cc70b4ea06480c0f793d5283d957ab964e0337840e31dba9ef2a46aba",
+  "copied_text_files": 35,
+  "note": "高码率原片与依赖留在本机；此处预览由原片转码，去掉音轨。"
+}

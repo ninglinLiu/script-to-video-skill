@@ -1,0 +1,113 @@
+{
+  "article": "https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%85%AB%E5%AE%9A%E5%BE%8B",
+  "formula": "top share(p) = p^(1-1/alpha), Lorenz(p) = 1-(1-p)^(1-1/alpha)",
+  "checks": [
+    {
+      "claim": "文章给出的 α 对应 80/20",
+      "formula": "ln5/ln4",
+      "expected": 1.16,
+      "computed": 1.160964047443681,
+      "pass": true
+    },
+    {
+      "claim": "顶部分位份额公式在 α=ln5/ln4 给回 80%",
+      "formula": "0.2**(1-1/alpha)",
+      "expected": 0.8,
+      "computed": 0.8,
+      "pass": true
+    },
+    {
+      "claim": "α=1.5 时 20% 的份额",
+      "formula": "0.2**(1-1/1.5)",
+      "expected": 0.5848,
+      "computed": 0.5848035476425731,
+      "pass": true
+    },
+    {
+      "claim": "α=2.0 时 20% 的份额",
+      "formula": "0.2**(1-1/2)",
+      "expected": 0.4472,
+      "computed": 0.4472135954999579,
+      "pass": true
+    },
+    {
+      "claim": "编译后的 top80",
+      "formula": "content.generated top80",
+      "expected": 0.8,
+      "computed": 0.7999999999999999,
+      "pass": true
+    },
+    {
+      "claim": "编译后的 top15",
+      "formula": "content.generated top15",
+      "expected": 0.5848,
+      "computed": 0.5848035476425731,
+      "pass": true
+    },
+    {
+      "claim": "编译后的 top20",
+      "formula": "content.generated top20",
+      "expected": 0.4472,
+      "computed": 0.4472135954999579,
+      "pass": true
+    },
+    {
+      "claim": "五组份额之和为 1",
+      "formula": "sum(quintiles)",
+      "expected": 1.0,
+      "computed": 1.0,
+      "pass": true
+    },
+    {
+      "claim": "最低 20% 的份额",
+      "formula": "Lorenz(0.2)",
+      "expected": 0.0305,
+      "computed": 0.030464470802084365,
+      "pass": true
+    },
+    {
+      "claim": "最高 20% 的份额等于 top80",
+      "formula": "1-Lorenz(0.8)",
+      "expected": 0.7999999999999999,
+      "computed": 0.8,
+      "pass": true
+    },
+    {
+      "claim": "编译后的 q1 与 Lorenz 差一致",
+      "formula": "q1",
+      "expected": 0.030464470802084365,
+      "computed": 0.030464470802084476,
+      "pass": true
+    },
+    {
+      "claim": "编译后的 q2 与 Lorenz 差一致",
+      "formula": "q2",
+      "expected": 0.037910040231843856,
+      "computed": 0.037910040231843745,
+      "pass": true
+    },
+    {
+      "claim": "编译后的 q3 与 Lorenz 差一致",
+      "formula": "q3",
+      "expected": 0.05092779772444456,
+      "computed": 0.05092779772444467,
+      "pass": true
+    },
+    {
+      "claim": "编译后的 q4 与 Lorenz 差一致",
+      "formula": "q4",
+      "expected": 0.08069769124162718,
+      "computed": 0.08069769124162718,
+      "pass": true
+    },
+    {
+      "claim": "编译后的 q5 与 Lorenz 差一致",
+      "formula": "q5",
+      "expected": 0.8,
+      "computed": 0.7999999999999999,
+      "pass": true
+    }
+  ],
+  "allPassed": true,
+  "scope": "只核对片中出现的数字与它们的推导；不证明维基条目对帕累托 1896 年观察的记述本身准确。"
+}

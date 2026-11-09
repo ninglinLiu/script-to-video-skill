@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "kit": "blackgold",
+  "entry": "工程/src/entry.tsx",
+  "visualModule": "工程/src/vendor/src/library/blackgold/props.tsx",
+  "files": [
+    {
+      "path": "工程/src/vendor/src/library/anim.ts",
+      "origin": "assets/weilanx/upstream/src/library/anim.ts",
+      "sha256": "e2913a168ef86fe522ab6b7da4529c0e193afd425e1eb3714d3ccd2d646bd4bc"
+    },
+    {
+      "path": "工程/src/vendor/src/library/blackgold/props.tsx",
+      "origin": "assets/weilanx/upstream/src/library/blackgold/props.tsx",
+      "sha256": "a1b135e2794d90c1f2abd176fb5c40978952fd5a2204384db2ea7ab5e651d79f"
+    },
+    {
+      "path": "工程/src/vendor/src/library/blackgold/theme.ts",
+      "origin": "assets/weilanx/upstream/src/library/blackgold/theme.ts",
+      "sha256": "3a2a75d51b608d8d70b38cc47ef5a72860906b3167359927e83a3dbae01b2c9b"
+    },
+    {
+      "path": "工程/src/vendor/src/library/vox/theme.ts",
+      "origin": "assets/weilanx/upstream/src/library/vox/theme.ts",
+      "sha256": "02a7e2b58cf5a9f849d6362bcb283f35b34cb4edd90d936f794172c42f92b3bd"
+    },
+    {
+      "path": "工程/public/fonts/vox/Anton-400.woff",
+      "origin": "assets/weilanx/upstream/public/fonts/vox/Anton-400.woff",
+      "sha256": "791375bdbed00de4a3aad4811291220ead0e1405d6f8b5bdbf109798c8359ac5"
+    },
+    {
+      "path": "工程/public/fonts/vox/Caveat-600.woff",
+      "origin": "assets/weilanx/upstream/public/fonts/vox/Caveat-600.woff",
+      "sha256": "7a101c766f28866c5aa36ebbce5cfedcea2601f2439d3b16694b9c8eee75e9dc"
+    },
+    {
+      "path": "工程/public/fonts/vox/EBGaramond-400.woff",
+      "origin": "assets/weilanx/upstream/public/fonts/vox/EBGaramond-400.woff",
+      "sha256": "61ea4fa656e4ec2c6103483625f0d6a2e1571c2be57015063b73f23392b3ff98"
+    },
+    {
+      "path": "工程/public/fonts/vox/EBGaramond-600.woff",
+      "origin": "assets/weilanx/upstream/public/fonts/vox/EBGaramond-600.woff",
+      "sha256": "d0ecbbe1d933b68d32ef2629e9a46673ae5eff5ce9c04cd7f4c012504da33a11"
+    },
+    {
+      "path": "工程/public/fonts/vox/LICENSES.md",
+      "origin": "assets/weilanx/upstream/public/fonts/vox/LICENSES.md",
+      "sha256": "e8d459427491fb0d2b71c7c111a4569b8bbbede214f4fdd8180a03ff60e15017"
+    },
+    {
+      "path": "工程/public/fonts/vox/NotoSansSC-900.woff",
+      "origin": "assets/weilanx/upstream/public/fonts/vox/NotoSansSC-900.woff",
+      "sha256": "d2d8a42438b18b65b6577434df4e41bb08c6b5051281757849af00ab743bb58f"
+    },
+    {
+      "path": "工程/public/fonts/vox/OFL.txt",
+      "origin": "assets/weilanx/upstream/public/fonts/vox/OFL.txt",
+      "sha256": "67c5d5206b96f8340b95fabd02ae60701e0b20ce2594d976216f1065e5aa3822"
+    },
+    {
+      "path": "工程/public/fonts/vox/PlayfairDisplay-700.woff",
+      "origin": "assets/weilanx/upstream/public/fonts/vox/PlayfairDisplay-700.woff",
+      "sha256": "2644f0e3c7c8f79e9d0c56ad22d246294c7c2b21ea884a7a2b1a10261cb95469"
+    },
+    {
+      "path": "工程/public/fonts/vox/PlayfairDisplay-700i.woff",
+      "origin": "assets/weilanx/upstream/public/fonts/vox/PlayfairDisplay-700i.woff",
+      "sha256": "f263323db61a414618d9cafe489d0e18adf6682cd36baa45239ed804fe26fcf1"
+    },
+    {
+      "path": "工程/public/fonts/Noto-OFL.txt",
+      "origin": "examples/chapter-01/工程/public/fonts/Noto-OFL.txt",
+      "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+    },
+    {
+      "path": "工程/public/fonts/NotoSansSC-VF.ttf",
+      "origin": "examples/chapter-01/工程/public/fonts/NotoSansSC-VF.ttf",
+      "sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a"
+    },
+    {
+      "path": "工程/public/fonts/NotoSerifSC-VF.ttf",
+      "origin": "examples/chapter-01/工程/public/fonts/NotoSerifSC-VF.ttf",
+      "sha256": "a4aed9985a5916fbf6690456f8732a9fccd517938e353165d4142b4f11a39280"
+    },
+    {
+      "path": "工程/src/vendor/LICENSE",
+      "origin": "assets/weilanx/upstream/LICENSE",
+      "sha256": "901ecf9fc6e5f6cd153470522b5dc019e8bd203c4fb5e93cc41d4231181fa312"
+    }
+  ],
+  "license": "MIT upstream; OFL fonts",
+  "role": "Existing visual objects retained through comparison and regrouping"
+}

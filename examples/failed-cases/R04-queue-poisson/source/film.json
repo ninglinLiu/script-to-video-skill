@@ -1,0 +1,530 @@
+{
+  "schema": 1,
+  "title": "队列为什么会突然崩",
+  "width": 1920,
+  "height": 1080,
+  "shots": [
+    {
+      "id": "s1",
+      "recipe": "spatial",
+      "object": "queue",
+      "surface": "dark",
+      "label": "观察尺度",
+      "headline": "一个人，一条队列",
+      "fromCue": 0,
+      "toCue": 3,
+      "action": {
+        "fromCue": 0,
+        "toCue": 1
+      },
+      "explains": "把镜头收进一个人、一条队列、一个服务台；等待就是从进队到离开的时间。",
+      "transition": {
+        "mode": "cut",
+        "reason": "从空间尺度进入这一批到达的真实位置"
+      },
+      "data": {
+        "labels": [
+          "服务台",
+          "队列",
+          "到达"
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "recipe": "events",
+      "object": "arrivals",
+      "surface": "dark",
+      "label": "到达时刻",
+      "headline": "到达不是均匀的",
+      "fromCue": 4,
+      "toCue": 5,
+      "action": {
+        "fromCue": 4,
+        "toCue": 5
+      },
+      "explains": "12 个到达从等间隔移到模拟位置：聚簇与空档都是真的。",
+      "transition": {
+        "mode": "cut",
+        "reason": "从到达位置转到同一段模拟的等待时间分布"
+      },
+      "data": {
+        "positions": [
+          0.0,
+          0.0558,
+          0.0732,
+          0.5156,
+          0.7054,
+          0.7617,
+          0.835,
+          0.8714,
+          0.9001,
+          0.9357,
+          0.9896,
+          1.0
+        ],
+        "before": "等间隔",
+        "after": "实测到达"
+      }
+    },
+    {
+      "id": "s3",
+      "recipe": "histogram",
+      "object": "arrivals",
+      "surface": "paper",
+      "label": "等待分布",
+      "headline": "等待是一条长尾",
+      "fromCue": 6,
+      "toCue": 10,
+      "action": {
+        "fromCue": 6,
+        "toCue": 8
+      },
+      "explains": "60 个人按各自的等待时长进入四个区间，柱高由样本计数得出。",
+      "transition": {
+        "mode": "cut",
+        "reason": "从分布回到两个平均时长"
+      },
+      "data": {
+        "labels": [
+          "0–2",
+          "2–5",
+          "5–10",
+          ">10"
+        ],
+        "samples": [
+          2,
+          1,
+          1,
+          0,
+          2,
+          0,
+          1,
+          2,
+          2,
+          0,
+          0,
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          2,
+          0,
+          2,
+          3,
+          3,
+          2,
+          3,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          2,
+          3,
+          3,
+          2,
+          0,
+          1,
+          2,
+          0,
+          0,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          2,
+          2
+        ],
+        "unit": " 人"
+      }
+    },
+    {
+      "id": "s4",
+      "recipe": "windows",
+      "object": "times",
+      "surface": "dark",
+      "label": "两个时长",
+      "headline": "只差百分之十",
+      "fromCue": 11,
+      "toCue": 13,
+      "action": {
+        "fromCue": 11,
+        "toCue": 13
+      },
+      "explains": "到达间隔 0.67 分钟与服务时间 0.6 分钟按同一尺度画，再叠在一起比较。",
+      "transition": {
+        "mode": "cut",
+        "reason": "两个时长只差 10%，但利用率已经 90%，进入计算"
+      },
+      "data": {
+        "labels": [
+          "到达间隔",
+          "服务时间"
+        ],
+        "values": [
+          0.67,
+          0.6
+        ],
+        "unit": " 分钟"
+      }
+    },
+    {
+      "id": "s5",
+      "recipe": "formula",
+      "object": "wait",
+      "surface": "paper",
+      "label": "排队公式",
+      "headline": "把差值代入",
+      "fromCue": 14,
+      "toCue": 15,
+      "action": {
+        "fromCue": 14,
+        "toCue": 15
+      },
+      "explains": "保留 W 与等号，把 (μ−λ) 换成 10。",
+      "transition": {
+        "mode": "cut",
+        "reason": "代入后的 1/10 还要换算成分钟"
+      },
+      "data": {
+        "before": [
+          {
+            "id": "w",
+            "text": "W"
+          },
+          {
+            "id": "eq",
+            "text": "="
+          },
+          {
+            "id": "one",
+            "text": "1"
+          },
+          {
+            "id": "bar",
+            "text": "/"
+          },
+          {
+            "id": "diff",
+            "text": "(μ−λ)"
+          }
+        ],
+        "after": [
+          {
+            "id": "w",
+            "text": "W"
+          },
+          {
+            "id": "eq",
+            "text": "="
+          },
+          {
+            "id": "one",
+            "text": "1"
+          },
+          {
+            "id": "bar",
+            "text": "/"
+          },
+          {
+            "id": "ten",
+            "text": "10"
+          }
+        ],
+        "explanation": "μ=100/时，λ=90/时，差是 10/时"
+      }
+    },
+    {
+      "id": "s6",
+      "recipe": "formula",
+      "object": "wait",
+      "surface": "paper",
+      "label": "换算",
+      "headline": "0.1 小时是多久",
+      "fromCue": 16,
+      "toCue": 17,
+      "action": {
+        "fromCue": 16,
+        "toCue": 17
+      },
+      "explains": "1/10 小时换成 6 分钟，同一个 W 不变。",
+      "transition": {
+        "mode": "cut",
+        "reason": "平均值 6 分钟要在不同利用率下展开"
+      },
+      "data": {
+        "before": [
+          {
+            "id": "w",
+            "text": "W"
+          },
+          {
+            "id": "eq",
+            "text": "="
+          },
+          {
+            "id": "one",
+            "text": "1"
+          },
+          {
+            "id": "bar",
+            "text": "/"
+          },
+          {
+            "id": "ten",
+            "text": "10"
+          }
+        ],
+        "after": [
+          {
+            "id": "w",
+            "text": "W"
+          },
+          {
+            "id": "eq",
+            "text": "="
+          },
+          {
+            "id": "six",
+            "text": "6"
+          },
+          {
+            "id": "min",
+            "text": "分钟"
+          }
+        ],
+        "explanation": "0.1 小时 = 6 分钟"
+      }
+    },
+    {
+      "id": "s7",
+      "recipe": "curve",
+      "object": "rho",
+      "surface": "dark",
+      "label": "利用率曲线",
+      "headline": "在逼近极限",
+      "fromCue": 18,
+      "toCue": 21,
+      "action": {
+        "fromCue": 18,
+        "toCue": 19
+      },
+      "explains": "按三个实测点展开等待时间：50% 是 1.2 分钟，80% 是 3 分钟，90% 是 6 分钟。",
+      "transition": {
+        "mode": "cut",
+        "reason": "从平均值转到同一批人里谁被挤出去"
+      },
+      "data": {
+        "points": [
+          [
+            50,
+            1.2
+          ],
+          [
+            80,
+            3.0
+          ],
+          [
+            90,
+            6.0
+          ]
+        ],
+        "yMax": 7,
+        "unit": " 分钟",
+        "xLabel": "利用率 %"
+      }
+    },
+    {
+      "id": "s8",
+      "recipe": "filters",
+      "object": "arrivals",
+      "surface": "paper",
+      "label": "第一道门",
+      "headline": "2 分钟以内",
+      "fromCue": 22,
+      "toCue": 23,
+      "action": {
+        "fromCue": 22,
+        "toCue": 23
+      },
+      "explains": "同一段模拟的 60 个人过第一道门：只有一部分能在 2 分钟内办完。",
+      "transition": {
+        "mode": "cut",
+        "reason": "把门槛放宽到 6 分钟，同一批人再走一次"
+      },
+      "data": {
+        "stages": [
+          "≤2 分"
+        ],
+        "items": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "s9",
+      "recipe": "filters",
+      "object": "arrivals",
+      "surface": "paper",
+      "label": "第二道门",
+      "headline": "6 分钟以内",
+      "fromCue": 24,
+      "toCue": 26,
+      "action": {
+        "fromCue": 24,
+        "toCue": 26
+      },
+      "explains": "放宽到 6 分钟，通过的人变多，但仍有四成的人在外面。",
+      "transition": {
+        "mode": "cut",
+        "reason": "片尾停在结论，不再引入新对象"
+      },
+      "data": {
+        "stages": [
+          "≤2 分",
+          "≤6 分"
+        ],
+        "items": [
+          1,
+          1,
+          1,
+          2,
+          0,
+          2,
+          1,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          2,
+          2,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          0,
+          0
+        ]
+      }
+    }
+  ]
+}

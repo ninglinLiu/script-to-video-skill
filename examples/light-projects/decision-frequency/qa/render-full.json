@@ -1,0 +1,23 @@
+{
+  "mode": "full",
+  "seconds": 456.067,
+  "composition": {
+    "id": "decision-machine",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationInFrames": 5204,
+    "props": {},
+    "defaultProps": {},
+    "defaultCodec": null,
+    "defaultOutName": null,
+    "defaultVideoImageFormat": null,
+    "defaultPixelFormat": null,
+    "defaultProResProfile": null,
+    "defaultSampleRate": null
+  },
+  "range": [
+    0,
+    5203
+  ]
+}

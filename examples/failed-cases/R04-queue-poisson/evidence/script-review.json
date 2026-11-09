@@ -1,0 +1,18 @@
+{
+  "reviewedFiles": [
+    {
+      "path": "source/draft.txt",
+      "sha256": "ff636aaf0ba7b21ee75dd803f9d2042659264703516aeaa9cf199f8f2463d7ae"
+    }
+  ],
+  "reviewedAt": "2026-10-29T12:50:00+08:00",
+  "factsStatus": "approved-model-and-simulation-checked",
+  "method": "公式与数值由 scripts/build.py 一次生成：W=1/(μ−λ) 与 W=1/(μ(1−ρ)) 用同一参数；柱状图与筛选用同一次模拟的样本计数。口播每个数字都能指回 manifest。",
+  "ttsAllowed": true,
+  "reviewer": "producer (agent)",
+  "notes": [
+    "这是研究选题，不是文章改编；没有冒充任何原文。",
+    "模拟参数 λ=90/时、μ=100/时 是选定值，不是实测；片中写明「模拟」。",
+    "不宣称 90% 必然崩溃，只解释等待时间随利用率的非线性。"
+  ]
+}

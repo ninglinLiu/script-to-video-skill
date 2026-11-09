@@ -1,0 +1,12 @@
+项目,文件,类型,来源与使用
+店铺,assets/shop.png,AI生成,内置imagegen；本片原创；提示词见image-prompts.json
+顾客,assets/shopper.png,AI生成,内置imagegen；透明背景；本片原创
+外套,assets/coat.png,AI生成,内置imagegen；透明背景；提示词见coat-prompt.txt
+价格标签与镜头,film.mjs及art.mjs,代码制作,本片原创构图与确定性动作
+植物曲线,vendor/nouveau-curves.mjs,开源代码适配,weilanx新艺术代码；原始huashu-art-motion；MIT
+字体,assets/NotoSansSC-VF.ttf及NotoSerifSC-VF.ttf,开源字体,已有本地Noto字体；OFL文本随附
+旁白,assets/voice-anchor.wav,语音合成,Edge TTS zh-CN-YunxiNeural；整段生成；最终语速+0%
+配乐,assets/music-original.wav,代码原创编曲,music.mjs；调用weilanx的MIT合成乐器；未引用现成歌曲
+动作音效,assets/sound-design.wav,代码合成,17个动作事件；工具来源同配乐
+参考仓库,vendor,开源参考,Azure12355/weilanx-claude-videos；commit fb2f5e429744470e10b242b84c0f8aeaf00e280a
+vastness.mp3,assets/vastness.mp3,历史复制缓存,本片未使用；不纳入交付包

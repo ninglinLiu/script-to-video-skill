@@ -1,0 +1,76 @@
+{
+  "duration": 68.86666666666666,
+  "fps": 30,
+  "timingStatus": "measured-voice",
+  "proof": {
+    "start": 19.27,
+    "end": 31.57,
+    "claimKeys": [
+      "top80",
+      "top15",
+      "top20"
+    ]
+  },
+  "transitions": [
+    {
+      "id": "groups-onto-bars",
+      "at": 20.465833,
+      "cueIndex": 4,
+      "offset": -0.3,
+      "kind": "match-move",
+      "objectIds": [
+        "quintile-0",
+        "quintile-4"
+      ],
+      "question": "五组人各占两成人口，份额差在哪里？",
+      "answer": "同一组小人从一排走到各自的柱形上，最高的一组被聚光灯照亮",
+      "maxStep": 0.08
+    },
+    {
+      "id": "bars-to-alpha-cards",
+      "at": 29.567333,
+      "cueIndex": 6,
+      "offset": 0.6,
+      "kind": "evidence-cut",
+      "objectIds": [
+        "quintile-0",
+        "quintile-4"
+      ],
+      "question": "80/20 是自然规律，还是一个参数的结果？",
+      "answer": "保留同一组小人，硬切柱形证据到三个指数的份额对照",
+      "maxStep": 0.08
+    }
+  ],
+  "beats": [
+    {
+      "start": 0,
+      "end": 5.8,
+      "newInformation": "先给出二八法则的常见说法"
+    },
+    {
+      "start": 5.8,
+      "end": 20.6,
+      "newInformation": "说明这个说法来自帕累托 1896 年的观察，并补上豌豆与别国的旁证"
+    },
+    {
+      "start": 19.5,
+      "end": 24.5,
+      "newInformation": "五组人站上各自份额的柱形，最高的 20% 被聚光灯照亮"
+    },
+    {
+      "start": 28.8,
+      "end": 42.3,
+      "newInformation": "同一组人换成三个尾指数，20% 的份额从 80% 降到 58%、45%"
+    },
+    {
+      "start": 42.3,
+      "end": 61.6,
+      "newInformation": "指出把 80/20 当原因来套用是误用，并给出 64/4 的递归切片"
+    },
+    {
+      "start": 61.6,
+      "end": 68.8,
+      "newInformation": "结论：先量尾巴厚度，再谈 80/20"
+    }
+  ]
+}

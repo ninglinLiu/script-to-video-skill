@@ -1,0 +1,20 @@
+{
+  "mode": "full",
+  "seconds": 440.39,
+  "composition": {
+    "id": "gold-transmission",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationInFrames": 2539,
+    "props": {},
+    "defaultProps": {},
+    "defaultCodec": null,
+    "defaultOutName": null,
+    "defaultVideoImageFormat": null,
+    "defaultPixelFormat": null,
+    "defaultProResProfile": null,
+    "defaultSampleRate": null
+  },
+  "output": "qa/render-full-range.mp4"
+}

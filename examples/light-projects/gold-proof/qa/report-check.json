@@ -1,0 +1,15 @@
+{
+  "javascriptErrors": [],
+  "missingLocalLinks": [],
+  "video": {
+    "paused": true,
+    "muted": true,
+    "autoplay": false,
+    "duration": NaN,
+    "readyState": 0,
+    "currentTime": 0
+  },
+  "mobileOverflow": false,
+  "method": "headless browser on authored local HTML; never played video",
+  "userBrowserControlled": false
+}

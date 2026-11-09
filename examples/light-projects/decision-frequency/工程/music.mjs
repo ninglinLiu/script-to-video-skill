@@ -1,0 +1,15 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {buildBgm} from './audio/bgm.mjs';
+import {SR,renderSfx,encodeWav,mixInto} from './audio/synth.mjs';
+const tl=JSON.parse(readFileSync('src/timing.json','utf8'));
+const styles=['tense','light','light','groove','break','groove','tense','light','end'];
+buildBgm({voice:'../assets/voice-track.wav',out:'../assets/music-track.wav',sections:tl.chapters.map((c,i)=>[c.start,styles[i]]),level:.027,depth:.80});
+const fx=new Float32Array(Math.ceil(tl.seconds*SR));
+const events=[];tl.chapters.forEach((c,i)=>{if(i)events.push([Math.max(0,c.start-.40),'whoosh',.019]);});
+const at=(id,cue,delay=0)=>tl.cues[tl.chapters.find(c=>c.id===id).cueStart+cue].start+delay;
+events.push([.3,'click',.03],[at('hook',5),'click',.024],[at('path',12,.4),'paper',.028],[at('reference',3,.5),'click',.028],[at('model',5,.9),'click',.026],[at('research',4,.5),'paper',.023],[at('cost',9),'ding',.023],[at('signal',6),'click',.027],[at('protocol',8,.5),'click',.025],[at('end',4,.7),'ding',.025]);
+for(let i=1;i<9;i++)events.push([at('path',i,.12),'click',.016]);
+const a=at('cost',5),b=at('cost',8);for(let i=1;i<=20;i++)events.push([a+(b-a)*i/20,'click',.014]);
+for(const [time,name,gain] of events)mixInto(fx,renderSfx(name),time,gain);
+writeFileSync('../assets/sfx-track.wav',encodeWav(fx,SR));
+writeFileSync('../qa/audio-events.json',JSON.stringify(events.map(([time,name,gain])=>({time,name,gain})),null,2));

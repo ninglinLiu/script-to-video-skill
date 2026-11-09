@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-10-18T06:44:16.446Z",
+  "new_tts_requests": 1,
+  "new_imagegen_requests": 1,
+  "external_video_model_requests": 0,
+  "user_interventions_during_full_production": 0,
+  "agent_corrections": [
+    "research-label contrast",
+    "boundary-label overlap",
+    "notebook text size",
+    "verification lens coverage",
+    "secondary model support contact",
+    "final encoded subtitle size restored to approved sample readability"
+  ],
+  "render_restart": {
+    "count": 1,
+    "reason": "producer stopped first export to correct support contact; new source hash forces a fresh render"
+  }
+}

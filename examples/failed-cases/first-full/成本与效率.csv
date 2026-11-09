@@ -1,0 +1,16 @@
+﻿项目,实际记录,说明
+制作开始UTC,2026-10-18T06:44:16.446Z,从本次完整短片授权后的制作开始计
+打包时间UTC,2026-10-18T07:03:52.095219+00:00,不含之前构思和样片制作耗时
+本轮历时秒,1176,含编排、生成、修正、渲染、检查和工程整理
+图像生成成功请求,1,研究笔记；其余五件图像复用已确认素材
+整段配音成功请求,1,Yunxi +12%；后续重复运行命中缓存
+外部视频模型调用,0,沿用本地Canvas/Puppeteer/FFmpeg渲染
+API费用,未知,图像工具与配音服务没有返回单次账单，不记为0
+新增素材购买,无,复用已有音乐与字体，没有新增购买操作
+人工费用,未知,没有人工计费信息
+用户人工介入次数,0,本次完整制作期间没有追加选择或审批；初始授权不计为返工
+制作方修正,6,research-label contrast；boundary-label overlap；notebook text size；verification lens coverage；secondary model support contact；final encoded subtitle size restored to approved sample readability
+主动停止重渲,1,producer stopped first export to correct support contact; new source hash forces a fresh render
+低清完整预览渲染秒,61.1,540×960，单时间样本
+高清渲染记录,见 qa/render-log.txt,1080×1920，每帧三个时间样本；10个动画片段
+应用内实时播放与独立人工听音,未验证,已做完整解码、音频测量和画面连续帧检查

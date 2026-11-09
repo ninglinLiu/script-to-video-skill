@@ -1,0 +1,8 @@
+{
+  "inputSha256": "6e44adb24ea893ab5320a2c403d870cb20cce92c5c469b33e951275492cdf60b",
+  "outputs": {
+    "工程/src/content.generated.json": "f0f40b9c2c63952c0c58fe65b7c8dea1d8d88a220331f11c49880fe874b41219",
+    "source/script.json": "343eb246dfa4cb5673c3ee8d93c604799d9cedae3bd9aa1cce21edd58aaf4e37",
+    "source/draft.txt": "1a855202d0be84e0631188874c7259104bb0f803140ac9a35d34baf2136025f0"
+  }
+}

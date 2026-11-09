@@ -1,0 +1,388 @@
+{
+  "profile": "task-short",
+  "episode": "Claudebao\\productions\\pareto-8020-60s",
+  "status": "incomplete",
+  "checks": [
+    {
+      "name": "narrated_mp4",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\pareto-8020-60s\\out\\final-with-audio.mp4"
+    },
+    {
+      "name": "duration",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "actual": 68.833333,
+        "min": 60,
+        "max": 90,
+        "profile": "task-short"
+      }
+    },
+    {
+      "name": "video_format",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640028",
+        "width": 1080,
+        "height": 1920,
+        "coded_width": 1080,
+        "coded_height": 1920,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "9:16",
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1057280,
+        "duration": "68.833333",
+        "bit_rate": "9971506",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "2065",
+        "extradata_size": 62,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc62.28.102 libx264"
+        },
+        "side_data_list": [
+          {
+            "side_data_type": "ICC Profile"
+          }
+        ]
+      }
+    },
+    {
+      "name": "video_bitrate",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "actual": 9971506,
+        "policy": "minimum 8Mbps"
+      }
+    },
+    {
+      "name": "audio",
+      "passed": true,
+      "required": true,
+      "detail": [
+        "aac"
+      ]
+    },
+    {
+      "name": "full_decode",
+      "passed": true,
+      "required": true,
+      "detail": ""
+    },
+    {
+      "name": "real_voice_timestamps",
+      "passed": true,
+      "required": true,
+      "detail": "real edge-tts WordBoundary"
+    },
+    {
+      "name": "subtitle_intervals",
+      "passed": true,
+      "required": true,
+      "detail": 12
+    },
+    {
+      "name": "subtitle_voice_alignment",
+      "passed": true,
+      "required": true,
+      "detail": "SRT groups must start/end on measured voice cues"
+    },
+    {
+      "name": "srt_file",
+      "passed": true,
+      "required": true,
+      "detail": "one or more authored SRT files"
+    },
+    {
+      "name": "source_evidence",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\pareto-8020-60s\\evidence\\source-manifest.json"
+    },
+    {
+      "name": "script_review",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\pareto-8020-60s\\evidence\\script-review.json"
+    },
+    {
+      "name": "shot_contracts",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\pareto-8020-60s\\source\\storyboard.json"
+    },
+    {
+      "name": "approved_script_unchanged",
+      "passed": true,
+      "required": true,
+      "detail": "Review hash and actual spoken content both checked"
+    },
+    {
+      "name": "shot_state_contracts",
+      "passed": true,
+      "required": true,
+      "detail": 6
+    },
+    {
+      "name": "task_shot_count",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "actual": 6,
+        "min": 5,
+        "max": 8
+      }
+    },
+    {
+      "name": "render_record",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\pareto-8020-60s\\qa\\render-full.json"
+    },
+    {
+      "name": "final_visual_review",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "status": "reviewed_with_fixes",
+        "reviewedFinalSha256": "c57642fc4e885e012ccceddd0bed970f864b7a05f10778872a3fbb447dccb0d4",
+        "reviewedAt": "2026-10-25T18:05:00+08:00",
+        "reviewer": "producer (agent), frame-level inspection of the encoded MP4",
+        "method": "从最终 MP4 解码 11 帧（qa/final-frames/）逐帧检查对象、数字、字幕与遮挡；连续动效部分以 qa/motion-proof.mp4 的密集帧为依据",
+        "framesReviewed": [
+          {
+            "t": 1.2,
+            "cue": "你多半听过二八法则",
+            "observed": "标题与「五组人，各占 20% 的人口」落定，五个小人头顶 3%/4%/5%/8%/80%",
+            "note": "80% 标签为青色，字号明显大于其余四组"
+          },
+          {
+            "t": 4.6,
+            "cue": "20% 的人拥有 80% 的财富",
+            "observed": "人物一排静止，字幕已切到结论句",
+            "note": "无异常"
+          },
+          {
+            "t": 12.0,
+            "cue": "意大利 80% 的土地归 20% 的人",
+            "observed": "同一排人物保持，字幕推进到出处",
+            "note": "约 14 秒无动画，靠字幕推进，属于解释段落"
+          },
+          {
+            "t": 20.9,
+            "cue": "但它不是自然规律",
+            "observed": "五个小人开始移动，柱形从基线长出",
+            "note": "match-move 交接"
+          },
+          {
+            "t": 22.4,
+            "cue": "要让 20% 占 80%",
+            "observed": "最高组站在 0.32 高度，聚光灯已亮；其余四组站在 0.66，柱形只剩细线",
+            "note": "3% 与 80% 同屏可读"
+          },
+          {
+            "t": 31.6,
+            "cue": "指数换成 1.5",
+            "observed": "硬切完成，三张卡片可读：1.16→80%、1.5→58%、2.0→45%",
+            "note": "evidence-cut 交接"
+          },
+          {
+            "t": 45.0,
+            "cue": "不是可以套用的原因",
+            "observed": "卡片保持，人物在底部一行",
+            "note": "无异常"
+          },
+          {
+            "t": 49.6,
+            "cue": "80% 的 80% 是 64%，20% 的 20% 是 4%",
+            "observed": "尾部动作：80% 那一组放大到 0.86，其余四组缩到 0.42",
+            "note": "64/4 两个数只在口播与字幕中，没有上屏"
+          },
+          {
+            "t": 55.0,
+            "cue": "文章自己也提醒",
+            "observed": "构图保持，结论尚未出现",
+            "note": "无异常"
+          },
+          {
+            "t": 63.0,
+            "cue": "先问尾巴有多厚",
+            "observed": "结论两行「先量尾巴有多厚 / 再谈 80 / 20」落定",
+            "note": "修复后复看：此前结论在 33 秒就出现，比口播早 29 秒"
+          },
+          {
+            "t": 68.4,
+            "cue": "尾帧",
+            "observed": "画面保持到结尾，68.87 秒淡出",
+            "note": "无残留"
+          }
+        ],
+        "fixesBeforeFinalRender": [
+          "收尾句原本在 33 秒就出现（T2+3.4），比口播早 29 秒；改为 plan.duration-6.9 触发，62 秒落定",
+          "42–62 秒原本完全静止；在 64/4 那一句加了一个尾部动作：80% 组放大、其余四组缩小",
+          "标签从人物脚下移到头顶，避免 80% 白字压在青色柱子上",
+          "柱形基线上移、柱高加大，减少竖屏中段的空白",
+          "指数卡片下移到 27%，不再遮住第二行字幕；卡片内字号缩小",
+          "卡片淡入推迟到硬切后 0.45 秒，缩短与人物下移的重叠",
+          "硬切后第二行字幕改为「同一个 20%，换一个指数就换一个答案」，不再复述卡片数字"
+        ],
+        "notChecked": [
+          "未做真人审听（Agent 无法播放声音）",
+          "未在剪映 / Premiere 中打开工程",
+          "未验证手机端实际播放"
+        ]
+      }
+    },
+    {
+      "name": "native_editor_project",
+      "passed": false,
+      "required": true,
+      "detail": {
+        "status": "not_verified",
+        "editor": null,
+        "openedSuccessfully": null,
+        "agentRepeated": false,
+        "reason": "本机没有把工程导入剪映或 Premiere；Remotion 源码不是原生工程。",
+        "howToVerify": "把 out/final-with-audio.mp4、out/subtitles.srt 与 工程/ 交给人工导入后，再把 openedSuccessfully 记为 true。"
+      }
+    },
+    {
+      "name": "deterministic_source",
+      "passed": true,
+      "required": true,
+      "detail": "Static check only; no aesthetic claim"
+    },
+    {
+      "name": "visual_asset_imports",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "kit": "blackgold",
+        "importReachable": true,
+        "files": 17
+      }
+    },
+    {
+      "name": "shared_content_bindings",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "labels": {
+          "one": "1",
+          "p20": "20%",
+          "top80": "80%",
+          "top15": "58%",
+          "top20": "45%",
+          "alpha161": "1.16",
+          "alpha15": "1.5",
+          "alpha20": "2.0",
+          "q1": "3%",
+          "q2": "4%",
+          "q3": "5%",
+          "q4": "8%",
+          "q5": "80%",
+          "top64": "64%",
+          "p4": "4%"
+        },
+        "scope": "bound fields only; untagged/manual numbers still require review"
+      }
+    },
+    {
+      "name": "edit_plan",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "transitions": [
+          "groups-onto-bars",
+          "bars-to-alpha-cards"
+        ]
+      }
+    },
+    {
+      "name": "encoded_motion_proof",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "duration": 12.3,
+        "hash": "597c1ed05b690aa789b4363ff7c61af33bbca7c1eb41577ff5c36a2dce557e89"
+      }
+    },
+    {
+      "name": "rendered_motion_trace",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "frames": 369,
+        "boundLabels": [
+          "alpha15",
+          "alpha161",
+          "alpha20",
+          "q1",
+          "q2",
+          "q3",
+          "q4",
+          "q5",
+          "top15",
+          "top20",
+          "top80"
+        ],
+        "scope": "DOM presence, value and local position continuity; not perceptual quality"
+      }
+    },
+    {
+      "name": "continuous_motion_review",
+      "passed": true,
+      "required": true,
+      "detail": "Producer observation bound to clip; not independent approval or user acceptance"
+    }
+  ],
+  "userAestheticAcceptance": "not_implied",
+  "universalPipelineValidated": false
+}

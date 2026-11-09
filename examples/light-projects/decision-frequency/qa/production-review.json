@@ -1,0 +1,93 @@
+{
+  "status": "reviewed_with_fixes",
+  "reviewedFinalSha256": "2fe6f87f3381d89c2cedc88a46dcf22067049292507f2ff2b260c4224d2d8fc3",
+  "reviewer": "Production agent; independent fact review and assisted mechanism-layout review; not independent full-film aesthetic acceptance",
+  "framesReviewed": [
+    2.2914,
+    7.0015,
+    10.438599999999997,
+    17.037399999999998,
+    25.891500000000004,
+    32.3526,
+    40.1736,
+    47.396,
+    52.666399999999996,
+    58.9628,
+    64.683,
+    68.8572,
+    75.6288,
+    83.828,
+    89.81120000000001,
+    97.97600000000001,
+    106.56000000000002,
+    112.82400000000001,
+    120.88080000000001,
+    128.858,
+    134.6792,
+    142.619,
+    150.9625,
+    157.051,
+    163.33419999999998,
+    167.90616666666665,
+    171.24246666666667
+  ],
+  "continuousProof": "qa/proof-window.mp4,13 seconds",
+  "sequenceChecks": [
+    "result-handoff-12.jpg",
+    "cost-debit-12.jpg",
+    "world-transition-12.jpg",
+    "evidence-gate-12.jpg"
+  ],
+  "issues": [
+    {
+      "time": "17.04 / 32.35 / 142.62",
+      "observed": "Initial numeric list exceeded caption width; first repair produced isolated 1–2 character rows",
+      "fix": "Shared balanced layout: 6–18 characters per multiline row, max 3 rows; re-render only caption band",
+      "verified": "All 52 groups checked for text preservation and line limits, final frame review"
+    },
+    {
+      "time": "25.89",
+      "observed": "Three-down label overlapped total-return label during handoff",
+      "fix": "Separated outgoing and incoming opacity windows",
+      "verified": "Final contact and 12-frame handoff strip"
+    },
+    {
+      "time": "26.66–36.66",
+      "observed": "Chart held unchanged through explanation of evaluation window",
+      "fix": "Observation rectangle moves across same path then expands; account result remains +8%",
+      "verified": "13-second continuous proof and final contact"
+    },
+    {
+      "time": "58.96",
+      "observed": "Adjacent dials/boxes touched; connection line crossed secondary label",
+      "fix": "Increase initial controller spacing, move connector start below label",
+      "verified": "Actual repaired still and final contact"
+    },
+    {
+      "time": "106.56",
+      "observed": "Exponent separated too far from cost factor",
+      "fix": "Use one SVG text with true superscript tspan",
+      "verified": "Final 10000×0.998^20, 9607.51, fee392.49"
+    },
+    {
+      "time": "169–171",
+      "observed": "Evidence originally crossed a static barrier",
+      "fix": "Gate opens before evidence moves and closes afterward",
+      "verified": "Final gate sequence"
+    },
+    {
+      "time": "whole output",
+      "observed": "Previous workflow had no minimum video bitrate enforcement",
+      "fix": "8.5 Mbps CBR master; verify actual stream bitrate≥8Mbps",
+      "verified": "ffprobe and task-aware audit"
+    }
+  ],
+  "remainingLimits": [
+    "No speaker playback or manual listening",
+    "No verified native editing-app project",
+    "No verified full text of originating WeChat title; independent research content",
+    "No user aesthetic approval claimed"
+  ],
+  "userAestheticAcceptance": "pending",
+  "universalPipelineValidated": false
+}

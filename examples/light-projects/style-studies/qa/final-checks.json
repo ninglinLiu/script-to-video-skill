@@ -1,0 +1,94 @@
+{
+  "samples": [
+    {
+      "style": "editorial",
+      "duration": 8,
+      "frames": 240,
+      "size": [
+        1080,
+        1920
+      ],
+      "fps": 30,
+      "silentPreviewHasAudio": false,
+      "audioEditionHasAudio": true,
+      "fullDecode": "pass",
+      "loudness": {
+        "input_i": "-18.27",
+        "input_tp": "-2.49",
+        "input_lra": "3.40",
+        "input_thresh": "-29.67",
+        "output_i": "-16.11",
+        "output_tp": "-1.00",
+        "output_lra": "1.40",
+        "output_thresh": "-27.03",
+        "normalization_type": "dynamic",
+        "target_offset": "0.11"
+      },
+      "sha256": "7f565d44b0f0d3b5f4f8a4efd74f788c2d18084478d957227b362ec3e0a8b3b2",
+      "userAcceptance": "pending",
+      "listening": "not performed; user requested no speaker playback"
+    },
+    {
+      "style": "spatial",
+      "duration": 8,
+      "frames": 240,
+      "size": [
+        1080,
+        1920
+      ],
+      "fps": 30,
+      "silentPreviewHasAudio": false,
+      "audioEditionHasAudio": true,
+      "fullDecode": "pass",
+      "loudness": {
+        "input_i": "-18.27",
+        "input_tp": "-2.53",
+        "input_lra": "3.40",
+        "input_thresh": "-29.67",
+        "output_i": "-16.10",
+        "output_tp": "-1.00",
+        "output_lra": "1.40",
+        "output_thresh": "-27.02",
+        "normalization_type": "dynamic",
+        "target_offset": "0.10"
+      },
+      "sha256": "a8cb0f3aff96614187f8fa0ffb71ccb0da3b2893103d232c9bf1dac854841b69",
+      "userAcceptance": "pending",
+      "listening": "not performed; user requested no speaker playback"
+    },
+    {
+      "style": "pixel",
+      "duration": 8,
+      "frames": 240,
+      "size": [
+        1080,
+        1920
+      ],
+      "fps": 30,
+      "silentPreviewHasAudio": false,
+      "audioEditionHasAudio": true,
+      "fullDecode": "pass",
+      "loudness": {
+        "input_i": "-18.28",
+        "input_tp": "-2.54",
+        "input_lra": "3.40",
+        "input_thresh": "-29.68",
+        "output_i": "-16.10",
+        "output_tp": "-1.00",
+        "output_lra": "1.40",
+        "output_thresh": "-27.01",
+        "normalization_type": "dynamic",
+        "target_offset": "0.10"
+      },
+      "sha256": "f9266803ba2724f223aab3ac978a7cab5bd6c81b99d4d5668f033e4fd70669d8",
+      "userAcceptance": "pending",
+      "listening": "not performed; user requested no speaker playback"
+    }
+  ],
+  "comparison": {
+    "width": 1620,
+    "height": 1056,
+    "audioStreams": 0
+  },
+  "previewAutoPlay": false
+}

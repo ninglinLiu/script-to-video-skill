@@ -1,0 +1,20 @@
+{
+  "times": [
+    1.2,
+    4.5,
+    10.9,
+    15.8,
+    21.7,
+    27
+  ],
+  "meta": {
+    "style": "pixel",
+    "width": 1080,
+    "height": 1920,
+    "duration": 30,
+    "fps": 30,
+    "source": "两个同样勤奋的人，为何十年后差100倍？",
+    "audioPlayback": "disabled"
+  },
+  "errors": []
+}

@@ -1,0 +1,11 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {buildBgm} from './audio/bgm.mjs';
+import {SR,renderSfx,encodeWav,mixInto} from './audio/synth.mjs';
+const tl=JSON.parse(readFileSync('src/timing.json','utf8'));
+const q=i=>tl.cues[i].start;
+buildBgm({voice:'../assets/voice-track.wav',out:'../assets/music-track.wav',sections:[[0,'groove'],[4.44,'light'],[19.83,'break'],[27.53,'light'],[34.97,'break'],[43.45,'groove'],[52.42,'light'],[60.09,'groove'],[71.14,'light'],[80,'end']],level:.028,depth:.78});
+const fx=new Float32Array(Math.ceil(tl.seconds*SR));
+const events=[[.3,'click',.045],[2.65,'whoosh',.025],[q(5)+.6,'click',.045],[q(7),'paper',.055],[q(8)+.75,'click',.055],[19.83,'whoosh',.022],[q(13)+.3,'paper',.045],[27.53,'whoosh',.025],[q(17)+.95,'click',.045],[q(19)+.95,'click',.045],[q(21)+.5,'ding',.03],[43.45,'whoosh',.02],[52.42,'whoosh',.025],[q(32)+.8,'click',.045],[q(33)+.6,'paper',.05],[60.09,'whoosh',.025],[q(35)+1,'click',.045],[q(36)+.65,'click',.045],[q(38)+.4,'ding',.025],[71.14,'whoosh',.025],[q(45)+.5,'paper',.035],[q(46)+.5,'ding',.03]];
+for(const [at,name,gain] of events)mixInto(fx,renderSfx(name),at,gain);
+writeFileSync('../assets/sfx-track.wav',encodeWav(fx,SR));
+writeFileSync('../qa/audio-events.json',JSON.stringify(events.map(([time,name,gain])=>({time,name,gain})),null,2));

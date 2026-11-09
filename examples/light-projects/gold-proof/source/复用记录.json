@@ -1,0 +1,29 @@
+{
+  "weilanx": {
+    "url": "https://github.com/Azure12355/weilanx-claude-videos",
+    "localCommit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "used": [
+      "anim.ts",
+      "redshift/theme.ts",
+      "vox/theme.ts",
+      "synth.mjs",
+      "bgm.mjs",
+      "local fonts",
+      "Remotion dependencies"
+    ],
+    "adaptations": [
+      "local font loading fails render on error",
+      "original control console components",
+      "whole paragraph Yunxi rather than private Doubao tool"
+    ]
+  },
+  "xilo": {
+    "url": "https://github.com/Kianzzz/xilo-opus-video",
+    "localCommit": "f2cd828e2692e7186186408ee01a936707c2c38d",
+    "used": "craft rules and continuous sample review method; renderer not run"
+  },
+  "noNewReferenceDownload": true,
+  "mediaModelCalls": 0,
+  "ttsSuccessfulRequests": 1,
+  "ttsSandboxConnectionFailure": 1
+}

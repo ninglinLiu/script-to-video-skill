@@ -399,8 +399,8 @@
         "poisson-retrospective",
         "user-operating-preferences"
       ],
-      "chars": 452,
-      "sha256": "6d936ee2d41efa5e51be1437c99267ff9476bf6bed6281655b88f08c6aa43dd1"
+      "chars": 499,
+      "sha256": "1c2a93c78cee84ad1fd97cc3843ad506254c23a6cec426cbbb17b2c19c3d1a8f"
     },
     {
       "id": "E15",
@@ -642,6 +642,78 @@
       ],
       "chars": 695,
       "sha256": "4e5f29a22b3d7abf423b41088b246dfb03ba77e4e36a3a3d69b5be9b91caad4b"
+    },
+    {
+      "id": "E24",
+      "title": "用户认可的配乐：完整授权曲目，旁白音效不动，音乐自己让路",
+      "stages": [
+        "plan",
+        "render",
+        "repair",
+        "delivery"
+      ],
+      "signals": [
+        "配乐",
+        "bgm",
+        "背景音乐",
+        "音乐",
+        "避让",
+        "让路",
+        "混音",
+        "响度",
+        "lufs",
+        "侧链",
+        "ducking",
+        "淡入",
+        "淡出",
+        "署名",
+        "授权",
+        "kevin macleod",
+        "crypto",
+        "低频悬疑",
+        "mix_music"
+      ],
+      "card": "references/experience/cards/E24.md",
+      "sources": [
+        "caesar-music-approval"
+      ],
+      "chars": 661,
+      "sha256": "4ee35c181573f84f2d0e679ae10affc58ed8341c519415ae8d26c3d4d3d9a103"
+    },
+    {
+      "id": "E25",
+      "title": "老板喜欢的临界点风格：算出一个数，再一步一步演出来",
+      "stages": [
+        "plan",
+        "storyboard",
+        "render",
+        "review"
+      ],
+      "signals": [
+        "临界点",
+        "渗流",
+        "暗金",
+        "代码模拟",
+        "老板",
+        "凯撒喜欢",
+        "选风格",
+        "哪种风格",
+        "什么风格",
+        "排版",
+        "阈值",
+        "概率",
+        "凯利",
+        "kelly",
+        "percolation",
+        "数据模拟",
+        "纯音乐"
+      ],
+      "card": "references/experience/cards/E25.md",
+      "sources": [
+        "boss-likes-percolation-reference"
+      ],
+      "chars": 665,
+      "sha256": "8e6fae53839eca042a27a3e5d00699a5aae39105e8fd511d21be7206f6f73828"
     }
   ]
 }

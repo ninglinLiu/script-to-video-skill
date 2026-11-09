@@ -1,0 +1,40 @@
+{
+  "outputs": [
+    {
+      "file": "final-silent.mp4",
+      "seconds": 173.466667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 5204,
+      "audioStreams": 0,
+      "pixelFormat": "yuv420p",
+      "decode": "pass",
+      "bytes": 184167885,
+      "sha256": "e76640f250d1b0f2ceedd2e27ec7c022d7c0e5e80ff5e399eb761a47cc282713"
+    },
+    {
+      "file": "final-with-audio.mp4",
+      "seconds": 173.466667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 5204,
+      "audioStreams": 1,
+      "pixelFormat": "yuv420p",
+      "decode": "pass",
+      "bytes": 188411865,
+      "sha256": "2fe6f87f3381d89c2cedc88a46dcf22067049292507f2ff2b260c4224d2d8fc3"
+    }
+  ],
+  "subtitles": 52,
+  "subtitleTiming": "real Edge TTS WordBoundary; starts/ends and no overlap validated",
+  "mathematicalChecks": [
+    "path 7 intervals / 3 down / +8%",
+    "104 vs 106 = -1.89%",
+    "20 fee debits = 9607.51, balance+fees conserved"
+  ],
+  "noSpeakerPlayback": true,
+  "listeningReview": false,
+  "aestheticAcceptance": "not claimed"
+}

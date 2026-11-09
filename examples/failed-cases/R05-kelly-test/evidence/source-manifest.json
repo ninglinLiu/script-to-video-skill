@@ -1,0 +1,36 @@
+{
+  "topic": "正期望的乘法游戏为什么让大多数人亏钱",
+  "origin": "independent-derivation",
+  "originDetail": "Agent 自选知识点（非用户文章改编、非新闻事件）。用户仅要求用 skill 做一条 1 分钟视频测试效果，未提供原文。",
+  "scope": {
+    "spoken": "source/draft.txt 全文（7 章 36 句，342 汉字）",
+    "visual": "画面数字全部由 scripts/simulate.py 生成并通过 scripts/verify_claims.py 复核",
+    "excluded": ["具体标的选择", "税费与融资成本", "凯利公式的仓位数值"]
+  },
+  "facts": [
+    "乘法型损益下，算术平均乘数为 1 不意味着长期不亏；几何平均为 0.866。",
+    "100 轮后 1.5^k*0.5^(100-k) 超过 1 需要 k≥64，概率 0.33%。",
+    "中位数 0.75^50 = 5.66×10⁻⁷。"
+  ],
+  "assumptions": [
+    "每轮独立、胜率恒为 50%、赔率恒为 +50%/-50%。",
+    "不考虑下注比例调整（即每轮都全仓投入）。",
+    "平均值指概率意义上的数学期望。"
+  ],
+  "sources": [
+    {
+      "title": "A New Interpretation of Information Rate",
+      "author": "J. L. Kelly Jr.",
+      "year": 1956,
+      "usedFor": "凯利公式最大化对数（几何）增长",
+      "url": "https://doi.org/10.1002/j.1538-7305.1956.tb03809.x"
+    }
+  ],
+  "evidenceFiles": [
+    "evidence/fact-review.json",
+    "scripts/simulate.py",
+    "scripts/verify_claims.py",
+    "assets/stats.json"
+  ],
+  "limitations": "本片只验证一条独立推导短片的制作流程；不证明该 skill 对任意文章都能一次通过。"
+}

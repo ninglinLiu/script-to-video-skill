@@ -1,0 +1,13 @@
+{
+  "decisions": [
+    {
+      "case_id": "E03",
+      "disposition": "apply",
+      "target": "evidence/source-manifest.json 与全片口播数字",
+      "reason": "本片不是文章改编，但同样是「先有结论再有证据」的高风险结构；因此把每条口播数字都写成可重算的公式，并在 evidence/fact-review.json 保存计算结果",
+      "preserve": "1.5 / 0.5 两个乘数、50% 概率、100 轮、0.75^50、0.33% 这些口径不得在画面和旁白之间漂移",
+      "verification": "scripts/verify_claims.py 全部 11 项通过；画面数字来自 assets/stats.json，与旁白同源"
+    }
+  ],
+  "notApplicable": []
+}

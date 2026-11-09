@@ -1,0 +1,972 @@
+[
+  {
+    "path": "assets/actor-bust.png",
+    "bytes": 885178,
+    "sha256": "2d8e46d701618498c3f0e7ac7a356d0ba320a3e8316d7fea40840decefe7e0ca"
+  },
+  {
+    "path": "assets/actor-mini.png",
+    "bytes": 1000661,
+    "sha256": "2dc7e94b4446de73bb527bb83cae1f16560b33eda73d4039fa9eacc971c8ae57"
+  },
+  {
+    "path": "assets/bust/00.png",
+    "bytes": 138482,
+    "sha256": "fe04a63ed26ce184891533286e0fe67ac832bf3bddca2a14b9fccc67f67b63c2"
+  },
+  {
+    "path": "assets/bust/01.png",
+    "bytes": 150303,
+    "sha256": "fdc4d1c39f8fe8691da3eb07ed21c89bed8fdcba0cec2c3b7a5d0ce5ae6a7940"
+  },
+  {
+    "path": "assets/bust/02.png",
+    "bytes": 136829,
+    "sha256": "aa62a7f50670a82aec12b687dd1f76262b42d64c5f5d5779eeece0ce9da6443c"
+  },
+  {
+    "path": "assets/bust/03.png",
+    "bytes": 165074,
+    "sha256": "a622881d40f9b4995bdb0edc7d9aaf8a6657d03e038f3fcaaef7875262e76af9"
+  },
+  {
+    "path": "assets/bust/manifest.json",
+    "bytes": 3005,
+    "sha256": "9171f60decc4dad23906db7d02eaf596dc607a534d4a3e773f480a8d633c6d6a"
+  },
+  {
+    "path": "assets/mix-editorial.wav",
+    "bytes": 5760044,
+    "sha256": "0437a036fa5d9bfbc974f415d0e2e2e71bf24ae1631b81c811cdac55b4b7ece0"
+  },
+  {
+    "path": "assets/mix-pixel.wav",
+    "bytes": 5760044,
+    "sha256": "d7a881cef6bfe37e57398505f8bb9fb653b3a23cf89221b1dd6fd42d32e37968"
+  },
+  {
+    "path": "assets/mix-spatial.wav",
+    "bytes": 5760044,
+    "sha256": "6d0108ca08775a12c2942d96279e7b06897dd0f8e8ebb44464706c655789f4d4"
+  },
+  {
+    "path": "assets/notosanssc-OFL.txt",
+    "bytes": 4481,
+    "sha256": "e35ffdebb2225b49814c31889cbb3ce69cb3509e6a9f431edaba5e1a6de8cd15"
+  },
+  {
+    "path": "assets/NotoSansSC-VF.ttf",
+    "bytes": 17773244,
+    "sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a"
+  },
+  {
+    "path": "assets/notoserifsc-OFL.txt",
+    "bytes": 4444,
+    "sha256": "64538aaa923b7e75559725ecf64eff7b18f623857b8e6d31a7347743ab27e907"
+  },
+  {
+    "path": "assets/NotoSerifSC-VF.ttf",
+    "bytes": 25129160,
+    "sha256": "a4aed9985a5916fbf6690456f8732a9fccd517938e353165d4142b4f11a39280"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Arrows.woff2",
+    "bytes": 2720,
+    "sha256": "2d633979a491ae92adcdb6db82ca4e470bc130b4231cf30487703f0fbe21b275"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Basic-Latin.woff2",
+    "bytes": 2312,
+    "sha256": "5e9530cc7e424fa63d6f19dca8c22f83f1f4de166627b9e05320d407c05621d5"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Block-Elements.woff2",
+    "bytes": 896,
+    "sha256": "7048863b9230619f8b080d0165999167162c2a0c04fa1ed94e00415b2f0b3bb6"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Bopomofo.woff2",
+    "bytes": 1512,
+    "sha256": "515e5fd87245473c30aa282cad4bc239c83727771d03212f1d3e558a3ad2822a"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Box-Drawing.woff2",
+    "bytes": 1940,
+    "sha256": "ba59b4db9b2dfffa1cc4dd5166539961ca63d3227248c7753f08ec1b52137dd6"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Braille-Patterns.woff2",
+    "bytes": 2300,
+    "sha256": "d79e89a6f48883b014be53a2aaf1f7bad6233ceb6287e20d25c2bf3d3aa4b2c4"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Compatibility-Forms.woff2",
+    "bytes": 1068,
+    "sha256": "ede82ed6fc6eba4f36376f89755fe80388d8ba01721126a4906279be341059a0"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Compatibility.woff2",
+    "bytes": 1920,
+    "sha256": "46a8573dd85c274bec925d025887a5f3120da78b20ac0e520177e80ceb3e5e75"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Radicals-Supplement.woff2",
+    "bytes": 3564,
+    "sha256": "9e1647b8a3689c51aa4d758e05b59636b565bd6d8b4f65e5133f5eeceeac9db3"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Symbols-and-Punctuation.woff2",
+    "bytes": 1916,
+    "sha256": "2dbd50ea36ceb08cc35fb15aeb3d2f29d475f1a63de46c125fc67e79af8675cc"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-001.woff2",
+    "bytes": 26208,
+    "sha256": "15a8345cc15ae5d02c92da9de4446f8dc6c0889a89c541be7b9699f4e06b7a06"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-002.woff2",
+    "bytes": 27968,
+    "sha256": "c9d50fb56e30c826f3c4dbfafd21f783381c83bcb2f7a56b8dd9bf7ede1e8cf0"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-003.woff2",
+    "bytes": 27792,
+    "sha256": "46e378f518702605128da1425731cad5734c136c74eecc393f8f58839b2fbe0f"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-004.woff2",
+    "bytes": 29156,
+    "sha256": "0b346ad2787afc826bd9b0ec5bac51c5e8de80d00e2a150be8792abbccb7e26c"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-005.woff2",
+    "bytes": 28112,
+    "sha256": "29be0ee3bd6ad45d2eb52e259d9c1ac5115b62a161920adc5bd1f87bae72bd7c"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-006.woff2",
+    "bytes": 29288,
+    "sha256": "177dae473df3157134334b62c8cec66c5935b9e38b1750125df51b63a8ec508f"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-007.woff2",
+    "bytes": 29460,
+    "sha256": "53914b1bdcec05c283a1a06601f017c1ee385aef6b477201dc1d334328b20aac"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-008.woff2",
+    "bytes": 30092,
+    "sha256": "3537a43e349f0fc9509dffaa544966fcc9e87549baa1a9a37c7687342c404b2e"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-009.woff2",
+    "bytes": 29628,
+    "sha256": "01c8a044fbec455f83f688107f960d17cbd2efff8e77b39b99522d4af38e247c"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-010.woff2",
+    "bytes": 30180,
+    "sha256": "d39cb21d65a0cf7cf2bc3c995a3722d21162e964337d1745c80f201d94b8c201"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-011.woff2",
+    "bytes": 29952,
+    "sha256": "e1d5f98757c658333cc54194f673d152d9551fb1acedc8b53c0049c8fb7700ad"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-012.woff2",
+    "bytes": 30524,
+    "sha256": "8ac76bdd64613feddb7977f4cc9dba307340e381b47e3f14cc8a704119cd95c2"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-013.woff2",
+    "bytes": 29060,
+    "sha256": "0a6db8c0b93a2a24c07b61626d7c6a630307092bf0d21da4045805446fe78699"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-014.woff2",
+    "bytes": 30524,
+    "sha256": "40ef6a94f11fc36214c888ddf9021f443d35fc73a20a80dd578528fb2304ca40"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-015.woff2",
+    "bytes": 30832,
+    "sha256": "4ebca75d687f7246f036bb99052fa17f6c73b6367b7c1d38960f7430f4f1d356"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-016.woff2",
+    "bytes": 29892,
+    "sha256": "890799ec650a1f2e2def9c4a33a3e6b98afbc09f24bc9b9a7e5bf97b5614c2ad"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-017.woff2",
+    "bytes": 30020,
+    "sha256": "658f22f1ecb28250b96de9aa7da41cdc2d00d5c89c7cc874041967404a994727"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-018.woff2",
+    "bytes": 31760,
+    "sha256": "3f97ea18b0d36edbc5aadba12090fb2e70dac37afd2a05381ded5cf9fc31dd78"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-019.woff2",
+    "bytes": 24904,
+    "sha256": "c9c97457ec4f2d12095167f7d02698e151a6d72728692942ff7d9ad237e3421e"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-Extension-A-001.woff2",
+    "bytes": 33160,
+    "sha256": "e66e4dc0d7fa5293d16ef5c573bad7afe3b17ea42a7c2b06ce17e7c5499d1872"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-Extension-A-002.woff2",
+    "bytes": 17776,
+    "sha256": "3190856cd1970701aa985383f81fe05c422f7078c6748494d7b176c6c333ebbc"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-Extension-B-001.woff2",
+    "bytes": 36288,
+    "sha256": "6f93a5cdba21a889fe4b4bccf8998a5f34f2bf57372fde90d7ac8e37c33d2f4a"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-Extension-B-002.woff2",
+    "bytes": 6204,
+    "sha256": "de46d537ca87ad8362930604d6a6ef8154dd82a55be9c7ad0968ac4dd0b388e9"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-Extension-C.woff2",
+    "bytes": 2332,
+    "sha256": "0835d12cb0f60606aac4f271d5d10342fc9f549ce6b716c737b55ffde1e8264c"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-Extension-D.woff2",
+    "bytes": 1200,
+    "sha256": "df928aae1f512a4bfae08166b03bf03b67e2c2234b56cbb2fc7c9564bd273e34"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-Extension-E.woff2",
+    "bytes": 2456,
+    "sha256": "a9162b8399c24d898636d6d089f97886c595fc05246b2c2bb7614dd80ab2386f"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-Extension-F.woff2",
+    "bytes": 784,
+    "sha256": "48b4d4d326cccdd6ebc64cdf5c956fb4f93654d6337b207724dc08264c77d65b"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.CJK-Unified-Ideographs-Extension-G.woff2",
+    "bytes": 884,
+    "sha256": "5de98b8dacd53f53d7429d03b0205fca57514876b315e39c5d727a5df8f02fca"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.css",
+    "bytes": 70892,
+    "sha256": "dce616e375aa6abe5e64e4401253f9471a4c9245964eafa58f2a6dc84e5d5f3a"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Cyrillic.woff2",
+    "bytes": 2920,
+    "sha256": "3d933b380a28180943afde5b7f54425ae18161f2ac4c4122d5ce75b766223449"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Dingbats.woff2",
+    "bytes": 1288,
+    "sha256": "8e169bef36569d11e9cf7daf2511539acb74e1a1aca1e920a1184015a7ecced0"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Enclosed-Alphanumeric-Supplement.woff2",
+    "bytes": 2864,
+    "sha256": "cc2159d0ab5aa68b5bcd8f6a5c04dfb6c83bceb2c40ddd49c51b0584cea05fd1"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Enclosed-Alphanumerics.woff2",
+    "bytes": 3644,
+    "sha256": "af5cf75fbd7e80cff6869ebec36b7fff1a71448349b2da88e04c8c5421433c97"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Enclosed-CJK-Letters-and-Months.woff2",
+    "bytes": 2956,
+    "sha256": "6cd994faade0e003d4866f295e0a769b70829f6044b33811861d0e616b7fea32"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.General-Punctuation.woff2",
+    "bytes": 1240,
+    "sha256": "f53eb6fc36479844f77eb9a19bba26b9cc042bf944ccd563346abb8bd80e94b4"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Geometric-Shapes.woff2",
+    "bytes": 2128,
+    "sha256": "6ff1ab3e4d8f28c0a2cabfc88c728024eedf20b7b310ccf9233c0fdd8f149beb"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Greek-and-Coptic.woff2",
+    "bytes": 2232,
+    "sha256": "53241cde8396ef60587b8b140e3de20e81c6f6f50f5eea93d6be598c92f70fd9"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Halfwidth-and-Fullwidth-Forms.woff2",
+    "bytes": 3400,
+    "sha256": "4da6988a1d54baf60ed0224b842ea63fe60e5d9991ec0947b32f4249d7d7f7a0"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Hangul-Compatibility-Jamo.woff2",
+    "bytes": 2076,
+    "sha256": "a9f4b735aaec5af070779319829ec17d6ecc07b7a0274312869b4d9984b82467"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Hangul-Syllables-001.woff2",
+    "bytes": 10620,
+    "sha256": "2f9fc13ab155cd745924279ab0366c6577f63b9688b8df6b1fa7949b3569e8b5"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Hangul-Syllables-002.woff2",
+    "bytes": 10924,
+    "sha256": "d562052fcea1b24d50c72cea78b97d02315a68c3051a0e628fdb10b01d1e3768"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Hangul-Syllables-003.woff2",
+    "bytes": 10124,
+    "sha256": "8070755376a94e327e20f6fbf095715f387cc9b9b7dc675f770ee8fe39b52396"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Hangul-Syllables-004.woff2",
+    "bytes": 10788,
+    "sha256": "1d21fe1c34f14d0d75293e6d5dc160127b7699a94891747a4a509734365319b5"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Hangul-Syllables-005.woff2",
+    "bytes": 11320,
+    "sha256": "58b3846dfc22fde0670dd16b29e2f6ca1ab7155d346f038a31db4925e598932f"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Hangul-Syllables-006.woff2",
+    "bytes": 11216,
+    "sha256": "7a6d6bdd17bdf2532bdbd12a173215dcf3d3b8afb3f07c3fb6323d90f668232f"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Hangul-Syllables-007.woff2",
+    "bytes": 11580,
+    "sha256": "0a192d2d36e348a5a7c94c1effa0a7080c4d8363421270eab599effa1d4a54f0"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Hangul-Syllables-008.woff2",
+    "bytes": 10892,
+    "sha256": "9c82d198998c8706bcf14924731dc4c0a769d67770e5776d623bc127158f13c6"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Hangul-Syllables-009.woff2",
+    "bytes": 12132,
+    "sha256": "3775444cd6d3ca985a4ff0fab133f09e2a517ca493b41b6b7674a2687758edd2"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Hangul-Syllables-010.woff2",
+    "bytes": 11536,
+    "sha256": "4959be66c494f265333b674fd97ddbf7563ddd094be6936d1b2f53b9f1d980f6"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Hangul-Syllables-011.woff2",
+    "bytes": 10184,
+    "sha256": "c2296d3f70d94173baa77430124182be1942e37311985a5091924fbe618b2c06"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Hiragana.woff2",
+    "bytes": 2780,
+    "sha256": "de874d594bd9f9f666d600f8b83851b3ecf50ec828c3317ef9dc8492117b5ef7"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Ideographic-Description-Characters.woff2",
+    "bytes": 944,
+    "sha256": "80b78212201649d9706b16afbf8ac13eaf72c98ae10117e146bf18c87c563f17"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Ideographic-Symbols-and-Punctuation.woff2",
+    "bytes": 696,
+    "sha256": "215140c00ca1c6f9705fd919ffb246edae7af7f37e806a6779f15862ff8f6c81"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Kangxi-Radicals.woff2",
+    "bytes": 6292,
+    "sha256": "44aa3486b1b2dd376a601e509897c15b5598a120fc3f95427ca5da01efceaa83"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Katakana.woff2",
+    "bytes": 2524,
+    "sha256": "8f5843f48165349044f3ad02c5163e9069e04c7dbc6523a97a5c784f9e4a5aa9"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Latin-1-Supplement.woff2",
+    "bytes": 2280,
+    "sha256": "28fd3bca4110e42505ad2325ff4acf13d340697ca3a4ad8390cc2bba997579fe"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Latin-Extended-A.woff2",
+    "bytes": 2772,
+    "sha256": "115de8fcda48fe33debe569e1e2f742d98ede6a0a35efa37a580b3118fe0ba26"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Latin-Extended-Additional.woff2",
+    "bytes": 560,
+    "sha256": "d20521c3392b25a387eb10bc4cb3615d9c370716b4a8a0357ba396e2f8e1be48"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Latin-Extended-B.woff2",
+    "bytes": 3104,
+    "sha256": "2567dd6acd1d94fe0d0d885c0138f33bf3edd79d8d65f947feea960d8570da99"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Latin-Extended-C.woff2",
+    "bytes": 672,
+    "sha256": "7697f08ba8dd0a71fe8fbb49883fe6fbbcaea1cc9001ed5be0a36b092b5559de"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Latin-Extended-D.woff2",
+    "bytes": 756,
+    "sha256": "0a2458c992ced79e2876ed48cb6d6714947e4201ef0833221ddd4cfff4da47af"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Letterlike-Symbols.woff2",
+    "bytes": 900,
+    "sha256": "84aa6a8aa905799cd5c712c19d6bcf18a56163d1a07ff9b093667c5d46de4263"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Miscellaneous-Symbols.woff2",
+    "bytes": 5180,
+    "sha256": "309b0c18f23c49c67c474ad33eed429f966e21127328c5793d6246ecd962d60d"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Miscellaneous-Technical.woff2",
+    "bytes": 1604,
+    "sha256": "d588d8604b189a911fef71d9d878ddd650d1ed9586d5f13ea667a53e0cc5a1ec"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Number-Forms.woff2",
+    "bytes": 1740,
+    "sha256": "a84b49d95e60306232e6e6365eeae5c64ae8edc012adb718533a4758bcbe1f59"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Private-Use-Area.woff2",
+    "bytes": 5228,
+    "sha256": "6a1fdf7228c929aefd475d0adebd43339a0967df83fad22dbe32964f005b2a9a"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Specials.woff2",
+    "bytes": 648,
+    "sha256": "9d9d5458bba22a6ba9dcbf3ef8777f925c71328f74f4d1773191867fc9068775"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Superscripts-and-Subscripts.woff2",
+    "bytes": 1156,
+    "sha256": "f4843490bfbcb8c35969362ba0feb792a2e3bd50efc5c7260c1bb9c069d43b84"
+  },
+  {
+    "path": "assets/pixel-fonts/Fusion-Pixel-12px-Proportional-Simplified-Chinese.Vertical-Forms.woff2",
+    "bytes": 756,
+    "sha256": "373938b93bb26424ac3bad526439367a893277ebfbafe605ba08ff017a41e5b3"
+  },
+  {
+    "path": "assets/pixel-fonts/LICENSE-fusion-pixel-webfont.txt",
+    "bytes": 1062,
+    "sha256": "8751c869c91bc13ba06dffadaf0c276f662917228f18072b28498b08c1e59ee6"
+  },
+  {
+    "path": "assets/sfx-editorial.wav",
+    "bytes": 5760044,
+    "sha256": "62843ac2bc9728fe216894c41968bf75df6dd0b8146d1d321448bc51de631949"
+  },
+  {
+    "path": "assets/sfx-pixel.wav",
+    "bytes": 5760044,
+    "sha256": "1fbbe9b7483ea3a8244377d1cf4332bc2fd90d263e2c7d8f4a5c3bb22747d291"
+  },
+  {
+    "path": "assets/sfx-spatial.wav",
+    "bytes": 5760044,
+    "sha256": "c4cc48b66450e0be392b1bdf32b22ebba6396282829106d064245acfdcb2ef96"
+  },
+  {
+    "path": "assets/sprites/00.png",
+    "bytes": 46801,
+    "sha256": "13f057b080143ec041c69fb4d297fb5b5a4be2f4f69641754240c8d7ed058645"
+  },
+  {
+    "path": "assets/sprites/01.png",
+    "bytes": 48213,
+    "sha256": "7c6a7d600b8ae71f8ac3f9b5d4526d9267dc3fe1cf2721dfda2944f0d17ab53b"
+  },
+  {
+    "path": "assets/sprites/02.png",
+    "bytes": 46184,
+    "sha256": "2ed09974f682f0a3cbc6171e3cf440f4fd39ac64d22537c074f04ad9dbd76b03"
+  },
+  {
+    "path": "assets/sprites/03.png",
+    "bytes": 48620,
+    "sha256": "b750e350317eefb819e86e388ec85a4fc670a1ebe637805899e16368b6cc9430"
+  },
+  {
+    "path": "assets/sprites/04.png",
+    "bytes": 50044,
+    "sha256": "e2d4fd01a437d5e5be72b31106c352a5dac6020d136e7d466921cbaf4ec2d4e7"
+  },
+  {
+    "path": "assets/sprites/05.png",
+    "bytes": 48274,
+    "sha256": "6d27a3158b576728a32f98d0d0f8ff0557e4a00915737a3162ca646d602f854c"
+  },
+  {
+    "path": "assets/sprites/06.png",
+    "bytes": 48770,
+    "sha256": "4893d451148c7c778e25f6c5c390c197af7aedc463e16a8cc493ce146d781dff"
+  },
+  {
+    "path": "assets/sprites/07.png",
+    "bytes": 48957,
+    "sha256": "7f558ee467fcd2d75a56a722287adbd4cdb367ca4e318fd64887a8b71f1ce242"
+  },
+  {
+    "path": "assets/sprites/08.png",
+    "bytes": 51360,
+    "sha256": "103b26fa84270804fa8484f8a19bdfee46fd3c7b9cb49117d69a2ef1c6e2b7bc"
+  },
+  {
+    "path": "assets/sprites/09.png",
+    "bytes": 49014,
+    "sha256": "1cc563267dbfdf6f2938eebe8edc392a1fbfee549170d83bf757f48ecf6d61dd"
+  },
+  {
+    "path": "assets/sprites/10.png",
+    "bytes": 51015,
+    "sha256": "56722673815e771f877ae998854a46268c98c5669e00d8ab3abc3bfad46a6a48"
+  },
+  {
+    "path": "assets/sprites/11.png",
+    "bytes": 49393,
+    "sha256": "ae7a843786b640aae02d094bfc9143fb653baedfef10f66bda0d0066aa38bd12"
+  },
+  {
+    "path": "assets/sprites/12.png",
+    "bytes": 46732,
+    "sha256": "ec1251a1f5d051d490550f7583fb1001afb4600dcc559bdc28080ddfed07115c"
+  },
+  {
+    "path": "assets/sprites/13.png",
+    "bytes": 46189,
+    "sha256": "411cef7719123830f51ca4225fb879aa0a7fe59d8779c335925490b87a7bbd72"
+  },
+  {
+    "path": "assets/sprites/14.png",
+    "bytes": 54376,
+    "sha256": "559f8b24fd9530547dc983b8f905dd0bc1a76ee94c79112af273e34fb50d8509"
+  },
+  {
+    "path": "assets/sprites/15.png",
+    "bytes": 48869,
+    "sha256": "2983ffbc1767ac84561646ce4d2e14200076a73bdc6abad1de1623663184bd77"
+  },
+  {
+    "path": "assets/sprites/manifest.json",
+    "bytes": 9621,
+    "sha256": "7b1c13a6a33f27129a67c98dde0c40c29c9955475da9336794a7e3b3bd8051fd"
+  },
+  {
+    "path": "assets/timeline-editorial.json",
+    "bytes": 3467,
+    "sha256": "0f51a051bdb4425cc545adab7b5901d51e0729c7ce108049273d9d5b63404d14"
+  },
+  {
+    "path": "assets/timeline-pixel.json",
+    "bytes": 3653,
+    "sha256": "998b66df74409d0f0b66bf0c834b3b469ef21744df1117eec564a4e251ed240a"
+  },
+  {
+    "path": "assets/timeline-spatial.json",
+    "bytes": 3445,
+    "sha256": "aa578f1c4b43465e6893edbd6a85452dbc4b14227fa3c43d3ed11146ffd393a3"
+  },
+  {
+    "path": "assets/vastness.mp3",
+    "bytes": 7356125,
+    "sha256": "3ffae7ccd5ea6f612f75efdf9a8318ccce79a5e4f355b26e233631330a57660f"
+  },
+  {
+    "path": "assets/voice-editorial-boundaries.json",
+    "bytes": 7976,
+    "sha256": "dafba0d618aa37713be8cbc7981882a1ec071897d67d57f383946cc5502d2060"
+  },
+  {
+    "path": "assets/voice-editorial.mp3",
+    "bytes": 162288,
+    "sha256": "045ba6bb6150d556af3f867a1e012f7345eb1e28055cf5508483ed4b8c750be3"
+  },
+  {
+    "path": "assets/voice-editorial.wav",
+    "bytes": 5193294,
+    "sha256": "be10c8898d1b80c9f74b063103fc39b4237dcb03851128b589828034cce330ad"
+  },
+  {
+    "path": "assets/voice-pixel-boundaries.json",
+    "bytes": 8629,
+    "sha256": "e133031efb2e880602b9d17738d5d09b362493df82816bb8c70a3df48e28f8e0"
+  },
+  {
+    "path": "assets/voice-pixel.mp3",
+    "bytes": 159552,
+    "sha256": "3ad2eb63d654c8696d11a071ee97324426118dd9058707521cdd0381be6ba0ce"
+  },
+  {
+    "path": "assets/voice-pixel.wav",
+    "bytes": 5105742,
+    "sha256": "f6026c612981f0f3972bd57ef32fdf84f11690b8cf70ece1c43624b9468f68e5"
+  },
+  {
+    "path": "assets/voice-spatial-boundaries.json",
+    "bytes": 8731,
+    "sha256": "deafd812471e6f0afce99f0981652f8eb459496cc4e6a7bef712f4127005a258"
+  },
+  {
+    "path": "assets/voice-spatial.mp3",
+    "bytes": 158112,
+    "sha256": "584fb21c5d6398bdf286f7904c5a418448d66f5d91ac44564b75a9035e8982a4"
+  },
+  {
+    "path": "assets/voice-spatial.wav",
+    "bytes": 5059662,
+    "sha256": "3be90cac9ba5423880b83919fa57b14510231b227d1d97d6989a77f155c2db1b"
+  },
+  {
+    "path": "bootstrap.py",
+    "bytes": 4813,
+    "sha256": "7f3b2a3ba2fd6c3fe231f6a8872029e4f0be9c29d5384d546c56894954094324"
+  },
+  {
+    "path": "BRIEF.md",
+    "bytes": 2061,
+    "sha256": "88f63a9b80fab3af5440b362240c33b471646d0d87159637713f8f0d4b0ad8fd"
+  },
+  {
+    "path": "common.mjs",
+    "bytes": 2525,
+    "sha256": "6d8290e5e5f625b1a1b61d8c665873914d67a49249ca8137b0edab7aeb1441ab"
+  },
+  {
+    "path": "finish.py",
+    "bytes": 7117,
+    "sha256": "3add82fba648dec81c3f3d7d5d13a0c693254cfa7d6e6cb7471836f322e3c053"
+  },
+  {
+    "path": "index.html",
+    "bytes": 651,
+    "sha256": "b4ea9a6d42b5d1eec6452c2820d830e7b89a47cf985af5cccd247911d076135b"
+  },
+  {
+    "path": "main.mjs",
+    "bytes": 1868,
+    "sha256": "1ae1357534fd6665e8e1f98b69e0fe36fa34a8f25621f04d024d7c0f5c214d7f"
+  },
+  {
+    "path": "out/compare-silent.mp4",
+    "bytes": 5313980,
+    "sha256": "57d59c3ef0f610ea87b699a44a8bd82f454981b0c0f41a78471071b1c03f82a4"
+  },
+  {
+    "path": "out/editorial-silent.mp4",
+    "bytes": 44714794,
+    "sha256": "912e8d8e8650277b147594b3b8338b7fed882735dba7d36ae4efe7a846525a14"
+  },
+  {
+    "path": "out/editorial.mp4",
+    "bytes": 45469150,
+    "sha256": "0dad1d0ed562ed8722b706e1303c4629b28e146dccc9d895f0ba56023ace496e"
+  },
+  {
+    "path": "out/editorial.srt",
+    "bytes": 965,
+    "sha256": "4d8ad2d5bd832c30269ce2e9a62c59de5198304483049282b9028d632b06bf73"
+  },
+  {
+    "path": "out/pixel-silent.mp4",
+    "bytes": 44713921,
+    "sha256": "5198472f853ef41f520710f00352b54e29be2448785d8ab06333e7d24934f267"
+  },
+  {
+    "path": "out/pixel.mp4",
+    "bytes": 45465984,
+    "sha256": "f65af32571d815dbba63bfdedff8d708554bbe21bbb599b4e6f5ec713de1a9ee"
+  },
+  {
+    "path": "out/pixel.srt",
+    "bytes": 1010,
+    "sha256": "11e3d6d33cb29bc6e7fbce9df6b81dcbde601a686b60a563f5c618aa05ddb9cc"
+  },
+  {
+    "path": "out/spatial-silent.mp4",
+    "bytes": 45011211,
+    "sha256": "380a1c1daec7eb04d2c34f24ba7bd46cf218af9e8bc72671bdcef04f06aea766"
+  },
+  {
+    "path": "out/spatial.mp4",
+    "bytes": 45761690,
+    "sha256": "c2724c96d4fe4fab39c8edaa06779735182500f7a98ca545eee5a9c6d761e430"
+  },
+  {
+    "path": "out/spatial.srt",
+    "bytes": 968,
+    "sha256": "27e74a2f1a154b7537dbc43206617489db1e90e980b8742cbe262b6ea3e86a36"
+  },
+  {
+    "path": "package.py",
+    "bytes": 1271,
+    "sha256": "d558ab6e979e570b1ec7c64391ac82f28bccb503d21d25d68740bbddeeab9b9e"
+  },
+  {
+    "path": "prepare_audio.py",
+    "bytes": 3137,
+    "sha256": "8e89f0cc0f6a7536c4ce9d9b751b2c3bf635931d5b0e5c33017d5f71dea71016"
+  },
+  {
+    "path": "qa/editorial-browser-errors.json",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "path": "qa/editorial-continuous-14.20.jpg",
+    "bytes": 258631,
+    "sha256": "0bf8ddc128b01ba3c1c4dd1e449cf03bb932882d245062aa7388428540f0fbf9"
+  },
+  {
+    "path": "qa/editorial-continuous-20.15.jpg",
+    "bytes": 215930,
+    "sha256": "f058ea9f3f942d1987cb98c3d8e1d1012001f5901da3674c64f73936a01fe6e2"
+  },
+  {
+    "path": "qa/editorial-continuous-24.30.jpg",
+    "bytes": 256837,
+    "sha256": "f5940118a090122733fb875705895e3eccbfa69a57e1c54087de09ec771319f5"
+  },
+  {
+    "path": "qa/editorial-determinism.json",
+    "bytes": 389,
+    "sha256": "f01f746cc5bbd362b97ca1f446a0dd56d511d41d03c412d6ea9071ef60b78e12"
+  },
+  {
+    "path": "qa/editorial-final-sheet.jpg",
+    "bytes": 280245,
+    "sha256": "adb98dc1228934fef4f714ccd225f7b0716df753447a9bd00e744499df302920"
+  },
+  {
+    "path": "qa/editorial-poster.jpg",
+    "bytes": 114957,
+    "sha256": "d7be78888b82cf4259d875dfb9bfe62139ae17c0ff329218956e9d220ceda2f5"
+  },
+  {
+    "path": "qa/editorial-probe-meta.json",
+    "bytes": 361,
+    "sha256": "9aa6fd1440ab26bc19a54819261d6271b1551803ca5b4a4f64ab90f99fad19e6"
+  },
+  {
+    "path": "qa/editorial-voice.json",
+    "bytes": 198,
+    "sha256": "b24847f47e86d664c6c72e8ad04006a1d97b89cbe15c7688da282498b034dd62"
+  },
+  {
+    "path": "qa/final-checks.json",
+    "bytes": 3734,
+    "sha256": "cc3754aa3da8d5bf31844c5fb7f7ad56614697c5324effd391ae283dabfdabe8"
+  },
+  {
+    "path": "qa/pixel-browser-errors.json",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "path": "qa/pixel-continuous-11.25.jpg",
+    "bytes": 282937,
+    "sha256": "f5d27edbab6b6049dc29d881c1738798f94c9ec1354fe20f8543c4198d93e307"
+  },
+  {
+    "path": "qa/pixel-continuous-14.76.jpg",
+    "bytes": 293723,
+    "sha256": "8c523694fee36e97961b5b2df79a0748257bb177039991deb40408c04f21c3ad"
+  },
+  {
+    "path": "qa/pixel-continuous-21.50.jpg",
+    "bytes": 280140,
+    "sha256": "90528df33eeef2e202e3fc938e0b7f4dcbc5e91f0051c9b24d2f45c9555220e7"
+  },
+  {
+    "path": "qa/pixel-determinism.json",
+    "bytes": 389,
+    "sha256": "1316563ea323210cdfe85a820e352f0e6e7bb516197423943b3d21f3ddcf8a52"
+  },
+  {
+    "path": "qa/pixel-final-sheet.jpg",
+    "bytes": 258279,
+    "sha256": "6d8a985feadb83b4652c038e270bc058967deccc67823d0c722e7942b768a3c0"
+  },
+  {
+    "path": "qa/pixel-poster.jpg",
+    "bytes": 93129,
+    "sha256": "877f179d8856b163f795678044aee81c37b9bbe4e994b656afd76ff768bc270e"
+  },
+  {
+    "path": "qa/pixel-probe-meta.json",
+    "bytes": 308,
+    "sha256": "e6e3655404bce2123fada19a8ae0d5e4c8f7a6d8c872e1a7cb7f78073c866d63"
+  },
+  {
+    "path": "qa/pixel-voice.json",
+    "bytes": 198,
+    "sha256": "d08b2ee33490057a162d2d19f44f2238b4ef8b1ec64b4fd7ef33ac22038ffa1b"
+  },
+  {
+    "path": "qa/spatial-browser-errors.json",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "path": "qa/spatial-continuous-12.90.jpg",
+    "bytes": 345782,
+    "sha256": "fa31eff5e2ac1575740d1817e20f20f9dee60577b8f024c8787616475b5db875"
+  },
+  {
+    "path": "qa/spatial-continuous-16.20.jpg",
+    "bytes": 343766,
+    "sha256": "05be878f0e1647bf08fd316797d0a46126ef5b7417e52d6554ff912fb30c391d"
+  },
+  {
+    "path": "qa/spatial-continuous-5.50.jpg",
+    "bytes": 359947,
+    "sha256": "3495eaaef6e56502b3ab2f0578896f198372074e7c86b45d4801b60159a089a4"
+  },
+  {
+    "path": "qa/spatial-determinism.json",
+    "bytes": 389,
+    "sha256": "63b31ee66ae815625c21428a92bf60d4e6316edad4170a91720333de34c7627d"
+  },
+  {
+    "path": "qa/spatial-final-sheet.jpg",
+    "bytes": 301844,
+    "sha256": "92fbbcdd6a5db9221cc754af772d0b4c73a0346ac3e1aed0ecd3f7bab1dc53b7"
+  },
+  {
+    "path": "qa/spatial-poster.jpg",
+    "bytes": 108904,
+    "sha256": "540b89851d1d048b7c53774da8a11dc6cfa65ea9680d35ba6c531486960f2603"
+  },
+  {
+    "path": "qa/spatial-probe-meta.json",
+    "bytes": 310,
+    "sha256": "b28d1b481709dc90bf0f9ad21de4f6bae2652f5755422f9260ebc6a2097ff72d"
+  },
+  {
+    "path": "qa/spatial-voice.json",
+    "bytes": 199,
+    "sha256": "a418ed5a2881b2e18c89b8f3ea74f0985d581f86b0bf07a13268efba76d95a6c"
+  },
+  {
+    "path": "qa/制作方审看.md",
+    "bytes": 2255,
+    "sha256": "2be3dd001efe94a4490214fb1522d054b365b14ad8de387045c305f88f8c2c7e"
+  },
+  {
+    "path": "render.mjs",
+    "bytes": 6736,
+    "sha256": "8209416a09cbb9ceeb1fcc374d77e9885adee472d2ce8dfcf16762cc6ca36bf0"
+  },
+  {
+    "path": "run.ps1",
+    "bytes": 716,
+    "sha256": "04a76ba87f289bb57d61961d8f5f861fd11336d7cce38c8d26f96763d12fbe02"
+  },
+  {
+    "path": "source/scripts.json",
+    "bytes": 5655,
+    "sha256": "a37632d5853cc2806833953b92eabae9321e4b3a78ee37b13eaae8c9214b9300"
+  },
+  {
+    "path": "source/事实核对.md",
+    "bytes": 1200,
+    "sha256": "782ef3cc2a8781f0c99000c2dd0432b1c4750c3728a59c705dfd8086e16ff982"
+  },
+  {
+    "path": "source/复用角色生成提示词.json",
+    "bytes": 3149,
+    "sha256": "874f0e8f5f726a29f7f9b77348b5d8e5616f8ba00dfab8b202e4ba111f47a66e"
+  },
+  {
+    "path": "source/来源与费用.md",
+    "bytes": 3516,
+    "sha256": "4fd0e8c4520dd6eaff5a5abd98cd0d7519d0196815d881d903ab2ef8069b3e3b"
+  },
+  {
+    "path": "source/用户提供的三篇正文.txt",
+    "bytes": 39479,
+    "sha256": "3fe27961d7bd49a2ffb6f1e93b3fa51caca03f717e4ecacb51cca7b81dbb6297"
+  },
+  {
+    "path": "source/用户链接总表.csv",
+    "bytes": 5673,
+    "sha256": "1f5186d0e68d0778b004a0df627c6618554550fd1a145ff3e2f1ec17f6952621"
+  },
+  {
+    "path": "source/用户链接总表.json",
+    "bytes": 9245,
+    "sha256": "2990e6e3a25d5d887f83b8dbbb2c947e81b0716fd4c6e7f1d56f86936a6a4463"
+  },
+  {
+    "path": "source/用户链接总表.txt",
+    "bytes": 5796,
+    "sha256": "e1000971cb63bf77b2a9f8e023d896f5871d157c1627c15115d3749a70791371"
+  },
+  {
+    "path": "style-editorial.mjs",
+    "bytes": 5058,
+    "sha256": "69faf173940008af1179aa7cdcd270e4ca98fa6692114d9c8ed3c56ebf310d61"
+  },
+  {
+    "path": "style-pixel.mjs",
+    "bytes": 6040,
+    "sha256": "678d32380eb83e2926c093bfee97f55f5f6a948563be6739de839dda3f2459ff"
+  },
+  {
+    "path": "style-spatial.mjs",
+    "bytes": 6656,
+    "sha256": "47658bc4839c5b2eb20e7b1906e73e48b27b15d7fe6ea8903436b66e01e32409"
+  },
+  {
+    "path": "vendor/components.mjs",
+    "bytes": 5773,
+    "sha256": "b31812073bde4adf1385345a46fa31f6ff7b6bb8a72a8bee32c7314b897a8d5d"
+  },
+  {
+    "path": "vendor/sprite-actor.mjs",
+    "bytes": 3834,
+    "sha256": "74bdcd5f5f3993a1dde08834e14f556659d68ce2c3410514d7c509ec1eb9bdc9"
+  },
+  {
+    "path": "vendor/Three-LICENSE.txt",
+    "bytes": 1081,
+    "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+  },
+  {
+    "path": "vendor/three.core.min.js",
+    "bytes": 567771,
+    "sha256": "5881a55b70ae9082f2f8253138c9f484b024a1f6ab2cfadc87af4673481efa13"
+  },
+  {
+    "path": "vendor/three.module.min.js",
+    "bytes": 479489,
+    "sha256": "1897d797c460a9c2d53468f5ccc92473182d81de7d186ac22ed24d36a9b3f3c7"
+  },
+  {
+    "path": "watch.html",
+    "bytes": 4946,
+    "sha256": "92562a4c63e7e286f4ca38cdc072a355bbc6a718dad8ffb752f5967d4bd5dd1d"
+  },
+  {
+    "path": "打开与修改说明.md",
+    "bytes": 2871,
+    "sha256": "c82ad33f3d9da878b7af185047b6ff14c2b36b2ca96e1b4822167e21b2acf2bc"
+  }
+]

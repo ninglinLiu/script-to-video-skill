@@ -1,0 +1,232 @@
+[
+  {
+    "style": "editorial",
+    "duration": 10.5,
+    "frames": 315,
+    "size": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "silentPreviewAudioStreams": 0,
+    "normalVersionAudioStreams": 1,
+    "fullDecode": "pass",
+    "loudness": {
+      "input_i": "-18.08",
+      "input_tp": "-2.69",
+      "input_lra": "2.40",
+      "input_thresh": "-30.01",
+      "output_i": "-16.24",
+      "output_tp": "-1.00",
+      "output_lra": "2.40",
+      "output_thresh": "-27.76",
+      "normalization_type": "dynamic",
+      "target_offset": "0.24"
+    },
+    "events": [
+      [
+        0.3,
+        "tap"
+      ],
+      [
+        1.35,
+        "stamp"
+      ],
+      [
+        3.3,
+        "turn"
+      ],
+      [
+        4.5,
+        "tap"
+      ],
+      [
+        5.55,
+        "tap"
+      ],
+      [
+        6.45,
+        "tap"
+      ],
+      [
+        7.85,
+        "chime"
+      ]
+    ],
+    "sha256": "4a31ba67d8a85f9bfcc091672aa15a9614b20dbd635eaa4dd78d4b8ff48c1ae0",
+    "listening": "not performed; user requested no speaker playback",
+    "userAcceptance": "pending"
+  },
+  {
+    "style": "spatial",
+    "duration": 10.5,
+    "frames": 315,
+    "size": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "silentPreviewAudioStreams": 0,
+    "normalVersionAudioStreams": 1,
+    "fullDecode": "pass",
+    "loudness": {
+      "input_i": "-18.66",
+      "input_tp": "-2.67",
+      "input_lra": "11.20",
+      "input_thresh": "-30.53",
+      "output_i": "-16.51",
+      "output_tp": "-1.00",
+      "output_lra": "2.60",
+      "output_thresh": "-28.09",
+      "normalization_type": "dynamic",
+      "target_offset": "0.51"
+    },
+    "events": [
+      [
+        0.3,
+        "tap"
+      ],
+      [
+        1.4,
+        "stamp"
+      ],
+      [
+        3.3,
+        "chain"
+      ],
+      [
+        5.6,
+        "turn"
+      ],
+      [
+        6.65,
+        "chime"
+      ]
+    ],
+    "sha256": "e5b85676009f057aa23354b8e9664e38db98132fc216fc31b8c2a39d17f5b16c",
+    "listening": "not performed; user requested no speaker playback",
+    "userAcceptance": "pending"
+  },
+  {
+    "style": "pixel",
+    "duration": 10.5,
+    "frames": 315,
+    "size": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "silentPreviewAudioStreams": 0,
+    "normalVersionAudioStreams": 1,
+    "fullDecode": "pass",
+    "loudness": {
+      "input_i": "-19.56",
+      "input_tp": "-2.86",
+      "input_lra": "8.20",
+      "input_thresh": "-31.09",
+      "output_i": "-16.98",
+      "output_tp": "-1.21",
+      "output_lra": "3.10",
+      "output_thresh": "-28.31",
+      "normalization_type": "dynamic",
+      "target_offset": "0.98"
+    },
+    "events": [
+      [
+        0.3,
+        "step"
+      ],
+      [
+        0.64,
+        "step"
+      ],
+      [
+        0.98,
+        "step"
+      ],
+      [
+        1.32,
+        "step"
+      ],
+      [
+        1.6600000000000001,
+        "step"
+      ],
+      [
+        2.0,
+        "step"
+      ],
+      [
+        2.34,
+        "step"
+      ],
+      [
+        2.68,
+        "step"
+      ],
+      [
+        3.02,
+        "step"
+      ],
+      [
+        3.36,
+        "step"
+      ],
+      [
+        3.7,
+        "step"
+      ],
+      [
+        4.04,
+        "step"
+      ],
+      [
+        4.38,
+        "step"
+      ],
+      [
+        4.72,
+        "step"
+      ],
+      [
+        6.2,
+        "turn"
+      ],
+      [
+        7.1,
+        "chime"
+      ],
+      [
+        7.6,
+        "step"
+      ],
+      [
+        7.85,
+        "step"
+      ],
+      [
+        8.1,
+        "step"
+      ],
+      [
+        8.35,
+        "step"
+      ],
+      [
+        8.6,
+        "step"
+      ],
+      [
+        8.85,
+        "step"
+      ],
+      [
+        9.1,
+        "step"
+      ]
+    ],
+    "sha256": "f3846249f2c1a0f98cb9626085eb9ad5e5af7eaec296243fe7d1738030ead841",
+    "listening": "not performed; user requested no speaker playback",
+    "userAcceptance": "pending"
+  }
+]

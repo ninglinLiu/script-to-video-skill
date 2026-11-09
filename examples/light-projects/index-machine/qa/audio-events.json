@@ -1,0 +1,112 @@
+[
+  {
+    "time": 10.980249999999998,
+    "name": "whoosh",
+    "gain": 0.022
+  },
+  {
+    "time": 39.310166,
+    "name": "whoosh",
+    "gain": 0.022
+  },
+  {
+    "time": 59.7405,
+    "name": "whoosh",
+    "gain": 0.022
+  },
+  {
+    "time": 76.154416,
+    "name": "whoosh",
+    "gain": 0.022
+  },
+  {
+    "time": 109.515083,
+    "name": "whoosh",
+    "gain": 0.022
+  },
+  {
+    "time": 133.101125,
+    "name": "whoosh",
+    "gain": 0.022
+  },
+  {
+    "time": 148.613458,
+    "name": "whoosh",
+    "gain": 0.022
+  },
+  {
+    "time": 171.041708,
+    "name": "whoosh",
+    "gain": 0.022
+  },
+  {
+    "time": 0.3,
+    "name": "click",
+    "gain": 0.035
+  },
+  {
+    "time": 4.9,
+    "name": "paper",
+    "gain": 0.032
+  },
+  {
+    "time": 20.8545,
+    "name": "click",
+    "gain": 0.028
+  },
+  {
+    "time": 33.067625,
+    "name": "click",
+    "gain": 0.028
+  },
+  {
+    "time": 53.572540999999994,
+    "name": "click",
+    "gain": 0.034
+  },
+  {
+    "time": 56.525,
+    "name": "ding",
+    "gain": 0.024
+  },
+  {
+    "time": 66.11845799999999,
+    "name": "click",
+    "gain": 0.03
+  },
+  {
+    "time": 68.93525,
+    "name": "ding",
+    "gain": 0.022
+  },
+  {
+    "time": 83.472541,
+    "name": "paper",
+    "gain": 0.03
+  },
+  {
+    "time": 86.140583,
+    "name": "ding",
+    "gain": 0.022
+  },
+  {
+    "time": 98.620916,
+    "name": "paper",
+    "gain": 0.028
+  },
+  {
+    "time": 120.793041,
+    "name": "click",
+    "gain": 0.03
+  },
+  {
+    "time": 124.03075,
+    "name": "click",
+    "gain": 0.03
+  },
+  {
+    "time": 129.374583,
+    "name": "ding",
+    "gain": 0.025
+  }
+]

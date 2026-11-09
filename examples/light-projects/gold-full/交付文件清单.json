@@ -1,0 +1,387 @@
+[
+  {
+    "path": "build_delivery.py",
+    "bytes": 17194,
+    "sha256": "1313eb92aec30af015e61169af7c8d198d4b8b6961626a284d9d3f5b8700fc94"
+  },
+  {
+    "path": "check_viewer.py",
+    "bytes": 2363,
+    "sha256": "b0d9201c3300675c10f1a73611feece7874087c2d63d8f52029066a08575fb78"
+  },
+  {
+    "path": "finish.py",
+    "bytes": 4634,
+    "sha256": "eded0aaa0f291d2a52dc445edbcaf8a1df04b69d240b18e3b83d61ebaa57d008"
+  },
+  {
+    "path": "init.py",
+    "bytes": 5855,
+    "sha256": "552803f8aaf98735655871f63ed24908fbde081ae2d83bcac285ad287809f1cc"
+  },
+  {
+    "path": "inspect_proof.py",
+    "bytes": 1119,
+    "sha256": "de3fb8adf89e6720c13d1314752e5ef92b496b34b97c3c0a93b16cbfd8554dc7"
+  },
+  {
+    "path": "mix_audio.py",
+    "bytes": 1592,
+    "sha256": "fbaf541c194c47993ba90100e6831a805f7a12a6a355999f442c8558e78ebc8a"
+  },
+  {
+    "path": "package.py",
+    "bytes": 1595,
+    "sha256": "b061211b66fbb49499bab1db9ec409451e8c570469cabee1a58b659a135943fa"
+  },
+  {
+    "path": "qa_prepare.py",
+    "bytes": 686,
+    "sha256": "57d15dae78c01c1b376c0835c22eca727f815d7af1b1a5d9503e9743c27fe6f7"
+  },
+  {
+    "path": "qa_sequences.py",
+    "bytes": 848,
+    "sha256": "2351b1be1baa61e46aa62349260db4f1cbe596d2d5156cf767ff1eae256bd3d9"
+  },
+  {
+    "path": "README.txt",
+    "bytes": 2911,
+    "sha256": "b9b1a46be3cd05ed82e7ed45d44430e2fb5b82e17fd0f192896038b7d3331002"
+  },
+  {
+    "path": "voice.py",
+    "bytes": 4371,
+    "sha256": "59324485e723c45f5a799bac278020d72d3b7ad01d1044b1080dc46cc6e51227"
+  },
+  {
+    "path": "watch.html",
+    "bytes": 17651,
+    "sha256": "9ce1702a988430dd425eee6279a5da5f1176505e29363e3afee3ee494b8e5ca9"
+  },
+  {
+    "path": "assets/mix.wav",
+    "bytes": 16236878,
+    "sha256": "79c39e28940be78d6c996ba53602e8e865b8b9991b5c0d16041b199cc970093a"
+  },
+  {
+    "path": "assets/music-track.wav",
+    "bytes": 7458824,
+    "sha256": "08a447b23a5744ca911bd61cd0800ce5ba9a82d0c38e341c2fe23c52c26fe4f2"
+  },
+  {
+    "path": "assets/sfx-track.wav",
+    "bytes": 7464706,
+    "sha256": "acbe25f3ec4a30dcea2cb2500d9dc4690fad7f8623d9b8e5e016bc79e718bf3e"
+  },
+  {
+    "path": "assets/timeline.json",
+    "bytes": 11380,
+    "sha256": "d3fe2997b940797ff6d9badeb9ff40b1374e07cd5177d99e7942ab2fac2906c1"
+  },
+  {
+    "path": "assets/voice-track.wav",
+    "bytes": 16236878,
+    "sha256": "d9aa4187e3c591c311d6d417835870272988b5bae69fd818a15c017a13c2111d"
+  },
+  {
+    "path": "assets/voice.mp3",
+    "bytes": 499392,
+    "sha256": "16cf85d31f0c23e5fc2e28d5bfc08e222f8940528101c3b2febb875a0d54ba5c"
+  },
+  {
+    "path": "assets/word-boundaries.json",
+    "bytes": 25510,
+    "sha256": "266cb0d52a7d271c8d5a0b1221161c4c9661e37116d7510da8928046c5b6313f"
+  },
+  {
+    "path": "out/final-silent.mp4",
+    "bytes": 9717894,
+    "sha256": "3b93ef9a124e7fa1945bcb935b1c9d9bff758a8addd9a89b0510930d1142d3e8"
+  },
+  {
+    "path": "out/final-with-audio.mp4",
+    "bytes": 11787483,
+    "sha256": "200055d8ec3eb8a66d7a00297f5ac0a6c8f0e2d2a603763ed252b1ec7dc3a329"
+  },
+  {
+    "path": "out/黄金三道传导.srt",
+    "bytes": 2498,
+    "sha256": "1f664a873652c2de4c4352ef11774c621fc5feefe30c97efb9975b20fdde5de6"
+  },
+  {
+    "path": "qa/audio-events.json",
+    "bytes": 1550,
+    "sha256": "7d41e14c0dec05647a74a5517e98a1d81ad34ed5d7dde735fdf727acf9bc4110"
+  },
+  {
+    "path": "qa/audio-master.json",
+    "bytes": 456,
+    "sha256": "4d894f9f6088d327fb4bfb7a03e274cc592c55bbbbf86bbce45eaff0c3df6321"
+  },
+  {
+    "path": "qa/camera-return-12.jpg",
+    "bytes": 434661,
+    "sha256": "a327d3507b6fd1e47970227f9b744540f40f7adf7654a8bd33b4fd2d17e9c243"
+  },
+  {
+    "path": "qa/cost-and-reuse.json",
+    "bytes": 854,
+    "sha256": "f75aa968c16e93adf36887cf5e0b1b00c18d1248f4085d57ad0e6fd25149f20d"
+  },
+  {
+    "path": "qa/expectation-gap-12.jpg",
+    "bytes": 343076,
+    "sha256": "1174e319a8c353132be507f77563bb464fca58039cc63fade4cf34f542f8bcd8"
+  },
+  {
+    "path": "qa/final-checks.json",
+    "bytes": 1103,
+    "sha256": "cfd2a01eb0a6db709baf2ccdfd70421b6df516e43be22390cf0ee3d480b03e3a"
+  },
+  {
+    "path": "qa/final-contact-1.jpg",
+    "bytes": 266402,
+    "sha256": "052060d55e57154e69daa50df2b255e95f8b76a652e76a14fe87f31a945d03a1"
+  },
+  {
+    "path": "qa/final-contact-2.jpg",
+    "bytes": 260346,
+    "sha256": "cc6ed5c6068c16d5115f909dbbd6f61becf58468ce4f0bfaa687397009db3c41"
+  },
+  {
+    "path": "qa/final-contact-3.jpg",
+    "bytes": 237767,
+    "sha256": "8a6b1cd177a64f6afd1c5901b5a70bbe97090375b1a5e4a40a1d318711698cce"
+  },
+  {
+    "path": "qa/hook-handoff-12.jpg",
+    "bytes": 315743,
+    "sha256": "85664482c30556a602aae52c9ea59c8f1b302ebbb5224f03bf0731f1d43179a7"
+  },
+  {
+    "path": "qa/poster.jpg",
+    "bytes": 62708,
+    "sha256": "9f6e310841e516f9334d311bcb054942afa509e20a1b820850052a9273b843bd"
+  },
+  {
+    "path": "qa/proof-numeric.mp4",
+    "bytes": 312049,
+    "sha256": "23c6ea55ddf780e7e86d1532179d7f70cb92c55d5a95299713890d9f3a2e92db"
+  },
+  {
+    "path": "qa/render-full.json",
+    "bytes": 448,
+    "sha256": "794255061171c217a94ffc9973ab96d6bef3d8f1ee1ac1dde5b13a4c411a2a58"
+  },
+  {
+    "path": "qa/render-proof.json",
+    "bytes": 445,
+    "sha256": "aaa38eaf6e280cb41297aaa7bdaff62f3bd97d3d2e1688409b252ede4f8c47bb"
+  },
+  {
+    "path": "qa/technical-checks.json",
+    "bytes": 1350,
+    "sha256": "1be99550e96ae99bbf847380da9a7438ea633b8077985c793300af2915ee033d"
+  },
+  {
+    "path": "qa/tool-notes.json",
+    "bytes": 532,
+    "sha256": "7246d8047186c30b82e75c39687593b79ff0153e5286b19c7eaa28adf9d77768"
+  },
+  {
+    "path": "qa/viewer-check.json",
+    "bytes": 416,
+    "sha256": "2fc1fd664b072023b8b002be92e6b8becbdccbc7779f73799f688c6812542fe6"
+  },
+  {
+    "path": "qa/viewer-desktop.png",
+    "bytes": 247295,
+    "sha256": "aba02626f291461609f38dc1ee3c2e167d260c5dc383d76ceb60503e6b931cf2"
+  },
+  {
+    "path": "qa/viewer-mobile.png",
+    "bytes": 120858,
+    "sha256": "79f08169e000fa7cf733988c57508521eb647cc72ce16833325f93dea62d63f6"
+  },
+  {
+    "path": "qa/voice.json",
+    "bytes": 320,
+    "sha256": "b6f1227cdf6c773a8a41d970e87361bb7fbcceb254bfc122aafa14b5833e7a6c"
+  },
+  {
+    "path": "qa/制作检查记录.json",
+    "bytes": 1380,
+    "sha256": "7702eaa9b4f4168af28aeac06dc494123dd515e6a30f90fccb43ff901a33fe5d"
+  },
+  {
+    "path": "source/script.json",
+    "bytes": 4228,
+    "sha256": "86626dafd8086f3a85761859f048cac3d7baeeb37a90961e20c1c6c50c790314"
+  },
+  {
+    "path": "source/source-manifest.json",
+    "bytes": 864,
+    "sha256": "9fb696639cc844b56e96a9f8c54a5e41af1e39fe97bb6c176a9c7779e830ee2c"
+  },
+  {
+    "path": "source/分镜动作与时间码.json",
+    "bytes": 3739,
+    "sha256": "b2a6ff7a344c3ed42f58bf5a2481a9e8fa6690674f24dec8c05384673d4a35cd"
+  },
+  {
+    "path": "source/原始粘贴全文.txt",
+    "bytes": 23862,
+    "sha256": "c8ca269c7528e22086df7f530d4596386e1966b9b421bf2c2dcf33ac600bb43e"
+  },
+  {
+    "path": "source/完整字幕稿.txt",
+    "bytes": 1318,
+    "sha256": "e47f4bd16921f1a3433d03071d5add836f67ee46f7c65b800fc1a0504b7dc10e"
+  },
+  {
+    "path": "source/核查来源.json",
+    "bytes": 3731,
+    "sha256": "d1e1c83757c9ede3e3fba8f449f6d3382da56fcad66bef66514f0edaacca63a0"
+  },
+  {
+    "path": "source/脚本证据映射.json",
+    "bytes": 2224,
+    "sha256": "989d093a6075679a6ac7b3d6abeff1c2008fd0f6f8fba268db54da9f906cbbb7"
+  },
+  {
+    "path": "工程/music.mjs",
+    "bytes": 1327,
+    "sha256": "c751cdf31106f7e19fc6a60b1770b8019a02727d67a6fdc306109fd109891053"
+  },
+  {
+    "path": "工程/package-lock.json",
+    "bytes": 183414,
+    "sha256": "b4673ef51ba5706cdbe8ffba9933c25cd9a5e23ec6adfbf6bebc3c52f6dc3a5f"
+  },
+  {
+    "path": "工程/package.json",
+    "bytes": 652,
+    "sha256": "c312361ba531ee7850910dc911e079d09907f106503bc76c4efb12a3609a78a8"
+  },
+  {
+    "path": "工程/remotion.config.ts",
+    "bytes": 135,
+    "sha256": "29faa7b50b1e646c344e31063e48f002d79884536bb16a702b61bda53683f069"
+  },
+  {
+    "path": "工程/render.mjs",
+    "bytes": 2048,
+    "sha256": "0f1a439732839baa779a027b4bbe8367df9cae758af504f670216d547e2ecea6"
+  },
+  {
+    "path": "工程/render.ps1",
+    "bytes": 709,
+    "sha256": "b7f0e428b71cf304af2c010f82ef9c1f47b1956af92be2f4b8634270c5486e23"
+  },
+  {
+    "path": "工程/tsconfig.json",
+    "bytes": 317,
+    "sha256": "8f83ee23861510f953780b7d3a4e0ba82685c87afc6ec37344cd8b306ec7654a"
+  },
+  {
+    "path": "工程/WEILANX-LICENSE",
+    "bytes": 1067,
+    "sha256": "901ecf9fc6e5f6cd153470522b5dc019e8bd203c4fb5e93cc41d4231181fa312"
+  },
+  {
+    "path": "工程/audio/bgm.mjs",
+    "bytes": 7373,
+    "sha256": "b06bbf0cab443005c121f67a86eec700e3a04e51a6607d906034dda50bfc6e5a"
+  },
+  {
+    "path": "工程/audio/synth.mjs",
+    "bytes": 16757,
+    "sha256": "53b3761f0e6d0141247d3c7a36fe874638865262e0d7bed1487cce4cc435b111"
+  },
+  {
+    "path": "工程/public/fonts/vox/Anton-400.woff",
+    "bytes": 61460,
+    "sha256": "791375bdbed00de4a3aad4811291220ead0e1405d6f8b5bdbf109798c8359ac5"
+  },
+  {
+    "path": "工程/public/fonts/vox/Caveat-600.woff",
+    "bytes": 132264,
+    "sha256": "7a101c766f28866c5aa36ebbce5cfedcea2601f2439d3b16694b9c8eee75e9dc"
+  },
+  {
+    "path": "工程/public/fonts/vox/EBGaramond-400.woff",
+    "bytes": 162740,
+    "sha256": "61ea4fa656e4ec2c6103483625f0d6a2e1571c2be57015063b73f23392b3ff98"
+  },
+  {
+    "path": "工程/public/fonts/vox/EBGaramond-600.woff",
+    "bytes": 179028,
+    "sha256": "d0ecbbe1d933b68d32ef2629e9a46673ae5eff5ce9c04cd7f4c012504da33a11"
+  },
+  {
+    "path": "工程/public/fonts/vox/LICENSES.md",
+    "bytes": 665,
+    "sha256": "e8d459427491fb0d2b71c7c111a4569b8bbbede214f4fdd8180a03ff60e15017"
+  },
+  {
+    "path": "工程/public/fonts/vox/NotoSansSC-900.woff",
+    "bytes": 1394104,
+    "sha256": "d2d8a42438b18b65b6577434df4e41bb08c6b5051281757849af00ab743bb58f"
+  },
+  {
+    "path": "工程/public/fonts/vox/OFL.txt",
+    "bytes": 4430,
+    "sha256": "67c5d5206b96f8340b95fabd02ae60701e0b20ce2594d976216f1065e5aa3822"
+  },
+  {
+    "path": "工程/public/fonts/vox/PlayfairDisplay-700.woff",
+    "bytes": 55652,
+    "sha256": "2644f0e3c7c8f79e9d0c56ad22d246294c7c2b21ea884a7a2b1a10261cb95469"
+  },
+  {
+    "path": "工程/public/fonts/vox/PlayfairDisplay-700i.woff",
+    "bytes": 53612,
+    "sha256": "f263323db61a414618d9cafe489d0e18adf6682cd36baa45239ed804fe26fcf1"
+  },
+  {
+    "path": "工程/src/entry.tsx",
+    "bytes": 289,
+    "sha256": "d3b115a80fbf994e6ecb75de3debfa56ce340e7c321a4b507d58cdef841db8c0"
+  },
+  {
+    "path": "工程/src/FullFilm.tsx",
+    "bytes": 22011,
+    "sha256": "997067d320781a841d1314c455df363eabb42e35147deb39e27f4d87ab7b24d4"
+  },
+  {
+    "path": "工程/src/Mechanism.tsx",
+    "bytes": 10323,
+    "sha256": "ebf0b4696c1a4eeacbe7c2c9a2f5d643e8a2b7c996d68aae193ed6990b232201"
+  },
+  {
+    "path": "工程/src/proof-timing.json",
+    "bytes": 934,
+    "sha256": "246b372c397039b9016ff0f2cfd669f3966a395998e03ff0b50aa1f22a130b7e"
+  },
+  {
+    "path": "工程/src/timing.json",
+    "bytes": 11380,
+    "sha256": "d3fe2997b940797ff6d9badeb9ff40b1374e07cd5177d99e7942ab2fac2906c1"
+  },
+  {
+    "path": "工程/src/library/anim.ts",
+    "bytes": 1980,
+    "sha256": "e2913a168ef86fe522ab6b7da4529c0e193afd425e1eb3714d3ccd2d646bd4bc"
+  },
+  {
+    "path": "工程/src/library/redshift/theme.ts",
+    "bytes": 1134,
+    "sha256": "906545e6955251aca5a778fee0f0813db5200f7f29f18421ed5604f89e929fe3"
+  },
+  {
+    "path": "工程/src/library/vox/theme.ts",
+    "bytes": 2934,
+    "sha256": "e94aadb64a5eec471b977548955a84e534b0e51592e179197dfb0128fbc7cc15"
+  }
+]

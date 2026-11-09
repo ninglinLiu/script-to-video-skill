@@ -56,7 +56,8 @@ def cmd_doctor(a):
                   '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', '/usr/bin/google-chrome', '/usr/bin/chromium']
     checks['chrome'] = next((c for c in candidates if Path(c).exists()), None)
     missing = [k for k, v in checks.items() if not v]
-    print(json.dumps({'checks': checks, 'missing': missing, 'note': 'GPU 要跑一次 render.mjs 看它打印的 WebGL 名称；SwiftShader 表示软件渲染。Chrome 不在常见路径时设 CHROME 环境变量。'}, ensure_ascii=False, indent=1))
+    optional = {'python:numpy': run(sys.executable, '-c', 'import numpy; print("ok")').stdout.strip() == 'ok'}
+    print(json.dumps({'checks': checks, 'missing': missing, 'optional': optional, 'note': 'GPU 要跑一次 render.mjs 看它打印的 WebGL 名称；SwiftShader 表示软件渲染。Chrome 不在常见路径时设 CHROME 环境变量。numpy 只有 sfx.py 合成音效时才要。'}, ensure_ascii=False, indent=1))
     return 1 if [m for m in missing if m != 'chrome'] else 0
 
 

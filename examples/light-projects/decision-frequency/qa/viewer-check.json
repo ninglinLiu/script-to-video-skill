@@ -1,0 +1,27 @@
+{
+  "javascriptErrors": [],
+  "missingLocalLinks": [],
+  "initialVideo": {
+    "paused": true,
+    "muted": true,
+    "autoplay": false,
+    "currentTime": 0,
+    "preload": "none",
+    "source": "out/final-silent.mp4"
+  },
+  "mutedHeadlessPlayback": {
+    "paused": false,
+    "muted": true,
+    "currentTime": 0.139728,
+    "duration": 173.466667
+  },
+  "mutedHeadlessSeek": {
+    "currentTime": 93.8,
+    "muted": true,
+    "paused": true
+  },
+  "mobileOverflow": false,
+  "expandedOverflow": false,
+  "method": "dedicated muted headless browser on locally authored viewer; silent MP4 playback and chapter seek checked",
+  "userBrowserControlled": false
+}

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "source": "Claudebao\\video-week1\\style-studies-20261020\\assets\\actor-bust.png",
+  "sourceSize": [
+    1310,
+    1200
+  ],
+  "layout": [
+    2,
+    2
+  ],
+  "kind": "portrait",
+  "canvas": [
+    512,
+    512
+  ],
+  "anchor": [
+    256.0,
+    500
+  ],
+  "baseline": 500,
+  "uniformScale": 0.8305647840531561,
+  "alphaThreshold": 128,
+  "cropPadding": 3,
+  "coreHeightRatio": 1.00375234521576,
+  "alphaPolicy": "alpha threshold detects visible silhouette only; nearest-neighbour preserves RGBA inside each padded crop, no background removal",
+  "rowBands": [
+    [
+      35,
+      570
+    ],
+    [
+      629,
+      1162
+    ]
+  ],
+  "columnBands": [
+    [
+      125,
+      558
+    ],
+    [
+      680,
+      1276
+    ]
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "file": "00.png",
+      "row": 0,
+      "column": 0,
+      "sourceRegion": [
+        0,
+        0,
+        619,
+        599
+      ],
+      "sourceCrop": [
+        122,
+        32,
+        561,
+        572
+      ],
+      "sourceCoreBox": [
+        125,
+        35,
+        558,
+        569
+      ],
+      "outputBox": [
+        74,
+        53,
+        365,
+        449
+      ],
+      "outputCoreBox": [
+        76,
+        55,
+        437,
+        500
+      ]
+    },
+    {
+      "frame": 1,
+      "file": "01.png",
+      "row": 0,
+      "column": 1,
+      "sourceRegion": [
+        619,
+        0,
+        1310,
+        599
+      ],
+      "sourceCrop": [
+        724,
+        32,
+        1204,
+        573
+      ],
+      "sourceCoreBox": [
+        727,
+        35,
+        1201,
+        570
+      ],
+      "outputBox": [
+        56,
+        53,
+        399,
+        449
+      ],
+      "outputCoreBox": [
+        58,
+        55,
+        453,
+        500
+      ]
+    },
+    {
+      "frame": 2,
+      "file": "02.png",
+      "row": 1,
+      "column": 0,
+      "sourceRegion": [
+        0,
+        599,
+        619,
+        1200
+      ],
+      "sourceCrop": [
+        122,
+        626,
+        553,
+        1165
+      ],
+      "sourceCoreBox": [
+        125,
+        629,
+        550,
+        1162
+      ],
+      "outputBox": [
+        77,
+        54,
+        358,
+        448
+      ],
+      "outputCoreBox": [
+        79,
+        56,
+        433,
+        500
+      ]
+    },
+    {
+      "frame": 3,
+      "file": "03.png",
+      "row": 1,
+      "column": 1,
+      "sourceRegion": [
+        619,
+        599,
+        1310,
+        1200
+      ],
+      "sourceCrop": [
+        677,
+        626,
+        1279,
+        1165
+      ],
+      "sourceCoreBox": [
+        680,
+        629,
+        1276,
+        1162
+      ],
+      "outputBox": [
+        6,
+        54,
+        500,
+        448
+      ],
+      "outputCoreBox": [
+        8,
+        56,
+        504,
+        500
+      ]
+    }
+  ]
+}

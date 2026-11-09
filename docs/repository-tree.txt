@@ -16,11 +16,14 @@ script-to-video-skill/
 │   │   ├── package-lock.json
 │   │   ├── package.json
 │   │   ├── render.mjs
+│   │   ├── sfx.py
 │   │   ├── srt.py
 │   │   └── tts.py
 │   ├── film-tools/
 │   │   ├── CaptionProbe.tsx
 │   │   └── render.mjs
+│   ├── music/
+│   │   └── catalog.json
 │   ├── pixel-scene-map/
 │   │   ├── configs/
 │   │   │   ├── caesar.json
@@ -94,6 +97,15 @@ script-to-video-skill/
 │   │   ├── content.json
 │   │   ├── edit-plan.json
 │   │   └── registry.json
+│   ├── sim-kit/
+│   │   ├── data/
+│   │   │   └── build_data.py
+│   │   ├── web/
+│   │   │   ├── engine.js
+│   │   │   ├── index.html
+│   │   │   └── scene.js
+│   │   ├── README.md
+│   │   └── render.mjs
 │   ├── weilanx/
 │   │   ├── canvas/
 │   │   │   ├── lib/
@@ -1204,27 +1216,42 @@ script-to-video-skill/
 │   ├── media/
 │   │   ├── atlas-binance.jpg
 │   │   ├── components.jpg
+│   │   ├── failed-samples.jpg
+│   │   ├── gif-caesar-cables.gif
+│   │   ├── gif-caesar-loop.gif
+│   │   ├── gif-caesar-scale.gif
+│   │   ├── gif-caesar-tower.gif
 │   │   ├── gif-flow.gif
 │   │   ├── gif-freeze.gif
 │   │   ├── gif-gate.gif
+│   │   ├── gif-kelly-hook.gif
+│   │   ├── gif-kelly-reveal.gif
+│   │   ├── gif-kelly-runs.gif
+│   │   ├── gif-kelly-steps.gif
 │   │   ├── gif-mascot.gif
 │   │   ├── gif-pareto-dial.gif
 │   │   ├── gif-pareto-land.gif
 │   │   ├── hero-binance.gif
 │   │   ├── history-wall.jpg
+│   │   ├── light-samples.jpg
 │   │   ├── look-test-rounds.jpg
 │   │   ├── motion-compare.png
+│   │   ├── music-ducking.png
 │   │   ├── same-text-pareto.jpg
 │   │   ├── storyboard-binance.jpg
+│   │   ├── storyboard-caesar.jpg
+│   │   ├── storyboard-kelly.jpg
 │   │   └── storyboard-pareto.jpg
 │   ├── README-20261029.md
 │   ├── architecture-layout.json
 │   ├── architecture.md
 │   ├── architecture.mmd
 │   ├── production-flow.mmd
+│   ├── removals.md
 │   ├── repository-inventory.json
 │   ├── repository-tree.md
-│   └── repository-tree.txt
+│   ├── repository-tree.txt
+│   └── sample-catalog.md
 ├── evals/
 │   ├── README.md
 │   └── evals.json
@@ -1333,6 +1360,53 @@ script-to-video-skill/
 │   │   │   ├── script.json
 │   │   │   └── sources.md
 │   │   ├── web/
+│   │   │   └── scene.js
+│   │   ├── README.md
+│   │   └── index.html
+│   ├── caesar-ai-bubble/
+│   │   ├── audio/
+│   │   │   ├── events.json
+│   │   │   └── timeline.json
+│   │   ├── blender/
+│   │   │   ├── caesar.py
+│   │   │   └── dio_blender.py
+│   │   ├── media/
+│   │   │   ├── final-tension-1080x1920.mp4
+│   │   │   ├── music-credit-short.txt
+│   │   │   ├── music-credits.txt
+│   │   │   ├── poster.jpg
+│   │   │   ├── preview.mp4
+│   │   │   └── subtitles.srt
+│   │   ├── qa/
+│   │   │   ├── mix-electronic.json
+│   │   │   ├── mix-tension-repro.json
+│   │   │   ├── mix-tension.json
+│   │   │   └── music-levels.json
+│   │   ├── source/
+│   │   │   ├── script.json
+│   │   │   └── sources.md
+│   │   ├── README.md
+│   │   ├── index.html
+│   │   └── overlay.py
+│   ├── caesar-kelly/
+│   │   ├── data/
+│   │   │   └── build_data.py
+│   │   ├── media/
+│   │   │   ├── final-1080x1920.mp4
+│   │   │   ├── music-credit.txt
+│   │   │   ├── poster.jpg
+│   │   │   └── preview.mp4
+│   │   ├── qa/
+│   │   │   ├── cards.json
+│   │   │   ├── data-summary.json
+│   │   │   ├── mix-a.json
+│   │   │   ├── mix-b.json
+│   │   │   ├── review-full-film.jpg
+│   │   │   └── review-look-test.jpg
+│   │   ├── source/
+│   │   │   └── sources.md
+│   │   ├── web/
+│   │   │   ├── data.json
 │   │   │   └── scene.js
 │   │   ├── README.md
 │   │   └── index.html
@@ -1445,6 +1519,293 @@ script-to-video-skill/
 │   │   ├── provenance.json
 │   │   ├── requirements.txt
 │   │   └── voice.py
+│   ├── failed-cases/
+│   │   ├── R02-anchor-art/
+│   │   │   ├── assets/
+│   │   │   │   ├── notosanssc-OFL.txt
+│   │   │   │   ├── notoserifsc-OFL.txt
+│   │   │   │   ├── timeline-anchor.json
+│   │   │   │   └── voice-anchor-boundaries.json
+│   │   │   ├── qa/
+│   │   │   │   ├── anchor-browser-errors.json
+│   │   │   │   ├── anchor-determinism.json
+│   │   │   │   ├── anchor-probe-meta.json
+│   │   │   │   ├── anchor-voice.json
+│   │   │   │   ├── final-checks.json
+│   │   │   │   └── 制作审看.md
+│   │   │   ├── source/
+│   │   │   │   ├── coat-prompt.txt
+│   │   │   │   ├── image-prompts.json
+│   │   │   │   ├── music-cues.json
+│   │   │   │   ├── package-manifest.json
+│   │   │   │   ├── scripts.json
+│   │   │   │   ├── 事实核对.md
+│   │   │   │   ├── 来源与改编.md
+│   │   │   │   └── 素材来源.csv
+│   │   │   ├── BRIEF.md
+│   │   │   ├── README.md
+│   │   │   ├── archive.json
+│   │   │   ├── art.mjs
+│   │   │   ├── common.mjs
+│   │   │   ├── film.mjs
+│   │   │   ├── finalize.py
+│   │   │   ├── index.html
+│   │   │   ├── main.mjs
+│   │   │   ├── music.mjs
+│   │   │   ├── package.json
+│   │   │   ├── package.py
+│   │   │   ├── prepare_audio.py
+│   │   │   ├── render.mjs
+│   │   │   ├── setup_project.py
+│   │   │   ├── watch.html
+│   │   │   └── 打开与修改说明.md
+│   │   ├── R03-pareto-first/
+│   │   │   ├── assets/
+│   │   │   │   ├── timeline.json
+│   │   │   │   └── word-boundaries.json
+│   │   │   ├── evidence/
+│   │   │   │   ├── fact-review.json
+│   │   │   │   ├── script-review.json
+│   │   │   │   └── source-manifest.json
+│   │   │   ├── media/
+│   │   │   │   ├── poster.jpg
+│   │   │   │   ├── preview-silent.mp4
+│   │   │   │   └── subtitles.srt
+│   │   │   ├── plans/
+│   │   │   │   ├── assets.json
+│   │   │   │   ├── content-binding.json
+│   │   │   │   └── edit-plan.json
+│   │   │   ├── qa/
+│   │   │   │   ├── audit.json
+│   │   │   │   ├── delivery.json
+│   │   │   │   ├── editor-import.json
+│   │   │   │   ├── motion-proof.json
+│   │   │   │   ├── motion-review.json
+│   │   │   │   ├── production-review.json
+│   │   │   │   ├── render-full.json
+│   │   │   │   ├── voice.json
+│   │   │   │   └── watch.html
+│   │   │   ├── scripts/
+│   │   │   │   ├── make_qa.py
+│   │   │   │   └── verify_claims.py
+│   │   │   ├── source/
+│   │   │   │   ├── content.json
+│   │   │   │   ├── draft.txt
+│   │   │   │   ├── script.json
+│   │   │   │   └── storyboard.json
+│   │   │   ├── 工程/
+│   │   │   │   ├── src/
+│   │   │   │   │   ├── vendor/
+│   │   │   │   │   │   └── src/
+│   │   │   │   │   │       └── library/
+│   │   │   │   │   │           ├── blackgold/
+│   │   │   │   │   │           │   ├── props.tsx
+│   │   │   │   │   │           │   └── theme.ts
+│   │   │   │   │   │           ├── vox/
+│   │   │   │   │   │           │   └── theme.ts
+│   │   │   │   │   │           └── anim.ts
+│   │   │   │   │   ├── Asset.tsx
+│   │   │   │   │   ├── Film.tsx
+│   │   │   │   │   ├── content.generated.json
+│   │   │   │   │   ├── entry.tsx
+│   │   │   │   │   ├── motion.tsx
+│   │   │   │   │   ├── profile.json
+│   │   │   │   │   └── timing.json
+│   │   │   │   ├── package.json
+│   │   │   │   ├── render.mjs
+│   │   │   │   └── tsconfig.json
+│   │   │   ├── README.md
+│   │   │   ├── archive.json
+│   │   │   ├── requirements.txt
+│   │   │   └── voice.py
+│   │   ├── R04-queue-poisson/
+│   │   │   ├── assets/
+│   │   │   │   ├── timeline.json
+│   │   │   │   └── word-boundaries.json
+│   │   │   ├── evidence/
+│   │   │   │   ├── script-review.json
+│   │   │   │   └── source-manifest.json
+│   │   │   ├── media/
+│   │   │   │   ├── poster.jpg
+│   │   │   │   ├── preview-silent.mp4
+│   │   │   │   └── subtitles.srt
+│   │   │   ├── plans/
+│   │   │   │   ├── captions.json
+│   │   │   │   ├── migration.json
+│   │   │   │   └── project.json
+│   │   │   ├── qa/
+│   │   │   │   ├── audit.json
+│   │   │   │   ├── caption-reference.json
+│   │   │   │   ├── caption-verification.json
+│   │   │   │   ├── full-review.json
+│   │   │   │   ├── pace.json
+│   │   │   │   ├── production-review.json
+│   │   │   │   ├── render-full.json
+│   │   │   │   └── voice.json
+│   │   │   ├── scripts/
+│   │   │   │   └── build.py
+│   │   │   ├── source/
+│   │   │   │   ├── draft.txt
+│   │   │   │   ├── film.json
+│   │   │   │   └── script.json
+│   │   │   ├── 工程/
+│   │   │   │   ├── src/
+│   │   │   │   │   └── timing.json
+│   │   │   │   ├── core.js
+│   │   │   │   ├── film.compiled.json
+│   │   │   │   ├── index.html
+│   │   │   │   ├── original-silent.html
+│   │   │   │   ├── package.json
+│   │   │   │   ├── recipes.js
+│   │   │   │   ├── render.mjs
+│   │   │   │   └── runtime.js
+│   │   │   ├── README.md
+│   │   │   ├── archive.json
+│   │   │   ├── requirements.txt
+│   │   │   └── voice.py
+│   │   ├── R05-kelly-test/
+│   │   │   ├── assets/
+│   │   │   │   ├── stats.json
+│   │   │   │   ├── timeline.json
+│   │   │   │   └── word-boundaries.json
+│   │   │   ├── evidence/
+│   │   │   │   ├── fact-review.json
+│   │   │   │   ├── script-review.json
+│   │   │   │   └── source-manifest.json
+│   │   │   ├── media/
+│   │   │   │   ├── poster.jpg
+│   │   │   │   ├── preview-silent.mp4
+│   │   │   │   └── subtitles.srt
+│   │   │   ├── plans/
+│   │   │   │   ├── experience-plan.json
+│   │   │   │   ├── experience-use.json
+│   │   │   │   └── project.json
+│   │   │   ├── qa/
+│   │   │   │   ├── audit.json
+│   │   │   │   ├── delivery.json
+│   │   │   │   ├── editor-import.json
+│   │   │   │   ├── production-review.json
+│   │   │   │   ├── render-final.json
+│   │   │   │   ├── render-full.json
+│   │   │   │   ├── render-proof.json
+│   │   │   │   ├── still-times.json
+│   │   │   │   └── voice.json
+│   │   │   ├── scripts/
+│   │   │   │   ├── bind_review.py
+│   │   │   │   ├── build_script.py
+│   │   │   │   ├── make_qa.py
+│   │   │   │   ├── simulate.py
+│   │   │   │   └── verify_claims.py
+│   │   │   ├── source/
+│   │   │   │   ├── draft.txt
+│   │   │   │   ├── script.json
+│   │   │   │   └── storyboard.json
+│   │   │   ├── 工程/
+│   │   │   │   ├── src/
+│   │   │   │   │   ├── Chapter.tsx
+│   │   │   │   │   ├── entry.tsx
+│   │   │   │   │   ├── scenes.tsx
+│   │   │   │   │   ├── stats.json
+│   │   │   │   │   ├── style.css
+│   │   │   │   │   ├── theme.ts
+│   │   │   │   │   ├── timing.json
+│   │   │   │   │   └── ui.tsx
+│   │   │   │   ├── package.json
+│   │   │   │   ├── render.mjs
+│   │   │   │   └── tsconfig.json
+│   │   │   ├── README.md
+│   │   │   ├── archive.json
+│   │   │   ├── requirements.txt
+│   │   │   └── voice.py
+│   │   ├── R06-fund-paper/
+│   │   │   ├── assets/
+│   │   │   │   ├── timeline.json
+│   │   │   │   └── word-boundaries.json
+│   │   │   ├── evidence/
+│   │   │   │   ├── fact-review.json
+│   │   │   │   ├── script-review.json
+│   │   │   │   └── source-manifest.json
+│   │   │   ├── media/
+│   │   │   │   ├── poster.jpg
+│   │   │   │   ├── preview-silent.mp4
+│   │   │   │   └── subtitles.srt
+│   │   │   ├── plans/
+│   │   │   │   ├── captions.json
+│   │   │   │   ├── content-binding.json
+│   │   │   │   ├── migration.json
+│   │   │   │   └── project.json
+│   │   │   ├── qa/
+│   │   │   │   ├── audit.json
+│   │   │   │   ├── caption-reference.json
+│   │   │   │   ├── caption-verification.json
+│   │   │   │   ├── editor-import.json
+│   │   │   │   ├── full-review.json
+│   │   │   │   ├── pace.json
+│   │   │   │   ├── production-review.json
+│   │   │   │   ├── render-full.json
+│   │   │   │   ├── still-times.json
+│   │   │   │   └── voice.json
+│   │   │   ├── source/
+│   │   │   │   ├── content.json
+│   │   │   │   ├── draft.txt
+│   │   │   │   ├── script.json
+│   │   │   │   └── storyboard.json
+│   │   │   ├── 工程/
+│   │   │   │   ├── src/
+│   │   │   │   │   ├── CaptionProbe.tsx
+│   │   │   │   │   ├── Chapter.tsx
+│   │   │   │   │   ├── content.generated.json
+│   │   │   │   │   ├── entry.tsx
+│   │   │   │   │   ├── style.css
+│   │   │   │   │   ├── timing.json
+│   │   │   │   │   └── vertical.css
+│   │   │   │   ├── package.json
+│   │   │   │   ├── render.mjs
+│   │   │   │   └── tsconfig.json
+│   │   │   ├── README.md
+│   │   │   ├── archive.json
+│   │   │   ├── requirements.txt
+│   │   │   └── voice.py
+│   │   ├── first-full/
+│   │   │   ├── assets/
+│   │   │   │   ├── timeline.json
+│   │   │   │   └── voice-boundaries.json
+│   │   │   ├── qa/
+│   │   │   │   ├── audio-master.json
+│   │   │   │   ├── browser-errors.json
+│   │   │   │   ├── final.json
+│   │   │   │   ├── probe-meta.json
+│   │   │   │   ├── project.json
+│   │   │   │   ├── render-log.txt
+│   │   │   │   ├── review.txt
+│   │   │   │   ├── run-start.json
+│   │   │   │   └── voice-production.json
+│   │   │   ├── source/
+│   │   │   │   ├── narration.txt
+│   │   │   │   ├── notebook-prompt.json
+│   │   │   │   ├── reused-image-prompts.json
+│   │   │   │   ├── reused-lens-prompt.txt
+│   │   │   │   ├── script.json
+│   │   │   │   ├── source-mapping.csv
+│   │   │   │   └── sources.csv
+│   │   │   ├── BRIEF.txt
+│   │   │   ├── README.md
+│   │   │   ├── adapt_renderer.py
+│   │   │   ├── approved-intro.js
+│   │   │   ├── archive.json
+│   │   │   ├── export_project.py
+│   │   │   ├── film.js
+│   │   │   ├── index.html
+│   │   │   ├── mix_audio.py
+│   │   │   ├── package_delivery.py
+│   │   │   ├── prepare_audio.py
+│   │   │   ├── qa_video.py
+│   │   │   ├── render.mjs
+│   │   │   ├── review_frames.py
+│   │   │   ├── timeline.js
+│   │   │   ├── 成本与效率.csv
+│   │   │   └── 打开与修改说明.txt
+│   │   └── README.md
 │   ├── gallery/
 │   │   ├── media/
 │   │   │   ├── anchor-art-1.jpg
@@ -1595,6 +1956,461 @@ script-to-video-skill/
 │   │   ├── style-vox-timeline.html
 │   │   ├── style-warm-desk.html
 │   │   └── validation.json
+│   ├── light-projects/
+│   │   ├── article-studies/
+│   │   │   ├── assets/
+│   │   │   │   ├── bust/
+│   │   │   │   │   └── manifest.json
+│   │   │   │   ├── sprites/
+│   │   │   │   │   └── manifest.json
+│   │   │   │   ├── notosanssc-OFL.txt
+│   │   │   │   ├── notoserifsc-OFL.txt
+│   │   │   │   ├── timeline-editorial.json
+│   │   │   │   ├── timeline-pixel.json
+│   │   │   │   ├── timeline-spatial.json
+│   │   │   │   ├── voice-editorial-boundaries.json
+│   │   │   │   ├── voice-pixel-boundaries.json
+│   │   │   │   └── voice-spatial-boundaries.json
+│   │   │   ├── qa/
+│   │   │   │   ├── editorial-browser-errors.json
+│   │   │   │   ├── editorial-determinism.json
+│   │   │   │   ├── editorial-probe-meta.json
+│   │   │   │   ├── editorial-voice.json
+│   │   │   │   ├── final-checks.json
+│   │   │   │   ├── pixel-browser-errors.json
+│   │   │   │   ├── pixel-determinism.json
+│   │   │   │   ├── pixel-probe-meta.json
+│   │   │   │   ├── pixel-voice.json
+│   │   │   │   ├── spatial-browser-errors.json
+│   │   │   │   ├── spatial-determinism.json
+│   │   │   │   ├── spatial-probe-meta.json
+│   │   │   │   ├── spatial-voice.json
+│   │   │   │   ├── viewer-check.json
+│   │   │   │   └── 制作方审看.txt
+│   │   │   ├── source/
+│   │   │   │   ├── package-manifest.json
+│   │   │   │   ├── scripts.json
+│   │   │   │   ├── 复用角色生成提示词.json
+│   │   │   │   └── 来源与费用.txt
+│   │   │   ├── BRIEF.txt
+│   │   │   ├── README.md
+│   │   │   ├── archive.json
+│   │   │   ├── common.mjs
+│   │   │   ├── finish.py
+│   │   │   ├── index.html
+│   │   │   ├── main.mjs
+│   │   │   ├── package.py
+│   │   │   ├── prepare_audio.py
+│   │   │   ├── render.mjs
+│   │   │   ├── style-editorial.mjs
+│   │   │   ├── style-pixel.mjs
+│   │   │   ├── style-spatial.mjs
+│   │   │   ├── watch.html
+│   │   │   └── 打开与修改说明.txt
+│   │   ├── content-lab/
+│   │   │   ├── assets/
+│   │   │   │   ├── bust/
+│   │   │   │   │   └── manifest.json
+│   │   │   │   ├── sprites/
+│   │   │   │   │   └── manifest.json
+│   │   │   │   ├── notosanssc-OFL.txt
+│   │   │   │   ├── notoserifsc-OFL.txt
+│   │   │   │   ├── timeline-editorial.json
+│   │   │   │   ├── timeline-pixel.json
+│   │   │   │   ├── timeline-spatial.json
+│   │   │   │   ├── voice-editorial-boundaries.json
+│   │   │   │   ├── voice-pixel-boundaries.json
+│   │   │   │   └── voice-spatial-boundaries.json
+│   │   │   ├── qa/
+│   │   │   │   ├── editorial-browser-errors.json
+│   │   │   │   ├── editorial-determinism.json
+│   │   │   │   ├── editorial-probe-meta.json
+│   │   │   │   ├── editorial-voice.json
+│   │   │   │   ├── final-checks.json
+│   │   │   │   ├── pixel-browser-errors.json
+│   │   │   │   ├── pixel-determinism.json
+│   │   │   │   ├── pixel-probe-meta.json
+│   │   │   │   ├── pixel-voice.json
+│   │   │   │   ├── spatial-browser-errors.json
+│   │   │   │   ├── spatial-determinism.json
+│   │   │   │   ├── spatial-probe-meta.json
+│   │   │   │   ├── spatial-voice.json
+│   │   │   │   └── 制作方审看.md
+│   │   │   ├── source/
+│   │   │   │   ├── package-manifest.json
+│   │   │   │   ├── scripts.json
+│   │   │   │   ├── 事实核对.md
+│   │   │   │   ├── 复用角色生成提示词.json
+│   │   │   │   └── 来源与费用.md
+│   │   │   ├── BRIEF.md
+│   │   │   ├── README.md
+│   │   │   ├── archive.json
+│   │   │   ├── bootstrap.py
+│   │   │   ├── common.mjs
+│   │   │   ├── finish.py
+│   │   │   ├── index.html
+│   │   │   ├── main.mjs
+│   │   │   ├── package.py
+│   │   │   ├── prepare_audio.py
+│   │   │   ├── render.mjs
+│   │   │   ├── style-editorial.mjs
+│   │   │   ├── style-pixel.mjs
+│   │   │   ├── style-spatial.mjs
+│   │   │   ├── watch.html
+│   │   │   └── 打开与修改说明.md
+│   │   ├── decision-frequency/
+│   │   │   ├── assets/
+│   │   │   │   ├── timeline.json
+│   │   │   │   └── word-boundaries.json
+│   │   │   ├── evidence/
+│   │   │   │   ├── script-review.json
+│   │   │   │   ├── source-manifest.json
+│   │   │   │   ├── 事实核查与原创算例.txt
+│   │   │   │   └── 来源与改编边界.txt
+│   │   │   ├── qa/
+│   │   │   │   ├── audio-events.json
+│   │   │   │   ├── audio-master.json
+│   │   │   │   ├── pipeline-audit.json
+│   │   │   │   ├── production-review.json
+│   │   │   │   ├── render-captions.json
+│   │   │   │   ├── render-full.json
+│   │   │   │   ├── render-proof.json
+│   │   │   │   ├── still-times.json
+│   │   │   │   ├── subtitle-layer-repair.json
+│   │   │   │   ├── subtitle-layout.json
+│   │   │   │   ├── technical-checks.json
+│   │   │   │   ├── viewer-check.json
+│   │   │   │   ├── voice-iterations.json
+│   │   │   │   └── voice.json
+│   │   │   ├── source/
+│   │   │   │   ├── draft.txt
+│   │   │   │   ├── script.json
+│   │   │   │   ├── storyboard.json
+│   │   │   │   └── 完整字幕稿.txt
+│   │   │   ├── 工程/
+│   │   │   │   ├── audio/
+│   │   │   │   │   ├── bgm.mjs
+│   │   │   │   │   └── synth.mjs
+│   │   │   │   ├── src/
+│   │   │   │   │   ├── Captions.tsx
+│   │   │   │   │   ├── Film.tsx
+│   │   │   │   │   ├── Mechanisms.tsx
+│   │   │   │   │   ├── Observations.tsx
+│   │   │   │   │   ├── caption-layout.ts
+│   │   │   │   │   ├── design.tsx
+│   │   │   │   │   ├── entry.tsx
+│   │   │   │   │   └── timing.json
+│   │   │   │   ├── check-captions.mjs
+│   │   │   │   ├── music.mjs
+│   │   │   │   ├── package.json
+│   │   │   │   ├── render.mjs
+│   │   │   │   └── tsconfig.json
+│   │   │   ├── README.md
+│   │   │   ├── README.txt
+│   │   │   ├── archive.json
+│   │   │   ├── build_delivery.py
+│   │   │   ├── check_viewer.py
+│   │   │   ├── finish.py
+│   │   │   ├── mix_audio.py
+│   │   │   ├── package.py
+│   │   │   ├── prepare_script.py
+│   │   │   ├── reband.py
+│   │   │   ├── record_review.py
+│   │   │   ├── voice.py
+│   │   │   └── watch.html
+│   │   ├── disappearing25/
+│   │   │   ├── assets/
+│   │   │   │   ├── timeline-missing25.json
+│   │   │   │   └── voice-missing25-boundaries.json
+│   │   │   ├── qa/
+│   │   │   │   ├── audio-events.json
+│   │   │   │   ├── audio-master.json
+│   │   │   │   ├── browser-state.json
+│   │   │   │   ├── final-checks.json
+│   │   │   │   ├── missing25-voice.json
+│   │   │   │   ├── review_log.md
+│   │   │   │   └── voice-asr.json
+│   │   │   ├── source/
+│   │   │   │   ├── scripts.json
+│   │   │   │   └── 来源与实际复用.md
+│   │   │   ├── 工程/
+│   │   │   │   ├── audio/
+│   │   │   │   │   ├── bgm.mjs
+│   │   │   │   │   └── synth.mjs
+│   │   │   │   ├── src/
+│   │   │   │   │   ├── library/
+│   │   │   │   │   │   ├── redshift/
+│   │   │   │   │   │   │   └── theme.ts
+│   │   │   │   │   │   ├── vox/
+│   │   │   │   │   │   │   └── theme.ts
+│   │   │   │   │   │   ├── anim.ts
+│   │   │   │   │   │   └── cues.ts
+│   │   │   │   │   ├── Missing25.tsx
+│   │   │   │   │   ├── entry.tsx
+│   │   │   │   │   └── timing.json
+│   │   │   │   ├── music.mjs
+│   │   │   │   ├── package.json
+│   │   │   │   ├── remotion.config.ts
+│   │   │   │   ├── stills.mjs
+│   │   │   │   └── tsconfig.json
+│   │   │   ├── README.md
+│   │   │   ├── apply_opening_patch.py
+│   │   │   ├── archive.json
+│   │   │   ├── brief.md
+│   │   │   ├── check_voice.py
+│   │   │   ├── finalize.py
+│   │   │   ├── finish_checks.py
+│   │   │   ├── fit_audio.py
+│   │   │   ├── mix_audio.py
+│   │   │   ├── package-manifest.json
+│   │   │   ├── package_delivery.py
+│   │   │   ├── prepare_audio.py
+│   │   │   ├── qa_frames.py
+│   │   │   ├── watch.html
+│   │   │   └── 打开与修改说明.md
+│   │   ├── gold-full/
+│   │   │   ├── assets/
+│   │   │   │   ├── timeline.json
+│   │   │   │   └── word-boundaries.json
+│   │   │   ├── qa/
+│   │   │   │   ├── audio-events.json
+│   │   │   │   ├── audio-master.json
+│   │   │   │   ├── cost-and-reuse.json
+│   │   │   │   ├── final-checks.json
+│   │   │   │   ├── render-full.json
+│   │   │   │   ├── render-proof.json
+│   │   │   │   ├── technical-checks.json
+│   │   │   │   ├── tool-notes.json
+│   │   │   │   ├── viewer-check.json
+│   │   │   │   ├── voice.json
+│   │   │   │   └── 制作检查记录.json
+│   │   │   ├── source/
+│   │   │   │   ├── script.json
+│   │   │   │   ├── source-manifest.json
+│   │   │   │   ├── 分镜动作与时间码.json
+│   │   │   │   ├── 完整字幕稿.txt
+│   │   │   │   ├── 核查来源.json
+│   │   │   │   └── 脚本证据映射.json
+│   │   │   ├── 工程/
+│   │   │   │   ├── audio/
+│   │   │   │   │   ├── bgm.mjs
+│   │   │   │   │   └── synth.mjs
+│   │   │   │   ├── src/
+│   │   │   │   │   ├── library/
+│   │   │   │   │   │   ├── redshift/
+│   │   │   │   │   │   │   └── theme.ts
+│   │   │   │   │   │   ├── vox/
+│   │   │   │   │   │   │   └── theme.ts
+│   │   │   │   │   │   └── anim.ts
+│   │   │   │   │   ├── FullFilm.tsx
+│   │   │   │   │   ├── Mechanism.tsx
+│   │   │   │   │   ├── entry.tsx
+│   │   │   │   │   ├── proof-timing.json
+│   │   │   │   │   └── timing.json
+│   │   │   │   ├── music.mjs
+│   │   │   │   ├── package.json
+│   │   │   │   ├── remotion.config.ts
+│   │   │   │   ├── render.mjs
+│   │   │   │   └── tsconfig.json
+│   │   │   ├── README.md
+│   │   │   ├── README.txt
+│   │   │   ├── archive.json
+│   │   │   ├── build_delivery.py
+│   │   │   ├── check_viewer.py
+│   │   │   ├── finish.py
+│   │   │   ├── init.py
+│   │   │   ├── inspect_proof.py
+│   │   │   ├── mix_audio.py
+│   │   │   ├── package.py
+│   │   │   ├── qa_prepare.py
+│   │   │   ├── qa_sequences.py
+│   │   │   ├── voice.py
+│   │   │   ├── watch.html
+│   │   │   └── 交付文件清单.json
+│   │   ├── gold-proof/
+│   │   │   ├── assets/
+│   │   │   │   ├── timeline.json
+│   │   │   │   └── word-boundaries.json
+│   │   │   ├── qa/
+│   │   │   │   ├── audio-events.json
+│   │   │   │   ├── audio-master.json
+│   │   │   │   ├── final-checks.json
+│   │   │   │   ├── report-check.json
+│   │   │   │   ├── visual-review.json
+│   │   │   │   └── voice.json
+│   │   │   ├── source/
+│   │   │   │   ├── sample-script.json
+│   │   │   │   ├── source-manifest.json
+│   │   │   │   ├── 复用记录.json
+│   │   │   │   ├── 完整分镜表.json
+│   │   │   │   ├── 完整口播稿.txt
+│   │   │   │   ├── 实际样片动作表.json
+│   │   │   │   ├── 核查来源.json
+│   │   │   │   ├── 论点证据表.json
+│   │   │   │   └── 选题决策.json
+│   │   │   ├── 工程/
+│   │   │   │   ├── audio/
+│   │   │   │   │   ├── bgm.mjs
+│   │   │   │   │   └── synth.mjs
+│   │   │   │   ├── src/
+│   │   │   │   │   ├── library/
+│   │   │   │   │   │   ├── redshift/
+│   │   │   │   │   │   │   └── theme.ts
+│   │   │   │   │   │   ├── vox/
+│   │   │   │   │   │   │   └── theme.ts
+│   │   │   │   │   │   └── anim.ts
+│   │   │   │   │   ├── TwoControls.tsx
+│   │   │   │   │   ├── entry.tsx
+│   │   │   │   │   └── timing.json
+│   │   │   │   ├── music.mjs
+│   │   │   │   ├── package.json
+│   │   │   │   ├── remotion.config.ts
+│   │   │   │   └── tsconfig.json
+│   │   │   ├── README.md
+│   │   │   ├── archive.json
+│   │   │   ├── build_content.py
+│   │   │   ├── check_report.py
+│   │   │   ├── extract_qa.py
+│   │   │   ├── finalize.py
+│   │   │   ├── make_report.py
+│   │   │   ├── mix_audio.py
+│   │   │   ├── pipeline-status.json
+│   │   │   ├── prepare_audio.py
+│   │   │   ├── watch.html
+│   │   │   ├── 五步执行报告.html
+│   │   │   └── 打开与修改说明.txt
+│   │   ├── index-machine/
+│   │   │   ├── assets/
+│   │   │   │   ├── timeline.json
+│   │   │   │   └── word-boundaries.json
+│   │   │   ├── evidence/
+│   │   │   │   ├── claim-ledger.json
+│   │   │   │   └── 来源与改编边界.txt
+│   │   │   ├── qa/
+│   │   │   │   ├── audio-events.json
+│   │   │   │   ├── audio-master.json
+│   │   │   │   ├── partial-repair.json
+│   │   │   │   ├── production-review.json
+│   │   │   │   ├── render-full.json
+│   │   │   │   ├── render-proof.json
+│   │   │   │   ├── still-times.json
+│   │   │   │   ├── technical-checks.json
+│   │   │   │   ├── valuation-repair.json
+│   │   │   │   ├── viewer-check.json
+│   │   │   │   ├── voice-iterations.json
+│   │   │   │   ├── voice-subtitles.json
+│   │   │   │   └── voice.json
+│   │   │   ├── source/
+│   │   │   │   ├── script.json
+│   │   │   │   ├── 完整字幕稿.txt
+│   │   │   │   └── 论证与镜头说明.txt
+│   │   │   ├── 工程/
+│   │   │   │   ├── audio/
+│   │   │   │   │   ├── bgm.mjs
+│   │   │   │   │   └── synth.mjs
+│   │   │   │   ├── src/
+│   │   │   │   │   ├── Capital.tsx
+│   │   │   │   │   ├── Film.tsx
+│   │   │   │   │   ├── Stations.tsx
+│   │   │   │   │   ├── Weights.tsx
+│   │   │   │   │   ├── design.tsx
+│   │   │   │   │   ├── entry.tsx
+│   │   │   │   │   └── timing.json
+│   │   │   │   ├── music.mjs
+│   │   │   │   ├── package.json
+│   │   │   │   ├── remotion.config.ts
+│   │   │   │   ├── render.mjs
+│   │   │   │   └── tsconfig.json
+│   │   │   ├── README.md
+│   │   │   ├── README.txt
+│   │   │   ├── archive.json
+│   │   │   ├── build_delivery.py
+│   │   │   ├── check_viewer.py
+│   │   │   ├── finish.py
+│   │   │   ├── merge_repair.py
+│   │   │   ├── mix_audio.py
+│   │   │   ├── package.py
+│   │   │   ├── voice.py
+│   │   │   └── watch.html
+│   │   ├── revision/
+│   │   │   ├── assets/
+│   │   │   │   ├── subtitles.srt
+│   │   │   │   └── timeline.json
+│   │   │   ├── qa/
+│   │   │   │   ├── browser-errors.json
+│   │   │   │   ├── composition.json
+│   │   │   │   ├── final.json
+│   │   │   │   ├── playback.json
+│   │   │   │   └── review.txt
+│   │   │   ├── BRIEF.txt
+│   │   │   ├── README.md
+│   │   │   ├── README.txt
+│   │   │   ├── REUSE_AUDIT.txt
+│   │   │   ├── archive.json
+│   │   │   ├── audio-events.json
+│   │   │   ├── check_frames.py
+│   │   │   ├── content_check.json
+│   │   │   ├── costs.txt
+│   │   │   ├── film.js
+│   │   │   ├── finish.py
+│   │   │   ├── index.html
+│   │   │   ├── input.json
+│   │   │   ├── prepare.py
+│   │   │   ├── preview.json
+│   │   │   ├── preview_server.py
+│   │   │   ├── render_existing.mjs
+│   │   │   ├── render_xilo.py
+│   │   │   ├── script.txt
+│   │   │   ├── sources.json
+│   │   │   ├── timeline.js
+│   │   │   └── watch.html
+│   │   ├── style-studies/
+│   │   │   ├── assets/
+│   │   │   │   ├── bust/
+│   │   │   │   │   └── manifest.json
+│   │   │   │   ├── sprites/
+│   │   │   │   │   └── manifest.json
+│   │   │   │   ├── notosanssc-OFL.txt
+│   │   │   │   ├── notoserifsc-OFL.txt
+│   │   │   │   └── timeline.json
+│   │   │   ├── qa/
+│   │   │   │   ├── audio.json
+│   │   │   │   ├── editorial-browser-errors.json
+│   │   │   │   ├── editorial-determinism.json
+│   │   │   │   ├── editorial-probe-meta.json
+│   │   │   │   ├── editorial-technical.json
+│   │   │   │   ├── final-checks.json
+│   │   │   │   ├── finish-log.txt
+│   │   │   │   ├── pixel-browser-errors.json
+│   │   │   │   ├── pixel-determinism.json
+│   │   │   │   ├── pixel-probe-meta.json
+│   │   │   │   ├── pixel-technical.json
+│   │   │   │   ├── spatial-browser-errors.json
+│   │   │   │   ├── spatial-determinism.json
+│   │   │   │   ├── spatial-probe-meta.json
+│   │   │   │   ├── spatial-technical.json
+│   │   │   │   └── 制作方审看.txt
+│   │   │   ├── source/
+│   │   │   │   ├── image-prompts.json
+│   │   │   │   ├── package-manifest.json
+│   │   │   │   └── 来源与费用.txt
+│   │   │   ├── BRIEF.txt
+│   │   │   ├── README.md
+│   │   │   ├── archive.json
+│   │   │   ├── common.mjs
+│   │   │   ├── finish.py
+│   │   │   ├── index.html
+│   │   │   ├── main.mjs
+│   │   │   ├── mix_audio.py
+│   │   │   ├── package.py
+│   │   │   ├── qa_frames.py
+│   │   │   ├── render.mjs
+│   │   │   ├── style-editorial.mjs
+│   │   │   ├── style-pixel.mjs
+│   │   │   ├── style-spatial.mjs
+│   │   │   ├── watch.html
+│   │   │   └── 打开与修改说明.txt
+│   │   └── README.md
 │   ├── pareto-diorama/
 │   │   ├── audio/
 │   │   │   └── timeline.json
@@ -1834,7 +2650,9 @@ script-to-video-skill/
 │   │   │   ├── E20.md
 │   │   │   ├── E21.md
 │   │   │   ├── E22.md
-│   │   │   └── E23.md
+│   │   │   ├── E23.md
+│   │   │   ├── E24.md
+│   │   │   └── E25.md
 │   │   ├── evidence/
 │   │   │   ├── chapter-repair.json
 │   │   │   ├── chapter-review.json
@@ -1873,6 +2691,8 @@ script-to-video-skill/
 │   ├── production-profiles.md
 │   ├── production.md
 │   ├── runtime-and-portability.md
+│   ├── sample-catalog.json
+│   ├── sim-typography.md
 │   └── visual-library.md
 ├── scripts/
 │   ├── audit_episode.py
@@ -1885,13 +2705,16 @@ script-to-video-skill/
 │   ├── experience.py
 │   ├── film_delivery.py
 │   ├── mix_music.py
+│   ├── music_library.py
 │   ├── package_skill.py
 │   ├── pixel_inspect.py
 │   ├── pixel_scene.py
 │   ├── production.py
 │   ├── reference_study.py
 │   ├── repo_inventory.py
+│   ├── samples.py
 │   ├── select_visual.py
+│   ├── simfilm.py
 │   └── start_episode.py
 ├── tests/
 │   ├── run_cinema_browser.py
@@ -1900,9 +2723,12 @@ script-to-video-skill/
 │   ├── test_diorama.py
 │   ├── test_experience.py
 │   ├── test_film_delivery.py
+│   ├── test_mix_music.py
 │   ├── test_pixel_scene.py
 │   ├── test_production.py
-│   └── test_repo_inventory.py
+│   ├── test_repo_inventory.py
+│   ├── test_samples.py
+│   └── test_simfilm.py
 ├── .gitattributes
 ├── .gitignore
 ├── .nojekyll

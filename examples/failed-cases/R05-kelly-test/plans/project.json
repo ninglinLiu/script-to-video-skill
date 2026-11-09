@@ -1,0 +1,45 @@
+{
+  "episode": "video-60s-kelly",
+  "createdAt": "2026-10-25T15:15:00+08:00",
+  "contentForm": "概念机制：用一条乘法路径解释算术平均与几何平均的差异",
+  "styleRef": "暗金文献（references/visual-library.md 中的 gilded 方向）+ 本片自有竖屏排版",
+  "durationSeconds": 63.1,
+  "aspect": "1080x1920 / 30fps",
+  "editGrammar": "对象连续 + 证据硬切：同一个本金起点从 1.00 走到 0.75 再到 10^-6.25",
+  "engineProject": "工程/（Remotion 4.0.529，继承 examples/chapter-01 的 package.json 与 render.mjs 结构）",
+  "assetReuse": [
+    "Noto Sans SC / Noto Serif SC 变体字体（OFL，随 skill 的 chapter-01 提供）",
+    "chapter-01 的 edge-tts 适配器 voice.py 与 requirements.txt（原样复用）",
+    "Remotion 渲染入口结构（bundle → selectComposition → renderMedia）"
+  ],
+  "modelAndTools": {
+    "agent": "deepseek-flash（本会话）",
+    "tts": "edge-tts 7.3.1 / zh-CN-YunxiNeural / rate -2%",
+    "renderer": "Remotion 4.0.529 + 本机 Google Chrome (REMOTION_BROWSER)",
+    "ffmpeg": "8.1.2"
+  },
+  "decisions": [
+    {
+      "choice": "用独立推导而不是文章改编",
+      "reason": "用户只给了 skill 链接和时长要求，没有提供原文；避免伪造原文改编",
+      "cost": "需要自己产出可核验的证据（scripts/simulate.py + verify_claims.py）"
+    },
+    {
+      "choice": "竖屏 1080×1920",
+      "reason": "SKILL.md 的 task-short 默认规格；1 分钟短片的主要分发形态是竖屏"
+    },
+    {
+      "choice": "6 个镜头",
+      "reason": "每个镜头承担一个论点，cue 与画面对齐；符合 task-short 的 5–8 镜要求"
+    },
+    {
+      "choice": "对数纵轴表现 100 轮",
+      "reason": "线性轴上 5.66e-7 与 1.00 无法同框；对数轴保留同一对象与同一条路径"
+    }
+  ],
+  "notDone": [
+    "没有做真人审听（Agent 不能播放声音），只听音时间戳与响度记录",
+    "没有在剪映/Premiere 中打开工程（本机未验证编辑器导入）",
+    "没有交付配乐（默认静音混音，公开版只保留旁白）"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "status": "technical_pass",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "duration": 12.266667,
+  "frames": 368,
+  "videoCodec": "h264",
+  "pixelFormat": "yuv420p",
+  "silentAudioTracks": 0,
+  "audioEditionTracks": 1,
+  "decode": "Both MP4 files fully decoded without FFmpeg errors",
+  "subtitleCues": 6,
+  "subtitleTiming": "Real WordBoundary, ordered and within video",
+  "sourceChecksum": "Verified unchanged original",
+  "typecheck": "Passed tsc --noUnusedLocals before final render",
+  "speakerPlayback": false,
+  "manualListening": false,
+  "userAcceptance": "pending",
+  "fullFilm": "not_rendered",
+  "generalPipeline": "not_validated_on_multiple_articles",
+  "fontFailurePolicy": "cancelRender on any local font failure",
+  "bytes": {
+    "silent": 4662565,
+    "withAudio": 4940573
+  }
+}

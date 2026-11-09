@@ -1,0 +1,215 @@
+{
+  "sourceSha256": "4dfabd61245a15538577069722c430e46a882195f44e41b550c8e2353d0d8370",
+  "samples": [
+    {
+      "subtitle": 0,
+      "frame": 26,
+      "text": "2026 年 7 月 30 日，一家只有 8 人的基金",
+      "expected": "qa/caption-reference/00-start-with.png",
+      "without": "qa/caption-reference/00-start-without.png"
+    },
+    {
+      "subtitle": 0,
+      "frame": 117,
+      "text": "2026 年 7 月 30 日，一家只有 8 人的基金",
+      "expected": "qa/caption-reference/00-end-with.png",
+      "without": "qa/caption-reference/00-end-without.png"
+    },
+    {
+      "subtitle": 1,
+      "frame": 132,
+      "text": "把 16 亿美元的公开持仓，36 小时内卖给了 Citadel。",
+      "expected": "qa/caption-reference/01-start-with.png",
+      "without": "qa/caption-reference/01-start-without.png"
+    },
+    {
+      "subtitle": 1,
+      "frame": 253,
+      "text": "把 16 亿美元的公开持仓，36 小时内卖给了 Citadel。",
+      "expected": "qa/caption-reference/01-end-with.png",
+      "without": "qa/caption-reference/01-end-without.png"
+    },
+    {
+      "subtitle": 2,
+      "frame": 280,
+      "text": "创始人 25 岁，OpenAI 出身",
+      "expected": "qa/caption-reference/02-start-with.png",
+      "without": "qa/caption-reference/02-start-without.png"
+    },
+    {
+      "subtitle": 2,
+      "frame": 352,
+      "text": "创始人 25 岁，OpenAI 出身",
+      "expected": "qa/caption-reference/02-end-with.png",
+      "without": "qa/caption-reference/02-end-without.png"
+    },
+    {
+      "subtitle": 3,
+      "frame": 373,
+      "text": "上半年回报 439%，规模从 2.25 亿美元做到 450 亿美元",
+      "expected": "qa/caption-reference/03-start-with.png",
+      "without": "qa/caption-reference/03-start-without.png"
+    },
+    {
+      "subtitle": 3,
+      "frame": 544,
+      "text": "上半年回报 439%，规模从 2.25 亿美元做到 450 亿美元",
+      "expected": "qa/caption-reference/03-end-with.png",
+      "without": "qa/caption-reference/03-end-without.png"
+    },
+    {
+      "subtitle": 4,
+      "frame": 559,
+      "text": "靠的是 4 倍杠杆。",
+      "expected": "qa/caption-reference/04-start-with.png",
+      "without": "qa/caption-reference/04-start-without.png"
+    },
+    {
+      "subtitle": 4,
+      "frame": 590,
+      "text": "靠的是 4 倍杠杆。",
+      "expected": "qa/caption-reference/04-end-with.png",
+      "without": "qa/caption-reference/04-end-without.png"
+    },
+    {
+      "subtitle": 5,
+      "frame": 617,
+      "text": "七月，他做多的 AI 基建暴跌，Nebius 跌 48%，SanDisk 跌 56%",
+      "expected": "qa/caption-reference/05-start-with.png",
+      "without": "qa/caption-reference/05-start-without.png"
+    },
+    {
+      "subtitle": 5,
+      "frame": 827,
+      "text": "七月，他做多的 AI 基建暴跌，Nebius 跌 48%，SanDisk 跌 56%",
+      "expected": "qa/caption-reference/05-end-with.png",
+      "without": "qa/caption-reference/05-end-without.png"
+    },
+    {
+      "subtitle": 6,
+      "frame": 847,
+      "text": "做空的软件股却在反弹",
+      "expected": "qa/caption-reference/06-start-with.png",
+      "without": "qa/caption-reference/06-start-without.png"
+    },
+    {
+      "subtitle": 6,
+      "frame": 892,
+      "text": "做空的软件股却在反弹",
+      "expected": "qa/caption-reference/06-end-with.png",
+      "without": "qa/caption-reference/06-end-without.png"
+    },
+    {
+      "subtitle": 7,
+      "frame": 907,
+      "text": "多空两头挨打，杠杆把亏损放大。",
+      "expected": "qa/caption-reference/07-start-with.png",
+      "without": "qa/caption-reference/07-start-without.png"
+    },
+    {
+      "subtitle": 7,
+      "frame": 976,
+      "text": "多空两头挨打，杠杆把亏损放大。",
+      "expected": "qa/caption-reference/07-end-with.png",
+      "without": "qa/caption-reference/07-end-without.png"
+    },
+    {
+      "subtitle": 8,
+      "frame": 1003,
+      "text": "二十四号他还在募集资金",
+      "expected": "qa/caption-reference/08-start-with.png",
+      "without": "qa/caption-reference/08-start-without.png"
+    },
+    {
+      "subtitle": 8,
+      "frame": 1050,
+      "text": "二十四号他还在募集资金",
+      "expected": "qa/caption-reference/08-end-with.png",
+      "without": "qa/caption-reference/08-end-without.png"
+    },
+    {
+      "subtitle": 9,
+      "frame": 1069,
+      "text": "二十九号，三家主经纪商同时要求追加保证金",
+      "expected": "qa/caption-reference/09-start-with.png",
+      "without": "qa/caption-reference/09-start-without.png"
+    },
+    {
+      "subtitle": 9,
+      "frame": 1189,
+      "text": "二十九号，三家主经纪商同时要求追加保证金",
+      "expected": "qa/caption-reference/09-end-with.png",
+      "without": "qa/caption-reference/09-end-without.png"
+    },
+    {
+      "subtitle": 10,
+      "frame": 1207,
+      "text": "三十号，全部持仓折价卖出。",
+      "expected": "qa/caption-reference/10-start-with.png",
+      "without": "qa/caption-reference/10-start-without.png"
+    },
+    {
+      "subtitle": 10,
+      "frame": 1277,
+      "text": "三十号，全部持仓折价卖出。",
+      "expected": "qa/caption-reference/10-end-with.png",
+      "without": "qa/caption-reference/10-end-without.png"
+    },
+    {
+      "subtitle": 11,
+      "frame": 1305,
+      "text": "卖掉当天，纳斯达克一百涨 3%，AI 股反弹 15% 到 25%",
+      "expected": "qa/caption-reference/11-start-with.png",
+      "without": "qa/caption-reference/11-start-without.png"
+    },
+    {
+      "subtitle": 11,
+      "frame": 1484,
+      "text": "卖掉当天，纳斯达克一百涨 3%，AI 股反弹 15% 到 25%",
+      "expected": "qa/caption-reference/11-end-with.png",
+      "without": "qa/caption-reference/11-end-without.png"
+    },
+    {
+      "subtitle": 12,
+      "frame": 1506,
+      "text": "他看对了方向，却死在黎明前五分钟。",
+      "expected": "qa/caption-reference/12-start-with.png",
+      "without": "qa/caption-reference/12-start-without.png"
+    },
+    {
+      "subtitle": 12,
+      "frame": 1577,
+      "text": "他看对了方向，却死在黎明前五分钟。",
+      "expected": "qa/caption-reference/12-end-with.png",
+      "without": "qa/caption-reference/12-end-without.png"
+    },
+    {
+      "subtitle": 13,
+      "frame": 1604,
+      "text": "杠杆不改变方向，只改变速度",
+      "expected": "qa/caption-reference/13-start-with.png",
+      "without": "qa/caption-reference/13-start-without.png"
+    },
+    {
+      "subtitle": 13,
+      "frame": 1670,
+      "text": "杠杆不改变方向，只改变速度",
+      "expected": "qa/caption-reference/13-end-with.png",
+      "without": "qa/caption-reference/13-end-without.png"
+    },
+    {
+      "subtitle": 14,
+      "frame": 1692,
+      "text": "方向再对，也要活到兑现的那一天。",
+      "expected": "qa/caption-reference/14-start-with.png",
+      "without": "qa/caption-reference/14-start-without.png"
+    },
+    {
+      "subtitle": 14,
+      "frame": 1766,
+      "text": "方向再对，也要活到兑现的那一天。",
+      "expected": "qa/caption-reference/14-end-with.png",
+      "without": "qa/caption-reference/14-end-without.png"
+    }
+  ]
+}

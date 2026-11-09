@@ -1,0 +1,27 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>三种动画语言 · 静音样片</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#11191b;color:#f1ede3;font:15px/1.6 "Microsoft YaHei",sans-serif}
+main{max-width:1440px;margin:auto;padding:34px 32px 64px}header{display:flex;gap:24px;justify-content:space-between;align-items:end;margin-bottom:28px}
+h1{font-size:32px;letter-spacing:-1px;margin:7px 0}p{color:#b5c2be;margin:8px 0}.eyebrow{color:#dfb77b;font-size:12px;letter-spacing:2px}
+.controls{display:flex;gap:10px;flex-wrap:wrap}button,a.button{border:1px solid #50615d;background:#21312f;color:#fff;border-radius:7px;padding:11px 17px;cursor:pointer;text-decoration:none;font:inherit}
+button.primary{background:#efd29d;color:#15231e;border-color:#efd29d}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+article{min-width:0}h2{font-size:20px;margin:0 0 6px}.desc{height:48px;font-size:13px}
+video{width:100%;aspect-ratio:9/16;display:block;background:#080d0e;border-radius:8px;border:1px solid #344542}
+nav{display:flex;justify-content:space-between;gap:12px;margin:14px 0}a{color:#e9c38d;text-underline-offset:4px}
+footer{margin-top:32px;padding-top:18px;border-top:1px solid #344542;font-size:13px}
+@media(max-width:800px){main{padding:22px 16px}.grid{grid-template-columns:1fr}.desc{height:auto}article{max-width:450px;margin:auto}header{display:block}.controls{margin-top:18px}}
+</style></head><body><main>
+<header><div><div class="eyebrow">MOTION STUDIES · 2026 / 10 / 20</div><h1>同一段内容，三种动画语言</h1><p>每版 8 秒 · 9:16 · 当前页面的所有视频均无音轨，不会外放。</p></div><div class="controls"><button class="primary" id="play">同步播放</button><button id="pause">全部暂停</button><button id="reset">回到开头</button></div></header>
+<section class="grid">
+<article><h2>A · 图形排版</h2><p class="desc">方块拼合 → 橙块变成瞳孔 → 视野扩展。以形状匹配衔接。</p><video muted playsinline controls preload="metadata" poster="qa/editorial-poster.jpg" src="out/editorial-silent.mp4"></video><nav><a href="out/editorial-silent.mp4" download>下载无声版</a><a href="out/editorial.mp4" download>含配音版</a></nav></article>
+<article><h2>B · 空间几何</h2><p class="desc">结构落位 → 环绕观察 → 展开关系。以真实空间运镜衔接。</p><video muted playsinline controls preload="metadata" poster="qa/spatial-poster.jpg" src="out/spatial-silent.mp4"></video><nav><a href="out/spatial-silent.mp4" download>下载无声版</a><a href="out/spatial.mp4" download>含配音版</a></nav></article>
+<article><h2>C · 像素工坊</h2><p class="desc">角色搭建 → 走到另一侧 → 放大研究。以角色行动推进解释。</p><video muted playsinline controls preload="metadata" poster="qa/pixel-poster.jpg" src="out/pixel-silent.mp4"></video><nav><a href="out/pixel-silent.mp4" download>下载无声版</a><a href="out/pixel.mp4" download>含配音版</a></nav></article>
+</section>
+<footer><p>旧版 69 秒黑金微缩工坊成片和完整工程已归档保留。这三版是风格样片，待审看。</p><a href="out/compare-silent.mp4" download>下载并排无声对比</a> · <a href="打开与修改说明.txt">工程说明</a></footer>
+</main><script>
+const vs=[...document.querySelectorAll('video')];
+for(const v of vs){v.muted=true;v.defaultMuted=true}
+document.querySelector('#play').onclick=async()=>{for(const v of vs){v.currentTime=0;v.muted=true}await Promise.all(vs.map(v=>v.play().catch(()=>{})))};
+document.querySelector('#pause').onclick=()=>vs.forEach(v=>v.pause());
+document.querySelector('#reset').onclick=()=>vs.forEach(v=>{v.pause();v.currentTime=0});
+</script></body></html>

@@ -1,0 +1,6 @@
+{
+  "method": "Re-render 1080x356 caption band and composite at y1564; main animation and voice reused",
+  "frames": 5204,
+  "source": "工程/src/Captions.tsx",
+  "newWholeFilmRenderRequired": false
+}

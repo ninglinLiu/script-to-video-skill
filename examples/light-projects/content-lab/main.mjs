@@ -1,0 +1,23 @@
+import {subtitle,txt,rect,line} from './common.mjs';
+import {createEditorial} from './style-editorial.mjs';
+import {createSpatial} from './style-spatial.mjs';
+import {createPixel} from './style-pixel.mjs';
+window.ready=false;
+const style=new URLSearchParams(location.search).get('style')||'editorial';
+const tl=await(await fetch(`assets/timeline-${style}.json`)).json();
+const glyphs=(await Promise.all(['style-editorial.mjs','style-spatial.mjs','style-pixel.mjs'].map(f=>fetch(f).then(r=>r.text())))).join('');
+await Promise.all([document.fonts.load('900 160px Sans',tl.text+glyphs),document.fonts.load('700 120px Serif',tl.text+glyphs),document.fonts.load('60px "Fusion Pixel 12px Proportional Simplified Chinese"',tl.text+glyphs)]);
+await document.fonts.ready;
+const draw=await (style==='spatial'?createSpatial(tl):style==='pixel'?createPixel(tl):createEditorial(tl));
+const c=document.querySelector('#film').getContext('2d',{alpha:false});
+window.meta={style,width:1080,height:1920,duration:30,fps:30,source:tl.title,audioPlayback:'disabled'};
+window.render=t=>{t=Math.max(0,Math.min(30,t));c.reset();draw(c,t);
+ const light=style==='editorial';
+ rect(c,40,1575,1000,170,light?'#f2efd9':'#07191de8');
+ const cue=tl.cues.find(v=>t>=v.start&&t<Math.min(30,v.end+.14));
+ if(cue){c.save();const font=style==='pixel'?'Fusion Pixel 12px Proportional Simplified Chinese':'Sans';c.font=`650 60px "${font}"`;const size=Math.min(60,930/c.measureText(cue.text).width*60);txt(c,cue.text,540,1675,size,light?'#152c2a':'#fff1d6',650,'center',font);c.restore();}
+ line(c,60,1790,1020,1790,light?'#5b6f5d':'#54766d',1.5);
+ txt(c,'凯撒的复利实验室',62,1855,28,light?'#475b4c':'#afbcaa',500);
+ txt(c,'30s / 内容试样',1018,1855,27,light?'#475b4c':'#afbcaa',500,'right');
+};
+window.__player={total:30000,set:ms=>window.render(ms/1000)};window.render(0);window.ready=true;

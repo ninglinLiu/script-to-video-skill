@@ -1,0 +1,12 @@
+{
+  "reflection": "R05",
+  "status": "user-rejected",
+  "local_project": "Claudebao/productions/video-60s-kelly",
+  "local_film_sha256": "9a514e7e48c5438e925b7286384dad1aa795582891e5e926506cd978f6f9ba45",
+  "seconds": 63.1,
+  "width": 1080,
+  "height": 1920,
+  "preview_sha256": "42c6cad2088d68f00dee8df45efa8a72c49857b3adc9ce5f2b4638e4af295967",
+  "copied_text_files": 39,
+  "note": "高码率原片与依赖留在本机；此处预览由原片转码，去掉音轨。"
+}

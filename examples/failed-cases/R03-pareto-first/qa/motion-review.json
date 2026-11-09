@@ -1,0 +1,65 @@
+{
+  "status": "reviewed",
+  "proofSha256": "597c1ed05b690aa789b4363ff7c61af33bbca7c1eb41577ff5c36a2dce557e89",
+  "method": "dense-sequence-review",
+  "methodDetail": "从 qa/motion-proof.mp4 解码 30 张 0.4 秒间隔全片帧（qa/proof-frames/）加 18 张 0.15 秒间隔的密集帧（qa/proof-dense/，覆盖两个交接前后各约 1.2 秒），逐帧比对对象位置、柱形高度与数字落点；未使用静帧替代。",
+  "recaptureNote": "样片在审看后重渲了两次：第一次因为写入 source/storyboard.json、第二次因为修正收尾时间与尾部动作，source_digest 都发生变化，门槛按设计拒绝沿用旧样片。两次都用 1.0 / 5.0 / 10.8 秒三帧与审看版本逐像素比对，平均绝对差 ≤ 0.13 / 255（编码噪声），窗口内画面未变，因此沿用同一组 observations 与 transitions，仅改为绑定当前样片哈希。",
+  "observations": [
+    {
+      "start": 19.27,
+      "end": 20.47,
+      "observed": "五组小人排成一排，头顶分别是 3%/4%/5%/8%/80%；片内 0.9 秒时字幕从「五组人，各占 20% 的人口」切到「20% 的人，80% 的财富」",
+      "newInformation": "第一次把人群比例与份额对上：最高一组独得 80%，其余四组合计约 20%"
+    },
+    {
+      "start": 20.47,
+      "end": 21.65,
+      "observed": "q0 到 q4 五个对象连续移动：最高的一个上移到 0.32 高度，其余四个下移到 0.66；柱形同时从基线长出，没有对象消失或换位跳变",
+      "newInformation": "同一组人从「一排」变成「站在各自的份额上」，差距由高度承担"
+    },
+    {
+      "start": 21.65,
+      "end": 24.50,
+      "observed": "聚光灯在 21.0–22.2 秒之间亮起并停在高柱上；其余四组的柱形只剩细线，数字 3/4/5/8% 仍在各自头顶",
+      "newInformation": "把「少数人拿走大部分」落到一个可数的差距：80% 对 3%–8%"
+    },
+    {
+      "start": 24.50,
+      "end": 29.57,
+      "observed": "构图保持约 5 秒不变，人物与柱形不动，没有新元素；字幕推进到「要让 20% 占 80%，分布必须是指数为 1.16 的帕累托分布」",
+      "newInformation": "论证从「观察到差距」推进到「成立条件」：指数必须约为 1.16，这段时间由字幕承担解释"
+    },
+    {
+      "start": 29.57,
+      "end": 31.10,
+      "observed": "柱形与聚光灯在同一帧消失，五个人物与标签保留并下移成一行；片内 10.75 秒起三张指数卡片淡入，没有出现空帧",
+      "newInformation": "证据从「一个分布」硬切成「三个指数」的对照，锚点仍是同一组人"
+    },
+    {
+      "start": 31.10,
+      "end": 31.57,
+      "observed": "三张卡片可读：α=1.16 → 20% 占 80%；α=1.5 → 20% 占 58%；α=2.0 → 20% 占 45%；字幕变为「同一个 20%，换一个指数就换一个答案」",
+      "newInformation": "同一批人、同一个 20%，换一个尾参数就是另一个结论"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "groups-onto-bars",
+      "observed": "20.47 前后逐帧可见：quintile-0 与 quintile-4 全程可见，位置连续变化，单帧位移约 0.003（远小于 maxStep 0.08），无消失、无跳位",
+      "verdict": "keep"
+    },
+    {
+      "id": "bars-to-alpha-cards",
+      "observed": "29.57 处硬切：柱形、基线与聚光灯同时消失，五个人物与百分比标签原样保留，随后下移成一行；三张卡片 0.45 秒后淡入，锚点对象没有丢失",
+      "verdict": "keep"
+    }
+  ],
+  "outsideProofObservations": [
+    "样片只覆盖 19.27–31.57 秒；42 秒之后的 64/4 段落与收尾句不在门槛范围内，按 production.md 由成片审查记录（qa/production-review.json）承担，不写进本条记录冒充已审。"
+  ],
+  "unresolved": [],
+  "requiredTransitionIds": [
+    "groups-onto-bars",
+    "bars-to-alpha-cards"
+  ]
+}

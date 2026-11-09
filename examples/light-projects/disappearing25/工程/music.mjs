@@ -1,0 +1,11 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {buildBgm} from './audio/bgm.mjs';
+import {SR,renderSfx,encodeWav,mixInto} from './audio/synth.mjs';
+const timing=JSON.parse(readFileSync('src/timing.json','utf8'));
+const sec=s=>.6+(s-.6)*timing.scale;
+buildBgm({voice:'../assets/voice-track.wav',out:'../assets/music-track.wav',sections:[[0,'groove'],[sec(5.1),'break'],[sec(7.7),'light'],[sec(17.1),'break'],[sec(19.45),'groove'],[sec(29.15),'break'],[sec(33.8),'light'],[sec(41.2),'groove'],[57,'end']],level:.039,depth:.72});
+const fx=new Float32Array(60*SR);
+const events=[[1.85,'whoosh',.07],[3.45,'whoosh',.07],[7.75,'snip',.13],[9.3,'click',.1],[14.05,'whoosh',.05],[15.7,'pop',.1],[17.1,'question',.09],[19.45,'whoosh',.1],[22.6,'pop',.08],[23.55,'snip',.1],[27.6,'ding',.05],[29.15,'whoosh',.07],[33.8,'whoosh',.07],[37.9,'pop',.09],[39.1,'ding',.04],[41.2,'whoosh',.07],[47.15,'whoosh',.07]];
+for(const [at,name,gain] of events)mixInto(fx,renderSfx(name),sec(at),gain);
+writeFileSync('../assets/sfx-track.wav',encodeWav(fx,SR));
+writeFileSync('../qa/audio-events.json',JSON.stringify(events.map(([at,name,gain])=>({time:sec(at),name,gain})),null,2));

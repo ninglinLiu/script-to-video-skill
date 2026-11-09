@@ -1,0 +1,18 @@
+{
+  "edition": "warsh-gold full-v2",
+  "technical": "passed; see technical-checks.json",
+  "productionVisualReview": {
+    "method": "24 actual final MP4 frames at phone scale, 12 consecutive frames around selected actions, plus the 15.5-second numeric proof",
+    "reviewed": ["opening title unoccluded at 3.7 seconds", "dial turns before maturing security leaves the stack", "same-horizon percentage units and approximate subtraction", "different short-end and long-end behavior", "fixed USD price and changing other-currency cost", "50bp versus 25bp and separated gap label", "ending factors and non-deterministic conclusion"],
+    "result": "delivery-ready after listed fixes; not a claim of user aesthetic acceptance",
+    "wholeFilmRealTimePlayback": false
+  },
+  "audio": {
+    "digitalLoudness": "-14.03 LUFS integrated, -1.00 dBTP",
+    "externalPlayback": false,
+    "manualListening": false
+  },
+  "userAcceptance": "pending user viewing",
+  "oldVersion": "preserved in parent out directory",
+  "workflowClaim": "this article completed; arbitrary-article unattended quality is not claimed"
+}

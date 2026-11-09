@@ -1,0 +1,299 @@
+{
+  "sourceSha256": "14896496f79ca763e07854ad2832813da78316dffd85e59510e5042f46c7b0ee",
+  "samples": [
+    {
+      "subtitle": 0,
+      "frame": 26,
+      "text": "先只看一个人、一条队列、一个服务台。",
+      "expected": "qa/caption-reference/0-start-with.png",
+      "without": "qa/caption-reference/0-start-without.png"
+    },
+    {
+      "subtitle": 0,
+      "frame": 118,
+      "text": "先只看一个人、一条队列、一个服务台。",
+      "expected": "qa/caption-reference/0-end-with.png",
+      "without": "qa/caption-reference/0-end-without.png"
+    },
+    {
+      "subtitle": 1,
+      "frame": 145,
+      "text": "从进队到离开，这段时间就是他等的。",
+      "expected": "qa/caption-reference/1-start-with.png",
+      "without": "qa/caption-reference/1-start-without.png"
+    },
+    {
+      "subtitle": 1,
+      "frame": 234,
+      "text": "从进队到离开，这段时间就是他等的。",
+      "expected": "qa/caption-reference/1-end-with.png",
+      "without": "qa/caption-reference/1-end-without.png"
+    },
+    {
+      "subtitle": 2,
+      "frame": 260,
+      "text": "排队论只回答三个量：到达率、服务率、等待时间",
+      "expected": "qa/caption-reference/2-start-with.png",
+      "without": "qa/caption-reference/2-start-without.png"
+    },
+    {
+      "subtitle": 2,
+      "frame": 389,
+      "text": "排队论只回答三个量：到达率、服务率、等待时间",
+      "expected": "qa/caption-reference/2-end-with.png",
+      "without": "qa/caption-reference/2-end-without.png"
+    },
+    {
+      "subtitle": 3,
+      "frame": 407,
+      "text": "而且一次只服务一个人。",
+      "expected": "qa/caption-reference/3-start-with.png",
+      "without": "qa/caption-reference/3-start-without.png"
+    },
+    {
+      "subtitle": 3,
+      "frame": 449,
+      "text": "而且一次只服务一个人。",
+      "expected": "qa/caption-reference/3-end-with.png",
+      "without": "qa/caption-reference/3-end-without.png"
+    },
+    {
+      "subtitle": 4,
+      "frame": 475,
+      "text": "先看其中十二个到达的间隔",
+      "expected": "qa/caption-reference/4-start-with.png",
+      "without": "qa/caption-reference/4-start-without.png"
+    },
+    {
+      "subtitle": 4,
+      "frame": 528,
+      "text": "先看其中十二个到达的间隔",
+      "expected": "qa/caption-reference/4-end-with.png",
+      "without": "qa/caption-reference/4-end-without.png"
+    },
+    {
+      "subtitle": 5,
+      "frame": 549,
+      "text": "它们不是均匀分布，会一段挤、一段空。",
+      "expected": "qa/caption-reference/5-start-with.png",
+      "without": "qa/caption-reference/5-start-without.png"
+    },
+    {
+      "subtitle": 5,
+      "frame": 639,
+      "text": "它们不是均匀分布，会一段挤、一段空。",
+      "expected": "qa/caption-reference/5-end-with.png",
+      "without": "qa/caption-reference/5-end-without.png"
+    },
+    {
+      "subtitle": 6,
+      "frame": 665,
+      "text": "再把模拟里均匀抽出的六十个人排进四个区间",
+      "expected": "qa/caption-reference/6-start-with.png",
+      "without": "qa/caption-reference/6-start-without.png"
+    },
+    {
+      "subtitle": 6,
+      "frame": 763,
+      "text": "再把模拟里均匀抽出的六十个人排进四个区间",
+      "expected": "qa/caption-reference/6-end-with.png",
+      "without": "qa/caption-reference/6-end-without.png"
+    },
+    {
+      "subtitle": 7,
+      "frame": 777,
+      "text": "不是钟形，是一条长尾，少数人等了很久。",
+      "expected": "qa/caption-reference/7-start-with.png",
+      "without": "qa/caption-reference/7-start-without.png"
+    },
+    {
+      "subtitle": 7,
+      "frame": 882,
+      "text": "不是钟形，是一条长尾，少数人等了很久。",
+      "expected": "qa/caption-reference/7-end-with.png",
+      "without": "qa/caption-reference/7-end-without.png"
+    },
+    {
+      "subtitle": 8,
+      "frame": 908,
+      "text": "长尾才是排队真正的成本，平均值看不出这条尾巴。",
+      "expected": "qa/caption-reference/8-start-with.png",
+      "without": "qa/caption-reference/8-start-without.png"
+    },
+    {
+      "subtitle": 8,
+      "frame": 1023,
+      "text": "长尾才是排队真正的成本，平均值看不出这条尾巴。",
+      "expected": "qa/caption-reference/8-end-with.png",
+      "without": "qa/caption-reference/8-end-without.png"
+    },
+    {
+      "subtitle": 9,
+      "frame": 1050,
+      "text": "平均每 0.67 分钟来一个人，服务一个人要 0.6 分钟",
+      "expected": "qa/caption-reference/9-start-with.png",
+      "without": "qa/caption-reference/9-start-without.png"
+    },
+    {
+      "subtitle": 9,
+      "frame": 1183,
+      "text": "平均每 0.67 分钟来一个人，服务一个人要 0.6 分钟",
+      "expected": "qa/caption-reference/9-end-with.png",
+      "without": "qa/caption-reference/9-end-without.png"
+    },
+    {
+      "subtitle": 10,
+      "frame": 1200,
+      "text": "两者只差百分之十，看起来刚刚好。",
+      "expected": "qa/caption-reference/10-start-with.png",
+      "without": "qa/caption-reference/10-start-without.png"
+    },
+    {
+      "subtitle": 10,
+      "frame": 1277,
+      "text": "两者只差百分之十，看起来刚刚好。",
+      "expected": "qa/caption-reference/10-end-with.png",
+      "without": "qa/caption-reference/10-end-without.png"
+    },
+    {
+      "subtitle": 11,
+      "frame": 1304,
+      "text": "到达率 90，服务率 100，利用率就是 90%",
+      "expected": "qa/caption-reference/11-start-with.png",
+      "without": "qa/caption-reference/11-start-without.png"
+    },
+    {
+      "subtitle": 11,
+      "frame": 1425,
+      "text": "到达率 90，服务率 100，利用率就是 90%",
+      "expected": "qa/caption-reference/11-end-with.png",
+      "without": "qa/caption-reference/11-end-without.png"
+    },
+    {
+      "subtitle": 12,
+      "frame": 1444,
+      "text": "平均等待是 1 除以服务率减到达率，也就是 0.1 小时，6 分钟",
+      "expected": "qa/caption-reference/12-start-with.png",
+      "without": "qa/caption-reference/12-start-without.png"
+    },
+    {
+      "subtitle": 12,
+      "frame": 1611,
+      "text": "平均等待是 1 除以服务率减到达率，也就是 0.1 小时，6 分钟",
+      "expected": "qa/caption-reference/12-end-with.png",
+      "without": "qa/caption-reference/12-end-without.png"
+    },
+    {
+      "subtitle": 13,
+      "frame": 1630,
+      "text": "这也是排队系统最怕满负荷的原因。",
+      "expected": "qa/caption-reference/13-start-with.png",
+      "without": "qa/caption-reference/13-start-without.png"
+    },
+    {
+      "subtitle": 13,
+      "frame": 1709,
+      "text": "这也是排队系统最怕满负荷的原因。",
+      "expected": "qa/caption-reference/13-end-with.png",
+      "without": "qa/caption-reference/13-end-without.png"
+    },
+    {
+      "subtitle": 14,
+      "frame": 1735,
+      "text": "利用率 50% 时，平均只等 1.2 分钟；80% 是 3 分钟，90% 是 6 分钟",
+      "expected": "qa/caption-reference/14-start-with.png",
+      "without": "qa/caption-reference/14-start-without.png"
+    },
+    {
+      "subtitle": 14,
+      "frame": 1943,
+      "text": "利用率 50% 时，平均只等 1.2 分钟；80% 是 3 分钟，90% 是 6 分钟",
+      "expected": "qa/caption-reference/14-end-with.png",
+      "without": "qa/caption-reference/14-end-without.png"
+    },
+    {
+      "subtitle": 15,
+      "frame": 1961,
+      "text": "每往上 10 个百分点，等待就翻一倍",
+      "expected": "qa/caption-reference/15-start-with.png",
+      "without": "qa/caption-reference/15-start-without.png"
+    },
+    {
+      "subtitle": 15,
+      "frame": 2027,
+      "text": "每往上 10 个百分点，等待就翻一倍",
+      "expected": "qa/caption-reference/15-end-with.png",
+      "without": "qa/caption-reference/15-end-without.png"
+    },
+    {
+      "subtitle": 16,
+      "frame": 2046,
+      "text": "它不是线性变差，是在逼近极限。",
+      "expected": "qa/caption-reference/16-start-with.png",
+      "without": "qa/caption-reference/16-start-without.png"
+    },
+    {
+      "subtitle": 16,
+      "frame": 2116,
+      "text": "它不是线性变差，是在逼近极限。",
+      "expected": "qa/caption-reference/16-end-with.png",
+      "without": "qa/caption-reference/16-end-without.png"
+    },
+    {
+      "subtitle": 17,
+      "frame": 2142,
+      "text": "同样这六十个人，能在 2 分钟内办完的不到一半",
+      "expected": "qa/caption-reference/17-start-with.png",
+      "without": "qa/caption-reference/17-start-without.png"
+    },
+    {
+      "subtitle": 17,
+      "frame": 2239,
+      "text": "同样这六十个人，能在 2 分钟内办完的不到一半",
+      "expected": "qa/caption-reference/17-end-with.png",
+      "without": "qa/caption-reference/17-end-without.png"
+    },
+    {
+      "subtitle": 18,
+      "frame": 2258,
+      "text": "系统只差百分之十，等待差出五倍",
+      "expected": "qa/caption-reference/18-start-with.png",
+      "without": "qa/caption-reference/18-start-without.png"
+    },
+    {
+      "subtitle": 18,
+      "frame": 2337,
+      "text": "系统只差百分之十，等待差出五倍",
+      "expected": "qa/caption-reference/18-end-with.png",
+      "without": "qa/caption-reference/18-end-without.png"
+    },
+    {
+      "subtitle": 19,
+      "frame": 2356,
+      "text": "所以排队管理不是让人更快，是留余量。",
+      "expected": "qa/caption-reference/19-start-with.png",
+      "without": "qa/caption-reference/19-start-without.png"
+    },
+    {
+      "subtitle": 19,
+      "frame": 2454,
+      "text": "所以排队管理不是让人更快，是留余量。",
+      "expected": "qa/caption-reference/19-end-with.png",
+      "without": "qa/caption-reference/19-end-without.png"
+    },
+    {
+      "subtitle": 20,
+      "frame": 2480,
+      "text": "这就是为什么 90% 的系统会突然崩，余量就是排队系统的保险。",
+      "expected": "qa/caption-reference/20-start-with.png",
+      "without": "qa/caption-reference/20-start-without.png"
+    },
+    {
+      "subtitle": 20,
+      "frame": 2632,
+      "text": "这就是为什么 90% 的系统会突然崩，余量就是排队系统的保险。",
+      "expected": "qa/caption-reference/20-end-with.png",
+      "without": "qa/caption-reference/20-end-without.png"
+    }
+  ]
+}

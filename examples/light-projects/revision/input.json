@@ -1,0 +1,32 @@
+{
+  "title": "从价值创造，到价值投资",
+  "source_title": "对话凯撒：从价值创造（创业）到价值投资，我如何完成职业生涯的跃迁?",
+  "source_url": "https://mp.weixin.qq.com/s/ywlZ9BKrsn1yA8V6ugmgnA",
+  "source_file": "article_01_original.txt",
+  "script_file": "article_01_script.txt",
+  "brand_file": "../assets/brand.json",
+  "format": "short",
+  "required_phrases": [
+    "仅观点分享，非投资建议",
+    "所提案例仅供复盘参考，不具实操指向",
+    "市场运行受多重复杂变量影响",
+    "独立思考",
+    "自主逻辑校验"
+  ],
+  "entities": [
+    "凯撒",
+    "Meta",
+    "谷歌",
+    "特斯拉",
+    "AI Agent"
+  ],
+  "source_mapping": [
+    "一、身份跨越：价值创造到价值投资，转述作者自述",
+    "一、身份跨越：2022年底；六、盈利观：2023年初、2025年9-12月",
+    "二、配置逻辑：原文目标，不是收益保证",
+    "四、标的筛选：高毛利率、TAM、护城河",
+    "四、标的筛选：公司例子与同段限定语一起保留",
+    "五、决策系统：AI Agent与外部信息源",
+    "文末DYOR声明：保留案例用途、复杂变量与自主校验"
+  ]
+}

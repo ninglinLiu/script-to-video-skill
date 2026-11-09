@@ -107,6 +107,87 @@
         "引用用户原话里的范围和五成评价",
         "没有把认可推广到别的画幅或时长"
       ]
+    },
+    {
+      "id": 9,
+      "prompt": "这条 60 秒的片子已经做好了，帮我加上背景音乐，发出去用。",
+      "expected_output": "用曲目目录选完整授权曲目，混至少两版给用户听，旁白和音效比例不动，音乐自动让路，交付混音报告和署名，并说明发布时要放署名、Agent 没有听过声音。",
+      "files": [
+        "references/audio-and-materials.md",
+        "assets/music/catalog.json",
+        "scripts/mix_music.py",
+        "scripts/music_library.py"
+      ],
+      "expectations": [
+        "工具轨迹包含 mix_music.py --track 或等效的预设和哈希校验",
+        "交付署名文本，并明确发布时要放进简介或片尾",
+        "说明认可只到凯撒那次配乐（R09），这条片仍要用户听",
+        "没有声称自己听过或判断好听",
+        "原视频流没有被重新编码"
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "用户之前说过几个偏白色的样片还行，帮我找出来，看看哪条可以拿来改。",
+      "expected_output": "用样片目录按明暗筛选，列出各自已有的评价、视频和工程位置；说明用户没有点名具体哪几条，不给单条片加认可，并标出其中被否决或批评过的。",
+      "files": [
+        "references/sample-catalog.json",
+        "docs/sample-catalog.md",
+        "scripts/samples.py"
+      ],
+      "expectations": [
+        "工具轨迹包含 samples.py list --tone light 或等效读取",
+        "原样转述用户没有点名具体哪几条",
+        "基金清仓纸面版（R06）被标为用户否决，没有当成认可样片推荐",
+        "每条给出的视频或工程路径真实存在"
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "之前那条被否决的队列片，工程和失败原因还在吗？我想看看为什么没过。",
+      "expected_output": "查到 R04 的案例记录、examples/failed-cases/R04-queue-poisson 的工程和静音预览，引用用户反馈；说明高码率原片在本机，观察是当时的记录。",
+      "files": [
+        "references/experience/reflections.json",
+        "examples/failed-cases/README.md",
+        "examples/failed-cases/R04-queue-poisson/README.md"
+      ],
+      "expectations": [
+        "工具轨迹包含 experience.py reflection R04 或等效读取",
+        "给出工程目录和静音预览的真实路径",
+        "保持用户否决的状态，没有因为工程入库就说它可以当模板",
+        "没有声称重新看过高码率原片"
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "帮我把这篇公众号文章做成视频。",
+      "expected_output": "没有指定风格时，先问用户选哪种：3D 微缩一镜到底（附币安样片）、代码模拟暗金排版（附凯利样片），或其他已有路线；用户说你定时按题材推荐并说明理由，不擅自跳过提问，也不把 3D 路线说成过时。",
+      "files": [
+        "SKILL.md",
+        "references/sim-typography.md",
+        "references/diorama-3d.md"
+      ],
+      "expectations": [
+        "开工前的第一条回复里给出至少两种风格和各自的样片链接",
+        "说明 3D 微缩是用户认可的基准，临界点风格是老板喜欢的参考片风格、我们的样片还没评价",
+        "用户选定前没有开始渲染"
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "老板喜欢那条《临界点》，按这个风格把凯撒这篇讲复利的文章做一条。",
+      "expected_output": "走代码模拟暗金排版：先从文章里找一个能算出来的数，写 build_data.py 算出全部上屏数字，再写分段场景；静帧拼图审看，至少两版纯音乐给用户听，带署名；参考片不入库。",
+      "files": [
+        "references/sim-typography.md",
+        "assets/sim-kit/README.md",
+        "examples/caesar-kelly/README.md"
+      ],
+      "expectations": [
+        "工具轨迹包含 simfilm.py new 或等效脚手架",
+        "上屏数字都能在 data-summary.json 找到",
+        "没有把参考片的画面或音乐放进仓库",
+        "交付里写明老板和用户还没看过这条"
+      ]
     }
   ]
 }

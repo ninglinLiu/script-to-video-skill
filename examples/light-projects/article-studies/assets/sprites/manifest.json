@@ -1,0 +1,641 @@
+{
+  "schemaVersion": 1,
+  "source": "Claudebao\\video-week1\\style-studies-20261020\\assets\\actor-mini.png",
+  "sourceSize": [
+    1310,
+    1200
+  ],
+  "layout": [
+    4,
+    4
+  ],
+  "kind": "mini",
+  "canvas": [
+    256,
+    256
+  ],
+  "anchor": [
+    128.0,
+    240
+  ],
+  "baseline": 240,
+  "uniformScale": 0.8602941176470589,
+  "alphaThreshold": 128,
+  "cropPadding": 3,
+  "coreHeightRatio": 1.0267175572519085,
+  "alphaPolicy": "alpha threshold detects visible silhouette only; nearest-neighbour preserves RGBA inside each padded crop, no background removal",
+  "rowBands": [
+    [
+      18,
+      280
+    ],
+    [
+      314,
+      580
+    ],
+    [
+      612,
+      881
+    ],
+    [
+      914,
+      1180
+    ]
+  ],
+  "columnBands": [
+    [
+      107,
+      265
+    ],
+    [
+      421,
+      591
+    ],
+    [
+      694,
+      922
+    ],
+    [
+      1044,
+      1239
+    ]
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "file": "00.png",
+      "row": 0,
+      "column": 0,
+      "sourceRegion": [
+        0,
+        0,
+        343,
+        297
+      ],
+      "sourceCrop": [
+        115,
+        15,
+        268,
+        283
+      ],
+      "sourceCoreBox": [
+        118,
+        18,
+        265,
+        280
+      ],
+      "outputBox": [
+        62,
+        12,
+        132,
+        231
+      ],
+      "outputCoreBox": [
+        65,
+        15,
+        191,
+        240
+      ]
+    },
+    {
+      "frame": 1,
+      "file": "01.png",
+      "row": 0,
+      "column": 1,
+      "sourceRegion": [
+        343,
+        0,
+        642,
+        297
+      ],
+      "sourceCrop": [
+        423,
+        15,
+        594,
+        283
+      ],
+      "sourceCoreBox": [
+        426,
+        18,
+        591,
+        280
+      ],
+      "outputBox": [
+        54,
+        12,
+        147,
+        231
+      ],
+      "outputCoreBox": [
+        57,
+        15,
+        198,
+        240
+      ]
+    },
+    {
+      "frame": 2,
+      "file": "02.png",
+      "row": 0,
+      "column": 2,
+      "sourceRegion": [
+        642,
+        0,
+        983,
+        297
+      ],
+      "sourceCrop": [
+        733,
+        15,
+        885,
+        283
+      ],
+      "sourceCoreBox": [
+        736,
+        18,
+        882,
+        280
+      ],
+      "outputBox": [
+        62,
+        12,
+        131,
+        231
+      ],
+      "outputCoreBox": [
+        65,
+        15,
+        190,
+        240
+      ]
+    },
+    {
+      "frame": 3,
+      "file": "03.png",
+      "row": 0,
+      "column": 3,
+      "sourceRegion": [
+        983,
+        0,
+        1310,
+        297
+      ],
+      "sourceCrop": [
+        1041,
+        15,
+        1242,
+        283
+      ],
+      "sourceCoreBox": [
+        1044,
+        18,
+        1239,
+        280
+      ],
+      "outputBox": [
+        42,
+        12,
+        173,
+        231
+      ],
+      "outputCoreBox": [
+        45,
+        15,
+        212,
+        240
+      ]
+    },
+    {
+      "frame": 4,
+      "file": "04.png",
+      "row": 1,
+      "column": 0,
+      "sourceRegion": [
+        0,
+        297,
+        343,
+        596
+      ],
+      "sourceCrop": [
+        111,
+        311,
+        268,
+        583
+      ],
+      "sourceCoreBox": [
+        114,
+        314,
+        265,
+        580
+      ],
+      "outputBox": [
+        60,
+        9,
+        135,
+        234
+      ],
+      "outputCoreBox": [
+        63,
+        12,
+        192,
+        240
+      ]
+    },
+    {
+      "frame": 5,
+      "file": "05.png",
+      "row": 1,
+      "column": 1,
+      "sourceRegion": [
+        343,
+        297,
+        642,
+        596
+      ],
+      "sourceCrop": [
+        427,
+        312,
+        583,
+        583
+      ],
+      "sourceCoreBox": [
+        430,
+        315,
+        580,
+        580
+      ],
+      "outputBox": [
+        61,
+        10,
+        134,
+        233
+      ],
+      "outputCoreBox": [
+        64,
+        13,
+        192,
+        240
+      ]
+    },
+    {
+      "frame": 6,
+      "file": "06.png",
+      "row": 1,
+      "column": 2,
+      "sourceRegion": [
+        642,
+        297,
+        983,
+        596
+      ],
+      "sourceCrop": [
+        735,
+        312,
+        887,
+        582
+      ],
+      "sourceCoreBox": [
+        738,
+        315,
+        884,
+        579
+      ],
+      "outputBox": [
+        62,
+        11,
+        131,
+        232
+      ],
+      "outputCoreBox": [
+        65,
+        14,
+        190,
+        240
+      ]
+    },
+    {
+      "frame": 7,
+      "file": "07.png",
+      "row": 1,
+      "column": 3,
+      "sourceRegion": [
+        983,
+        297,
+        1310,
+        596
+      ],
+      "sourceCrop": [
+        1051,
+        312,
+        1206,
+        581
+      ],
+      "sourceCoreBox": [
+        1054,
+        315,
+        1203,
+        578
+      ],
+      "outputBox": [
+        62,
+        12,
+        133,
+        231
+      ],
+      "outputCoreBox": [
+        65,
+        15,
+        192,
+        240
+      ]
+    },
+    {
+      "frame": 8,
+      "file": "08.png",
+      "row": 2,
+      "column": 0,
+      "sourceRegion": [
+        0,
+        596,
+        343,
+        897
+      ],
+      "sourceCrop": [
+        104,
+        609,
+        263,
+        884
+      ],
+      "sourceCoreBox": [
+        107,
+        612,
+        260,
+        881
+      ],
+      "outputBox": [
+        60,
+        6,
+        137,
+        237
+      ],
+      "outputCoreBox": [
+        63,
+        9,
+        194,
+        240
+      ]
+    },
+    {
+      "frame": 9,
+      "file": "09.png",
+      "row": 2,
+      "column": 1,
+      "sourceRegion": [
+        343,
+        596,
+        642,
+        897
+      ],
+      "sourceCrop": [
+        418,
+        609,
+        581,
+        883
+      ],
+      "sourceCoreBox": [
+        421,
+        612,
+        578,
+        880
+      ],
+      "outputBox": [
+        58,
+        7,
+        140,
+        236
+      ],
+      "outputCoreBox": [
+        61,
+        10,
+        195,
+        240
+      ]
+    },
+    {
+      "frame": 10,
+      "file": "10.png",
+      "row": 2,
+      "column": 2,
+      "sourceRegion": [
+        642,
+        596,
+        983,
+        897
+      ],
+      "sourceCrop": [
+        734,
+        609,
+        891,
+        883
+      ],
+      "sourceCoreBox": [
+        737,
+        612,
+        888,
+        880
+      ],
+      "outputBox": [
+        60,
+        7,
+        135,
+        236
+      ],
+      "outputCoreBox": [
+        63,
+        10,
+        192,
+        240
+      ]
+    },
+    {
+      "frame": 11,
+      "file": "11.png",
+      "row": 2,
+      "column": 3,
+      "sourceRegion": [
+        983,
+        596,
+        1310,
+        897
+      ],
+      "sourceCrop": [
+        1042,
+        609,
+        1199,
+        883
+      ],
+      "sourceCoreBox": [
+        1045,
+        612,
+        1196,
+        880
+      ],
+      "outputBox": [
+        60,
+        7,
+        135,
+        236
+      ],
+      "outputCoreBox": [
+        63,
+        10,
+        192,
+        240
+      ]
+    },
+    {
+      "frame": 12,
+      "file": "12.png",
+      "row": 3,
+      "column": 0,
+      "sourceRegion": [
+        0,
+        897,
+        343,
+        1200
+      ],
+      "sourceCrop": [
+        109,
+        913,
+        267,
+        1183
+      ],
+      "sourceCoreBox": [
+        112,
+        916,
+        264,
+        1180
+      ],
+      "outputBox": [
+        60,
+        11,
+        136,
+        232
+      ],
+      "outputCoreBox": [
+        63,
+        14,
+        193,
+        240
+      ]
+    },
+    {
+      "frame": 13,
+      "file": "13.png",
+      "row": 3,
+      "column": 1,
+      "sourceRegion": [
+        343,
+        897,
+        642,
+        1200
+      ],
+      "sourceCrop": [
+        422,
+        911,
+        577,
+        1183
+      ],
+      "sourceCoreBox": [
+        425,
+        914,
+        574,
+        1180
+      ],
+      "outputBox": [
+        62,
+        9,
+        133,
+        234
+      ],
+      "outputCoreBox": [
+        65,
+        12,
+        192,
+        240
+      ]
+    },
+    {
+      "frame": 14,
+      "file": "14.png",
+      "row": 3,
+      "column": 2,
+      "sourceRegion": [
+        642,
+        897,
+        983,
+        1200
+      ],
+      "sourceCrop": [
+        691,
+        911,
+        925,
+        1181
+      ],
+      "sourceCoreBox": [
+        694,
+        914,
+        922,
+        1178
+      ],
+      "outputBox": [
+        28,
+        11,
+        201,
+        232
+      ],
+      "outputCoreBox": [
+        31,
+        14,
+        226,
+        240
+      ]
+    },
+    {
+      "frame": 15,
+      "file": "15.png",
+      "row": 3,
+      "column": 3,
+      "sourceRegion": [
+        983,
+        897,
+        1310,
+        1200
+      ],
+      "sourceCrop": [
+        1043,
+        911,
+        1201,
+        1182
+      ],
+      "sourceCoreBox": [
+        1046,
+        914,
+        1198,
+        1179
+      ],
+      "outputBox": [
+        60,
+        10,
+        136,
+        233
+      ],
+      "outputCoreBox": [
+        63,
+        13,
+        193,
+        240
+      ]
+    }
+  ]
+}

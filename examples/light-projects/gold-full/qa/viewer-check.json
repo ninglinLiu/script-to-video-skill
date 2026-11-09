@@ -1,0 +1,16 @@
+{
+  "javascriptErrors": [],
+  "missingLocalLinks": [],
+  "video": {
+    "paused": true,
+    "muted": true,
+    "autoplay": false,
+    "currentTime": 0,
+    "preload": "none",
+    "source": "out/final-silent.mp4"
+  },
+  "mobileOverflow": false,
+  "expandedOverflow": false,
+  "method": "dedicated muted headless browser on locally authored viewer; no video playback",
+  "userBrowserControlled": false
+}

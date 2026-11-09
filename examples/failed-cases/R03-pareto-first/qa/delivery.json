@@ -1,0 +1,21 @@
+{
+  "episode": "pareto-8020-60s",
+  "profile": "task-short",
+  "kit": "blackgold",
+  "entry": "production.py init → compile → voice → align → proof → dense review → check --stage render → final",
+  "cost": {
+    "wallClockMinutes": 78,
+    "ttsRequests": 2,
+    "renders": [
+      "proof 540×960 12.3s ×2（source_digest 变化后重渲）",
+      "final 1080×1920 ×2（第一次因渲染期间写入 storyboard.json 被拒认证）"
+    ],
+    "paidApiCalls": 0,
+    "manualListening": false,
+    "userInterventions": 0
+  },
+  "failures": [
+    "第一次 final 渲染期间写入 source/storyboard.json，source_digest 变化，render.mjs 拒绝认证且未写 qa/render-full.json；重渲后才拿到。",
+    "写入 storyboard 同时让已 capture 的样片过期，需重新 capture 并重绑 motion-review.json。"
+  ]
+}

@@ -11,9 +11,12 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 INCLUDE = ('SKILL.md', 'LICENSE', 'NOTICE.md', 'AGENTS.md', 'CONTRIBUTING.md', 'README.md',
            'references/', 'scripts/', 'tests/', 'evals/', 'docs/architecture.md', 'docs/architecture.mmd', 'docs/production-flow.mmd', 'docs/architecture-layout.json',
-           'assets/diorama-kit/', 'assets/style-lock.json', 'assets/chapter-style-lock.json',
-           'examples/binance-1029/', 'examples/pareto-diorama/source/', 'examples/pareto-diorama/audio/', 'examples/pareto-diorama/web/', 'examples/pareto-diorama/README.md')
-EXCLUDE = ('examples/binance-1029/media/final-1080p.mp4',)
+           'docs/sample-catalog.md', 'docs/removals.md',
+           'assets/diorama-kit/', 'assets/sim-kit/', 'assets/music/', 'assets/style-lock.json', 'assets/chapter-style-lock.json',
+           'examples/binance-1029/', 'examples/pareto-diorama/source/', 'examples/pareto-diorama/audio/', 'examples/pareto-diorama/web/', 'examples/pareto-diorama/README.md',
+           'examples/caesar-ai-bubble/', 'examples/caesar-kelly/')
+EXCLUDE = ('examples/binance-1029/media/final-1080p.mp4', 'examples/caesar-ai-bubble/media/final-tension-1080x1920.mp4', 'examples/caesar-ai-bubble/media/preview.mp4',
+           'examples/caesar-kelly/media/final-1080x1920.mp4', 'examples/caesar-kelly/media/preview.mp4')
 
 
 def wanted(path):

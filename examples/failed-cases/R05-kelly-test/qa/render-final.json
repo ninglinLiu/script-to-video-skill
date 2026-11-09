@@ -1,0 +1,10 @@
+{
+  "mode": "final",
+  "seconds": 384.678,
+  "compositionId": "chapter",
+  "frameRange": [
+    0,
+    1892
+  ],
+  "output": "../out/final-silent.mp4"
+}

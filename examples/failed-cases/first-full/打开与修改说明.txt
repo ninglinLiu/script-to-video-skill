@@ -1,0 +1,31 @@
+先观看 out/video.mp4。
+独立字幕：out/subtitles.srt；排版字幕：out/subtitles.ass。
+成片MP4与工程ZIP分别交付；工程ZIP含镜头素材和源工程，避免再放一份完整成片造成重复。
+
+剪辑工程
+在 Premiere Pro 选择“文件 → 导入”，选择 project/premiere.xml。
+工程包含10个连续动画镜头及旁白、音乐、音效三条独立立体声音轨。
+再导入 out/subtitles.srt，放入序列起点。镜头片段没有烧录旁白字幕，字幕可独立修改。
+片中的标题、品牌、研究标签属于动画源文件；要改这些内容，编辑 film.js 后重渲。
+移动目录后，如果PR提示离线，重新链接 out/scene_*.mp4 和 assets/*-track.wav；也可以运行 export_project.py 重建当前路径的XML。
+XML已做结构、文件引用和帧数检查；本机未完成Premiere实际导入测试。
+
+源工程与复现
+在本目录运行 .\run.ps1。
+依赖当前机器已有 Python 3.11、Node.js、Chrome、Puppeteer Core、FFmpeg，以及 edge-tts、NumPy、OpenCV、Pillow。
+Puppeteer包和Chrome路径位于 render.mjs；换机时需改成对应本地安装路径。
+旁白稿位于 source/script.json，每段有稳定ID、字幕短句、标点和原文依据。
+修改旁白后，prepare_audio.py 按文本、音色、语速和TTS版本判定缓存；新配音需联网。
+新配音的真实词时间戳会重建字幕及章节边界，film.js 按章节和词句锚点重新定位动作。
+当前是本篇文章的专用镜头设计；语义大幅修改时仍需复核画面，不承诺任意文章一键套用。
+run.ps1 会重建混音、动画、字幕成片和工程；资源缺失或对齐失败会明确报错。
+分段缓存校验画面代码、时间轴、字体、图片和渲染参数内容，不只判断旧文件是否存在。
+当前采用保守的整片输入哈希；这些输入变化会让所有分段失效，不宣称已实现按代码影响范围精确重渲。
+
+技术与验收
+qa/final.json：成片规格、解码、字幕、限定语、响度和哈希检查。
+qa/project.json：剪辑工程结构和引用检查。
+qa/review.txt：实际编码画面审看记录与未验证项。
+source/sources.csv、source/source-mapping.csv：素材来源和逐段原文映射。
+成本与效率.csv：本轮调用、耗时与费用可知范围。
+本轮仅完成第一条60–90秒竖屏短片，不包括长片和其余稿件。

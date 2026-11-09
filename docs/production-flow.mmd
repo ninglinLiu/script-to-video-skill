@@ -1,5 +1,7 @@
 flowchart TB
-    A["文章 / 事件"] --> B["① 证据和稿件<br/>source/script.json<br/>每句带来源"]
+    A["文章 / 事件"] --> V{"先问风格"}
+    V -->|3D 微缩| B["① 证据和稿件<br/>source/script.json<br/>每句带来源"]
+    V -->|临界点风格| Z["代码模拟暗金排版<br/>simfilm.py new → build_data.py 算数<br/>→ scene.js 分段 → 静帧拼图<br/>→ 整片 → 纯音乐两版"]
     B --> C["② 配音<br/>tts.py<br/>真实词界 timeline.json"]
     C --> D["③ 站点表<br/>主体 · 发起→接触→结果<br/>改变了哪个数"]
     D --> S["④ 搭场景<br/>web/scene.js<br/>stage + props + overlay"]
@@ -11,15 +13,18 @@ flowchart TB
     I --> J["⑦ 检查<br/>deliver · motion<br/>storyboard · atlas"]
     J -->|整片问题，局部修| S
     J --> K["交付<br/>MP4 · SRT · 来源<br/>工程 · 分镜总览"]
+    Z --> K
+    J -->|用户要 BGM| M["配乐（可选）<br/>sfx.py 混旁白和音效<br/>mix_music.py --track 铺音乐<br/>至少两版给用户听"]
+    M --> K
     K --> L["用户反馈"]
-    L -->|认可：写清范围<br/>否决：保留案例| X["reflections.json<br/>经验卡"]
+    L -->|认可：写清范围<br/>否决：保留案例| X["reflections.json<br/>经验卡<br/>sample-catalog.json"]
     X -.下一条片先查.-> D
 
     classDef input fill:#dceeff,stroke:#3161a3,color:#10263d;
     classDef make fill:#dff1e7,stroke:#438366,color:#143728;
     classDef gate fill:#fff0cd,stroke:#9a7020,color:#362706;
     classDef loop fill:#fde4df,stroke:#ad5d4d,color:#49251c;
-    class A,B,C input;
-    class D,S,I,K make;
+    class A,B,C,V input;
+    class D,S,I,M,Z,K make;
     class F,H,J gate;
     class L,X loop;

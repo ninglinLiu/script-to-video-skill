@@ -1,0 +1,35 @@
+{
+  "desktop": {
+    "overflow": false,
+    "videos": [
+      {
+        "src": "out/editorial-silent.mp4",
+        "autoplay": false,
+        "paused": true,
+        "muted": true,
+        "volume": 0,
+        "duration": 10.5
+      },
+      {
+        "src": "out/spatial-silent.mp4",
+        "autoplay": false,
+        "paused": true,
+        "muted": true,
+        "volume": 0,
+        "duration": 10.5
+      },
+      {
+        "src": "out/pixel-silent.mp4",
+        "autoplay": false,
+        "paused": true,
+        "muted": true,
+        "volume": 0,
+        "duration": 10.5
+      }
+    ]
+  },
+  "mobile": {
+    "overflow": false
+  },
+  "errors": []
+}

@@ -1,0 +1,13 @@
+{
+  "media": "qa/motion-proof.mp4",
+  "mediaSha256": "597c1ed05b690aa789b4363ff7c61af33bbca7c1eb41577ff5c36a2dce557e89",
+  "trace": "qa/motion-trace.json",
+  "traceSha256": "09509f368dd734393f73bc8a5af71cc8d517516aef0df1550a5fc5505fbd4025",
+  "sourceSha256": "0dc588de0c74db6f718c175136eb0a1b53207069aec7fc428d4a4b534ccc853c",
+  "start": 19.27,
+  "end": 31.57,
+  "duration": 12.3,
+  "width": 540,
+  "height": 960,
+  "fps": "30/1"
+}

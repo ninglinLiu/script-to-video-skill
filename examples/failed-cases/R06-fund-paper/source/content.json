@@ -1,0 +1,196 @@
+{
+  "values": {
+    "one": 1,
+    "people": 8,
+    "book": 16,
+    "hours": 36,
+    "age": 25,
+    "aumStart": 2.25,
+    "aumPeak": 450,
+    "ret": 4.39,
+    "lev": 4,
+    "marginDebt": 1.502,
+    "marginGrowth": 0.49,
+    "top10": 0.4,
+    "nasdaq": 0.03,
+    "reboundLow": 0.15,
+    "reboundHigh": 0.25,
+    "nebius": 0.48,
+    "sandisk": 0.56
+  },
+  "derived": {
+    "aumMultiple": {
+      "op": "divide",
+      "inputs": [
+        "aumPeak",
+        "aumStart"
+      ]
+    }
+  },
+  "labels": {
+    "book": {
+      "format": ".0f",
+      "unit": ""
+    },
+    "hours": {
+      "format": ".0f",
+      "unit": ""
+    },
+    "people": {
+      "format": ".0f",
+      "unit": ""
+    },
+    "age": {
+      "format": ".0f",
+      "unit": " 岁"
+    },
+    "aumStart": {
+      "format": ".3g",
+      "unit": ""
+    },
+    "aumPeak": {
+      "format": ".0f",
+      "unit": ""
+    },
+    "aumMultiple": {
+      "format": ".0f",
+      "unit": " 倍"
+    },
+    "ret": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "lev": {
+      "format": ".0f",
+      "unit": " 倍"
+    },
+    "marginDebt": {
+      "format": ".3f",
+      "unit": " 万亿美元"
+    },
+    "marginGrowth": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "top10": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "nasdaq": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "reboundLow": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "reboundHigh": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "nebius": {
+      "format": ".0%",
+      "unit": ""
+    },
+    "sandisk": {
+      "format": ".0%",
+      "unit": ""
+    }
+  },
+  "text": {
+    "title": "看对了时代，死在了黎明前",
+    "kicker": "凯撒的复利实验室 · 事件复盘",
+    "footer": "克劳德 · 依据凯撒文章整理，非投资建议",
+    "fact": "2026 年 7 月 30 日 · 36 小时 · {{book}} 持仓",
+    "verdict": "杠杆不改变方向，只改变速度"
+  },
+  "voice": {
+    "episode": "kaisa-leopold-60s",
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "-2%",
+    "delay": 0.6,
+    "tail": 2.0,
+    "subtitleMaxChineseChars": 20
+  },
+  "factsStatus": "approved-article-quotes-checked",
+  "chapters": [
+    {
+      "id": "c1",
+      "title": "36 小时",
+      "cues": [
+        "2026 年 7 月 30 日，一家只有 {{people}} 人的基金",
+        "把 {{book}} 亿美元的公开持仓，{{hours}} 小时内卖给了 Citadel"
+      ],
+      "p": [
+        "，",
+        "。"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "封神",
+      "cues": [
+        "创始人 {{age}}，OpenAI 出身",
+        "上半年回报 {{ret}}，规模从 {{aumStart}} 亿美元做到 {{aumPeak}} 亿美元",
+        "靠的是 {{lev}}杠杆"
+      ],
+      "p": [
+        "；",
+        "，",
+        "。"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "两头挨打",
+      "cues": [
+        "七月，他做多的 AI 基建暴跌，Nebius 跌 {{nebius}}，SanDisk 跌 {{sandisk}}",
+        "做空的软件股却在反弹",
+        "多空两头挨打，杠杆把亏损放大"
+      ],
+      "p": [
+        "；",
+        "，",
+        "。"
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "时间线",
+      "cues": [
+        "二十四号他还在募集资金",
+        "二十九号，三家主经纪商同时要求追加保证金",
+        "三十号，全部持仓折价卖出"
+      ],
+      "p": [
+        "；",
+        "；",
+        "。"
+      ]
+    },
+    {
+      "id": "c5",
+      "title": "黎明",
+      "cues": [
+        "卖掉当天，纳斯达克一百涨 {{nasdaq}}，AI 股反弹 {{reboundLow}} 到 {{reboundHigh}}",
+        "他看对了方向，却死在黎明前五分钟"
+      ],
+      "p": [
+        "；",
+        "。"
+      ]
+    },
+    {
+      "id": "c6",
+      "title": "结论",
+      "cues": [
+        "杠杆不改变方向，只改变速度",
+        "方向再对，也要活到兑现的那一天"
+      ],
+      "p": [
+        "；",
+        "。"
+      ]
+    }
+  ]
+}

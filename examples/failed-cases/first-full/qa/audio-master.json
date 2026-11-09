@@ -1,0 +1,81 @@
+{
+  "premix_measurement": {
+    "input_i": "-18.40",
+    "input_tp": "-1.88",
+    "input_lra": "3.10",
+    "input_thresh": "-28.98",
+    "output_i": "-16.25",
+    "output_tp": "-1.00",
+    "output_lra": "2.90",
+    "output_thresh": "-26.75",
+    "normalization_type": "dynamic",
+    "target_offset": "0.25"
+  },
+  "master_gain": 1.0979265898330413,
+  "events": [
+    {
+      "time": 1.77099609375,
+      "kind": "contact"
+    },
+    {
+      "time": 2.8154296875,
+      "kind": "paper"
+    },
+    {
+      "time": 4.40478515625,
+      "kind": "tone"
+    },
+    {
+      "time": 8.165625,
+      "kind": "paper"
+    },
+    {
+      "time": 16.258041,
+      "kind": "tone"
+    },
+    {
+      "time": 21.335166,
+      "kind": "tone"
+    },
+    {
+      "time": 22.752583,
+      "kind": "tone"
+    },
+    {
+      "time": 24.214625,
+      "kind": "tone"
+    },
+    {
+      "time": 32.784833,
+      "kind": "paper"
+    },
+    {
+      "time": 33.434833,
+      "kind": "paper"
+    },
+    {
+      "time": 41.37725,
+      "kind": "paper"
+    },
+    {
+      "time": 47.955375,
+      "kind": "paper"
+    },
+    {
+      "time": 54.788833,
+      "kind": "paper"
+    }
+  ],
+  "duration": 69.23333333333333,
+  "music": {
+    "title": "Vastness",
+    "artist": "Andrew Ev",
+    "source": "https://assets.mixkit.co/music/184/184.mp3",
+    "license": "https://mixkit.co/license/#musicFree",
+    "range": [
+      12,
+      81.23333333333333
+    ]
+  },
+  "stems": "Three aligned WAV stems sum to master, within 16-bit quantization tolerance"
+}

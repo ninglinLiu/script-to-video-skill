@@ -1,0 +1,10 @@
+{
+  "mode": "proof",
+  "seconds": 286.949,
+  "compositionId": "chapter",
+  "frameRange": [
+    0,
+    1892
+  ],
+  "output": "../qa/proof.mp4"
+}

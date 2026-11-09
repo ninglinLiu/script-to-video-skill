@@ -1,0 +1,68 @@
+[
+  {
+    "id": "S1",
+    "title": "美联储2024-09-18政策声明",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm",
+    "checked": "2026-10-22",
+    "finding": "目标区间下调50基点至4.75%—5%；同时继续减少国债、机构债及机构MBS持有量。"
+  },
+  {
+    "id": "S2",
+    "title": "美联储2026-01-28政策声明",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128a.htm",
+    "checked": "2026-10-22",
+    "finding": "维持3.50%—3.75%的政策目标区间；不能据此说当时已经降息。"
+  },
+  {
+    "id": "S3",
+    "title": "美联储2026-01-28实施说明",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128a1.htm",
+    "checked": "2026-10-22",
+    "finding": "通过购买短期国债、必要时购买剩余期限不超过3年的国债增加SOMA证券持有量，以维持充裕准备金；所有国债到期本金续作。不能画成2026年1月已在缩表，也不把准备金管理购买等同于刺激性的QE。"
+  },
+  {
+    "id": "S4",
+    "title": "美联储政策正常化问答",
+    "url": "https://www.federalreserve.gov/monetarypolicy/policy-normalization-qa.htm",
+    "checked": "2026-10-22",
+    "finding": "历史缩表主要通过调整到期本金再投资额；2025年12月1日结束该轮缩表。政策利率工具和资产负债表工具可区分。"
+  },
+  {
+    "id": "S5",
+    "title": "白宫2026-01-30提名公告",
+    "url": "https://www.whitehouse.gov/releases/2026/01/wide-acclaim-for-president-trumps-nomination-of-kevin-warsh-as-fed-chair/",
+    "checked": "2026-10-22",
+    "finding": "当日宣布提名Kevin Warsh。提名不等于已就任，不采用公告中的赞誉作事实证据。"
+  },
+  {
+    "id": "S6",
+    "title": "世界黄金协会2026年1月市场评论",
+    "url": "https://www.gold.org/goldhub/research/gold-market-commentary-january-2026",
+    "checked": "2026-10-22",
+    "finding": "2月5日发布，证实月末剧烈波动；LBMA PM基准与盘中报价口径不同。只作事后交叉核验，不能用其月度分解证明某一分钟下跌的独占原因。"
+  },
+  {
+    "id": "S7",
+    "title": "Chicago Fed: What Drives Gold Prices? (2021)",
+    "url": "https://www.chicagofed.org/publications/chicago-fed-letter/2021/464",
+    "finding": "黄金与长期实际利率的机会成本关系有理论和实证支持，但其他条件需限定，不是逐日必涨必跌规律。"
+  },
+  {
+    "id": "S8",
+    "title": "St. Louis Fed: Adjusting for Inflation (2023)",
+    "url": "https://www.stlouisfed.org/publications/page-one-economics/2023/01/03/adjusting-for-inflation",
+    "finding": "用名义利率减去同期限预期通胀近似实际利率；示例5-3和4-1均为原创假设，不是行情数据。"
+  },
+  {
+    "id": "S9",
+    "title": "World Gold Council: Rates pose risks but also unlock opportunities for gold (2021)",
+    "url": "https://www.gold.org/goldhub/research/investment-update-rates-pose-risks-also-unlock-opportunities-gold",
+    "finding": "机会成本、利率与货币价值是影响黄金的因素；利率上升不保证黄金表现差。美元示例只说明固定美元价格下的换算成本。"
+  },
+  {
+    "id": "S10",
+    "title": "Bank of England: How monetary policy transmits (2024)",
+    "url": "https://www.bankofengland.co.uk/quarterly-bulletin/2024/2024/about-a-rate-of-general-interest-how-monetary-policy-transmits",
+    "finding": "政策通过金融条件和预期传导；长端不与单次政策利率机械同步。50/25基点是原创预期差示例，不是某次真实会议。"
+  }
+]

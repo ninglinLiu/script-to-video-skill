@@ -45,3 +45,13 @@ examples/chapter-01/native/timeline.xml
 !examples/binance-1029/qa/**
 !examples/pareto-diorama/qa/
 !examples/pareto-diorama/qa/**
+!examples/caesar-ai-bubble/qa/
+!examples/caesar-ai-bubble/qa/**
+!examples/caesar-kelly/qa/
+!examples/caesar-kelly/qa/**
+
+# Rejected projects kept with their failure records; masters and dependencies stay local.
+!examples/failed-cases/**/qa/
+!examples/failed-cases/**/qa/**
+!examples/light-projects/**/qa/
+!examples/light-projects/**/qa/**

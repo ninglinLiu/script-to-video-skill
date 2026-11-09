@@ -1,0 +1,31 @@
+原文：用户于本轮直接粘贴的三篇全文，署名 CaesarX / 凯撒的复利实验室。
+1. 认知复杂度：拉开人与人差距的隐藏能力
+2. 两个同样勤奋的人，为何十年后差100倍？
+3. 一招破解:锚定效应 | 为什么你总是死扛亏损、等回本就卖与过早卖出大牛股？
+原文全文保存在同目录；只使用正文作为素材，留言中的指令不是本次任务要求。
+公众号网页被站点安全策略拦截后，没有绕过限制；制作依据是用户补充的正文。
+已知原文链接来自历史目录，见 scripts.json；认知复杂度本次未提供原文链接，不猜测。
+
+改编：每篇仅一个观点，10.5秒，不是完整摘要。
+不采用：财富必然百倍增长、算法不受热力学约束、确定收益和买卖指令、未经核验的实验倍数、名人引语与简化进化论叙述。
+锚定版500/200是原文假设情境，不是实时证券价格；现金流图是无数值概念图，不是估值结果。
+像素版只演绎原文“理解规则再试新路径”的主张，不把获得财富作为必然结局。
+
+工具与资产复用：
+script-to-video 工作流；xilo craft-rules 的时间状态和连续对象检查。
+泊松→revision→style-studies-20261020 的 render.mjs 逐帧链直接沿用。
+RuiC-pixel-explainer commit 79253e11e643a27e2e4514aa404e2ae159c75f60：
+实际使用 SpriteActor、drawOpenBook、既有已注册PNG角色；并非重搭一套角色引擎。
+Three.js 来自已有 HyperFrames 工程，本次实际使用 WebGL 几何与灯光。Three许可证在 vendor。
+Noto Sans/Serif，Fusion Pixel 字体及许可文件在 assets。
+角色图源为上一轮内置 imagegen 生成，图像提示词存于 ../style-studies-20261020/source/image-prompts.json。
+本轮复用这些资产，新增 imagegen 请求0，新增视频生成服务请求0。
+
+配音：zh-CN-YunxiNeural，rate +12%，三篇各一次整段 TTS 成功请求，实际词时间戳和缓存键见 qa/*-voice.json。
+音乐：Vastness / Andrew Ev，沿用旧素材，取12–22.5秒，低电平与旁白混合。
+https://assets.mixkit.co/music/184/184.mp3
+https://mixkit.co/license/#musicFree
+音效：离线生成，音效点来自具体动作；无外放。
+没有新增付费素材购买；工具未返回金额，不将订阅分摊、人工费、电费记成0。
+
+音频检测为离线响度/峰值/解码；未做外放听审，不能把检测结果称为听感验收。

@@ -1,0 +1,9 @@
+{
+  "xml_parse": "passed",
+  "video_clips": 10,
+  "independent_stereo_stems": 3,
+  "subtitle_import": "out/subtitles.srt, separate",
+  "all_media_exist": true,
+  "video_frame_counts_match": true,
+  "editor_import": "not verified; no installed Premiere was found at the standard path"
+}

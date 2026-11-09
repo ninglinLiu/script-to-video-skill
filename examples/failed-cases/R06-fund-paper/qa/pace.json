@@ -1,0 +1,43 @@
+{
+  "mediaSha256": "aef4284480b6919debb680e0ec4f1909761dcd0c5a42d882ff8ff4aa4c404e89",
+  "method": "crop=1080:1430:0:0,scale=270:-2,freezedetect=n=-50dB:d=4",
+  "intervals": [
+    {
+      "id": "hold-0",
+      "start": 4.733333,
+      "end": 8.833333,
+      "seconds": 4.1
+    },
+    {
+      "id": "hold-1",
+      "start": 12.666667,
+      "end": 20.066667,
+      "seconds": 7.4
+    },
+    {
+      "id": "hold-2",
+      "start": 21.633333,
+      "end": 30.266667,
+      "seconds": 8.633
+    },
+    {
+      "id": "hold-3",
+      "start": 33.666667,
+      "end": 40.2,
+      "seconds": 6.533
+    },
+    {
+      "id": "hold-4",
+      "start": 44.6,
+      "end": 50.033333,
+      "seconds": 5.433
+    },
+    {
+      "id": "hold-5",
+      "start": 56.533333,
+      "end": 61.93333333333333,
+      "seconds": 5.4
+    }
+  ],
+  "scope": "Candidate near-static intervals for editorial review; no aesthetic score or fixed cut cadence."
+}

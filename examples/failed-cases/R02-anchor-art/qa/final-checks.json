@@ -1,0 +1,33 @@
+{
+  "title": "价签之外",
+  "duration": 60,
+  "frames": 1800,
+  "size": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "silentAudioStreams": 0,
+  "normalAudioStreams": 1,
+  "fullDecode": "pass",
+  "cues": 28,
+  "cueOrdering": "pass",
+  "subtitleTexts": "pass",
+  "audioLoudness": {
+    "input_i": "-16.64",
+    "input_tp": "-4.35",
+    "input_lra": "2.60",
+    "input_thresh": "-26.75",
+    "output_i": "-16.03",
+    "output_tp": "-3.68",
+    "output_lra": "2.00",
+    "output_thresh": "-26.09",
+    "normalization_type": "dynamic",
+    "target_offset": "0.03"
+  },
+  "pictureSha256": "08c39a344511f8d882bcf34499b08b2119e47503efc8815887022f89764343bc",
+  "audioListening": "not performed: user prohibits speaker playback",
+  "editorImport": "not tested; XML structure parsed",
+  "userAcceptance": "rejected",
+  "userFeedback": "2026-10-21：用户认为上一版效果仍不合格，要求多下载抖音高互动参考并借鉴。技术通过不代表审美通过。"
+}

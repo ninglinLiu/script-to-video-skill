@@ -1,0 +1,35 @@
+{
+  "researchDate": "2026-10-23",
+  "topicTitle": "你在看行情，还是反复重做决定？",
+  "mode": "original-research-from-catalog-question",
+  "wechatTitle": "行为投资学 | 为什么越努力盯盘，亏损概率越高？深度解析“损失厌恶”陷阱。",
+  "wechatUrl": "https://mp.weixin.qq.com/s?__biz=MzYzMjM4NzQ3Mw==&mid=2247483807&idx=1&sn=ea9ab75912c3f833b75592eb829bfb97&chksm=f0bf6361c7c8ea7725e3ebae7bc5eef6c7cbd968620cb29cddb05d30b15ecbecc7cc576585a8#rd",
+  "author": "凯撒的复利实验室",
+  "catalog": "vibe-knowledge-test/references/wechat/album_07.html",
+  "catalogLines": "296-336",
+  "catalogTimestamp": 1768185042,
+  "catalogTimeAsiaTaipei": "2026-01-12T10:30:42+08:00",
+  "catalogSha256": "a04051d51beb2de12f2f825554bd5f90401c2e308405263ff881f8127f954cbe",
+  "fullTextRetrieved": false,
+  "verifiedSameArticleCrosspost": false,
+  "publicationDateCaveat": "Timestamp comes from cached album metadata, not inspected article page.",
+  "sourceUse": "Only topic cue and attribution; script evidence must come from separately verified primary research.",
+  "userProvidedLink": false,
+  "accessAttempts": [
+    {
+      "method": "web.open",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzYzMjM4NzQ3Mw==&mid=2247483807&idx=1&sn=ea9ab75912c3f833b75592eb829bfb97&chksm=f0bf6361c7c8ea7725e3ebae7bc5eef6c7cbd968620cb29cddb05d30b15ecbecc7cc576585a8#rd",
+      "result": "Cannot open / non-retryable error; no body retrieved"
+    },
+    {
+      "method": "web.search",
+      "query": "Exact title + author + 盯盘 / 损失厌恶 / 短视 / X / Telegram",
+      "result": "No same-article readable body retrieved"
+    },
+    {
+      "method": "Invoke-WebRequest",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzYzMjM4NzQ3Mw==&mid=2247483807&idx=1&sn=ea9ab75912c3f833b75592eb829bfb97",
+      "result": "SSL connection could not be established; no body retrieved"
+    }
+  ]
+}

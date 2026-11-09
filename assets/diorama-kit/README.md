@@ -8,6 +8,7 @@
 |---|---|
 | `tts.py` | 读 `source/script.json`，edge-tts 逐句合成，保存真实词界，输出 `audio/timeline.json`、`audio/voice.wav` |
 | `srt.py` | 由 timeline 生成 `out/subtitles.srt`，分行规则与画面字幕一致 |
+| `sfx.py` | 读 `audio/events.json`，用代码合成音效（金属声、方块升起、崩塌、风声等，不用采样），和旁白混成 `audio/mix.wav`。要配乐时把它传给 [`mix_music.py --voice`](../../references/audio-and-materials.md)。需要 numpy |
 | `render.mjs` | 无头 Chromium 逐帧截图，经管道交给 ffmpeg：`setup`、`stills`、`clip`、`full` |
 | `web/motion.js` | 动效函数：spring、stagger、arc、squash、track、count、rng |
 | `web/stage.js` | 舞台：渲染器、景深、泛光、运动模糊、灯光、地面、远景、连续镜头 |

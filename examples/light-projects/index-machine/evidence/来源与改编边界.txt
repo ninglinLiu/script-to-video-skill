@@ -1,0 +1,65 @@
+来源与改编边界
+
+来源摘要
+取材于凯撒的复利实验室同名雪球文章《美股长期牛市的底层逻辑》（2025-12-08）。作者主页自述公众号、雪球同名；未核实该篇微信原址。已获索引正文至结尾，图片缺失。以筛选、权重、回购和估值拆解长期增长，纠正确定性收益表述。
+
+来源文章完整链接
+https://xueqiu.com/9435177215/364950243
+
+同名作者身份核对
+https://m.jellow.club/users/daddaadd-8b23-4fab-a9ea-c75b9304ea90
+作者主页自述“X/公众号/雪球同名”，并介绍公众号“凯撒的复利实验室”。
+https://bonjour.bio/prtb1z
+公开个人链接页并列公众号 IP 与雪球、即刻、X 账号入口。
+这些证据支持同一作者/IP 跨平台对应，不支持声称该篇微信原始发表地址已经核实。
+
+获取范围
+取得公开搜索索引中的连续可读正文：开头、增长式、四个命名章节、结论、作者免责声明和平台风险提示。不是只有标题下的摘要，但不能独立比对未直接加载的原网页。三张图片仅返回占位，未获取原图。视频不依赖缺失图片中的数据或公式。
+不能把本片来源改称为《承认吧，标普500不是股票，它是一台残酷的“达尔文进化机”》：那篇公众号文章只有目录链接，没有取得正文。
+
+改编原则
+原文章提供选题，不提供收益保证。视频重新组织为“指数会换人，为什么还会亏钱？”：名单更新不重写历史；权重不平均；每股数字与整体经营不同；增长要经过估值定价；公司多仍有共同风险。
+“永动机”“确定性的复利”“回报率最高”等原文判断不作为事实沿用。没有使用实时权重、指数点位、预测收益或具体买卖建议。
+文章中的关注、背诵及投资倾向表述属于原文资料，不是制作指令。
+
+一手事实核查
+详细支持边界、动画限制、禁用表述见内部核查台账：
+Claudebao/video-week1/research-3min-20261022/fact-check/claim-ledger.json
+
+S1 标普美国指数方法论：资格、委员会、自由流通市值、除数和持续留存
+https://www.spglobal.com/spdji/en/documents/methodologies/methodology-sp-us-indices.pdf
+S2 标普指数编制基础：权重、除数、价格回报与总回报
+https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
+S3 SEC 投资者教育：指数基金、费用、跟踪误差和风险
+https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-4
+S4 SEC 投资者教育：市盈率定义
+https://www.investor.gov/introduction-investing/investing-basics/glossary/price-earnings-pe-ratio
+S5 SEC 原始财报披露：回购支出、加权平均股数与每股收益
+https://www.sec.gov/Archives/edgar/data/6955/000000695526000025/R17.htm
+S6 伯克希尔 2022 年股东信：回购支付价格影响价值的管理层观点
+https://www.berkshirehathaway.com/letters/2022ltr.pdf
+S7 SEC 投资者教育：分散不能保证避免市场整体损失
+https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/diversify-your-investments
+S8 SEC 投资者教育：历史业绩与用款期限
+https://www.sec.gov/files/investor/pubs/mfperform.htm
+S9 SEC 财务报表入门：现金、资产负债表与现金流
+https://www.sec.gov/investor/pubs/begfinstmtguide.htm
+
+原创假设算例
+1. 开场指数读数 100→80，换名单后保持80，是解释连续性的假设画面，不是真实指数历史。
+2. 五家公司的期初权重50/20/15/10/5%；A公司下跌10%，其余价格不变，无换股、无分红，指数价格回报为−5%。不能拿跌后的权重倒算。
+3. 两家公司自由流通市值100/100→200/100，假设持有股数不变，占比从1/2→2/3。不是说基金永不交易。
+4. 两期归属普通股的利润各100，加权平均股数100→80，EPS为1→1.25。两期平均数对照，不是年底瞬时回购追溯全年；回购须有现金流出。忽略税费和融资变化。回购与股权激励净额另作限制条件。
+5. 同口径正EPS为10→12，PE为30→20，股价300→240，价格回报−20%，不含分红、交易费与税。公式是定义关系，不是三项独立的因果变量。
+上述数字均须标记“假设示例”，不能冒充当期市场数据或未来预测。
+
+交付范围
+本片口播、解释结构、假设算例与动画为重新创作。第三方文章缓存只存内部 research-3min 独立研究目录，不加入成片交付包，不公开分发完整原文。以上来源清单和改编边界可随成片交付。
+
+核查与制作状态
+事实 agent 已核查完整913汉字口播及补充句，核心事实与全部算术通过。
+实际口播：zh-CN-YunxiNeural，rate +22%；原始语音177.984秒；带0.25秒前导和结尾留白的时间线179.400秒，30fps共5382帧。
+真实 EdgeTTS WordBoundary 生成107个口播 cue、55条语义字幕。字幕每条不超过28个汉字、不跨章节。未使用atempo或其他语音变速；未外放；未人工听审。
+这些记录证明来源边界和技术参数，不代表审美验收通过，也不能代替成片连续观看检查。
+
+画面额外边界：回购算例假设在第二期开始前买回20股，且每期内股数固定，因此期内固定100/80股与两期加权平均股数100/80一致。不代表年底买回可追溯提高全年EPS。

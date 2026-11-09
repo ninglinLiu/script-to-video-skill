@@ -1,0 +1,35 @@
+{
+  "article": {
+    "status": "complete",
+    "outputs": [
+      "source/原文逐行编号.txt",
+      "source/正文工作本.txt",
+      "source/source-manifest.json"
+    ],
+    "limitation": "原图、文章URL缺失；所选题不依赖原图"
+  },
+  "distillation": {
+    "status": "complete",
+    "candidates": 5,
+    "selected": "降息，为什么不等于放水？",
+    "editorialReview": "human-user acceptance pending"
+  },
+  "script": {
+    "status": "complete",
+    "claimsReviewed": 12,
+    "voiceScript": "source/完整口播稿.txt",
+    "fullVoice": "not_synthesized"
+  },
+  "storyboard": {
+    "status": "complete",
+    "planDuration": 65,
+    "actualSampleDuration": 12.266666666666667,
+    "originalModel": "E1: two controls"
+  },
+  "continuousSample": {
+    "status": "rendered_and_technically_checked",
+    "video": "out/final-silent.mp4",
+    "userAcceptance": "pending",
+    "manualListening": false
+  }
+}

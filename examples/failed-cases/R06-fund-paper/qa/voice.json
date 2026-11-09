@@ -1,0 +1,17 @@
+{
+  "key": "97b292c155e93d4978dee548437e5d6da425c10da38d84c4910ceb9a9d888ebc",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "-2%",
+  "cached": false,
+  "successfulRequests": 1,
+  "wallSeconds": 4.503704309463501,
+  "duration": 59.328,
+  "timelineDuration": 61.93333333333333,
+  "chineseCharacters": 186,
+  "cueCount": 15,
+  "subtitleCount": 15,
+  "speakerPlayback": false,
+  "manualListening": false,
+  "paidAPICalls": 0,
+  "timeStretching": false
+}

@@ -29,6 +29,40 @@ The dated visual study pack below is published at the user’s explicit request 
 
 `assets/diorama-kit/` 与 `examples/binance-1029/`、`examples/pareto-diorama/` 为原创代码和原创渲染，MIT。运行依赖 three.js（MIT）和 Playwright（Apache-2.0），不随仓库分发。旁白由 Edge TTS 合成。对标参考片（一页枝鸥、安迪的 AI 日记）只保存链接和文字观察，原片与截图不进仓库。币安样片的事实来源见其 `source/sources.md`。
 
+## 配乐与凯撒样片（2026-11-02）
+
+`examples/caesar-ai-bubble/media/` 的成片和预览混入了第三方音乐，音乐部分不适用 MIT，适用 CC BY 4.0，转发或发布时必须带这段署名：
+
+```text
+"Crypto" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0
+https://creativecommons.org/licenses/by/4.0/
+Music trimmed, loudness-normalized, faded and ducked beneath narration and sound effects.
+```
+
+授权依据是[作者站点 FAQ](https://incompetech.com/music/royalty-free/faq.html)，2026-11-02 核对。`assets/music/catalog.json` 只登记曲目信息和下载地址，音频文件不入库。这段署名说明的是音乐的来源和改动，不代表作者认可本片。
+
+画面、场景代码和合成音效（`assets/diorama-kit/sfx.py`）为原创，MIT。旁白由 Edge TTS 合成。文稿的观点和结构改编自用户提供的【凯撒的复利实验室】文章《AI不是泡沫：OpenAI才是》，全文不入库，文字权属不因本仓库 MIT 改变。Blender 是运行工具，不随仓库分发。
+
+`examples/failed-cases/` 和 `examples/light-projects/` 是本项目自己的历史工程，只收源码和记录（前者另有压缩静音预览）。文章全文没有入库；旁白稿和字幕是改编文字，观点和结构来自 CaesarX / 凯撒的复利实验室，文字权属不因本仓库 MIT 改变。部分工程复用了 Azure12355/weilanx-claude-videos（MIT，许可全文见 `assets/weilanx/upstream/`）的动画、主题和音频合成代码，各工程的记录写了具体文件。字体和第三方依赖没有入库，仍按各自许可。
+
+## 代码模拟暗金排版与凯利样片（2026-11-09）
+
+`assets/sim-kit/` 和 `examples/caesar-kelly/` 的代码、数据脚本和渲染画面为原创，MIT。字体用系统里的思源宋体 / Noto Serif SC 和 Cascadia Mono / Consolas，不随仓库分发。
+
+版式、配色和节奏参照用户在本机提供的参考片《临界点：渗流理论》，只记录文字观察和测量值；参考片的原片、截图和音乐都不进仓库，作者权利不因本仓库 MIT 改变。
+
+`examples/caesar-kelly/media/` 的成片混入了第三方音乐，音乐部分适用 CC BY 4.0，转发或发布时必须带署名：
+
+```text
+"Stay the Course" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0
+https://creativecommons.org/licenses/by/4.0/
+Music trimmed, loudness-normalized and faded.
+```
+
+观点改编自【凯撒的复利实验室】《两个同样勤奋的人，为何十年后差100倍？》，全文不入库；凯利公式的算例为制作方原创。真实实验数据引自 Haghani & Dewey (2016)，arXiv:1701.01427。
+
 ## 视觉资产扩展（2026-10-24）
 
 `assets/weilanx/upstream/` 是 Azure12355/weilanx-claude-videos 固定提交的未改动已跟踪文件快照；MIT许可全文随包保留，字体仍适用各自OFL。包含13个制作展示、35个艺术场景、9类解说语法、预览与源码。详细版本和逐文件哈希见 `assets/weilanx/provenance.json`。这些上游预览不冒充本仓库作者的独立作品。

@@ -1,0 +1,8 @@
+{
+  "status": "not_verified",
+  "editor": null,
+  "openedSuccessfully": null,
+  "agentRepeated": false,
+  "reason": "本机没有把工程导入剪映或 Premiere；Remotion 源码不是原生工程。",
+  "howToVerify": "把 out/final-with-audio.mp4、out/subtitles.srt 与 工程/ 交给人工导入后，再把 openedSuccessfully 记为 true。"
+}

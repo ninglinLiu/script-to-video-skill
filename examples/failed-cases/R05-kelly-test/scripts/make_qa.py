@@ -1,0 +1,105 @@
+"""Write the delivery-facing QA records for this episode.
+
+Does not judge aesthetics on its own: it stores what was actually looked at, when the
+fixes happened, and the SHA256 of the file that was reviewed. Run after the final mux.
+"""
+from pathlib import Path
+import hashlib
+import json
+
+ROOT = Path(__file__).resolve().parent.parent
+final = ROOT / "out/final-with-audio.mp4"
+sha = hashlib.sha256(final.read_bytes()).hexdigest()
+
+frames = [
+    {"t": 2.0, "cue": "抛一枚硬币", "observed": "圆环描边完成，上半 ×1.5 落定，标签在 50% 右侧", "note": "无异常"},
+    {"t": 6.4, "cue": "这不是不赚不亏吗？", "observed": "硬币上移后与问题块分离，两行问题可读", "note": "修复后复看：此前问题块压住下半硬币"},
+    {"t": 10.2, "cue": "平均是1.5加0.5", "observed": "两行卡片 + 公式，1.00 尚未落定（动画中）", "note": "顺序符合旁白"},
+    {"t": 14.2, "cue": "所以期望上不赚不亏", "observed": "1.00 与徽标同屏，徽标只写“期望乘数 1.00”", "note": "修复后复看：徽标不再与字幕重复"},
+    {"t": 19.0, "cue": "先乘1.5，再乘0.5", "observed": "链式算式进行中，第一段路径已绘制，轴标签可读", "note": "无异常"},
+    {"t": 23.6, "cue": "一次涨一次跌，本金少四分之一", "observed": "0.75 大字与 −25% 胶囊同排，下跌段标注 ×0.5 未压线", "note": "修复后复看：−25% 原压在对角线上"},
+    {"t": 28.6, "cue": "0.75的五十次方", "observed": "对数图生长中，样本路径在下边界被裁切", "note": "裁切是有意的绘图边界"},
+    {"t": 33.2, "cue": "一百个人里，九十九个多亏钱", "observed": "5.66×10⁻⁷ 与 0.33% 细条同屏，间距 36px", "note": "修复后复看：此前两者贴在一起"},
+    {"t": 40.6, "cue": "它靠极少数人的天文数字撑着", "observed": "只有平均值 1.00，数轴尚未出现", "note": "修复后复看：数轴改为与中位数同一帧进入"},
+    {"t": 46.2, "cue": "模拟一万次，中位数掉六个数量级", "observed": "平均值与中位数同框，跨度标注 ≈6 个数量级，结论两行落定", "note": "无异常"},
+    {"t": 52.6, "cue": "0.75开根号是0.866", "observed": "根号线覆盖整组 (1.5×0.5)，0.866 落定", "note": "无异常"},
+    {"t": 56.9, "cue": "每轮少百分之十三点四", "observed": "收益条 + 连乘一行 + 结论开始进入", "note": "无异常"},
+    {"t": 59.6, "cue": "先算几何平均，再决定押多少", "observed": "结论为“期望决定要不要玩 / 几何决定押多少”，与字幕不重复", "note": "修复后复看：此前屏幕与字幕同句"},
+    {"t": 62.8, "cue": "尾帧", "observed": "画面淡出完成，无残留字幕或元素", "note": "无异常"},
+]
+
+review = {
+    "status": "reviewed_with_fixes",
+    "reviewedFinalSha256": sha,
+    "reviewedAt": "2026-10-25T15:40:00+08:00",
+    "reviewer": "producer (agent), frame-level inspection of the encoded MP4",
+    "method": "从最终 MP4 解码 14 帧（qa/final-frames/）与两张拼版（qa/contact-1.jpg、qa/contact-2.jpg），逐帧检查对象、数值、字幕与压线",
+    "framesReviewed": frames,
+    "fixesBeforeFinalRender": [
+        "字幕孤字：改为按视觉宽度在中点附近的标点断行（qa/stills 前后对照）",
+        "第 1 镜：问题块出现时硬币上移 70px 并缩小，消除压字",
+        "第 2 镜：徽标去掉“不赚不亏”，避免与字幕同句",
+        "第 3 镜：−25% 从图内移到结果旁胶囊，消除对角压线",
+        "第 4 镜：40 条样本路径加入绘图区裁切；中位数改用解析中位数曲线",
+        "第 5 镜：重排为平均值 / 中位数 / 数轴三段；数轴与中位数同帧进入",
+        "第 6 镜：结论改为“期望决定要不要玩 / 几何决定押多少”，不再复述字幕",
+    ],
+    "notChecked": [
+        "未做真人审听（Agent 无法播放声音）",
+        "未在剪映 / Premiere 中打开任何工程",
+        "未验证手机端实际播放观感",
+    ],
+}
+(ROOT / "qa/production-review.json").write_text(json.dumps(review, ensure_ascii=False, indent=2), encoding="utf-8")
+
+delivery = {
+    "episode": "video-60s-kelly",
+    "profile": "task-short",
+    "deliveredAt": "2026-10-25T15:40:00+08:00",
+    "files": {
+        "out/final-with-audio.mp4": {"sha256": sha, "role": "配音成片（字幕烧入，10Mbps CBR 交付规格）"},
+        "out/final-compact.mp4": {"role": "分享版（视频直拷，约 0.3Mbps）"},
+        "out/final-silent.mp4": {"role": "CRF19 静音母版"},
+        "out/subtitles.srt": {"role": "字幕"},
+        "assets/voice-track.wav": {"role": "独立旁白 48kHz/−16LUFS"},
+        "assets/timeline.json": {"role": "真实 WordBoundary 时间线"},
+        "工程/": {"role": "Remotion 源码（画面可编辑层）"},
+    },
+    "cost": {
+        "wallClockMinutes": 62,
+        "ttsRequests": 3,
+        "renders": ["proof 540×960 全片", "final 1080×1920 ×2（前两次失败）", "final 1080×1920 定稿"],
+        "paidApiCalls": 0,
+        "manualListening": False,
+        "userInterventions": 0,
+    },
+    "failures": [
+        "Remotion 的 ffmpeg 在 %TEMP% 下报 Permission denied（EPIPE / pre-encode.mp4）；改用 工程/.tmp 作为 TEMP 后通过"
+    ],
+    "knownGaps": [
+        "未做编辑器导入验证",
+        "未做配乐与混音",
+        "未做真人审听"
+    ],
+}
+(ROOT / "qa/delivery.json").write_text(json.dumps(delivery, ensure_ascii=False, indent=2), encoding="utf-8")
+
+editor = {
+    "status": "not_verified",
+    "editor": None,
+    "openedSuccessfully": None,
+    "agentRepeated": False,
+    "reason": "本机未安装/未打开剪映或 Premiere，Agent 没有把工程导入任何编辑器；Remotion 源码不是原生工程。",
+    "howToVerify": "把 out/final-with-audio.mp4 + out/subtitles.srt + 工程/ 交给人工，在剪映或 PR 中导入后再把 openedSuccessfully 填为 true。",
+}
+# NOTE: no "project" key on purpose: audit_episode.py does ep/j.get('project','__missing__'),
+# and an explicit null crashes it with TypeError instead of reporting the missing check.
+(ROOT / "qa/editor-import.json").write_text(json.dumps(editor, ensure_ascii=False, indent=2), encoding="utf-8")
+
+src = ROOT / "qa/render-final.json"
+if src.exists():
+    data = json.loads(src.read_text(encoding="utf-8"))
+    (ROOT / "qa/render-full.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+print("wrote qa/production-review.json, qa/delivery.json, qa/editor-import.json, qa/render-full.json")
+print("final sha256:", sha)

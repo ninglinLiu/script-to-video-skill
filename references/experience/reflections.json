@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "scope": "反思资产：用户反馈、实际观察和下一次取舍。技术记录与用户评价分别保留；不是新的审美评分。所有路径相对仓库根目录。",
  "cases": [
   {
@@ -61,6 +61,74 @@
     }
    ],
    "media_sha256": "e1b90b41ba2b43807f1bf2965b0ee95490aae8c66a3e7599232370edf52e521d"
+  },
+  {
+   "id": "R09",
+   "title": "凯撒《AI不是泡沫》· 低频悬疑配乐（只认可配乐，画面未评价）",
+   "status": "user-approved",
+   "status_label": "用户认可 · 只限这次配乐",
+   "routes": [
+    "mix-music"
+   ],
+   "experience_ids": [
+    "E24",
+    "E14",
+    "E12"
+   ],
+   "signals": [
+    "配乐",
+    "bgm",
+    "背景音乐",
+    "避让",
+    "混音",
+    "响度",
+    "署名",
+    "低频悬疑",
+    "crypto",
+    "凯撒样片",
+    "ai不是泡沫"
+   ],
+   "feedback": "用户 2026-11-02 原话：“这次凯撒样片的 A「低频悬疑」配乐版我觉得 OK，请把选曲来源、授权署名、旁白与音效保留、音乐自动避让、淡入淡出和响度参数沉淀进现有 Skill。认可范围是这次配乐效果。”",
+   "observation_scope": "用户听过这条 47.81 秒竖屏的 A/B 两个配乐版并选了 A。认可范围只到这次配乐效果：不含画面、Blender 路线、其他题材或其他曲目。下列测量和观察来自制作方，Agent 没有听过声音，用户没有逐项确认。",
+   "observations": [
+    "完整授权曲目：Crypto，Kevin MacLeod，204 秒，CC BY 4.0，不循环。",
+    "旁白和音效先混成一轨，配乐阶段不改比例；整轨作侧链键，音乐有声段压低 5.08 dB，无声段不压。",
+    "音乐 −29 LUFS，淡入 0.25 秒、淡出 1.2 秒；总轨实测 −16.63 LUFS，真峰值 −1.44 dBTP。",
+    "同时给了 B 版 Cipher（−30 LUFS）对照。B 没有被否决，只是这条片没选。",
+    "被认可的成片画面里没有烧署名，发布时必须放进简介或片尾。"
+   ],
+   "failed_strategy": "本例不是失败案例。还没做到的是：换片后配方是否仍合适没有验证；Agent 无法听音；成片画面里没有署名；画面整体很暗，用户没有评价。",
+   "decision": "要 BGM 时先用这套配方起步，仍做 A/B 给用户听。不要把这次认可说成画面、Blender 路线或这首曲子普遍通过；画面基准仍是 R08。",
+   "preserve": [
+    "完整授权曲目和署名",
+    "旁白音效比例不动",
+    "整轨侧链自动避让",
+    "−29 LUFS、0.25/1.2 秒淡入淡出、−16 LUFS 总轨",
+    "A/B 试听"
+   ],
+   "retest": "换片或换曲时重新请用户听。比视频流哈希和响度报告，不比整文件哈希。",
+   "media": "examples/caesar-ai-bubble/media/preview.mp4",
+   "poster": "examples/caesar-ai-bubble/media/poster.jpg",
+   "media_sha256": "4359bce3855279d0f8ae9a94bf0ed25dba49d33cd354d66b08f3f05dcfc1505a",
+   "evidence": [
+    "examples/caesar-ai-bubble/README.md",
+    "references/audio-and-materials.md",
+    "assets/music/catalog.json",
+    "docs/media/music-ducking.png",
+    "examples/caesar-ai-bubble/qa/mix-tension.json"
+   ],
+   "spans": [
+    {
+     "start": 0.0,
+     "end": 6.0,
+     "look_for": "开头淡入和第一句旁白进来时音乐让路。本页静音，要听去样片页。"
+    },
+    {
+     "start": 43.0,
+     "end": 47.8,
+     "look_for": "结尾旁白结束后音乐回来，再淡出。本页静音，要听去样片页。"
+    }
+   ]
   },
   {
    "id": "R01",
@@ -166,7 +234,12 @@
      "look_for": "布料特写、衣物比较与人物之间，哪些是实质交互，哪些只是推近或叠放。"
     }
    ],
-   "media_sha256": "ca6b6f38f9895d0e20a5322ab61d12e08ffbcc27f079bbc086b1af2625a80157"
+   "media_sha256": "ca6b6f38f9895d0e20a5322ab61d12e08ffbcc27f079bbc086b1af2625a80157",
+   "archive": {
+    "project": "examples/failed-cases/R02-anchor-art",
+    "readme": "examples/failed-cases/R02-anchor-art/README.md",
+    "note": "2026-11-02 补入工程和记录；片子一直在展厅。评价不变，不是可用模板。"
+   }
   },
   {
    "id": "R03",
@@ -189,7 +262,7 @@
     "kit"
    ],
    "feedback": "用户指出没字幕、节奏差、画风阴郁。",
-   "observation_scope": "历史本地成片/源码核查和用户反馈；本轮不重新宣称已连续看完整片。",
+   "observation_scope": "历史本地成片/源码核查和用户反馈；本轮不重新宣称已连续看完整片。 2026-11-02 补充：高码率原片仍不入库，但工程和压缩静音预览已补进仓库，见 archive 字段。上面的观察仍是当时的记录，不是重新看片。",
    "observations": [
     "旁挂SRT有12条，但实际工程没有绘制口播字幕。",
     "12.3秒proof只覆盖全片约18%，没有代表多段长时间停滞。",
@@ -215,7 +288,15 @@
      "look_for": "主体长时间保持，不能把字幕文件或坐标记录当作画面推进。"
     }
    ],
-   "media_sha256": "f82de011a5fcd1621936025a05e31aa90c5620120c5c46939aa8413de6ec7a1d"
+   "media_sha256": "f82de011a5fcd1621936025a05e31aa90c5620120c5c46939aa8413de6ec7a1d",
+   "archive": {
+    "project": "examples/failed-cases/R03-pareto-first",
+    "readme": "examples/failed-cases/R03-pareto-first/README.md",
+    "preview": "examples/failed-cases/R03-pareto-first/media/preview-silent.mp4",
+    "poster": "examples/failed-cases/R03-pareto-first/media/poster.jpg",
+    "preview_sha256": "5bd8e16eb9329bf3e886cf13af4b5e23ea53795ee0076a1fa2631cd080ac476d",
+    "note": "2026-11-02 补入的压缩静音预览，由本机原片转码。评价不变，不是可用模板。"
+   }
   },
   {
    "id": "R04",
@@ -237,7 +318,7 @@
     "参数化"
    ],
    "feedback": "用户明确把优先级纠正为动画视觉质量；内容写得更好不能弥补动画不达标。",
-   "observation_scope": "2026-10-29历史核查：90.8秒2fps编码序列、77.9–79.1秒10fps连续帧、46秒全尺寸帧及recipes源码。本轮只整理已有结论；此库没有捆绑该原片。",
+   "observation_scope": "2026-10-29历史核查：90.8秒2fps编码序列、77.9–79.1秒10fps连续帧、46秒全尺寸帧及recipes源码。本轮只整理已有结论；此库没有捆绑该原片。 2026-11-02 补充：高码率原片仍不入库，但工程和压缩静音预览已补进仓库，见 archive 字段。上面的观察仍是当时的记录，不是重新看片。",
    "observations": [
     "0–15.69秒主要是几层框缓慢整体缩放。43.30–57.69秒公式切换把短动作拉成数秒半透明中间态。",
     "九镜全部cut；78.37秒同一批点回到左侧重新开始。",
@@ -259,14 +340,22 @@
     {
      "start": 43.3,
      "end": 57.69,
-     "look_for": "历史观察区间；当前库不提供该原片，不能声称已播放。"
+     "look_for": "历史观察区间；2026-11-02 起可用压缩预览定位，观察结论仍是当时的记录。"
     },
     {
      "start": 77.9,
      "end": 79.1,
-     "look_for": "同一批对象跨镜重置；需要用户本地原片才能复核。"
+     "look_for": "同一批对象跨镜重置；压缩预览可以定位，细节要用本地原片复核。"
     }
-   ]
+   ],
+   "archive": {
+    "project": "examples/failed-cases/R04-queue-poisson",
+    "readme": "examples/failed-cases/R04-queue-poisson/README.md",
+    "preview": "examples/failed-cases/R04-queue-poisson/media/preview-silent.mp4",
+    "poster": "examples/failed-cases/R04-queue-poisson/media/poster.jpg",
+    "preview_sha256": "51b1d77a1b75aa790f71621c95f4e76b239f3b75276d59b2479e0e18743be455",
+    "note": "2026-11-02 补入的压缩静音预览，由本机原片转码。评价不变，不是可用模板。"
+   }
   },
   {
    "id": "R05",
@@ -286,7 +375,7 @@
     "只复用字体"
    ],
    "feedback": "用户认为效果差，并要求把问题真正修进Skill，让其他Agent复用已有素材和剪辑。",
-   "observation_scope": "用户提供的制作方自述、历史视觉落地核查。未把自述中的审美判断当成事实；此库未捆绑原片。",
+   "observation_scope": "用户提供的制作方自述、历史视觉落地核查。未把自述中的审美判断当成事实；此库未捆绑原片。 2026-11-02 补充：高码率原片仍不入库，但工程和压缩静音预览已补进仓库，见 archive 字段。上面的观察仍是当时的记录，不是重新看片。",
    "observations": [
     "复用了字体、voice.py、依赖锁和渲染骨架，主要画面重新写，既有艺术场景和解释组件未接入。",
     "没有用指定8–13秒连续小样，静帧抽样代替了主要动态检查。",
@@ -304,7 +393,15 @@
     "references/experience/sources.json",
     "references/experience/cards/E18.md"
    ],
-   "spans": []
+   "spans": [],
+   "archive": {
+    "project": "examples/failed-cases/R05-kelly-test",
+    "readme": "examples/failed-cases/R05-kelly-test/README.md",
+    "preview": "examples/failed-cases/R05-kelly-test/media/preview-silent.mp4",
+    "poster": "examples/failed-cases/R05-kelly-test/media/poster.jpg",
+    "preview_sha256": "42c6cad2088d68f00dee8df45efa8a72c49857b3adc9ce5f2b4638e4af295967",
+    "note": "2026-11-02 补入的压缩静音预览，由本机原片转码。评价不变，不是可用模板。"
+   }
   },
   {
    "id": "R06",
@@ -325,7 +422,7 @@
     "61.93"
    ],
    "feedback": "用户认为仍像PPT、缺动画，要求结合下载的抖音样片与Claude参考重新处理。",
-   "observation_scope": "用户反馈及制作方交付自述。此库没有本片MP4，未新增连续观片结论。",
+   "observation_scope": "用户反馈及制作方交付自述。此库没有本片MP4，未新增连续观片结论。 2026-11-02 补充：高码率原片仍不入库，但工程和压缩静音预览已补进仓库，见 archive 字段。上面的观察仍是当时的记录，不是重新看片。",
    "observations": [
     "移植了纸色、字级、账单卡、条码、印章和字幕，但原版主要解释镜头未入画。",
     "制作方承认6镜中4段近静止，较长保持约7.4秒和8.6秒；开场0–0.6秒空白。",
@@ -342,7 +439,15 @@
    "evidence": [
     "references/experience/cards/E21.md"
    ],
-   "spans": []
+   "spans": [],
+   "archive": {
+    "project": "examples/failed-cases/R06-fund-paper",
+    "readme": "examples/failed-cases/R06-fund-paper/README.md",
+    "preview": "examples/failed-cases/R06-fund-paper/media/preview-silent.mp4",
+    "poster": "examples/failed-cases/R06-fund-paper/media/poster.jpg",
+    "preview_sha256": "f04ccb6cc70b4ea06480c0f793d5283d957ab964e0337840e31dba9ef2a46aba",
+    "note": "2026-11-02 补入的压缩静音预览，由本机原片转码。评价不变，不是可用模板。"
+   }
   },
   {
    "id": "R07",

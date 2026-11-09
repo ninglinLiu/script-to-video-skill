@@ -1,0 +1,10 @@
+{
+  "attempts": 2,
+  "successfulRequests": 1,
+  "blockedBeforeNetwork": 1,
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+25%",
+  "paidAPICalls": 0,
+  "speakerPlayback": false,
+  "manualListening": false
+}

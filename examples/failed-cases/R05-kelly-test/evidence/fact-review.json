@@ -1,0 +1,119 @@
+{
+  "topic": "正期望的乘法游戏为什么让大多数人亏钱（算术平均 vs 几何平均）",
+  "evidenceKind": "独立推导 + 本地蒙特卡洛模拟，非原文改编",
+  "sources": [
+    {
+      "kind": "paper",
+      "citation": "J. L. Kelly Jr., A New Interpretation of Information Rate, Bell System Technical Journal 35(4), 1956",
+      "usedFor": "凯利公式最大化几何增长率（对数期望）这一表述",
+      "url": "https://doi.org/10.1002/j.1538-7305.1956.tb03809.x"
+    }
+  ],
+  "scripts": {
+    "simulate.py": "0921f32fa8a46c8914dab43ddf8e711ae8550cec6a2969abe86275eddbaa12fc",
+    "seed": 20261025,
+    "paths": 10000,
+    "rounds": 100
+  },
+  "checks": [
+    {
+      "claim": "两个结果的平均乘数等于1",
+      "screenText": "平均是1.5加0.5，再除以2，等于1",
+      "formula": "(1.5 + 0.5) / 2",
+      "expected": 1.0,
+      "computed": 1.0,
+      "pass": true
+    },
+    {
+      "claim": "一涨一跌后本金剩0.75",
+      "screenText": "先乘1.5，再乘0.5，结果是0.75",
+      "formula": "1.5 * 0.5",
+      "expected": 0.75,
+      "computed": 0.75,
+      "pass": true
+    },
+    {
+      "claim": "一涨一跌的损失是四分之一",
+      "screenText": "一次涨一次跌，本金少四分之一",
+      "formula": "1 - 1.5*0.5",
+      "expected": 0.25,
+      "computed": 0.25,
+      "pass": true
+    },
+    {
+      "claim": "一百轮等于五十次涨跌",
+      "screenText": "0.75的五十次方",
+      "formula": "0.75 ** 50",
+      "expected": 5.663216564269376e-07,
+      "computed": 5.663216564269376e-07,
+      "pass": true
+    },
+    {
+      "claim": "屏幕上写作百万分之零点五七",
+      "screenText": "只剩百万分之零点五七",
+      "formula": "0.75**50 * 1e6",
+      "expected": 0.5663,
+      "computed": 0.5663,
+      "pass": true
+    },
+    {
+      "claim": "亏钱的人约占99.67%",
+      "screenText": "一百个人里，九十九个多亏钱",
+      "formula": "1 - P(W>1), k~Bin(100,.5)",
+      "expected": 0.9966814397420369,
+      "computed": 0.9966814397420369,
+      "pass": true
+    },
+    {
+      "claim": "高于起点的人不到0.4%",
+      "screenText": "在起点之上的不到百分之零点四",
+      "formula": "P(W>1)",
+      "expected": 0.0033,
+      "computed": 0.003318560257963063,
+      "pass": true
+    },
+    {
+      "claim": "中位数下降的十进制数量级",
+      "screenText": "模拟一万次，中位数掉六个数量级",
+      "formula": "log10(0.75**50)",
+      "expected": -6.25,
+      "computed": -6.246936830414998,
+      "pass": true
+    },
+    {
+      "claim": "每轮几何平均",
+      "screenText": "0.75开根号是0.866",
+      "formula": "sqrt(1.5*0.5)",
+      "expected": 0.86603,
+      "computed": 0.8660254037844386,
+      "pass": true
+    },
+    {
+      "claim": "每轮几何损失百分比",
+      "screenText": "每轮少百分之十三点四",
+      "formula": "(sqrt(0.75)-1)*100",
+      "expected": -13.397,
+      "computed": -13.397459621556141,
+      "pass": true
+    },
+    {
+      "claim": "模拟与二项分布一致",
+      "screenText": "模拟一万次，中位数掉六个数量级",
+      "formula": "|median_sim - 0.75**50| / 0.75**50",
+      "expected": 0.0,
+      "computed": 0.0,
+      "pass": true
+    }
+  ],
+  "assertionsInPipeline": [
+    "simulate.py: 期望值 (0.5*1.5+0.5*0.5)**100 == 1.0",
+    "simulate.py: 模拟中位数与 0.75**50 相对误差 < 5%",
+    "simulate.py: 模拟高于起点比例与二项分布相差 < 1 个百分点"
+  ],
+  "boundaries": [
+    "只讨论乘法型损益，不涉及税费、融资成本和仓位调整。",
+    "平均值1是数学期望，不是任何单个账户的结果；片中已明确区分。",
+    "凯利公式只作为几何增长的引用，不给出具体仓位建议。"
+  ],
+  "allPassed": true
+}

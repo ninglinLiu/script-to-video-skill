@@ -1,0 +1,17 @@
+{
+  "scope": "full-v2 iteration, 2026-10-22",
+  "tts": {
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+12%",
+    "successfulNetworkGenerations": 1,
+    "laterRuns": "cache reused; no new request for subtitle grouping",
+    "ledgerNote": "voice.json describes the latest run only; its successfulRequests=0 means cache use, not zero generations over the entire iteration"
+  },
+  "paidImageGenerationCalls": 0,
+  "paidVideoGenerationCalls": 0,
+  "speakerPlayback": false,
+  "newDrawings": "procedural gold ingot, numeric stacks, term-structure schematic, currency tokens, expectation bars",
+  "reusedDrawings": "previous industrial policy dial and securities ledger",
+  "reusedLibraries": "weilanx Remotion animation helpers, projection, local font loading, BGM and SFX synthesis",
+  "rendering": "local Remotion and FFmpeg, dedicated headless browser"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "technical_checks_passed",
+  "inputVideo": "final.mp4",
+  "inputVoice": "mix.wav",
+  "inputMusic": "Crypto.mp3",
+  "output": "final-music-tension.mp4",
+  "outputSha256": "401857616a3a0f84985dc475014041d8f7a05b601152d10e696782b3ce2bb4d5",
+  "sourceMusicSha256": "f09ba8bff00baca85fcdcde3b7f5d6b34a09c2c0b44b007a9123ee42f7d1bcf2",
+  "seconds": 47.8,
+  "sourceMusicSeconds": 204.068594,
+  "repeats": 1,
+  "loopCrossfadeSeconds": 0.12,
+  "musicTargetLUFS": -29.0,
+  "ducking": {
+    "threshold": 0.035,
+    "ratio": 8,
+    "attackMs": 15,
+    "releaseMs": 350
+  },
+  "measuredIntegratedLUFS": -16.63,
+  "measuredTruePeakDBTP": -1.44,
+  "originalVideoStreamPreserved": true,
+  "fullDecode": true,
+  "speakerPlayback": false,
+  "manualListening": false,
+  "limitations": [
+    "Signal measurements do not verify musical phrasing or listening comfort.",
+    "The supplied audio source must be identified separately; this tool does not certify an instrumental master."
+  ]
+}

@@ -1,0 +1,1 @@
+{"name":"anchor-art-60s","private":true,"type":"module","scripts":{"render":"node render.mjs full","probe":"node render.mjs probe","music":"node music.mjs"},"dependencies":{"puppeteer-core":"25.12.0"}}

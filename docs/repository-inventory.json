@@ -1,46 +1,46 @@
 {
   "scope": "Staged Git blobs; excludes three generated inventory outputs, ignored files and Git history. Tree includes all tracked paths plus generated outputs. Byte counts use canonical Git blobs, not OS working-copy line endings.",
-  "files": 1599,
-  "bytes": 538462714,
-  "entry_chars": 3257,
-  "entry_lines": 83,
-  "entry_utf8_bytes": 6159,
+  "files": 2288,
+  "bytes": 599920818,
+  "entry_chars": 5011,
+  "entry_lines": 97,
+  "entry_utf8_bytes": 9467,
   "groups": {
     "examples": {
-      "files": 511,
-      "bytes": 439509841
+      "files": 1167,
+      "bytes": 491871164
     },
     "assets": {
-      "files": 969,
-      "bytes": 78098183
+      "files": 977,
+      "bytes": 78133172
     },
     "docs": {
-      "files": 20,
-      "bytes": 20390244
+      "files": 35,
+      "bytes": 29308809
     },
     "references": {
-      "files": 59,
-      "bytes": 202779
+      "files": 63,
+      "bytes": 259150
     },
     "scripts": {
-      "files": 18,
-      "bytes": 158632
+      "files": 21,
+      "bytes": 192188
     },
     "[root files]": {
       "files": 10,
-      "bytes": 50328
+      "bytes": 81042
     },
     "tests": {
-      "files": 9,
-      "bytes": 44973
+      "files": 12,
+      "bytes": 62476
     },
     "evals": {
       "files": 2,
-      "bytes": 6777
+      "bytes": 11654
     },
     ".github": {
       "files": 1,
-      "bytes": 957
+      "bytes": 1163
     }
   },
   "duplicates": [
@@ -130,11 +130,11 @@
     },
     {
       "path": ".github/workflows/architecture.yml",
-      "bytes": 957
+      "bytes": 1163
     },
     {
       "path": ".gitignore",
-      "bytes": 1107
+      "bytes": 1446
     },
     {
       "path": ".nojekyll",
@@ -142,11 +142,11 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1686
+      "bytes": 2405
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes": 3899
+      "bytes": 5506
     },
     {
       "path": "LICENSE",
@@ -154,15 +154,15 @@
     },
     {
       "path": "NOTICE.md",
-      "bytes": 5198
+      "bytes": 7924
     },
     {
       "path": "README.md",
-      "bytes": 30292
+      "bytes": 52307
     },
     {
       "path": "SKILL.md",
-      "bytes": 6159
+      "bytes": 9467
     },
     {
       "path": "assets/chapter-style-lock.json",
@@ -170,7 +170,7 @@
     },
     {
       "path": "assets/diorama-kit/README.md",
-      "bytes": 3693
+      "bytes": 3964
     },
     {
       "path": "assets/diorama-kit/package-lock.json",
@@ -183,6 +183,10 @@
     {
       "path": "assets/diorama-kit/render.mjs",
       "bytes": 6403
+    },
+    {
+      "path": "assets/diorama-kit/sfx.py",
+      "bytes": 4128
     },
     {
       "path": "assets/diorama-kit/srt.py",
@@ -227,6 +231,10 @@
     {
       "path": "assets/film-tools/render.mjs",
       "bytes": 3815
+    },
+    {
+      "path": "assets/music/catalog.json",
+      "bytes": 4502
     },
     {
       "path": "assets/pixel-scene-map/asset-guide.md",
@@ -459,6 +467,30 @@
     {
       "path": "assets/production-kit/template/src/motion.tsx",
       "bytes": 3205
+    },
+    {
+      "path": "assets/sim-kit/README.md",
+      "bytes": 2271
+    },
+    {
+      "path": "assets/sim-kit/data/build_data.py",
+      "bytes": 1187
+    },
+    {
+      "path": "assets/sim-kit/render.mjs",
+      "bytes": 5703
+    },
+    {
+      "path": "assets/sim-kit/web/engine.js",
+      "bytes": 13150
+    },
+    {
+      "path": "assets/sim-kit/web/index.html",
+      "bytes": 1101
+    },
+    {
+      "path": "assets/sim-kit/web/scene.js",
+      "bytes": 2676
     },
     {
       "path": "assets/style-lock.json",
@@ -4046,15 +4078,15 @@
     },
     {
       "path": "docs/architecture-layout.json",
-      "bytes": 1832
+      "bytes": 3032
     },
     {
       "path": "docs/architecture.md",
-      "bytes": 12496
+      "bytes": 15398
     },
     {
       "path": "docs/architecture.mmd",
-      "bytes": 1949
+      "bytes": 2539
     },
     {
       "path": "docs/media/atlas-binance.jpg",
@@ -4063,6 +4095,26 @@
     {
       "path": "docs/media/components.jpg",
       "bytes": 219460
+    },
+    {
+      "path": "docs/media/failed-samples.jpg",
+      "bytes": 157736
+    },
+    {
+      "path": "docs/media/gif-caesar-cables.gif",
+      "bytes": 1292751
+    },
+    {
+      "path": "docs/media/gif-caesar-loop.gif",
+      "bytes": 1152614
+    },
+    {
+      "path": "docs/media/gif-caesar-scale.gif",
+      "bytes": 1240715
+    },
+    {
+      "path": "docs/media/gif-caesar-tower.gif",
+      "bytes": 1285295
     },
     {
       "path": "docs/media/gif-flow.gif",
@@ -4075,6 +4127,22 @@
     {
       "path": "docs/media/gif-gate.gif",
       "bytes": 1132019
+    },
+    {
+      "path": "docs/media/gif-kelly-hook.gif",
+      "bytes": 265192
+    },
+    {
+      "path": "docs/media/gif-kelly-reveal.gif",
+      "bytes": 119281
+    },
+    {
+      "path": "docs/media/gif-kelly-runs.gif",
+      "bytes": 465868
+    },
+    {
+      "path": "docs/media/gif-kelly-steps.gif",
+      "bytes": 132162
     },
     {
       "path": "docs/media/gif-mascot.gif",
@@ -4097,12 +4165,20 @@
       "bytes": 275983
     },
     {
+      "path": "docs/media/light-samples.jpg",
+      "bytes": 247855
+    },
+    {
       "path": "docs/media/look-test-rounds.jpg",
       "bytes": 697711
     },
     {
       "path": "docs/media/motion-compare.png",
       "bytes": 467718
+    },
+    {
+      "path": "docs/media/music-ducking.png",
+      "bytes": 282936
     },
     {
       "path": "docs/media/same-text-pareto.jpg",
@@ -4113,20 +4189,36 @@
       "bytes": 1456177
     },
     {
+      "path": "docs/media/storyboard-caesar.jpg",
+      "bytes": 1186642
+    },
+    {
+      "path": "docs/media/storyboard-kelly.jpg",
+      "bytes": 1071745
+    },
+    {
       "path": "docs/media/storyboard-pareto.jpg",
       "bytes": 1446130
     },
     {
       "path": "docs/production-flow.mmd",
-      "bytes": 1286
+      "bytes": 1699
+    },
+    {
+      "path": "docs/removals.md",
+      "bytes": 2205
+    },
+    {
+      "path": "docs/sample-catalog.md",
+      "bytes": 10463
     },
     {
       "path": "evals/README.md",
-      "bytes": 1429
+      "bytes": 2087
     },
     {
       "path": "evals/evals.json",
-      "bytes": 5348
+      "bytes": 9567
     },
     {
       "path": "examples/batch-01/README.md",
@@ -4467,6 +4559,146 @@
     {
       "path": "examples/binance-1029/web/scene.js",
       "bytes": 43291
+    },
+    {
+      "path": "examples/caesar-ai-bubble/README.md",
+      "bytes": 5627
+    },
+    {
+      "path": "examples/caesar-ai-bubble/audio/events.json",
+      "bytes": 2018
+    },
+    {
+      "path": "examples/caesar-ai-bubble/audio/timeline.json",
+      "bytes": 9044
+    },
+    {
+      "path": "examples/caesar-ai-bubble/blender/caesar.py",
+      "bytes": 17869
+    },
+    {
+      "path": "examples/caesar-ai-bubble/blender/dio_blender.py",
+      "bytes": 15842
+    },
+    {
+      "path": "examples/caesar-ai-bubble/index.html",
+      "bytes": 2652
+    },
+    {
+      "path": "examples/caesar-ai-bubble/media/final-tension-1080x1920.mp4",
+      "bytes": 25725910
+    },
+    {
+      "path": "examples/caesar-ai-bubble/media/music-credit-short.txt",
+      "bytes": 228
+    },
+    {
+      "path": "examples/caesar-ai-bubble/media/music-credits.txt",
+      "bytes": 1869
+    },
+    {
+      "path": "examples/caesar-ai-bubble/media/poster.jpg",
+      "bytes": 66019
+    },
+    {
+      "path": "examples/caesar-ai-bubble/media/preview.mp4",
+      "bytes": 4263720
+    },
+    {
+      "path": "examples/caesar-ai-bubble/media/subtitles.srt",
+      "bytes": 1092
+    },
+    {
+      "path": "examples/caesar-ai-bubble/overlay.py",
+      "bytes": 10044
+    },
+    {
+      "path": "examples/caesar-ai-bubble/qa/mix-electronic.json",
+      "bytes": 983
+    },
+    {
+      "path": "examples/caesar-ai-bubble/qa/mix-tension-repro.json",
+      "bytes": 2024
+    },
+    {
+      "path": "examples/caesar-ai-bubble/qa/mix-tension.json",
+      "bytes": 980
+    },
+    {
+      "path": "examples/caesar-ai-bubble/qa/music-levels.json",
+      "bytes": 10070
+    },
+    {
+      "path": "examples/caesar-ai-bubble/source/script.json",
+      "bytes": 2171
+    },
+    {
+      "path": "examples/caesar-ai-bubble/source/sources.md",
+      "bytes": 1571
+    },
+    {
+      "path": "examples/caesar-kelly/README.md",
+      "bytes": 6555
+    },
+    {
+      "path": "examples/caesar-kelly/data/build_data.py",
+      "bytes": 3114
+    },
+    {
+      "path": "examples/caesar-kelly/index.html",
+      "bytes": 2199
+    },
+    {
+      "path": "examples/caesar-kelly/media/final-1080x1920.mp4",
+      "bytes": 11666330
+    },
+    {
+      "path": "examples/caesar-kelly/media/music-credit.txt",
+      "bytes": 193
+    },
+    {
+      "path": "examples/caesar-kelly/media/poster.jpg",
+      "bytes": 26760
+    },
+    {
+      "path": "examples/caesar-kelly/media/preview.mp4",
+      "bytes": 4216545
+    },
+    {
+      "path": "examples/caesar-kelly/qa/cards.json",
+      "bytes": 790
+    },
+    {
+      "path": "examples/caesar-kelly/qa/data-summary.json",
+      "bytes": 974
+    },
+    {
+      "path": "examples/caesar-kelly/qa/mix-a.json",
+      "bytes": 1637
+    },
+    {
+      "path": "examples/caesar-kelly/qa/mix-b.json",
+      "bytes": 1611
+    },
+    {
+      "path": "examples/caesar-kelly/qa/review-full-film.jpg",
+      "bytes": 944641
+    },
+    {
+      "path": "examples/caesar-kelly/qa/review-look-test.jpg",
+      "bytes": 482152
+    },
+    {
+      "path": "examples/caesar-kelly/source/sources.md",
+      "bytes": 2708
+    },
+    {
+      "path": "examples/caesar-kelly/web/data.json",
+      "bytes": 163068
+    },
+    {
+      "path": "examples/caesar-kelly/web/scene.js",
+      "bytes": 16536
     },
     {
       "path": "examples/chapter-01/README.md",
@@ -4847,6 +5079,942 @@
     {
       "path": "examples/chapter-01/工程/tsconfig.json",
       "bytes": 317
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/BRIEF.md",
+      "bytes": 2328
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/README.md",
+      "bytes": 641
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/archive.json",
+      "bytes": 510
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/art.mjs",
+      "bytes": 7066
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/assets/notosanssc-OFL.txt",
+      "bytes": 4388
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/assets/notoserifsc-OFL.txt",
+      "bytes": 4350
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/assets/timeline-anchor.json",
+      "bytes": 5207
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/assets/voice-anchor-boundaries.json",
+      "bytes": 15883
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/common.mjs",
+      "bytes": 2495
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/film.mjs",
+      "bytes": 10299
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/finalize.py",
+      "bytes": 5523
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/index.html",
+      "bytes": 543
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/main.mjs",
+      "bytes": 884
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/music.mjs",
+      "bytes": 3735
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/package.json",
+      "bytes": 202
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/package.py",
+      "bytes": 1393
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/prepare_audio.py",
+      "bytes": 3092
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/qa/anchor-browser-errors.json",
+      "bytes": 2
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/qa/anchor-determinism.json",
+      "bytes": 389
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/qa/anchor-probe-meta.json",
+      "bytes": 295
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/qa/anchor-voice.json",
+      "bytes": 199
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/qa/final-checks.json",
+      "bytes": 967
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/qa/制作审看.md",
+      "bytes": 2460
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/render.mjs",
+      "bytes": 5666
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/setup_project.py",
+      "bytes": 3223
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/source/coat-prompt.txt",
+      "bytes": 1402
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/source/image-prompts.json",
+      "bytes": 3099
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/source/music-cues.json",
+      "bytes": 2532
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/source/package-manifest.json",
+      "bytes": 9770
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/source/scripts.json",
+      "bytes": 2443
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/source/事实核对.md",
+      "bytes": 1200
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/source/来源与改编.md",
+      "bytes": 2421
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/source/素材来源.csv",
+      "bytes": 1136
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/watch.html",
+      "bytes": 3043
+    },
+    {
+      "path": "examples/failed-cases/R02-anchor-art/打开与修改说明.md",
+      "bytes": 2884
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/README.md",
+      "bytes": 5877
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/archive.json",
+      "bytes": 474
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/assets/timeline.json",
+      "bytes": 5739
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/assets/word-boundaries.json",
+      "bytes": 15282
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/evidence/fact-review.json",
+      "bytes": 2997
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/evidence/script-review.json",
+      "bytes": 882
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/evidence/source-manifest.json",
+      "bytes": 3045
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/media/poster.jpg",
+      "bytes": 32738
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/media/preview-silent.mp4",
+      "bytes": 341551
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/media/subtitles.srt",
+      "bytes": 1167
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/plans/assets.json",
+      "bytes": 4159
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/plans/content-binding.json",
+      "bytes": 402
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/plans/edit-plan.json",
+      "bytes": 1927
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/qa/audit.json",
+      "bytes": 11485
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/qa/delivery.json",
+      "bytes": 845
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/qa/editor-import.json",
+      "bytes": 350
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/qa/motion-proof.json",
+      "bytes": 432
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/qa/motion-review.json",
+      "bytes": 3941
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/qa/production-review.json",
+      "bytes": 3503
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/qa/render-full.json",
+      "bytes": 138
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/qa/voice.json",
+      "bytes": 447
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/qa/watch.html",
+      "bytes": 295
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/requirements.txt",
+      "bytes": 16
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/scripts/make_qa.py",
+      "bytes": 5345
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/scripts/verify_claims.py",
+      "bytes": 2562
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/source/content.json",
+      "bytes": 5711
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/source/draft.txt",
+      "bytes": 898
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/source/script.json",
+      "bytes": 1971
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/source/storyboard.json",
+      "bytes": 3171
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/voice.py",
+      "bytes": 7778
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/package.json",
+      "bytes": 617
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/render.mjs",
+      "bytes": 3127
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/src/Asset.tsx",
+      "bytes": 218
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/src/Film.tsx",
+      "bytes": 6537
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/src/content.generated.json",
+      "bytes": 1494
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/src/entry.tsx",
+      "bytes": 369
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/src/motion.tsx",
+      "bytes": 3205
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/src/profile.json",
+      "bytes": 154
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/src/timing.json",
+      "bytes": 5739
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/src/vendor/src/library/anim.ts",
+      "bytes": 1980
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/src/vendor/src/library/blackgold/props.tsx",
+      "bytes": 9183
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/src/vendor/src/library/blackgold/theme.ts",
+      "bytes": 2806
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/src/vendor/src/library/vox/theme.ts",
+      "bytes": 2924
+    },
+    {
+      "path": "examples/failed-cases/R03-pareto-first/工程/tsconfig.json",
+      "bytes": 317
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/README.md",
+      "bytes": 5864
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/archive.json",
+      "bytes": 476
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/assets/timeline.json",
+      "bytes": 9076
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/assets/word-boundaries.json",
+      "bytes": 23651
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/evidence/script-review.json",
+      "bytes": 813
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/evidence/source-manifest.json",
+      "bytes": 2534
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/media/poster.jpg",
+      "bytes": 26687
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/media/preview-silent.mp4",
+      "bytes": 830708
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/media/subtitles.srt",
+      "bytes": 1915
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/plans/captions.json",
+      "bytes": 88
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/plans/migration.json",
+      "bytes": 2788
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/plans/project.json",
+      "bytes": 167
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/qa/audit.json",
+      "bytes": 10152
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/qa/caption-reference.json",
+      "bytes": 10509
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/qa/caption-verification.json",
+      "bytes": 20759
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/qa/full-review.json",
+      "bytes": 5753
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/qa/pace.json",
+      "bytes": 1108
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/qa/production-review.json",
+      "bytes": 3170
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/qa/render-full.json",
+      "bytes": 276
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/qa/voice.json",
+      "bytes": 433
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/requirements.txt",
+      "bytes": 16
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/scripts/build.py",
+      "bytes": 10990
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/source/draft.txt",
+      "bytes": 1392
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/source/film.json",
+      "bytes": 10112
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/source/script.json",
+      "bytes": 2843
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/voice.py",
+      "bytes": 7778
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/工程/core.js",
+      "bytes": 8609
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/工程/film.compiled.json",
+      "bytes": 15211
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/工程/index.html",
+      "bytes": 475
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/工程/original-silent.html",
+      "bytes": 523
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/工程/package.json",
+      "bytes": 108
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/工程/recipes.js",
+      "bytes": 5842
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/工程/render.mjs",
+      "bytes": 9040
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/工程/runtime.js",
+      "bytes": 2338
+    },
+    {
+      "path": "examples/failed-cases/R04-queue-poisson/工程/src/timing.json",
+      "bytes": 9076
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/README.md",
+      "bytes": 5900
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/archive.json",
+      "bytes": 473
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/assets/stats.json",
+      "bytes": 46485
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/assets/timeline.json",
+      "bytes": 7250
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/assets/word-boundaries.json",
+      "bytes": 15301
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/evidence/fact-review.json",
+      "bytes": 3847
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/evidence/script-review.json",
+      "bytes": 769
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/evidence/source-manifest.json",
+      "bytes": 1582
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/media/poster.jpg",
+      "bytes": 25918
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/media/preview-silent.mp4",
+      "bytes": 485309
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/media/subtitles.srt",
+      "bytes": 1328
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/plans/experience-plan.json",
+      "bytes": 260
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/plans/experience-use.json",
+      "bytes": 663
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/plans/project.json",
+      "bytes": 2145
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/qa/audit.json",
+      "bytes": 10266
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/qa/delivery.json",
+      "bytes": 1344
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/qa/editor-import.json",
+      "bytes": 410
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/qa/production-review.json",
+      "bytes": 4084
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/qa/render-final.json",
+      "bytes": 151
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/qa/render-full.json",
+      "bytes": 151
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/qa/render-proof.json",
+      "bytes": 143
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/qa/still-times.json",
+      "bytes": 61
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/qa/voice.json",
+      "bytes": 432
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/requirements.txt",
+      "bytes": 16
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/scripts/bind_review.py",
+      "bytes": 1285
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/scripts/build_script.py",
+      "bytes": 2855
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/scripts/make_qa.py",
+      "bytes": 6701
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/scripts/simulate.py",
+      "bytes": 3746
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/scripts/verify_claims.py",
+      "bytes": 4214
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/source/draft.txt",
+      "bytes": 887
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/source/script.json",
+      "bytes": 2192
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/source/storyboard.json",
+      "bytes": 3606
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/voice.py",
+      "bytes": 7778
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/工程/package.json",
+      "bytes": 568
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/工程/render.mjs",
+      "bytes": 3430
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/工程/src/Chapter.tsx",
+      "bytes": 6269
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/工程/src/entry.tsx",
+      "bytes": 614
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/工程/src/scenes.tsx",
+      "bytes": 28822
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/工程/src/stats.json",
+      "bytes": 46485
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/工程/src/style.css",
+      "bytes": 104
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/工程/src/theme.ts",
+      "bytes": 1525
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/工程/src/timing.json",
+      "bytes": 7250
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/工程/src/ui.tsx",
+      "bytes": 4556
+    },
+    {
+      "path": "examples/failed-cases/R05-kelly-test/工程/tsconfig.json",
+      "bytes": 317
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/README.md",
+      "bytes": 4271
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/archive.json",
+      "bytes": 473
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/assets/timeline.json",
+      "bytes": 6110
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/assets/word-boundaries.json",
+      "bytes": 13569
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/evidence/fact-review.json",
+      "bytes": 9622
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/evidence/script-review.json",
+      "bytes": 881
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/evidence/source-manifest.json",
+      "bytes": 2961
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/media/poster.jpg",
+      "bytes": 19940
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/media/preview-silent.mp4",
+      "bytes": 455311
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/media/subtitles.srt",
+      "bytes": 1241
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/plans/captions.json",
+      "bytes": 138
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/plans/content-binding.json",
+      "bytes": 402
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/plans/migration.json",
+      "bytes": 4052
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/plans/project.json",
+      "bytes": 1651
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/qa/audit.json",
+      "bytes": 10095
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/qa/caption-reference.json",
+      "bytes": 7306
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/qa/caption-verification.json",
+      "bytes": 14785
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/qa/editor-import.json",
+      "bytes": 339
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/qa/full-review.json",
+      "bytes": 5401
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/qa/pace.json",
+      "bytes": 928
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/qa/production-review.json",
+      "bytes": 3127
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/qa/render-full.json",
+      "bytes": 191
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/qa/still-times.json",
+      "bytes": 191
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/qa/voice.json",
+      "bytes": 446
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/requirements.txt",
+      "bytes": 31
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/source/content.json",
+      "bytes": 4001
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/source/draft.txt",
+      "bytes": 876
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/source/script.json",
+      "bytes": 1944
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/source/storyboard.json",
+      "bytes": 3329
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/voice.py",
+      "bytes": 7778
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/工程/package.json",
+      "bytes": 568
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/工程/render.mjs",
+      "bytes": 3815
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/工程/src/CaptionProbe.tsx",
+      "bytes": 695
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/工程/src/Chapter.tsx",
+      "bytes": 13489
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/工程/src/content.generated.json",
+      "bytes": 1110
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/工程/src/entry.tsx",
+      "bytes": 650
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/工程/src/style.css",
+      "bytes": 2206
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/工程/src/timing.json",
+      "bytes": 6110
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/工程/src/vertical.css",
+      "bytes": 474
+    },
+    {
+      "path": "examples/failed-cases/R06-fund-paper/工程/tsconfig.json",
+      "bytes": 317
+    },
+    {
+      "path": "examples/failed-cases/README.md",
+      "bytes": 2681
+    },
+    {
+      "path": "examples/failed-cases/first-full/BRIEF.txt",
+      "bytes": 2821
+    },
+    {
+      "path": "examples/failed-cases/first-full/README.md",
+      "bytes": 588
+    },
+    {
+      "path": "examples/failed-cases/first-full/adapt_renderer.py",
+      "bytes": 3256
+    },
+    {
+      "path": "examples/failed-cases/first-full/approved-intro.js",
+      "bytes": 6890
+    },
+    {
+      "path": "examples/failed-cases/first-full/archive.json",
+      "bytes": 375
+    },
+    {
+      "path": "examples/failed-cases/first-full/assets/timeline.json",
+      "bytes": 12827
+    },
+    {
+      "path": "examples/failed-cases/first-full/assets/voice-boundaries.json",
+      "bytes": 20087
+    },
+    {
+      "path": "examples/failed-cases/first-full/export_project.py",
+      "bytes": 4768
+    },
+    {
+      "path": "examples/failed-cases/first-full/film.js",
+      "bytes": 17968
+    },
+    {
+      "path": "examples/failed-cases/first-full/index.html",
+      "bytes": 602
+    },
+    {
+      "path": "examples/failed-cases/first-full/mix_audio.py",
+      "bytes": 4439
+    },
+    {
+      "path": "examples/failed-cases/first-full/package_delivery.py",
+      "bytes": 3276
+    },
+    {
+      "path": "examples/failed-cases/first-full/prepare_audio.py",
+      "bytes": 4218
+    },
+    {
+      "path": "examples/failed-cases/first-full/qa/audio-master.json",
+      "bytes": 1516
+    },
+    {
+      "path": "examples/failed-cases/first-full/qa/browser-errors.json",
+      "bytes": 2
+    },
+    {
+      "path": "examples/failed-cases/first-full/qa/final.json",
+      "bytes": 1704
+    },
+    {
+      "path": "examples/failed-cases/first-full/qa/probe-meta.json",
+      "bytes": 1245
+    },
+    {
+      "path": "examples/failed-cases/first-full/qa/project.json",
+      "bytes": 285
+    },
+    {
+      "path": "examples/failed-cases/first-full/qa/render-log.txt",
+      "bytes": 1033
+    },
+    {
+      "path": "examples/failed-cases/first-full/qa/review.txt",
+      "bytes": 2685
+    },
+    {
+      "path": "examples/failed-cases/first-full/qa/run-start.json",
+      "bytes": 609
+    },
+    {
+      "path": "examples/failed-cases/first-full/qa/voice-production.json",
+      "bytes": 274
+    },
+    {
+      "path": "examples/failed-cases/first-full/qa_video.py",
+      "bytes": 2809
+    },
+    {
+      "path": "examples/failed-cases/first-full/render.mjs",
+      "bytes": 5974
+    },
+    {
+      "path": "examples/failed-cases/first-full/review_frames.py",
+      "bytes": 2077
+    },
+    {
+      "path": "examples/failed-cases/first-full/source/narration.txt",
+      "bytes": 1082
+    },
+    {
+      "path": "examples/failed-cases/first-full/source/notebook-prompt.json",
+      "bytes": 1245
+    },
+    {
+      "path": "examples/failed-cases/first-full/source/reused-image-prompts.json",
+      "bytes": 4921
+    },
+    {
+      "path": "examples/failed-cases/first-full/source/reused-lens-prompt.txt",
+      "bytes": 1114
+    },
+    {
+      "path": "examples/failed-cases/first-full/source/script.json",
+      "bytes": 3235
+    },
+    {
+      "path": "examples/failed-cases/first-full/source/source-mapping.csv",
+      "bytes": 1927
+    },
+    {
+      "path": "examples/failed-cases/first-full/source/sources.csv",
+      "bytes": 791
+    },
+    {
+      "path": "examples/failed-cases/first-full/timeline.js",
+      "bytes": 9774
+    },
+    {
+      "path": "examples/failed-cases/first-full/成本与效率.csv",
+      "bytes": 1435
+    },
+    {
+      "path": "examples/failed-cases/first-full/打开与修改说明.txt",
+      "bytes": 2434
     },
     {
       "path": "examples/gallery/art-01.html",
@@ -5415,6 +6583,1554 @@
     {
       "path": "examples/gallery/validation.json",
       "bytes": 298
+    },
+    {
+      "path": "examples/light-projects/README.md",
+      "bytes": 2510
+    },
+    {
+      "path": "examples/light-projects/article-studies/BRIEF.txt",
+      "bytes": 2553
+    },
+    {
+      "path": "examples/light-projects/article-studies/README.md",
+      "bytes": 872
+    },
+    {
+      "path": "examples/light-projects/article-studies/archive.json",
+      "bytes": 401
+    },
+    {
+      "path": "examples/light-projects/article-studies/assets/bust/manifest.json",
+      "bytes": 2775
+    },
+    {
+      "path": "examples/light-projects/article-studies/assets/notosanssc-OFL.txt",
+      "bytes": 4388
+    },
+    {
+      "path": "examples/light-projects/article-studies/assets/notoserifsc-OFL.txt",
+      "bytes": 4350
+    },
+    {
+      "path": "examples/light-projects/article-studies/assets/sprites/manifest.json",
+      "bytes": 8943
+    },
+    {
+      "path": "examples/light-projects/article-studies/assets/timeline-editorial.json",
+      "bytes": 1676
+    },
+    {
+      "path": "examples/light-projects/article-studies/assets/timeline-pixel.json",
+      "bytes": 1919
+    },
+    {
+      "path": "examples/light-projects/article-studies/assets/timeline-spatial.json",
+      "bytes": 1893
+    },
+    {
+      "path": "examples/light-projects/article-studies/assets/voice-editorial-boundaries.json",
+      "bytes": 2839
+    },
+    {
+      "path": "examples/light-projects/article-studies/assets/voice-pixel-boundaries.json",
+      "bytes": 2839
+    },
+    {
+      "path": "examples/light-projects/article-studies/assets/voice-spatial-boundaries.json",
+      "bytes": 2129
+    },
+    {
+      "path": "examples/light-projects/article-studies/common.mjs",
+      "bytes": 2495
+    },
+    {
+      "path": "examples/light-projects/article-studies/finish.py",
+      "bytes": 6181
+    },
+    {
+      "path": "examples/light-projects/article-studies/index.html",
+      "bytes": 651
+    },
+    {
+      "path": "examples/light-projects/article-studies/main.mjs",
+      "bytes": 1968
+    },
+    {
+      "path": "examples/light-projects/article-studies/package.py",
+      "bytes": 1237
+    },
+    {
+      "path": "examples/light-projects/article-studies/prepare_audio.py",
+      "bytes": 3095
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/editorial-browser-errors.json",
+      "bytes": 2
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/editorial-determinism.json",
+      "bytes": 389
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/editorial-probe-meta.json",
+      "bytes": 312
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/editorial-voice.json",
+      "bytes": 197
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/final-checks.json",
+      "bytes": 3895
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/pixel-browser-errors.json",
+      "bytes": 2
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/pixel-determinism.json",
+      "bytes": 389
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/pixel-probe-meta.json",
+      "bytes": 281
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/pixel-voice.json",
+      "bytes": 198
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/spatial-browser-errors.json",
+      "bytes": 2
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/spatial-determinism.json",
+      "bytes": 389
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/spatial-probe-meta.json",
+      "bytes": 332
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/spatial-voice.json",
+      "bytes": 198
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/viewer-check.json",
+      "bytes": 657
+    },
+    {
+      "path": "examples/light-projects/article-studies/qa/制作方审看.txt",
+      "bytes": 1904
+    },
+    {
+      "path": "examples/light-projects/article-studies/render.mjs",
+      "bytes": 6646
+    },
+    {
+      "path": "examples/light-projects/article-studies/source/package-manifest.json",
+      "bytes": 34066
+    },
+    {
+      "path": "examples/light-projects/article-studies/source/scripts.json",
+      "bytes": 3609
+    },
+    {
+      "path": "examples/light-projects/article-studies/source/复用角色生成提示词.json",
+      "bytes": 3149
+    },
+    {
+      "path": "examples/light-projects/article-studies/source/来源与费用.txt",
+      "bytes": 2483
+    },
+    {
+      "path": "examples/light-projects/article-studies/style-editorial.mjs",
+      "bytes": 3633
+    },
+    {
+      "path": "examples/light-projects/article-studies/style-pixel.mjs",
+      "bytes": 4782
+    },
+    {
+      "path": "examples/light-projects/article-studies/style-spatial.mjs",
+      "bytes": 7235
+    },
+    {
+      "path": "examples/light-projects/article-studies/watch.html",
+      "bytes": 3753
+    },
+    {
+      "path": "examples/light-projects/article-studies/打开与修改说明.txt",
+      "bytes": 2101
+    },
+    {
+      "path": "examples/light-projects/content-lab/BRIEF.md",
+      "bytes": 2061
+    },
+    {
+      "path": "examples/light-projects/content-lab/README.md",
+      "bytes": 818
+    },
+    {
+      "path": "examples/light-projects/content-lab/archive.json",
+      "bytes": 508
+    },
+    {
+      "path": "examples/light-projects/content-lab/assets/bust/manifest.json",
+      "bytes": 2775
+    },
+    {
+      "path": "examples/light-projects/content-lab/assets/notosanssc-OFL.txt",
+      "bytes": 4388
+    },
+    {
+      "path": "examples/light-projects/content-lab/assets/notoserifsc-OFL.txt",
+      "bytes": 4350
+    },
+    {
+      "path": "examples/light-projects/content-lab/assets/sprites/manifest.json",
+      "bytes": 8943
+    },
+    {
+      "path": "examples/light-projects/content-lab/assets/timeline-editorial.json",
+      "bytes": 3343
+    },
+    {
+      "path": "examples/light-projects/content-lab/assets/timeline-pixel.json",
+      "bytes": 3523
+    },
+    {
+      "path": "examples/light-projects/content-lab/assets/timeline-spatial.json",
+      "bytes": 3321
+    },
+    {
+      "path": "examples/light-projects/content-lab/assets/voice-editorial-boundaries.json",
+      "bytes": 7549
+    },
+    {
+      "path": "examples/light-projects/content-lab/assets/voice-pixel-boundaries.json",
+      "bytes": 8166
+    },
+    {
+      "path": "examples/light-projects/content-lab/assets/voice-spatial-boundaries.json",
+      "bytes": 8262
+    },
+    {
+      "path": "examples/light-projects/content-lab/bootstrap.py",
+      "bytes": 4813
+    },
+    {
+      "path": "examples/light-projects/content-lab/common.mjs",
+      "bytes": 2495
+    },
+    {
+      "path": "examples/light-projects/content-lab/finish.py",
+      "bytes": 7024
+    },
+    {
+      "path": "examples/light-projects/content-lab/index.html",
+      "bytes": 651
+    },
+    {
+      "path": "examples/light-projects/content-lab/main.mjs",
+      "bytes": 1868
+    },
+    {
+      "path": "examples/light-projects/content-lab/package.py",
+      "bytes": 1252
+    },
+    {
+      "path": "examples/light-projects/content-lab/prepare_audio.py",
+      "bytes": 3092
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/editorial-browser-errors.json",
+      "bytes": 2
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/editorial-determinism.json",
+      "bytes": 389
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/editorial-probe-meta.json",
+      "bytes": 361
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/editorial-voice.json",
+      "bytes": 198
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/final-checks.json",
+      "bytes": 3543
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/pixel-browser-errors.json",
+      "bytes": 2
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/pixel-determinism.json",
+      "bytes": 389
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/pixel-probe-meta.json",
+      "bytes": 308
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/pixel-voice.json",
+      "bytes": 198
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/spatial-browser-errors.json",
+      "bytes": 2
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/spatial-determinism.json",
+      "bytes": 389
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/spatial-probe-meta.json",
+      "bytes": 310
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/spatial-voice.json",
+      "bytes": 199
+    },
+    {
+      "path": "examples/light-projects/content-lab/qa/制作方审看.md",
+      "bytes": 2255
+    },
+    {
+      "path": "examples/light-projects/content-lab/render.mjs",
+      "bytes": 6646
+    },
+    {
+      "path": "examples/light-projects/content-lab/source/package-manifest.json",
+      "bytes": 34678
+    },
+    {
+      "path": "examples/light-projects/content-lab/source/scripts.json",
+      "bytes": 5493
+    },
+    {
+      "path": "examples/light-projects/content-lab/source/事实核对.md",
+      "bytes": 1200
+    },
+    {
+      "path": "examples/light-projects/content-lab/source/复用角色生成提示词.json",
+      "bytes": 3149
+    },
+    {
+      "path": "examples/light-projects/content-lab/source/来源与费用.md",
+      "bytes": 3516
+    },
+    {
+      "path": "examples/light-projects/content-lab/style-editorial.mjs",
+      "bytes": 5058
+    },
+    {
+      "path": "examples/light-projects/content-lab/style-pixel.mjs",
+      "bytes": 6040
+    },
+    {
+      "path": "examples/light-projects/content-lab/style-spatial.mjs",
+      "bytes": 6656
+    },
+    {
+      "path": "examples/light-projects/content-lab/watch.html",
+      "bytes": 4946
+    },
+    {
+      "path": "examples/light-projects/content-lab/打开与修改说明.md",
+      "bytes": 2871
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/README.md",
+      "bytes": 719
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/README.txt",
+      "bytes": 1763
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/archive.json",
+      "bytes": 359
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/assets/timeline.json",
+      "bytes": 24156
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/assets/word-boundaries.json",
+      "bytes": 59724
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/build_delivery.py",
+      "bytes": 9564
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/check_viewer.py",
+      "bytes": 3040
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/evidence/script-review.json",
+      "bytes": 3828
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/evidence/source-manifest.json",
+      "bytes": 1910
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/evidence/事实核查与原创算例.txt",
+      "bytes": 7456
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/evidence/来源与改编边界.txt",
+      "bytes": 4229
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/finish.py",
+      "bytes": 4763
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/mix_audio.py",
+      "bytes": 1592
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/package.py",
+      "bytes": 1226
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/prepare_script.py",
+      "bytes": 958
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/audio-events.json",
+      "bytes": 3350
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/audio-master.json",
+      "bytes": 439
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/pipeline-audit.json",
+      "bytes": 8882
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/production-review.json",
+      "bytes": 3204
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/render-captions.json",
+      "bytes": 446
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/render-full.json",
+      "bytes": 442
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/render-proof.json",
+      "bytes": 443
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/still-times.json",
+      "bytes": 344
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/subtitle-layer-repair.json",
+      "bytes": 201
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/subtitle-layout.json",
+      "bytes": 15582
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/technical-checks.json",
+      "bytes": 1076
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/viewer-check.json",
+      "bytes": 658
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/voice-iterations.json",
+      "bytes": 202
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/qa/voice.json",
+      "bytes": 451
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/reband.py",
+      "bytes": 1288
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/record_review.py",
+      "bytes": 2765
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/source/draft.txt",
+      "bytes": 3514
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/source/script.json",
+      "bytes": 7128
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/source/storyboard.json",
+      "bytes": 4365
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/source/完整字幕稿.txt",
+      "bytes": 3385
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/voice.py",
+      "bytes": 6974
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/watch.html",
+      "bytes": 8850
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/audio/bgm.mjs",
+      "bytes": 7373
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/audio/synth.mjs",
+      "bytes": 16757
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/check-captions.mjs",
+      "bytes": 697
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/music.mjs",
+      "bytes": 1446
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/package.json",
+      "bytes": 652
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/render.mjs",
+      "bytes": 2310
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/src/Captions.tsx",
+      "bytes": 1534
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/src/Film.tsx",
+      "bytes": 2029
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/src/Mechanisms.tsx",
+      "bytes": 10094
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/src/Observations.tsx",
+      "bytes": 12448
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/src/caption-layout.ts",
+      "bytes": 758
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/src/design.tsx",
+      "bytes": 4764
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/src/entry.tsx",
+      "bytes": 452
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/src/timing.json",
+      "bytes": 24156
+    },
+    {
+      "path": "examples/light-projects/decision-frequency/工程/tsconfig.json",
+      "bytes": 317
+    },
+    {
+      "path": "examples/light-projects/disappearing25/README.md",
+      "bytes": 713
+    },
+    {
+      "path": "examples/light-projects/disappearing25/apply_opening_patch.py",
+      "bytes": 1041
+    },
+    {
+      "path": "examples/light-projects/disappearing25/archive.json",
+      "bytes": 387
+    },
+    {
+      "path": "examples/light-projects/disappearing25/assets/timeline-missing25.json",
+      "bytes": 4592
+    },
+    {
+      "path": "examples/light-projects/disappearing25/assets/voice-missing25-boundaries.json",
+      "bytes": 13241
+    },
+    {
+      "path": "examples/light-projects/disappearing25/brief.md",
+      "bytes": 2143
+    },
+    {
+      "path": "examples/light-projects/disappearing25/check_voice.py",
+      "bytes": 951
+    },
+    {
+      "path": "examples/light-projects/disappearing25/finalize.py",
+      "bytes": 3272
+    },
+    {
+      "path": "examples/light-projects/disappearing25/finish_checks.py",
+      "bytes": 903
+    },
+    {
+      "path": "examples/light-projects/disappearing25/fit_audio.py",
+      "bytes": 1117
+    },
+    {
+      "path": "examples/light-projects/disappearing25/mix_audio.py",
+      "bytes": 1592
+    },
+    {
+      "path": "examples/light-projects/disappearing25/package-manifest.json",
+      "bytes": 8139
+    },
+    {
+      "path": "examples/light-projects/disappearing25/package_delivery.py",
+      "bytes": 1496
+    },
+    {
+      "path": "examples/light-projects/disappearing25/prepare_audio.py",
+      "bytes": 3092
+    },
+    {
+      "path": "examples/light-projects/disappearing25/qa/audio-events.json",
+      "bytes": 1334
+    },
+    {
+      "path": "examples/light-projects/disappearing25/qa/audio-master.json",
+      "bytes": 439
+    },
+    {
+      "path": "examples/light-projects/disappearing25/qa/browser-state.json",
+      "bytes": 277
+    },
+    {
+      "path": "examples/light-projects/disappearing25/qa/final-checks.json",
+      "bytes": 3030
+    },
+    {
+      "path": "examples/light-projects/disappearing25/qa/missing25-voice.json",
+      "bytes": 198
+    },
+    {
+      "path": "examples/light-projects/disappearing25/qa/review_log.md",
+      "bytes": 1927
+    },
+    {
+      "path": "examples/light-projects/disappearing25/qa/voice-asr.json",
+      "bytes": 20109
+    },
+    {
+      "path": "examples/light-projects/disappearing25/qa_frames.py",
+      "bytes": 1374
+    },
+    {
+      "path": "examples/light-projects/disappearing25/source/scripts.json",
+      "bytes": 1481
+    },
+    {
+      "path": "examples/light-projects/disappearing25/source/来源与实际复用.md",
+      "bytes": 2845
+    },
+    {
+      "path": "examples/light-projects/disappearing25/watch.html",
+      "bytes": 2539
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/audio/bgm.mjs",
+      "bytes": 7373
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/audio/synth.mjs",
+      "bytes": 16757
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/music.mjs",
+      "bytes": 1171
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/package.json",
+      "bytes": 940
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/remotion.config.ts",
+      "bytes": 135
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/src/Missing25.tsx",
+      "bytes": 14734
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/src/entry.tsx",
+      "bytes": 223
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/src/library/anim.ts",
+      "bytes": 1980
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/src/library/cues.ts",
+      "bytes": 1510
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/src/library/redshift/theme.ts",
+      "bytes": 1134
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/src/library/vox/theme.ts",
+      "bytes": 2924
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/src/timing.json",
+      "bytes": 8988
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/stills.mjs",
+      "bytes": 764
+    },
+    {
+      "path": "examples/light-projects/disappearing25/工程/tsconfig.json",
+      "bytes": 317
+    },
+    {
+      "path": "examples/light-projects/disappearing25/打开与修改说明.md",
+      "bytes": 2301
+    },
+    {
+      "path": "examples/light-projects/gold-full/README.md",
+      "bytes": 684
+    },
+    {
+      "path": "examples/light-projects/gold-full/README.txt",
+      "bytes": 2861
+    },
+    {
+      "path": "examples/light-projects/gold-full/archive.json",
+      "bytes": 389
+    },
+    {
+      "path": "examples/light-projects/gold-full/assets/timeline.json",
+      "bytes": 10887
+    },
+    {
+      "path": "examples/light-projects/gold-full/assets/word-boundaries.json",
+      "bytes": 24153
+    },
+    {
+      "path": "examples/light-projects/gold-full/build_delivery.py",
+      "bytes": 17194
+    },
+    {
+      "path": "examples/light-projects/gold-full/check_viewer.py",
+      "bytes": 2355
+    },
+    {
+      "path": "examples/light-projects/gold-full/finish.py",
+      "bytes": 4634
+    },
+    {
+      "path": "examples/light-projects/gold-full/init.py",
+      "bytes": 5855
+    },
+    {
+      "path": "examples/light-projects/gold-full/inspect_proof.py",
+      "bytes": 1119
+    },
+    {
+      "path": "examples/light-projects/gold-full/mix_audio.py",
+      "bytes": 1592
+    },
+    {
+      "path": "examples/light-projects/gold-full/package.py",
+      "bytes": 1595
+    },
+    {
+      "path": "examples/light-projects/gold-full/qa/audio-events.json",
+      "bytes": 1550
+    },
+    {
+      "path": "examples/light-projects/gold-full/qa/audio-master.json",
+      "bytes": 440
+    },
+    {
+      "path": "examples/light-projects/gold-full/qa/cost-and-reuse.json",
+      "bytes": 854
+    },
+    {
+      "path": "examples/light-projects/gold-full/qa/final-checks.json",
+      "bytes": 1103
+    },
+    {
+      "path": "examples/light-projects/gold-full/qa/render-full.json",
+      "bytes": 448
+    },
+    {
+      "path": "examples/light-projects/gold-full/qa/render-proof.json",
+      "bytes": 445
+    },
+    {
+      "path": "examples/light-projects/gold-full/qa/technical-checks.json",
+      "bytes": 1301
+    },
+    {
+      "path": "examples/light-projects/gold-full/qa/tool-notes.json",
+      "bytes": 532
+    },
+    {
+      "path": "examples/light-projects/gold-full/qa/viewer-check.json",
+      "bytes": 401
+    },
+    {
+      "path": "examples/light-projects/gold-full/qa/voice.json",
+      "bytes": 309
+    },
+    {
+      "path": "examples/light-projects/gold-full/qa/制作检查记录.json",
+      "bytes": 1345
+    },
+    {
+      "path": "examples/light-projects/gold-full/qa_prepare.py",
+      "bytes": 686
+    },
+    {
+      "path": "examples/light-projects/gold-full/qa_sequences.py",
+      "bytes": 848
+    },
+    {
+      "path": "examples/light-projects/gold-full/source/script.json",
+      "bytes": 4029
+    },
+    {
+      "path": "examples/light-projects/gold-full/source/source-manifest.json",
+      "bytes": 852
+    },
+    {
+      "path": "examples/light-projects/gold-full/source/分镜动作与时间码.json",
+      "bytes": 3634
+    },
+    {
+      "path": "examples/light-projects/gold-full/source/完整字幕稿.txt",
+      "bytes": 1304
+    },
+    {
+      "path": "examples/light-projects/gold-full/source/核查来源.json",
+      "bytes": 3664
+    },
+    {
+      "path": "examples/light-projects/gold-full/source/脚本证据映射.json",
+      "bytes": 2159
+    },
+    {
+      "path": "examples/light-projects/gold-full/voice.py",
+      "bytes": 4371
+    },
+    {
+      "path": "examples/light-projects/gold-full/watch.html",
+      "bytes": 17642
+    },
+    {
+      "path": "examples/light-projects/gold-full/交付文件清单.json",
+      "bytes": 11431
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/audio/bgm.mjs",
+      "bytes": 7373
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/audio/synth.mjs",
+      "bytes": 16757
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/music.mjs",
+      "bytes": 1327
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/package.json",
+      "bytes": 652
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/remotion.config.ts",
+      "bytes": 135
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/render.mjs",
+      "bytes": 2040
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/src/FullFilm.tsx",
+      "bytes": 22011
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/src/Mechanism.tsx",
+      "bytes": 10201
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/src/entry.tsx",
+      "bytes": 289
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/src/library/anim.ts",
+      "bytes": 1980
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/src/library/redshift/theme.ts",
+      "bytes": 1134
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/src/library/vox/theme.ts",
+      "bytes": 2934
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/src/proof-timing.json",
+      "bytes": 895
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/src/timing.json",
+      "bytes": 10887
+    },
+    {
+      "path": "examples/light-projects/gold-full/工程/tsconfig.json",
+      "bytes": 317
+    },
+    {
+      "path": "examples/light-projects/gold-proof/README.md",
+      "bytes": 587
+    },
+    {
+      "path": "examples/light-projects/gold-proof/archive.json",
+      "bytes": 456
+    },
+    {
+      "path": "examples/light-projects/gold-proof/assets/timeline.json",
+      "bytes": 895
+    },
+    {
+      "path": "examples/light-projects/gold-proof/assets/word-boundaries.json",
+      "bytes": 2553
+    },
+    {
+      "path": "examples/light-projects/gold-proof/build_content.py",
+      "bytes": 11751
+    },
+    {
+      "path": "examples/light-projects/gold-proof/check_report.py",
+      "bytes": 1914
+    },
+    {
+      "path": "examples/light-projects/gold-proof/extract_qa.py",
+      "bytes": 1515
+    },
+    {
+      "path": "examples/light-projects/gold-proof/finalize.py",
+      "bytes": 4482
+    },
+    {
+      "path": "examples/light-projects/gold-proof/make_report.py",
+      "bytes": 17789
+    },
+    {
+      "path": "examples/light-projects/gold-proof/mix_audio.py",
+      "bytes": 1592
+    },
+    {
+      "path": "examples/light-projects/gold-proof/pipeline-status.json",
+      "bytes": 932
+    },
+    {
+      "path": "examples/light-projects/gold-proof/prepare_audio.py",
+      "bytes": 3431
+    },
+    {
+      "path": "examples/light-projects/gold-proof/qa/audio-events.json",
+      "bytes": 440
+    },
+    {
+      "path": "examples/light-projects/gold-proof/qa/audio-master.json",
+      "bytes": 439
+    },
+    {
+      "path": "examples/light-projects/gold-proof/qa/final-checks.json",
+      "bytes": 805
+    },
+    {
+      "path": "examples/light-projects/gold-proof/qa/report-check.json",
+      "bytes": 334
+    },
+    {
+      "path": "examples/light-projects/gold-proof/qa/visual-review.json",
+      "bytes": 1750
+    },
+    {
+      "path": "examples/light-projects/gold-proof/qa/voice.json",
+      "bytes": 552
+    },
+    {
+      "path": "examples/light-projects/gold-proof/source/sample-script.json",
+      "bytes": 383
+    },
+    {
+      "path": "examples/light-projects/gold-proof/source/source-manifest.json",
+      "bytes": 852
+    },
+    {
+      "path": "examples/light-projects/gold-proof/source/复用记录.json",
+      "bytes": 850
+    },
+    {
+      "path": "examples/light-projects/gold-proof/source/完整分镜表.json",
+      "bytes": 2041
+    },
+    {
+      "path": "examples/light-projects/gold-proof/source/完整口播稿.txt",
+      "bytes": 991
+    },
+    {
+      "path": "examples/light-projects/gold-proof/source/实际样片动作表.json",
+      "bytes": 922
+    },
+    {
+      "path": "examples/light-projects/gold-proof/source/核查来源.json",
+      "bytes": 2184
+    },
+    {
+      "path": "examples/light-projects/gold-proof/source/论点证据表.json",
+      "bytes": 2830
+    },
+    {
+      "path": "examples/light-projects/gold-proof/source/选题决策.json",
+      "bytes": 1160
+    },
+    {
+      "path": "examples/light-projects/gold-proof/watch.html",
+      "bytes": 166
+    },
+    {
+      "path": "examples/light-projects/gold-proof/五步执行报告.html",
+      "bytes": 25190
+    },
+    {
+      "path": "examples/light-projects/gold-proof/工程/audio/bgm.mjs",
+      "bytes": 7373
+    },
+    {
+      "path": "examples/light-projects/gold-proof/工程/audio/synth.mjs",
+      "bytes": 16757
+    },
+    {
+      "path": "examples/light-projects/gold-proof/工程/music.mjs",
+      "bytes": 919
+    },
+    {
+      "path": "examples/light-projects/gold-proof/工程/package.json",
+      "bytes": 940
+    },
+    {
+      "path": "examples/light-projects/gold-proof/工程/remotion.config.ts",
+      "bytes": 135
+    },
+    {
+      "path": "examples/light-projects/gold-proof/工程/src/TwoControls.tsx",
+      "bytes": 10181
+    },
+    {
+      "path": "examples/light-projects/gold-proof/工程/src/entry.tsx",
+      "bytes": 276
+    },
+    {
+      "path": "examples/light-projects/gold-proof/工程/src/library/anim.ts",
+      "bytes": 1980
+    },
+    {
+      "path": "examples/light-projects/gold-proof/工程/src/library/redshift/theme.ts",
+      "bytes": 1134
+    },
+    {
+      "path": "examples/light-projects/gold-proof/工程/src/library/vox/theme.ts",
+      "bytes": 2934
+    },
+    {
+      "path": "examples/light-projects/gold-proof/工程/src/timing.json",
+      "bytes": 895
+    },
+    {
+      "path": "examples/light-projects/gold-proof/工程/tsconfig.json",
+      "bytes": 317
+    },
+    {
+      "path": "examples/light-projects/gold-proof/打开与修改说明.txt",
+      "bytes": 2130
+    },
+    {
+      "path": "examples/light-projects/index-machine/README.md",
+      "bytes": 623
+    },
+    {
+      "path": "examples/light-projects/index-machine/README.txt",
+      "bytes": 1995
+    },
+    {
+      "path": "examples/light-projects/index-machine/archive.json",
+      "bytes": 349
+    },
+    {
+      "path": "examples/light-projects/index-machine/assets/timeline.json",
+      "bytes": 24206
+    },
+    {
+      "path": "examples/light-projects/index-machine/assets/word-boundaries.json",
+      "bytes": 60110
+    },
+    {
+      "path": "examples/light-projects/index-machine/build_delivery.py",
+      "bytes": 10351
+    },
+    {
+      "path": "examples/light-projects/index-machine/check_viewer.py",
+      "bytes": 3040
+    },
+    {
+      "path": "examples/light-projects/index-machine/evidence/claim-ledger.json",
+      "bytes": 12304
+    },
+    {
+      "path": "examples/light-projects/index-machine/evidence/来源与改编边界.txt",
+      "bytes": 5479
+    },
+    {
+      "path": "examples/light-projects/index-machine/finish.py",
+      "bytes": 4204
+    },
+    {
+      "path": "examples/light-projects/index-machine/merge_repair.py",
+      "bytes": 1378
+    },
+    {
+      "path": "examples/light-projects/index-machine/mix_audio.py",
+      "bytes": 1592
+    },
+    {
+      "path": "examples/light-projects/index-machine/package.py",
+      "bytes": 1159
+    },
+    {
+      "path": "examples/light-projects/index-machine/qa/audio-events.json",
+      "bytes": 1576
+    },
+    {
+      "path": "examples/light-projects/index-machine/qa/audio-master.json",
+      "bytes": 440
+    },
+    {
+      "path": "examples/light-projects/index-machine/qa/partial-repair.json",
+      "bytes": 220
+    },
+    {
+      "path": "examples/light-projects/index-machine/qa/production-review.json",
+      "bytes": 2475
+    },
+    {
+      "path": "examples/light-projects/index-machine/qa/render-full.json",
+      "bytes": 439
+    },
+    {
+      "path": "examples/light-projects/index-machine/qa/render-proof.json",
+      "bytes": 441
+    },
+    {
+      "path": "examples/light-projects/index-machine/qa/still-times.json",
+      "bytes": 385
+    },
+    {
+      "path": "examples/light-projects/index-machine/qa/technical-checks.json",
+      "bytes": 975
+    },
+    {
+      "path": "examples/light-projects/index-machine/qa/valuation-repair.json",
+      "bytes": 36
+    },
+    {
+      "path": "examples/light-projects/index-machine/qa/viewer-check.json",
+      "bytes": 659
+    },
+    {
+      "path": "examples/light-projects/index-machine/qa/voice-iterations.json",
+      "bytes": 762
+    },
+    {
+      "path": "examples/light-projects/index-machine/qa/voice-subtitles.json",
+      "bytes": 681
+    },
+    {
+      "path": "examples/light-projects/index-machine/qa/voice.json",
+      "bytes": 438
+    },
+    {
+      "path": "examples/light-projects/index-machine/source/script.json",
+      "bytes": 6290
+    },
+    {
+      "path": "examples/light-projects/index-machine/source/完整字幕稿.txt",
+      "bytes": 3415
+    },
+    {
+      "path": "examples/light-projects/index-machine/source/论证与镜头说明.txt",
+      "bytes": 7455
+    },
+    {
+      "path": "examples/light-projects/index-machine/voice.py",
+      "bytes": 6967
+    },
+    {
+      "path": "examples/light-projects/index-machine/watch.html",
+      "bytes": 14622
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/audio/bgm.mjs",
+      "bytes": 7373
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/audio/synth.mjs",
+      "bytes": 16757
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/music.mjs",
+      "bytes": 1413
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/package.json",
+      "bytes": 652
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/remotion.config.ts",
+      "bytes": 135
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/render.mjs",
+      "bytes": 2730
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/src/Capital.tsx",
+      "bytes": 14226
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/src/Film.tsx",
+      "bytes": 3073
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/src/Stations.tsx",
+      "bytes": 6761
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/src/Weights.tsx",
+      "bytes": 10433
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/src/design.tsx",
+      "bytes": 3413
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/src/entry.tsx",
+      "bytes": 273
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/src/timing.json",
+      "bytes": 24206
+    },
+    {
+      "path": "examples/light-projects/index-machine/工程/tsconfig.json",
+      "bytes": 317
+    },
+    {
+      "path": "examples/light-projects/revision/BRIEF.txt",
+      "bytes": 2654
+    },
+    {
+      "path": "examples/light-projects/revision/README.md",
+      "bytes": 805
+    },
+    {
+      "path": "examples/light-projects/revision/README.txt",
+      "bytes": 935
+    },
+    {
+      "path": "examples/light-projects/revision/REUSE_AUDIT.txt",
+      "bytes": 3019
+    },
+    {
+      "path": "examples/light-projects/revision/archive.json",
+      "bytes": 352
+    },
+    {
+      "path": "examples/light-projects/revision/assets/subtitles.srt",
+      "bytes": 1792
+    },
+    {
+      "path": "examples/light-projects/revision/assets/timeline.json",
+      "bytes": 8831
+    },
+    {
+      "path": "examples/light-projects/revision/audio-events.json",
+      "bytes": 485
+    },
+    {
+      "path": "examples/light-projects/revision/check_frames.py",
+      "bytes": 1813
+    },
+    {
+      "path": "examples/light-projects/revision/content_check.json",
+      "bytes": 1678
+    },
+    {
+      "path": "examples/light-projects/revision/costs.txt",
+      "bytes": 790
+    },
+    {
+      "path": "examples/light-projects/revision/film.js",
+      "bytes": 12080
+    },
+    {
+      "path": "examples/light-projects/revision/finish.py",
+      "bytes": 6227
+    },
+    {
+      "path": "examples/light-projects/revision/index.html",
+      "bytes": 610
+    },
+    {
+      "path": "examples/light-projects/revision/input.json",
+      "bytes": 1211
+    },
+    {
+      "path": "examples/light-projects/revision/prepare.py",
+      "bytes": 2634
+    },
+    {
+      "path": "examples/light-projects/revision/preview.json",
+      "bytes": 58
+    },
+    {
+      "path": "examples/light-projects/revision/preview_server.py",
+      "bytes": 414
+    },
+    {
+      "path": "examples/light-projects/revision/qa/browser-errors.json",
+      "bytes": 2
+    },
+    {
+      "path": "examples/light-projects/revision/qa/composition.json",
+      "bytes": 276
+    },
+    {
+      "path": "examples/light-projects/revision/qa/final.json",
+      "bytes": 633
+    },
+    {
+      "path": "examples/light-projects/revision/qa/playback.json",
+      "bytes": 179
+    },
+    {
+      "path": "examples/light-projects/revision/qa/review.txt",
+      "bytes": 2278
+    },
+    {
+      "path": "examples/light-projects/revision/render_existing.mjs",
+      "bytes": 4934
+    },
+    {
+      "path": "examples/light-projects/revision/render_xilo.py",
+      "bytes": 608
+    },
+    {
+      "path": "examples/light-projects/revision/script.txt",
+      "bytes": 896
+    },
+    {
+      "path": "examples/light-projects/revision/sources.json",
+      "bytes": 1023
+    },
+    {
+      "path": "examples/light-projects/revision/timeline.js",
+      "bytes": 7112
+    },
+    {
+      "path": "examples/light-projects/revision/watch.html",
+      "bytes": 1864
+    },
+    {
+      "path": "examples/light-projects/style-studies/BRIEF.txt",
+      "bytes": 2598
+    },
+    {
+      "path": "examples/light-projects/style-studies/README.md",
+      "bytes": 856
+    },
+    {
+      "path": "examples/light-projects/style-studies/archive.json",
+      "bytes": 349
+    },
+    {
+      "path": "examples/light-projects/style-studies/assets/bust/manifest.json",
+      "bytes": 2775
+    },
+    {
+      "path": "examples/light-projects/style-studies/assets/notosanssc-OFL.txt",
+      "bytes": 4388
+    },
+    {
+      "path": "examples/light-projects/style-studies/assets/notoserifsc-OFL.txt",
+      "bytes": 4350
+    },
+    {
+      "path": "examples/light-projects/style-studies/assets/sprites/manifest.json",
+      "bytes": 8943
+    },
+    {
+      "path": "examples/light-projects/style-studies/assets/timeline.json",
+      "bytes": 3249
+    },
+    {
+      "path": "examples/light-projects/style-studies/common.mjs",
+      "bytes": 2509
+    },
+    {
+      "path": "examples/light-projects/style-studies/finish.py",
+      "bytes": 3269
+    },
+    {
+      "path": "examples/light-projects/style-studies/index.html",
+      "bytes": 651
+    },
+    {
+      "path": "examples/light-projects/style-studies/main.mjs",
+      "bytes": 1558
+    },
+    {
+      "path": "examples/light-projects/style-studies/mix_audio.py",
+      "bytes": 2820
+    },
+    {
+      "path": "examples/light-projects/style-studies/package.py",
+      "bytes": 1500
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/audio.json",
+      "bytes": 1525
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/editorial-browser-errors.json",
+      "bytes": 2
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/editorial-determinism.json",
+      "bytes": 389
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/editorial-probe-meta.json",
+      "bytes": 262
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/editorial-technical.json",
+      "bytes": 3878
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/final-checks.json",
+      "bytes": 2503
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/finish-log.txt",
+      "bytes": 2205
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/pixel-browser-errors.json",
+      "bytes": 2
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/pixel-determinism.json",
+      "bytes": 389
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/pixel-probe-meta.json",
+      "bytes": 276
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/pixel-technical.json",
+      "bytes": 3874
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/spatial-browser-errors.json",
+      "bytes": 2
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/spatial-determinism.json",
+      "bytes": 389
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/spatial-probe-meta.json",
+      "bytes": 260
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/spatial-technical.json",
+      "bytes": 3876
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa/制作方审看.txt",
+      "bytes": 2364
+    },
+    {
+      "path": "examples/light-projects/style-studies/qa_frames.py",
+      "bytes": 2251
+    },
+    {
+      "path": "examples/light-projects/style-studies/render.mjs",
+      "bytes": 6636
+    },
+    {
+      "path": "examples/light-projects/style-studies/source/image-prompts.json",
+      "bytes": 3149
+    },
+    {
+      "path": "examples/light-projects/style-studies/source/package-manifest.json",
+      "bytes": 23045
+    },
+    {
+      "path": "examples/light-projects/style-studies/source/来源与费用.txt",
+      "bytes": 1917
+    },
+    {
+      "path": "examples/light-projects/style-studies/style-editorial.mjs",
+      "bytes": 4342
+    },
+    {
+      "path": "examples/light-projects/style-studies/style-pixel.mjs",
+      "bytes": 6011
+    },
+    {
+      "path": "examples/light-projects/style-studies/style-spatial.mjs",
+      "bytes": 6738
+    },
+    {
+      "path": "examples/light-projects/style-studies/watch.html",
+      "bytes": 3841
+    },
+    {
+      "path": "examples/light-projects/style-studies/打开与修改说明.txt",
+      "bytes": 2657
     },
     {
       "path": "examples/pareto-diorama/README.md",
@@ -6170,7 +8886,7 @@
     },
     {
       "path": "examples/reflections/index.html",
-      "bytes": 21612
+      "bytes": 27520
     },
     {
       "path": "index.html",
@@ -6178,11 +8894,11 @@
     },
     {
       "path": "references/audio-and-materials.md",
-      "bytes": 2231
+      "bytes": 8362
     },
     {
       "path": "references/diorama-3d.md",
-      "bytes": 6591
+      "bytes": 8674
     },
     {
       "path": "references/episode-contract.md",
@@ -6246,7 +8962,7 @@
     },
     {
       "path": "references/experience/cards/E14.md",
-      "bytes": 1049
+      "bytes": 1138
     },
     {
       "path": "references/experience/cards/E15.md",
@@ -6285,8 +9001,16 @@
       "bytes": 1464
     },
     {
+      "path": "references/experience/cards/E24.md",
+      "bytes": 1346
+    },
+    {
+      "path": "references/experience/cards/E25.md",
+      "bytes": 1560
+    },
+    {
       "path": "references/experience/casebook.md",
-      "bytes": 3102
+      "bytes": 3389
     },
     {
       "path": "references/experience/evidence/chapter-repair.json",
@@ -6338,19 +9062,19 @@
     },
     {
       "path": "references/experience/index.json",
-      "bytes": 14535
+      "bytes": 16198
     },
     {
       "path": "references/experience/reflections.json",
-      "bytes": 16178
+      "bytes": 22342
     },
     {
       "path": "references/experience/reflections.md",
-      "bytes": 2360
+      "bytes": 2826
     },
     {
       "path": "references/experience/sources.json",
-      "bytes": 9686
+      "bytes": 10529
     },
     {
       "path": "references/experience/usage.md",
@@ -6409,6 +9133,14 @@
       "bytes": 14737
     },
     {
+      "path": "references/sample-catalog.json",
+      "bytes": 28384
+    },
+    {
+      "path": "references/sim-typography.md",
+      "bytes": 7355
+    },
+    {
       "path": "references/visual-library.md",
       "bytes": 6237
     },
@@ -6422,7 +9154,7 @@
     },
     {
       "path": "scripts/build_readme_media.py",
-      "bytes": 13196
+      "bytes": 17870
     },
     {
       "path": "scripts/build_reference_evidence.py",
@@ -6430,7 +9162,7 @@
     },
     {
       "path": "scripts/build_reflections.py",
-      "bytes": 6385
+      "bytes": 7291
     },
     {
       "path": "scripts/cinema.py",
@@ -6438,7 +9170,7 @@
     },
     {
       "path": "scripts/diorama.py",
-      "bytes": 16825
+      "bytes": 17002
     },
     {
       "path": "scripts/experience.py",
@@ -6450,11 +9182,15 @@
     },
     {
       "path": "scripts/mix_music.py",
-      "bytes": 5645
+      "bytes": 11401
+    },
+    {
+      "path": "scripts/music_library.py",
+      "bytes": 3222
     },
     {
       "path": "scripts/package_skill.py",
-      "bytes": 2122
+      "bytes": 2496
     },
     {
       "path": "scripts/pixel_inspect.py",
@@ -6477,8 +9213,16 @@
       "bytes": 10194
     },
     {
+      "path": "scripts/samples.py",
+      "bytes": 13576
+    },
+    {
       "path": "scripts/select_visual.py",
       "bytes": 1811
+    },
+    {
+      "path": "scripts/simfilm.py",
+      "bytes": 4871
     },
     {
       "path": "scripts/start_episode.py",
@@ -6498,7 +9242,7 @@
     },
     {
       "path": "tests/test_diorama.py",
-      "bytes": 6942
+      "bytes": 7234
     },
     {
       "path": "tests/test_experience.py",
@@ -6507,6 +9251,10 @@
     {
       "path": "tests/test_film_delivery.py",
       "bytes": 3890
+    },
+    {
+      "path": "tests/test_mix_music.py",
+      "bytes": 4420
     },
     {
       "path": "tests/test_pixel_scene.py",
@@ -6519,6 +9267,14 @@
     {
       "path": "tests/test_repo_inventory.py",
       "bytes": 4674
+    },
+    {
+      "path": "tests/test_samples.py",
+      "bytes": 7849
+    },
+    {
+      "path": "tests/test_simfilm.py",
+      "bytes": 4942
     }
   ]
 }

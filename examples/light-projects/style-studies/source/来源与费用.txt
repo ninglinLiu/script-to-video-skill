@@ -1,0 +1,36 @@
+原文：
+《对话凯撒：从价值创造（创业）到价值投资，我如何完成职业生涯的跃迁?》
+https://mp.weixin.qq.com/s/ywlZ9BKrsn1yA8V6ugmgnA
+全文历史文件：../../full-short-20261018/source/original.txt
+本轮旁白复用已制作的样片，未增加金融事实、回报数字或投资建议。
+
+旁白：
+凯撒把这次转变，称为从价值创造，走向价值投资。位置变了，研究价值的视角也变了。
+zh-CN-YunxiNeural / +12% / 7.56 秒 / 起始延迟 0.12 秒。
+本轮新增 TTS 请求：0。
+
+素材生成：
+内置 imagegen 共 2 次：4×4 小人动作表、2×2 半身表情表。提示词见 image-prompts.json。
+调用金额由账户产品计费决定，本工具未提供金额；记未知，不记零。
+其余画面使用可编辑几何、字体、场景代码和 PNG 精灵；未调用生成视频服务。
+
+既有资产：
+Vastness — Andrew Ev，沿用已存音乐，取 12–20 秒片段。
+https://assets.mixkit.co/music/184/184.mp3
+https://mixkit.co/license/#musicFree
+中文 Sans / Serif 字体复用；像素字来自 RuiC 的 Fusion Pixel，字体许可随文件保存。
+
+参考：
+https://v.douyin.com/_2IO9fU8Hns/
+https://v.douyin.com/xISH2IaRwgI/
+https://v.douyin.com/fsWxSCP685Y/
+https://github.com/HRuiCcc/RuiC-pixel-explainer
+具体观看范围与失败限制见 BRIEF.txt；参考视频不作为输出画面素材。
+
+工具复用：
+RuiC 79253e11e643a27e2e4514aa404e2ae159c75f60
+HyperFrames 本地源 cc9e1bb33a430b878af6dcb257ce5c9a70f9f180：本轮只复用其中现成 Three.js 文件及许可证。
+xilo craft-rules：时间纯函数、对象继承、关键连续帧检查；不执行模型自评充当用户验收。
+原 Poisson 逐帧渲染链与上一版 69 秒工程：本轮直接复用编码入口。
+
+没有外部付费素材购买、没有生成视频服务请求。未知人工费、电费、订阅分摊不估成零。

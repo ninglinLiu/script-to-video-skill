@@ -1,0 +1,8 @@
+﻿item,type,source,usage
+文章,用户提供原文,https://mp.weixin.qq.com/s/ywlZ9BKrsn1yA8V6ugmgnA,第一、四、五节及DYOR；转述作者观点
+环境/企业/屋顶/人物/镜框,既有生成素材,source/reused-image-prompts.json 和 source/reused-lens-prompt.txt,同一已确认视觉资产
+研究笔记,本轮内置image_gen生成,source/notebook-prompt.json,独立透明道具；文字用Canvas绘制
+Vastness / Andrew Ev,既有音乐素材,https://assets.mixkit.co/music/184/184.mp3,许可记录 https://mixkit.co/license/#musicFree
+Noto Sans/Serif SC,既有本地字体,assets/*.ttf,延续已确认样片字体
+旁白,Edge TTS,zh-CN-YunxiNeural +12%,整段合成，真实词界
+音效/动画/标签,代码制作,film.js 与 mix_audio.py,确定性图形；流程和场景示意

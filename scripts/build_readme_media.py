@@ -86,6 +86,65 @@ def pareto(video):
     gif(video, 'gif-pareto-land.gif', ['6.6-10.6'], width=480, fps=12, colors=128)
 
 
+def caesar(video):
+    tl = str(ROOT / 'examples/caesar-ai-bubble/audio/timeline.json')
+    a = argparse.Namespace(video=video, timeline=tl, cols=16, rows=6, width=180, quality=86, title='AI不是泡沫，OpenAI才是 · 分镜总览',
+                           subtitle='Blender 竖屏 · 96 个画面 · 每 0.5 秒一格 · 颜色对应旁白句 · 取自实际编码成片', font=None, out=str(OUT / 'storyboard-caesar.jpg'))
+    diorama.cmd_storyboard(a)
+    gif(video, 'gif-caesar-tower.gif', ['2.0-3.4', '5.1-6.7'], width=300, fps=12, colors=128)
+    gif(video, 'gif-caesar-cables.gif', ['13.0-15.8'], width=300, fps=12, colors=128)
+    gif(video, 'gif-caesar-scale.gif', ['22.6-25.6'], width=300, fps=12, colors=128)
+    gif(video, 'gif-caesar-loop.gif', ['35.6-38.6'], width=300, fps=12, colors=128)
+
+
+def kelly(video, cards):
+    a = argparse.Namespace(video=video, timeline=cards, cols=16, rows=8, width=180, quality=86, title='凯利公式 · 分镜总览',
+                           subtitle='代码模拟暗金排版（临界点风格）· 128 个画面 · 颜色对应段落 · 取自实际编码成片', font=None, out=str(OUT / 'storyboard-kelly.jpg'))
+    diorama.cmd_storyboard(a)
+    gif(video, 'gif-kelly-hook.gif', ['1.0-4.2'], width=300, fps=12, colors=96)
+    gif(video, 'gif-kelly-reveal.gif', ['8.9-11.0'], width=300, fps=12, colors=96)
+    gif(video, 'gif-kelly-steps.gif', ['44.6-47.4'], width=300, fps=12, colors=96)
+    gif(video, 'gif-kelly-runs.gif', ['59.8-64.0'], width=300, fps=12, colors=96)
+
+
+def music_chart(levels, report, timeline):
+    """同一 y 轴的两格小倍图：上面是旁白和音效，下面是音乐避让前后。竖线是每句旁白的开始。"""
+    from PIL import Image, ImageDraw
+    lv = json.loads(Path(levels).read_text(encoding='utf-8'))
+    rp = json.loads(Path(report).read_text(encoding='utf-8'))['duckingMeasured']
+    cues = json.loads(Path(timeline).read_text(encoding='utf-8'))['cues']
+    w, ph, margin, gap, head, left, S = 1800, 210, 36, 76, 130, 84, 2
+    H = margin * 2 + head + 2 * ph + gap + 40
+    c = Image.new('RGB', ((w + margin * 2) * S, H * S), '#fbfaf7')
+    d = ImageDraw.Draw(c)
+    ink, muted, rule, mark, base = '#20222a', '#6b6f7a', '#e4e1da', '#c2410c', '#9aa0ac'
+    d.text((margin * S, (margin - 6) * S), '音乐自动让路：有旁白和音效时压低，没声音时回来', font=font(42 * S), fill=ink)
+    d.text((margin * S, (margin + 54) * S), f"实测：有声段音乐压低 {rp['reductionWhileVoiceDB']} dB，无声段不压（{rp['reductionWhileQuietDB']} dB）；响度上旁白和音效 {rp['voiceLUFS']} LUFS，避让后的音乐 {rp['duckedMusicLUFS']} LUFS", font=font(23 * S), fill=muted)
+    n = len(lv['voice']); lo, hi = -70, 0
+    X = lambda i: (margin + left + i / max(1, n - 1) * (w - left)) * S
+    def panel(y0, title):
+        d.text((margin * S, y0 * S), title, font=font(26 * S), fill=ink)
+        top = y0 + 44
+        Y = lambda v: (top + (hi - max(lo, min(hi, v))) / (hi - lo) * (ph - 44)) * S
+        for v in (0, -35, -70):
+            d.line([((margin + left) * S, Y(v)), ((margin + w) * S, Y(v))], fill=rule, width=S)
+            d.text(((margin + 16) * S, Y(v) - 12 * S), f'{v} dB', font=font(17 * S), fill=muted)
+        for q in cues:
+            x = X(q['start'] * 10); d.line([(x, top * S), (x, Y(lo))], fill=rule, width=S)
+        return Y
+    Y1 = panel(margin + head, '旁白 + 音效（不改比例）')
+    pts = [(X(i), Y1(v)) for i, v in enumerate(lv['voice'])]
+    d.polygon([(X(0), Y1(lo))] + pts + [(X(n - 1), Y1(lo))], fill='#dfe1e5'); d.line(pts, fill='#6b7280', width=2 * S)
+    Y2 = panel(margin + head + ph + gap, '音乐：灰线是避让前，橙色是避让后')
+    pts = [(X(i), Y2(v)) for i, v in enumerate(lv['ducked'])]
+    d.polygon([(X(0), Y2(lo))] + pts + [(X(n - 1), Y2(lo))], fill='#f6d9c8'); d.line(pts, fill=mark, width=2 * S)
+    d.line([(X(i), Y2(v)) for i, v in enumerate(lv['bed'])], fill=base, width=2 * S)
+    bottom = margin + head + 2 * ph + gap + 6
+    for s in range(0, int(n / 10) + 1, 10):
+        d.text((X(s * 10), bottom * S), f'{s}s', font=font(18 * S), fill=muted)
+    c.resize((w + margin * 2, H), Image.LANCZOS).save(OUT / 'music-ducking.png', optimize=True)
+
+
 def catalog(stills):
     from PIL import Image, ImageDraw
     names = [('管道网络', 'createPipes'), ('液面罐 + 钱币堆', 'createTank / createStack'), ('冰冻', 'createFreeze'), ('数值柱 + 飞行交接', 'createGauge / createFlights'),
@@ -212,6 +271,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--binance'); ap.add_argument('--pareto'); ap.add_argument('--catalog-stills')
     ap.add_argument('--before'); ap.add_argument('--after'); ap.add_argument('--motion-series')
+    ap.add_argument('--caesar'); ap.add_argument('--music-levels'); ap.add_argument('--music-report')
+    ap.add_argument('--kelly'); ap.add_argument('--kelly-cards')
     ap.add_argument('--pick', default='all')
     a = ap.parse_args()
     pick = set(a.pick.split(','))
@@ -221,6 +282,9 @@ def main():
     if want('pareto') and a.pareto: pareto(a.pareto)
     if want('catalog') and a.catalog_stills: catalog(a.catalog_stills)
     if want('history'): history()
+    if want('caesar') and a.caesar: caesar(a.caesar)
+    if want('kelly') and a.kelly: kelly(a.kelly, a.kelly_cards)
+    if want('music') and a.music_levels: music_chart(a.music_levels, a.music_report, ROOT / 'examples/caesar-ai-bubble/audio/timeline.json')
     if want('same') and a.pareto and a.before: same_text(a.pareto, a.before, a.after)
     if want('motion') and a.motion_series: motion_chart(a.motion_series)
 

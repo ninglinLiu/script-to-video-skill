@@ -1,0 +1,119 @@
+{
+  "technical": "passed",
+  "visualReview": "production_review_complete: final question and comparison frames inspected; full contact sheet and 8 dense transition strips retained",
+  "userAcceptance": "pending",
+  "scope": "60-second vertical sample; not the 8–10 minute assignment",
+  "silent": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1",
+        "nb_frames": "1800",
+        "side_data_list": [
+          {}
+        ]
+      }
+    ],
+    "format": {
+      "duration": "60.000000",
+      "size": "12535781"
+    }
+  },
+  "master": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1",
+        "nb_frames": "1800",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0",
+        "nb_frames": "2814"
+      }
+    ],
+    "format": {
+      "duration": "60.000000",
+      "size": "14407181"
+    }
+  },
+  "decodedFrames": 1800,
+  "audio": {
+    "measurement": {
+      "input_i": "-14.35",
+      "input_tp": "-1.00",
+      "input_lra": "3.30",
+      "input_thresh": "-25.42",
+      "output_i": "-14.23",
+      "output_tp": "-1.00",
+      "output_lra": "2.90",
+      "output_thresh": "-25.22",
+      "normalization_type": "dynamic",
+      "target_offset": "0.23"
+    },
+    "speakerPlayback": false,
+    "listeningReview": "not_performed",
+    "source": "weilanx synth.mjs and bgm.mjs; Yunxi whole paragraph"
+  },
+  "subtitleCount": 29,
+  "subtitleRange": [
+    0.7077259369070209,
+    56.29171163425048
+  ],
+  "math": {
+    "forward": 75.0,
+    "reverse": 75.0,
+    "recoveryPercent": 100.0
+  },
+  "browser": {
+    "draftPlayedToEnd": true,
+    "defaultPaused": true,
+    "muted": true,
+    "autoplay": false,
+    "finalBrowserCheck": "passed",
+    "final": {
+      "autoplay": false,
+      "duration": 60,
+      "muted": true,
+      "paused": true,
+      "readyState": 4,
+      "src": "http://127.0.0.1:54582/disappearing25-20261021/out/%E6%B6%88%E5%A4%B1%E7%9A%8425%E5%85%83-60%E7%A7%92-%E9%9D%99%E9%9F%B3.mp4",
+      "videoHeight": 1920,
+      "videoWidth": 1080
+    }
+  },
+  "limitations": [
+    "No speaker playback or subjective listening review",
+    "Remotion source, not native Jianying project",
+    "ASR has homophone errors; it is not an authoritative transcript"
+  ],
+  "reuse": {
+    "weilanxCommit": "fb2f5e429744470e10b242b84c0f8aeaf00e280a",
+    "engine": "Remotion",
+    "source": "anim.ts, cues.ts, redshift/theme.ts, vox/theme.ts, synth.mjs, bgm.mjs"
+  },
+  "partialRerender": {
+    "rangeSeconds": [
+      5,
+      9
+    ],
+    "reason": "Replace ambiguous arithmetic plus with sequence arrow",
+    "oldVersionRetained": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "reflection": "R04",
+  "status": "user-rejected",
+  "local_project": "Claudebao/productions/queue-poisson-100s",
+  "local_film_sha256": "2702e52c6d8cd3271edcc6dcc2b95e34fa998a7cea3896d7e381f70766f46ff3",
+  "seconds": 90.8,
+  "width": 1920,
+  "height": 1080,
+  "preview_sha256": "51b1d77a1b75aa790f71621c95f4e76b239f3b75276d59b2479e0e18743be455",
+  "copied_text_files": 30,
+  "note": "高码率原片与依赖留在本机；此处预览由原片转码，去掉音轨。"
+}

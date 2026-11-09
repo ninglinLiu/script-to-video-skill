@@ -1,0 +1,164 @@
+[
+  {
+    "type": "WordBoundary",
+    "offset": 946250,
+    "duration": 3013330,
+    "text": "消息"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 4071250,
+    "duration": 1004580,
+    "text": "没"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 5075830,
+    "duration": 2901660,
+    "text": "回"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 11325830,
+    "duration": 2343750,
+    "text": "你"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 13669580,
+    "duration": 781250,
+    "text": "就"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 14562500,
+    "duration": 2790000,
+    "text": "判定"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 17464160,
+    "duration": 2120410,
+    "text": "对方"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 19807910,
+    "duration": 669580,
+    "text": "不"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 20477500,
+    "duration": 3906250,
+    "text": "靠谱"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 29352500,
+    "duration": 2120410,
+    "text": "先"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 31473330,
+    "duration": 892910,
+    "text": "把"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 32477500,
+    "duration": 2343750,
+    "text": "结论"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 34932910,
+    "duration": 4017910,
+    "text": "悬住"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 42745410,
+    "duration": 2678750,
+    "text": "可能"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 45535830,
+    "duration": 1562500,
+    "text": "在"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 47098330,
+    "duration": 3236660,
+    "text": "忙"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 52901660,
+    "duration": 2232080,
+    "text": "可能"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 55245410,
+    "duration": 2120410,
+    "text": "忘"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 57366250,
+    "duration": 1897500,
+    "text": "了"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 61830410,
+    "duration": 1227500,
+    "text": "也"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 63057910,
+    "duration": 1785830,
+    "text": "可能"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 65067080,
+    "duration": 1227500,
+    "text": "还"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 66294580,
+    "duration": 1116250,
+    "text": "在"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 67410830,
+    "duration": 2455410,
+    "text": "想"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 74888330,
+    "duration": 3236660,
+    "text": "解释"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 78348330,
+    "duration": 2567080,
+    "text": "不止"
+  },
+  {
+    "type": "WordBoundary",
+    "offset": 81026660,
+    "duration": 3571250,
+    "text": "一种"
+  }
+]

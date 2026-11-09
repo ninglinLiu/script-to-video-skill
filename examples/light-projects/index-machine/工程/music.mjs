@@ -1,0 +1,13 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {buildBgm} from './audio/bgm.mjs';
+import {SR,renderSfx,encodeWav,mixInto} from './audio/synth.mjs';
+const tl=JSON.parse(readFileSync('src/timing.json','utf8'));
+const styles=['tense','light','groove','light','groove','tense','break','light','end'];
+buildBgm({voice:'../assets/voice-track.wav',out:'../assets/music-track.wav',sections:tl.chapters.map((c,i)=>[c.start,styles[i]]),level:.029,depth:.78});
+const fx=new Float32Array(Math.ceil(tl.seconds*SR));
+const events=[];tl.chapters.forEach((c,i)=>{if(i)events.push([Math.max(0,c.start-.40),'whoosh',.022]);});
+const at=(id,cue,delay=0)=>tl.cues[tl.chapters.find(c=>c.id===id).cueStart+cue].start+delay;
+events.push([.3,'click',.035],[4.9,'paper',.032],[at('selection',6),'click',.028],[at('selection',14),'click',.028],[at('weight',10,.3),'click',.034],[at('weight',12,.65),'ding',.024],[at('drift',4,.1),'click',.030],[at('drift',6,.55),'ding',.022],[at('buyback',4,.2),'paper',.030],[at('buyback',5,.45),'ding',.022],[at('buyback',13),'paper',.028],[at('valuation',6),'click',.030],[at('valuation',8),'click',.030],[at('valuation',10,.6),'ding',.025]);
+for(const [at,name,gain] of events)mixInto(fx,renderSfx(name),at,gain);
+writeFileSync('../assets/sfx-track.wav',encodeWav(fx,SR));
+writeFileSync('../qa/audio-events.json',JSON.stringify(events.map(([time,name,gain])=>({time,name,gain})),null,2));

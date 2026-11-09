@@ -1,0 +1,164 @@
+[
+  {
+    "chapter": "hook",
+    "title": "屏幕里的三个按钮",
+    "start": 0,
+    "end": 12.729999999999999,
+    "objectId": "price-tape",
+    "before": "100 / 108与单一收益表",
+    "after": "同一结果下，眼睛、评价、行动分开",
+    "cue": [
+      0,
+      8
+    ],
+    "entry": "环形读数器与价格纸带",
+    "exit": "同一纸带进入路径展示",
+    "nextObject": "price-tape",
+    "numericInvariant": "100 to 108 is +8%",
+    "verificationTime": 7.0015
+  },
+  {
+    "chapter": "path",
+    "title": "同一条路，两种记账",
+    "start": 12.729999999999999,
+    "end": 36.660000000000004,
+    "objectId": "price-tape",
+    "before": "相邻七段涨跌",
+    "after": "窗口移动再扩到整段，终值仍+8%",
+    "cue": [
+      9,
+      26
+    ],
+    "entry": "同一纸带",
+    "exit": "回看纸带上的104，不新增价格",
+    "nextObject": "price-104",
+    "numericInvariant": "7 intervals, 3 down, +8% total",
+    "verificationTime": 25.891500000000004
+  },
+  {
+    "chapter": "reference",
+    "title": "你在跟谁比",
+    "start": 36.660000000000004,
+    "end": 56.18,
+    "objectId": "price-104",
+    "before": "104单独存在",
+    "after": "同时与100及106比较",
+    "cue": [
+      27,
+      39
+    ],
+    "entry": "价格点104",
+    "exit": "圆形比较器变为两个控制旋钮",
+    "nextObject": "controllers",
+    "numericInvariant": "+4%; -1.89%",
+    "verificationTime": 47.396
+  },
+  {
+    "chapter": "model",
+    "title": "两个旋钮",
+    "start": 56.18,
+    "end": 71.64,
+    "objectId": "controllers",
+    "before": "报价与决策并置",
+    "after": "两个旋钮分开，报价更新与锁门权限独立",
+    "cue": [
+      40,
+      48
+    ],
+    "entry": "圆形控制器",
+    "exit": "两个变量进入实验矩阵",
+    "nextObject": "factorial-design",
+    "numericInvariant": "mechanism only",
+    "verificationTime": 64.683
+  },
+  {
+    "chapter": "research",
+    "title": "结论也要拆开",
+    "start": 71.64,
+    "end": 93.80000000000001,
+    "objectId": "factorial-design",
+    "before": "两种频率",
+    "after": "形成2x2四条件与两项研究结果",
+    "cue": [
+      49,
+      61
+    ],
+    "entry": "独立变量",
+    "exit": "决策权限进入交易装置",
+    "nextObject": "capital",
+    "numericInvariant": "1810 recruited; no fabricated effect size",
+    "verificationTime": 83.828
+  },
+  {
+    "chapter": "cost",
+    "title": "行动开始收费",
+    "start": 93.80000000000001,
+    "end": 117.00000000000001,
+    "objectId": "capital",
+    "before": "10000余额",
+    "after": "20笔扣费移入费用槽，余额与费用同步",
+    "cue": [
+      62,
+      77
+    ],
+    "entry": "行动权限",
+    "exit": "交易成本要求行动理由",
+    "nextObject": "evidence",
+    "numericInvariant": "10000*.998^n; final9607.51; funds+fee=10000",
+    "verificationTime": 106.56000000000002
+  },
+  {
+    "chapter": "signal",
+    "title": "什么值得重新决定",
+    "start": 117.00000000000001,
+    "end": 138.56,
+    "objectId": "evidence",
+    "before": "观察报价",
+    "after": "按信息理由连接判断及风险边界",
+    "cue": [
+      78,
+      90
+    ],
+    "entry": "原先报价",
+    "exit": "信息进入决策闸门",
+    "nextObject": "decision-gate",
+    "numericInvariant": "price can contain information",
+    "verificationTime": 128.858
+  },
+  {
+    "chapter": "protocol",
+    "title": "把观察和交易隔开",
+    "start": 138.56,
+    "end": 161.10999999999999,
+    "objectId": "decision-gate",
+    "before": "持续监测数据",
+    "after": "计划复核或条件触发才启动决策",
+    "cue": [
+      91,
+      104
+    ],
+    "entry": "证据与门槛",
+    "exit": "收束为证据通过门槛",
+    "nextObject": "evidence",
+    "numericInvariant": "not blind holding",
+    "verificationTime": 150.9625
+  },
+  {
+    "chapter": "end",
+    "title": "看见不等于出手",
+    "start": 161.10999999999999,
+    "end": 173.46666666666667,
+    "objectId": "evidence",
+    "before": "门外证据",
+    "after": "开门、证据通过、短期刺激停下",
+    "cue": [
+      105,
+      110
+    ],
+    "entry": "同一决策门槛",
+    "exit": "结尾停稳",
+    "nextObject": null,
+    "numericInvariant": "no profitability guarantee",
+    "verificationTime": 167.90616666666665
+  }
+]

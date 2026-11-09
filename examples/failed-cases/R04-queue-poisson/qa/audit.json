@@ -1,0 +1,329 @@
+{
+  "profile": "chapter-proof",
+  "episode": "Claudebao\\productions\\queue-poisson-100s",
+  "status": "technical_and_producer_checks_passed",
+  "checks": [
+    {
+      "name": "narrated_mp4",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\queue-poisson-100s\\out\\final-with-audio.mp4"
+    },
+    {
+      "name": "duration",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "actual": 90.8,
+        "min": 90,
+        "max": 150,
+        "profile": "chapter-proof"
+      }
+    },
+    {
+      "name": "video_format",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640028",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1394688,
+        "duration": "90.800000",
+        "bit_rate": "9978381",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "2724",
+        "extradata_size": 62,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc62.28.102 libx264"
+        },
+        "side_data_list": [
+          {
+            "side_data_type": "ICC Profile"
+          }
+        ]
+      }
+    },
+    {
+      "name": "video_bitrate",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "actual": 9978381,
+        "policy": "CRF-based chapter; visual inspection separate"
+      }
+    },
+    {
+      "name": "audio",
+      "passed": true,
+      "required": true,
+      "detail": [
+        "aac"
+      ]
+    },
+    {
+      "name": "full_decode",
+      "passed": true,
+      "required": true,
+      "detail": ""
+    },
+    {
+      "name": "real_voice_timestamps",
+      "passed": true,
+      "required": true,
+      "detail": "real edge-tts WordBoundary"
+    },
+    {
+      "name": "subtitle_intervals",
+      "passed": true,
+      "required": true,
+      "detail": 21
+    },
+    {
+      "name": "subtitle_voice_alignment",
+      "passed": true,
+      "required": true,
+      "detail": "SRT groups must start/end on measured voice cues"
+    },
+    {
+      "name": "srt_file",
+      "passed": true,
+      "required": true,
+      "detail": "one or more authored SRT files"
+    },
+    {
+      "name": "source_evidence",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\queue-poisson-100s\\evidence\\source-manifest.json"
+    },
+    {
+      "name": "script_review",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\queue-poisson-100s\\evidence\\script-review.json"
+    },
+    {
+      "name": "shot_contracts",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\queue-poisson-100s\\source\\film.json"
+    },
+    {
+      "name": "approved_script_unchanged",
+      "passed": true,
+      "required": true,
+      "detail": "Review hash and actual spoken content both checked"
+    },
+    {
+      "name": "shot_state_contracts",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "shots": 9,
+        "scope": "Executed recipe data, object identities, cue coverage and action intervals"
+      }
+    },
+    {
+      "name": "render_record",
+      "passed": true,
+      "required": true,
+      "detail": "Claudebao\\productions\\queue-poisson-100s\\qa\\render-full.json"
+    },
+    {
+      "name": "final_visual_review",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "status": "reviewed_with_fixes",
+        "reviewedFinalSha256": "2702e52c6d8cd3271edcc6dcc2b95e34fa998a7cea3896d7e381f70766f46ff3",
+        "reviewedAt": "2026-10-29T13:10:00+08:00",
+        "reviewer": "producer (agent)",
+        "method": "整片 2fps 接触表 7 张 + 13 个时间点抽帧逐段检查；曲线与筛选用 0.4 秒间隔加密核对",
+        "framesReviewed": [
+          {
+            "t": 3.0,
+            "observed": "三层窗口收到 1 倍，人物在左下，页眉与标题稳定",
+            "note": "开场 0–7.7 秒画面几乎不动"
+          },
+          {
+            "t": 12.0,
+            "observed": "空间层保持，字幕给出三个参量",
+            "note": "阅读段"
+          },
+          {
+            "t": 18.0,
+            "observed": "12 个金点从等间隔滑向模拟位置",
+            "note": "events 动作可见"
+          },
+          {
+            "t": 24.0,
+            "observed": "60 个点飞向四个区间，柱高开始长",
+            "note": "点偏小"
+          },
+          {
+            "t": 31.0,
+            "observed": "四根柱子 17/15/21/7 人，长尾形状清楚",
+            "note": "计数与模拟一致"
+          },
+          {
+            "t": 38.0,
+            "observed": "两条窗口在中央重叠，0.67 与 0.6 分钟标签分置上下",
+            "note": "修复后不再叠印"
+          },
+          {
+            "t": 47.0,
+            "observed": "公式中 (μ−λ) 被划掉，10 出现",
+            "note": "代入过程可见"
+          },
+          {
+            "t": 55.0,
+            "observed": "1/10 划掉，W = 6 分钟",
+            "note": "换算可见"
+          },
+          {
+            "t": 60.0,
+            "observed": "曲线画出 50%→1.2 与 80%→3",
+            "note": "坐标轴无刻度标签，靠点标注"
+          },
+          {
+            "t": 67.0,
+            "observed": "曲线补到 90%→6 分钟",
+            "note": "三点构成上翘"
+          },
+          {
+            "t": 75.0,
+            "observed": "第一道门 60 点通过 17 点",
+            "note": "全片最长静止段在此后"
+          },
+          {
+            "t": 84.0,
+            "observed": "两道门：17 过两门、19 过一门、24 停在门外",
+            "note": "与柱状图口径一致"
+          },
+          {
+            "t": 90.0,
+            "observed": "结尾停在结论字幕",
+            "note": "无新对象"
+          }
+        ],
+        "fixesBeforeFinalRender": [
+          "模拟从空队列开始，12 个样本几乎没有等待，与结论相反；改为 3000 个到达、跳过 200 个预热后再抽样",
+          "抽样改为一整段连续繁忙期会让样本自相关（等待值单调递减），改为跨全程等间隔抽 60 个",
+          "windows recipe 在两行重叠时两个数值标签叠印成一团；在本工程 recipes.js 里把标签分置盒子上/下（4 行改动）",
+          "首版 7 镜把 action 铺满整段，公式镜 14 秒几乎静止；拆成 9 镜（公式两镜、筛选两镜）并缩短曲线 action",
+          "首版 85.7 秒低于 chapter-proof 的 90 秒下限；补两条 cue 到 90.8 秒",
+          "成片是全范围 yuvj420p（canvas 的 JPEG 输入带 full range 标记），验收器要求 yuv420p；在工程 render.mjs 的 ffmpeg 参数里加 scale=in_range=full:out_range=limited 与 bt709/tv 标记后重渲"
+        ],
+        "notChecked": [
+          "未做真人审听（Agent 无法播放声音）",
+          "未在剪映 / Premiere 中打开工程",
+          "未在手机尺寸上检查 60 个点的可读性"
+        ]
+      }
+    },
+    {
+      "name": "native_editor_project",
+      "passed": false,
+      "required": false,
+      "detail": "No verified native editor import. Remotion source is not a substitute."
+    },
+    {
+      "name": "deterministic_source",
+      "passed": true,
+      "required": true,
+      "detail": "Static check only; no aesthetic claim"
+    },
+    {
+      "name": "film_workflow",
+      "passed": true,
+      "required": true,
+      "detail": "Explicit complete-film migration or executable Poisson adaptation required. Component tests are not film deliveries."
+    },
+    {
+      "name": "complete_source_migration",
+      "passed": true,
+      "required": true,
+      "detail": "Retain the actual source film and record adapted shots; source files alone do not prove quality."
+    },
+    {
+      "name": "captions_visible_in_encoded_video",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "subtitles": 21,
+        "pixelSamples": 42,
+        "scope": "Actual encoded pixels vs caption-on/off render references, plus full-frame text trace."
+      }
+    },
+    {
+      "name": "whole_film_review",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "seconds": 90.8,
+        "scope": "Complete interval coverage and reviewed holds; not a measure of artistic quality."
+      }
+    },
+    {
+      "name": "cinema_shots_and_current_inputs",
+      "passed": true,
+      "required": true,
+      "detail": {
+        "passed": true,
+        "scope": "runtime, current evidence, actual shot motion; whole-film review still required"
+      }
+    }
+  ],
+  "userAestheticAcceptance": "not_implied",
+  "universalPipelineValidated": false
+}

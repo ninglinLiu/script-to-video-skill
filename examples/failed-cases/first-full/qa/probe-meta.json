@@ -1,0 +1,67 @@
+{
+  "times": [
+    35.7,
+    51.5
+  ],
+  "meta": {
+    "duration": 69.23333333333333,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "technique": "Approved layered photographic assets, continuous 2.5D motion, deterministic Canvas",
+    "chapters": [
+      {
+        "id": "intro",
+        "start": 0,
+        "end": 7.265625
+      },
+      {
+        "id": "history",
+        "start": 7.265625,
+        "end": 15.558041
+      },
+      {
+        "id": "framework",
+        "start": 15.558041,
+        "end": 20.915166
+      },
+      {
+        "id": "dimensions",
+        "start": 20.915166,
+        "end": 25.625
+      },
+      {
+        "id": "boundary",
+        "start": 25.625,
+        "end": 31.584833
+      },
+      {
+        "id": "sources",
+        "start": 31.584833,
+        "end": 39.87725
+      },
+      {
+        "id": "organize",
+        "start": 39.87725,
+        "end": 47.455375
+      },
+      {
+        "id": "verify",
+        "start": 47.455375,
+        "end": 52.488833
+      },
+      {
+        "id": "return",
+        "start": 52.488833,
+        "end": 58.549125
+      },
+      {
+        "id": "limits",
+        "start": 58.549125,
+        "end": 69.23333333333333
+      }
+    ],
+    "cuts": []
+  },
+  "errors": []
+}

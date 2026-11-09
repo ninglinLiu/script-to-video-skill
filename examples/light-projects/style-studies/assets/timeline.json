@@ -1,0 +1,163 @@
+{
+  "duration": 8,
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+12%",
+  "voiceDelay": 0.12,
+  "voiceDuration": 7.56,
+  "text": "凯撒把这次转变，称为从价值创造，走向价值投资。位置变了，研究价值的视角也变了。",
+  "cues": [
+    {
+      "text": "凯撒把这次转变",
+      "start": 0.214625,
+      "end": 1.3753319999999998
+    },
+    {
+      "text": "称为从价值创造",
+      "start": 1.565083,
+      "end": 2.770458
+    },
+    {
+      "text": "走向价值投资",
+      "start": 2.993666,
+      "end": 4.065082
+    },
+    {
+      "text": "位置变了",
+      "start": 4.573125,
+      "end": 5.27625
+    },
+    {
+      "text": "研究价值的视角也变了",
+      "start": 5.499458,
+      "end": 6.883416
+    }
+  ],
+  "events": [
+    {
+      "type": "WordBoundary",
+      "offset": 946250,
+      "duration": 4017910,
+      "text": "凯撒"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 5187500,
+      "duration": 892910,
+      "text": "把"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 6192080,
+      "duration": 1785830,
+      "text": "这次"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 8089160,
+      "duration": 4464160,
+      "text": "转变"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 14450830,
+      "duration": 2678750,
+      "text": "称为"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 17241250,
+      "duration": 1785830,
+      "text": "从"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 19250000,
+      "duration": 2901660,
+      "text": "价值"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 22263330,
+      "duration": 4241250,
+      "text": "创造"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 28736660,
+      "duration": 4129580,
+      "text": "走向"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 33089160,
+      "duration": 2567080,
+      "text": "价值"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 35767910,
+      "duration": 3682910,
+      "text": "投资"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 44531250,
+      "duration": 2567080,
+      "text": "位置"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 47210000,
+      "duration": 1673750,
+      "text": "变"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 48883750,
+      "duration": 2678750,
+      "text": "了"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 53794580,
+      "duration": 2678750,
+      "text": "研究"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 56585000,
+      "duration": 2566660,
+      "text": "价值"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 59151660,
+      "duration": 557910,
+      "text": "的"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 59821250,
+      "duration": 3236660,
+      "text": "视角"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 63281250,
+      "duration": 892910,
+      "text": "也"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 64174160,
+      "duration": 1785830,
+      "text": "变"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 65960000,
+      "duration": 1674160,
+      "text": "了"
+    }
+  ]
+}

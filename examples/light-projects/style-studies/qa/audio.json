@@ -1,0 +1,102 @@
+{
+  "playback": "Never played through speakers; offline metrics only",
+  "styles": {
+    "editorial": {
+      "events": [
+        [
+          0.22,
+          "tile"
+        ],
+        [
+          0.59,
+          "tile"
+        ],
+        [
+          0.98,
+          "tile"
+        ],
+        [
+          2.95,
+          "turn"
+        ],
+        [
+          4.65,
+          "tick"
+        ],
+        [
+          5.77,
+          "open"
+        ]
+      ],
+      "samplePeakDBFS": -2.5312401883160267,
+      "duration": 8,
+      "globalGain": 1
+    },
+    "spatial": {
+      "events": [
+        [
+          0.31,
+          "tile"
+        ],
+        [
+          0.67,
+          "tile"
+        ],
+        [
+          2.8,
+          "turn"
+        ],
+        [
+          4.4,
+          "tick"
+        ],
+        [
+          5.64,
+          "open"
+        ]
+      ],
+      "samplePeakDBFS": -2.5503541423955314,
+      "duration": 8,
+      "globalGain": 1
+    },
+    "pixel": {
+      "events": [
+        [
+          0.8,
+          "tile"
+        ],
+        [
+          1.68,
+          "tile"
+        ],
+        [
+          3.32,
+          "tick"
+        ],
+        [
+          3.65,
+          "tick"
+        ],
+        [
+          4.0,
+          "tick"
+        ],
+        [
+          4.35,
+          "tick"
+        ],
+        [
+          5.71,
+          "open"
+        ],
+        [
+          6.52,
+          "chime"
+        ]
+      ],
+      "samplePeakDBFS": -2.529360473834084,
+      "duration": 8,
+      "globalGain": 1
+    }
+  }
+}

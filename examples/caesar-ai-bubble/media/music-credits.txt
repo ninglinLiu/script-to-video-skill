@@ -1,0 +1,28 @@
+凯撒样片配乐试听版 — 2026-11-02
+
+A: final-music-tension.mp4
+"Crypto" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/
+Track: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1600013
+Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Crypto.mp3
+
+B: final-music-electronic.mp4
+"Cipher" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/
+Track: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100844
+Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Cipher2.mp3
+
+Modifications: first 47.8 seconds excerpted; loudness adjusted; fade-in/out; automatic ducking beneath original narration and sound effects. No loops. Attribution is also displayed in the local audition page. Include the corresponding credit above in any publication description or end credits.
+
+Research candidates (not installed, not independently benchmarked):
+music-mix: https://github.com/novoads/agent-skills/tree/main/shared/skills/music-mix (repository MIT)
+audio-mix-maker: https://github.com/Mikefluff/skills/tree/main/skills/audio-mix-maker (SKILL declares MIT)
+
+Actual tool used: existing script-to-video/scripts/mix_music.py (local FFmpeg).
+Input picture: out/final.mp4. Input narration and effects: audio/mix.wav.
+Original picture packets verified unchanged. Full decoding passed.
+Reports: mix-tension.json and mix-electronic.json.
+No speaker playback or manual listening by the agent. Musical fit remains for user review.
+Historical E14 applied: downloaded full identified tracks from the composer's site rather than short social-media original audio; no looping, separated attribution and license records. No reference-video audio was reused.
