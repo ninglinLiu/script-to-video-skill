@@ -30,7 +30,7 @@
 | [E22](cards/E22.md) | 修Skill不等于当前Agent代做成片 | plan / review / repair / delivery |
 | [E23](cards/E23.md) | 用户认可的基准：真 3D、主体做事、交接画出来 | plan / storyboard / render / review |
 | [E24](cards/E24.md) | 用户认可的配乐：完整授权曲目，旁白音效不动，音乐自己让路 | plan / render / repair / delivery |
-| [E25](cards/E25.md) | 老板喜欢的临界点风格：算出一个数，再一步一步演出来 | plan / storyboard / render / review |
+| [E25](cards/E25.md) | 代码模拟暗金排版（临界点风格）：算出一个数，再一步一步演出来 | plan / storyboard / render / review |
 
 [来源与观察范围](sources.json)只在需要追溯时加载。已公开历史片可在[展厅](../../examples/gallery/index.html)按项目名称查看；网页轻量副本与生产原片的哈希不同。
 

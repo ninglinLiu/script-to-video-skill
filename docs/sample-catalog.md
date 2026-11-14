@@ -12,7 +12,7 @@
 
 | ID | 片名 | 明暗 | 评价 | 记录 | 看片 | 工程 | 案例 |
 |---|---|---|---|---|---|---|---|
-| `caesar-kelly` | 凯利公式 | 深色 | 制作方自查，用户未评价 | 按老板喜欢的《临界点》参考片风格做的第一条，制作方自查，用户和老板都还没看。 | [在线](https://ninglinliu.github.io/script-to-video-skill/examples/caesar-kelly/) | [仓库](../examples/caesar-kelly) | — |
+| `caesar-kelly` | 凯利公式 | 深色 | 制作方自查，用户未评价 | 参考《临界点》风格制作的首条样片；已完成制作方自查，尚未获得用户评价。 | [在线](https://ninglinliu.github.io/script-to-video-skill/examples/caesar-kelly/) | [仓库](../examples/caesar-kelly) | — |
 | `caesar-ai-bubble` | AI不是泡沫，OpenAI才是 | 深色 | 用户认可（部分） | A「低频悬疑」配乐版用户认可；画面用户没有单独评价。 | [在线](https://ninglinliu.github.io/script-to-video-skill/examples/caesar-ai-bubble/) | [仓库](../examples/caesar-ai-bubble) | R09 |
 | `binance-1029` | 币安被盗的那一小时 | 浅色 | 用户认可 | 用户认可的初版质量基准，约为参考效果五成。 | [在线](https://ninglinliu.github.io/script-to-video-skill/examples/binance-1029/) | [仓库](../examples/binance-1029) | R08 |
 | `pareto-diorama` | 二八法则 · 3D 微缩重做 | 浅色 | 制作方自查，用户未评价 | 第二内容验证，制作方自查，弱点写在它的 README。 | [在线](https://ninglinliu.github.io/script-to-video-skill/examples/pareto-diorama/) | [仓库](../examples/pareto-diorama) | — |

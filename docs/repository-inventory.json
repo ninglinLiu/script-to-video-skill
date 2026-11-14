@@ -1,14 +1,14 @@
 {
   "scope": "Staged Git blobs; excludes three generated inventory outputs, ignored files and Git history. Tree includes all tracked paths plus generated outputs. Byte counts use canonical Git blobs, not OS working-copy line endings.",
   "files": 2288,
-  "bytes": 599922488,
-  "entry_chars": 5011,
+  "bytes": 599922265,
+  "entry_chars": 4999,
   "entry_lines": 97,
-  "entry_utf8_bytes": 9467,
+  "entry_utf8_bytes": 9431,
   "groups": {
     "examples": {
       "files": 1167,
-      "bytes": 491871164
+      "bytes": 491871074
     },
     "assets": {
       "files": 977,
@@ -16,11 +16,11 @@
     },
     "docs": {
       "files": 35,
-      "bytes": 29308809
+      "bytes": 29309024
     },
     "references": {
       "files": 63,
-      "bytes": 259150
+      "bytes": 258937
     },
     "scripts": {
       "files": 21,
@@ -28,7 +28,7 @@
     },
     "[root files]": {
       "files": 10,
-      "bytes": 82712
+      "bytes": 82577
     },
     "tests": {
       "files": 12,
@@ -158,11 +158,11 @@
     },
     {
       "path": "README.md",
-      "bytes": 53977
+      "bytes": 53878
     },
     {
       "path": "SKILL.md",
-      "bytes": 9467
+      "bytes": 9431
     },
     {
       "path": "assets/chapter-style-lock.json",
@@ -4082,7 +4082,7 @@
     },
     {
       "path": "docs/architecture.md",
-      "bytes": 15398
+      "bytes": 15362
     },
     {
       "path": "docs/architecture.mmd",
@@ -4206,11 +4206,11 @@
     },
     {
       "path": "docs/removals.md",
-      "bytes": 2205
+      "bytes": 2465
     },
     {
       "path": "docs/sample-catalog.md",
-      "bytes": 10463
+      "bytes": 10454
     },
     {
       "path": "evals/README.md",
@@ -4638,7 +4638,7 @@
     },
     {
       "path": "examples/caesar-kelly/README.md",
-      "bytes": 6555
+      "bytes": 6465
     },
     {
       "path": "examples/caesar-kelly/data/build_data.py",
@@ -9006,11 +9006,11 @@
     },
     {
       "path": "references/experience/cards/E25.md",
-      "bytes": 1560
+      "bytes": 1555
     },
     {
       "path": "references/experience/casebook.md",
-      "bytes": 3389
+      "bytes": 3404
     },
     {
       "path": "references/experience/evidence/chapter-repair.json",
@@ -9062,7 +9062,7 @@
     },
     {
       "path": "references/experience/index.json",
-      "bytes": 16198
+      "bytes": 16166
     },
     {
       "path": "references/experience/reflections.json",
@@ -9074,7 +9074,7 @@
     },
     {
       "path": "references/experience/sources.json",
-      "bytes": 10529
+      "bytes": 10409
     },
     {
       "path": "references/experience/usage.md",
@@ -9134,11 +9134,11 @@
     },
     {
       "path": "references/sample-catalog.json",
-      "bytes": 28384
+      "bytes": 28375
     },
     {
       "path": "references/sim-typography.md",
-      "bytes": 7355
+      "bytes": 7293
     },
     {
       "path": "references/visual-library.md",
